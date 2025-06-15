@@ -1,0 +1,264 @@
+ <div class="projects-details-information">
+              <div id="w-node-_1fb3b0e6-77b1-1f37-3e21-f10121bdf45f-596e881a" data-w-id="1fb3b0e6-77b1-1f37-3e21-f10121bdf45f" class="projects-details-border"></div>
+              <div id="w-node-_1fb3b0e6-77b1-1f37-3e21-f10121bdf460-596e881a" class="w-layout-vflex projects-details-column">
+                <div data-w-id="1fb3b0e6-77b1-1f37-3e21-f10121bdf461">
+                  <img width="26" height="30" alt="Icon" src="../assets/img/mega-menu/team-member.svg" loading="lazy" class="margin-bottom-twenty" />
+                  <div class="heading-five margin-bottom-ten">client</div>
+                  <div class="text-capitalize">John M. Johnson</div>
+                </div>
+                <div data-w-id="1fb3b0e6-77b1-1f37-3e21-f10121bdf467" class="projects-card-border"></div>
+              </div>
+              <div id="w-node-_1fb3b0e6-77b1-1f37-3e21-f10121bdf468-596e881a" class="w-layout-vflex projects-details-column">
+                <div data-w-id="1fb3b0e6-77b1-1f37-3e21-f10121bdf469">
+                  <img width="24" height="30" alt="Icon" src="../assets/img/mega-menu/portfolio-details-icon.svg" loading="lazy" class="margin-bottom-twenty" />
+                  <div class="heading-five margin-bottom-ten">completed</div>
+                  <div class="text-capitalize">August 13, 2024</div>
+                </div>
+                <div data-w-id="1fb3b0e6-77b1-1f37-3e21-f10121bdf46f" class="projects-card-border"></div>
+              </div>
+              <div id="w-node-_1fb3b0e6-77b1-1f37-3e21-f10121bdf470-596e881a" class="w-layout-vflex projects-details-column">
+                <div data-w-id="1fb3b0e6-77b1-1f37-3e21-f10121bdf471">
+                  <img width="30" height="30" alt="Icon" src="../assets/img/mega-menu/abstract-shield.svg" loading="lazy" class="margin-bottom-twenty" />
+                  <div class="heading-five margin-bottom-ten">design</div>
+                  <div class="text-capitalize">interface design, UI/UX Design</div>
+                </div>
+              </div>
+            </div>
+
+
+
+
+<div class="w-layout-hflex projects-marquee-train">
+            <div class="slides-cards">
+              <div class="w-dyn-list">
+                <div role="list" class="w-dyn-items">
+                  <div role="listitem" class="w-dyn-item kjskdjssds">
+                    <a style="background-image:url(../assets/img/portfolios/portfolios-1.webp)" href="ai-interface-design.html" class="projects-marquee-cards w-inline-block">
+                      <div class="projects-card-overlay"></div>
+                      <div class="heading-four projects-name">AI Interface Design</div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="slides-cards">
+              <div class="w-dyn-list">
+                <div role="list" class="w-dyn-items">
+                  <div role="listitem" class="w-dyn-item">
+                    <a style="background-image:url(../assets/img/portfolios/portfolios-placeholder.png)" href="web-graphic-design.html" aria-current="page" class="projects-marquee-cards w-inline-block w--current">
+                      <div class="projects-card-overlay"></div>
+                      <div class="heading-four projects-name">Web &amp; Graphic Design</div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="slides-cards">
+              <div class="w-dyn-list">
+                <div role="list" class="w-dyn-items">
+                  <div role="listitem" class="w-dyn-item">
+                    <a style="background-image:url(../assets/img/portfolios/portfolios-3.webp)" href="ui-ux-design.html" class="projects-marquee-cards w-inline-block">
+                      <div class="projects-card-overlay"></div>
+                      <div class="heading-four projects-name">UI/Ux Design</div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="slides-cards">
+              <div class="w-dyn-list">
+                <div role="list" class="w-dyn-items">
+                  <div role="listitem" class="w-dyn-item">
+                    <a style="background-image:url(../assets/img/portfolios/portfolios-4.webp)" href="product-design.html" class="projects-marquee-cards w-inline-block">
+                      <div class="projects-card-overlay"></div>
+                      <div class="heading-four projects-name">Product Design</div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="slides-cards">
+              <div class="w-dyn-list">
+                <div role="list" class="w-dyn-items">
+                  <div role="listitem" class="w-dyn-item">
+                    <a style="background-image:url(../assets/img/portfolios/portfolios-5.webp)" href="ai-interface-design.html" class="projects-marquee-cards w-inline-block">
+                      <div class="projects-card-overlay"></div>
+                      <div class="heading-four projects-name">AI Interface Design</div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="slides-cards">
+              <div class="w-dyn-list">
+                <div role="list" class="w-dyn-items">
+                  <div role="listitem" class="w-dyn-item">
+                    <a style="background-image:url(../assets/img/portfolios/portfolios-6.webp)" href="web-graphic-design.html" aria-current="page" class="projects-marquee-cards w-inline-block w--current">
+                      <div class="projects-card-overlay"></div>
+                      <div class="heading-four projects-name">Web &amp; Graphic Design</div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="slides-cards">
+              <div class="w-dyn-list">
+                <div role="list" class="w-dyn-items">
+                  <div role="listitem" class="w-dyn-item">
+                    <a style="background-image:url(../assets/img/portfolios/portfolios-7.webp)" href="ui-ux-design.html" class="projects-marquee-cards w-inline-block">
+                      <div class="projects-card-overlay"></div>
+                      <div class="heading-four projects-name">UI/Ux Design</div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="slides-cards">
+              <div class="w-dyn-list">
+                <div role="list" class="w-dyn-items">
+                  <div role="listitem" class="w-dyn-item">
+                    <a style="background-image:url(../assets/img/portfolios/portfolios-1.webp)" href="product-design.html" class="projects-marquee-cards w-inline-block">
+                      <div class="projects-card-overlay"></div>
+                      <div class="heading-four projects-name">Product Design</div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+ <div data-w-id="1fb3b0e6-77b1-1f37-3e21-f10121bdf477" class="overflow-hidden border-radius-thirty">
+                <img width="1290" height="550" alt="" src="../assets/img/portfolios/portfolios-placeholder.png" loading="lazy" sizes="(max-width: 479px) 94vw, (max-width: 767px) 96vw, (max-width: 991px) 97vw, (max-width: 1439px) 98vw, 1290px" srcset="../assets/img/portfolios/portfolios-placeholder.png 500w, ../assets/img/portfolios/portfolios-placeholder.png 800w, ../assets/img/portfolios/portfolios-placeholder.png 1080w, ../assets/img/portfolios/portfolios-placeholder.png 1600w, ../assets/img/portfolios/portfolios-placeholder.png 2000w, ../assets/img/portfolios/portfolios-placeholder.png 2580w" />
+              </div>
+
+
+
+
+
+
+   <div class="mega-menu-container-main">
+                     <div class="mega-menu-pages">
+                          <a id="w-node-_6b3266d6-f149-f514-045f-98f08171e6f3-8171e673" data-w-id="6b3266d6-f149-f514-045f-98f08171e6f3" href="../service-one.html" class="menu-box-wrapper w-inline-block">
+                            <div class="w-layout-hflex menu-box-top">
+                              <div class="mega-menu-icon">
+                                <img width="20" height="20" alt="Icon" src="../assets/img/mega-menu/service.svg" loading="lazy" />
+                              </div>
+                              <div class="heading-five">service one</div>
+                            </div>
+                            <div class="mega-menu-image-wrapper">
+                              <img width="211" height="99" alt="Screenshot" src="../assets/img/mega-menu/mega-service-one.webp" loading="lazy" class="mega-menu-image" />
+                              <div class="arrow-effect">
+                                <img src="../assets/img/portfolios/arrow-white.svg" loading="lazy" width="10" height="10" alt="Icon" />
+                              </div>
+                            </div>
+                          </a>
+                          <a id="w-node-_6b3266d6-f149-f514-045f-98f08171e6fb-8171e673" data-w-id="6b3266d6-f149-f514-045f-98f08171e6fb" href="../service-two.html" class="menu-box-wrapper w-inline-block">
+                            <div class="w-layout-hflex menu-box-top">
+                              <div class="mega-menu-icon">
+                                <img width="20" height="20" alt="Icon" src="../assets/img/mega-menu/service.svg" loading="lazy" />
+                              </div>
+                              <div class="heading-five">service Two</div>
+                            </div>
+                            <div class="mega-menu-image-wrapper">
+                              <img width="211" height="99" alt="Screenshot" src="../assets/img/mega-menu/mega-service-two.webp" loading="lazy" class="mega-menu-image" />
+                              <div class="arrow-effect">
+                                <img src="../assets/img/portfolios/arrow-white.svg" loading="lazy" width="10" height="10" alt="Icon" />
+                              </div>
+                            </div>
+                          </a>
+                          <a id="w-node-_6b3266d6-f149-f514-045f-98f08171e703-8171e673" data-w-id="6b3266d6-f149-f514-045f-98f08171e703" href="../service-three.html" class="menu-box-wrapper w-inline-block">
+                            <div class="w-layout-hflex menu-box-top">
+                              <div class="mega-menu-icon">
+                                <img width="20" height="20" alt="Icon" src="../assets/img/mega-menu/service.svg" loading="lazy" />
+                              </div>
+                              <div class="heading-five">service Three</div>
+                            </div>
+                            <div class="mega-menu-image-wrapper">
+                              <img width="211" height="99" alt="Screenshot" src="../assets/img/mega-menu/mega-service-three.webp" loading="lazy" class="mega-menu-image" />
+                              <div class="arrow-effect">
+                                <img src="../assets/img/portfolios/arrow-white.svg" loading="lazy" width="10" height="10" alt="Icon" />
+                              </div>
+                            </div>
+                          </a>
+                          <a id="w-node-_6b3266d6-f149-f514-045f-98f08171e70b-8171e673" data-w-id="6b3266d6-f149-f514-045f-98f08171e70b" href="../projects.html" class="menu-box-wrapper w-inline-block">
+                            <div class="w-layout-hflex menu-box-top">
+                              <div class="mega-menu-icon">
+                                <img width="20" height="16" alt="Icon" src="../assets/img/mega-menu/project-ic.svg" loading="lazy" />
+                              </div>
+                              <div class="heading-five">projects</div>
+                            </div>
+                            <div class="mega-menu-image-wrapper">
+                              <img width="211" height="99" alt="Screenshot" src="../assets/img/mega-menu/mega-service-one.webp" loading="lazy" class="mega-menu-image" />
+                              <div class="arrow-effect">
+                                <img src="../assets/img/portfolios/arrow-white.svg" loading="lazy" width="10" height="10" alt="Icon" />
+                              </div>
+                            </div>
+                          </a>
+                          <a id="w-node-_6b3266d6-f149-f514-045f-98f08171e713-8171e673" data-w-id="6b3266d6-f149-f514-045f-98f08171e713" href="../team.html" class="menu-box-wrapper w-inline-block">
+                            <div class="w-layout-hflex menu-box-top">
+                              <div class="mega-menu-icon">
+                                <img width="16" height="20" alt="Icon" src="../assets/img/mega-menu/team-member.svg" loading="lazy" />
+                              </div>
+                              <div class="heading-five">team members</div>
+                            </div>
+                            <div class="mega-menu-image-wrapper">
+                              <img width="211" height="99" alt="Screenshot" src="../assets/img/mega-menu/team-member.svg" loading="lazy" class="mega-menu-image" />
+                              <div class="arrow-effect">
+                                <img src="../assets/img/portfolios/arrow-white.svg" loading="lazy" width="10" height="10" alt="Icon" />
+                              </div>
+                            </div>
+                          </a>
+                          <a id="w-node-_6b3266d6-f149-f514-045f-98f08171e71b-8171e673" data-w-id="6b3266d6-f149-f514-045f-98f08171e71b" href="../404.html" class="menu-box-wrapper w-inline-block">
+                            <div class="w-layout-hflex menu-box-top">
+                              <div class="mega-menu-icon">
+                                <img width="16" height="16" alt="Icon" src="../assets/img/mega-menu/error.svgF" loading="lazy" />
+                              </div>
+                              <div class="heading-five">404 error</div>
+                            </div>
+                            <div class="mega-menu-image-wrapper">
+                              <img width="211" height="99" alt="Screenshot" src="../assets/img/mega-menu/mega-404.webp" loading="lazy" class="mega-menu-image" />
+                              <div class="arrow-effect">
+                                <img src="../assets/img/portfolios/arrow-white.svg" loading="lazy" width="10" height="10" alt="Icon" />
+                              </div>
+                            </div>
+                          </a>
+                          <div id="w-node-_6b3266d6-f149-f514-045f-98f08171e723-8171e673" class="menu-border"></div>
+                          <div id="w-node-_6b3266d6-f149-f514-045f-98f08171e724-8171e673" class="menu-border menu-border-two"></div>
+                        </div>
+                        <div class="mega-menu-right-icon">
+                          <div class="w-layout-vflex menu-right-box">
+                            <div class="heading-four mega-menu-text">introducing new digital agency &amp; creative templates</div>
+                            <a href="../index.html" class="button button-three w-button">get started</a>
+                          </div>
+                        </div>
+                      </div>
+
+
+
+
+
+
+
+  <div class="w-layout-hflex testimonial-author-images-wrapper">
+                  <div class="testimonials-author-box-mid testimonials-author-box-left">
+                    <img width="91" height="91" alt="Author" src="../assets/img/testimonials/author-3.webp" loading="lazy" class="author-image-one" />
+                  </div>
+                  <div class="testimonials-author-box-mid">
+                    <img width="126" height="126" alt="Author" src="../assets/img/testimonials/author-2.webp" loading="lazy" class="author-image-one" />
+                  </div>
+                  <div class="testimonials-author-box-mid testimonials-author-box-right">
+                    <img width="91" height="91" alt="Author" src="../assets/img/testimonials/author-1.webp" loading="lazy" class="author-image-one" />
+                  </div>
+                </div>
+
+
+
+
+
+ <div class="w-layout-hflex project-details-image-wrap">
+              <div data-w-id="1fb3b0e6-77b1-1f37-3e21-f10121bdf477" class="overflow-hidden border-radius-thirty">
+                <img width="1290" height="550" alt="" src="../assets/img/portfolios/portfolios-4.webp" loading="lazy" sizes="(max-width: 479px) 94vw, (max-width: 767px) 96vw, (max-width: 991px) 97vw, (max-width: 1439px) 98vw, 1290px" srcset="../assets/img/portfolios/portfolios-4.webp 500w, ../assets/img/portfolios/portfolios-4.webp 800w, ../assets/img/portfolios/portfolios-4.webp 1080w, ../assets/img/portfolios/portfolios-4.webp 1600w, ../assets/img/portfolios/portfolios-4.webp 2000w, ../assets/img/portfolios/portfolios-4.webp 2580w" />
+              </div>
+            </div>

@@ -1,0 +1,33 @@
+<div class="gtco-testimonials">
+<div class="owl-carousel testimonials-reviews owl-theme">
+                <div class="owl-content">
+                    <div class="ks-flip-card">
+                        <div class="card text-center front-card">
+                            <div class="card-img-top">
+                                <img class="rem_lazy_loading"
+                                    src="https://dawin8kpgzugq.cloudfront.net/khelocdn/public/landing_page/assets/images/testimonial1.webp"
+                                    alt="Testimonials">
+                            </div>
+                            <div class="card-body">
+                                <h5>Pradeep Sharma<br>
+                                    <span> New Delhi </span>&nbsp;&nbsp;&nbsp;&nbsp; <span>Jun 2021</span>
+                                </h5>
+                                <p class="card-text" attr-tips="After playing in a lot of online casinos , I Finally found Khelo. Excellent
+                                    site with a lot of options to play. Best way to spend Summer">“ After playing in a lot of online casinos , I Finally found Khelo. Excellent
+                                    site with a lot of options to play. Best way to spend Summer ” </p>
+                            </div>
+                        </div>
+                        <div class="card text-center back-card">
+                            <div class="card-body">
+                                <h5>Pradeep Sharma<br>
+                                    <span> New Delhi </span>&nbsp;&nbsp;&nbsp;&nbsp; <span>Jun 2021</span>
+                                </h5>
+                                <p class="card-text">“ After playing in a lot of online casinos , I Finally found Khelo. Excellent
+                                    site with a lot of options to play. Best way to spend Summer ” </p>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    
+                    </div>
+</div>
