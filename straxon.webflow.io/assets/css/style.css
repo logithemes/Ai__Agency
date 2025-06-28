@@ -28,6 +28,7 @@ audio:not([controls]) {
 
 a {
   background-color: #0000;
+  text-decoration: none !important;
 }
 
 a:active, a:hover {
@@ -380,7 +381,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
 }
 
-h1 {
+h1 *{
   margin-top: 20px;
   font-size: 38px;
   line-height: 44px;
@@ -689,6 +690,7 @@ textarea.w-input, textarea.w-select {
   max-width: 940px;
   margin-left: auto;
   margin-right: auto;
+  margin:  0 auto;
 }
 
 .w-container:before, .w-container:after {
@@ -788,6 +790,10 @@ textarea.w-input, textarea.w-select {
 }
 
 @media screen and (max-width: 991px) {
+  .rotate-text{  -webkit-transform: translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0deg) skew(0, 0);
+                -moz-transform: translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0deg) skew(0, 0);
+                -ms-transform: translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0deg) skew(0, 0);
+                transform: translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0deg) skew(0, 0);}
   .w-container {
     max-width: 728px;
   }
@@ -2225,7 +2231,7 @@ h6 {
 }
 
 a {
-  color: var(--heading-color);
+  color: var(--heading-color) !important;
   text-decoration: none;
 }
 
@@ -2734,11 +2740,16 @@ blockquote {
   display: flex;
 }
 
+
+/*----------------------------------------*/
+/*   container css start
+/*----------------------------------------*/
 .container {
   max-width: 1320px;
   padding-left: 15px;
   padding-right: 15px;
 }
+.max-w-100{max-width: 100%;}
 
 .container.home-three-testimonial-container {
   z-index: 10;
@@ -3643,6 +3654,7 @@ blockquote {
   padding-right: 40px;
   display: inline-block;
 }
+.navbar-one-wrapper .dropdown-toggle::after{display: none;}
 
 .marquee-image-wrapper {
   z-index: 20;
@@ -13337,8 +13349,8 @@ blockquote {
     grid-column: span 1 / span 1;
   }
 }
-
+.{}
 
 
 /* .dropdown-list.mega-menu{opacity: 1  !important;}
-.navbar-desktop, .w-dropdown-list{display: block  !important;} */
+.navbar-desktop, .w-dropdown-list{display: block  !important;width: 100%;} */
