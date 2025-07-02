@@ -862,7 +862,32 @@ textarea.w-input, textarea.w-select {
 }
 
 
+/* START DATA-ID-CODE */
   @media screen and  (min-width:992px) {
+    
+        html.w-mod-js:not(.w-mod-ix) [data-w-id="d1330a21-0873-c9e7-6de7-8885cbe0d1e8"],  [data-w-id="d1330a21-0873-c9e7-6de7-8885cbe0d1ea"], [data-w-id="d1330a21-0873-c9e7-6de7-8885cbe0d1ec"], [data-w-id="d1330a21-0873-c9e7-6de7-8885cbe0d1ee"], [data-w-id="d1330a21-0873-c9e7-6de7-8885cbe0d1f0"], [data-w-id="d1330a21-0873-c9e7-6de7-8885cbe0d1f2"], [data-w-id="e2c5286e-a00f-1d46-2601-a6f699a5e86c"], [data-w-id="e2c5286e-a00f-1d46-2601-a6f699a5e86f"], [data-w-id="e2c5286e-a00f-1d46-2601-a6f699a5e872"], [data-w-id="e2c5286e-a00f-1d46-2601-a6f699a5e875"], [data-w-id="e2c5286e-a00f-1d46-2601-a6f699a5e878"], [data-w-id="e2c5286e-a00f-1d46-2601-a6f699a5e87b"], [data-w-id="95602a0d-6d5c-8d49-dcba-aca16e24f9b5"], [data-w-id="95602a0d-6d5c-8d49-dcba-aca16e24f9b8"], [data-w-id="95602a0d-6d5c-8d49-dcba-aca16e24f9bb"], [data-w-id="95602a0d-6d5c-8d49-dcba-aca16e24f9be"], [data-w-id="95602a0d-6d5c-8d49-dcba-aca16e24f9c4"], [data-w-id="95602a0d-6d5c-8d49-dcba-aca16e24f9c1"]  {
+          filter: contrast(100%);
+        }
+       html.w-mod-js:not(.w-mod-ix) [data-w-id="d1330a21-0873-c9e7-6de7-8885cbe0d219"],  [data-w-id="d1330a21-0873-c9e7-6de7-8885cbe0d244"], [data-w-id="d1330a21-0873-c9e7-6de7-8885cbe0d1e7"], [data-w-id="d1330a21-0873-c9e7-6de7-8885cbe0d1e9"],  [data-w-id="d1330a21-0873-c9e7-6de7-8885cbe0d1eb"], [data-w-id="d1330a21-0873-c9e7-6de7-8885cbe0d1ed"], [data-w-id="d1330a21-0873-c9e7-6de7-8885cbe0d1ef"], [data-w-id="d1330a21-0873-c9e7-6de7-8885cbe0d1f1"],  [data-w-id="e2c5286e-a00f-1d46-2601-a6f699a5e86b"],  [data-w-id="e2c5286e-a00f-1d46-2601-a6f699a5e86e"], [data-w-id="e2c5286e-a00f-1d46-2601-a6f699a5e871"],  [data-w-id="e2c5286e-a00f-1d46-2601-a6f699a5e874"], [data-w-id="e2c5286e-a00f-1d46-2601-a6f699a5e877"], [data-w-id="e2c5286e-a00f-1d46-2601-a6f699a5e87a"], [data-w-id="95602a0d-6d5c-8d49-dcba-aca16e24f9b4"], [data-w-id="95602a0d-6d5c-8d49-dcba-aca16e24f9b7"], [data-w-id="95602a0d-6d5c-8d49-dcba-aca16e24f9ba"], [data-w-id="95602a0d-6d5c-8d49-dcba-aca16e24f9bd"],  [data-w-id="95602a0d-6d5c-8d49-dcba-aca16e24f9c0"], [data-w-id="95602a0d-6d5c-8d49-dcba-aca16e24f9c3"] {
+          border-color: rgb(68, 72, 114);
+        }
+          html.w-mod-js:not(.w-mod-ix) [data-w-id="d1330a21-0873-c9e7-6de7-8885cbe0d226"] {
+          -webkit-transform: translate3d(0, -100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+          -moz-transform: translate3d(0, -100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+          -ms-transform: translate3d(0, -100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+          transform: translate3d(0, -100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+        }
+      html.w-mod-js:not(.w-mod-ix) [data-w-id="d1330a21-0873-c9e7-6de7-8885cbe0d1da"], [data-w-id="d1330a21-0873-c9e7-6de7-8885cbe0d1e2"],  [data-w-id="d1330a21-0873-c9e7-6de7-8885cbe0d1de"], [data-w-id="d1330a21-0873-c9e7-6de7-8885cbe0d1d6"], [data-w-id="c4243365-9815-4f09-1bca-a6d1d50a9554"] {
+          width: 0%;
+        }
+    
+        html.w-mod-js:not(.w-mod-ix) [data-w-id="d1330a21-0873-c9e7-6de7-8885cbe0d240"], [data-w-id="d1330a21-0873-c9e7-6de7-8885cbe0d223"], [data-w-id="d1330a21-0873-c9e7-6de7-8885cbe0d232"], [data-w-id="d1330a21-0873-c9e7-6de7-8885cbe0d24e"] {
+          background-color: rgba(255, 255, 255, 0);
+          border-color: rgb(68, 72, 114);
+        }
+         html.w-mod-js:not(.w-mod-ix) [data-w-id="d1330a21-0873-c9e7-6de7-8885cbe0d236"], [data-w-id="d1330a21-0873-c9e7-6de7-8885cbe0d228"] {
+          border-color: rgb(68, 72, 114);
+        }
         html.w-mod-js:not(.w-mod-ix) [data-w-id="8cc9179a-d379-20c3-5373-d895e8ba6a37"] {
           opacity: 0;
           display: none;
@@ -889,7 +914,7 @@ textarea.w-input, textarea.w-select {
           -ms-transform: translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
           transform: translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
         }
-          html.w-mod-js:not(.w-mod-ix) [data-w-id="8cc9179a-d379-20c3-5373-d895e8ba6a26"],  [data-w-id="8cc9179a-d379-20c3-5373-d895e8ba6a22"] {
+          html.w-mod-js:not(.w-mod-ix) [data-w-id="8cc9179a-d379-20c3-5373-d895e8ba6a26"],  [data-w-id="8cc9179a-d379-20c3-5373-d895e8ba6a22"], [data-w-id="d1330a21-0873-c9e7-6de7-8885cbe0d241"], [data-w-id="d1330a21-0873-c9e7-6de7-8885cbe0d18b"], [data-w-id="d1330a21-0873-c9e7-6de7-8885cbe0d224"], [data-w-id="d1330a21-0873-c9e7-6de7-8885cbe0d233"], [data-w-id="d1330a21-0873-c9e7-6de7-8885cbe0d24f"] {
           -webkit-transform: translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0deg) skew(0, 0);
           -moz-transform: translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0deg) skew(0, 0);
           -ms-transform: translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0deg) skew(0, 0);
@@ -927,8 +952,15 @@ textarea.w-input, textarea.w-select {
           -ms-transform: translate3d(0, 0, 0) scale3d(0, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
           
           transform: translate3d(0, 0, 0) scale3d(0, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);}
+            html.w-mod-js:not(.w-mod-ix) [data-w-id="d1330a21-0873-c9e7-6de7-8885cbe0d1b5"], [data-w-id="d1330a21-0873-c9e7-6de7-8885cbe0d1b3"],  [data-w-id="d1330a21-0873-c9e7-6de7-8885cbe0d1ba"], [data-w-id="d1330a21-0873-c9e7-6de7-8885cbe0d1bc"], [data-w-id="d1330a21-0873-c9e7-6de7-8885cbe0d1c1"], [data-w-id="d1330a21-0873-c9e7-6de7-8885cbe0d1c3"]{
+          opacity: 0;
+          -webkit-transform: translate3d(0, 22px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+          -moz-transform: translate3d(0, 22px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+          -ms-transform: translate3d(0, 22px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+          transform: translate3d(0, 22px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+        }
 
-            html.w-mod-js:not(.w-mod-ix) [data-w-id="3e5d5146-010e-a464-200a-a32cf43db62c"] {
+            html.w-mod-js:not(.w-mod-ix) [data-w-id="3e5d5146-010e-a464-200a-a32cf43db62c"],  [data-w-id="d1330a21-0873-c9e7-6de7-8885cbe0d239"], [data-w-id="d1330a21-0873-c9e7-6de7-8885cbe0d225"], [data-w-id="d1330a21-0873-c9e7-6de7-8885cbe0d21c"], [data-w-id="d1330a21-0873-c9e7-6de7-8885cbe0d22b"] {
           opacity: 1;
         }
 
@@ -944,7 +976,18 @@ textarea.w-input, textarea.w-select {
           width: 0px;
         }
 
-       [data-w-id="85421"], [data-w-id="8cc9179a-d379-20c3-5373-d895e8ba693c"], [data-w-id="8cc9179a-d379-20c3-5373-d895e8ba6942"], [data-w-id="8cc9179a-d379-20c3-5373-d895e8ba6944"], [data-w-id="8cc9179a-d379-20c3-5373-d895e8ba6940"],  [data-w-id="8cc9179a-d379-20c3-5373-d895e8ba6a21"], [data-w-id="8cc9179a-d379-20c3-5373-d895e8ba69ab"], [data-w-id="8cc9179a-d379-20c3-5373-d895e8ba6a2b"], [data-w-id="8cc9179a-d379-20c3-5373-d895e8ba6a2f"],  [data-w-id="8cc9179a-d379-20c3-5373-d895e8ba6ae0"], [data-w-id="8cc9179a-d379-20c3-5373-d895e8ba6adf"], [data-w-id="8cc9179a-d379-20c3-5373-d895e8ba6bff"], [data-w-id="8cc9179a-d379-20c3-5373-d895e8ba6bf6"], [data-w-id="3e5d5146-010e-a464-200a-a32cf43db699"],  [data-w-id="cc5e06f9-7a76-cab2-9f83-785d8cfa92a0"], [data-w-id="3e5d5146-010e-a464-200a-a32cf43db63a"], [data-w-id="3e5d5146-010e-a464-200a-a32cf43db633"], [data-w-id="3e5d5146-010e-a464-200a-a32cf43db62c"]
+       [data-w-id="85421"], [data-w-id="8cc9179a-d379-20c3-5373-d895e8ba693c"], [data-w-id="8cc9179a-d379-20c3-5373-d895e8ba6942"], [data-w-id="8cc9179a-d379-20c3-5373-d895e8ba6944"], [data-w-id="8cc9179a-d379-20c3-5373-d895e8ba6940"],  [data-w-id="8cc9179a-d379-20c3-5373-d895e8ba6a21"], [data-w-id="8cc9179a-d379-20c3-5373-d895e8ba69ab"], [data-w-id="8cc9179a-d379-20c3-5373-d895e8ba6a2b"], [data-w-id="8cc9179a-d379-20c3-5373-d895e8ba6a2f"],  [data-w-id="8cc9179a-d379-20c3-5373-d895e8ba6ae0"], [data-w-id="8cc9179a-d379-20c3-5373-d895e8ba6adf"], [data-w-id="8cc9179a-d379-20c3-5373-d895e8ba6bff"], [data-w-id="8cc9179a-d379-20c3-5373-d895e8ba6bf6"], [data-w-id="3e5d5146-010e-a464-200a-a32cf43db699"],  [data-w-id="cc5e06f9-7a76-cab2-9f83-785d8cfa92a0"], [data-w-id="3e5d5146-010e-a464-200a-a32cf43db63a"], [data-w-id="3e5d5146-010e-a464-200a-a32cf43db633"], [data-w-id="3e5d5146-010e-a464-200a-a32cf43db62c"],
+       [data-w-id="d1330a21-0873-c9e7-6de7-8885cbe0d1b7"], [data-w-id="d1330a21-0873-c9e7-6de7-8885cbe0d1b2"], [data-w-id="d1330a21-0873-c9e7-6de7-8885cbe0d1be"], [data-w-id="d1330a21-0873-c9e7-6de7-8885cbe0d1b9"], [data-w-id="d1330a21-0873-c9e7-6de7-8885cbe0d23a"],  [data-w-id="d1330a21-0873-c9e7-6de7-8885cbe0d197"],[data-w-id="d1330a21-0873-c9e7-6de7-8885cbe0d1c8"], [data-w-id="d1330a21-0873-c9e7-6de7-8885cbe0d1cf"], [data-w-id="d1330a21-0873-c9e7-6de7-8885cbe0d1e3"],  [data-w-id="d1330a21-0873-c9e7-6de7-8885cbe0d21d"], [data-w-id="d1330a21-0873-c9e7-6de7-8885cbe0d22c"], [data-w-id="d1330a21-0873-c9e7-6de7-8885cbe0d247"], [data-w-id="d1330a21-0873-c9e7-6de7-8885cbe0d227"], [data-w-id="d1330a21-0873-c9e7-6de7-8885cbe0d235"], [data-w-id="d1330a21-0873-c9e7-6de7-8885cbe0d243"], [data-w-id="0fbc2ecd-bcd9-c98c-ceb1-4358be634aba"], [data-w-id="5c3ccffb-f4f4-792d-8d1c-56186ef4387f"], [data-w-id="2b71634d-62a5-6804-ed81-93adfb71f430"],  [data-w-id="57db01bf-f82a-da42-db82-23d1bd18cddd"], [data-w-id="383a75a4-b4d4-a896-3a00-9d9499a4481b"], [data-w-id="807c38d2-7cb6-6ee3-d52e-47391a9d4066"],  [data-w-id="64fa04ce-a2b3-b7ac-04d8-9d1edcf6f34e"], [data-w-id="e2c5286e-a00f-1d46-2601-a6f699a5e86d"], [data-w-id="95602a0d-6d5c-8d49-dcba-aca16e24f9c5"],
+       [data-w-id="e2c5286e-a00f-1d46-2601-a6f699a5e870"],
+[data-w-id="e2c5286e-a00f-1d46-2601-a6f699a5e873"],
+[data-w-id="e2c5286e-a00f-1d46-2601-a6f699a5e876"],
+[data-w-id="e2c5286e-a00f-1d46-2601-a6f699a5e879"],
+[data-w-id="e2c5286e-a00f-1d46-2601-a6f699a5e87c"],
+[data-w-id="95602a0d-6d5c-8d49-dcba-aca16e24f9b6"],
+[data-w-id="95602a0d-6d5c-8d49-dcba-aca16e24f9b9"],
+[data-w-id="95602a0d-6d5c-8d49-dcba-aca16e24f9bc"],
+[data-w-id="95602a0d-6d5c-8d49-dcba-aca16e24f9bf"],
+[data-w-id="95602a0d-6d5c-8d49-dcba-aca16e24f9c2"]
        {
         opacity: 0;}
   }
