@@ -381,11 +381,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
 }
 
-h1 *{
-  margin-top: 20px;
-  font-size: 38px;
-  line-height: 44px;
-}
+
 
 h2 {
   margin-top: 20px;
@@ -931,7 +927,7 @@ textarea.w-input, textarea.w-select {
         }
 
            
-        html.w-mod-js:not(.w-mod-ix) [data-w-id="d1085245-8966-6061-eb6a-8c720c45afd8"] {
+        html.w-mod-js:not(.w-mod-ix) [data-w-id="d1085245-8966-6061-eb6a-8c720c45afd8"], [data-w-id="d69d1e24-a52d-219a-e228-febcd08635e8"] {
           width: 10%;
         }
 
@@ -939,7 +935,7 @@ textarea.w-input, textarea.w-select {
           height: 0px;
         }
 
-            html.w-mod-js:not(.w-mod-ix) [data-w-id="8cc9179a-d379-20c3-5373-d895e8ba69a0"] {
+            html.w-mod-js:not(.w-mod-ix) [data-w-id="8cc9179a-d379-20c3-5373-d895e8ba69a0"],  [data-w-id="7fb9529f-2177-b1cc-5fca-0e0b4f8bf377"], [data-w-id="7fb9529f-2177-b1cc-5fca-0e0b4f8bf37f"],  [data-w-id="7fb9529f-2177-b1cc-5fca-0e0b4f8bf387"] {
           -webkit-transform: translate3d(0, 0, 0) scale3d(0.5, 0.5, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
           -moz-transform: translate3d(0, 0, 0) scale3d(0.5, 0.5, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
           -ms-transform: translate3d(0, 0, 0) scale3d(0.5, 0.5, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
@@ -1013,6 +1009,9 @@ textarea.w-input, textarea.w-select {
           html.w-mod-js:not(.w-mod-ix) [data-w-id="3e5d5146-010e-a464-200a-a32cf43db641"], [data-w-id="3e5d5146-010e-a464-200a-a32cf43db63a"], [data-w-id="3e5d5146-010e-a464-200a-a32cf43db633"]
           {
           opacity: 0;
+        }
+           html.w-mod-js:not(.w-mod-ix) [data-w-id="3e55c3a4-f78e-6186-f1f6-b576bc68f25d"] {
+          width: 0%;
         }
     }
 @media screen and (max-width: 767px) {

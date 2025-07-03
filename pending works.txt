@@ -6,6 +6,7 @@
 4-logo name
 5-video play check in link
 6-check css cdn
+7-AFTER FINESHED ALL WORED CHANGED BOOSARP EXALES FAQ
 
 ../../cdn.prod.website-files.com/6667d918c80d3c3ef174c92b/66b305c5f3e38cb268d6b357_32x32-2.png
 check this cdn
