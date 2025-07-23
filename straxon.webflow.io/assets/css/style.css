@@ -8236,7 +8236,7 @@ blockquote {
 .project-details-wrap {
   margin-bottom: 60px;
 }
-
+.w-dyn-list{width: 100%;}
 .projects-marquee-cards {
   text-align: center;
   background-image: url("../img/blog-post/blog-2.webp");
@@ -8281,10 +8281,12 @@ blockquote {
   position: relative;
 }
 
-.slides-cards {
+.pr_slider_box{display: inline-block;}
+.pr_slides-cards {
   padding-right: 30px;
+  float: left;
 }
-
+.swiper-slide{display: inline-block !important;}
 .projects-card-overlay {
   background-image: linear-gradient(#05061000, #0506108c);
   position: absolute;
@@ -10247,6 +10249,8 @@ blockquote {
 }
 
 @media screen and (max-width: 991px) {
+  .pr_slider_box{width:100%;float: left;}
+  .pr_slides-cards{width: 100%;}
   .humburger-wrapper {
     grid-column-gap: 7px;
     grid-row-gap: 7px;
@@ -11751,6 +11755,7 @@ blockquote {
 }
 
 @media screen and (max-width: 767px) {
+  .pr_slides-cards{padding: 0 15px;}
   blockquote {
     padding-left: 20px;
     padding-right: 20px;
