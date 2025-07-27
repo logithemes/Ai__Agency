@@ -266,7 +266,7 @@ html.w-mod-touch * {
 }
 
 .w-button {
-  color: #fff;
+  color: #fff !important;
   line-height: inherit;
   cursor: pointer;
   background-color: #3898ec;
