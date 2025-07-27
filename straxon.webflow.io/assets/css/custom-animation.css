@@ -123,7 +123,7 @@
          width: 0%;
      }
 
-     html.w-mod-js:not(.w-mod-ix) [data-w-id="3e5d5146-010e-a464-200a-a32cf43db4f7"] {
+     html.w-mod-js:not(.w-mod-ix) [data-w-id="3e5d5146-010e-a464-200a-a32cf43db4f7"], [data-w-id="d9e87047-245d-c1c5-4fea-9e0eeaa6fed0"], [data-w-id="d9e87047-245d-c1c5-4fea-9e0eeaa6fed5"] {
          opacity: 0;
      }
 
@@ -177,7 +177,7 @@
      [data-w-id="f019cb8c-bba9-2ecc-e433-96388ad8f0f8"],
      [data-w-id="de79bd16-231a-d7ca-5efa-7e633bae5b09"],
      [data-w-id="4dbca4dd-380b-28ab-ecf4-2aa58a0b002b"],
-     [data-w-id="8a205522-757e-0ae0-6e3f-8d7b4366add0"] {
+     [data-w-id="8a205522-757e-0ae0-6e3f-8d7b4366add0"], [data-w-id="d9e87047-245d-c1c5-4fea-9e0eeaa6fe98"] {
          width: 10%;
      }
 
