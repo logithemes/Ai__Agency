@@ -279,7 +279,7 @@ a.btn-navbar {
       <hr class="notop">
     </div>
         <h4>How to Change Logo</h4>
-        <img src="assets/img/logo-change.jpg" alt="">
+        <img src="assets/img/logo-change.png" alt="">
         <h4>How to Change Title</h4>
         <img src="assets/img/title-change.png" alt="">
         <h4>How to Change Favicon</h4>
@@ -287,14 +287,11 @@ a.btn-navbar {
         <h4>How to Change Preloader</h4>
         <img src="assets/img/preloader-change.png" alt="">
         
-        <h4>How to Change Hero Sliders Section Homepage</h4>
+        <h4>How to Change Page Banner</h4>
         <img src="assets/img/hero1.png" alt="">
 
         <h4>How to Change Section Title</h4>
         <img src="assets/img/section-title.png" alt="">
-
-        <h4>How to Change Page Banner</h4>
-        <img src="assets/img/page-banner.png" alt="">
 
         <h4>How to Change Services</h4>
         <img src="assets/img/single-service.png" alt="">
@@ -314,9 +311,6 @@ a.btn-navbar {
         <h4>How to Change Single-skill Item</h4>
         <img src="assets/img/single-skill.png" alt="">
 
-        <h4>How to Change Sponsor Carousel Item</h4>
-        <img src="assets/img/sponsor-carousel.png" alt="">
-
         <h4>How to Change Mail Address with Your's - Open mail.php file and edit.</h4>        
         <img src="assets/img/mailphp.png" alt="">
         <img src="assets/img/mail-change.png" alt="">
@@ -327,9 +321,6 @@ a.btn-navbar {
         <h4>How to Change Copyright</h4>
         <img src="assets/img/copyright.png" alt="">
 
-
-	<h3 id="cssFiles"><strong>SCSS Structure</strong></h3>
-  <img src="assets/img/scss.png" alt="">
 
   <h4 id="cssFiles"><strong>CSS Structure</strong></h4>
 
@@ -364,178 +355,63 @@ a.btn-navbar {
   /* ----------------------------------
   Hero Section - Styles
 ------------------------------------ */
-.hero-1 {
-    position: relative;
-    .arry-button{
-        position: absolute;
-        top: 50%;
-        right: 19%;
-        transform: translate(-50%,-50%);
-        z-index: 99;
-        display: grid;
-        gap: 15px;
-        @include breakpoint(max-xl){
-            display: none;
-        }
-        .arry-prev{
-            width: 55px;
-            height: 55px;
-            line-height: 50px;
-            border-radius: 50%;
-            background-color: $white;
-            i{
-                font-size: 16px;
-                font-weight: 400;
-                color: #191919;
-            }
-        }
-        .arry-next{
-            width: 55px;
-            height: 55px;
-            line-height: 50px;
-            border-radius: 50%;
-            background-color: transparent;
-            border: 1px solid #ffffff33;
-            i{
-                font-size: 16px;
-                font-weight: 400;
-                color: $white;
-            }
-        }
-    }
-    .arrow-shape{
-        position: absolute;
-        bottom: 0;
-        right: 60px;
-        z-index: 99;
-        @include breakpoint(max-xl){
-            display: none;
-        }
-    }
-    .arrow-shape-2{
-        position: absolute;
-        bottom: 0;
-        right: 0;
-        z-index: 9;
-        @include breakpoint(max-xl){
-            display: none;
-        }
-    }
-    .slide-bg{
-        position: relative;
-        padding: 160px 0;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-
-        &::before{
-            position: absolute;
-            width: 100%;
-            left: 0;
-            top: 0;
-            height: 100%;
-            content: "";
-            background: #000;
-            z-index: 2;
-            opacity: .6;
-        }
-        @include breakpoint(max-xl){
-            padding: 130px 0;
-        }
-        @include breakpoint(max-lg){
-            padding: 100px 0;
-        }
-        @include breakpoint(max-md){
-            padding: 80px 0;
-        }
-
-        .hero-content{
-            position: relative;
-            z-index: 9;
-            @include breakpoint(max-sm){
-                text-align: center;
-            }
-            h1{
-                color: $white;
-                text-transform: initial;
-                @include breakpoint(max-sm){
-                    font-size: 44px;
-                }
-            }
-            h3{
-                color: $white;
-                margin-top: 20px;
-                display: block;
-                border-left: 3px solid $white;
-                padding-left: 20px;
-                @include breakpoint(max-sm){
-                    padding-left: 0;
-                    border: none;
-                }
-            }
-            .hero-button{
-                margin-top: 50px;
-                @include flex;
-                gap: 50px;
-                @include breakpoint(max-xl){
-                    gap: 30px;
-                }
-                @include breakpoint(max-lg){
-                    flex-wrap: wrap;
-                    margin-top: 40px;
-                }
-                @include breakpoint(max-sm){
-                    justify-content: center;
-                }
-               .video-play-btn{
-                  .play-video{
-                     border-radius: 50%;
-                     width: 90px;
-                     height: 90px;
-                     background-color: $white;
-                     color: $theme-color;
-                     line-height: 90px;
-                     text-align: center;
-                     display: inline-block;
-                     margin: 0px auto;
-                     font-size: 18px;
-                     @include breakpoint(max-lg){
-                        width: 80px;
-                        height: 80px;
-                        line-height: 80px;
-                    }
-                    @include breakpoint(max-sm){
-                        width: 70px;
-                        height: 70px;
-                        line-height: 70px;
-                    }
-                  } 
-                  span{
-                    font-size: 18px;
-                    color: $white;
-                    font-weight: 700;
-                    text-decoration-line: underline;
-                    @include breakpoint(max-lg){
-                        font-size: 16px;
-                    }
-                    @include breakpoint(max-sm){
-                        font-size: 14px;
-                    }
-                  }
-               }
-            }
-        }
-    }
+.girl-image-wrapper {
+  position: absolute;
+  inset: 0% auto auto 0%;
 }
+
+.home-shape-background {
+  background-image: radial-gradient(circle at 77% 54%, #b460f126, #b460f100 25%), url("../img/background/home-shape-bg.webp");
+  background-position: 0 0, 100% 47%;
+  background-repeat: repeat, no-repeat;
+  background-size: auto, 60%;
+}
+
+.girl-image-glow {
+  background-image: radial-gradient(circle, #ce345952 8%, #f4497200 55%);
+  min-width: 568.01px;
+  min-height: 568.01px;
+  position: absolute;
+  inset: 0% 0% 0% -56%;
+}
+
+.home-one-hero-text {
+  z-index: 10;
+  text-align: center;
+  justify-content: flex-start;
+  align-items: center;
+  max-width: 850px;
+  position: relative;
+}
+
+.home-one-hero-main {
+  text-align: center;
+  flex-flow: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 60px;
+  display: flex;
+  position: relative;
+}
+
+.home-one-work-main {
+  justify-content: flex-start;
+  align-items: center;
+}
+.home-one-hero {
+    padding-top: 120px;
+}
+.home-one-hero-description {
+    margin-bottom: 25px;
+}
+.home-one-hero-text {
+    max-width: 90%;
+}
+
 
 
 </pre>
-<br>
-  <h4>Change section padding CSS - find and change it on style.css or _variable.scss file from scss folder</h4>
-<pre>
-.section-padding {
-    padding: 120px 0px;
-}
+
 </pre>
 
 
@@ -545,15 +421,14 @@ a.btn-navbar {
 		<p>Change The Carousel & Others with your's choice</p>
 		
 		<pre>
-            function loader() {
-                $(window).on('load', function() {
-                    // Animate loader off screen
-                    $(".preloader").addClass('loaded');                    
-                    $(".preloader").delay(600).fadeOut();                       
-                });
-            }
+          window.addEventListener("load", () => {
+          setTimeout(() => {
+          preloader.style.cssText = "transition:opacity 1s;opacity:0";
+          setTimeout(() => preloader.remove(), 500);
+          }, 500);
+          });
         
-            loader();
+           
 
             // Hero Slider Start <<//
             var sliderActive1 = ".hero-slider";

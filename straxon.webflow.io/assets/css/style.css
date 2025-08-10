@@ -2521,6 +2521,16 @@ blockquote {
   position: relative;
 }
 
+.home-one-hero-main {
+  text-align: center;
+  flex-flow: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 60px;
+  display: flex;
+  position: relative;
+}
+
 .home-one-work-main {
   justify-content: flex-start;
   align-items: center;
@@ -2620,15 +2630,6 @@ blockquote {
   overflow: hidden;
 }
 
-.home-one-hero-main {
-  text-align: center;
-  flex-flow: column;
-  justify-content: flex-start;
-  align-items: center;
-  padding-top: 60px;
-  display: flex;
-  position: relative;
-}
 
 .home-popup-video-heading {
   grid-column-gap: 30px;
