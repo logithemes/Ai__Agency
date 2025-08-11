@@ -37,67 +37,45 @@
       }(window, document);
     </script>
    <link href="./assets/img/favicon.png" rel="shortcut icon" type="image/x-icon" />
-   <style>
-   #preloader {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: #222;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: opacity 0.5s ease;
-    z-index: 9999;
-  }
-  #preloader.hidden {
-    opacity: 0;
-    pointer-events: none;
-  }
-  #loader {
-    position: relative;
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    border: 3px solid transparent;
-    border-top-color: #9370DB;
-    animation: spin 2s linear infinite;
-  }
-  #loader:before {
-    content: "";
-    position: absolute;
-    top: 5px;
-    left: 5px;
-    right: 5px;
-    bottom: 5px;
-    border-radius: 50%;
-    border: 3px solid transparent;
-    border-top-color: #BA55D3;
-    animation: spin 3s linear infinite;
-  }
-  #loader:after {
-    content: "";
-    position: absolute;
-    top: 15px;
-    left: 15px;
-    right: 15px;
-    bottom: 15px;
-    border-radius: 50%;
-    border: 3px solid transparent;
-    border-top-color: #FF00FF;
-    animation: spin 1.5s linear infinite;
-  }
-  @keyframes spin {
-    0%   { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-  }
-   </style>
   </head>
   <body>
-    <div id="preloader">
-  <div id="loader"></div>
-</div>
+
+    <!-- ===================================================
+				Loading Transition
+			==================================================== -->
+      <section>
+				<div id="preloader">
+					<div id="ctn_preloader" class="ctn_preloader">
+						<div class="animation-preloader">
+							<div class="spinner"></div>
+							<div class="txt-loading"> 
+								<span data-text-preloader="S" class="letters-loading">
+									S
+								</span>
+								<span data-text-preloader="T" class="letters-loading">
+									T
+								</span>
+								<span data-text-preloader="Y" class="letters-loading">
+									Y
+								</span>
+								<span data-text-preloader="N" class="letters-loading">
+									N
+								</span>
+								<span data-text-preloader="E" class="letters-loading">
+									E
+								</span>
+                	<span data-text-preloader="R" class="letters-loading">
+									R
+								</span>
+                	<span data-text-preloader="O" class="letters-loading">
+									O
+								</span>
+							</div>
+						</div>	
+					</div>
+				</div>
+			</section>
+
     <div class="background-glow position-relative">
       <div data-w-id="6b3266d6-f149-f514-045f-98f08171e673" class="navbar">
         <div data-w-id="6b3266d6-f149-f514-045f-98f08171e674" data-animation="default" data-collapse="medium" data-duration="400" data-easing="linear" data-easing2="linear" role="banner" class="navbar-one w-nav w-100">
@@ -1132,5 +1110,4 @@
     <script src="assets/js/wow.js"></script>
     <script src="assets/js/swiper-bundle.min.js"></script>
   </body>
-  
 </html>
