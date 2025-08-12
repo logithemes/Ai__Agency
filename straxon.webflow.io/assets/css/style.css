@@ -22,6 +22,10 @@
 21. footer 
 /**********************************************/
 
+/*----------------------------------------*/
+/*  01. theme defult css start
+/*----------------------------------------*/
+
 html {
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
@@ -606,6 +610,10 @@ fieldset {
   margin: 0;
   padding: 0;
 }
+
+/*---------------------------------
+	form css start 
+---------------------------------*/
 
 button, [type="button"], [type="reset"] {
   cursor: pointer;
@@ -13490,4 +13498,3 @@ blockquote {
     grid-column: span 1 / span 1;
   }
 }
-.dropdown-list.mega-menu{opacity: 1 !important;display: block !important;}
