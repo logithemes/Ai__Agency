@@ -9544,10 +9544,6 @@ blockquote {
   padding-bottom: 20px;
 }
 
-.header-footer-train.train-bottom {
-  position: absolute;
-  transform: translate(0, 100%);
-}
 
 .image-full-width {
   width: 100%;
@@ -9558,6 +9554,12 @@ blockquote {
   padding-top: 90px;
   padding-bottom: 90px;
 }
+
+.figma-overlay {
+    z-index: 2;
+    background-image: linear-gradient(124deg, #eb457d, #b85fdd54);
+    position: absolute;
+    inset: 0%;}
 
 .features-main-box {
   grid-column-gap: 30px;

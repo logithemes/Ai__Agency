@@ -1,15 +1,9 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 28.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 124 25" style="enable-background:new 0 0 124 25;" xml:space="preserve">
-<style type="text/css">
-	.st0{fill:#FFFFFF;}
-	.st1{font-family:'BebasNeue-Regular';}
-	.st2{font-size:26.4652px;}
-</style>
-<g>
-	<path class="st0" d="M21.53,23.86v-6.98l-6.04,3.49l-2.05-3.55l6.04-3.52l-6.04-3.49l2.05-3.55l6.04,3.49V2.75h4.1v7.01l6.04-3.49
-		l2.05,3.55l-6.04,3.49l6.04,3.52l-2.05,3.55l-6.04-3.49v6.98H21.53z"/>
-</g>
-<text transform="matrix(1 0 0 1 38.2146 21.9033)" class="st0 st1 st2">Stynero</text>
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 124 25" width="124" height="25">
+	<title>Stynero white</title>
+	<defs>
+		<image  width="115" height="22" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHMAAAAWCAMAAADEpFM9AAAAAXNSR0IB2cksfwAAAh9QTFRFAAAA////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////5JjstAAAALV0Uk5TAB5AKHn/oXp4oByKAQk5Ahg2Czz8lRIIfvVmNbSrIMqfyBm7rv5wjLnrcx2p7t6ICgPW7WxW4Q30yeQMFV52PgRh+OYyWdWtwsFYY5ErLpzq1wUHRSL38Ggjll3xdNDjMxuSKoc7usRpSJtHhv0UqrdKwPqnqOwRL40T09EfsCnplNr2Ghe9pPIlmnWykI7Y87EGZH/d4oGA+TEOcrVNe7znS5hB3LiJD7PFVMz7ol/URL8hWoeSM9oAAAO8SURBVHic7ZV7TNNXFMe/RzCVCqvRmi3DRCzTYDRG5xofmWgF9yRqqFgfxAdIZSpvRMGhs2wogQXttEFAq1HUBFN8oPHRIQq+oqYkjYoOGYHBUBojPolDt/u7v/YHNDQmC+Gf7SS/e8+5r8/vnHMfBKcQse8t+kPIpXgLzDf/M/uWKesU0jiIFd6vmSIneuHs9Hs1+PkH7X3GGkL0RGQOe6Ygeuzy80Mix/AWPsSfHrFS6U2NGNkiTfRvxt+dgjLqD6VPfSDrqxOs0Q2jHoBZTlHdR9BDrn3S4dP0nNXjiGqBsUQ1oElkBybQWztnqskGBMlvsEFe6tuYTE/roKYr3ZjDB7YoA6uBGdcx7TKnTL/UK7PL+ExWCQ1ViUYwWWlOJVc1VAGEkJUbw1pZ4dOJOX/aEHwNX5wWGsPO4atTrJ57tf2bE5gYcDqMLHxhTZutiymXUsH8lL2Alppv4fOLEVQWTlSu8S2Fxpd857Ve7hl2Hb20sGrZkSUHWOWnpRpbdyaiDgYE7111ACuKAL05qqIhusAzE/iuGDGmr63Q73au4sUiOnTJ3aouYmzjSCNXEkxYS7ZKqUNiTnlWF5efbEzI4wsnPjiTRDmIK/DE3PgzUikXaT/xVvlf2MDPSiZtc40codvu1LYQG7WJHtdccWMKqczM2kzf84XTZe8MX5aLTIaJ4yOUGUII+A8MXWDG9OoBMKSLy2QZ1OL53HjmnrPl1jHJsZwWu+C/Iu1Iz9iCb+Ps9YKmN29Llb1TzNvbcw8pHHDtWybbU0IvISdZNPLTcgVmfKdXgUTKqy6VdOMWg7W+Fvnr3JgsXDt+tbiY2pCErRncT+aakTvxQyv3k8su0qNoDRJzRXN21STCrMgLFnSTXaamJ93MxR8bw8rcmOGnUBDNtaCHeQlQ12DPJod7PkXDrAfrwNg6cRFEHEcR+a/OgpsU0zJ2JCJ+GxMpWJ/a9y/1yDy8PN0ArN63w3dV78zwkMTN9WZhcjSP5c5UTCXmB1NnTJnAOIkqh0Ho2BMFHE1ypN2wQnutDR81eWQGNh7SAYVrmdo7E4dWYmUh4lXrUXi+Iut1KkJbCYPfILZYdUe8b+UxJqBkoTCnNKMBuvm0CEr1yfcwYdG5mE4Jsks/MP4+Fpag7BfneQwdzVI+MWDx3a1d70rMtxEzxdvoBGlZGTugfT/ex/yxosojc0iKIck7G5kdZ2uha/NiVxsjZWQLo6R3RRG52zXTLzm/5Pd493T/a1GpbvLI/4febFHK2bti6ugX5j8xAIMKXLc/lQAAAABJRU5ErkJggg=="/>
+	</defs>
+	<style>
+	</style>
+	<use id="" href="#img1" x="6" y="1"/>
 </svg>
