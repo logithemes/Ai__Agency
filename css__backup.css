@@ -1479,7 +1479,7 @@ textarea.w-input, textarea.w-select {
 /*---------------------------------
 	lightbox backdrop css start 
 ---------------------------------*/
-/* .w-lightbox-backdrop {
+.w-lightbox-backdrop {
   cursor: auto;
   letter-spacing: normal;
   text-indent: 0;
@@ -1619,9 +1619,9 @@ textarea.w-input, textarea.w-select {
   background-size: 18px;
   height: 2.6em;
   right: 0;
-} */
+}
 
-/* .w-lightbox-strip {
+.w-lightbox-strip {
   white-space: nowrap;
   padding: 0 1vh;
   line-height: 0;
@@ -1668,9 +1668,9 @@ textarea.w-input, textarea.w-select {
   height: 100%;
   left: 50%;
   transform: translate(-50%);
-} */
+}
 
-/* .w-lightbox-spinner {
+.w-lightbox-spinner {
   box-sizing: border-box;
   border: 5px solid #0006;
   border-radius: 50%;
@@ -1699,7 +1699,7 @@ textarea.w-input, textarea.w-select {
 
 .w-lightbox-noscroll {
   overflow: hidden;
-} */
+}
 
 @media (min-width: 768px) {
   .w-lightbox-content {
@@ -1739,11 +1739,11 @@ textarea.w-input, textarea.w-select {
   }
 }
 
-/* .w-lightbox-inactive, .w-lightbox-inactive:hover {
+.w-lightbox-inactive, .w-lightbox-inactive:hover {
   opacity: 0;
-} */
+}
 
-/* .w-richtext:before, .w-richtext:after {
+.w-richtext:before, .w-richtext:after {
   content: " ";
   grid-area: 1 / 1 / 2 / 2;
   display: table;
@@ -1867,11 +1867,8 @@ textarea.w-input, textarea.w-select {
   float: right;
   clear: none;
   margin-left: 15px;
-} */
+}
 
-/*---------------------------------
-	nav css start 
----------------------------------*/
 .w-nav {
   z-index: 1000;
   background: #ddd;
@@ -2034,9 +2031,7 @@ textarea.w-input, textarea.w-select {
     display: block;
   }
 }
-/*---------------------------------
-	Tabs css start 
----------------------------------*/
+
 .w-tabs {
   position: relative;
 }
