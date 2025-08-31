@@ -218,6 +218,13 @@ td, th {
 }
 
 .dropdown-toggle::after{display: none;}
+.color {
+  opacity: .05;
+  color: var(--body-font-color);
+  font-size: 200px;
+  font-weight: 700;
+  line-height: 210px;
+}
 
 @font-face {
   font-family: webflow-icons;
@@ -5576,6 +5583,19 @@ textarea.w-input, textarea.w-select {
   display: flex;
   position: relative;
 }
+.clients-hover {
+  background-image: linear-gradient(110deg, var(--pink), var(--violet));
+  opacity: 0;
+  padding: 1px;
+  position: absolute;
+  inset: 0%;
+  overflow: hidden;
+}
+
+.client-logo {
+  z-index: 2;
+  position: relative;
+}
 /*---------------------------------
   skills css start 
 ---------------------------------*/
@@ -8370,7 +8390,44 @@ textarea.w-input, textarea.w-select {
   justify-content: center;
   align-items: center;
 }
+.projects-block {
+  display: block;
+}
 
+.projects-image-wrapper {
+  aspect-ratio: 615 / 520;
+  border-radius: 30px;
+  position: relative;
+  overflow: hidden;
+}
+
+.projects-image-effect {
+  background-image: url("../img/feature/fea-2.webp");
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  inset: 0%;
+}
+
+.projects-image-effect.index-one {
+  z-index: 0;
+}
+
+.projects-image-effect.index-two {
+  z-index: 1;
+}
+
+.projects-image-effect.index-three {
+  z-index: 2;
+}
+
+.projects-image-effect.index-four {
+  z-index: 3;
+}
+/*---------------------------------
+    service two css start 
+---------------------------------*/
 .connections-box {
   grid-column-gap: 30px;
   grid-row-gap: 30px;
@@ -8512,9 +8569,9 @@ textarea.w-input, textarea.w-select {
   justify-content: space-between;
   align-items: center;
 }
-
-
-
+/*---------------------------------
+    service three css start 
+---------------------------------*/
 .service-three-options-main {
   grid-column-gap: 0px;
   grid-row-gap: 0px;
@@ -8780,7 +8837,9 @@ textarea.w-input, textarea.w-select {
   justify-content: flex-start;
   align-items: center;
 }
-
+/*---------------------------------
+    service one css start 
+---------------------------------*/
 .service-one-top {
   background-image: radial-gradient(circle at 19% 77%, #f4497233, #f4497200 21%), radial-gradient(circle at 71% 44%, #b460f13d, #b460f100 22%);
   position: relative;
@@ -8834,19 +8893,19 @@ textarea.w-input, textarea.w-select {
   position: absolute;
   bottom: 0;
 }
-
 .service-one-video-text-wrap {
   grid-column-gap: 30px;
   grid-row-gap: 30px;
   justify-content: flex-start;
   align-items: center;
 }
-
+/*---------------------------------
+    awards css start 
+---------------------------------*/
 .service-one-awards {
   padding-top: 0;
   padding-bottom: 90px;
 }
-
 .service-one-awards-main {
   grid-column-gap: 40px;
   grid-row-gap: 40px;
@@ -8922,9 +8981,6 @@ textarea.w-input, textarea.w-select {
   position: sticky;
   top: 140px;
 }
-
-
-
 .services-cards-wrapper {
   grid-column-gap: 80px;
   grid-row-gap: 80px;
@@ -9010,6 +9066,9 @@ textarea.w-input, textarea.w-select {
 .service-one-hero-image {
   display: none;
 }
+/*---------------------------------
+    tab css start 
+---------------------------------*/
 
 .tabs {
   flex-flow: row-reverse;
@@ -9089,14 +9148,6 @@ textarea.w-input, textarea.w-select {
   align-items: center;
 }
 
-.color {
-  opacity: .05;
-  color: var(--body-font-color);
-  font-size: 200px;
-  font-weight: 700;
-  line-height: 210px;
-}
-
 .style-guide-color-text-block {
   flex-direction: column;
   justify-content: center;
@@ -9111,6 +9162,9 @@ textarea.w-input, textarea.w-select {
   margin-bottom: 1.8rem;
 }
 
+/*---------------------------------
+    screenshots css start 
+---------------------------------*/
 .screenshots {
   padding-bottom: 11px;
 }
@@ -9258,7 +9312,6 @@ textarea.w-input, textarea.w-select {
   align-items: center;
 }
 
-
 .landing-footer {
   background-color: #212231;
   padding-top: 90px;
@@ -9309,7 +9362,9 @@ textarea.w-input, textarea.w-select {
   padding-top: 90px;
   padding-bottom: 90px;
 }
-
+/*---------------------------------
+    landing header footer css start 
+---------------------------------*/
 .header-footer-container {
   max-width: 880px;
   padding-left: 15px;
@@ -9374,16 +9429,14 @@ textarea.w-input, textarea.w-select {
   grid-row-gap: 20px;
   padding-bottom: 20px;
 }
-
-
+/*---------------------------------
+    landing features main css start 
+---------------------------------*/
 .image-full-width {
   width: 100%;
   height: auto;
 }
-
-
-
-.figma-overlay {
+.box-overlay {
     z-index: 2;
     background-image: linear-gradient(124deg, #eb457d, #b85fdd54);
     position: absolute;
@@ -9449,6 +9502,9 @@ textarea.w-input, textarea.w-select {
   padding-right: 10px;
 }
 
+/*---------------------------------
+    landing hero css start 
+---------------------------------*/
 .landing-hero {
   background-image: radial-gradient(circle at 32%, #b460f14a, #b460f100 16%), radial-gradient(circle at 64% 23%, #f4497238, #f4497200 17%), radial-gradient(circle at 94% 33%, #b460f126, #b460f100 16%), radial-gradient(circle at 11% 16%, #f4497233, #f4497200 13%);
   padding: 220px 15px 80px;
@@ -9551,6 +9607,9 @@ textarea.w-input, textarea.w-select {
   inset: auto 170px 170px auto;
 }
 
+/*---------------------------------
+    landing cards img css start 
+---------------------------------*/
 .landing-cards-image-wrap {
   cursor: none;
   border-radius: 20px;
@@ -9572,69 +9631,13 @@ textarea.w-input, textarea.w-select {
 .full-width {
   width: 100%;
 }
-
-
 .site-logo {
   margin-bottom: 25px;
   padding-left: 0;
 }
 
-
-
 .mobile-icon {
   margin-top: 8px;
-}
-
-.projects-block {
-  display: block;
-}
-
-.projects-image-wrapper {
-  aspect-ratio: 615 / 520;
-  border-radius: 30px;
-  position: relative;
-  overflow: hidden;
-}
-
-
-
-.projects-image-effect {
-  background-image: url("../img/feature/fea-2.webp");
-  background-position: 50%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: absolute;
-  inset: 0%;
-}
-
-.projects-image-effect.index-one {
-  z-index: 0;
-}
-
-.projects-image-effect.index-two {
-  z-index: 1;
-}
-
-.projects-image-effect.index-three {
-  z-index: 2;
-}
-
-.projects-image-effect.index-four {
-  z-index: 3;
-}
-
-.clients-hover {
-  background-image: linear-gradient(110deg, var(--pink), var(--violet));
-  opacity: 0;
-  padding: 1px;
-  position: absolute;
-  inset: 0%;
-  overflow: hidden;
-}
-
-.client-logo {
-  z-index: 2;
-  position: relative;
 }
 
 .blog-two-border {
