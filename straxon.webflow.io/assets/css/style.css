@@ -5762,9 +5762,7 @@ social media css Start
   flex: 1;
   max-width: 350px;
 }
-.home-one-service-cards-icon-overlay, .home-one-service-cards-icon-overlay{transition: all 0.3s ease-in;}
-.about-one-opitons:hover .home-one-service-cards-icon-overlay{transform: scale(1);transition: all 0.2s ease-in;}
-.about-three-testimonial-points:hover .home-one-service-cards-icon-overlay{transform: scale(1);transition: all 0.3s ease-in;}
+.home-one-service-cards-icon-overlay{transition: all 0.3s ease-in;}
 .about-one-mission {
   padding-top: 90px;
 }
@@ -7945,14 +7943,15 @@ social media css Start
   overflow: hidden;
 }
 .projects-marquee-cards span{    background-image: linear-gradient(to bottom, #fff 0%, #fff 98%);
-    background-size: 0 2px;
+    background-size: 0 1.5px;
     background-repeat: no-repeat;
     background-position: left 100%;
     transition: all 0.4s;}
-    .projects-marquee-cards:hover span{    background-size: 100% 1px;}
+    .projects-marquee-cards:hover span{    background-size: 100% 1.5px;}
 .projects-marquee-train {
   flex: none;
 }
+.hover-box:hover .home-one-service-cards-icon-overlay{transform: scale(1);transition: all 0.3s ease-in;}
 
 .task-wrapper {
   grid-column-gap: 30px;
@@ -8024,7 +8023,8 @@ social media css Start
   padding-bottom: 90px;
   overflow: hidden;
 }
-
+.projects-marquee .slick-list{overflow: unset;}
+.projects-marquee .slick-prev, .projects-marquee .slick-next{display: none;}
 .small-gradiant-border {
   background-image: linear-gradient(90deg, #f04b72, #a675fa);
   width: 80px;
