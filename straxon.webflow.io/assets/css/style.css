@@ -3219,7 +3219,7 @@ social media css Start
 }
 .button-two:hover .button-two-arrow{transform: translateX(5px);}
 .button-two-arrow {
-  margin-left: -3px;transition: all 0.1s ease;
+  margin-left: -3px;transition: all 0.3s ease;
 }
 .button-two-icon-wrapper {
   justify-content: flex-start;

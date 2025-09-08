@@ -1,36 +1,3 @@
-
-
-1-home two slide img
-2-checking all cdn change to local
-3-checking url
-4-logo name
-5-video play check in link
-6-check css cdn
-7-AFTER FINESHED ALL WORED CHANGED BOOSARP EXALES FAQ
-
-../../cdn.prod.website-files.com/6667d918c80d3c3ef174c92b/66b305c5f3e38cb268d6b357_32x32-2.png
-check this cdn
-
-<link href="../../cdn.prod.website-files.com/6667d918c80d3c3ef174c92b/66b305d3f3e38cb268d6b846_256x256.png" rel="apple-touch-icon" />
-
-
- <script type="application/json" class="w-json">
-                  {
-                    "items": [{
-                      "url": "https://www.youtube.com/watch?v=k2tvLgrLmac&t=102s",
-                      "originalUrl": "https://www.youtube.com/watch?v=k2tvLgrLmac&t=102s",
-                      "width": 940,
-                      "height": 528,
-                      "thumbnailUrl": "https://i.ytimg.com/vi/k2tvLgrLmac/hqdefault.jpg",
-                      "html": " < iframe class = \"embedly-embed\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2Fk2tvLgrLmac%3Fstart%3D102%26feature%3Doembed%26start%3D102&display_name=YouTube&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3Dk2tvLgrLmac&image=https%3A%2F%2Fi.ytimg.com%2Fvi%2Fk2tvLgrLmac%2Fhqdefault.jpg&key=96f1f04c5f4143bcb0f2e68c87d65feb&type=text%2Fhtml&schema=youtube\" width=\"940\" height=\"528\" scrolling=\"no\" title=\"YouTube embed\" frameborder=\"0\" allow=\"autoplay; fullscreen; encrypted-media; picture-in-picture;\" allowfullscreen=\"true\"></iframe>",
-                      "type": "video"
-                    }],
-                    "group": ""
-                  }
-                </script>
-
-
- 
-
-
-
+FINALLY WE DID ADDED SOME HOVER EFFECTS
+W3C SCHOOLS VALADITOIN CHECKED 
+1-401 HTML 
