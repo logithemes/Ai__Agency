@@ -2390,7 +2390,7 @@ social media css Start
   padding-right: 80px;
   display: flex;
 }
-
+.slick-prev, .slick-next{display: none !important;}
 .slider-icon-rotated {
   transform: rotate(180deg);
 }
@@ -3921,8 +3921,19 @@ social media css Start
 
 .navbar {
   z-index: 999;
-  position: fixed;
+  position: absolute;
   inset: 0% 0% auto;
+}
+.navbar.header-sticky{
+  position: fixed;
+  animation: sticky-menu;
+    animation-duration: 0.8s;
+    
+}
+.header-sticky .navbar-one{border-bottom:0;}
+@keyframes sticky-menu {
+ from { top: -50px;}
+to { top: 0; }
 }
 
 .border-wrapper {
@@ -3984,7 +3995,9 @@ social media css Start
   padding: 7px 60px 7px 20px;
   font-size: 15px;
   transition: transform .2s, color .2s;
+  position: relative;
 }
+
 
 .dropdown-link:hover {
   color: var(--heading-color);
@@ -4031,6 +4044,7 @@ social media css Start
   position: static;
   overflow: hidden;
 }
+
 .dropdown-icon {
   margin-top: 5px;
 }
@@ -4567,7 +4581,7 @@ social media css Start
 .heading-three.blog-two-name {
   max-width: 540px;
 }
-
+.blog-two-name span, .blog-three-line span{line-height: 45px;}
 /*---------------------------------
     textarea css start 
 ---------------------------------*/
@@ -7942,12 +7956,13 @@ social media css Start
   position: relative;
   overflow: hidden;
 }
-.projects-marquee-cards span{    background-image: linear-gradient(to bottom, #fff 0%, #fff 98%);
+.hover-line .hover-line-bottom{    background-image: linear-gradient(to bottom, #fff 0%, #fff 98%);
     background-size: 0 1.5px;
     background-repeat: no-repeat;
     background-position: left 100%;
     transition: all 0.4s;}
-    .projects-marquee-cards:hover span{    background-size: 100% 1.5px;}
+    .hover-line:hover .hover-line-bottom{    background-size: 100% 1.5px;}
+
 .projects-marquee-train {
   flex: none;
 }
@@ -9828,6 +9843,7 @@ social media css Start
 }
 
 @media screen and (max-width: 991px) {
+  .blog-two-name span, .blog-three-line span{line-height: 33px;}
   .pr_slider_box{width:100%;float: left;}
   .pr_slides-cards{width: 100%;}
   .humburger-wrapper {
