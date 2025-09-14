@@ -1738,6 +1738,7 @@ social media css Start
   color: #333;
   text-decoration: none;
   position: relative;
+  cursor: pointer;
 }
 
 .w-nav-link {
