@@ -77,6 +77,7 @@ summary {
   display: block;
 }
 
+
 audio,
 canvas,
 progress,
@@ -557,6 +558,7 @@ ol {
   width: 100%;
   z-index: 999999;
   background: #050610;
+  
 }
 
 .ctn_preloader .animation-preloader {
@@ -4797,6 +4799,7 @@ social media css Start
 }
 .heading-three.blog-two-name {
   max-width: 540px;
+  line-height: 48px;
 }
 .blog-two-name span,
 .blog-three-line span {
@@ -10165,7 +10168,7 @@ social media css Start
     line-height: 26px;
   }
   .blog-two-name span,
-  .blog-three-line span {
+  .blog-three-line span, .heading-three.blog-two-name {
     line-height: 33px;
   }
   .pr_slider_box {
