@@ -33,6 +33,13 @@
 /**
   @color declaration
   */
+
+/*-------------------------------------------------------*/
+/* Google font
+/*-------------------------------------------------------*/
+  @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
 :root {
   --body-color: #050610;
   --body-font-color: #aeb2d7;
@@ -1104,6 +1111,7 @@ textarea.w-select {
   padding-right: 0;
 }
 
+.w-col-0{width: 0;}
 .w-col-1 {
   width: 8.33333%;
 }
@@ -1532,6 +1540,18 @@ social media css Start
 
 .w-widget-twitter-count-shim.w--vertical.w--large {
   width: 76px;
+}
+.base-transform {
+  -webkit-transform: translate3d(0%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+  -moz-transform: translate3d(0%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+  -ms-transform: translate3d(0%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+  transform: translate3d(0%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+}
+.counter-transform {
+  -webkit-transform: translate3d(0, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+  -moz-transform:    translate3d(0, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+  -ms-transform:     translate3d(0, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+  transform:         translate3d(0, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
 }
 
 /*---------------------------------
@@ -4815,7 +4835,7 @@ social media css Start
   margin-top: 0;
   margin-left: -30px;
 }
-
+.checkbox-tick{opacity: 0;z-index: -1;}
 .checkbox.w--redirected-checked {
   background-color: #3898ec00;
   background-image: url("../img/background/checkbox-redirected.svg"),
@@ -13251,7 +13271,7 @@ social media css Start
   .features-main-box {
     grid-template-columns: 1fr;
   }
-
+.abt-three-testi-img{width: 90%;}
   .landing-hero-details {
     grid-column-gap: 20px;
     grid-row-gap: 20px;

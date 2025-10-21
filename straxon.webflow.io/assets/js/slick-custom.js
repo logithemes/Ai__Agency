@@ -31,4 +31,16 @@
       ]
     });
 
+
+    // 401 
+    // Handle password page URL check
+if (/[?&]e=1(&|$)/.test(window.location.search)) {
+  $('.w-password-page.w-form-fail').css('display', 'block');
+}
+
+// $(function() {
+//   var $html = $('html');
+//   $html.addClass('w-mod-js');
+//   if ('ontouchstart' in window || (window.DocumentTouch && document instanceof DocumentTouch)) {$html.addClass('w-mod-touch');}});
+
   });

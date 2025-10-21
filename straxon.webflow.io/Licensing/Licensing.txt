@@ -1,0 +1,89 @@
+==================================================
+                   Licensing Information
+==================================================
+
+Theme Name: Stynero – AI & Digital Strategy Agency HTML Template
+Author: LogiThemes
+Version: 1.0
+License Type: GNU General Public License (GPL) v3
+==================================================
+
+
+=====================
+Credits and Sources
+=====================
+
+The following open-source files, frameworks, and resources were used in the creation of this template. 
+Each retains its respective license, and all have been used in accordance with their licensing terms.
+
+
+1. Bootstrap v5.0.2  
+   License: MIT License  
+   Source: https://getbootstrap.com/
+
+2. Animate.css  
+   License: MIT License  
+   Source: https://animate.style/
+
+3. WOW.js  
+   License: MIT License  
+   Source: https://wowjs.uk/ or https://github.com/matthieua/WOW
+
+4. Slick Carousel (slick.js)  
+   License: MIT License  
+   Source: https://kenwheeler.github.io/slick/
+
+5. Magnific Popup  
+   License: MIT License  
+   Source: https://dimsemenov.com/plugins/magnific-popup/
+
+6. Google Web Fonts  
+   License: Open Font License (OFL)  
+   Source: https://fonts.google.com/
+
+7. jQuery v3.5.1  
+   License: MIT License  
+   Source: https://jquery.com/
+
+8. Front-End Site Library  
+   Description: General helper scripts and responsive layout framework used for UI components.  
+   License: MIT License (custom code by LogiThemes)
+
+9. Freepik Images  
+   License: Free for personal and commercial use with attribution  
+   Source: https://www.freepik.com/  
+   Note: All demo images are for preview purposes only and are not included in the final downloadable package.
+
+
+=====================
+Author Information
+=====================
+
+Theme Developed by: LogiThemes  
+Email: support@logithemes.com (optional)
+© 2025 LogiThemes. All Rights Reserved.
+
+
+=====================
+Usage Notes
+=====================
+
+- This template is distributed under the GNU General Public License (GPL) v3.
+- You may modify or redistribute this template, provided that derivative works remain under the GPL license.
+- All third-party assets included retain their respective licenses.
+- Demo images from Freepik are used for preview purposes only and are not part of the distributed files.
+- Replace all placeholder/demo images before publishing your final product.
+
+
+===================
+DEMO IMAGES
+===================
+Images:
+- Freepik / Unsplash / Pexels images used in demo are for preview purposes only and are NOT included in the downloadable package.
+- Buyers should replace demo images with their own licensed images.
+
+
+
+==================================================
+End of Licensing.txt
+==================================================
