@@ -8564,13 +8564,25 @@ social media css Start
   grid-auto-columns: 1fr;
   display: grid;
 }
-
+.service-three-slider{transition: all 0.5s linear, transform 0.5s linear;
+  transform: translateX(-1030px);}
 .service-three-options-description {
   flex: 1;
   max-width: 489px;
   margin-bottom: 0;
 }
-
+.testi-top-img, .testi-bottom-img, .testi-img-translate, .testi-tp-img{
+  transform: translate3d(0px, 0%, 0px) 
+             scale3d(1, 1, 1) 
+             rotateX(0deg) 
+             rotateY(0deg) 
+             rotateZ(0deg) 
+             skew(0deg, 0deg);
+  transform-style: preserve-3d;
+}
+.testi-bottom-img{transform: translate3d(-30px, 30px, 0px);}
+.testi-img-translate{transform: translate3d(-60px, 30px, 0px);}
+.testi-tp-img{transform: translate3d(-130%, 130px, 0px);}
 .service-three-connection {
   padding-top: 80px;
   padding-bottom: 90px;
