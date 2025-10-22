@@ -33,23 +33,19 @@ Each retains its respective license, and all have been used in accordance with t
    License: MIT License  
    Source: https://kenwheeler.github.io/slick/
 
-5. Magnific Popup  
-   License: MIT License  
-   Source: https://dimsemenov.com/plugins/magnific-popup/
-
-6. Google Web Fonts  
+5. Google Web Fonts  
    License: Open Font License (OFL)  
    Source: https://fonts.google.com/
 
-7. jQuery v3.5.1  
+6. jQuery v3.7.1  
    License: MIT License  
    Source: https://jquery.com/
 
-8. Front-End Site Library  
+7. Front-End Site Library  
    Description: General helper scripts and responsive layout framework used for UI components.  
    License: MIT License (custom code by LogiThemes)
 
-9. Freepik Images  
+8. Freepik Images  
    License: Free for personal and commercial use with attribution  
    Source: https://www.freepik.com/  
    Note: All demo images are for preview purposes only and are not included in the final downloadable package.
