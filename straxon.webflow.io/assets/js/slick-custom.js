@@ -38,8 +38,27 @@ if (/[?&]e=1(&|$)/.test(window.location.search)) {
   $('.w-password-page.w-form-fail').css('display', 'block');
 }
 
+  // Initially show first tab
+  $('.home-two-faq-boxes').hide();
+  $('.home-two-faq-boxes-one').show();
+
+  $('.home-two-options').on('click', function(){
+    let index = $(this).index();
+
+    // Remove and add active class
+    $('.home-two-options').removeClass('act');
+    $(this).addClass('act');
+
+    // Animate accordion-line
+    $('.accordion-line').css('width', '0');
+    $(this).find('.accordion-line').css('width', '100px');
+
+    // Show corresponding left content
+    $('.home-two-faq-boxes').hide().eq(index).fadeIn(400);
+  });
 
 
   });
 
-  
+
+ 

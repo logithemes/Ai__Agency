@@ -60075,7 +60075,7 @@ timm/lib/timm.js:
                                             duration: 500,
                                             target: {
                                                 useEventTarget: "SIBLINGS",
-                                                selector: ".home-one-work-text-container",
+                                                selector: ".home-one-work-text-container0",
                                                 selectorGuids: ["f0d46dca-eab7-236e-ceb8-23a2e946c45c"],
                                             },
                                             yValue: 0,
@@ -60093,7 +60093,7 @@ timm/lib/timm.js:
                                             duration: 500,
                                             target: {
                                                 useEventTarget: "SIBLINGS",
-                                                selector: ".home-one-work-text-container",
+                                                selector: ".home-one-work-text-container0",
                                                 selectorGuids: ["f0d46dca-eab7-236e-ceb8-23a2e946c45c"],
                                             },
                                             value: 1,
@@ -60114,7 +60114,7 @@ timm/lib/timm.js:
                                             duration: 500,
                                             target: {
                                                 useEventTarget: "SIBLINGS",
-                                                selector: ".home-one-work-text-container",
+                                                selector: ".home-one-work-text-container0",
                                                 selectorGuids: ["f0d46dca-eab7-236e-ceb8-23a2e946c45c"],
                                             },
                                             value: 0,
@@ -60135,7 +60135,7 @@ timm/lib/timm.js:
                                             duration: 500,
                                             target: {
                                                 useEventTarget: "SIBLINGS",
-                                                selector: ".home-one-work-text-container",
+                                                selector: ".home-one-work-text-container0",
                                                 selectorGuids: ["f0d46dca-eab7-236e-ceb8-23a2e946c45c"],
                                             },
                                             yValue: 150,
@@ -60306,7 +60306,7 @@ timm/lib/timm.js:
                                     easing: "",
                                     duration: 500,
                                     target: {
-                                        selector: ".border-radius-twenty.image-one",
+                                        selector: ".border-radius-twenty.image-one0",
                                         selectorGuids: [
                                             "f0d46dca-eab7-236e-ceb8-23a2e946c4ac",
                                             "f0d46dca-eab7-236e-ceb8-23a2e946c4e6",
@@ -60342,7 +60342,7 @@ timm/lib/timm.js:
                                     easing: "",
                                     duration: 500,
                                     target: {
-                                        selector: ".border-radius-twenty.image-two",
+                                        selector: ".border-radius-twenty.image-two0",
                                         selectorGuids: [
                                             "f0d46dca-eab7-236e-ceb8-23a2e946c4ac",
                                             "f0d46dca-eab7-236e-ceb8-23a2e946c4fd",
@@ -60364,7 +60364,7 @@ timm/lib/timm.js:
                                     easing: "",
                                     duration: 300,
                                     target: {
-                                        selector: ".border-radius-twenty.image-one",
+                                        selector: ".border-radius-twenty.image-one0",
                                         selectorGuids: [
                                             "f0d46dca-eab7-236e-ceb8-23a2e946c4ac",
                                             "f0d46dca-eab7-236e-ceb8-23a2e946c4e6",
@@ -60400,7 +60400,7 @@ timm/lib/timm.js:
                                     easing: "",
                                     duration: 300,
                                     target: {
-                                        selector: ".border-radius-twenty.image-two",
+                                        selector: ".border-radius-twenty.image-two0",
                                         selectorGuids: [
                                             "f0d46dca-eab7-236e-ceb8-23a2e946c4ac",
                                             "f0d46dca-eab7-236e-ceb8-23a2e946c4fd",
@@ -60422,7 +60422,7 @@ timm/lib/timm.js:
                                     easing: "",
                                     duration: 300,
                                     target: {
-                                        selector: ".border-radius-twenty.image-one",
+                                        selector: ".border-radius-twenty.image-one0",
                                         selectorGuids: [
                                             "f0d46dca-eab7-236e-ceb8-23a2e946c4ac",
                                             "f0d46dca-eab7-236e-ceb8-23a2e946c4e6",
@@ -60440,7 +60440,7 @@ timm/lib/timm.js:
                                     easing: "",
                                     duration: 300,
                                     target: {
-                                        selector: ".border-radius-twenty.image-two",
+                                        selector: ".border-radius-twenty.image-two0",
                                         selectorGuids: [
                                             "f0d46dca-eab7-236e-ceb8-23a2e946c4ac",
                                             "f0d46dca-eab7-236e-ceb8-23a2e946c4fd",
@@ -60480,7 +60480,7 @@ timm/lib/timm.js:
                                     easing: "",
                                     duration: 300,
                                     target: {
-                                        selector: ".border-radius-twenty.image-one",
+                                        selector: ".border-radius-twenty.image-one0",
                                         selectorGuids: [
                                             "f0d46dca-eab7-236e-ceb8-23a2e946c4ac",
                                             "f0d46dca-eab7-236e-ceb8-23a2e946c4e6",
@@ -60516,7 +60516,7 @@ timm/lib/timm.js:
                                     easing: "",
                                     duration: 300,
                                     target: {
-                                        selector: ".border-radius-twenty.image-two",
+                                        selector: ".border-radius-twenty.image-two0",
                                         selectorGuids: [
                                             "f0d46dca-eab7-236e-ceb8-23a2e946c4ac",
                                             "f0d46dca-eab7-236e-ceb8-23a2e946c4fd",
@@ -62070,7 +62070,7 @@ timm/lib/timm.js:
                                     easing: "",
                                     duration: 500,
                                     target: {
-                                        selector: ".clients-marquee-train",
+                                        selector: ".clients-marquee-train0",
                                         selectorGuids: ["f0d46dca-eab7-236e-ceb8-23a2e946c473"],
                                     },
                                     xValue: 0,
@@ -62091,7 +62091,7 @@ timm/lib/timm.js:
                                     easing: "",
                                     duration: 3e4,
                                     target: {
-                                        selector: ".clients-marquee-train",
+                                        selector: ".clients-marquee-train0",
                                         selectorGuids: ["f0d46dca-eab7-236e-ceb8-23a2e946c473"],
                                     },
                                     xValue: -100,
@@ -62112,7 +62112,7 @@ timm/lib/timm.js:
                                     easing: "",
                                     duration: 0,
                                     target: {
-                                        selector: ".clients-marquee-train",
+                                        selector: ".clients-marquee-train0",
                                         selectorGuids: ["f0d46dca-eab7-236e-ceb8-23a2e946c473"],
                                     },
                                     xValue: 0,
@@ -62250,7 +62250,7 @@ timm/lib/timm.js:
                                     easing: "",
                                     duration: 500,
                                     target: {
-                                        selector: ".marquee-train.move-left",
+                                        selector: ".marquee-train.move-left0",
                                         selectorGuids: [
                                             "f0d46dca-eab7-236e-ceb8-23a2e946c470",
                                             "f0d46dca-eab7-236e-ceb8-23a2e946c4dc",
@@ -62270,7 +62270,7 @@ timm/lib/timm.js:
                                     easing: "",
                                     duration: 500,
                                     target: {
-                                        selector: ".marquee-train.move-right",
+                                        selector: ".marquee-train.move-right0",
                                         selectorGuids: [
                                             "f0d46dca-eab7-236e-ceb8-23a2e946c470",
                                             "f0d46dca-eab7-236e-ceb8-23a2e946c4e5",
@@ -62294,7 +62294,7 @@ timm/lib/timm.js:
                                     easing: "",
                                     duration: 3e4,
                                     target: {
-                                        selector: ".marquee-train.move-left",
+                                        selector: ".marquee-train.move-left0",
                                         selectorGuids: [
                                             "f0d46dca-eab7-236e-ceb8-23a2e946c470",
                                             "f0d46dca-eab7-236e-ceb8-23a2e946c4dc",
@@ -62314,7 +62314,7 @@ timm/lib/timm.js:
                                     easing: "",
                                     duration: 3e4,
                                     target: {
-                                        selector: ".marquee-train.move-right",
+                                        selector: ".marquee-train.move-right0",
                                         selectorGuids: [
                                             "f0d46dca-eab7-236e-ceb8-23a2e946c470",
                                             "f0d46dca-eab7-236e-ceb8-23a2e946c4e5",
@@ -62338,7 +62338,7 @@ timm/lib/timm.js:
                                     easing: "",
                                     duration: 0,
                                     target: {
-                                        selector: ".marquee-train.move-left",
+                                        selector: ".marquee-train.move-left0",
                                         selectorGuids: [
                                             "f0d46dca-eab7-236e-ceb8-23a2e946c470",
                                             "f0d46dca-eab7-236e-ceb8-23a2e946c4dc",
@@ -62358,7 +62358,7 @@ timm/lib/timm.js:
                                     easing: "",
                                     duration: 0,
                                     target: {
-                                        selector: ".marquee-train.move-right",
+                                        selector: ".marquee-train.move-right0",
                                         selectorGuids: [
                                             "f0d46dca-eab7-236e-ceb8-23a2e946c470",
                                             "f0d46dca-eab7-236e-ceb8-23a2e946c4e5",
@@ -62406,7 +62406,7 @@ timm/lib/timm.js:
                                     duration: 500,
                                     target: {
                                         useEventTarget: "CHILDREN",
-                                        selector: ".marquee-image-two",
+                                        selector: ".marquee-image-two0",
                                         selectorGuids: ["f0d46dca-eab7-236e-ceb8-23a2e946c4ae"],
                                     },
                                     zValue: 0,
@@ -62424,7 +62424,7 @@ timm/lib/timm.js:
                                     duration: 500,
                                     target: {
                                         useEventTarget: "CHILDREN",
-                                        selector: ".marquee-image-one",
+                                        selector: ".marquee-image-one0",
                                         selectorGuids: ["f0d46dca-eab7-236e-ceb8-23a2e946c463"],
                                     },
                                     zValue: 0,
@@ -62461,7 +62461,7 @@ timm/lib/timm.js:
                                     duration: 300,
                                     target: {
                                         useEventTarget: "CHILDREN",
-                                        selector: ".marquee-image-one",
+                                        selector: ".marquee-image-one0",
                                         selectorGuids: ["f0d46dca-eab7-236e-ceb8-23a2e946c463"],
                                     },
                                     zValue: 3,
@@ -62479,7 +62479,7 @@ timm/lib/timm.js:
                                     duration: 300,
                                     target: {
                                         useEventTarget: "CHILDREN",
-                                        selector: ".marquee-image-two",
+                                        selector: ".marquee-image-two0",
                                         selectorGuids: ["f0d46dca-eab7-236e-ceb8-23a2e946c4ae"],
                                     },
                                     zValue: -6,
@@ -62508,7 +62508,7 @@ timm/lib/timm.js:
                                     easing: "",
                                     duration: 500,
                                     target: {
-                                        selector: ".portfolio-marquee-train",
+                                        selector: ".portfolio-marquee-train0",
                                         selectorGuids: ["f0d46dca-eab7-236e-ceb8-23a2e946c456"],
                                     },
                                     xValue: 0,
@@ -62529,7 +62529,7 @@ timm/lib/timm.js:
                                     easing: "",
                                     duration: 2e4,
                                     target: {
-                                        selector: ".portfolio-marquee-train",
+                                        selector: ".portfolio-marquee-train0",
                                         selectorGuids: ["f0d46dca-eab7-236e-ceb8-23a2e946c456"],
                                     },
                                     xValue: -100,
@@ -62550,7 +62550,7 @@ timm/lib/timm.js:
                                     easing: "",
                                     duration: 0,
                                     target: {
-                                        selector: ".portfolio-marquee-train",
+                                        selector: ".portfolio-marquee-train0",
                                         selectorGuids: ["f0d46dca-eab7-236e-ceb8-23a2e946c456"],
                                     },
                                     xValue: 0,
@@ -62968,7 +62968,7 @@ timm/lib/timm.js:
                                             duration: 500,
                                             target: {
                                                 useEventTarget: "CHILDREN",
-                                                selector: ".home-two-projects-cards",
+                                                selector: ".home-two-projects-cards0",
                                                 selectorGuids: ["12cd9493-a390-1253-0adb-2f408f90f4c2"],
                                             },
                                             xValue: 33,
@@ -62991,7 +62991,7 @@ timm/lib/timm.js:
                                             duration: 500,
                                             target: {
                                                 useEventTarget: "CHILDREN",
-                                                selector: ".home-two-projects-cards",
+                                                selector: ".home-two-projects-cards0",
                                                 selectorGuids: ["12cd9493-a390-1253-0adb-2f408f90f4c2"],
                                             },
                                             xValue: -33,
@@ -75003,10 +75003,10 @@ timm/lib/timm.js:
                                     duration: 500,
                                     target: {
                                         useEventTarget: "CHILDREN",
-                                        selector: ".border-radius-thirty.tab-image-full-width",
+                                        selector: ".border-radius-thirty.tab-image-full-width0",
                                         selectorGuids: [
-                                            "f0d46dca-eab7-236e-ceb8-23a2e946c4ba",
-                                            "12cd9493-a390-1253-0adb-2f408f90f507",
+                                            "f0d46dca-eab7-236e-ceb8-23a2e946c4ba0",
+                                            "12cd9493-a390-1253-0adb-2f408f90f5070",
                                         ],
                                     },
                                     xValue: 1,
@@ -75115,12 +75115,12 @@ timm/lib/timm.js:
                                     delay: 0,
                                     easing: "",
                                     duration: 500,
-                                    target: {
+                                    taret: {
                                         useEventTarget: "CHILDREN",
-                                        selector: ".border-radius-thirty.tab-image-full-width",
+                                        selector: ".border-radius-thirty.tab-image-full-width0",
                                         selectorGuids: [
-                                            "f0d46dca-eab7-236e-ceb8-23a2e946c4ba",
-                                            "12cd9493-a390-1253-0adb-2f408f90f507",
+                                            "f0d46dca-eab7-236e-ceb8-23a2e946c4ba0",
+                                            "12cd9493-a390-1253-0adb-2f408f90f5070",
                                         ],
                                     },
                                     xValue: 1.1,
@@ -75211,10 +75211,10 @@ timm/lib/timm.js:
                                     duration: 500,
                                     target: {
                                         useEventTarget: "CHILDREN",
-                                        selector: ".border-radius-thirty.tab-image-full-width",
+                                        selector: ".border-radius-thirty.tab-image-full-width0",
                                         selectorGuids: [
-                                            "f0d46dca-eab7-236e-ceb8-23a2e946c4ba",
-                                            "12cd9493-a390-1253-0adb-2f408f90f507",
+                                            "f0d46dca-eab7-236e-ceb8-23a2e946c4ba0",
+                                            "12cd9493-a390-1253-0adb-2f408f90f5070",
                                         ],
                                     },
                                     xValue: 1,

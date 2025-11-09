@@ -55,6 +55,10 @@
   --white: white;
   --black: black;
   --yellow: #ff0;
+  --transition-fast: 0.1s;
+  --transition-medium: 0.5s;
+  --transition-slow: 1s;
+  --transition-default: var(--transition-medium);
 }
 
 /*----------------------------------------*/
@@ -64,7 +68,7 @@
 html {
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
-  font-family: sans-serif;
+ font-family: Roboto, sans-serif;
   height: 100%;
 }
 
@@ -2789,9 +2793,7 @@ social media css Start
   margin-top: 25px;
   margin-bottom: 45px;
 }
-.border-radius-thirty.home-digital-image {
-  width: 100%;
-}
+
 
 .no-margin-top {
   margin-top: 0;
@@ -3404,11 +3406,10 @@ social media css Start
   inset: 0%;
   transform: scale(0.5);
 }
-.home-one-service-cards:hover .home-one-service-cards-icon-overlay{}
+.home-one-service-cards:hover .home-one-service-cards-icon-overlay{transform: scale(1);transition: all var(--transition-medium);}
 .home-one-work-text-container {
   margin-bottom: 70px;
-  position: sticky;
-  top: 60px;
+
 }
 
 .links-hover-effect {
@@ -3433,7 +3434,7 @@ social media css Start
 }
 .button-two-arrow {
   margin-left: -3px;
-  transition: all 0.3s ease;
+  transition: all var(--transition-medium);
 }
 .button-two-icon-wrapper {
   justify-content: flex-start;
@@ -3441,16 +3442,7 @@ social media css Start
   display: flex;
 }
 
-.dot {
-  background-image: linear-gradient(105deg, var(--pink), var(--violet));
-  border-radius: 100%;
-  width: 6px;
-  height: 6px;
-}
 
-.dot.no-shirk {
-  flex: none;
-}
 
 .home-one-work-bottom-text {
   grid-column-gap: 20px;
@@ -3840,9 +3832,11 @@ social media css Start
   background-color: #05061073;
   justify-content: flex-start;
   align-items: center;
-  display: none;
   position: absolute;
   inset: 0%;
+  display: flex;
+opacity: 0;
+  transition: all var(--transition-medium);
 }
 .work-container {
   z-index: 10;
@@ -3876,7 +3870,8 @@ social media css Start
   max-width: 590px;
   display: flex;
 }
-
+.home-one-cards:hover .portfolio-marquee{opacity: 1;
+  transition: all var(--transition-medium);}
 .home-one-cards.two {
   max-width: 590px;
 }
@@ -4477,6 +4472,7 @@ social media css Start
   justify-content: flex-start;
   align-items: flex-end;
   max-width: 376px;
+  opacity: 1 !important;
 }
 
 .home-two-faq-boxes.home-two-faq-boxes-four,
@@ -4557,8 +4553,24 @@ social media css Start
 }
 .accordion-line {
   background-color: #444872;
-  width: 100px;
+  width: 0;
   height: 1px;
+  transition:  all var(--transition-medium);
+}
+.home-two-options.act .accordion-line {
+  width: 100px;
+  transition:  all var(--transition-medium);
+}
+.dot {
+  background-image: linear-gradient(105deg, var(--pink), var(--violet));
+  border-radius: 100%;
+  width: 0;
+  height: 6px;
+  transition:  all var(--transition-medium);
+}
+.home-two-options.act .dot{transition:  all var(--transition-medium);width: 6px;}
+.dot.no-shirk {
+  flex: none;
 }
 /*---------------------------------
     home two hero css start 
@@ -4732,6 +4744,20 @@ social media css Start
 .home-two-portfolio-top {
   justify-content: center;
   align-items: center;
+}
+.crystal-shape{animation: up_down 5s infinite;}
+@keyframes up_down {
+  0% {
+      transform: translateY(-30px);
+  }
+
+  50% {
+    transform: translateY(30px);
+  }
+
+  100% {
+    transform: translateY(-30px);
+  }
 }
 .line-background {
   background-image: radial-gradient(circle at 50% 25%, #b460f14d, #fff0 26%);
@@ -10665,7 +10691,9 @@ social media css Start
 
   .tab-image-full-width {
     width: 100%;
+    height: auto;
   }
+/* faq */
 
   .home-two-marquee-main {
     margin-bottom: 50px;
