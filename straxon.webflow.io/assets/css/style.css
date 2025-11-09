@@ -3311,8 +3311,6 @@ social media css Start
 .home-popup-text-overlay {
   transform-origin: 50% 100%;
   background-image: linear-gradient(#05061000, #050610b3 35%, #050610);
-  position: absolute;
-  inset: 0%;
   transform: scale(1);
 }
 .lightbox-link {
@@ -3406,6 +3404,7 @@ social media css Start
   inset: 0%;
   transform: scale(0.5);
 }
+.home-one-service-cards:hover .home-one-service-cards-icon-overlay{}
 .home-one-work-text-container {
   margin-bottom: 70px;
   position: sticky;
@@ -9385,6 +9384,7 @@ social media css Start
   border-radius: 30px;
   width: 100%;
   padding: 120px 90px 70px;
+  transform-origin: center center;
 }
 
 .header-footer-box-content {
