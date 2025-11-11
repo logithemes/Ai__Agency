@@ -2872,6 +2872,7 @@ social media css Start
   font-size: clamp(24px, 3.1vw, 32px);
   font-weight: 400;
   line-height: 1;
+  transition: all var(--transition-medium);
 }
 
 .heading-four.text-align-center {
@@ -3727,6 +3728,7 @@ social media css Start
   font-weight: 400;
   line-height: 1;
 }
+   
 .about-one-client-marquee-wrap {
   border-top: 1px solid #444872;
   border-bottom: 1px solid #444872;
@@ -4321,6 +4323,7 @@ opacity: 0;
 
 .no-margin-bottom.home-three-digital-description {
   max-width: 285px;
+  transition: all var(--transition-medium);
 }
 
 .no-margin-bottom.about-two-hero-description {
@@ -4467,7 +4470,7 @@ opacity: 0;
 }
 .home-two-faq-boxes {
   grid-column-gap: 20px;
-  grid-row-gap: 20px;
+  grid-row-gap: 20px
   text-align: right;
   justify-content: flex-start;
   align-items: flex-end;
@@ -5192,6 +5195,7 @@ opacity: 0;
   min-width: 50px;
   min-height: 50px;
   display: flex;
+  transition: all var(--transition-medium);
 }
 .home-three-service-background {
   background-image: linear-gradient(#05061099, #05061099),
@@ -5202,8 +5206,12 @@ opacity: 0;
   position: absolute;
   inset: 0%;
   transform: translate(0, -100%);
+  transition: all var(--transition-medium);
 }
-
+.home-three-box:hover .home-three-service-background{ transform: translate(0, 0);
+  transition: all var(--transition-medium);}
+  .home-three-box:hover .home-three-service-cards{ transition: all var(--transition-medium);border: 0;}
+.home-three-box:hover .top-border{transition: all var(--transition-medium);opacity: 0;}
 .home-three-service-background.home-three-service-background-two {
   background-image: linear-gradient(#05061099, #05061099),
     url("../img/service-bg/service-bg-2.webp");
@@ -5211,7 +5219,9 @@ opacity: 0;
   background-repeat: repeat, no-repeat;
   background-size: auto, cover;
 }
-
+.home-three-box:hover .home-three-service-arrow{background: var(--white); transition: all var(--transition-medium);transform: rotate(40deg);}
+.service-arrow{transition: all var(--transition-medium);}
+.home-three-box:hover .service-arrow{filter: invert(1);transition: all var(--transition-medium)}
 .home-three-service-background.home-three-service-background-three {
   background-image: linear-gradient(#05061099, #05061099),
     url("../img/service-bg/service-bg-3.webp");
@@ -5429,7 +5439,7 @@ opacity: 0;
   align-items: center;
   display: flex;
   position: absolute;
-  inset: 0%;
+  inset: 0%
 }
 .vertical-border {
   background-color: var(--border-color);
@@ -5448,7 +5458,18 @@ opacity: 0;
 .flower {
   align-self: flex-end;
   margin-bottom: 20px;
+  animation: infinite-rotate 10s infinite linear;
 }
+@keyframes infinite-rotate {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
 .heading-video {
   grid-column-gap: 20px;
   grid-row-gap: 20px;
@@ -5541,8 +5562,9 @@ opacity: 0;
   position: absolute;
   inset: 0%;
   overflow: hidden;
+  transition: all var(--transition-medium);
 }
-
+.clients-hover:hover{opacity: 1;transition: all var(--transition-medium);}
 .client-logo {
   z-index: 2;
   position: relative;
@@ -5566,13 +5588,6 @@ opacity: 0;
   position: relative;
 }
 
-.skills-border-effect {
-  background-color: var(--white);
-  width: 100%;
-  height: 1px;
-  position: absolute;
-  inset: auto 0% 23%;
-}
 .home-three-skills-description {
   color: var(--white);
   font-size: 20px;
@@ -5640,6 +5655,7 @@ opacity: 0;
   position: relative;
   overflow: hidden;
 }
+
 .home-three-digital-hover-box {
   grid-column-gap: 12px;
   grid-row-gap: 12px;
@@ -5652,7 +5668,11 @@ opacity: 0;
   padding-right: 15px;
   position: absolute;
   inset: 0%;
+  opacity: 0;
+  transition: all var(--transition-medium);
 }
+.home-three-digital-boxes:hover .home-three-digital-hover-box{opacity: 1;
+  transition: all var(--transition-medium);}
 .home-three-digital-text {
   justify-content: flex-start;
   align-items: center;
@@ -5666,6 +5686,10 @@ opacity: 0;
   grid-auto-columns: 1fr;
   display: grid;
 }
+.home-three-digital-hover-box .heading-four, .home-three-digital-hover-box .home-three-digital-description{transform: translateY(20px);opacity: 0;}
+
+.home-three-digital-boxes:hover .home-three-digital-hover-box .heading-four{transform: translateY(0);transition-delay: 0.2s;opacity: 1;}
+.home-three-digital-boxes:hover .home-three-digital-hover-box .home-three-digital-description{opacity: 1;transform: translateY(0);transition-delay: 0.5s;}
 .home-three-border-wrap {
   grid-column-gap: 30px;
   grid-row-gap: 30px;

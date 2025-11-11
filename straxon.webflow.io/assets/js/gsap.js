@@ -44,39 +44,56 @@ document.addEventListener('DOMContentLoaded', function() {
 gsap.registerPlugin(ModifiersPlugin);
 
 // Left to right marquee (original)
+// Utility: clone children until container width is filled at least twice
+function fillWithClones(train) {
+  const containerWidth = train.parentElement.offsetWidth;
+  let totalWidth = train.scrollWidth;
+
+  // Keep cloning until we have at least 2x container width
+  while (totalWidth < containerWidth * 1) {
+    // Clone all children
+    Array.from(train.children).forEach((child) => {
+      const clone = child.cloneNode(true);
+      train.appendChild(clone);
+    });
+    totalWidth = train.scrollWidth;
+  }
+
+  return totalWidth;
+}
+
+// Left to right marquee
 const trainsLeft = document.querySelectorAll(".marquee-train-left");
-trainsLeft.forEach((train, i) => {
-  const trainWidth = train.scrollWidth / 1; 
+trainsLeft.forEach((train) => {
+  const trainWidth = fillWithClones(train);
+
   gsap.to(train, {
-    x: `-=${trainWidth}`,
-    duration: 20,          
+    x: `-=${trainWidth / 1}`,   // move by half (since cloned)
+    duration: 20,
     ease: "none",
-    repeat: -1,            
+    repeat: -1,
     modifiers: {
-      x: gsap.utils.unitize(x => parseFloat(x) % trainWidth)
+      x: gsap.utils.unitize((x) => parseFloat(x) % (trainWidth / 2))
     }
   });
 });
 
-// Right to left marquee (new)
+// Right to left marquee
 const trainsRight = document.querySelectorAll(".marquee-train-right");
-trainsRight.forEach((train, i) => {
-  const trainWidth = train.scrollWidth / 1; 
+trainsRight.forEach((train) => {
+  const trainWidth = fillWithClones(train);
+
   gsap.to(train, {
-    x: `+=${trainWidth}`, // Positive value for right to left
-    duration: 20,          
+    x: `+=${trainWidth / 2}`,   // move opposite direction
+    duration: 20,
     ease: "none",
-    repeat: -1,            
+    repeat: -1,
     modifiers: {
-      x: gsap.utils.unitize(x => {
-        const parsedX = parseFloat(x);
-        // For right to left, we need to handle the modulo differently
-        // to ensure continuous looping from right to left
-        return parsedX % trainWidth;
-      })
+      x: gsap.utils.unitize((x) => parseFloat(x) % (trainWidth / 2))
     }
   });
 });
+
 
 
   // HOME ONE BANNER

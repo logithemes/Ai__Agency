@@ -63234,7 +63234,7 @@ timm/lib/timm.js:
                                     easing: "",
                                     duration: 500,
                                     target: {
-                                        selector: ".double-marquee-train.right-to-left",
+                                        selector: ".double-marquee-train.right-to-left0",
                                         selectorGuids: [
                                             "12cd9493-a390-1253-0adb-2f408f90f4e8",
                                             "12cd9493-a390-1253-0adb-2f408f90f50f",
@@ -63254,7 +63254,7 @@ timm/lib/timm.js:
                                     easing: "",
                                     duration: 500,
                                     target: {
-                                        selector: ".double-marquee-train.left-to-right",
+                                        selector: ".double-marquee-train.left-to-right0",
                                         selectorGuids: [
                                             "12cd9493-a390-1253-0adb-2f408f90f4e8",
                                             "12cd9493-a390-1253-0adb-2f408f90f51b",
@@ -63278,7 +63278,7 @@ timm/lib/timm.js:
                                     easing: "",
                                     duration: 3e4,
                                     target: {
-                                        selector: ".double-marquee-train.right-to-left",
+                                        selector: ".double-marquee-train.right-to-left0",
                                         selectorGuids: [
                                             "12cd9493-a390-1253-0adb-2f408f90f4e8",
                                             "12cd9493-a390-1253-0adb-2f408f90f50f",
@@ -63298,7 +63298,7 @@ timm/lib/timm.js:
                                     easing: "",
                                     duration: 3e4,
                                     target: {
-                                        selector: ".double-marquee-train.left-to-right",
+                                        selector: ".double-marquee-train.left-to-right0",
                                         selectorGuids: [
                                             "12cd9493-a390-1253-0adb-2f408f90f4e8",
                                             "12cd9493-a390-1253-0adb-2f408f90f51b",
@@ -63322,7 +63322,7 @@ timm/lib/timm.js:
                                     easing: "",
                                     duration: 0,
                                     target: {
-                                        selector: ".double-marquee-train.right-to-left",
+                                        selector: ".double-marquee-train.right-to-left0",
                                         selectorGuids: [
                                             "12cd9493-a390-1253-0adb-2f408f90f4e8",
                                             "12cd9493-a390-1253-0adb-2f408f90f50f",
@@ -63342,7 +63342,7 @@ timm/lib/timm.js:
                                     easing: "",
                                     duration: 0,
                                     target: {
-                                        selector: ".double-marquee-train.left-to-right",
+                                        selector: ".double-marquee-train.left-to-right0",
                                         selectorGuids: [
                                             "12cd9493-a390-1253-0adb-2f408f90f4e8",
                                             "12cd9493-a390-1253-0adb-2f408f90f51b",
@@ -66283,7 +66283,7 @@ timm/lib/timm.js:
                                     duration: 500,
                                     target: {
                                         useEventTarget: "CHILDREN",
-                                        selector: ".clients-two-train",
+                                        selector: ".clients-two-train0",
                                         selectorGuids: ["56110b85-9470-fbf0-f60c-9428854a289a"],
                                     },
                                     xValue: 0,
@@ -66305,7 +66305,7 @@ timm/lib/timm.js:
                                     duration: 2e4,
                                     target: {
                                         useEventTarget: "CHILDREN",
-                                        selector: ".clients-two-train",
+                                        selector: ".clients-two-train0",
                                         selectorGuids: ["56110b85-9470-fbf0-f60c-9428854a289a"],
                                     },
                                     xValue: -100,
@@ -66327,7 +66327,7 @@ timm/lib/timm.js:
                                     duration: 0,
                                     target: {
                                         useEventTarget: "CHILDREN",
-                                        selector: ".clients-two-train",
+                                        selector: ".clients-two-train0",
                                         selectorGuids: ["56110b85-9470-fbf0-f60c-9428854a289a"],
                                     },
                                     xValue: 0,
