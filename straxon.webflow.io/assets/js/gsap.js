@@ -97,9 +97,9 @@ trainsRight.forEach((train) => {
 
 
   // HOME ONE BANNER
-    const heroSection = document.querySelector('.home-one-hero');
-  const girlWrapper = document.querySelector('.girl-image-wrapper');
-  const boyWrapper = document.querySelector('.little-boy-image-wrapper');
+    const heroSection = document.querySelector('.parallax-hero-sec');
+  const girlWrapper = document.querySelector('.parallax-img-one');
+  const boyWrapper = document.querySelector('.parallax-img-two');
     const borderMovementBar = document.querySelector('.border-movement-bar');
   
   heroSection.addEventListener('mousemove', (e) => {
@@ -158,8 +158,8 @@ document.querySelectorAll(".img-hover-3d").forEach((img) => {
     const offsetX = ev.clientX - rect.left;
     const offsetY = ev.clientY - rect.top;
 
-    const rotateY = gsap.utils.clamp(-1, 1, ((offsetX / rect.width) - 0.5) * 30);
-    const rotateX = gsap.utils.clamp(-1, 1, ((offsetY / rect.height) - 0.5) * -30);
+    const rotateY = gsap.utils.clamp(-0.5, 0.5, ((offsetX / rect.width) - 0.5) * 30);
+    const rotateX = gsap.utils.clamp(-0.5, 0.5, ((offsetY / rect.height) - 0.5) * -30);
 
     gsap.to(img, {
       rotationX: rotateX,

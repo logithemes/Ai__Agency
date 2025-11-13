@@ -5334,8 +5334,9 @@ opacity: 0;
 }
 .work-three-image-wrapper {
   margin-bottom: 50px;
+  transition: all var(--transition-medium);
 }
-
+.portfolio-three-wrapper:hover .work-three-image-wrapper{transition: all var(--transition-medium);transform: translate(12px, -12px);}
 .work-three-cards-inner-wrapper {
   background-color: var(--light-black);
   border-radius: 30px;
@@ -5668,11 +5669,9 @@ opacity: 0;
   padding-right: 15px;
   position: absolute;
   inset: 0%;
-  opacity: 0;
   transition: all var(--transition-medium);
 }
-.home-three-digital-boxes:hover .home-three-digital-hover-box{opacity: 1;
-  transition: all var(--transition-medium);}
+
 .home-three-digital-text {
   justify-content: flex-start;
   align-items: center;
@@ -5686,10 +5685,12 @@ opacity: 0;
   grid-auto-columns: 1fr;
   display: grid;
 }
-.home-three-digital-hover-box .heading-four, .home-three-digital-hover-box .home-three-digital-description{transform: translateY(20px);opacity: 0;}
+.hover-hide, .hover-hide-des{transform: translateY(20px);opacity: 0;transition: all var(--transition-medium);}
 
-.home-three-digital-boxes:hover .home-three-digital-hover-box .heading-four{transform: translateY(0);transition-delay: 0.2s;opacity: 1;}
-.home-three-digital-boxes:hover .home-three-digital-hover-box .home-three-digital-description{opacity: 1;transform: translateY(0);transition-delay: 0.5s;}
+.full-screen-hover:hover .hover-hide{transform: translateY(0);transition-delay: 0.2s;opacity: 1;}
+
+.full-screen-hover:hover .hover-hide-des{opacity: 1;transform: translateY(0);transition-delay: 0.5s;}
+
 .home-three-border-wrap {
   grid-column-gap: 30px;
   grid-row-gap: 30px;

@@ -70016,7 +70016,7 @@ timm/lib/timm.js:
                                     easing: "",
                                     duration: 500,
                                     target: {
-                                        selector: ".about-one-counter-marquee-train",
+                                        selector: ".about-one-counter-marquee-train0",
                                         selectorGuids: ["122a6987-14a6-cbb7-3893-8307e3cfa99a"],
                                     },
                                     xValue: 0,
@@ -70037,7 +70037,7 @@ timm/lib/timm.js:
                                     easing: "",
                                     duration: 2e4,
                                     target: {
-                                        selector: ".about-one-counter-marquee-train",
+                                        selector: ".about-one-counter-marquee-train0",
                                         selectorGuids: ["122a6987-14a6-cbb7-3893-8307e3cfa99a"],
                                     },
                                     xValue: -100,
@@ -70058,7 +70058,7 @@ timm/lib/timm.js:
                                     easing: "",
                                     duration: 0,
                                     target: {
-                                        selector: ".about-one-counter-marquee-train",
+                                        selector: ".about-one-counter-marquee-train0",
                                         selectorGuids: ["122a6987-14a6-cbb7-3893-8307e3cfa99a"],
                                     },
                                     xValue: 0,
@@ -75743,7 +75743,7 @@ timm/lib/timm.js:
                                     duration: 500,
                                     target: {
                                         useEventTarget: "CHILDREN",
-                                        selector: ".border-radius-thirty.mobile-image-full-width.work-three-image",
+                                        selector: ".border-radius-thirty.mobile-image-full-width0.work-three-image",
                                         selectorGuids: [
                                             "f0d46dca-eab7-236e-ceb8-23a2e946c4ba",
                                             "f0d46dca-eab7-236e-ceb8-23a2e946c4ee",
@@ -75770,7 +75770,7 @@ timm/lib/timm.js:
                                     duration: 400,
                                     target: {
                                         useEventTarget: "CHILDREN",
-                                        selector: ".border-radius-thirty.mobile-image-full-width.work-three-image",
+                                        selector: ".border-radius-thirty.mobile-image-full-width0.work-three-image",
                                         selectorGuids: [
                                             "f0d46dca-eab7-236e-ceb8-23a2e946c4ba",
                                             "f0d46dca-eab7-236e-ceb8-23a2e946c4ee",
@@ -75805,7 +75805,7 @@ timm/lib/timm.js:
                                     duration: 400,
                                     target: {
                                         useEventTarget: "CHILDREN",
-                                        selector: ".border-radius-thirty.mobile-image-full-width.work-three-image",
+                                        selector: ".border-radius-thirty.mobile-image-full-width0.work-three-image",
                                         selectorGuids: [
                                             "f0d46dca-eab7-236e-ceb8-23a2e946c4ba",
                                             "f0d46dca-eab7-236e-ceb8-23a2e946c4ee",
@@ -77378,8 +77378,8 @@ window.addEventListener("load", function () {
         preloader.classList.add("hidden");
         setTimeout(() => {
             preloader.style.display = "none";
-        }, 500);
-    }, 500);
+        }, 100);
+    }, 100);
 });
 window.addEventListener("scroll", function () {
     const topVal = window.scrollY || document.documentElement.scrollTop;
