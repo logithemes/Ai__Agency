@@ -17,6 +17,33 @@ gsap.fromTo(
 );
 
 
+gsap.registerPlugin(ScrollTrigger);
+
+const progressSection = document.querySelector('.progress-scroll');
+
+if (progressSection) {
+  const bars = progressSection.querySelectorAll('.about-progress-gradiant-bar');
+
+  // Target widths for each bar (based on your text)
+  const targetWidths = [95, 91, 98];
+
+  gsap.fromTo(
+    bars,
+    { width: "0%" },
+    {
+      width: (i) => `${targetWidths[i]}%`,
+      duration: 1.5,
+      ease: "power2.out",
+      stagger: 0.3, // bars fill one after another
+      scrollTrigger: {
+        trigger: progressSection,
+        start: "top 80%", // when section enters viewport
+        once: true,       // run only once
+      },
+    }
+  );
+}
+
 
 //cursor
 
@@ -212,3 +239,17 @@ projectsSection.addEventListener('mouseleave', () => {
 
 
 
+// SERVICES ONE TAB
+document.addEventListener("shown.bs.tab", (event) => {
+  const targetPane = document.querySelector(event.target.getAttribute("href"));
+  const image = targetPane.querySelector("img");
+
+  // Animate with GSAP
+  gsap.fromTo(image,
+    { opacity: 0, scale: 0.8 },
+    { opacity: 1, scale: 1, duration: 0.6, ease: "power2.out" }
+  );
+});
+
+
+  

@@ -393,93 +393,60 @@
               </div>
             </div>
           </div>
-          <div data-w-id="ffab4c08-04ca-1f9f-9978-7274943d8b25" data-current="Tab 2" data-easing="ease"
-            data-duration-in="300" data-duration-out="100" class="tabs w-tabs">
-            <div class="tabs-menu w-tab-menu">
-              <a data-w-tab="Tab 1" class="tab-links w-inline-block w-tab-link hover-line">
-                <div class="body-font">01/</div>
-                <div class="tab--text hover-line-bottom">Creative Innovation</div>
-              </a>
-              <a data-w-tab="Tab 2" class="tab-links w-inline-block w-tab-link w--current hover-line">
-                <div class="body-font">02/</div>
-                <div class="tab--text hover-line-bottom">online help &amp; support</div>
-              </a>
-              <a data-w-tab="Tab 3" class="tab-links w-inline-block w-tab-link hover-line">
-                <div class="body-font">03/</div>
-                <div class="tab--text hover-line-bottom">100% secure solutions</div>
-              </a>
-              <a data-w-tab="Tab 4" class="tab-links w-inline-block w-tab-link hover-line">
-                <div class="body-font">04/</div>
-                <div class="tab--text hover-line-bottom">seamless integration</div>
-              </a>
-            </div>
-            <div class="tabs-content w-tab-content">
-              <div data-w-tab="Tab 1" class="tab-pane w-tab-pane">
-                <div>
-                  <img width="740" height="561" alt="Service Image" src="./assets/img/service-img/service-tab-2.webp"
-                    sizes="(max-width: 479px) 94vw, (max-width: 767px) 96vw, (max-width: 991px) 48vw, (max-width: 1439px) 55vw, 740px"
-                    srcset="./assets/img/service-img/service-tab-2.webp 500w, 
-            ./assets/img/service-img/service-tab-2.webp 800w, 
-            ./assets/img/service-img/service-tab-2.webp 1480w" class="mobile-image-full-width logesh">
-                </div>
+        <div class="tabs w-tabs d-flex w-100">
+  <div class="tabs-menu w-tab-menu nav" role="tablist">
+    <a class="tab-links w-inline-block w-tab-link hover-line nav-link" id="tab1-tab" data-bs-toggle="tab" href="#tab1" role="tab">
+      <div class="body-font">01/</div>
+      <div class="tab--text hover-line-bottom">Creative Innovation</div>
+    </a>
+    <a class="tab-links w-inline-block w-tab-link hover-line nav-link active" id="tab2-tab" data-bs-toggle="tab" href="#tab2" role="tab">
+      <div class="body-font">02/</div>
+      <div class="tab--text hover-line-bottom">Online help &amp; support</div>
+    </a>
+    <a class="tab-links w-inline-block w-tab-link hover-line nav-link" id="tab3-tab" data-bs-toggle="tab" href="#tab3" role="tab">
+      <div class="body-font">03/</div>
+      <div class="tab--text hover-line-bottom">100% secure solutions</div>
+    </a>
+    <a class="tab-links w-inline-block w-tab-link hover-line nav-link" id="tab4-tab" data-bs-toggle="tab" href="#tab4" role="tab">
+      <div class="body-font">04/</div>
+      <div class="tab--text hover-line-bottom">Seamless integration</div>
+    </a>
+  </div>
 
-              </div>
-              <div data-w-tab="Tab 2" class="tab-pane w-tab-pane w--tab-active">
-                <div>
-                  <img width="740" height="561" alt="Service Hero Image"
-                    src="./assets/img/service-img/service-tab-1.webp" class="mobile-image-full-width">
-                </div>
-
-              </div>
-              <div data-w-tab="Tab 3" class="tab-pane w-tab-pane">
-                <div>
-                  <img width="740" height="561" alt="Service Image" src="./assets/img/service-img/service-tab-3.webp"
-                    srcset="./assets/img/service-img/service-tab-3.webp 480w,
-               ./assets/img/service-img/service-tab-3.webp 768w,
-               ./assets/img/service-img/service-tab-3.webp 1024w,
-               ./assets/img/service-img/service-tab-3.webp 740w" sizes="(max-width: 479px) 94vw,
-              (max-width: 767px) 96vw,
-              (max-width: 991px) 48vw,
-              (max-width: 1439px) 55vw,
-              740px" class="mobile-image-full-width">
-                </div>
-
-              </div>
-              <div data-w-tab="Tab 4" class="tab-pane w-tab-pane">
-                <div>
-                  <img width="740" height="561" alt="Service Image" src="./assets/img/service-img/service-tab-4.webp"
-                    srcset="./assets/img/service-img/service-tab-4.webp 480w,
-               ./assets/img/service-img/service-tab-4.webp 768w,
-               ./assets/img/service-img/service-tab-4.webp 1024w,
-               ./assets/img/service-img/service-tab-4.webp 740w" sizes="(max-width: 479px) 94vw,
-              (max-width: 767px) 96vw,
-              (max-width: 991px) 48vw,
-              (max-width: 1439px) 55vw,
-              740px" class="mobile-image-full-width">
-                </div>
-
-              </div>
-            </div>
-          </div>
+  <div class="tabs-content w-tab-content tab-content">
+    <div class="tab-pane w-tab-pane fade" id="tab1" role="tabpanel">
+      <img src="./assets/img/service-img/service-tab-2.webp" class="mobile-image-full-width logesh" alt="Creative Innovation">
+    </div>
+    <div class="tab-pane w-tab-pane fade show active" id="tab2" role="tabpanel">
+      <img src="./assets/img/service-img/service-tab-1.webp" class="mobile-image-full-width" alt="Online help & support">
+    </div>
+    <div class="tab-pane w-tab-pane fade" id="tab3" role="tabpanel">
+      <img src="./assets/img/service-img/service-tab-3.webp" class="mobile-image-full-width" alt="Secure Solutions">
+    </div>
+    <div class="tab-pane w-tab-pane fade" id="tab4" role="tabpanel">
+      <img src="./assets/img/service-img/service-tab-4.webp" class="mobile-image-full-width" alt="Integration">
+    </div>
+  </div>
+</div>
         </div>
       </div>
     </section>
     <!-- ===================================================
 		marquee text 
 		==================================================== -->
-    <section data-w-id="4856551e-d7ff-2c27-5d9f-d2e6741aef2f" class="home-three-text-marquee">
-      <div data-w-id="4856551e-d7ff-2c27-5d9f-d2e6741aef30" class="w-layout-hflex home-three-text-marquee-wrapper">
-        <div class="w-layout-hflex home-three-text-marquee-train">
+    <section  class="home-three-text-marquee">
+      <div class="w-layout-hflex home-three-text-marquee-wrapper">
+        <div class="w-layout-hflex home-three-text-marquee-train marquee-train-left">
           <div class="heading-one text-outline">creative design _</div>
           <div class="heading-one text-outline">digital agency _</div>
           <div class="heading-one text-outline">event promotion _</div>
         </div>
-        <div class="w-layout-hflex home-three-text-marquee-train">
+        <div class="w-layout-hflex home-three-text-marquee-train marquee-train-left">
           <div class="heading-one text-outline">creative design _</div>
           <div class="heading-one text-outline">digital agency _</div>
           <div class="heading-one text-outline">event promotion _</div>
         </div>
-        <div class="w-layout-hflex home-three-text-marquee-train">
+        <div class="w-layout-hflex home-three-text-marquee-train marquee-train-left">
           <div class="heading-one text-outline">creative design _</div>
           <div class="heading-one text-outline">digital agency _</div>
           <div class="heading-one text-outline">event promotion _</div>
@@ -498,7 +465,7 @@
           <h2 class="sevice-one-awards-heading wow fadeInUp" data-wow-duration="0.8s">Full-Service Digital Agency <span
               class="text-gradiant">Solutions</span>
           </h2>
-          <p data-w-id="7b759532-12ca-39fe-854d-943f43ed131a" class="no-margin-bottom">Increase your website&#x27;s
+          <p class="no-margin-bottom">Increase your website&#x27;s
             visibility and authority.</p>
         </div>
         <div data-w-id="24e72ed0-ee15-897e-34b2-2acb18ab3bf4" class="w-layout-hflex services">
@@ -1075,11 +1042,14 @@
 		==================================================== -->
   <script src="assets/js/jquery.min.js"></script>
   <script src="assets/js/bootstrap.bundle.min.js"></script>
- 
   <script src="assets/js/theme.js"></script>
   <script src="assets/js/wow.js"></script>
   <script src="assets/js/slick.js"></script>
   <script src="assets/js/slick-custom.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="assets/js/gsap.js"></script>
+
 </body>
 
 </html>

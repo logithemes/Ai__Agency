@@ -32,6 +32,22 @@
     });
 
 
+    $('.about-three-slider').slick({
+  dots: true,
+  arrows: false,
+  infinite: true,
+  speed: 1000,
+  autoplay: true,
+  autoplaySpeed: 3000,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  dotsClass: 'w-slider-dots d-flex ps-0 slide-nav w-slider-nav w-round', // custom dot container class
+  customPaging: function(slider, i) {
+    return '<div class="w-slider-dot"></div>';
+  }
+});
+
+
     // 401 
     // Handle password page URL check
 if (/[?&]e=1(&|$)/.test(window.location.search)) {
@@ -57,8 +73,46 @@ if (/[?&]e=1(&|$)/.test(window.location.search)) {
     $('.home-two-faq-boxes').hide().eq(index).fadeIn(400);
   });
 
+ $('.tab-links').on('click', function () {
+  $('.tab-links').removeClass('w--current');  // remove from all
+  $(this).addClass('w--current');             // add to clicked one
+});
+
+$('.service-three-cards').on('mouseenter', '.service-three-cards-overlay', function () {
+  $('.service-three-cards-overlay').removeClass('in-active');
+  $(this).addClass('in-active');
+});
+
+
+// PRICING PLAN
+
+$("#monthly-tab").on("click", function () {
+
+  $(".price-item").each(function () {
+    let month = $(this).data("month");
+    $(this).contents().first()[0].textContent = "$" + month + " ";
+    $(this).find("span").text("/Per Month");
+  });
+
+  $("#monthly-tab").addClass("w--current");
+  $("#yearly-tab").removeClass("w--current");
+});
+
+$("#yearly-tab").on("click", function () {
+
+  $(".price-item").each(function () {
+    let year = $(this).data("year");
+    $(this).contents().first()[0].textContent = "$" + year + " ";
+    $(this).find("span").text("/Per Year");
+  });
+
+  $("#yearly-tab").addClass("w--current");
+  $("#monthly-tab").removeClass("w--current");
+});
 
   });
 
+
+  
 
  

@@ -1610,7 +1610,7 @@ social media css Start
   position: relative;
 }
 
-.w-slider-mask {
+.w-slider-mask, .about-three-testimonial-mask {
   z-index: 1;
   white-space: nowrap;
   height: 100%;
@@ -5459,15 +5459,17 @@ opacity: 0;
 .flower {
   align-self: flex-end;
   margin-bottom: 20px;
+}
+.rotate-ani {
   animation: infinite-rotate 10s infinite linear;
 }
 @keyframes infinite-rotate {
     0% {
-        transform: translate(-50%, -50%) rotate(0deg);
+        transform: translate(0%, 0%) rotate(0deg);
     }
 
     100% {
-        transform: translate(-50%, -50%) rotate(360deg);
+        transform: translate(0%, 0%) rotate(360deg);
     }
 }
 
@@ -5865,10 +5867,9 @@ opacity: 0;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
   padding: 30px 15px;
-  position: absolute;
-  right: 0;
+  transition: all var(--transition-slow);transform: translateX(100px);
 }
-
+.team-members-cards:hover .team-members-social{transform: translateX(0); transition: all var(--transition-slow);}
 .team-hero-border {
   background-color: #444872;
   width: 100%;
@@ -6647,18 +6648,6 @@ opacity: 0;
 .about-progress-gradiant-bar {
   background-image: linear-gradient(90deg, var(--pink), var(--violet));
   height: 3px;
-}
-
-.about-progress-gradiant-bar.about-progress-bar-one {
-  width: 95%;
-}
-
-.about-progress-gradiant-bar.about-progress-bar-three {
-  width: 98%;
-}
-
-.about-progress-gradiant-bar.about-progress-bar-two {
-  width: 91%;
 }
 
 .about-three-progress-heading {
@@ -8236,10 +8225,7 @@ opacity: 0;
 }
 
 .projects-rotate-box {
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  position: relative;
+  display: flex;  
 }
 
 .clients-logo-wrap {
@@ -8324,7 +8310,7 @@ opacity: 0;
 }
 .hover-box:hover .home-one-service-cards-icon-overlay {
   transform: scale(1);
-  transition: all 0.3s ease-in;
+  transition: all var(--transition-medium);
 }
 
 .task-wrapper {
@@ -8809,7 +8795,8 @@ opacity: 0;
   display: flex;
   position: relative;
 }
-
+.arrow-hover:hover .white-arrow{opacity: 0;transition: all var(--transition-slow);}
+.arrow-hover:hover  .gradiant-arrow{opacity: 1;transition: all var(--transition-slow);}
 .service-three-hero-glow {
   z-index: 2;
   background-image: radial-gradient(circle, #f449723d, #f4497200 64%);
@@ -8827,7 +8814,7 @@ opacity: 0;
   position: relative;
 }
 
-.service-three-cards-overlay {
+.service-three-cards-overlay.in-active{
   transform-origin: 50% 100%;
   background-image: linear-gradient(#1d1f34bd, #1d1f3400);
   border-radius: 30px;
@@ -9124,8 +9111,8 @@ opacity: 0;
   flex-flow: row-reverse;
   justify-content: flex-end;
   align-items: stretch;
-  width: 100%;
-  display: flex;
+  
+ 
 }
 
 .tabs-content {
