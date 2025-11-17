@@ -69450,7 +69450,7 @@ timm/lib/timm.js:
                                     easing: "",
                                     duration: 500,
                                     target: {
-                                        selector: ".home-three-text-marquee-train",
+                                        selector: ".home-three-text-marquee-train0",
                                         selectorGuids: ["56110b85-9470-fbf0-f60c-9428854a28d8"],
                                     },
                                     xValue: 0,
@@ -69471,7 +69471,7 @@ timm/lib/timm.js:
                                     easing: "",
                                     duration: 3e4,
                                     target: {
-                                        selector: ".home-three-text-marquee-train",
+                                        selector: ".home-three-text-marquee-train0",
                                         selectorGuids: ["56110b85-9470-fbf0-f60c-9428854a28d8"],
                                     },
                                     xValue: -100,
@@ -69492,7 +69492,7 @@ timm/lib/timm.js:
                                     easing: "",
                                     duration: 0,
                                     target: {
-                                        selector: ".home-three-text-marquee-train",
+                                        selector: ".home-three-text-marquee-train0",
                                         selectorGuids: ["56110b85-9470-fbf0-f60c-9428854a28d8"],
                                     },
                                     xValue: 0,
@@ -70805,7 +70805,7 @@ timm/lib/timm.js:
                                     duration: 500,
                                     target: {
                                         useEventTarget: "CHILDREN",
-                                        selector: ".contact-text-marquee-train",
+                                        selector: ".contact-text-marquee-train0",
                                         selectorGuids: ["7fc44cfe-6a52-ef4b-8ac0-a7aa351205f0"],
                                     },
                                     xValue: 0,
@@ -70827,7 +70827,7 @@ timm/lib/timm.js:
                                     duration: 2e4,
                                     target: {
                                         useEventTarget: "CHILDREN",
-                                        selector: ".contact-text-marquee-train",
+                                        selector: ".contact-text-marquee-train0",
                                         selectorGuids: ["7fc44cfe-6a52-ef4b-8ac0-a7aa351205f0"],
                                     },
                                     xValue: -100,
@@ -70849,7 +70849,7 @@ timm/lib/timm.js:
                                     duration: 0,
                                     target: {
                                         useEventTarget: "CHILDREN",
-                                        selector: ".contact-text-marquee-train",
+                                        selector: ".contact-text-marquee-train0",
                                         selectorGuids: ["7fc44cfe-6a52-ef4b-8ac0-a7aa351205f0"],
                                     },
                                     xValue: 0,
@@ -71894,7 +71894,7 @@ timm/lib/timm.js:
                                     duration: 500,
                                     target: {
                                         useEventTarget: "SIBLINGS",
-                                        selector: ".card-expand",
+                                        selector: ".card-expand0",
                                         selectorGuids: ["93ab9f29-2451-2ddf-1c14-a03868962887"],
                                     },
                                     widthValue: 200,
@@ -71933,7 +71933,7 @@ timm/lib/timm.js:
                                     duration: 500,
                                     target: {
                                         useEventTarget: "SIBLINGS",
-                                        selector: ".card-expand",
+                                        selector: ".card-expand0",
                                         selectorGuids: ["93ab9f29-2451-2ddf-1c14-a03868962887"],
                                     },
                                     widthValue: 100,
@@ -72202,7 +72202,7 @@ timm/lib/timm.js:
                                     duration: 500,
                                     target: {
                                         useEventTarget: "SIBLINGS",
-                                        selector: ".card-expand",
+                                        selector: ".card-expand0",
                                         selectorGuids: ["93ab9f29-2451-2ddf-1c14-a03868962887"],
                                     },
                                     widthValue: 200,
@@ -72360,7 +72360,7 @@ timm/lib/timm.js:
                                     duration: 500,
                                     target: {
                                         useEventTarget: "SIBLINGS",
-                                        selector: ".card-expand",
+                                        selector: ".card-expand0",
                                         selectorGuids: ["93ab9f29-2451-2ddf-1c14-a03868962887"],
                                     },
                                     widthValue: 200,
@@ -72399,7 +72399,7 @@ timm/lib/timm.js:
                                     duration: 500,
                                     target: {
                                         useEventTarget: "SIBLINGS",
-                                        selector: ".card-expand",
+                                        selector: ".card-expand0",
                                         selectorGuids: ["93ab9f29-2451-2ddf-1c14-a03868962887"],
                                     },
                                     widthValue: 100,
@@ -72668,7 +72668,7 @@ timm/lib/timm.js:
                                     duration: 500,
                                     target: {
                                         useEventTarget: "SIBLINGS",
-                                        selector: ".card-expand",
+                                        selector: ".card-expand0",
                                         selectorGuids: ["93ab9f29-2451-2ddf-1c14-a03868962887"],
                                     },
                                     widthValue: 200,
