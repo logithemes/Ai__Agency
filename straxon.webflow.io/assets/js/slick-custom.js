@@ -110,6 +110,41 @@ $("#yearly-tab").on("click", function () {
   $("#monthly-tab").removeClass("w--current");
 });
 
+
+// COUNTER ANIMATION
+ let started = false;
+
+  function startCounter() {
+    if (started) return;
+
+    $('.counter').each(function () {
+      let $this = $(this);
+      let target = parseInt($this.attr("data-target"));
+      let count = 0;
+
+      let interval = setInterval(() => {
+        count++;
+        $this.text(count < 10 ? "0" + count : count);
+
+        if (count >= target) {
+          clearInterval(interval);
+        }
+      }, 40);
+    });
+
+    started = true;
+  }
+
+  // Trigger when section appears
+  $(window).on('scroll', function () {
+    let sectionTop = $('.landing-counter').offset().top - window.innerHeight + 100;
+    if ($(window).scrollTop() > sectionTop) {
+      startCounter();
+    }
+  });
+
+
+
   });
 
 

@@ -1,20 +1,75 @@
+// HOME ONE PORTFOLIO
 gsap.registerPlugin(ScrollTrigger);
-gsap.fromTo(
-  ".header-footer-box, .story-image-wrapper",
-  { scale: 0.7 },  
-  {
-    scale: 1,    // final value
-    ease: "none", // keeps motion linear and natural
-    scrollTrigger: {
-      trigger: ".top-act",
-      start: "top 50%",     // animation starts when section enters viewport
-      end: "bottom 80%",    // ends when you scroll past most of the section
-      scrub: true,          // makes the scale update dynamically with scroll
-      markers: true         // (for testing) shows start/end markers
-      // remove `scroller` unless you use a custom scroll container
-    }
+
+gsap.to(".home-one-portfolio-left, .home-one-portfolio-right", {
+  y: -150,              // how much upward movement (negative = UP)
+  ease: "none",
+  scrollTrigger: {
+    trigger: ".home-one-work",
+    start: "top bottom",     // when .home-one-work enters viewport
+    end: "bottom top",       // until it leaves viewport
+    scrub: 1,                // smooth scroll animation
   }
-);
+});
+    
+
+
+var cursor = document.querySelector(".explore-now");
+
+// Mouse Move
+$(".landing-cards").on("mousemove", function (e) {
+  gsap.to(cursor, {
+    x: e.clientX,
+    y: e.clientY,
+    duration: 0.2,
+    ease: "power2.out"
+  });
+});
+
+// Hover Scale In
+$(".landing-cards").on("mouseenter", function () {
+  gsap.to(cursor, {
+    scale: 1,
+    duration: 0.3,
+    ease: "power2.out"
+  });
+});
+
+// Hover Scale Out
+$(".landing-cards").on("mouseleave", function () {
+  gsap.to(cursor, {
+    scale: 0,
+    duration: 0.3,
+    ease: "power2.out"
+  });
+});
+
+// SELECT USING .lightbox-link
+const playBtn = document.querySelector(".lightbox-link img");
+const wrapper = document.querySelector(".lightbox-link");
+
+// MOUSE MOVE EFFECT
+wrapper.addEventListener("mousemove", (e) => {
+  let x = (e.offsetX / 15);
+  let y = (e.offsetY / 15);
+
+  gsap.to(playBtn, {
+    x: x,
+    y: y,
+    duration: 0.3,
+    ease: "power3.out"
+  });
+});
+
+// RESET ON LEAVE
+wrapper.addEventListener("mouseleave", () => {
+  gsap.to(playBtn, {
+    x: 0,
+    y: 0,
+    duration: 0.4,
+    ease: "power3.out"
+  });
+});
 
 
 gsap.registerPlugin(ScrollTrigger);
@@ -253,3 +308,6 @@ document.addEventListener("shown.bs.tab", (event) => {
 
 
   
+
+
+// 

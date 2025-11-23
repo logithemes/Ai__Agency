@@ -72877,11 +72877,11 @@ timm/lib/timm.js:
                                 id: "a-126-n",
                                 actionTypeId: "TRANSFORM_SCALE",
                                 config: {
-                                    delay: 0,
+                                    delay: 0,   
                                     easing: "",
                                     duration: 500,
                                     target: {
-                                        selector: ".explore-now",
+                                        selector: ".explore-now0",
                                         selectorGuids: ["a77a1608-7943-0bdd-265a-5f564a8663bd"],
                                     },
                                     xValue: 0,
@@ -72917,7 +72917,7 @@ timm/lib/timm.js:
                                     easing: "",
                                     duration: 300,
                                     target: {
-                                        selector: ".explore-now",
+                                        selector: ".explore-now0",
                                         selectorGuids: ["a77a1608-7943-0bdd-265a-5f564a8663bd"],
                                     },
                                     xValue: 1,
@@ -72961,7 +72961,7 @@ timm/lib/timm.js:
                                     easing: "",
                                     duration: 0,
                                     target: {
-                                        selector: ".explore-now",
+                                        selector: ".explore-now0",
                                         selectorGuids: ["a77a1608-7943-0bdd-265a-5f564a8663bd"],
                                     },
                                     xValue: 0,
@@ -73012,7 +73012,7 @@ timm/lib/timm.js:
                                             duration: 500,
                                             target: {
                                                 useEventTarget: "CHILDREN",
-                                                selector: ".explore-now",
+                                                selector: ".explore-now0",
                                                 selectorGuids: ["a77a1608-7943-0bdd-265a-5f564a8663bd"],
                                             },
                                             xValue: -50,
@@ -73035,7 +73035,7 @@ timm/lib/timm.js:
                                             duration: 500,
                                             target: {
                                                 useEventTarget: "CHILDREN",
-                                                selector: ".explore-now",
+                                                selector: ".explore-now0",
                                                 selectorGuids: ["a77a1608-7943-0bdd-265a-5f564a8663bd"],
                                             },
                                             xValue: 50,
@@ -73065,7 +73065,7 @@ timm/lib/timm.js:
                                             duration: 500,
                                             target: {
                                                 useEventTarget: "CHILDREN",
-                                                selector: ".explore-now",
+                                                selector: ".explore-now0",
                                                 selectorGuids: ["a77a1608-7943-0bdd-265a-5f564a8663bd"],
                                             },
                                             yValue: -50,
@@ -73088,7 +73088,7 @@ timm/lib/timm.js:
                                             duration: 500,
                                             target: {
                                                 useEventTarget: "CHILDREN",
-                                                selector: ".explore-now",
+                                                selector: ".explore-now0",
                                                 selectorGuids: ["a77a1608-7943-0bdd-265a-5f564a8663bd"],
                                             },
                                             yValue: 50,
@@ -74800,7 +74800,7 @@ timm/lib/timm.js:
                                     easing: "",
                                     duration: 500,
                                     target: {
-                                        selector: ".explore-now",
+                                        selector: ".explore-now0",
                                         selectorGuids: ["a77a1608-7943-0bdd-265a-5f564a8663bd"],
                                     },
                                     xValue: 0,
@@ -74836,7 +74836,7 @@ timm/lib/timm.js:
                                     easing: "",
                                     duration: 300,
                                     target: {
-                                        selector: ".explore-now",
+                                        selector: ".explore-now0",
                                         selectorGuids: ["a77a1608-7943-0bdd-265a-5f564a8663bd"],
                                     },
                                     xValue: 1,
@@ -74880,7 +74880,7 @@ timm/lib/timm.js:
                                     easing: "",
                                     duration: 0,
                                     target: {
-                                        selector: ".explore-now",
+                                        selector: ".explore-now0",
                                         selectorGuids: ["a77a1608-7943-0bdd-265a-5f564a8663bd"],
                                     },
                                     xValue: 0,
@@ -75347,7 +75347,7 @@ timm/lib/timm.js:
                                     easing: "",
                                     duration: 500,
                                     target: {
-                                        selector: ".explore-now",
+                                        selector: ".explore-now0",
                                         selectorGuids: ["a77a1608-7943-0bdd-265a-5f564a8663bd"],
                                     },
                                     xValue: 0,
@@ -75384,7 +75384,7 @@ timm/lib/timm.js:
                                     easing: "",
                                     duration: 300,
                                     target: {
-                                        selector: ".explore-now",
+                                        selector: ".explore-now0",
                                         selectorGuids: ["a77a1608-7943-0bdd-265a-5f564a8663bd"],
                                     },
                                     xValue: 1,
@@ -75429,7 +75429,7 @@ timm/lib/timm.js:
                                     easing: "",
                                     duration: 0,
                                     target: {
-                                        selector: ".explore-now",
+                                        selector: ".explore-now0",
                                         selectorGuids: ["a77a1608-7943-0bdd-265a-5f564a8663bd"],
                                     },
                                     xValue: 0,
