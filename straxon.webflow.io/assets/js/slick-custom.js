@@ -137,13 +137,29 @@ $("#yearly-tab").on("click", function () {
 
   // Trigger when section appears
   $(window).on('scroll', function () {
-    let sectionTop = $('.landing-counter').offset().top - window.innerHeight + 100;
+    let sectionTop = $('.counters-wrapper').offset().top - window.innerHeight + 100;
     if ($(window).scrollTop() > sectionTop) {
       startCounter();
     }
   });
 
+  // HOME ONE SLIDER
+    $('.slider___1 .w-slider-mask').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: true,
+    infinite: true,
+    speed: 600,
+    autoplay : true,
+    prevArrow: $('.w-slider-arrow-left'),
+    nextArrow: $('.w-slider-arrow-right'),
+});
 
+// HOME ONE WHY CHOOSE
+$('.home-digital-options-background').hover(function() {
+  $('.home-digital-options-background').removeClass('active');
+  $(this).addClass('active');
+});
 
   });
 

@@ -2783,6 +2783,7 @@ social media css Start
   position: absolute;
   inset: 0%;
 }
+.home-digital-options-background.active{opacity: 1;transition: all var(--transition-fast);}
 .home-digital-options-items {
   z-index: 2;
   grid-column-gap: 20px;

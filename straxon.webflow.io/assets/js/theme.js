@@ -59741,7 +59741,7 @@ timm/lib/timm.js:
                                     duration: 500,
                                     target: {
                                         useEventTarget: "CHILDREN",
-                                        selector: ".home-digital-options-background.in-active",
+                                        selector: ".home-digital-options-background0.in-active",
                                         selectorGuids: [
                                             "f0d46dca-eab7-236e-ceb8-23a2e946c491",
                                             "f0d46dca-eab7-236e-ceb8-23a2e946c4f8",
@@ -59759,7 +59759,7 @@ timm/lib/timm.js:
                                     easing: "",
                                     duration: 500,
                                     target: {
-                                        selector: ".home-digital-options-background.active",
+                                        selector: ".home-digital-options-background0.active",
                                         selectorGuids: [
                                             "f0d46dca-eab7-236e-ceb8-23a2e946c491",
                                             "f0d46dca-eab7-236e-ceb8-23a2e946c4e0",
@@ -59782,7 +59782,7 @@ timm/lib/timm.js:
                                     duration: 300,
                                     target: {
                                         useEventTarget: "CHILDREN",
-                                        selector: ".home-digital-options-background.in-active",
+                                        selector: ".home-digital-options-background0.in-active",
                                         selectorGuids: [
                                             "f0d46dca-eab7-236e-ceb8-23a2e946c491",
                                             "f0d46dca-eab7-236e-ceb8-23a2e946c4f8",
@@ -59800,7 +59800,7 @@ timm/lib/timm.js:
                                     easing: "",
                                     duration: 300,
                                     target: {
-                                        selector: ".home-digital-options-background.active",
+                                        selector: ".home-digital-options-background0.active",
                                         selectorGuids: [
                                             "f0d46dca-eab7-236e-ceb8-23a2e946c491",
                                             "f0d46dca-eab7-236e-ceb8-23a2e946c4e0",
@@ -60166,7 +60166,7 @@ timm/lib/timm.js:
                                     duration: 300,
                                     target: {
                                         useEventTarget: "CHILDREN",
-                                        selector: ".home-digital-options-background.in-active",
+                                        selector: ".home-digital-options-background0.in-active",
                                         selectorGuids: [
                                             "f0d46dca-eab7-236e-ceb8-23a2e946c491",
                                             "f0d46dca-eab7-236e-ceb8-23a2e946c4f8",
@@ -60184,7 +60184,7 @@ timm/lib/timm.js:
                                     easing: "",
                                     duration: 300,
                                     target: {
-                                        selector: ".home-digital-options-background.active",
+                                        selector: ".home-digital-options-background0.active",
                                         selectorGuids: [
                                             "f0d46dca-eab7-236e-ceb8-23a2e946c491",
                                             "f0d46dca-eab7-236e-ceb8-23a2e946c4e0",
