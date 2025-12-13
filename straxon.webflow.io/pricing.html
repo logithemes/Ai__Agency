@@ -801,45 +801,50 @@
             <div class="button-border-effect"></div>
           </div>
         </div>
-          <div class="home-three-faq-box">
-        <div class="faq-border">
-            <div class="w-layout-hflex faq-top mb-2" data-bs-toggle="collapse" data-bs-target="#faqOne" aria-expanded="false" aria-controls="faqOne">
-                <div class="heading-five">What digital marketing services do you offer?</div>
-                <img width="17" height="10" alt="Icon" src="./assets/img/arrows/drop-down.svg" loading="lazy" class="dropdown-icon dropdown-icon-one">
-            </div>
-            <div class="collapse faq-answers faq-answers-one" id="faqOne">
-                <p class="faq-text mt-0 mb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin mattis lobortis ligula vel ornare massa interdum in proin non orci ante.</p>
-            </div>
-        </div>
-        <div class="faq-border">
-            <div class="w-layout-hflex faq-top mb-2" data-bs-toggle="collapse" data-bs-target="#faqTwo" aria-expanded="false" aria-controls="faqTwo">
-                <div class="heading-five">Do you offer web design and development services?</div>
-                <img width="17" height="10" alt="Icon" src="./assets/img/arrows/drop-down.svg" loading="lazy" class="dropdown-icon dropdown-icon-two">
-            </div>
-            <div class="collapse faq-answers faq-answers-two" id="faqTwo">
-                <p class="faq-text mt-0 mb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin mattis lobortis ligula vel ornare massa interdum in proin non orci ante.</p>
-            </div>
-        </div>
-        <div class="faq-border">
-            <div class="w-layout-hflex faq-top mb-2" data-bs-toggle="collapse" data-bs-target="#faqThree" aria-expanded="false" aria-controls="faqThree">
-                <div class="heading-five">What are your payment terms?</div>
-                <img width="17" height="10" alt="Icon" src="./assets/img/arrows/drop-down.svg" loading="lazy" class="dropdown-icon dropdown-icon-three">
-            </div>
-            <div class="collapse faq-answers faq-answers-three" id="faqThree">
-                <p class="faq-text mt-0 mb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin mattis lobortis ligula vel ornare massa interdum in proin non orci ante.</p>
-            </div>
+         <div class="home-three-faq-box accordion" id="faqAccordion">
+
+    <div class="faq-border">
+        <div class="w-layout-hflex faq-top mb-2" data-bs-toggle="collapse" data-bs-target="#faqOne" aria-expanded="false" aria-controls="faqOne">
+            <div class="heading-five">What digital marketing services do you offer?</div>
+            <img width="17" height="10" alt="Icon" src="./assets/img/arrows/drop-down.svg" loading="lazy" class="dropdown-icon dropdown-icon-one">
         </div>
 
-        <div class="faq-border border-0">
-            <div class="w-layout-hflex faq-top mb-2" data-bs-toggle="collapse" data-bs-target="#faqFour" aria-expanded="false" aria-controls="faqFour">
-                <div class="heading-five">What digital marketing services do you offer?</div>
-                <img width="17" height="10" alt="Icon" src="./assets/img/arrows/drop-down.svg" loading="lazy" class="dropdown-icon dropdown-icon-one">
-            </div>
-            <div class="collapse faq-answers faq-answers-one" id="faqFour">
-                <p class="faq-text mt-0 mb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin mattis lobortis ligula vel ornare massa interdum in proin non orci ante.</p>
-            </div>
+        <div class="collapse faq-answers faq-answers-one show" id="faqOne" data-bs-parent="#faqAccordion">
+            <p class="faq-text mt-0 mb-3">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin mattis lobortis ligula vel ornare massa interdum in proin non orci ante.
+            </p>
         </div>
     </div>
+
+
+    <div class="faq-border">
+        <div class="w-layout-hflex faq-top mb-2" data-bs-toggle="collapse" data-bs-target="#faqTwo" aria-expanded="false" aria-controls="faqTwo">
+            <div class="heading-five">Do you offer web design and development services?</div>
+            <img width="17" height="10" alt="Icon" src="./assets/img/arrows/drop-down.svg" loading="lazy" class="dropdown-icon dropdown-icon-two">
+        </div>
+
+        <div class="collapse faq-answers faq-answers-two" id="faqTwo" data-bs-parent="#faqAccordion">
+            <p class="faq-text mt-0 mb-3">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin mattis lobortis ligula vel ornare massa interdum in proin non orci ante.
+            </p>
+        </div>
+    </div>
+
+
+    <div class="faq-border">
+        <div class="w-layout-hflex faq-top mb-2" data-bs-toggle="collapse" data-bs-target="#faqThree" aria-expanded="false" aria-controls="faqThree">
+            <div class="heading-five">What are your payment terms?</div>
+            <img width="17" height="10" alt="Icon" src="./assets/img/arrows/drop-down.svg" loading="lazy" class="dropdown-icon dropdown-icon-three">
+        </div>
+
+        <div class="collapse faq-answers faq-answers-three" id="faqThree" data-bs-parent="#faqAccordion">
+            <p class="faq-text mt-0 mb-3">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin mattis lobortis ligula vel ornare massa interdum in proin non orci ante.
+            </p>
+        </div>
+    </div>
+
+</div>
       </div>
     </div>
   </section>
@@ -855,90 +860,92 @@
               class="text-gradiant">our story</span>
           </h2>
         </div>
-        <div data-delay="2000" data-animation="cross" class="slider w-slider" data-autoplay="true" data-easing="ease-in"
-          data-hide-arrows="false" data-disable-swipe="false" data-autoplay-limit="0" data-nav-spacing="3"
-          data-duration="500" data-infinite="true">
-          <div class="mask w-slider-mask">
-            <div class="w-slide">
-              <div class="w-layout-hflex testimonial-author-images-wrapper">
-                <div class="testimonials-author-box-mid testimonials-author-box-left">
-                  <img width="91" height="91" alt="Author" src="./assets/img/testimonials/author-2.webp" loading="lazy"
-                    class="author-image-one">
+        
+        <div   class="slider w-slider">
+            <div class="slider-main-wrapper">
+              <div class="mask w-slider-mask">
+                <div class="w-slide">
+                  <div class="w-layout-hflex testimonial-author-images-wrapper">
+                    <div class="testimonials-author-box-mid testimonials-author-box-left">
+                      <img width="91" height="91" alt="Author" src="./assets/img/testimonials/author-2.webp"
+                        loading="lazy" class="author-image-one">
+                    </div>
+                    <div class="testimonials-author-box-mid">
+                      <img width="126" height="126" alt="Author" src="./assets/img/testimonials/author-3.webp"
+                        loading="lazy" class="author-image-one">
+                    </div>
+                    <div class="testimonials-author-box-mid testimonials-author-box-right">
+                      <img width="91" height="91" alt="Author" src="./assets/img/testimonials/author-1.webp"
+                        loading="lazy" class="author-image-one">
+                    </div>
+                  </div>
+                  <div class="w-layout-vflex testimonail-text">
+                    <p class="margin-bottom-twenty">“ Lorem ipsum dolor sit consectetur adipiscing.  Mauris scelerisque
+                      euismod ante mpor. Curabitur rutrum id odio sit amet efficitur. Vestibulum tempor mattis mollis.
+                      Phasellus eget sapien in nisi sollicitudin commodo ac quis tortor. ”</p>
+                    <div class="heading-five">Jeffery Robinson</div>
+                    <div class="text-small text-capitalize">Professional</div>
+                  </div>
                 </div>
-                <div class="testimonials-author-box-mid">
-                  <img width="126" height="126" alt="Author" src="./assets/img/testimonials/author-3.webp"
-                    loading="lazy" class="author-image-one">
+                <div class="w-slide">
+                  <div class="w-layout-hflex testimonial-author-images-wrapper">
+                    <div class="testimonials-author-box-mid testimonials-author-box-right">
+                      <img width="91" height="91" alt="Author" src="./assets/img/testimonials/author-3.webp"
+                        loading="lazy" class="author-image-one">
+                    </div>
+                    <div class="testimonials-author-box-mid">
+                      <img width="126" height="126" alt="Author" src="./assets/img/testimonials/author-1.webp"
+                        loading="lazy" class="author-image-one">
+                    </div>
+                    <div class="testimonials-author-box-mid testimonials-author-box-left">
+                      <img width="91" height="91" alt="Author" src="./assets/img/testimonials/author-2.webp"
+                        loading="lazy" class="author-image-one">
+                    </div>
+                  </div>
+                  <div class="w-layout-vflex testimonail-text">
+                    <p class="margin-bottom-twenty">“ Lorem ipsum dolor sit consectetur adipiscing.  Mauris scelerisque
+                      euismod ante mpor. Curabitur rutrum id odio sit amet efficitur. Vestibulum tempor mattis mollis.
+                      Phasellus eget sapien in nisi sollicitudin commodo ac quis tortor. ”</p>
+                    <div class="heading-five">Jennifer Chase</div>
+                    <div class="text-small text-capitalize">Designer</div>
+                  </div>
                 </div>
-                <div class="testimonials-author-box-mid testimonials-author-box-right">
-                  <img width="91" height="91" alt="Author" src="./assets/img/testimonials/author-1.webp" loading="lazy"
-                    class="author-image-one">
+                <div class="w-slide">
+                  <div class="w-layout-hflex testimonial-author-images-wrapper">
+                    <div class="testimonials-author-box-mid testimonials-author-box-right">
+                      <img width="91" height="91" alt="Author" src="./assets/img/testimonials/author-1.webp"
+                        loading="lazy" class="author-image-one">
+                    </div>
+                    <div class="testimonials-author-box-mid">
+                      <img width="126" height="126" alt="Author" src="./assets/img/testimonials/author-2.webp"
+                        loading="lazy" class="author-image-one">
+                    </div>
+                    <div class="testimonials-author-box-mid testimonials-author-box-left">
+                      <img width="91" height="91" alt="Author" src="./assets/img/testimonials/author-3.webp"
+                        loading="lazy" class="author-image-one">
+                    </div>
+                  </div>
+                  <div class="w-layout-vflex testimonail-text">
+                    <p class="margin-bottom-twenty">“ Lorem ipsum dolor sit consectetur adipiscing.  Mauris scelerisque
+                      euismod ante mpor. Curabitur rutrum id odio sit amet efficitur. Vestibulum tempor mattis mollis.
+                      Phasellus eget sapien in nisi sollicitudin commodo ac quis tortor. ”</p>
+                    <div class="heading-five">Susana Higgins</div>
+                    <div class="text-small text-capitalize">Developer</div>
+                  </div>
                 </div>
-              </div>
-              <div class="w-layout-vflex testimonail-text">
-                <p class="margin-bottom-twenty">“ Lorem ipsum dolor sit consectetur adipiscing.  Mauris scelerisque
-                  euismod ante mpor. Curabitur rutrum id odio sit amet efficitur. Vestibulum tempor mattis mollis.
-                  Phasellus eget sapien in nisi sollicitudin commodo ac quis tortor. ”</p>
-                <div class="heading-five">Jeffery Robinson</div>
-                <div class="text-small text-capitalize">Professional</div>
               </div>
             </div>
-            <div class="w-slide">
-              <div class="w-layout-hflex testimonial-author-images-wrapper">
-                <div class="testimonials-author-box-mid testimonials-author-box-right">
-                  <img width="91" height="91" alt="Author" src="./assets/img/testimonials/author-3.webp" loading="lazy"
-                    class="author-image-one">
-                </div>
-                <div class="testimonials-author-box-mid">
-                  <img width="126" height="126" alt="Author" src="./assets/img/testimonials/author-1.webp"
-                    loading="lazy" class="author-image-one">
-                </div>
-                <div class="testimonials-author-box-mid testimonials-author-box-left">
-                  <img width="91" height="91" alt="Author" src="./assets/img/testimonials/author-2.webp" loading="lazy"
-                    class="author-image-one">
-                </div>
-              </div>
-              <div class="w-layout-vflex testimonail-text">
-                <p class="margin-bottom-twenty">“ Lorem ipsum dolor sit consectetur adipiscing.  Mauris scelerisque
-                  euismod ante mpor. Curabitur rutrum id odio sit amet efficitur. Vestibulum tempor mattis mollis.
-                  Phasellus eget sapien in nisi sollicitudin commodo ac quis tortor. ”</p>
-                <div class="heading-five">Jennifer Chase</div>
-                <div class="text-small text-capitalize">Designer</div>
-              </div>
+            <div class="left-arrow w-slider-arrow-left">
+              <img width="23" height="24" alt="Icon" src="./assets/img/arrows/arrow-right.svg" loading="lazy"
+                class="slider-icon-rotated slider-icon-arrow">
             </div>
-            <div class="w-slide">
-              <div class="w-layout-hflex testimonial-author-images-wrapper">
-                <div class="testimonials-author-box-mid testimonials-author-box-right">
-                  <img width="91" height="91" alt="Author" src="./assets/img/testimonials/author-1.webp" loading="lazy"
-                    class="author-image-one">
-                </div>
-                <div class="testimonials-author-box-mid">
-                  <img width="126" height="126" alt="Author" src="./assets/img/testimonials/author-2.webp"
-                    loading="lazy" class="author-image-one">
-                </div>
-                <div class="testimonials-author-box-mid testimonials-author-box-left">
-                  <img width="91" height="91" alt="Author" src="./assets/img/testimonials/author-3.webp" loading="lazy"
-                    class="author-image-one">
-                </div>
-              </div>
-              <div class="w-layout-vflex testimonail-text">
-                <p class="margin-bottom-twenty">“ Lorem ipsum dolor sit consectetur adipiscing.  Mauris scelerisque
-                  euismod ante mpor. Curabitur rutrum id odio sit amet efficitur. Vestibulum tempor mattis mollis.
-                  Phasellus eget sapien in nisi sollicitudin commodo ac quis tortor. ”</p>
-                <div class="heading-five">Susana Higgins</div>
-                <div class="text-small text-capitalize">Developer</div>
-              </div>
+            <div class="right-arrow w-slider-arrow-right">
+              <img width="23" height="24" alt="Icon" src="./assets/img/arrows/arrow-right.svg" loading="lazy"
+                class="slider-icon-arrow">
             </div>
+            <div class="display-off w-slider-nav w-num "></div>
           </div>
-          <div class="left-arrow w-slider-arrow-left">
-            <img width="23" height="24" alt="Icon" src="./assets/img/arrows/arrow-right.svg" loading="lazy"
-              class="slider-icon-rotated slider-icon-arrow">
-          </div>
-          <div class="right-arrow w-slider-arrow-right">
-            <img width="23" height="24" alt="Icon" src="./assets/img/arrows/arrow-right.svg" loading="lazy"
-              class="slider-icon-arrow">
-          </div>
-          <div class="display-off w-slider-nav w-num"></div>
-        </div>
+
       </div>
     </div>
   </section>
@@ -1029,13 +1036,16 @@
   <!-- ===================================================
 	js here
 	==================================================== -->
-  <script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/jquery.min.js"></script>
   <script src="assets/js/bootstrap.bundle.min.js"></script>
- 
+  <script src="assets/js/slick-custom.js"></script>
   <script src="assets/js/theme.js"></script>
   <script src="assets/js/wow.js"></script>
   <script src="assets/js/slick.js"></script>
-  <script src="assets/js/slick-custom.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="assets/js/gsap.js"></script>
 </body>
 
 </html>

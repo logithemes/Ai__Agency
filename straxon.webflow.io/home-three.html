@@ -267,11 +267,11 @@
       <!-- ===================================================
 				Home three hero
 				==================================================== -->
-      <section class="home-three-hero">
+      <section class="home-three-hero  position-relative ">
         <div class="w-layout-blockcontainer container home-three-hero-container w-container">
           <div class="w-layout-hflex home-three-hero-main">
-            <div data-w-id="d1330a21-0873-c9e7-6de7-8885cbe0d17f" class="home-three-hero-image">
-              <div data-w-id="c4243365-9815-4f09-1bca-a6d1d50a9554" class="overflow-hidden">
+            <div class="home-three-hero-image">
+              <div class="overflow-hidden">
                 <img width="425" height="610" alt="Digital Image" src="./assets/img/hero/hero-3.webp" loading="lazy" srcset="./assets/img/hero/hero-3.webp 500w, ./assets/img/hero/hero-3.webp 800w, ./assets/img/hero/hero-3.webp 850w" sizes="(max-width: 479px) 94vw, (max-width: 767px) 96vw, 425px" class="border-radius-thirty mobile-image-full-width" >
               </div>
             </div>
@@ -295,10 +295,10 @@
                 </div>
               </div>
               <div class="home-three-hero-description">
-                <img width="104" height="89" alt="Icon" src="./assets/img/shapes/line-3.svg" loading="lazy" data-w-id="d1330a21-0873-c9e7-6de7-8885cbe0d197" class="arrow-icon" >
+                <img width="104" height="89" alt="Icon" src="./assets/img/shapes/line-3.svg" loading="lazy"  class="arrow-icon" >
                 <p class="no-margin-bottom wow fadeInUp" data-wow-duration="0.8s">Lorem ipsum dolor sit amet consetetur adipiscing elit vestibulum rhoncus efficitur enon hendrerit.</p>
               </div>
-              <div data-w-id="d1330a21-0873-c9e7-6de7-8885cbe0d198" class="button-wrapper wow fadeInUp" data-wow-duration="0.8s">
+              <div  class="button-wrapper wow fadeInUp" data-wow-duration="0.8s">
                 <a href="service-one.html" class="button w-button">explore our service</a>
                 <div  class="button-border-effect"></div>
               </div>
@@ -307,17 +307,12 @@
           <div class="w-layout-hflex what-you-want">
             <div class="text-capitalize">what we do?</div>
             <div class="text-capitalize">2025 / 26</div>
-            <div class="border"></div>
+            <div class="theme-border"></div>
           </div>
-          <div class="home-three-hero-border-wrapper">
-            <div class="w-layout-hflex home-three-border-wrap">
-              <div class="vertical-border"></div>
-              <div class="vertical-border"></div>
-            </div>
-          </div>
+         
         </div>
         <div class="banner-marquee-wrap ">
-  <div class="banner-marquee-inner marquee-train-left d-inline-flex text-nowrap">
+  <div class="banner-marquee-inner home-three-marquee d-inline-flex text-nowrap">
     <div class="banner-marquee-text">Creative Solutions that Drive Success</div>
     <div class="banner-marquee-text">Creative Solutions that Drive Success</div>
   </div>
@@ -624,45 +619,71 @@
               </div>
             </div>
        
-    <div class="home-three-faq-box">
-        <div class="faq-border">
-            <div class="w-layout-hflex faq-top mb-2" data-bs-toggle="collapse" data-bs-target="#faqOne" aria-expanded="false" aria-controls="faqOne">
-                <div class="heading-five">What digital marketing services do you offer?</div>
-                <img width="17" height="10" alt="Icon" src="./assets/img/arrows/drop-down.svg" loading="lazy" class="dropdown-icon dropdown-icon-one">
-            </div>
-            <div class="collapse faq-answers faq-answers-one" id="faqOne">
-                <p class="faq-text mt-0 mb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin mattis lobortis ligula vel ornare massa interdum in proin non orci ante.</p>
-            </div>
-        </div>
-        <div class="faq-border">
-            <div class="w-layout-hflex faq-top mb-2" data-bs-toggle="collapse" data-bs-target="#faqTwo" aria-expanded="false" aria-controls="faqTwo">
-                <div class="heading-five">Do you offer web design and development services?</div>
-                <img width="17" height="10" alt="Icon" src="./assets/img/arrows/drop-down.svg" loading="lazy" class="dropdown-icon dropdown-icon-two">
-            </div>
-            <div class="collapse faq-answers faq-answers-two" id="faqTwo">
-                <p class="faq-text mt-0 mb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin mattis lobortis ligula vel ornare massa interdum in proin non orci ante.</p>
-            </div>
-        </div>
-        <div class="faq-border">
-            <div class="w-layout-hflex faq-top mb-2" data-bs-toggle="collapse" data-bs-target="#faqThree" aria-expanded="false" aria-controls="faqThree">
-                <div class="heading-five">What are your payment terms?</div>
-                <img width="17" height="10" alt="Icon" src="./assets/img/arrows/drop-down.svg" loading="lazy" class="dropdown-icon dropdown-icon-three">
-            </div>
-            <div class="collapse faq-answers faq-answers-three" id="faqThree">
-                <p class="faq-text mt-0 mb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin mattis lobortis ligula vel ornare massa interdum in proin non orci ante.</p>
-            </div>
+      <div class="home-three-faq-box accordion" id="faqAccordion">
+
+    <div class="faq-border">
+        <div class="w-layout-hflex faq-top mb-2"
+             data-bs-toggle="collapse"
+             data-bs-target="#faqOne"
+             aria-expanded="false"
+             aria-controls="faqOne">
+            <div class="heading-five">What digital marketing services do you offer?</div>
+            <img width="17" height="10" alt="Icon" src="./assets/img/arrows/drop-down.svg"
+                 loading="lazy" class="dropdown-icon dropdown-icon-one">
         </div>
 
-        <div class="faq-border border-0">
-            <div class="w-layout-hflex faq-top mb-2" data-bs-toggle="collapse" data-bs-target="#faqFour" aria-expanded="false" aria-controls="faqFour">
-                <div class="heading-five">What digital marketing services do you offer?</div>
-                <img width="17" height="10" alt="Icon" src="./assets/img/arrows/drop-down.svg" loading="lazy" class="dropdown-icon dropdown-icon-one">
-            </div>
-            <div class="collapse faq-answers faq-answers-one" id="faqFour">
-                <p class="faq-text mt-0 mb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin mattis lobortis ligula vel ornare massa interdum in proin non orci ante.</p>
-            </div>
+        <div class="collapse faq-answers faq-answers-one show"
+             id="faqOne"
+             data-bs-parent="#faqAccordion">
+            <p class="faq-text mt-0 mb-3">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin mattis lobortis ligula vel ornare massa interdum in proin non orci ante.
+            </p>
         </div>
     </div>
+
+
+    <div class="faq-border">
+        <div class="w-layout-hflex faq-top mb-2"
+             data-bs-toggle="collapse"
+             data-bs-target="#faqTwo"
+             aria-expanded="false"
+             aria-controls="faqTwo">
+            <div class="heading-five">Do you offer web design and development services?</div>
+            <img width="17" height="10" alt="Icon" src="./assets/img/arrows/drop-down.svg"
+                 loading="lazy" class="dropdown-icon dropdown-icon-two">
+        </div>
+
+        <div class="collapse faq-answers faq-answers-two"
+             id="faqTwo"
+             data-bs-parent="#faqAccordion">
+            <p class="faq-text mt-0 mb-3">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin mattis lobortis ligula vel ornare massa interdum in proin non orci ante.
+            </p>
+        </div>
+    </div>
+
+
+    <div class="faq-border">
+        <div class="w-layout-hflex faq-top mb-2"
+             data-bs-toggle="collapse"
+             data-bs-target="#faqThree"
+             aria-expanded="false"
+             aria-controls="faqThree">
+            <div class="heading-five">What are your payment terms?</div>
+            <img width="17" height="10" alt="Icon" src="./assets/img/arrows/drop-down.svg"
+                 loading="lazy" class="dropdown-icon dropdown-icon-three">
+        </div>
+
+        <div class="collapse faq-answers faq-answers-three"
+             id="faqThree"
+             data-bs-parent="#faqAccordion">
+            <p class="faq-text mt-0 mb-3">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin mattis lobortis ligula vel ornare massa interdum in proin non orci ante.
+            </p>
+        </div>
+    </div>
+
+</div>
 
           </div>
         </div>
@@ -675,18 +696,11 @@
           <div class="w-layout-vflex home-three-work-main">
             <div class="home-three-work-background"></div>
             <div class="w-layout-vflex home-three-work-text">
-              <div data-w-id="dd46cf7a-c911-ebdc-61d4-a2318b4dfcca" class="home-three-work-heading">recent work</div>
-              <p data-w-id="dd46cf7a-c911-ebdc-61d4-a2318b4dfccc" class="no-margin-bottom">Lorem ipsum dolor sit amet consectetur adipiscing.</p>
+              <div class="home-three-work-heading">recent work</div>
+              <p class="no-margin-bottom">Lorem ipsum dolor sit amet consectetur adipiscing.</p>
             </div>
-            <div data-w-id="dd46cf7a-c911-ebdc-61d4-a2318b4dfcce" class="recent-work-boxes">
-              <div id="w-node-dd46cf7a-c911-ebdc-61d4-a2318b4dfccf-8b4dfcc5" class="work-three-lines">
-                <div class="work-tree-line-one"></div>
-                <div class="work-tree-line-two"></div>
-                <div class="work-three-side-lines">
-                  <div class="work-tree-line-three"></div>
-                  <div class="work-tree-line-three"></div>
-                </div>
-              </div>
+            <div class="recent-work-boxes">
+             
               <div  class="w-dyn-list portfolio-three-wrapper">
                 <div role="list" class="w-dyn-items">
                   <div role="listitem" class="w-dyn-item">
@@ -872,7 +886,8 @@
 				==================================================== -->
     <section class="footer-three">
       <div class="w-layout-blockcontainer container w-container">
-        <div data-w-id="10d218ae-a0a2-4758-5efd-fb3c7b60f34c" class="footer-one-border"></div>
+       <div 
+    class="footer-one-border"></div>
         <div data-w-id="5e1ecd57-59ab-0a70-233a-e9621fe3b6fc" class="w-layout-hflex footer-one-main-wrapper">
           <div class="footer-one-about-wrapper">
             <a href="index.html" class="site-logo w-inline-block">
@@ -941,7 +956,8 @@
 				copy right
 				==================================================== -->
       <div class="w-layout-blockcontainer container w-container">
-        <div data-w-id="1aaf16c8-8bcd-3b5b-1e52-829a907d4d5e" class="footer-one-border"></div>
+       <div 
+    class="footer-one-border"></div>
         <div data-w-id="e85dc650-07c1-4ea2-7d7a-4699e00e526c" class="w-layout-vflex footer-three-bottom">
           <div class="body-small-text"> © 2025 Digital Strategy , All Right Receved. </div>
         </div>

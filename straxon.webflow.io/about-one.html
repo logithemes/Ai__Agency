@@ -369,14 +369,14 @@
           <div class="text-capitalize">about us</div>
         </div>
         <div class="w-layout-hflex about-one-text-wrapper">
-          <h1 data-w-id="7fb9529f-2177-b1cc-5fca-0e0b4f8bf29c" class="no-margin about-one-hero-text  wow fadeInUp"
+          <h1  class="no-margin about-one-hero-text  wow fadeInUp"
             data-wow-duration="0.7s">Crafting Your Digital <span class="text-gradiant">Edge</span>
           </h1>
         </div>
       </div>
       <div class="about-one-hero-image">
-        <div data-w-id="d69d1e24-a52d-219a-e228-febcd08635e7" class="story-image-wrapper">
-          <div data-w-id="d69d1e24-a52d-219a-e228-febcd08635e8" class="overflow-hidden">
+        <div  class="story-image-wrapper">
+          <div class="overflow-hidden">
             <img width="1290" height="505" alt="About One Hero Image" src="./assets/img/about-us/about-one-hero.webp"
               loading="lazy" srcset="./assets/img/about-us/about-one-hero.webp 500w, 
                             ./assets/img/about-us/about-one-hero.webp 800w, 
@@ -757,45 +757,72 @@
               </div>
             </div>
             <!--  -->
-           <div class="home-three-faq-box">
-        <div class="faq-border">
-            <div class="w-layout-hflex faq-top mb-2" data-bs-toggle="collapse" data-bs-target="#faqOne" aria-expanded="false" aria-controls="faqOne">
-                <div class="heading-five">What digital marketing services do you offer?</div>
-                <img width="17" height="10" alt="Icon" src="./assets/img/arrows/drop-down.svg" loading="lazy" class="dropdown-icon dropdown-icon-one">
-            </div>
-            <div class="collapse faq-answers faq-answers-one" id="faqOne">
-                <p class="faq-text mt-0 mb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin mattis lobortis ligula vel ornare massa interdum in proin non orci ante.</p>
-            </div>
-        </div>
-        <div class="faq-border">
-            <div class="w-layout-hflex faq-top mb-2" data-bs-toggle="collapse" data-bs-target="#faqTwo" aria-expanded="false" aria-controls="faqTwo">
-                <div class="heading-five">Do you offer web design and development services?</div>
-                <img width="17" height="10" alt="Icon" src="./assets/img/arrows/drop-down.svg" loading="lazy" class="dropdown-icon dropdown-icon-two">
-            </div>
-            <div class="collapse faq-answers faq-answers-two" id="faqTwo">
-                <p class="faq-text mt-0 mb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin mattis lobortis ligula vel ornare massa interdum in proin non orci ante.</p>
-            </div>
-        </div>
-        <div class="faq-border">
-            <div class="w-layout-hflex faq-top mb-2" data-bs-toggle="collapse" data-bs-target="#faqThree" aria-expanded="false" aria-controls="faqThree">
-                <div class="heading-five">What are your payment terms?</div>
-                <img width="17" height="10" alt="Icon" src="./assets/img/arrows/drop-down.svg" loading="lazy" class="dropdown-icon dropdown-icon-three">
-            </div>
-            <div class="collapse faq-answers faq-answers-three" id="faqThree">
-                <p class="faq-text mt-0 mb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin mattis lobortis ligula vel ornare massa interdum in proin non orci ante.</p>
-            </div>
+           <div class="home-three-faq-box accordion" id="faqAccordion">
+
+    <div class="faq-border">
+        <div class="w-layout-hflex faq-top mb-2"
+             data-bs-toggle="collapse"
+             data-bs-target="#faqOne"
+             aria-expanded="false"
+             aria-controls="faqOne">
+            <div class="heading-five">What digital marketing services do you offer?</div>
+            <img width="17" height="10" alt="Icon" src="./assets/img/arrows/drop-down.svg"
+                 loading="lazy" class="dropdown-icon dropdown-icon-one">
         </div>
 
-        <div class="faq-border border-0">
-            <div class="w-layout-hflex faq-top mb-2" data-bs-toggle="collapse" data-bs-target="#faqFour" aria-expanded="false" aria-controls="faqFour">
-                <div class="heading-five">What digital marketing services do you offer?</div>
-                <img width="17" height="10" alt="Icon" src="./assets/img/arrows/drop-down.svg" loading="lazy" class="dropdown-icon dropdown-icon-one">
-            </div>
-            <div class="collapse faq-answers faq-answers-one" id="faqFour">
-                <p class="faq-text mt-0 mb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin mattis lobortis ligula vel ornare massa interdum in proin non orci ante.</p>
-            </div>
+        <div class="collapse faq-answers faq-answers-one show"
+             id="faqOne"
+             data-bs-parent="#faqAccordion">
+            <p class="faq-text mt-0 mb-3">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin mattis lobortis ligula vel ornare massa interdum in proin non orci ante.
+            </p>
         </div>
     </div>
+
+
+    <div class="faq-border">
+        <div class="w-layout-hflex faq-top mb-2"
+             data-bs-toggle="collapse"
+             data-bs-target="#faqTwo"
+             aria-expanded="false"
+             aria-controls="faqTwo">
+            <div class="heading-five">Do you offer web design and development services?</div>
+            <img width="17" height="10" alt="Icon" src="./assets/img/arrows/drop-down.svg"
+                 loading="lazy" class="dropdown-icon dropdown-icon-two">
+        </div>
+
+        <div class="collapse faq-answers faq-answers-two"
+             id="faqTwo"
+             data-bs-parent="#faqAccordion">
+            <p class="faq-text mt-0 mb-3">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin mattis lobortis ligula vel ornare massa interdum in proin non orci ante.
+            </p>
+        </div>
+    </div>
+
+
+    <div class="faq-border">
+        <div class="w-layout-hflex faq-top mb-2"
+             data-bs-toggle="collapse"
+             data-bs-target="#faqThree"
+             aria-expanded="false"
+             aria-controls="faqThree">
+            <div class="heading-five">What are your payment terms?</div>
+            <img width="17" height="10" alt="Icon" src="./assets/img/arrows/drop-down.svg"
+                 loading="lazy" class="dropdown-icon dropdown-icon-three">
+        </div>
+
+        <div class="collapse faq-answers faq-answers-three"
+             id="faqThree"
+             data-bs-parent="#faqAccordion">
+            <p class="faq-text mt-0 mb-3">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin mattis lobortis ligula vel ornare massa interdum in proin non orci ante.
+            </p>
+        </div>
+    </div>
+
+</div>
+
             <!--  -->
           </div>
         </div>

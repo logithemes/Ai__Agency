@@ -13,6 +13,20 @@ gsap.to(".home-one-portfolio-left, .home-one-portfolio-right", {
 });
     
 
+// HOME TWO PORTFOLIOS
+gsap.registerPlugin(ScrollTrigger);
+
+gsap.to(".home-two-testimonial-row-one, .home-two-testimonial-row-two", {
+  yPercent: -55,        // Moves up by 50% of the element’s own height
+  ease: "none",
+  scrollTrigger: {
+    trigger: ".home-two-testimonial",
+    start: "top bottom",
+    end: "bottom top",
+    scrub: 1
+  }
+});
+
 
 var cursor = document.querySelector(".explore-now");
 
@@ -44,32 +58,9 @@ $(".landing-cards").on("mouseleave", function () {
   });
 });
 
-// SELECT USING .lightbox-link
-const playBtn = document.querySelector(".lightbox-link img");
-const wrapper = document.querySelector(".lightbox-link");
 
-// MOUSE MOVE EFFECT
-wrapper.addEventListener("mousemove", (e) => {
-  let x = (e.offsetX / 15);
-  let y = (e.offsetY / 15);
 
-  gsap.to(playBtn, {
-    x: x,
-    y: y,
-    duration: 0.3,
-    ease: "power3.out"
-  });
-});
 
-// RESET ON LEAVE
-wrapper.addEventListener("mouseleave", () => {
-  gsap.to(playBtn, {
-    x: 0,
-    y: 0,
-    duration: 0.4,
-    ease: "power3.out"
-  });
-});
 
 
 gsap.registerPlugin(ScrollTrigger);
@@ -151,7 +142,7 @@ trainsLeft.forEach((train) => {
 
   gsap.to(train, {
     x: `-=${trainWidth / 1}`,   // move by half (since cloned)
-    duration: 20,
+    duration: 50,
     ease: "none",
     repeat: -1,
     modifiers: {
@@ -159,6 +150,22 @@ trainsLeft.forEach((train) => {
     }
   });
 });
+
+const trainsLeftHome = document.querySelectorAll(".home-three-marquee");
+trainsLeftHome.forEach((train) => {
+  const trainWidth = fillWithClones(train);
+
+  gsap.to(train, {
+    x: `-=${trainWidth / 2}`,   // move by half (since cloned)
+    duration: 50,
+    ease: "none",
+    repeat: -1,
+    modifiers: {
+      x: gsap.utils.unitize((x) => parseFloat(x) % (trainWidth / 1))
+    }
+  });
+});
+
 
 // Right to left marquee
 const trainsRight = document.querySelectorAll(".marquee-train-right");
@@ -180,8 +187,7 @@ trainsRight.forEach((train) => {
 
   // HOME ONE BANNER
     const heroSection = document.querySelector('.parallax-hero-sec');
-  const girlWrapper = document.querySelector('.parallax-img-one');
-  const boyWrapper = document.querySelector('.parallax-img-two');
+  const girlWrapper = document.querySelectorAll('.parallax-img-one');
     const borderMovementBar = document.querySelector('.border-movement-bar');
   
   heroSection.addEventListener('mousemove', (e) => {
@@ -310,4 +316,59 @@ document.addEventListener("shown.bs.tab", (event) => {
   
 
 
-// 
+// HOME TWO  TESTIMONALS
+gsap.registerPlugin(ScrollTrigger);
+
+// START POSITION (translateX 100%)
+gsap.set(".home-two-testimonial-heading", {
+  x: "100%"
+});
+
+// ON ENTER → SLIDE IN
+gsap.to(".home-two-testimonial-heading", {
+  x: "0%",
+  duration: 1,
+  ease: "power3.out",
+  scrollTrigger: {
+    trigger: ".home-two-testimonial",
+    start: "top 80%",   // when section enters screen
+  }
+});
+
+// PARALLAX MOVE IN NEGATIVE X WHILE SCROLLING
+gsap.to(".home-two-testimonial-heading", {
+  x: "-60%",            // adjust negative movement
+  ease: "none",
+  scrollTrigger: {
+    trigger: ".home-two-testimonial",
+    start: "top bottom",
+    end: "bottom top",
+    scrub: 2
+  }
+});
+
+
+
+// LINE HEIGNT PORJECT
+gsap.registerPlugin(ScrollTrigger);
+
+// run only if lines exist on this page
+if (document.querySelector(".scroll-line-ani") && document.querySelector(".line")) {
+
+  gsap.to(".line", {
+    height: "100%",
+    ease: "none",
+    stagger: 0.1,
+    scrollTrigger: {
+      trigger: ".scroll-line-ani",
+      start: "top bottom",
+      end: "bottom top",
+      scrub: true,
+    }
+  });
+
+}
+
+
+
+

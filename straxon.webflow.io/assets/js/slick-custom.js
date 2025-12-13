@@ -35,6 +35,7 @@
     $('.about-three-slider').slick({
   dots: true,
   arrows: false,
+  dots:true,
   infinite: true,
   speed: 1000,
   autoplay: true,
@@ -76,11 +77,6 @@ if (/[?&]e=1(&|$)/.test(window.location.search)) {
  $('.tab-links').on('click', function () {
   $('.tab-links').removeClass('w--current');  // remove from all
   $(this).addClass('w--current');             // add to clicked one
-});
-
-$('.service-three-cards').on('mouseenter', '.service-three-cards-overlay', function () {
-  $('.service-three-cards-overlay').removeClass('in-active');
-  $(this).addClass('in-active');
 });
 
 
@@ -136,15 +132,15 @@ $("#yearly-tab").on("click", function () {
   }
 
   // Trigger when section appears
-  $(window).on('scroll', function () {
-    let sectionTop = $('.counters-wrapper').offset().top - window.innerHeight + 100;
-    if ($(window).scrollTop() > sectionTop) {
-      startCounter();
-    }
-  });
+  // $(window).on('scroll', function () {
+  //   let sectionTop = $('.counters-wrapper').offset().top - window.innerHeight + 100;
+  //   if ($(window).scrollTop() > sectionTop) {
+  //     startCounter();
+  //   }
+  // });
 
   // HOME ONE SLIDER
-    $('.slider___1 .w-slider-mask').slick({
+    $('.slider-main-wrapper .w-slider-mask').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: true,
@@ -159,6 +155,14 @@ $("#yearly-tab").on("click", function () {
 $('.home-digital-options-background').hover(function() {
   $('.home-digital-options-background').removeClass('active');
   $(this).addClass('active');
+});
+
+
+// 
+$(".service-three-cards").on("mouseenter", function () {
+  $(".service-three-cards-overlay").removeClass("in-active");
+  $(this).children(".service-three-cards-overlay").addClass("in-active");
+
 });
 
   });
