@@ -28,37 +28,46 @@ gsap.to(".home-two-testimonial-row-one, .home-two-testimonial-row-two", {
 });
 
 
-var cursor = document.querySelector(".explore-now");
+// mouse move landing cards
+gsap.utils.toArray(".landing-cards").forEach(card => {
+  
+  const explore = card.querySelector(".explore-now");
 
-// Mouse Move
-$(".landing-cards").on("mousemove", function (e) {
-  gsap.to(cursor, {
-    x: e.clientX,
-    y: e.clientY,
-    duration: 0.2,
-    ease: "power2.out"
+  // Hover IN
+  card.addEventListener("mouseenter", () => {
+    gsap.to(explore, {
+      scale: 1,
+      duration: 0.4,
+      ease: "power3.out"
+    });
   });
-});
 
-// Hover Scale In
-$(".landing-cards").on("mouseenter", function () {
-  gsap.to(cursor, {
-    scale: 1,
-    duration: 0.3,
-    ease: "power2.out"
+  // Hover OUT
+  card.addEventListener("mouseleave", () => {
+    gsap.to(explore, {
+      scale: 0,
+      x: 0,
+      y: 0,
+      duration: 0.3,
+      ease: "power3.in"
+    });
   });
-});
 
-// Hover Scale Out
-$(".landing-cards").on("mouseleave", function () {
-  gsap.to(cursor, {
-    scale: 0,
-    duration: 0.3,
-    ease: "power2.out"
+  // Parallax on mouse move
+  card.addEventListener("mousemove", (e) => {
+    const rect = card.getBoundingClientRect();
+    const x = e.clientX - rect.left - rect.width / 2;
+    const y = e.clientY - rect.top - rect.height / 2;
+
+    gsap.to(explore, {
+      x: x * 0.1,
+      y: y * 0.1,
+      duration: 0.1,
+      ease: "power2.out"
+    });
   });
+
 });
-
-
 
 
 

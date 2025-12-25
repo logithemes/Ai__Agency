@@ -29213,7 +29213,7 @@
                                 el: i,
                                 config: {},
                             })),
-                            (n.mask = i.children(".w-slider-mask")),
+                            (n.mask = i.children(".w-slider-mask00")),
                             (n.left = i.children(".w-slider-arrow-left")),
                             (n.right = i.children(".w-slider-arrow-right")),
                             (n.nav = i.children(".w-slider-nav")),
@@ -29224,7 +29224,7 @@
                             void 0 === i.attr("aria-label") && i.attr("aria-label", "carousel");
                         var o = n.mask.attr("id");
                         if (
-                            (o || ((o = "w-slider-mask-" + t), n.mask.attr("id", o)),
+                            (o || ((o = "w-slider-mask0-" + t), n.mask.attr("id", o)),
                             !E && !n.ariaLiveLabel && (n.ariaLiveLabel = e(v).appendTo(n.mask)),
                             n.left.attr("role", "button"),
                             n.left.attr("tabindex", "0"),

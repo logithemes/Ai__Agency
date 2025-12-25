@@ -569,6 +569,7 @@ ol {
   width: 100%;
   z-index: 999999;
   background: #050610;
+  display: none;
   
 }
 
@@ -1829,12 +1830,18 @@ social media css Start
 }
 
 @media screen and (max-width: 767px) {
+   .home-three-img-swiper {
+    width: 260px;
+    height: 340px;
+    margin: auto;
+  }
   .w-nav-brand {
     padding-left: 10px;
   }
 }
 
 @media (min-width: 768px) {
+  
   .w-lightbox-content {
     height: 96vh;
     margin-top: 2vh;
@@ -2399,6 +2406,7 @@ social media css Start
   position: absolute;
   transform: translate(-60px, 60px);
 }
+
 .home-three-testimonial-text {
   grid-column-gap: 15px;
   grid-row-gap: 15px;
@@ -2409,6 +2417,7 @@ social media css Start
   padding-top: 30px;
   padding-bottom: 20px;
   padding-left: 40px;
+  margin-left: 50px;
 }
 .home-three-testimonial-slide {
   background-color: #ddd0;
@@ -2430,11 +2439,7 @@ social media css Start
   position: relative;
   overflow: hidden;
 }
-.testimonial-main-image {
-  z-index: 3;
-  position: absolute;
-  transform: translate(-30px, 30px);
-}
+
 .home-three-testimonial-image-wrapper {
   justify-content: flex-start;
   align-items: center;
@@ -2793,6 +2798,18 @@ social media css Start
   grid-row-gap: 20px;
   position: relative;
 }
+
+.home-three-img-swiper {
+  width: 320px;
+  height: 420px;
+}
+.home-three-img-swiper .swiper-slide {
+  border-radius: 26px;
+  overflow: hidden;
+}
+.home-three-img-swiper img {
+  object-fit:cover;
+}
 .solutions-heading {
   margin-top: 25px;
   margin-bottom: 45px;
@@ -2834,7 +2851,7 @@ social media css Start
 }
 
 .button.button-three {
-  background-color: #05061000;
+  background-color: #05061000 !important;
   border: 1px solid #fff;
 }
 
@@ -7848,7 +7865,6 @@ opacity: 0;
   height: 100vh;
   display: flex;
   position: fixed;
-  inset: 0%;
 }
 
 .explore-now {
@@ -7862,7 +7878,6 @@ opacity: 0;
   display: flex;
   position: absolute;
   transform: scale(0);
-  inset: 0;
 }
 
 .explore-now.button-small {
@@ -8018,7 +8033,7 @@ opacity: 0;
   grid-auto-columns: 1fr;
   display: grid;
 }
-
+.related-blogs-wrap .heading-five{line-height: 28px;}
 .blog-details-date {
   grid-column-gap: 7px;
   grid-row-gap: 7px;
@@ -8267,9 +8282,7 @@ opacity: 0;
   padding-right: 30px;
   float: left;
 }
-.swiper-slide {
-  display: inline-block !important;
-}
+
 .projects-card-overlay {
   background-image: linear-gradient(#05061000, #0506108c);
   position: absolute;
@@ -9313,6 +9326,8 @@ opacity: 0;
   width: 100%;
   padding: 30px 30px 26px;
   display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .landing-footer-float-image-one {
@@ -10164,6 +10179,7 @@ opacity: 0;
 }
 
 @media screen and (max-width: 991px) {
+  .related-blogs-wrap .heading-five{line-height: 24px;}
   .blog-one-name {
     line-height: 26px;
   }
@@ -11681,6 +11697,7 @@ opacity: 0;
 }
 
 @media screen and (max-width: 767px) {
+  .home-three-testimonial-content{flex-direction: column;}
   .pr_slides-cards {
     padding: 0 15px;
   }
@@ -12010,6 +12027,7 @@ opacity: 0;
 
   .home-three-testimonial-text {
     margin-bottom: 0;
+    margin: 0 auto;
   }
 
   .home-three-faq-main {
@@ -13277,6 +13295,8 @@ opacity: 0;
 }
 
 @media screen and (max-width: 1024px) {
+.home-three-img-swiper{max-width: 235px;width: 100%;height: auto;}
+  .home-three-testimonial-text{margin-left: 0;padding-left: 22px;max-width: 400px;}
   .choose-us-slides {
     flex-direction: column;
   }
