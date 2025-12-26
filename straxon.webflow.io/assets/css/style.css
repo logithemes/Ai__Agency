@@ -5466,20 +5466,7 @@ opacity: 0;
   -webkit-text-stroke-color: #7e82a7;
 }
 
-.heading-one.text-outline.service-number-two {
-  position: absolute;
-  transform: translate(0, 100%);
-}
 
-.heading-one.text-outline.service-number-three {
-  position: absolute;
-  transform: translate(0, 200%);
-}
-
-.heading-one.text-outline.service-number-four {
-  position: absolute;
-  transform: translate(0, 300%);
-}
 /*---------------------------------
     clients two css start 
 ---------------------------------*/
@@ -5911,7 +5898,7 @@ opacity: 0;
 }
 
 .team-details-approach-left {
-  background-image: url("../img/background/approach.svg");
+  background-image: url("../img/background/approach-team.svg");
   background-position: 70% 0;
   background-repeat: no-repeat;
   background-size: auto;
