@@ -4480,8 +4480,7 @@ opacity: 0;
 }
 .home-two-faq-boxes {
   grid-column-gap: 20px;
-  grid-row-gap: 20px
-  text-align: right;
+  grid-row-gap: 10px;
   justify-content: flex-start;
   align-items: flex-end;
   max-width: 376px;
@@ -4492,7 +4491,7 @@ opacity: 0;
 .home-two-faq-boxes.home-two-faq-boxes-three,
 .home-two-faq-boxes.home-two-faq-boxes-two {
   opacity: 0;
-  position: absolute;
+  margin-top: -58.5px;
 }
 
 .home-two-hover-faq {

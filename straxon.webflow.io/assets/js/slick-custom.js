@@ -165,6 +165,17 @@ $(".service-three-cards").on("mouseenter", function () {
 
 });
 
+// Button 
+    const rotatingTexts = document.querySelectorAll('.button-border-effect');
+
+rotatingTexts.forEach((el) => {
+  let angle = 0;
+
+  setInterval(() => {
+    angle += 1;
+    el.style.transform = `rotateZ(${angle}deg)`;
+  }, 16);
+});
 
 
   });
