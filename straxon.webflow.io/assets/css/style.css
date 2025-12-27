@@ -1807,13 +1807,10 @@ social media css Start
 .w-dropdown-list {
   background: #ddd;
   min-width: 100%;
-  display: none;
   position: absolute;
+  visibility: hidden;
 }
 
-.w-dropdown-list.w--open {
-  display: block;
-}
 
 .w-dropdown-link {
   color: #222;
@@ -1930,6 +1927,7 @@ social media css Start
 .w-nav-menu {
   float: right;
   position: relative;
+  justify-self: center;
 }
 
 [data-nav-menu-open] {

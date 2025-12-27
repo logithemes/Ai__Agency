@@ -1,4 +1,41 @@
 
+// MENU HOVER
+document.querySelectorAll('.w-dropdown').forEach(dropdown => {
+    const toggle = dropdown.querySelector('.dropdown-toggle');
+    const list = dropdown.querySelector('.w-dropdown-list');
+
+    // Initial state (important)
+    gsap.set(list, {
+      opacity: 0,
+      y: 10,
+      visibility: 'hidden'
+    });
+
+    toggle.addEventListener('mouseenter', () => {
+      list.classList.add('w--open');
+
+      gsap.to(list, {
+        opacity: 1,
+        y: 0,
+        visibility: 'visible',
+        duration: 0.3,
+        ease: 'power2.out'
+      });
+    });
+
+    dropdown.addEventListener('mouseleave', () => {
+      list.classList.remove('w--open');
+
+      gsap.to(list, {
+        opacity: 0,
+        y: 10,
+        visibility: 'hidden',
+        duration: 0.25,
+        ease: 'power2.in'
+      });
+    });
+  });
+
 
 // HOME ONE PORTFOLIO
 gsap.registerPlugin(ScrollTrigger);
@@ -379,6 +416,8 @@ if (document.querySelector(".scroll-line-ani") && document.querySelector(".line"
   });
 
 }
+
+
 
 
 
