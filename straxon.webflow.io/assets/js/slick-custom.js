@@ -178,8 +178,45 @@ rotatingTexts.forEach((el) => {
 });
 
 
+
+$('.humburger-wrapper').on('click', function () {
+  $('.w-nav-menu')
+    .stop(true, true)
+    .slideToggle(500);
+
+  $('.w-nav-menu').toggleClass('is-open');
+});
+
+
+
+// HAMburger
+let isOpen = false;
+
+$('.humburger-wrapper').on('click', function () {
+  isOpen = !isOpen;
+
+  $('.humburger-bar-one').css({
+    transform: isOpen ? 'rotate(45deg)' : 'rotate(0deg)',
+    transition: 'transform 0.3s ease'
   });
 
+  $('.humburger-bar-two').css({
+    transform: isOpen ? 'rotate(-45deg) translate(10px, -10px)' : 'rotate(0deg) translate(0, 0)',
+    width: isOpen ? '25px' : '',
+    transition: 'transform 0.3s ease, width 0.3s ease'
+  });
+});
+
+
+// HOME THREE
+// $('.navbar-three-hamburger').on('click', function(){
+//   $('.navbar-three-main-menu').slideDown(500)
+// })
+
+  });
+
+
+  
 
   
 

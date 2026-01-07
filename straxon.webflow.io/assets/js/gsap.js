@@ -1,40 +1,83 @@
 
 // MENU HOVER
+const breakpoint = 991;
+
+function isMobile() {
+  return window.innerWidth <= breakpoint;
+}
+
 document.querySelectorAll('.w-dropdown').forEach(dropdown => {
-    const toggle = dropdown.querySelector('.dropdown-toggle');
-    const list = dropdown.querySelector('.w-dropdown-list');
+  const list = dropdown.querySelector('.w-dropdown-list');
+  const icon = dropdown.querySelector('.w-icon-dropdown-toggle');
 
-    // Initial state (important)
-    gsap.set(list, {
-      opacity: 0,
-      y: 10,
-      visibility: 'hidden'
-    });
-
-    toggle.addEventListener('mouseenter', () => {
-      list.classList.add('w--open');
-
-      gsap.to(list, {
-        opacity: 1,
-        y: 0,
-        visibility: 'visible',
-        duration: 0.3,
-        ease: 'power2.out'
-      });
-    });
-
-    dropdown.addEventListener('mouseleave', () => {
-      list.classList.remove('w--open');
-
-      gsap.to(list, {
-        opacity: 0,
-        y: 10,
-        visibility: 'hidden',
-        duration: 0.25,
-        ease: 'power2.in'
-      });
-    });
+  // Initial state
+  gsap.set(list, {
+    height: 0,
+    autoAlpha: 0,
+    overflow: 'hidden'
   });
+
+  const open = () => {
+    gsap.killTweensOf(list);
+
+    gsap.to(list, {
+      height: 'auto',
+      autoAlpha: 1,
+      duration: 0.35,
+      ease: 'power2.out'
+    });
+
+    list.classList.add('w--open');
+  };
+
+  const close = () => {
+    gsap.killTweensOf(list);
+
+    gsap.to(list, {
+      height: 0,
+      autoAlpha: 0,
+      duration: 0.3,
+      ease: 'power2.inOut' // 👈 smooth close
+    });
+
+    list.classList.remove('w--open');
+  };
+
+  /* ---------------- DESKTOP HOVER ---------------- */
+  dropdown.addEventListener('mouseenter', () => {
+    if (!isMobile()) open();
+  });
+
+  dropdown.addEventListener('mouseleave', () => {
+    if (!isMobile()) close();
+  });
+
+  /* ---------------- MOBILE ICON CLICK (ACCORDION) ---------------- */
+  icon.addEventListener('click', e => {
+    if (!isMobile()) return;
+
+    e.preventDefault();
+    e.stopPropagation();
+
+    // Close all other dropdowns first
+    document.querySelectorAll('.w-dropdown-list.w--open').forEach(other => {
+      if (other !== list) {
+        gsap.killTweensOf(other);
+        gsap.to(other, {
+          height: 0,
+          autoAlpha: 0,
+          duration: 0.3,
+          ease: 'power2.inOut'
+        });
+        other.classList.remove('w--open');
+      }
+    });
+
+    // Toggle current dropdown
+    list.classList.contains('w--open') ? close() : open();
+  });
+});
+
 
 
 // HOME ONE PORTFOLIO
