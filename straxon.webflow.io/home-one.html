@@ -1252,6 +1252,90 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
   <script src="assets/js/gsap.js"></script>
+  <script>
+   gsap.registerPlugin(ScrollTrigger);
+
+// target YOUR paragraph
+const para = document.querySelector('.home-popup-video-text .no-margin-bottom');
+
+// split into words
+const words = para.innerText.split(' ');
+
+para.innerHTML = words
+  .map(word => `<span class="word">${word}</span><span class="space"> </span>`)
+  .join('');
+
+const wordEls = para.querySelectorAll('.word');
+
+// TIMELINE
+gsap.timeline({
+  scrollTrigger: {
+    trigger: '.home-popup-video-text',
+    start: 'top 80%',      
+    end: 'top 20%',     
+    scrub: true,
+  
+  }
+})
+.to(wordEls, {
+  opacity: 1,
+  stagger: 0.1,
+  ease: 'none'
+});
+
+// HOME ONE BANNER
+    const heroSection = document.querySelector('.parallax-hero-sec');
+const girlWrapper = document.querySelector('.parallax-img-one');
+const boyWrapper = document.querySelector('.little-boy-image-wrapper img');
+const borderMovementBar = document.querySelector('.border-movement-bar');
+
+heroSection.addEventListener('mousemove', (e) => {
+  const { left, top, width, height } = heroSection.getBoundingClientRect();
+
+  const x = (e.clientX - left) / width - 0.5;
+  const y = (e.clientY - top) / height - 0.5;
+
+  gsap.to(girlWrapper, {
+    x: x * -20,
+    y: y * -20,
+    duration: 0.8,
+    ease: "power2.out",
+    overwrite: "auto"
+  });
+
+  gsap.to(boyWrapper, {
+    x: x * 20,
+    y: y * 20,
+    duration: 0.8,
+    ease: "power2.out",
+    overwrite: "auto"
+  });
+
+  gsap.to(borderMovementBar, {
+    x: x * 250,
+    duration: 0.8,
+    ease: "power2.out",
+    overwrite: "auto"
+  });
+});
+
+heroSection.addEventListener('mouseleave', () => {
+  gsap.to([girlWrapper, boyWrapper], {
+    x: 0,
+    y: 0,
+    duration: 0.5,
+    ease: "power2.out"
+  });
+
+  gsap.to(borderMovementBar, {
+    x: 0,
+    duration: 0.5,
+    ease: "power2.out"
+  });
+});
+
+
+  </script>
 </body>
 
 </html>

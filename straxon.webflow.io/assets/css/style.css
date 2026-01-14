@@ -1789,7 +1789,7 @@ social media css Start
   cursor: pointer;
   padding-right: 40px;
   display: inline-block;
-  pointer-events: none;
+  pointer-events: fill;
 }
 
 .w-dropdown-toggle:focus {
@@ -4176,6 +4176,8 @@ opacity: 0;
   z-index: 999;
   position: absolute !important;
   inset: 0% 0% auto;
+  padding: 0;
+  background-color: rgb(5, 6, 16);
 }
 
 .navbar.header-sticky,
@@ -4237,6 +4239,7 @@ opacity: 0;
   display: inline-block;
   color: #aeb2d7 !important;
 }
+
 .navbar-one-wrapper .dropdown-toggle::after {
   display: none;
 }
@@ -5010,7 +5013,8 @@ opacity: 0;
 .home-three-small-menu:hover {
   color: var(--heading-color);
 }
-
+.sub-menu-arrow img{opacity: 0;;transition: var(--transition-medium);}
+.home-three-small-menu:hover .sub-menu-arrow img{opacity: 1;transition: var(--transition-medium);}
 .quick-links-wrap {
   grid-column-gap: 30px;
   grid-row-gap: 30px;
@@ -5072,18 +5076,9 @@ opacity: 0;
   inset: 0%;
   overflow: hidden;
 }
-.navbar-three-toggle-bar {
-  background-color: #7b81b5;
-  width: 22px;
-  height: 2px;
-}
-.navbar-three-toggle-bar.bar-two {
-  transform: rotate(90deg);
-}
 
-.navbar-three-toggle-bar.bar-one {
-  position: absolute;
-}
+
+
 .navbar-three-hamburger {
   grid-column-gap: 7px;
   grid-row-gap: 7px;
@@ -5639,8 +5634,9 @@ opacity: 0;
   position: absolute;
   inset: 0%;
   transition: all var(--transition-medium);
+  opacity: 0;
 }
-
+.home-three-digital-boxes:hover .home-three-digital-hover-box{opacity: 1;}
 .home-three-digital-text {
   justify-content: flex-start;
   align-items: center;
@@ -7746,6 +7742,14 @@ opacity: 0;
   margin-bottom: 0;
 }
 
+.home-popup-video-text .word {
+  display: inline-block;
+  opacity: 0.4;   
+}
+
+.home-popup-video-text .space {
+  display: inline;
+}
 .blog-three-top {
   background-image: radial-gradient(
     circle at 64% 29%,
@@ -10189,6 +10193,12 @@ opacity: 0;
 }
 
 @media screen and (max-width: 991px) {
+  .navbar-three-dropdown .navbar-dropdown{        grid-column-gap: 0;
+        grid-row-gap: 0;
+        padding-top: 0;
+        flex-direction: column;
+        align-items: start;}
+        .navbar-three-boxes{grid-row-gap:3.35vh}
   .related-blogs-wrap .heading-five{line-height: 24px;}
   .blog-one-name {
     line-height: 26px;
@@ -10253,9 +10263,7 @@ opacity: 0;
     padding: 0;
   }
 
-  .humburger-bar.humburger-bar-one {
-    margin-bottom: 5px;
-  }
+  
  
 
   .humburger-bar.humburger-bar-two {

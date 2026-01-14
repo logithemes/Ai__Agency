@@ -27627,8 +27627,8 @@
                         g = a.env(),
                         h = !1,
                         b = a.env.touch,
-                        v = ".w-dropdown",
-                        O = "w--open",
+                        v = ".w-dropdown0d",
+                        O = "w--open0",
                         L = i.triggers,
                         S = 900,
                         _ = "focusout" + v,
@@ -27647,9 +27647,9 @@
                         var I = e(i),
                             m = e.data(i, v);
                         m || (m = e.data(i, v, { open: !1, el: I, config: {}, selectedIdx: -1 })),
-                            (m.toggle = m.el.children(".w-dropdown-toggle0")),
-                            (m.list = m.el.children(".w-dropdown-list0")),
-                            (m.links = m.list.find("a:not(.w-dropdown .w-dropdown a)")),
+                            (m.toggle = m.el.children(".w-dropdown0d-toggle0")),
+                            (m.list = m.el.children(".w-dropdown0d-list0")),
+                            (m.links = m.list.find("a:not(.w-dropdown0d .w-dropdown0d a)")),
                             (m.complete = (function (e) {
                                 return function () {
                                     e.list.removeClass(O),
@@ -27668,7 +27668,7 @@
                                     T(function (i) {
                                         if (t.open) {
                                             var n = e(i.target);
-                                            if (!n.closest(".w-dropdown-toggle0").length) {
+                                            if (!n.closest(".w-dropdown0d-toggle0").length) {
                                                 var o = -1 === e.inArray(t.el[0], n.parents(v)),
                                                     s = a.env("editor");
                                                 if (o) {
@@ -27706,8 +27706,8 @@
                             w(m);
                         var h = m.toggle.attr("id"),
                             b = m.list.attr("id");
-                        h || (h = "w-dropdown-toggle-" + t),
-                            b || (b = "w-dropdown-list-" + t),
+                        h || (h = "w-dropdown0d-toggle-" + t),
+                            b || (b = "w-dropdown0d-list-" + t),
                             m.toggle.attr("id", h),
                             m.toggle.attr("aria-controls", b),
                             m.toggle.attr("aria-haspopup", "menu"),
@@ -28835,7 +28835,7 @@
                         v = a.env(),
                         O = '<div class="w-nav-overlay" data-wf-ignore />',
                         L = ".w-nav",
-                        S = "w--open",
+                        S = "w--open0",
                         _ = "w--nav-dropdown-open",
                         R = "w--nav-dropdown-toggle-open",
                         N = "w--nav-dropdown-list-open",
@@ -28854,9 +28854,9 @@
                         E || (E = e.data(i, L, { open: !1, el: u, config: {}, selectedIdx: -1 })),
                             (E.menu = u.find(".w-nav-menu")),
                             (E.links = E.menu.find(".w-nav-link")),
-                            (E.dropdown00s = E.menu.find(".w-dropdown")),
-                            (E.dropdown00Toggle = E.menu.find(".w-dropdown-toggle0")),
-                            (E.dropdown00List = E.menu.find(".w-dropdown-list0")),
+                            (E.dropdown00s = E.menu.find(".w-dropdown0d")),
+                            (E.dropdown00Toggle = E.menu.find(".w-dropdown0d-toggle0")),
+                            (E.dropdown00List = E.menu.find(".w-dropdown0d-list0")),
                             (E.button = u.find(".w-nav-button0")),
                             (E.container = u.find(".w-container")),
                             (E.overlayContainerId = "w-nav-overlay-" + a),
@@ -61190,7 +61190,7 @@ timm/lib/timm.js:
                                     duration: 500,
                                     target: {
                                         useEventTarget: "CHILDREN",
-                                        selector: ".navbar-icon",
+                                        selector: ".navbar00-icon",
                                         selectorGuids: ["6c157a10-da1f-14a5-1c34-ef495c00e6ab"],
                                     },
                                     zValue: 0,
@@ -61266,7 +61266,7 @@ timm/lib/timm.js:
                                     duration: 500,
                                     target: {
                                         useEventTarget: "CHILDREN",
-                                        selector: ".navbar-icon",
+                                        selector: ".navbar00-icon",
                                         selectorGuids: ["6c157a10-da1f-14a5-1c34-ef495c00e6ab"],
                                     },
                                     zValue: 133,
@@ -61314,7 +61314,7 @@ timm/lib/timm.js:
                                     duration: 300,
                                     target: {
                                         useEventTarget: "CHILDREN",
-                                        selector: ".navbar-icon",
+                                        selector: ".navbar00-icon",
                                         selectorGuids: ["6c157a10-da1f-14a5-1c34-ef495c00e6ab"],
                                     },
                                     zValue: 0,
@@ -65032,7 +65032,7 @@ timm/lib/timm.js:
                                     duration: 0,
                                     target: {
                                         useEventTarget: "CHILDREN",
-                                        selector: ".navbar-dropdown-toggle",
+                                        selector: ".navbar00-dropdown-toggle0",
                                         selectorGuids: ["56110b85-9470-fbf0-f60c-9428854a28bc"],
                                     },
                                     value: "none",
@@ -65047,7 +65047,7 @@ timm/lib/timm.js:
                                     duration: 500,
                                     target: {
                                         useEventTarget: "CHILDREN",
-                                        selector: ".navbar-three-toggle-bar.bar-two",
+                                        selector: ".navbar00-three-toggle0-bar.bar-two",
                                         selectorGuids: [
                                             "56110b85-9470-fbf0-f60c-9428854a28a6",
                                             "56110b85-9470-fbf0-f60c-9428854a2903",
@@ -65068,7 +65068,7 @@ timm/lib/timm.js:
                                     duration: 500,
                                     target: {
                                         useEventTarget: "CHILDREN",
-                                        selector: ".navbar-three-toggle-bar.bar-one",
+                                        selector: ".navbar00-three-toggle0-bar.bar-one",
                                         selectorGuids: [
                                             "56110b85-9470-fbf0-f60c-9428854a28a6",
                                             "56110b85-9470-fbf0-f60c-9428854a290b",
@@ -65090,7 +65090,7 @@ timm/lib/timm.js:
                                     duration: 500,
                                     target: {
                                         useEventTarget: "CHILDREN",
-                                        selector: ".navbar-three-toggle-bar.bar-two",
+                                        selector: ".navbar00-three-toggle0-bar.bar-two",
                                         selectorGuids: [
                                             "56110b85-9470-fbf0-f60c-9428854a28a6",
                                             "56110b85-9470-fbf0-f60c-9428854a2903",
@@ -65109,7 +65109,7 @@ timm/lib/timm.js:
                                     duration: 500,
                                     target: {
                                         useEventTarget: "CHILDREN",
-                                        selector: ".heading-three",
+                                        selector: ".heading-three0",
                                         selectorGuids: ["12cd9493-a390-1253-0adb-2f408f90f4c3"],
                                     },
                                     globalSwatchId: "@var_variable-27ee0c91-a147-0cfb-08f3-7392ff7654a9",
@@ -65128,7 +65128,7 @@ timm/lib/timm.js:
                                     duration: 500,
                                     target: {
                                         useEventTarget: "CHILDREN",
-                                        selector: ".navbar-dropdown-toggle",
+                                        selector: ".navbar00-dropdown-toggle0",
                                         selectorGuids: ["56110b85-9470-fbf0-f60c-9428854a28bc"],
                                     },
                                     heightValue: 0,
@@ -65150,7 +65150,7 @@ timm/lib/timm.js:
                                     duration: 0,
                                     target: {
                                         useEventTarget: "CHILDREN",
-                                        selector: ".navbar-dropdown-toggle",
+                                        selector: ".navbar00-dropdown-toggle0",
                                         selectorGuids: ["56110b85-9470-fbf0-f60c-9428854a28bc"],
                                     },
                                     value: "block",
@@ -65169,7 +65169,7 @@ timm/lib/timm.js:
                                     duration: 300,
                                     target: {
                                         useEventTarget: "CHILDREN",
-                                        selector: ".navbar-dropdown-toggle",
+                                        selector: ".navbar00-dropdown-toggle0",
                                         selectorGuids: ["56110b85-9470-fbf0-f60c-9428854a28bc"],
                                     },
                                     widthUnit: "PX",
@@ -65186,7 +65186,7 @@ timm/lib/timm.js:
                                     duration: 200,
                                     target: {
                                         useEventTarget: "CHILDREN",
-                                        selector: ".heading-three",
+                                        selector: ".heading-three0",
                                         selectorGuids: ["12cd9493-a390-1253-0adb-2f408f90f4c3"],
                                     },
                                     globalSwatchId: "@var_variable-b8be4c4f-1920-36a9-aa0a-fa04aa31f411",
@@ -65205,7 +65205,7 @@ timm/lib/timm.js:
                                     duration: 300,
                                     target: {
                                         useEventTarget: "CHILDREN",
-                                        selector: ".navbar-three-toggle-bar.bar-one",
+                                        selector: ".navbar00-three-toggle0-bar.bar-one",
                                         selectorGuids: [
                                             "56110b85-9470-fbf0-f60c-9428854a28a6",
                                             "56110b85-9470-fbf0-f60c-9428854a290b",
@@ -65227,7 +65227,7 @@ timm/lib/timm.js:
                                     duration: 300,
                                     target: {
                                         useEventTarget: "CHILDREN",
-                                        selector: ".navbar-three-toggle-bar.bar-two",
+                                        selector: ".navbar00-three-toggle0-bar.bar-two",
                                         selectorGuids: [
                                             "56110b85-9470-fbf0-f60c-9428854a28a6",
                                             "56110b85-9470-fbf0-f60c-9428854a2903",
@@ -65248,7 +65248,7 @@ timm/lib/timm.js:
                                     duration: 100,
                                     target: {
                                         useEventTarget: "CHILDREN",
-                                        selector: ".navbar-three-toggle-bar.bar-two",
+                                        selector: ".navbar00-three-toggle0-bar.bar-two",
                                         selectorGuids: [
                                             "56110b85-9470-fbf0-f60c-9428854a28a6",
                                             "56110b85-9470-fbf0-f60c-9428854a2903",
@@ -65503,7 +65503,7 @@ timm/lib/timm.js:
                                     duration: 100,
                                     target: {
                                         useEventTarget: "CHILDREN",
-                                        selector: ".navbar-three-toggle-bar.bar-one",
+                                        selector: ".navbar00-three-toggle0-bar.bar-one",
                                         selectorGuids: [
                                             "56110b85-9470-fbf0-f60c-9428854a28a6",
                                             "56110b85-9470-fbf0-f60c-9428854a290b",
@@ -65525,7 +65525,7 @@ timm/lib/timm.js:
                                     duration: 300,
                                     target: {
                                         useEventTarget: "CHILDREN",
-                                        selector: ".navbar-three-toggle-bar.bar-two",
+                                        selector: ".navbar00-three-toggle0-bar.bar-two",
                                         selectorGuids: [
                                             "56110b85-9470-fbf0-f60c-9428854a28a6",
                                             "56110b85-9470-fbf0-f60c-9428854a2903",
@@ -65546,7 +65546,7 @@ timm/lib/timm.js:
                                     duration: 100,
                                     target: {
                                         useEventTarget: "CHILDREN",
-                                        selector: ".navbar-three-toggle-bar.bar-two",
+                                        selector: ".navbar00-three-toggle0-bar.bar-two",
                                         selectorGuids: [
                                             "56110b85-9470-fbf0-f60c-9428854a28a6",
                                             "56110b85-9470-fbf0-f60c-9428854a2903",
@@ -65565,7 +65565,7 @@ timm/lib/timm.js:
                                     duration: 300,
                                     target: {
                                         useEventTarget: "CHILDREN",
-                                        selector: ".heading-three",
+                                        selector: ".heading-three0",
                                         selectorGuids: ["12cd9493-a390-1253-0adb-2f408f90f4c3"],
                                     },
                                     globalSwatchId: "@var_variable-27ee0c91-a147-0cfb-08f3-7392ff7654a9",
@@ -65584,7 +65584,7 @@ timm/lib/timm.js:
                                     duration: 300,
                                     target: {
                                         useEventTarget: "CHILDREN",
-                                        selector: ".navbar-dropdown-toggle",
+                                        selector: ".navbar00-dropdown-toggle0",
                                         selectorGuids: ["56110b85-9470-fbf0-f60c-9428854a28bc"],
                                     },
                                     heightValue: 0,
@@ -65602,7 +65602,7 @@ timm/lib/timm.js:
                                     duration: 0,
                                     target: {
                                         useEventTarget: "CHILDREN",
-                                        selector: ".navbar-dropdown-toggle",
+                                        selector: ".navbar00-dropdown-toggle0",
                                         selectorGuids: ["56110b85-9470-fbf0-f60c-9428854a28bc"],
                                     },
                                     value: "none",
@@ -69587,7 +69587,7 @@ timm/lib/timm.js:
                                             easing: "",
                                             duration: 500,
                                             target: {
-                                                selector: ".navbar-three",
+                                                selector: ".navbar00-three",
                                                 selectorGuids: ["56110b85-9470-fbf0-f60c-9428854a28ca"],
                                             },
                                             globalSwatchId: "",
@@ -69610,7 +69610,7 @@ timm/lib/timm.js:
                                             easing: "",
                                             duration: 500,
                                             target: {
-                                                selector: ".navbar-three",
+                                                selector: ".navbar00-three",
                                                 selectorGuids: ["56110b85-9470-fbf0-f60c-9428854a28ca"],
                                             },
                                             globalSwatchId: "--body-color",
@@ -69642,7 +69642,7 @@ timm/lib/timm.js:
                                     duration: 500,
                                     target: {
                                         useEventTarget: "CHILDREN",
-                                        selector: ".navbar-three-bar-one",
+                                        selector: ".navbar00-three-bar-one",
                                         selectorGuids: ["56110b85-9470-fbf0-f60c-9428854a2886"],
                                     },
                                     yValue: 0,
@@ -69660,7 +69660,7 @@ timm/lib/timm.js:
                                     duration: 500,
                                     target: {
                                         useEventTarget: "CHILDREN",
-                                        selector: ".navbar-three-bar-two",
+                                        selector: ".navbar00-three-bar-two",
                                         selectorGuids: ["56110b85-9470-fbf0-f60c-9428854a28f5"],
                                     },
                                     yValue: 0,
@@ -69678,7 +69678,7 @@ timm/lib/timm.js:
                                     duration: 500,
                                     target: {
                                         useEventTarget: "CHILDREN",
-                                        selector: ".navbar-three-bar-two",
+                                        selector: ".navbar00-three-bar-two",
                                         selectorGuids: ["56110b85-9470-fbf0-f60c-9428854a28f5"],
                                     },
                                     zValue: 0,
@@ -69696,7 +69696,7 @@ timm/lib/timm.js:
                                     duration: 500,
                                     target: {
                                         useEventTarget: "CHILDREN",
-                                        selector: ".navbar-three-bar-one",
+                                        selector: ".navbar00-three-bar-one",
                                         selectorGuids: ["56110b85-9470-fbf0-f60c-9428854a2886"],
                                     },
                                     zValue: 0,
@@ -69714,7 +69714,7 @@ timm/lib/timm.js:
                                     duration: 500,
                                     target: {
                                         useEventTarget: "CHILDREN",
-                                        selector: ".navbar-three-bar-two",
+                                        selector: ".navbar00-three-bar-two",
                                         selectorGuids: ["56110b85-9470-fbf0-f60c-9428854a28f5"],
                                     },
                                     widthValue: 12,
@@ -69737,7 +69737,7 @@ timm/lib/timm.js:
                                     duration: 500,
                                     target: {
                                         useEventTarget: "CHILDREN",
-                                        selector: ".navbar-three-bar-two",
+                                        selector: ".navbar00-three-bar-two",
                                         selectorGuids: ["56110b85-9470-fbf0-f60c-9428854a28f5"],
                                     },
                                     widthValue: 24,
@@ -69756,7 +69756,7 @@ timm/lib/timm.js:
                                     duration: 500,
                                     target: {
                                         useEventTarget: "CHILDREN",
-                                        selector: ".navbar-three-bar-one",
+                                        selector: ".navbar00-three-bar-one",
                                         selectorGuids: ["56110b85-9470-fbf0-f60c-9428854a2886"],
                                     },
                                     yValue: 4,
@@ -69774,7 +69774,7 @@ timm/lib/timm.js:
                                     duration: 500,
                                     target: {
                                         useEventTarget: "CHILDREN",
-                                        selector: ".navbar-three-bar-one",
+                                        selector: ".navbar00-three-bar-one",
                                         selectorGuids: ["56110b85-9470-fbf0-f60c-9428854a2886"],
                                     },
                                     zValue: 45,
@@ -69792,7 +69792,7 @@ timm/lib/timm.js:
                                     duration: 500,
                                     target: {
                                         useEventTarget: "CHILDREN",
-                                        selector: ".navbar-three-bar-two",
+                                        selector: ".navbar00-three-bar-two",
                                         selectorGuids: ["56110b85-9470-fbf0-f60c-9428854a28f5"],
                                     },
                                     zValue: -45,
@@ -69810,7 +69810,7 @@ timm/lib/timm.js:
                                     duration: 500,
                                     target: {
                                         useEventTarget: "CHILDREN",
-                                        selector: ".navbar-three-bar-two",
+                                        selector: ".navbar00-three-bar-two",
                                         selectorGuids: ["56110b85-9470-fbf0-f60c-9428854a28f5"],
                                     },
                                     yValue: -4,
@@ -69840,7 +69840,7 @@ timm/lib/timm.js:
                                     duration: 500,
                                     target: {
                                         useEventTarget: "CHILDREN",
-                                        selector: ".navbar-three-bar-one",
+                                        selector: ".navbar00-three-bar-one",
                                         selectorGuids: ["56110b85-9470-fbf0-f60c-9428854a2886"],
                                     },
                                     yValue: 0,
@@ -69858,7 +69858,7 @@ timm/lib/timm.js:
                                     duration: 500,
                                     target: {
                                         useEventTarget: "CHILDREN",
-                                        selector: ".navbar-three-bar-two",
+                                        selector: ".navbar00-three-bar-two",
                                         selectorGuids: ["56110b85-9470-fbf0-f60c-9428854a28f5"],
                                     },
                                     yValue: 0,
@@ -69876,7 +69876,7 @@ timm/lib/timm.js:
                                     duration: 500,
                                     target: {
                                         useEventTarget: "CHILDREN",
-                                        selector: ".navbar-three-bar-two",
+                                        selector: ".navbar00-three-bar-two",
                                         selectorGuids: ["56110b85-9470-fbf0-f60c-9428854a28f5"],
                                     },
                                     zValue: 0,
@@ -69894,7 +69894,7 @@ timm/lib/timm.js:
                                     duration: 500,
                                     target: {
                                         useEventTarget: "CHILDREN",
-                                        selector: ".navbar-three-bar-one",
+                                        selector: ".navbar00-three-bar-one",
                                         selectorGuids: ["56110b85-9470-fbf0-f60c-9428854a2886"],
                                     },
                                     zValue: 0,
@@ -69912,7 +69912,7 @@ timm/lib/timm.js:
                                     duration: 500,
                                     target: {
                                         useEventTarget: "CHILDREN",
-                                        selector: ".navbar-three-bar-two",
+                                        selector: ".navbar00-three-bar-two",
                                         selectorGuids: ["56110b85-9470-fbf0-f60c-9428854a28f5"],
                                     },
                                     widthValue: 12,
@@ -74930,7 +74930,7 @@ timm/lib/timm.js:
                                             easing: "",
                                             duration: 500,
                                             target: {
-                                                selector: ".navbar",
+                                                selector: ".navbar00",
                                                 selectorGuids: ["f0d46dca-eab7-236e-ceb8-23a2e946c49c"],
                                             },
                                             globalSwatchId: "",
@@ -74953,7 +74953,7 @@ timm/lib/timm.js:
                                             easing: "",
                                             duration: 500,
                                             target: {
-                                                selector: ".navbar",
+                                                selector: ".navbar00",
                                                 selectorGuids: ["f0d46dca-eab7-236e-ceb8-23a2e946c49c"],
                                             },
                                             globalSwatchId: "--body-color",
@@ -76014,7 +76014,7 @@ timm/lib/timm.js:
                                     easing: "",
                                     duration: 0,
                                     target: {
-                                        selector: ".navbar-three-main-menu0",
+                                        selector: ".navbar00-three-main-menu0",
                                         selectorGuids: ["56110b85-9470-fbf0-f60c-9428854a2892"],
                                     },
                                     value: "none",
@@ -76028,7 +76028,7 @@ timm/lib/timm.js:
                                     easing: "",
                                     duration: 300,
                                     target: {
-                                        selector: ".navbar-three-dropdown.move-five",
+                                        selector: ".navbar00-three-dropdown0.move-five",
                                         selectorGuids: [
                                             "56110b85-9470-fbf0-f60c-9428854a2883",
                                             "695807f4-7926-44e1-0209-7f1f61555e85",
@@ -76048,7 +76048,7 @@ timm/lib/timm.js:
                                     easing: "",
                                     duration: 300,
                                     target: {
-                                        selector: ".navbar-three-dropdown.move-five",
+                                        selector: ".navbar00-three-dropdown0.move-five",
                                         selectorGuids: [
                                             "56110b85-9470-fbf0-f60c-9428854a2883",
                                             "695807f4-7926-44e1-0209-7f1f61555e85",
@@ -76066,7 +76066,7 @@ timm/lib/timm.js:
                                     easing: "",
                                     duration: 300,
                                     target: {
-                                        selector: ".navbar-three-dropdown.move-four",
+                                        selector: ".navbar00-three-dropdown0.move-four",
                                         selectorGuids: [
                                             "56110b85-9470-fbf0-f60c-9428854a2883",
                                             "873de57c-3f30-8423-539f-73c82afb473a",
@@ -76086,7 +76086,7 @@ timm/lib/timm.js:
                                     easing: "",
                                     duration: 300,
                                     target: {
-                                        selector: ".navbar-three-dropdown.move-four",
+                                        selector: ".navbar00-three-dropdown0.move-four",
                                         selectorGuids: [
                                             "56110b85-9470-fbf0-f60c-9428854a2883",
                                             "873de57c-3f30-8423-539f-73c82afb473a",
@@ -76104,7 +76104,7 @@ timm/lib/timm.js:
                                     easing: "",
                                     duration: 300,
                                     target: {
-                                        selector: ".navbar-three-dropdown.move-three",
+                                        selector: ".navbar00-three-dropdown0.move-three",
                                         selectorGuids: [
                                             "56110b85-9470-fbf0-f60c-9428854a2883",
                                             "f5a9dc67-b0e3-546c-478d-82d1fcebb434",
@@ -76124,7 +76124,7 @@ timm/lib/timm.js:
                                     easing: "",
                                     duration: 500,
                                     target: {
-                                        selector: ".navbar-three-menu-right",
+                                        selector: ".navbar00-three-menu-right",
                                         selectorGuids: ["56110b85-9470-fbf0-f60c-9428854a28e5"],
                                     },
                                     yValue: 40,
@@ -76141,7 +76141,7 @@ timm/lib/timm.js:
                                     easing: "",
                                     duration: 500,
                                     target: {
-                                        selector: ".navbar-three-menu-right",
+                                        selector: ".navbar00-three-menu-right",
                                         selectorGuids: ["56110b85-9470-fbf0-f60c-9428854a28e5"],
                                     },
                                     value: 0,
@@ -76156,7 +76156,7 @@ timm/lib/timm.js:
                                     easing: "",
                                     duration: 300,
                                     target: {
-                                        selector: ".navbar-three-dropdown.move-three",
+                                        selector: ".navbar00-three-dropdown0.move-three",
                                         selectorGuids: [
                                             "56110b85-9470-fbf0-f60c-9428854a2883",
                                             "f5a9dc67-b0e3-546c-478d-82d1fcebb434",
@@ -76174,7 +76174,7 @@ timm/lib/timm.js:
                                     easing: "",
                                     duration: 300,
                                     target: {
-                                        selector: ".navbar-three-dropdown.move-two",
+                                        selector: ".navbar00-three-dropdown0.move-two",
                                         selectorGuids: [
                                             "56110b85-9470-fbf0-f60c-9428854a2883",
                                             "1446f0fa-b936-7d9a-6970-c53ab781cb47",
@@ -76194,7 +76194,7 @@ timm/lib/timm.js:
                                     easing: "",
                                     duration: 300,
                                     target: {
-                                        selector: ".navbar-three-dropdown.move-two",
+                                        selector: ".navbar00-three-dropdown0.move-two",
                                         selectorGuids: [
                                             "56110b85-9470-fbf0-f60c-9428854a2883",
                                             "1446f0fa-b936-7d9a-6970-c53ab781cb47",
@@ -76212,7 +76212,7 @@ timm/lib/timm.js:
                                     easing: "",
                                     duration: 300,
                                     target: {
-                                        selector: ".navbar-three-dropdown.move-one",
+                                        selector: ".navbar00-three-dropdown0.move-one",
                                         selectorGuids: [
                                             "56110b85-9470-fbf0-f60c-9428854a2883",
                                             "555816a7-53c9-58ad-ea3d-c2429822956e",
@@ -76232,7 +76232,7 @@ timm/lib/timm.js:
                                     easing: "",
                                     duration: 300,
                                     target: {
-                                        selector: ".navbar-three-dropdown.move-one",
+                                        selector: ".navbar00-three-dropdown0.move-one",
                                         selectorGuids: [
                                             "56110b85-9470-fbf0-f60c-9428854a2883",
                                             "555816a7-53c9-58ad-ea3d-c2429822956e",
@@ -76250,7 +76250,7 @@ timm/lib/timm.js:
                                     easing: "",
                                     duration: 500,
                                     target: {
-                                        selector: ".navbar-three-main-menu0",
+                                        selector: ".navbar00-three-main-menu0",
                                         selectorGuids: ["56110b85-9470-fbf0-f60c-9428854a2892"],
                                     },
                                     yValue: -100,
@@ -76271,7 +76271,7 @@ timm/lib/timm.js:
                                     easing: "",
                                     duration: 0,
                                     target: {
-                                        selector: ".navbar-three-main-menu0",
+                                        selector: ".navbar00-three-main-menu0",
                                         selectorGuids: ["56110b85-9470-fbf0-f60c-9428854a2892"],
                                     },
                                     value: "flex",
@@ -76285,7 +76285,7 @@ timm/lib/timm.js:
                                     easing: "",
                                     duration: 500,
                                     target: {
-                                        selector: ".navbar-three-main-menu0",
+                                        selector: ".navbar00-three-main-menu0",
                                         selectorGuids: ["56110b85-9470-fbf0-f60c-9428854a2892"],
                                     },
                                     yValue: 0,
@@ -76302,7 +76302,7 @@ timm/lib/timm.js:
                                     easing: "",
                                     duration: 300,
                                     target: {
-                                        selector: ".navbar-three-dropdown.move-one",
+                                        selector: ".navbar00-three-dropdown0.move-one",
                                         selectorGuids: [
                                             "56110b85-9470-fbf0-f60c-9428854a2883",
                                             "555816a7-53c9-58ad-ea3d-c2429822956e",
@@ -76320,7 +76320,7 @@ timm/lib/timm.js:
                                     easing: "",
                                     duration: 300,
                                     target: {
-                                        selector: ".navbar-three-dropdown.move-one",
+                                        selector: ".navbar00-three-dropdown0.move-one",
                                         selectorGuids: [
                                             "56110b85-9470-fbf0-f60c-9428854a2883",
                                             "555816a7-53c9-58ad-ea3d-c2429822956e",
@@ -76340,7 +76340,7 @@ timm/lib/timm.js:
                                     easing: "",
                                     duration: 300,
                                     target: {
-                                        selector: ".navbar-three-dropdown.move-two",
+                                        selector: ".navbar00-three-dropdown0.move-two",
                                         selectorGuids: [
                                             "56110b85-9470-fbf0-f60c-9428854a2883",
                                             "1446f0fa-b936-7d9a-6970-c53ab781cb47",
@@ -76358,7 +76358,7 @@ timm/lib/timm.js:
                                     easing: "",
                                     duration: 300,
                                     target: {
-                                        selector: ".navbar-three-dropdown.move-two",
+                                        selector: ".navbar00-three-dropdown0.move-two",
                                         selectorGuids: [
                                             "56110b85-9470-fbf0-f60c-9428854a2883",
                                             "1446f0fa-b936-7d9a-6970-c53ab781cb47",
@@ -76378,7 +76378,7 @@ timm/lib/timm.js:
                                     easing: "",
                                     duration: 300,
                                     target: {
-                                        selector: ".navbar-three-dropdown.move-three",
+                                        selector: ".navbar00-three-dropdown0.move-three",
                                         selectorGuids: [
                                             "56110b85-9470-fbf0-f60c-9428854a2883",
                                             "f5a9dc67-b0e3-546c-478d-82d1fcebb434",
@@ -76396,7 +76396,7 @@ timm/lib/timm.js:
                                     easing: "",
                                     duration: 500,
                                     target: {
-                                        selector: ".navbar-three-menu-right",
+                                        selector: ".navbar00-three-menu-right",
                                         selectorGuids: ["56110b85-9470-fbf0-f60c-9428854a28e5"],
                                     },
                                     value: 1,
@@ -76411,7 +76411,7 @@ timm/lib/timm.js:
                                     easing: "",
                                     duration: 500,
                                     target: {
-                                        selector: ".navbar-three-menu-right",
+                                        selector: ".navbar00-three-menu-right",
                                         selectorGuids: ["56110b85-9470-fbf0-f60c-9428854a28e5"],
                                     },
                                     yValue: 0,
@@ -76428,7 +76428,7 @@ timm/lib/timm.js:
                                     easing: "",
                                     duration: 300,
                                     target: {
-                                        selector: ".navbar-three-dropdown.move-three",
+                                        selector: ".navbar00-three-dropdown0.move-three",
                                         selectorGuids: [
                                             "56110b85-9470-fbf0-f60c-9428854a2883",
                                             "f5a9dc67-b0e3-546c-478d-82d1fcebb434",
@@ -76448,7 +76448,7 @@ timm/lib/timm.js:
                                     easing: "",
                                     duration: 300,
                                     target: {
-                                        selector: ".navbar-three-dropdown.move-four",
+                                        selector: ".navbar00-three-dropdown0.move-four",
                                         selectorGuids: [
                                             "56110b85-9470-fbf0-f60c-9428854a2883",
                                             "873de57c-3f30-8423-539f-73c82afb473a",
@@ -76466,7 +76466,7 @@ timm/lib/timm.js:
                                     easing: "",
                                     duration: 300,
                                     target: {
-                                        selector: ".navbar-three-dropdown.move-four",
+                                        selector: ".navbar00-three-dropdown0.move-four",
                                         selectorGuids: [
                                             "56110b85-9470-fbf0-f60c-9428854a2883",
                                             "873de57c-3f30-8423-539f-73c82afb473a",
@@ -76486,7 +76486,7 @@ timm/lib/timm.js:
                                     easing: "",
                                     duration: 300,
                                     target: {
-                                        selector: ".navbar-three-dropdown.move-five",
+                                        selector: ".navbar00-three-dropdown0.move-five",
                                         selectorGuids: [
                                             "56110b85-9470-fbf0-f60c-9428854a2883",
                                             "695807f4-7926-44e1-0209-7f1f61555e85",
@@ -76504,7 +76504,7 @@ timm/lib/timm.js:
                                     easing: "",
                                     duration: 300,
                                     target: {
-                                        selector: ".navbar-three-dropdown.move-five",
+                                        selector: ".navbar00-three-dropdown0.move-five",
                                         selectorGuids: [
                                             "56110b85-9470-fbf0-f60c-9428854a2883",
                                             "695807f4-7926-44e1-0209-7f1f61555e85",
@@ -76536,7 +76536,7 @@ timm/lib/timm.js:
                                     easing: "",
                                     duration: 300,
                                     target: {
-                                        selector: ".navbar-three-menu-right",
+                                        selector: ".navbar00-three-menu-right",
                                         selectorGuids: ["56110b85-9470-fbf0-f60c-9428854a28e5"],
                                     },
                                     yValue: 40,
@@ -76553,7 +76553,7 @@ timm/lib/timm.js:
                                     easing: "",
                                     duration: 300,
                                     target: {
-                                        selector: ".navbar-three-dropdown.move-five",
+                                        selector: ".navbar00-three-dropdown0.move-five",
                                         selectorGuids: [
                                             "56110b85-9470-fbf0-f60c-9428854a2883",
                                             "695807f4-7926-44e1-0209-7f1f61555e85",
@@ -76571,7 +76571,7 @@ timm/lib/timm.js:
                                     easing: "",
                                     duration: 300,
                                     target: {
-                                        selector: ".navbar-three-dropdown.move-five",
+                                        selector: ".navbar00-three-dropdown0.move-five",
                                         selectorGuids: [
                                             "56110b85-9470-fbf0-f60c-9428854a2883",
                                             "695807f4-7926-44e1-0209-7f1f61555e85",
@@ -76591,7 +76591,7 @@ timm/lib/timm.js:
                                     easing: "",
                                     duration: 300,
                                     target: {
-                                        selector: ".navbar-three-menu-right",
+                                        selector: ".navbar00-three-menu-right",
                                         selectorGuids: ["56110b85-9470-fbf0-f60c-9428854a28e5"],
                                     },
                                     value: 0,
@@ -76606,7 +76606,7 @@ timm/lib/timm.js:
                                     easing: "",
                                     duration: 300,
                                     target: {
-                                        selector: ".navbar-three-dropdown.move-four",
+                                        selector: ".navbar00-three-dropdown0.move-four",
                                         selectorGuids: [
                                             "56110b85-9470-fbf0-f60c-9428854a2883",
                                             "873de57c-3f30-8423-539f-73c82afb473a",
@@ -76626,7 +76626,7 @@ timm/lib/timm.js:
                                     easing: "",
                                     duration: 300,
                                     target: {
-                                        selector: ".navbar-three-dropdown.move-four",
+                                        selector: ".navbar00-three-dropdown0.move-four",
                                         selectorGuids: [
                                             "56110b85-9470-fbf0-f60c-9428854a2883",
                                             "873de57c-3f30-8423-539f-73c82afb473a",
@@ -76644,7 +76644,7 @@ timm/lib/timm.js:
                                     easing: "",
                                     duration: 300,
                                     target: {
-                                        selector: ".navbar-three-dropdown.move-three",
+                                        selector: ".navbar00-three-dropdown0.move-three",
                                         selectorGuids: [
                                             "56110b85-9470-fbf0-f60c-9428854a2883",
                                             "f5a9dc67-b0e3-546c-478d-82d1fcebb434",
@@ -76662,7 +76662,7 @@ timm/lib/timm.js:
                                     easing: "",
                                     duration: 300,
                                     target: {
-                                        selector: ".navbar-three-dropdown.move-three",
+                                        selector: ".navbar00-three-dropdown0.move-three",
                                         selectorGuids: [
                                             "56110b85-9470-fbf0-f60c-9428854a2883",
                                             "f5a9dc67-b0e3-546c-478d-82d1fcebb434",
@@ -76682,7 +76682,7 @@ timm/lib/timm.js:
                                     easing: "",
                                     duration: 300,
                                     target: {
-                                        selector: ".navbar-three-dropdown.move-two",
+                                        selector: ".navbar00-three-dropdown0.move-two",
                                         selectorGuids: [
                                             "56110b85-9470-fbf0-f60c-9428854a2883",
                                             "1446f0fa-b936-7d9a-6970-c53ab781cb47",
@@ -76700,7 +76700,7 @@ timm/lib/timm.js:
                                     easing: "",
                                     duration: 300,
                                     target: {
-                                        selector: ".navbar-three-dropdown.move-two",
+                                        selector: ".navbar00-three-dropdown0.move-two",
                                         selectorGuids: [
                                             "56110b85-9470-fbf0-f60c-9428854a2883",
                                             "1446f0fa-b936-7d9a-6970-c53ab781cb47",
@@ -76720,7 +76720,7 @@ timm/lib/timm.js:
                                     easing: "",
                                     duration: 300,
                                     target: {
-                                        selector: ".navbar-three-dropdown.move-one",
+                                        selector: ".navbar00-three-dropdown0.",
                                         selectorGuids: [
                                             "56110b85-9470-fbf0-f60c-9428854a2883",
                                             "555816a7-53c9-58ad-ea3d-c2429822956e",
@@ -76738,7 +76738,7 @@ timm/lib/timm.js:
                                     easing: "",
                                     duration: 300,
                                     target: {
-                                        selector: ".navbar-three-dropdown.move-one",
+                                        selector: ".navbar00-three-dropdown0.move-one",
                                         selectorGuids: [
                                             "56110b85-9470-fbf0-f60c-9428854a2883",
                                             "555816a7-53c9-58ad-ea3d-c2429822956e",
@@ -76758,7 +76758,7 @@ timm/lib/timm.js:
                                     easing: "",
                                     duration: 500,
                                     target: {
-                                        selector: ".navbar-three-main-menu0",
+                                        selector: ".navbar00-three-main-menu0",
                                         selectorGuids: ["56110b85-9470-fbf0-f60c-9428854a2892"],
                                     },
                                     yValue: -100,
@@ -76775,7 +76775,7 @@ timm/lib/timm.js:
                                     easing: "",
                                     duration: 0,
                                     target: {
-                                        selector: ".navbar-three-main-menu0",
+                                        selector: ".navbar00-three-main-menu0",
                                         selectorGuids: ["56110b85-9470-fbf0-f60c-9428854a2892"],
                                     },
                                     value: "none",
@@ -77381,14 +77381,4 @@ window.addEventListener("load", function () {
         }, 100);
     }, 100);
 });
-window.addEventListener("scroll", function () {
-    const topVal = window.scrollY || document.documentElement.scrollTop;
-    const navbars = document.querySelectorAll(".navbar, .navbar-three");
-    navbars.forEach((navbar) => {
-        if (topVal >= 100) {
-            navbar.classList.add("header-sticky");
-        } else {
-            navbar.classList.remove("header-sticky");
-        }
-    });
-});
+

@@ -1,82 +1,141 @@
 
-// MENU HOVER
-const breakpoint = 991;
+// HAMBURHGER MENU
+document.querySelectorAll(".navbar-three-hamburger, .navbar-three-toggle, .humburger-wrapper").forEach((hamburger) => {
+    
+    const barOne = hamburger.querySelector(
+      ".navbar-three-bar-one, .humburger-bar-one"
+    );
 
-function isMobile() {
-  return window.innerWidth <= breakpoint;
-}
+    const barTwo = hamburger.querySelector(
+      ".navbar-three-bar-two,  .humburger-bar-two"
+    );
 
-document.querySelectorAll('.w-dropdown').forEach(dropdown => {
-  const list = dropdown.querySelector('.w-dropdown-list');
-  const icon = dropdown.querySelector('.w-icon-dropdown-toggle');
+    let isOpen = false;
 
-  // Initial state
-  gsap.set(list, {
-    height: 0,
-    autoAlpha: 0,
-    overflow: 'hidden'
-  });
-
-  const open = () => {
-    gsap.killTweensOf(list);
-
-    gsap.to(list, {
-      height: 'auto',
-      autoAlpha: 1,
-      duration: 0.35,
-      ease: 'power2.out'
-    });
-
-    list.classList.add('w--open');
-  };
-
-  const close = () => {
-    gsap.killTweensOf(list);
-
-    gsap.to(list, {
-      height: 0,
-      autoAlpha: 0,
-      duration: 0.3,
-      ease: 'power2.inOut' // 👈 smooth close
-    });
-
-    list.classList.remove('w--open');
-  };
-
-  /* ---------------- DESKTOP HOVER ---------------- */
-  dropdown.addEventListener('mouseenter', () => {
-    if (!isMobile()) open();
-  });
-
-  dropdown.addEventListener('mouseleave', () => {
-    if (!isMobile()) close();
-  });
-
-  /* ---------------- MOBILE ICON CLICK (ACCORDION) ---------------- */
-  icon.addEventListener('click', e => {
-    if (!isMobile()) return;
-
-    e.preventDefault();
-    e.stopPropagation();
-
-    // Close all other dropdowns first
-    document.querySelectorAll('.w-dropdown-list.w--open').forEach(other => {
-      if (other !== list) {
-        gsap.killTweensOf(other);
-        gsap.to(other, {
-          height: 0,
-          autoAlpha: 0,
+    hamburger.addEventListener("click", () => {
+      if (!isOpen) {
+        // OPEN → Close icon
+        gsap.to(barOne, {
+          rotation: 45,
+          y: 4,
           duration: 0.3,
-          ease: 'power2.inOut'
+          ease: "power2.out"
         });
-        other.classList.remove('w--open');
+
+        gsap.to(barTwo, {
+          rotation: -45,
+          y: -4,
+          width: 24,
+          duration: 0.3,
+          ease: "power2.out"
+        });
+
+        isOpen = true;
+      } else {
+        // CLOSE → Hamburger
+        gsap.to(barOne, {
+          rotation: 0,
+          y: 0,
+          duration: 0.3,
+          ease: "power2.out"
+        });
+
+        gsap.to(barTwo, {
+          rotation: 0,
+          y: 0,
+          width: 12,
+          duration: 0.3,
+          ease: "power2.out"
+        });
+
+        isOpen = false;
       }
     });
-
-    // Toggle current dropdown
-    list.classList.contains('w--open') ? close() : open();
   });
-});
+
+
+  // ARROW ROTATE
+  
+
+  
+// MENU HOVER
+// const breakpoint = 991;
+
+// function isMobile() {
+//   return window.innerWidth <= breakpoint;
+// }
+
+// document.querySelectorAll('.w-dropdown').forEach(dropdown => {
+//   const list = dropdown.querySelector('.w-dropdown-list');
+//   const icon = dropdown.querySelector('.w-icon-dropdown-toggle');
+
+//   // Initial state
+//   gsap.set(list, {
+//     height: 0,
+//     autoAlpha: 0,
+//     overflow: 'hidden'
+//   });
+
+//   const open = () => {
+//     gsap.killTweensOf(list);
+
+//     gsap.to(list, {
+//       height: 'auto',
+//       autoAlpha: 1,
+//       duration: 0.35,
+//       ease: 'power2.out'
+//     });
+
+//     list.classList.add('w--open');
+//   };
+
+//   const close = () => {
+//     gsap.killTweensOf(list);
+
+//     gsap.to(list, {
+//       height: 0,
+//       autoAlpha: 0,
+//       duration: 0.3,
+//       ease: 'power2.inOut' // 👈 smooth close
+//     });
+
+//     list.classList.remove('w--open');
+//   };
+
+//   /* ---------------- DESKTOP HOVER ---------------- */
+//   dropdown.addEventListener('mouseenter', () => {
+//     if (!isMobile()) open();
+//   });
+
+//   dropdown.addEventListener('mouseleave', () => {
+//     if (!isMobile()) close();
+//   });
+
+//   /* ---------------- MOBILE ICON CLICK (ACCORDION) ---------------- */
+//   icon.addEventListener('click', e => {
+//     if (!isMobile()) return;
+
+//     e.preventDefault();
+//     e.stopPropagation();
+
+//     // Close all other dropdowns first
+//     document.querySelectorAll('.w-dropdown-list.w--open').forEach(other => {
+//       if (other !== list) {
+//         gsap.killTweensOf(other);
+//         gsap.to(other, {
+//           height: 0,
+//           autoAlpha: 0,
+//           duration: 0.3,
+//           ease: 'power2.inOut'
+//         });
+//         other.classList.remove('w--open');
+//       }
+//     });
+
+//     // Toggle current dropdown
+//     list.classList.contains('w--open') ? close() : open();
+//   });
+// });
 
 
 
@@ -276,57 +335,7 @@ trainsRight.forEach((train) => {
 
 
 
-  // HOME ONE BANNER
-    const heroSection = document.querySelector('.parallax-hero-sec');
-  const girlWrapper = document.querySelectorAll('.parallax-img-one');
-    const borderMovementBar = document.querySelector('.border-movement-bar');
   
-  heroSection.addEventListener('mousemove', (e) => {
-    const { left, top, width, height } = heroSection.getBoundingClientRect();
-    const x = (e.clientX - left) / width - 0.5;
-    const y = (e.clientY - top) / height - 0.5;
-    
-    gsap.to(girlWrapper, {
-      x: x * -20,
-      y: y * -20,
-      duration: 0.8,
-      ease: "power2.out"
-    });
-    
-    gsap.to(boyWrapper, {
-      x: x * 20,
-      y: y * 20,
-      duration: 0.8,
-      ease: "power2.out"
-    });
-
-     gsap.to(borderMovementBar, {
-      x: x * 250,
-      duration: 0.8,
-      ease: "power2.out"
-    });
-  });
-  
-  heroSection.addEventListener('mouseleave', () => {
-    gsap.to(girlWrapper, {
-      x: 0,
-      y: 0,
-      duration: 0.5,
-      ease: "power2.out"
-    });
-    
-    gsap.to(boyWrapper, {
-      x: 0,
-      y: 0,
-      duration: 0.5,
-      ease: "power2.out"
-    });
-      gsap.to(borderMovementBar, {
-      x: 0,
-      duration: 0.5,
-      ease: "power2.out"
-    });
-  });
 });
 
 
