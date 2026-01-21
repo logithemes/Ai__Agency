@@ -177,7 +177,7 @@ gsap.utils.toArray(".landing-cards").forEach(card => {
   // Hover IN
   card.addEventListener("mouseenter", () => {
     gsap.to(explore, {
-      scale: 1,
+      opacity: 1,
       duration: 0.4,
       ease: "power3.out"
     });
@@ -186,7 +186,7 @@ gsap.utils.toArray(".landing-cards").forEach(card => {
   // Hover OUT
   card.addEventListener("mouseleave", () => {
     gsap.to(explore, {
-      scale: 0,
+      opacity: 0,
       x: 0,
       y: 0,
       duration: 0.3,
