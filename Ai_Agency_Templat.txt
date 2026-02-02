@@ -1,5 +1,5 @@
-1- a href tag links
-2- Footer copy right name
-3- Help Documnet Copy Right name
-4-top of css what i give
-5-what email i give
+
+1- Help Documnet Copy Right name
+2-copy right name
+3- check this class name menu-dp-icon line-nimber 1815
+4- check all CSS unwanted css

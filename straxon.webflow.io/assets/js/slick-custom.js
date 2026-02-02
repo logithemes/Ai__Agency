@@ -75,8 +75,8 @@ if (/[?&]e=1(&|$)/.test(window.location.search)) {
   });
 
  $('.tab-links').on('click', function () {
-  $('.tab-links').removeClass('w--current');  // remove from all
-  $(this).addClass('w--current');             // add to clicked one
+  $('.tab-links').removeClass('tp-active');  // remove from all
+  $(this).addClass('tp-active');             // add to clicked one
 });
 
 
@@ -90,8 +90,8 @@ $("#monthly-tab").on("click", function () {
     $(this).find("span").text("/Per Month");
   });
 
-  $("#monthly-tab").addClass("w--current");
-  $("#yearly-tab").removeClass("w--current");
+  $("#monthly-tab").addClass("tp-active");
+  $("#yearly-tab").removeClass("tp-active");
 });
 
 $("#yearly-tab").on("click", function () {
@@ -102,8 +102,8 @@ $("#yearly-tab").on("click", function () {
     $(this).find("span").text("/Per Year");
   });
 
-  $("#yearly-tab").addClass("w--current");
-  $("#monthly-tab").removeClass("w--current");
+  $("#yearly-tab").addClass("tp-active");
+  $("#monthly-tab").removeClass("tp-active");
 });
 
 
@@ -180,11 +180,11 @@ rotatingTexts.forEach((el) => {
 
 
 $('.humburger-wrapper').on('click', function () {
-  $('.w-nav-menu')
+  $('.main-menu')
     .stop(true, true)
     .slideToggle(500);
 
-  $('.w-nav-menu').toggleClass('is-open');
+  $('.main-menu').toggleClass('is-open');
 });
 
 
@@ -234,36 +234,36 @@ $('.navbar-three-toggle').on('click', function (e) {
 const isMobile = () => window.innerWidth < 992; // Bootstrap breakpoint
 
 // DESKTOP — hover
-$('.dropdown').on('mouseenter', function () {
+$('.tp-dropdown').on('mouseenter', function () {
   if (!isMobile()) {
     $(this)
-      .find('.w-dropdown-list')
+      .find('.dp-menu')
       .stop(true, true)
       .css('visibility', 'visible')
       .slideDown(300);
   }
 });
 
-$('.dropdown').on('mouseleave', function () {
+$('.tp-dropdown').on('mouseleave', function () {
   if (!isMobile()) {
     $(this)
-      .find('.w-dropdown-list')
+      .find('.dp-menu')
       .stop(true, true)
       .slideUp(300);
   }
 });
 
 // MOBILE — click toggle
-$('.dropdown-toggle').on('click', function (e) {
+$('.tp-dropdown-toggle').on('click', function (e) {
   if (isMobile()) {
     e.preventDefault();
 
     const dropdown = $(this)
-      .closest('.dropdown')
-      .find('.w-dropdown-list');
+      .closest('.tp-dropdown')
+      .find('.dp-menu');
 
     // close others
-    $('.w-dropdown-list').not(dropdown).each(function () {
+    $('.dp-menu').not(dropdown).each(function () {
       $(this).css('visibility', 'hidden').slideUp(300);
     });
 
