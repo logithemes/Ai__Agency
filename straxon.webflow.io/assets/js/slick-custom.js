@@ -42,7 +42,7 @@
   autoplaySpeed: 3000,
   slidesToShow: 1,
   slidesToScroll: 1,
-  dotsClass: 'w-slider-dots d-flex ps-0 slide-nav w-slider-nav w-round', // custom dot container class
+  dotsClass: 'w-slider-dots d-flex ps-0 slide-nav tp-slider-dots w-round', // custom dot container class
   customPaging: function(slider, i) {
     return '<div class="w-slider-dot"></div>';
   }
@@ -140,15 +140,15 @@ $("#yearly-tab").on("click", function () {
   });
 
   // HOME ONE SLIDER
-    $('.slider-main-wrapper .w-slider-mask').slick({
+    $('.slider-main-wrapper .tp-testimonial-track').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: true,
     infinite: true,
     speed: 600,
     autoplay : true,
-    prevArrow: $('.w-slider-arrow-left'),
-    nextArrow: $('.w-slider-arrow-right'),
+    prevArrow: $('.tp-arrow-prev'),
+    nextArrow: $('.tp-arrow-next'),
 });
 
 // HOME ONE WHY CHOOSE
@@ -188,24 +188,6 @@ $('.humburger-wrapper').on('click', function () {
 });
 
 
-
-// HAMburger
-// let isOpen = false;
-
-// $('.humburger-wrapper').on('click', function () {
-//   isOpen = !isOpen;
-
-//   $('.humburger-bar-one').css({
-//     transform: isOpen ? 'rotate(45deg)' : 'rotate(0deg)',
-//     transition: 'transform 0.3s ease'
-//   });
-
-//   $('.humburger-bar-two').css({
-//     transform: isOpen ? 'rotate(-45deg) translate(10px, -10px)' : 'rotate(0deg) translate(0, 0)',
-//     width: isOpen ? '25px' : '',
-//     transition: 'transform 0.3s ease, width 0.3s ease'
-//   });
-// });
 
 
 $('.navbar-dropdown-toggle')

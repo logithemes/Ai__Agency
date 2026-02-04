@@ -759,22 +759,8 @@ button,
   border: 0;
 }
 
-.w-form {
+.tp-form {
   margin: 0 0 15px;
-}
-
-.w-form-done {
-  text-align: center;
-  background-color: #ddd;
-  padding: 20px;
-  display: none;
-}
-
-.w-form-fail {
-  background-color: #ffdede;
-  margin-top: 10px;
-  padding: 10px;
-  display: none;
 }
 
 label {
@@ -783,7 +769,7 @@ label {
   display: block;
 }
 
-.w-input,
+.tp-input,
 .w-select {
   color: #333;
   vertical-align: middle;
@@ -798,36 +784,36 @@ label {
   display: block;
 }
 
-.w-input::placeholder,
+.tp-input::placeholder,
 .w-select::placeholder {
   color: #999;
 }
 
-.w-input:focus,
+.tp-input:focus,
 .w-select:focus {
   border-color: #3898ec;
   outline: 0;
 }
 
-.w-input[disabled],
+.tp-input[disabled],
 .w-select[disabled],
-.w-input[readonly],
+.tp-input[readonly],
 .w-select[readonly],
-fieldset[disabled] .w-input,
+fieldset[disabled] .tp-input,
 fieldset[disabled] .w-select {
   cursor: not-allowed;
 }
 
-.w-input[disabled]:not(.w-input-disabled),
-.w-select[disabled]:not(.w-input-disabled),
-.w-input[readonly],
+.tp-input[disabled]:not(.tp-input-disabled),
+.w-select[disabled]:not(.tp-input-disabled),
+.tp-input[readonly],
 .w-select[readonly],
-fieldset[disabled]:not(.w-input-disabled) .w-input,
-fieldset[disabled]:not(.w-input-disabled) .w-select {
+fieldset[disabled]:not(.tp-input-disabled) .tp-input,
+fieldset[disabled]:not(.tp-input-disabled) .w-select {
   background-color: #eee;
 }
 
-textarea.w-input,
+textarea.tp-input,
 textarea.w-select {
   height: auto;
 }
@@ -1580,7 +1566,7 @@ social media css Start
 /*---------------------------------
 	Testimonial css start 
 ---------------------------------*/
-.w-slider {
+.tp-testimonial-slider {
   text-align: center;
   clear: both;
   -webkit-tap-highlight-color: #0000;
@@ -1590,7 +1576,7 @@ social media css Start
   position: relative;
 }
 
-.w-slider-mask, .about-three-testimonial-mask {
+.tp-testimonial-track, .about-three-testimonial-mask {
   z-index: 1;
   white-space: nowrap;
   height: 100%;
@@ -1601,7 +1587,7 @@ social media css Start
   overflow: hidden;
 }
 
-.w-slide {
+.tp-testimonial-item  {
   vertical-align: top;
   white-space: normal;
   text-align: left;
@@ -1611,7 +1597,7 @@ social media css Start
   position: relative;
 }
 
-.w-slider-nav {
+.tp-slider-dots {
   z-index: 2;
   text-align: center;
   -webkit-tap-highlight-color: #0000;
@@ -1623,19 +1609,11 @@ social media css Start
   inset: auto 0 0;
 }
 
-.w-slider-nav.w-round > div {
+.tp-slider-dots.w-round > div {
   border-radius: 100%;
 }
 
-.w-slider-nav.w-num > div {
-  font-size: inherit;
-  line-height: inherit;
-  width: auto;
-  height: auto;
-  padding: 0.2em 0.5em;
-}
-
-.w-slider-nav.w-shadow > div {
+.tp-slider-dots.w-shadow > div {
   box-shadow: 0 0 3px #3336;
 }
 
@@ -1675,8 +1653,8 @@ social media css Start
   box-shadow: none;
 }
 
-.w-slider-arrow-left,
-.w-slider-arrow-right {
+.tp-arrow-prev,
+.tp-arrow-next {
   cursor: pointer;
   color: var(--white);
   -webkit-tap-highlight-color: #0000;
@@ -1691,24 +1669,24 @@ social media css Start
   overflow: hidden;
 }
 
-.w-slider-arrow-left [class^="w-icon-"],
-.w-slider-arrow-right [class^="w-icon-"],
-.w-slider-arrow-left [class*=" w-icon-"],
-.w-slider-arrow-right [class*=" w-icon-"] {
+.tp-arrow-prev [class^="w-icon-"],
+.tp-arrow-next [class^="w-icon-"],
+.tp-arrow-prev [class*=" w-icon-"],
+.tp-arrow-next [class*=" w-icon-"] {
   position: absolute;
 }
 
-.w-slider-arrow-left:focus,
-.w-slider-arrow-right:focus {
+.tp-arrow-prev:focus,
+.tp-arrow-next:focus {
   outline: 0;
 }
 
-.w-slider-arrow-left {
+.tp-arrow-prev {
   z-index: 3;
   right: auto;
 }
 
-.w-slider-arrow-right {
+.tp-arrow-next {
   z-index: 4;
   left: auto;
 }
@@ -2523,7 +2501,7 @@ social media css Start
   justify-content: flex-start;
   align-items: center;
 }
-.slider {
+.tp-testimonial {
   background-color: #ddd0;
   justify-content: center;
   align-items: center;
@@ -8180,7 +8158,7 @@ opacity: 0;
 .project-details-wrap {
   margin-bottom: 60px;
 }
-.w-dyn-list {
+.tp-portfolio-list {
   width: 100%;
 }
 .projects-marquee-cards {
@@ -11816,7 +11794,7 @@ opacity: 0;
     max-width: 200px;
   }
 
-  .slider {
+  .tp-testimonial {
     padding-left: 65px;
     padding-right: 65px;
   }
@@ -12729,7 +12707,7 @@ opacity: 0;
     padding-right: 15px;
   }
 
-  .slider {
+  .tp-testimonial {
     padding-left: 0;
     padding-right: 0;
     position: relative;

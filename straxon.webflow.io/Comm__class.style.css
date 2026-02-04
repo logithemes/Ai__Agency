@@ -1,24 +1,26 @@
-/*w-nav  === header-main  */
-/* w-nav-menu === main-menu */
-/* w-nav-button === humburger-main */ 
-/* w-nav-brand === header-logo */
-/* w-dropdown === menu-item */ 
-/* w-dropdown-toggle === menu-item-toggle */
-/* w-dropdown-list === dp-menu */ 
-/* w-dropdown-link === menu-dd-link */
-/* w-icon-dropdown-toggle === menu-dp-icon */
-/* w-container === tp-container */
-/* w-layout-blockcontainer === layout-container *
-/* w-layout-hflex ===  tp-flex-horizontal */
-/* w-layout-vflex ===  tp-flex-vertical */
-/* w-layout-grid === tp-layout-grid */
-/* w-inline-block === tp-inline-block */
-/* button ===  tp-btn*/
-/* w--current === tp-active-*/
-/* button-three tp-btn-primary */
-/* dropdown === tp-dropdown */
-/* dropdown-toggle === tp-dropdown-toggle */
-/* dropdown-list === tp-dropdown-menu */
+/* w-nav  === header-main  */ */
+ /* w-nav-menu === main-menu */ */
+ /* w-nav-button === humburger-main */  */
+ /* w-nav-brand === header-logo */ */
+ /* w-dropdown === menu-item */  */
+ /* w-dropdown-toggle === menu-item-toggle */ */
+ /* w-dropdown-list === dp-menu */  */
+ /* w-dropdown-link === menu-dd-link */ */
+ /* w-icon-dropdown-toggle === menu-dp-icon */ */
+ /* w-container === tp-container */ */
+ /* w-layout-blockcontainer === layout-container * */
+ /* w-layout-hflex ===  tp-flex-horizontal */ */
+ /* w-layout-vflex ===  tp-flex-vertical  */
+ /* w-layout-grid === tp-layout-grid  */
+ /* w-inline-block === tp-inline-block  */
+ /* button ===  tp-btn*/ */
+ /* w--current === tp-active- */
+ /* button-three tp-btn-primary  */
+ /* dropdown === tp-dropdown  */
+ /* dropdown-toggle === tp-dropdown-toggle  */
+ /* dropdown-list === tp-dropdown-menu  */
+ /* w-dyn-list ===  tp-portfolio-list*/
+ /* w-dyn-items === tp-portfolio-items */
 
 /* w-nav */
 /* w-nav-menu */
@@ -33,7 +35,7 @@
 /* w-layout-blockcontainer */
 /* w-layout-hflex */
 /* w-layout-vflex */
-/* w-layout-grid */
+/* tp-flex-vertical */
 /* w-inline-block */
 /* w-button */
 /* button */
@@ -42,3 +44,22 @@
 /* dropdown */
 /* dropdown-toggle */
 /* dropdown-list */
+/* w-dyn-list */
+/* w-dyn-items */
+/* w-dyn-item */
+
+
+
+
+
+
+/* SLIDER */
+/* w-slider === tp-testimonial-slider */
+/* slider === tp-testimonial */
+/* w-slider-mask === tp-testimonial-track*/
+/* w-slide === tp-testimonial-item */
+/* w-slider-arrow-left === tp-arrow-prev */
+/* w-slider-arrow-right === tp-arrow-next */
+/* w-slider-nav ===  tp-slider-dots*/
+/* w-form  === tp-form*/
+/* w-input  === tp-input*/
