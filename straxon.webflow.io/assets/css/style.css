@@ -826,7 +826,7 @@ textarea.w-select {
   height: auto;
 }
 
-.w-form-label {
+.tp-form-label {
   cursor: pointer;
   margin-bottom: 0;
   font-weight: normal;
@@ -964,48 +964,46 @@ textarea.w-select {
 .w-icon-file-upload-uploading {
   height: 20px;
 }
-.w-checkbox {
+.tp-checkbox {
   margin-bottom: 5px;
   padding-left: 20px;
   display: block;
 }
 
-.w-checkbox:before {
+.tp-checkbox:before {
   content: " ";
   grid-area: 1 / 1 / 2 / 2;
   display: table;
 }
 
-.w-checkbox:after {
+.tp-checkbox:after {
   content: " ";
   clear: both;
   grid-area: 1 / 1 / 2 / 2;
   display: table;
 }
 
-.w-checkbox-input {
+.tp-checkbox-input {
   float: left;
   margin: 4px 0 0 -20px;
   line-height: normal;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border: none;
+  outline: none;
+  box-shadow: none;
 }
-
-.w-checkbox-input--inputType-custom {
+.shadow-none{box-shadow: none;}
+.tp-checkbox-custom {
   border: 1px solid #ccc;
   border-radius: 2px;
   width: 12px;
   height: 12px;
 }
 
-.w-checkbox-input--inputType-custom.w--redirected-checked {
-  background-color: #3898ec;
-  background-image: url("https://d3e54v103j8qbb.cloudfront.net/static/custom-checkbox-checkmark.589d534424.svg");
-  background-position: 50%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  border-color: #3898ec;
-}
 
-.w-checkbox-input--inputType-custom.w--redirected-focus {
+.tp-checkbox-custom {
   box-shadow: 0 0 3px 1px #3898ec;
 }
 
@@ -1795,49 +1793,6 @@ social media css Start
   }
   .header-logo {
     padding-left: 10px;
-  }
-}
-
-@media (min-width: 768px) {
-  
-  .w-lightbox-content {
-    height: 96vh;
-    margin-top: 2vh;
-  }
-
-  .w-lightbox-view,
-  .w-lightbox-view:before {
-    height: 96vh;
-  }
-
-  .w-lightbox-group,
-  .w-lightbox-group .w-lightbox-view,
-  .w-lightbox-group .w-lightbox-view:before {
-    height: 84vh;
-  }
-
-  .w-lightbox-image {
-    max-width: 96vw;
-    max-height: 96vh;
-  }
-
-  .w-lightbox-group .w-lightbox-image {
-    max-width: 82.3vw;
-    max-height: 84vh;
-  }
-
-  .w-lightbox-left,
-  .w-lightbox-right {
-    opacity: 0.5;
-    display: block;
-  }
-
-  .w-lightbox-close {
-    opacity: 0.8;
-  }
-
-  .w-lightbox-control:hover {
-    opacity: 1;
   }
 }
 
