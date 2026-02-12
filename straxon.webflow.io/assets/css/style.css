@@ -1081,7 +1081,7 @@ textarea.w-select {
   padding-right: 0;
 }
 
-.w-col-0{width: 0;}
+.width-0{width: 0;}
 .w-col-1 {
   width: 8.33333%;
 }
@@ -1584,7 +1584,7 @@ social media css Start
   right: 0;
   overflow: hidden;
 }
-
+.tp-slider-inner{white-space: normal;}
 .tp-testimonial-item  {
   vertical-align: top;
   white-space: normal;

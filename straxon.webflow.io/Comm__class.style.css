@@ -20,7 +20,7 @@
  /* dropdown-toggle === tp-dropdown-toggle  */
  /* dropdown-list === tp-dropdown-menu  */
  /* w-dyn-list ===  tp-portfolio-list*/
- /* w-dyn-item === tp-portfolio-items */
+ /* w-dyn-items === tp-portfolio-items */
 
 
  
@@ -37,7 +37,7 @@
 /* w-slider-nav ===  tp-slider-dots*/
 /* w-form  === tp-form*/
 /* w-input  === tp-input*/
-
+/* w-slide === tp-slider-inner */
 /* w-form-label ===  tp-form-label */
 
 
@@ -51,3 +51,5 @@
 
 /* w-icon-slider-left == ic-slider-left*/
 /* w-icon-slider-right   ic-slider-right*/
+
+/* w-col-0 === width-0 */
