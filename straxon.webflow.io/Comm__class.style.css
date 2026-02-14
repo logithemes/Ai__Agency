@@ -3,7 +3,7 @@
  /* w-layout-hflex ===  tp-flex-horizontal */ */
  /* w-layout-vflex ===  tp-flex-vertical  */
  /* w-inline-block === tp-inline-block  */
- /* w-dyn-list ===  tp-portfolio-list*/
+
 
 /* w-nav  === header-main  */ */
  /* w-nav-menu === main-menu */ */
@@ -22,11 +22,10 @@
  /* dropdown === tp-dropdown  */
  /* dropdown-toggle === tp-dropdown-toggle  */
  /* dropdown-list === tp-dropdown-menu  */
-
+ /* w-dyn-list ===  tp-portfolio-list*/
  /* w-dyn-items === tp-portfolio-items */
 
-
- 
+ /* tab-button ===  */
  
 
 
@@ -42,6 +41,8 @@
 /* w-input  === tp-input*/
 /* w-slide === tp-slider-inner */
 /* w-form-label ===  tp-form-label */
+
+/* w-select === tp-select */
 
 
 
