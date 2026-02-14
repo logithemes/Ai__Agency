@@ -132,12 +132,12 @@ $("#yearly-tab").on("click", function () {
   }
 
   // Trigger when section appears
-  // $(window).on('scroll', function () {
-  //   let sectionTop = $('.counters-wrapper').offset().top - window.innerHeight + 100;
-  //   if ($(window).scrollTop() > sectionTop) {
-  //     startCounter();
-  //   }
-  // });
+  $(window).on('scroll', function () {
+    let sectionTop = $('.counters-wrapper').offset().top - window.innerHeight + 100;
+    if ($(window).scrollTop() > sectionTop) {
+      startCounter();
+    }
+  });
 
   // HOME ONE SLIDER
     $('.slider-main-wrapper .tp-testimonial-track').slick({

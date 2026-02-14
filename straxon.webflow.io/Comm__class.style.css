@@ -1,3 +1,10 @@
+/*  w-container === tp-container */ */ */
+ /* w-layout-blockcontainer === layout-container * */
+ /* w-layout-hflex ===  tp-flex-horizontal */ */
+ /* w-layout-vflex ===  tp-flex-vertical  */
+ /* w-inline-block === tp-inline-block  */
+ /* w-dyn-list ===  tp-portfolio-list*/
+
 /* w-nav  === header-main  */ */
  /* w-nav-menu === main-menu */ */
  /* w-nav-button === humburger-main */  */
@@ -7,19 +14,15 @@
  /* w-dropdown-list === dp-menu */  */
  /* w-dropdown-link === menu-dd-link */ */
  /* w-icon-dropdown-toggle === menu-dp-icon */ */
- /* w-container === tp-container */ */
- /* w-layout-blockcontainer === layout-container * */
- /* w-layout-hflex ===  tp-flex-horizontal */ */
- /* w-layout-vflex ===  tp-flex-vertical  */
  /* w-layout-grid === tp-layout-grid  */
- /* w-inline-block === tp-inline-block  */
+
  /* button ===  tp-btn*/ */
- /* w--current === tp-active- */
+ /* w--current === tp-active */
  /* button-three tp-btn-primary  */
  /* dropdown === tp-dropdown  */
  /* dropdown-toggle === tp-dropdown-toggle  */
  /* dropdown-list === tp-dropdown-menu  */
- /* w-dyn-list ===  tp-portfolio-list*/
+
  /* w-dyn-items === tp-portfolio-items */
 
 
@@ -53,3 +56,13 @@
 /* w-icon-slider-right   ic-slider-right*/
 
 /* w-col-0 === width-0 */
+
+/* w-tabs === tp-tabs*/
+/* w-tab-menu === tp-tab-nav */
+/* w-tab-link === tp-tab-btn */
+/* w-tab-content ===  tp-tabs-content*/
+/* w-tab-pane ===  tp-tabs-pane*/
+
+/* w-layout-grid === tp-grid */
+
+/* w--tab-active === tp--tab-active */
