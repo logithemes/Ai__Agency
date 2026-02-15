@@ -39,89 +39,80 @@
   <!-- ===================================================
 			  password protected 
 			==================================================== -->
-  <div class="utility-page-wrap">
-    <div class="utility-page-content password-page-content w-password-page w-form">
+  <div class="tp-utility-wrapper d-flex align-items-center justify-content-center position-relative overflow-hidden w-100 vh-100">
+    <div class="tp-utility-content password-page-content tp-form">
       <form method="post" id="email-form" name="email-form" data-name="Email Form"
-        class="utility-page-form w-password-page" 
+        class="utility-page-form" 
        >
         <img src="assets/img/401/password-protected.svg" alt="protected" width="61" height="68"
           class="margin-bottom-twenty">
         <h3 class="margin-bottom-twenty">password <span class="text-gradiant">protected</span>
         </h3>
-        <label for="pass" class="display-off w-password-page">Password</label>
+       
         <div class="margin-bottom-thirty">This page is password protected. If you are the website admin or have access
-          to this page, please type your password below.</div>
-        <input class="input-field-three password-protected-input w-password-page w-input text-white" autofocus
-          maxlength="256" name="pass" data-name="field" placeholder="Enter your password" type="password" id="pass">
-        <div class="w-layout-hflex form-button-wrapper">
-          <input type="submit" data-wait="Please wait..." class="button button-full-width w-password-page w-button"
+          to this page, please type your password below.</div><input class="input-field-three password-protected-input tp-form text-white" required autofocus
+          maxlength="256" name="pass"  placeholder="Enter your password" type="password" id="pass">
+        <div class="tp-flex-horizontal form-button-wrapper">
+          <input type="submit"  class="tp-btn button-full-width border-0"
             value="Submit now">
         </div>
-        <div class="w-password-page w-form-fail">
-          <div>Incorrect password. Please try again.</div>
-        </div>
-        <div class="w-password-page w-hidden">
-          <input type="hidden" name="path" value="">
-          <input type="hidden" name="page" value="">
-        </div>
-
-
-        <div class="w-password-page w-embed w-script w-hidden"></div>
+  
       </form>
     </div>
 
     <!-- ===================================================
 			   Marquee text animation
 			==================================================== -->
-    <div 
-      class="w-layout-hflex contact-text-marquee-wrapper utility-page-marquee loki">
-      <div class="w-layout-hflex contact-text-marquee-train base-transform">
-        <div class="marquee-text stroke">digital art</div>
-        <div class="marquee-stroke-dash"></div>
-        <div class="marquee-text stroke">website se0</div>
-        <div class="marquee-stroke-dash"></div>
-        <div class="marquee-text stroke">motion</div>
-        <div class="marquee-stroke-dash"></div>
-        <div class="marquee-text stroke">art direction</div>
-        <div class="marquee-stroke-dash"></div>
-        <div class="marquee-text stroke">ui design</div>
-        <div class="marquee-stroke-dash"></div>
-      </div>
-      <div class="w-layout-hflex contact-text-marquee-train base-transform">
-        <div class="marquee-text stroke">digital art</div>
-        <div class="marquee-stroke-dash"></div>
-        <div class="marquee-text stroke">website se0</div>
-        <div class="marquee-stroke-dash"></div>
-        <div class="marquee-text stroke">motion</div>
-        <div class="marquee-stroke-dash"></div>
-        <div class="marquee-text stroke">art direction</div>
-        <div class="marquee-stroke-dash"></div>
-        <div class="marquee-text stroke">ui design</div>
-        <div class="marquee-stroke-dash"></div>
-      </div>
-      <div class="w-layout-hflex contact-text-marquee-train base-transform">
-        <div class="marquee-text stroke">digital art</div>
-        <div class="marquee-stroke-dash"></div>
-        <div class="marquee-text stroke">website se0</div>
-        <div class="marquee-stroke-dash"></div>
-        <div class="marquee-text stroke">motion</div>
-        <div class="marquee-stroke-dash"></div>
-        <div class="marquee-text stroke">art direction</div>
-        <div class="marquee-stroke-dash"></div>
-        <div class="marquee-text stroke">ui design</div>
-        <div class="marquee-stroke-dash"></div>
-      </div>
-      <div class="w-layout-hflex contact-text-marquee-train base-transform">
-        <div class="marquee-text stroke">digital art</div>
-        <div class="marquee-stroke-dash"></div>
-        <div class="marquee-text stroke">website se0</div>
-        <div class="marquee-stroke-dash"></div>
-        <div class="marquee-text stroke">motion</div>
-        <div class="marquee-stroke-dash"></div>
-        <div class="marquee-text stroke">art direction</div>
-        <div class="marquee-stroke-dash"></div>
-        <div class="marquee-text stroke">ui design</div>
-        <div class="marquee-stroke-dash"></div>
+    <div  class="contact-text-marquee position-absolute w-100">
+      <div class="tp-flex-horizontal contact-text-marquee-wrapper">
+        <div class="tp-flex-horizontal contact-text-marquee-train marquee-train-left">
+          <div class="marquee-text stroke">digital art</div>
+          <div class="marquee-stroke-dash"></div>
+          <div class="marquee-text stroke">website se0</div>
+          <div class="marquee-stroke-dash"></div>
+          <div class="marquee-text stroke">motion</div>
+          <div class="marquee-stroke-dash"></div>
+          <div class="marquee-text stroke">art direction</div>
+          <div class="marquee-stroke-dash"></div>
+          <div class="marquee-text stroke">ui design</div>
+          <div class="marquee-stroke-dash"></div>
+        </div>
+        <div class="tp-flex-horizontal contact-text-marquee-train marquee-train-left">
+          <div class="marquee-text stroke">digital art</div>
+          <div class="marquee-stroke-dash"></div>
+          <div class="marquee-text stroke">website se0</div>
+          <div class="marquee-stroke-dash"></div>
+          <div class="marquee-text stroke">motion</div>
+          <div class="marquee-stroke-dash"></div>
+          <div class="marquee-text stroke">art direction</div>
+          <div class="marquee-stroke-dash"></div>
+          <div class="marquee-text stroke">ui design</div>
+          <div class="marquee-stroke-dash"></div>
+        </div>
+        <div class="tp-flex-horizontal contact-text-marquee-train marquee-train-left">
+          <div class="marquee-text stroke">digital art</div>
+          <div class="marquee-stroke-dash"></div>
+          <div class="marquee-text stroke">website se0</div>
+          <div class="marquee-stroke-dash"></div>
+          <div class="marquee-text stroke">motion</div>
+          <div class="marquee-stroke-dash"></div>
+          <div class="marquee-text stroke">art direction</div>
+          <div class="marquee-stroke-dash"></div>
+          <div class="marquee-text stroke">ui design</div>
+          <div class="marquee-stroke-dash"></div>
+        </div>
+        <div class="tp-flex-horizontal contact-text-marquee-train marquee-train-left">
+          <div class="marquee-text stroke">digital art</div>
+          <div class="marquee-stroke-dash"></div>
+          <div class="marquee-text stroke">website se0</div>
+          <div class="marquee-stroke-dash"></div>
+          <div class="marquee-text stroke">motion</div>
+          <div class="marquee-stroke-dash"></div>
+          <div class="marquee-text stroke">art direction</div>
+          <div class="marquee-stroke-dash"></div>
+          <div class="marquee-text stroke">ui design</div>
+          <div class="marquee-stroke-dash"></div>
+        </div>
       </div>
     </div>
   </div>
@@ -133,9 +124,9 @@
   <script src="assets/js/slick-custom.js"></script>
   <script src="assets/js/wow.js"></script>
   <script src="assets/js/slick.js"></script>
-  <script src="assets/js/gsap.js"></script>
   <script src="assets/js/gsap-min.js"></script>
   <script src="assets/js/ScrollTrigger.js"></script>
+    <script src="assets/js/gsap.js"></script>
 </body>
 
 </html>

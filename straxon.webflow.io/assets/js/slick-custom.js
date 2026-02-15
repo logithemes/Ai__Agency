@@ -42,9 +42,9 @@
   autoplaySpeed: 3000,
   slidesToShow: 1,
   slidesToScroll: 1,
-  dotsClass: 'w-slider-dots d-flex ps-0 slide-nav tp-slider-dots w-round', // custom dot container class
+  dotsClass: 'tp-slider-dots d-flex ps-0 slide-nav tp-slider-dots w-round', // custom dot container class
   customPaging: function(slider, i) {
-    return '<div class="w-slider-dot"></div>';
+    return '<div class="tp-slider-dot"></div>';
   }
 });
 
