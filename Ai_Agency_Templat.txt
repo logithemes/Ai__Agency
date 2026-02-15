@@ -3,5 +3,6 @@
 2-copy right name
 3- check this class name menu-dp-icon line-nimber 1815
 4- check all CSS unwanted css
-5-remove inline IMG all pages
+5-remove inline backhround callenng IMG all pages
 6-explore all hover
+7-script file ScrollTrigger
