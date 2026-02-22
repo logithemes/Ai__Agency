@@ -5,3 +5,5 @@
 5-remove inline backhround callenng IMG all pages
 6-explore all hover
 7-script file ScrollTrigger
+
+<i class="fa-solid fa-chevron-down dropdown-icon dropdown-icon-one></i>
