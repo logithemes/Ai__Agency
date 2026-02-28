@@ -6,3 +6,7 @@
 6-explore all hover
 7-script file ScrollTrigger
 
+
+<div class=" rounded-circle ph-icon-wrapper d-flex align-items-center justify-content-center">
+               <i class="bi bi-telephone navbar-icon transition-slow text-white"></i>
+             </div>
