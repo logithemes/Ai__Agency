@@ -7,6 +7,8 @@
 7-script file ScrollTrigger
 
 
-<div class=" rounded-circle ph-icon-wrapper d-flex align-items-center justify-content-center">
-               <i class="bi bi-telephone navbar-icon transition-slow text-white"></i>
-             </div>
+    -webkit-text-stroke: 1px currentColor;
+    text-stroke: 1px currentColor;
+    color: #fffbfb;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #3c3c3c;

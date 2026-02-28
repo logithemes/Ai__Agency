@@ -2004,6 +2004,7 @@ textarea.tp-input {
 .home-one-service-icon {
   z-index: 3;
   position: relative;
+  font-size: 60px;
 }
 .little-boy-image-wrapper {
   z-index: 2;
@@ -3591,13 +3592,20 @@ opacity: 0;
 .dot {
   background-image: linear-gradient(105deg, var(--pink), var(--violet));
   border-radius: 100%;
-  width: 0;
+  width: 6px;
   height: 6px;
   transition:  all var(--transition-medium);
 }
 .home-two-options.act .dot{transition:  all var(--transition-medium);width: 6px;}
 .dot.no-shirk {
   flex: none;
+}
+.tp-text-stroke {
+  -webkit-text-stroke: 1px currentColor;
+  text-stroke: 1px currentColor; 
+  color: transparent;  
+      -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #3c3c3c;        
 }
 /*---------------------------------
     home two hero css start 
@@ -3901,15 +3909,9 @@ opacity: 0;
 }
 
 .arrow-button {
-  border: 1px solid #444872;
-  border-radius: 100%;
-  flex: none;
-  justify-content: center;
-  align-items: center;
   width: 60px;
   height: 60px;
-  display: flex;
-  position: relative;
+
 }
 
 .input-field-two {
