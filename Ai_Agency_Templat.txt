@@ -7,8 +7,4 @@
 7-script file ScrollTrigger
 
 
-    -webkit-text-stroke: 1px currentColor;
-    text-stroke: 1px currentColor;
-    color: #fffbfb;
-    -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: #3c3c3c;
+  

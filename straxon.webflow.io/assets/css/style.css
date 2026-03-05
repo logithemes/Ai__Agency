@@ -78,6 +78,10 @@
   --transition-default: var(--transition-medium);
   --border-mobile-menu: 1px solid #9999996e;
    --mobile-bg-color: #e85189;
+   --tp-fs-10: 10px;
+   --tp-fs-12: 12px;
+  --tp-fs-xxl: 50px;
+  --tp-z-3: 3;
 }
 
 /*----------------------------------------*/
@@ -302,6 +306,10 @@ th {
 .transition-default {
   transition: all var(--transition-default) ease;
 }
+.tp-fs-10{font-size: var(--tp-fs-10);}
+.tp-fs-12{font-size: var(--tp-fs-12);}
+.tp-fs-xxl{font-size: var(--tp-fs-xxl);}
+.tp-z-3{z-index: var(--tp-z-3);}
 .color {
   opacity: 0.05;
   color: var(--body-font-color);
@@ -1947,7 +1955,7 @@ textarea.tp-input {
 
 .heading-four.projects-name {
   z-index: 2;
-  position: relative;
+  bottom: 1.563rem;
 }
 
 .heading-four.text-dark {
@@ -7033,13 +7041,7 @@ opacity: 0;
 /*---------------------------------
     projects single css start 
 ---------------------------------*/
-.projects-button-icons {
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 3px;
-  display: flex;
-  position: relative;
-}
+
 
 .projects-hero-left {
   flex: 1;
@@ -7154,23 +7156,13 @@ opacity: 0;
 }
 
 .projects-marquee-cards {
-  text-align: center;
-  background-image: url("../img/blog-post/blog-2.webp");
-  background-position: 50%;
-  background-repeat: no-repeat;
-  background-size: cover;
   border-radius: 30px;
-  justify-content: center;
-  align-items: flex-end;
-  width: 21vw;
-  height: 56.64vh;
   max-height: 580px;
-  padding: 60px 30px 50px;
   transition: transform 0.2s;
-  display: flex;
-  position: relative;
-  overflow: hidden;
+
 }
+.pr-div-img{ width: 21vw;aspect-ratio: 403 / 612;}
+
 .hover-line .hover-line-bottom {
   background-image: linear-gradient(to bottom, #fff 0%, #fff 98%);
   background-size: 0 1.5px;
@@ -7421,13 +7413,10 @@ opacity: 0;
 
 .connections-check-icons {
   background-color: var(--light-black);
-  border-radius: 100%;
   flex: none;
-  justify-content: center;
-  align-items: center;
   width: 40px;
   height: 40px;
-  display: flex;
+
 }
 
 .service-conntection-left {
@@ -7590,7 +7579,7 @@ opacity: 0;
   padding-left: 5px;
   position: relative;
 }
-
+.service-three-connection-top span{opacity: 0.5;}
 .service-three-hero-main {
   justify-content: center;
   align-items: center;
@@ -7670,7 +7659,7 @@ opacity: 0;
   display: flex;
   position: relative;
 }
-.tp-portfolio-items:hover .circle-icon i{color: var(--arrow-hover);}
+.tp-hover-wrap:hover .circle-icon i{color: var(--arrow-hover);}
 
 .service-three-hero-glow {
   z-index: 2;
@@ -10307,12 +10296,8 @@ opacity: 0;
     padding-bottom: 30px;
   }
 
-  .projects-marquee-cards {
-    aspect-ratio: 41 / 58;
-    width: 50vw;
-    height: auto;
-    max-height: none;
-  }
+   .pr-div-img{   width: 30vw;
+    aspect-ratio: 403 / 612;}
 
   .project-details-hero {
     padding-top: 140px;
@@ -11440,10 +11425,9 @@ opacity: 0;
     margin-bottom: 40px;
   }
 
-  .projects-marquee-cards {
-    width: 93vw;
-  }
 
+.pr-div-img {   width: 90vw;
+    aspect-ratio: 403 / 423;}
   .projects-card-border {
     display: none;
   }

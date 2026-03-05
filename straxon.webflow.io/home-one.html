@@ -652,7 +652,7 @@
       <div class="tp-flex-horizontal home-one-portfolio-card-wrapper">
         <div class="tp-flex-vertical home-one-portfolio-left">
           <div class="tp-portfolio-list">
-            <div role="list" class="tp-portfolio-items">
+            <div role="list" class="tp-portfolio-items tp-hover-wrap">
               <div role="listitem" class="tp-work-item">
                 <div class="home-one-cards hover-arrow-gradiant cards-hover">
                   <a href="projects/ai-interface-design.html"
@@ -704,7 +704,7 @@
             </div>
           </div>
           <div class="tp-portfolio-list">
-            <div role="list" class="tp-portfolio-items">
+            <div role="list" class="tp-portfolio-items tp-hover-wrap">
               <div role="listitem" class="tp-work-item">
                 <div class="home-one-cards four hover-arrow-gradiant cards-hover">
                   <a href="projects/ui-ux-design.html" class="overflow-hidden portfolio-card-image tp-inline-block ">
@@ -758,7 +758,7 @@
         </div>
         <div class="tp-flex-vertical home-one-portfolio-right">
           <div class="tp-portfolio-list">
-            <div role="list" class="tp-portfolio-items">
+            <div role="list" class="tp-portfolio-items tp-hover-wrap">
               <div role="listitem" class="tp-work-item">
                 <div class="home-one-cards two cards-hover">
                   <a href="projects/web-graphic-design.html"
@@ -811,7 +811,7 @@
             </div>
           </div>
           <div class="tp-portfolio-list">
-            <div role="list" class="tp-portfolio-items">
+            <div role="list" class="tp-portfolio-items tp-hover-wrap">
               <div role="listitem" class="tp-work-item">
                 <div class="home-one-cards three cards-hover">
                   <a href="projects/product-design.html" class="overflow-hidden portfolio-card-image tp-inline-block ">
@@ -1159,36 +1159,7 @@
   <script src="assets/js/ScrollTrigger.js"></script>
   <script src="assets/js/gsap.js"></script>
   <script>
-   gsap.registerPlugin(ScrollTrigger);
-
-// target YOUR paragraph
-const para = document.querySelector('.home-popup-video-text .no-margin-bottom');
-
-// split into words
-const words = para.innerText.split(' ');
-
-para.innerHTML = words
-  .map(word => `<span class="word">${word}</span><span class="space"> </span>`)
-  .join('');
-
-const wordEls = para.querySelectorAll('.word');
-
-// TIMELINE
-gsap.timeline({
-  scrollTrigger: {
-    trigger: '.home-popup-video-text',
-    start: 'top 80%',      
-    end: 'top 20%',     
-    scrub: true,
   
-  }
-})
-.to(wordEls, {
-  opacity: 1,
-  stagger: 0.1,
-  ease: 'none'
-});
-
 // HOME ONE BANNER
     const heroSection = document.querySelector('.parallax-hero-sec');
 const girlWrapper = document.querySelector('.parallax-img-one');

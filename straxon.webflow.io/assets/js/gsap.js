@@ -54,8 +54,54 @@ document.querySelectorAll(".navbar-three-hamburger, .navbar-three-toggle, .humbu
   });
 
 
-  // ARROW ROTATE
-  
+  // WINDOW SCROLL TEXT
+  gsap.registerPlugin(ScrollTrigger);
+
+function wordScrollAnimation(sectionSelector, textSelector) {
+
+  const section = document.querySelector(sectionSelector);
+  if (!section) return;
+
+  const textEl = section.querySelector(textSelector);
+  if (!textEl) return;
+
+  const words = textEl.innerText.split(' ');
+
+  textEl.innerHTML = words
+    .map(word => `<span class="word">${word}</span><span class="space"> </span>`)
+    .join('');
+
+  const wordEls = textEl.querySelectorAll('.word');
+
+  gsap.timeline({
+    scrollTrigger: {
+      trigger: section,
+      start: 'top 80%',
+      end: 'top 20%',
+      scrub: true,
+    }
+  })
+ .from(wordEls, {
+  opacity: 0,
+  color: "#ffffff",
+  stagger: 0.05,
+  ease: "none"
+});
+
+}
+
+// 🔹 Call for Service Page
+wordScrollAnimation(
+  '.service-three-connection',
+  '.no-margin'
+);
+
+// 🔹 Call for Home Popup Section
+wordScrollAnimation(
+  '.home-popup-video',
+  '.no-margin-bottom'
+);
+
 
 
 
