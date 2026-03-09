@@ -83,6 +83,7 @@
   --tp-fs-xxl: 50px;
   --tp-z-3: 3;
   --tp-radius-30: 30px;
+  --tp-icon-color: #db4e93b0;
 }
 
 /*----------------------------------------*/
@@ -313,6 +314,9 @@ th {
 .tp-z-3{z-index: var(--tp-z-3);}
 .tp-radius-30{
   border-radius: var(--tp-radius-30);
+}
+.tp-input-icon{
+  color: var(--tp-icon-color);
 }
 .color {
   opacity: 0.05;
@@ -5638,7 +5642,7 @@ opacity: 0;
 }
 
 .contact-one-input-icon.textarea-icon {
-  inset: 14px auto auto 24px;
+  inset: 10px auto auto 24px;
 }
 
 .contact-one-textarea {
@@ -6790,11 +6794,9 @@ opacity: 0;
   border: 1px solid #53618d;
   border-radius: 100%;
   flex: none;
-  justify-content: center;
-  align-items: center;
   width: 60px;
   height: 60px;
-  display: flex;
+
 }
 
 .border-last-item:last-child {
