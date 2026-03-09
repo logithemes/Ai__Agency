@@ -82,6 +82,7 @@
    --tp-fs-12: 12px;
   --tp-fs-xxl: 50px;
   --tp-z-3: 3;
+  --tp-radius-30: 30px;
 }
 
 /*----------------------------------------*/
@@ -310,6 +311,9 @@ th {
 .tp-fs-12{font-size: var(--tp-fs-12);}
 .tp-fs-xxl{font-size: var(--tp-fs-xxl);}
 .tp-z-3{z-index: var(--tp-z-3);}
+.tp-radius-30{
+  border-radius: var(--tp-radius-30);
+}
 .color {
   opacity: 0.05;
   color: var(--body-font-color);
@@ -2868,7 +2872,6 @@ textarea.tp-input {
   inset: 0%;
   display: flex;
 opacity: 0;
-  transition: all var(--transition-medium);
 }
 .work-container {
   z-index: 10;
@@ -2902,8 +2905,7 @@ opacity: 0;
   max-width: 590px;
   display: flex;
 }
-.cards-hover:hover .portfolio-marquee{opacity: 1;
-  transition: all var(--transition-medium);}
+.cards-hover:hover .portfolio-marquee{opacity: 1;}
 .home-one-cards.two {
   max-width: 590px;
 }
@@ -3391,9 +3393,6 @@ opacity: 0;
   border-radius: 5px;
 }
 
-.border-radius-thirty {
-  border-radius: 30px;
-}
 .border-radius-fifteen {
   border-radius: 15px;
 }
@@ -3413,23 +3412,23 @@ opacity: 0;
 }
 
 
-.border-radius-thirty.mobile-image-full-width.work-three-image {
+.tp-radius-30.mobile-image-full-width.work-three-image {
   margin-top: -50px;
 }
 
-.border-radius-thirty.contact-hero-image-one {
+.tp-radius-30.contact-hero-image-one {
   height: auto;
   position: absolute;
   inset: -41% auto auto -23%;
 }
 
-.border-radius-thirty.contact-hero-image-two {
+.tp-radius-30.contact-hero-image-two {
   height: auto;
   position: absolute;
   inset: auto -5% -13% auto;
 }
 
-.border-radius-thirty.image-full-width {
+.tp-radius-30.image-full-width {
   width: 100%;
   height: auto;
 }
@@ -3764,7 +3763,7 @@ opacity: 0;
   width: 100%;
 }
 .projects-image-wrapper.home-two-projects-image {
-  aspect-ratio: 520 / 580;
+  aspect-ratio: 615 / 520;
 }
 .home-two-portfolio-text {
   color: var(--white);
@@ -4787,9 +4786,9 @@ opacity: 0;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
   padding: 30px 15px;
-  transition: all var(--transition-slow);transform: translateX(100px);
+  transform: translateX(100px);
 }
-.team-members-cards:hover .team-members-social{transform: translateX(0); transition: all var(--transition-slow);}
+.team-members-cards:hover .team-members-social{transform: translateX(0);}
 .team-hero-border {
   background-color: #444872;
   width: 100%;
@@ -7288,30 +7287,7 @@ opacity: 0;
   overflow: hidden;
 }
 
-.projects-image-effect {
-  background-image: url("../img/feature/fea-2.webp");
-  background-position: 50%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: absolute;
-  inset: 0%;
-}
 
-.projects-image-effect.index-one {
-  z-index: 0;
-}
-
-.projects-image-effect.index-two {
-  z-index: 1;
-}
-
-.projects-image-effect.index-three {
-  z-index: 2;
-}
-
-.projects-image-effect.index-four {
-  z-index: 3;
-}
 /*---------------------------------
     service two css start 
 ---------------------------------*/
@@ -9372,17 +9348,17 @@ opacity: 0;
     padding-top: 120px;
   }
 
-  .border-radius-thirty.tab-image-full-width {
+  .tp-radius-30.tab-image-full-width {
     width: 100%;
     height: auto;
   }
 
-  .border-radius-thirty.contact-hero-image-one {
+  .tp-radius-30.contact-hero-image-one {
     width: 30vw;
     left: -5%;
   }
 
-  .border-radius-thirty.contact-hero-image-two {
+  .tp-radius-30.contact-hero-image-two {
     width: 15vw;
   }
 
@@ -10754,7 +10730,7 @@ opacity: 0;
     padding-bottom: 50px;
   }
 
-  .overflow-hidden.border-radius-thirty.mobile-radius-twenty {
+  .overflow-hidden.tp-radius-30.mobile-radius-twenty {
     border-radius: 20px;
   }
 
@@ -10775,8 +10751,8 @@ opacity: 0;
   }
 
   .tp-testimonial {
-    padding-left: 65px;
-    padding-right: 65px;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   .hero-images {
@@ -10819,18 +10795,18 @@ opacity: 0;
     padding-bottom: 55px;
   }
 
-  .border-radius-thirty.mobile-image-full-width {
+  .tp-radius-30.mobile-image-full-width {
     width: 100%;
     height: auto;
   }
 
-  .border-radius-thirty.contact-hero-image-one {
+  .tp-radius-30.contact-hero-image-one {
     width: 100%;
     position: static;
     inset: auto auto 0% -13%;
   }
 
-  .border-radius-thirty.contact-hero-image-two {
+  .tp-radius-30.contact-hero-image-two {
     display: none;
     inset: auto 0% -100% auto;
   }
@@ -11680,12 +11656,6 @@ opacity: 0;
   .home-one-testimonial-main {
     padding-left: 15px;
     padding-right: 15px;
-  }
-
-  .tp-testimonial {
-    padding-left: 0;
-    padding-right: 0;
-    position: relative;
   }
 
   .border-radius-twenty.testimonial-images {
