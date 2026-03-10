@@ -7201,7 +7201,7 @@ opacity: 0;
   position: relative;
 }
 
-.pr_slider_box {
+.proj-slider-box {
   display: inline-block;
 }
 .pr_slides-cards {
@@ -9093,7 +9093,7 @@ opacity: 0;
   .blog-three-line span, .heading-three.blog-two-name {
     line-height: 33px;
   }
-  .pr_slider_box {
+  .proj-slider-box {
     width: 100%;
     float: left;
   }

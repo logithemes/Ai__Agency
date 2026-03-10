@@ -1,7 +1,7 @@
  $(document).ready(function(){
 
     // Slider 1
-    $('.projec-slider').slick({
+    $('.project-slider-wrapper').slick({
       slidesToShow: 4,
       slidesToScroll: 1,
       infinite: true,
