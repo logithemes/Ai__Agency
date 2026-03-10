@@ -989,7 +989,6 @@ textarea.tp-input {
   bottom: 0;
   right: 0;
   pointer-events: auto;
-  font-family: webflow-icons;
 }
 
 .dp-menu {
@@ -3766,6 +3765,7 @@ opacity: 0;
 .home-two-projects-cards-image {
   width: 100%;
 }
+.home-two-projects-cards-image .projects-image-wrapper{aspect-ratio: 520 / 580;}
 .projects-image-wrapper.home-two-projects-image {
   aspect-ratio: 615 / 520;
 }

@@ -1,10 +1,8 @@
 
 1- Help Documnet Copy Right name
 2-copy right name
-3- check this class name menu-dp-icon line-nimber 1815
-5-remove inline backhround callenng IMG all pages
-6-explore all hover
-7-script file ScrollTrigger
+3-explore all hover
+4-script file ScrollTrigger
 
 
   
