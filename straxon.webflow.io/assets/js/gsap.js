@@ -135,43 +135,34 @@ gsap.to(".home-two-testimonial-row-one, .home-two-testimonial-row-two", {
 });
 
 
-// mouse move landing cards
-gsap.utils.toArray(".landing-cards").forEach(card => {
-  
-  const explore = card.querySelector(".explore-now");
+const explore = document.querySelector(".explore-now");
 
-  // Hover IN
+gsap.utils.toArray(".landing-cards, .service-sticky").forEach((card) => {
+
   card.addEventListener("mouseenter", () => {
     gsap.to(explore, {
       opacity: 1,
-      duration: 0.4,
-      ease: "power3.out"
+      scale: 1,
+      duration: 0.4
     });
   });
 
-  // Hover OUT
   card.addEventListener("mouseleave", () => {
     gsap.to(explore, {
       opacity: 0,
-      x: 0,
-      y: 0,
-      duration: 0.3,
-      ease: "power3.in"
+      duration: 0.4
     });
   });
 
-  // Parallax on mouse move
   card.addEventListener("mousemove", (e) => {
-    const rect = card.getBoundingClientRect();
-    const x = e.clientX - rect.left - rect.width / 2;
-    const y = e.clientY - rect.top - rect.height / 2;
 
     gsap.to(explore, {
-      x: x * 0.1,
-      y: y * 0.1,
-      duration: 0.1,
+      x: e.clientX,
+      y: e.clientY,
+      duration: 0.2,
       ease: "power2.out"
     });
+
   });
 
 });

@@ -1225,12 +1225,14 @@ textarea.tp-input {
   .layout-container {
     max-width: 728px;
   }
+
 }
 
 @media screen and (max-width: 767px) {
   .layout-container {
     max-width: none;
   }
+    .testimonail-text{margin: 0 auto;max-width: 460px;}
 }
 
 /*---------------------------------
@@ -3597,8 +3599,9 @@ opacity: 0;
 }
 .home-two-options.act .accordion-line {
   width: 100px;
-  transition:  all var(--transition-medium);
 }
+.home-two-options .dot{opacity: 0;}
+.home-two-options.act .dot{width: 6px;opacity: 1;}
 .dot {
   background-image: linear-gradient(105deg, var(--pink), var(--violet));
   border-radius: 100%;
@@ -3606,7 +3609,7 @@ opacity: 0;
   height: 6px;
   transition:  all var(--transition-medium);
 }
-.home-two-options.act .dot{transition:  all var(--transition-medium);width: 6px;}
+
 .dot.no-shirk {
   flex: none;
 }
@@ -6809,25 +6812,18 @@ opacity: 0;
 }
 
 .explore-now-button-wrap {
-  position: absolute;
-  inset: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  pointer-events: none;
-  z-index: 2;
+  z-index: 999;
 }
 
-.explore-now {
-  color: #fff;
-  background-color: #0a0b16d4;
-  border-radius: 50%;
+.explore-now{
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100px;
   height: 100px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transform: scale(0);
+  background: rgba(10,11,22,0.83);
+  opacity: 0;
+  transform: translate(-50%, -50%);
 }
 
 .blog-image-overlay {
@@ -8496,10 +8492,6 @@ opacity: 0;
 .landing-cards-image-wrap {
   cursor: none;
   border-radius: 20px;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  position: relative;
 }
 
 .landing-image-overlay {
@@ -11620,6 +11612,9 @@ opacity: 0;
 }
 
 @media screen and (max-width: 479px) {
+  .testimonials-author-box-mid.testimonials-author-box-right, .testimonials-author-box-mid.testimonials-author-box-left{width: 60px;height: 60px;}
+  .testimonials-author-box-mid{width: 80px;height: 80px;}
+  .testimonail-text{max-width: 300px;}
   .left-arrow {
     inset: auto auto 0% 0%;
   }
@@ -11633,9 +11628,7 @@ opacity: 0;
     inset: auto 0% 0% auto;
   }
 
-  .tp-slider-viewport {
-    max-width: none;
-  }
+
 
   .solutions {
     grid-template-columns: 1fr;
