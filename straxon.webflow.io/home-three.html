@@ -283,11 +283,14 @@
                 class="flower mt-0 mx-3 rotate-ani">
               <div class="heading-one text-gradiant">Websites</div>
               <div class="tp-flex-horizontal heading-video">
-                <a href="#" class="no-shrink tp-inline-block">
+                <a href="#" class="no-shrink d-flex align-items-center position-relative justify-content-center">
                   <img width="73" height="73" alt="Work Image" src="assets/img/hero/home-3-vid-prev.webp" loading="lazy"
                     class="border-radius-five">
-                  <img width="39" height="39" alt="Icon" src="assets/img/icons/play-icon.svg" loading="lazy"
-                    class="play-video-icon position-absolute">
+                <span class="">
+                   <i class="bi bi-play-circle play-video-icon position-absolute text-white"></i>
+                </span>
+                    
+                  
                 </a>
                 <div class="text-capitalize">explore online portfolio</div>
               </div>
@@ -1015,38 +1018,15 @@
   <!-- ===================================================
 				Js here
 				==================================================== -->
-  <script src="assets/js/jquery.min.js"></script>
-  <script src="assets/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/js/slick-custom.js"></script>
-  <script src="assets/js/wow.js"></script>
-  <script src="assets/js/slick.js"></script>
-  <script src="assets/js/gsap-min.js"></script>
-  <script src="assets/js/ScrollTrigger.js"></script>
-  <script src="assets/js/gsap.js"></script>
-  <script src="assets/js/swiper-bundle.min.js"></script>
-  <script>
-    const contentSwiper = new Swiper(".content-swiper", {
-      effect: "fade",
-      allowTouchMove: false,
-      fadeEffect: { crossFade: true }
-    });
-
-    const imageSwiper = new Swiper(".home-three-img-swiper", {
-      effect: "cards",
-      grabCursor: true,
-      cardsEffect: {
-        slideShadows: false,
-        perSlideOffset: 14
-      },
-      on: {
-        slideChange() {
-          contentSwiper.slideTo(this.activeIndex);
-        }
-      }
-    });
-
-
-  </script>
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/slick.js"></script>
+<script src="assets/js/wow.js"></script>
+<script src="assets/js/gsap-min.js"></script>
+<script src="assets/js/swiper-bundle.min.js"></script>
+<script src="assets/js/ScrollTrigger.js"></script>
+<script src="assets/js/slick-custom.js"></script>
+<script src="assets/js/main.js"></script>
 </body>
 
 </html>

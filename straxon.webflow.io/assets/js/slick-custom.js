@@ -1,6 +1,5 @@
  $(document).ready(function(){
 
-    // Slider 1
     $('.project-slider-wrapper').slick({
       slidesToShow: 4,
       slidesToScroll: 1,
@@ -15,7 +14,6 @@
       ]
     });
 
-    // Slider 2
     $('.choose-us-slider-services').slick({
       slidesToShow: 2,
       slidesToScroll: 1,
@@ -31,7 +29,6 @@
       ]
     });
 
-
     $('.about-three-slider').slick({
   dots: true,
   arrows: false,
@@ -42,18 +39,10 @@
   autoplaySpeed: 3000,
   slidesToShow: 1,
   slidesToScroll: 1,
-  dotsClass: 'tp-slider-dots d-flex ps-0 slide-nav tp-slider-dots w-round', // custom dot container class
   customPaging: function(slider, i) {
     return '<div class="tp-slider-dot"></div>';
   }
 });
-
-
-    // 401 
-    // Handle password page URL check
-if (/[?&]e=1(&|$)/.test(window.location.search)) {
-  $('.w-password-page.w-form-fail').css('display', 'block');
-}
 
   // Initially show first tab
   $('.home-two-faq-boxes').hide();
@@ -108,28 +97,51 @@ $("#yearly-tab").on("click", function () {
 
 
 // COUNTER ANIMATION
- let started = false;
+// COUNTER ANIMATION
+let started = false;
 
-  function startCounter() {
-    if (started) return;
+function startCounter() {
 
-    $('.counter').each(function () {
-      let $this = $(this);
-      let target = parseInt($this.attr("data-target"));
-      let count = 0;
+  if (started) return;
 
-      let interval = setInterval(() => {
-        count++;
-        $this.text(count < 10 ? "0" + count : count);
+  $('.counter').each(function () {
 
-        if (count >= target) {
-          clearInterval(interval);
-        }
-      }, 40);
-    });
+    let $this = $(this);
+    let target = parseInt($this.attr("data-target"));
+    let count = 0;
 
-    started = true;
-  }
+    let interval = setInterval(() => {
+
+      count++;
+
+      $this.text(count < 10 ? "0" + count : count);
+
+      if (count >= target) {
+        clearInterval(interval);
+      }
+
+    }, 40);
+
+  });
+
+  started = true;
+
+}
+
+// Scroll trigger
+if ($('.counters-wrapper').length) {
+
+  $(window).on('scroll', function () {
+
+    let sectionTop = $('.counters-wrapper').offset().top - window.innerHeight + 100;
+
+    if ($(window).scrollTop() > sectionTop) {
+      startCounter();
+    }
+
+  });
+
+}
 
 
 
@@ -171,8 +183,6 @@ rotatingTexts.forEach((el) => {
   }, 16);
 });
 
-
-
 $('.humburger-wrapper').on('click', function () {
   $('.main-menu')
     .stop(true, true)
@@ -180,8 +190,6 @@ $('.humburger-wrapper').on('click', function () {
 
   $('.main-menu').toggleClass('is-open');
 });
-
-
 
 
 $('.navbar-dropdown-toggle')
@@ -279,9 +287,30 @@ $('.tp-dropdown-toggle').on('click', function (e) {
       currentArrow.css('transform', 'rotate(0deg)');
     }
   });
+
+
+  // SWIPER SLIDER HOME THREE
+  const contentSwiper = new Swiper(".content-swiper", {
+      effect: "fade",
+      allowTouchMove: false,
+      fadeEffect: { crossFade: true }
+    });
+
+    const imageSwiper = new Swiper(".home-three-img-swiper", {
+      effect: "cards",
+      grabCursor: true,
+      cardsEffect: {
+        slideShadows: false,
+        perSlideOffset: 14
+      },
+      on: {
+        slideChange() {
+          contentSwiper.slideTo(this.activeIndex);
+        }
+      }
+    });
+
   });
-
-
 
   // HEADER STICKY
   window.addEventListener("scroll", function () {
@@ -294,19 +323,12 @@ $('.tp-dropdown-toggle').on('click', function (e) {
             navbar.classList.remove("header-sticky");
         }
     });
-
-
     
 });
 
 
-    // Trigger when section appears
-  // $(window).on('scroll', function () {
-  //   let sectionTop = $('.counters-wrapper').offset().top - window.innerHeight + 100;
-  //   if ($(window).scrollTop() > sectionTop) {
-  //     startCounter();
-  //   }
-  // });
+   
+  
 
   
 

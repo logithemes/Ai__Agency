@@ -8,11 +8,13 @@
   <meta name="description" content="Stynero — sleek, responsive digital agency for startups & creatives.">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap-icons.css">
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/animate.css">
   <link rel="stylesheet" href="assets/css/slick.css">
   <link rel="stylesheet" href="assets/css/slick-theme.css">
-  <link rel="stylesheet" href="assets/css/bootstrap-icons.css">
+
+
 </head>
 
 <body>
@@ -504,7 +506,7 @@
                   class="home-one-service-icon">
                 <div class="home-one-service-cards-icon-overlay "></div>
               </div>
-              <h3 class="no-margin">graphic design rererererere</h3>
+              <h3 class="no-margin">graphic design </h3>
               <p class="no-margin">Lorem ipsum dolor sit amet consect adipiscing  gravida elit praesent.</p>
               <a href="service-two.html"
                 class="button-two tp-inline-block ">
@@ -1150,68 +1152,15 @@
   <!-- ===================================================
 				js here
 				==================================================== -->
-  <script src="assets/js/jquery.min.js"></script>
-  <script src="assets/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/js/slick-custom.js"></script>
-  <script src="assets/js/wow.js"></script>
-  <script src="assets/js/slick.js"></script>
-  <script src="assets/js/gsap-min.js"></script>
-  <script src="assets/js/ScrollTrigger.js"></script>
-  <script src="assets/js/gsap.js"></script>
-  <script>
-  
-// HOME ONE BANNER
-    const heroSection = document.querySelector('.parallax-hero-sec');
-const girlWrapper = document.querySelector('.parallax-img-one');
-const boyWrapper = document.querySelector('.little-boy-image-wrapper img');
-const borderMovementBar = document.querySelector('.border-movement-bar');
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/slick.js"></script>
+<script src="assets/js/wow.js"></script>
+<script src="assets/js/gsap-min.js"></script>
+<script src="assets/js/swiper-bundle.min.js"></script>
+<script src="assets/js/ScrollTrigger.js"></script>
+<script src="assets/js/slick-custom.js"></script>
+<script src="assets/js/main.js"></script>
 
-heroSection.addEventListener('mousemove', (e) => {
-  const { left, top, width, height } = heroSection.getBoundingClientRect();
-
-  const x = (e.clientX - left) / width - 0.5;
-  const y = (e.clientY - top) / height - 0.5;
-
-  gsap.to(girlWrapper, {
-    x: x * -20,
-    y: y * -20,
-    duration: 0.8,
-    ease: "power2.out",
-    overwrite: "auto"
-  });
-
-  gsap.to(boyWrapper, {
-    x: x * 20,
-    y: y * 20,
-    duration: 0.8,
-    ease: "power2.out",
-    overwrite: "auto"
-  });
-
-  gsap.to(borderMovementBar, {
-    x: x * 250,
-    duration: 0.8,
-    ease: "power2.out",
-    overwrite: "auto"
-  });
-});
-
-heroSection.addEventListener('mouseleave', () => {
-  gsap.to([girlWrapper, boyWrapper], {
-    x: 0,
-    y: 0,
-    duration: 0.5,
-    ease: "power2.out"
-  });
-
-  gsap.to(borderMovementBar, {
-    x: 0,
-    duration: 0.5,
-    ease: "power2.out"
-  });
-});
-
-
-  </script>
 </body>
 </html>

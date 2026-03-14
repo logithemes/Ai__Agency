@@ -40,21 +40,7 @@
   @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@300;400;500;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
 
-@font-face {
-  font-family: "bootstrap-icons";
-  src: url("../fonts/bootstrap-icons.woff2") format("woff2"),
-       url("../fonts/bootstrap-icons.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
 
-.bi::before {
-  display: inline-block;
-  font-family: "bootstrap-icons";
-  font-style: normal;
-  font-weight: normal;
-  line-height: 1;
-}
 :root {
   --body-color: #050610;
   --body-font-color: #aeb2d7;
@@ -1534,7 +1520,7 @@ textarea.tp-input {
 }
 .review-box .tp-slider-dots{list-style-type: none;}
 .review-box .slick-active .tp-slider-dot{background-color: #fff;}
-.review-box .tp-slider-dot{border-radius: 50%;}
+.review-box .tp-slider-dot{border-radius: 50%;width: 6px;height: 6px;margin:0}
 .about-testimonial {
   background-color: #ddd0;
   flex-flow: column;
@@ -2745,6 +2731,7 @@ textarea.tp-input {
   justify-content: flex-start;
   align-items: center;
 }
+.home-three-hero-heading .play-video-icon{width: 39px;height: 39px;}
 .banner-marquee-wrap {
   justify-content: flex-start;
   align-items: flex-start;
@@ -5461,18 +5448,12 @@ opacity: 0;
   padding-left: 25px;
 }
 
-.about-three-hero-border-vertical {
-  background-color: #444872;
-  width: 1px;
-  height: 100%;
-  position: absolute;
-  inset: 0% auto auto 14%;
-}
-
 .about-three-progress-left {
   flex: 1;
   max-width: 449px;
 }
+.about-three-slider .slick-dots{display: flex;}
+.about-three-slider .slick-dots li{width: auto;height: auto;display: flex;}
 
 .about-three-hero {
   background-image: radial-gradient(circle at 74% 62%, #b460f14a, #b460f100 15%),
