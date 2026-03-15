@@ -336,25 +336,29 @@
           <div class="landing-text">unique design - fast loading - awesome features</div>
           <h1 class="mt-3 mb-3">digital agency &amp; creative <span class="text-gradiant">template</span>
           </h1>
-          <div class="tp-flex-horizontal landing-hero-details">
-            <div class="tp-flex-horizontal hero-details">
-              <h2 class="no-margin text-gradiant">03</h2>
-              <div class="hero-details-text">Awesome Home Pages</div>
-            </div>
-            <div class="landing-hero-border"></div>
-            <div class="tp-flex-horizontal hero-details">
-              <h2 class="no-margin text-gradiant">20+</h2>
-              <div class="hero-details-text">Elegant Inner Pages</div>
-            </div>
-          </div>
+        <div class="d-flex flex-column flex-sm-row justify-content-center justify-content-md-between align-items-stretch landing-hero-details">
+  
+  <div class="d-flex hero-details justify-content-start align-items-center mx-auto mx-sm-0">
+    <h2 class="no-margin text-gradiant">03</h2>
+    <div class="hero-details-text">Awesome Home Pages</div>
+  </div>
+
+  <div class="landing-hero-border"></div>
+
+  <div class="d-flex hero-details justify-content-start align-items- mx-auto mx-sm-0">
+    <h2 class="no-margin text-gradiant">20+</h2>
+    <div class="hero-details-text">Elegant Inner Pages</div>
+  </div>
+
+</div>
           <div class="button-wrapper">
             <a href="#homepages" class="tp-btn text-white">explore demos</a>
             <div class="button-border-effect"></div>
           </div>
         </div>
-        <div class="tp-flex-vertical landing-hero-image-wrapper">
+        <div class="d-flex flex-column align-items-start landing-hero-image-wrapper">
           <img src="assets/img/hero-demo/moniter-img.webp" loading="lazy" width="860" height="636" alt="Monitor Screen"
-            class="image-height-width-full" />
+            class="w-100 h-100" />
         </div>
       </div>
       <div class="landing-hero-overlay-wrapper ">
@@ -463,27 +467,35 @@
 				==================================================== -->
     <section class="landing-counter counters-wrapper">
       <div class="container">
-        <div class="tp-layout-grid home-one-counter-main text-center">
+       <div class="tp-layout-grid home-one-counter-main text-center">
+  <div class="row">
 
-          <!-- Counter 1 -->
-          <div class="home-one-counters-wrapper landing-counter-box">
-            <div class="counter counter-text" data-target="3">00</div>
-            <div class="heading-four">unique home pages</div>
-          </div>
+    <!-- Counter 1 -->
+    <div class="col-12 col-sm-6 col-md-4">
+      <div class="home-one-counters-wrapper landing-counter-box">
+        <div class="counter counter-text" data-target="3">00</div>
+        <div class="heading-four mt-1 mt-md-0">unique home pages</div>
+      </div>
+    </div>
 
-          <!-- Counter 2 -->
-          <div class="home-one-counters-wrapper landing-counter-box">
-            <div class="counter counter-text" data-target="20">00</div>
-            <div class="heading-four">awesome Inner Pages</div>
-          </div>
+    <!-- Counter 2 -->
+    <div class="col-12 col-sm-6 col-md-4">
+      <div class="home-one-counters-wrapper landing-counter-box">
+        <div class="counter counter-text" data-target="20">00</div>
+        <div class="heading-four mt-1 mt-md-0">awesome Inner Pages</div>
+      </div>
+    </div>
 
-          <!-- Counter 3 -->
-          <div class="home-one-counters-wrapper landing-counter-box">
-            <div class="counter counter-text" data-target="30">00</div>
-            <div class="heading-four">smart design section</div>
-          </div>
+    <!-- Counter 3 -->
+    <div class="col-12 col-sm-6 col-md-4">
+      <div class="home-one-counters-wrapper landing-counter-box">
+        <div class="counter counter-text" data-target="30">00</div>
+        <div class="heading-four mt-1 mt-md-0">smart design section</div>
+      </div>
+    </div>
 
-        </div>
+  </div>
+</div>
       </div>
     </section>
 
@@ -536,8 +548,9 @@
       <div class="tp-flex-vertical homepage-main">
         <div class="heading-one text-gradiant  wow fadeInUp" data-wow-duration="0.7s">03</div>
         <h2 class="margin-bottom-thirty  wow fadeInUp" data-wow-duration="0.9s">Unique Home Pages</h2>
-        <div id="homepages" class="tp-layout-grid pages-landing-cards">
-          <a href="home-one.html" target="_blank" class="landing-cards tp-inline-block  wow fadeInUp"
+        <div id="homepages" class="tp-layout-grid pages-landing-cards w-100 text-center row">
+         <div class="col-12 col-md-6 col-xl-4 pt-12 pb-12 py-md-0">
+           <a href="home-one.html" target="_blank" class="landing-cards tp-inline-block  wow fadeInUp"
             data-wow-duration="0.7s">
             <div class="landing-cards-image-wrap d-flex align-items-center justify-content-center position-relative">
               <img width="484" height="437" alt="Screenshot" src="assets/img/hero-demo/home_one_sc.webp" loading="lazy"
@@ -545,11 +558,10 @@
               <div class="landing-image-overlay"></div>
             </div>
             <div class="heading-four">Home One</div>
-
-
-
           </a>
-          <a href="home-two.html" target="_blank" class="landing-cards tp-inline-block  wow fadeInUp"
+         </div>
+         <div class="col-12 col-md-6 col-xl-4 pt-12 pb-12 py-md-0">
+           <a href="home-two.html" target="_blank" class="landing-cards tp-inline-block  wow fadeInUp"
             data-wow-duration="0.8s">
             <div class="landing-cards-image-wrap d-flex align-items-center justify-content-center position-relative">
               <img width="484" height="437" alt="Screenshot" src="assets/img/hero-demo/home_two_sc.webp" loading="lazy"
@@ -559,7 +571,9 @@
             <div class="heading-four">Home Two</div>
 
           </a>
-          <a href="home-three.html" target="_blank" class="landing-cards tp-inline-block wow fadeInUp"
+         </div>
+        <div class="col-12 col-md-6 col-xl-4  pt-3 pt-xl-0">
+            <a href="home-three.html" target="_blank" class="landing-cards tp-inline-block wow fadeInUp"
             data-wow-duration="0.9s">
             <div class="landing-cards-image-wrap d-flex align-items-center justify-content-center position-relative">
               <img width="484" height="437" alt="Screenshot" src="assets/img/hero-demo/home_three_sc.webp"
@@ -567,8 +581,8 @@
               <div class="landing-image-overlay"></div>
             </div>
             <div class="heading-four">Home Three</div>
-
           </a>
+        </div>
         </div>
       </div>
     </div>
@@ -641,7 +655,8 @@
           <h2 class="no-margin">awesome inner Pages</h2>
         </div>
       </div>
-      <div class="tp-layout-grid pages-landing-cards">
+      <div class="tp-layout-grid pages-landing-cards row">
+        <div class="col-12 col-md-6 col-xl-4 pt-12 pb-12">
         <a href="about-one.html" target="_blank" class="landing-cards tp-inline-block  wow fadeInUp"
           data-wow-duration="0.7s">
           <div class="landing-cards-image-wrap d-flex align-items-center justify-content-center position-relative">
@@ -650,7 +665,8 @@
             <div class="landing-image-overlay"></div>
           </div>
           <div class="heading-four">About One</div>
-        </a>
+        </a></div>
+        <div class="col-12 col-md-6 col-xl-4 pt-12 pb-12">
         <a href="about-two.html" target="_blank" class="landing-cards tp-inline-block  wow fadeInUp"
           data-wow-duration="0.8s">
           <div class="landing-cards-image-wrap d-flex align-items-center justify-content-center position-relative">
@@ -659,7 +675,8 @@
             <div class="landing-image-overlay"></div>
           </div>
           <div class="heading-four">About Two</div>
-        </a>
+        </a></div>
+        <div class="col-12 col-md-6 col-xl-4 pt-12 pb-12">
         <a href="about-three.html" target="_blank" class="landing-cards tp-inline-block  wow fadeInUp"
           data-wow-duration="0.9s">
           <div class="landing-cards-image-wrap d-flex align-items-center justify-content-center position-relative">
@@ -668,7 +685,8 @@
             <div class="landing-image-overlay"></div>
           </div>
           <div class="heading-four">About Three</div>
-        </a>
+        </a></div>
+        <div class="col-12 col-md-6 col-xl-4 pt-12 pb-12">
         <a href="service-one.html" target="_blank" class="landing-cards tp-inline-block  wow fadeInUp"
           data-wow-duration="0.7s">
           <div class="landing-cards-image-wrap d-flex align-items-center justify-content-center position-relative">
@@ -677,7 +695,8 @@
             <div class="landing-image-overlay"></div>
           </div>
           <div class="heading-four">Service One </div>
-        </a>
+        </a></div>
+        <div class="col-12 col-md-6 col-xl-4 pt-12 pb-12">
         <a href="service-two.html" target="_blank" class="landing-cards tp-inline-block  wow fadeInUp"
           data-wow-duration="0.8s">
           <div class="landing-cards-image-wrap d-flex align-items-center justify-content-center position-relative">
@@ -686,7 +705,8 @@
             <div class="landing-image-overlay"></div>
           </div>
           <div class="heading-four">Service Two</div>
-        </a>
+        </a></div>
+        <div class="col-12 col-md-6 col-xl-4 pt-12 pb-12">
         <a href="service-three.html" target="_blank" class="landing-cards tp-inline-block  wow fadeInUp "
           data-wow-duration="0.9s">
           <div class="landing-cards-image-wrap d-flex align-items-center justify-content-center position-relative">
@@ -695,7 +715,8 @@
             <div class="landing-image-overlay"></div>
           </div>
           <div class="heading-four">Service Three</div>
-        </a>
+        </a></div>
+        <div class="col-12 col-md-6 col-xl-4 pt-12 pb-12">
         <a href="blog-one.html" target="_blank" class="landing-cards tp-inline-block  wow fadeInUp"
           data-wow-duration="0.7s">
           <div class="landing-cards-image-wrap d-flex align-items-center justify-content-center position-relative">
@@ -704,7 +725,8 @@
             <div class="landing-image-overlay"></div>
           </div>
           <div class="heading-four">Blog One</div>
-        </a>
+        </a></div>
+        <div class="col-12 col-md-6 col-xl-4 pt-12 pb-12">
         <a href="blog-two.html" target="_blank" class="landing-cards tp-inline-block  wow fadeInUp"
           data-wow-duration="0.8s">
           <div class="landing-cards-image-wrap d-flex align-items-center justify-content-center position-relative">
@@ -713,7 +735,8 @@
             <div class="landing-image-overlay"></div>
           </div>
           <div class="heading-four">Blog Two</div>
-        </a>
+        </a></div>
+        <div class="col-12 col-md-6 col-xl-4 pt-12 pb-12">
         <a href="blog-three.html" target="_blank" class="landing-cards tp-inline-block  wow fadeInUp"
           data-wow-duration="0.9s">
           <div class="landing-cards-image-wrap d-flex align-items-center justify-content-center position-relative">
@@ -722,7 +745,8 @@
             <div class="landing-image-overlay"></div>
           </div>
           <div class="heading-four">Blog Three</div>
-        </a>
+        </a></div>
+        <div class="col-12 col-md-6 col-xl-4 pt-12 pb-12">
         <a href="contact-one.html" target="_blank" class="landing-cards tp-inline-block wow fadeInUp"
           data-wow-duration="0.7s">
           <div class="landing-cards-image-wrap d-flex align-items-center justify-content-center position-relative">
@@ -731,7 +755,8 @@
             <div class="landing-image-overlay"></div>
           </div>
           <div class="heading-four">Contact One</div>
-        </a>
+        </a></div>
+        <div class="col-12 col-md-6 col-xl-4 pt-12 pb-12">
         <a href="contact-two.html" target="_blank" class="landing-cards tp-inline-block wow fadeInUp"
           data-wow-duration="0.8s">
           <div class="landing-cards-image-wrap d-flex align-items-center justify-content-center position-relative">
@@ -741,7 +766,8 @@
             <div class="landing-image-overlay"></div>
           </div>
           <div class="heading-four">Contact Two</div>
-        </a>
+        </a></div>
+        <div class="col-12 col-md-6 col-xl-4 pt-12 pb-12">
         <a href="contact-three.html" target="_blank" class="landing-cards tp-inline-block wow fadeInUp"
           data-wow-duration="0.9s">
           <div class="landing-cards-image-wrap d-flex align-items-center justify-content-center position-relative">
@@ -750,7 +776,8 @@
             <div class="landing-image-overlay"></div>
           </div>
           <div class="heading-four">Contact Three</div>
-        </a>
+        </a></div>
+        <div class="col-12 col-md-6 col-xl-4 pt-12 pb-12">
         <a href="projects.html" target="_blank" class="landing-cards tp-inline-block wow fadeInUp"
           data-wow-duration="0.7s">
           <div class="landing-cards-image-wrap d-flex align-items-center justify-content-center position-relative">
@@ -760,6 +787,8 @@
           </div>
           <div class="heading-four">Projects</div>
         </a>
+        </div>
+        <div class="col-12 col-md-6 col-xl-4 pt-12 pb-12">
         <a href="pricing.html" target="_blank" class="landing-cards tp-inline-block wow fadeInUp"
           data-wow-duration="0.8s">
           <div class="landing-cards-image-wrap d-flex align-items-center justify-content-center position-relative">
@@ -769,6 +798,8 @@
           </div>
           <div class="heading-four">Pricing</div>
         </a>
+        </div>
+        <div class="col-12 col-md-6 col-xl-4  pt-12 ">
         <a href="team.html" target="_blank" class="landing-cards tp-inline-block wow fadeInUp" data-wow-duration="0.9s">
           <div class="landing-cards-image-wrap d-flex align-items-center justify-content-center position-relative">
             <img width="484" height="437" alt="Screenshot" src="assets/img/hero-demo/team_sc.webp" loading="lazy"
@@ -777,6 +808,7 @@
           </div>
           <div class="heading-four">Team</div>
         </a>
+        </div>
       </div>
     </div>
   </section>
@@ -790,15 +822,16 @@
           <div class="landing-text  wow fadeInUp" data-wow-duration="0.7s">unique &amp; useful</div>
           <h2 class="cms-heading  wow fadeInUp" data-wow-duration="0.8s">smart cms Pages</h2>
         </div>
-        <div class="rotate-box-two">
+        <div class="rotate-box-two align-items-center justify-content-center position-relative d-none d-md-flex">
           <img width="171" height="171" alt="Rotating Text" src="assets/img/hero-demo/round-text.svg" loading="lazy"
             class="rotate-text rotate-ani">
-          <img width="24" height="45" alt="S" src="assets/img/hero-demo/s-text.svg" loading="lazy" class="s-icon">
+          <img width="24" height="45" alt="S" src="assets/img/hero-demo/s-text.svg" loading="lazy" class="position-absolute">
         </div>
       </div>
     </div>
     <div class="layout-container landing-container tp-container">
-      <div class="tp-layout-grid pages-landing-cards">
+      <div class="tp-layout-grid pages-landing-cards row">
+        <div class="col-12 col-md-6 col-xl-4 pt-12 pb-0">
         <a href="projects/ai-interface-design.html" target="_blank" class="landing-cards tp-inline-block  wow fadeInUp"
           data-wow-duration="0.7s">
           <div class="landing-cards-image-wrap d-flex align-items-center justify-content-center position-relative">
@@ -807,7 +840,8 @@
             <div class="landing-image-overlay"></div>
           </div>
           <div class="heading-four">Project Details</div>
-        </a>
+        </a></div>
+                <div class="col-12 col-md-6 col-xl-4 pt-12 pb-0">
         <a href="team-members/fred-smith.html" target="_blank" class="landing-cards tp-inline-block  wow fadeInUp"
           data-wow-duration="0.8s">
           <div class="landing-cards-image-wrap d-flex align-items-center justify-content-center position-relative">
@@ -816,7 +850,8 @@
             <div class="landing-image-overlay"></div>
           </div>
           <div class="heading-four">Team Details</div>
-        </a>
+        </a></div>
+                <div class="col-12 col-md-6 col-xl-4 pt-12 pb-0">
         <a href="blog-posts/building-meaningful-connections-through-web-design-development.html" target="_blank"
           class="landing-cards tp-inline-block  wow fadeInUp" data-wow-duration="0.9s">
           <div class="landing-cards-image-wrap d-flex align-items-center justify-content-center position-relative">
@@ -825,7 +860,7 @@
             <div class="landing-image-overlay"></div>
           </div>
           <div class="heading-four">Blog Details</div>
-        </a>
+        </a></div>
       </div>
     </div>
   </section>
@@ -834,10 +869,11 @@
 			==================================================== -->
   <section class="tp-utility-section">
     <div class="layout-container container tp-container">
-      <div class="tp-flex-vertical tp-utility-header">
+      <div class=" d-flex align-items-center justify-content-center mb-4">
         <h2 class="no-margin  wow fadeInUp" data-wow-duration="0.6s">Utility Pages</h2>
       </div>
-      <div class="tp-layout-grid tp-utility-cards">
+      <div class="tp-layout-grid tp-utility-cards row">
+        <div class="col-12 col-md-6 pt-12 pb-12">
         <a href="401.html" target="_blank" class="landing-cards tp-inline-block  wow fadeInUp" data-wow-duration="0.7s">
           <div class="landing-cards-image-wrap d-flex align-items-center justify-content-center position-relative">
             <img width="484" height="437" alt="Screenshot" src="assets/img/hero-demo/password-protected.webp"
@@ -845,7 +881,8 @@
             <div class="landing-image-overlay"></div>
           </div>
           <div class="heading-four">Password Protected</div>
-        </a>
+        </a></div>
+         <div class="col-12 col-md-6 pt-12 pb-0">
         <a href="404.html" target="_blank" class="landing-cards tp-inline-block  wow fadeInUp" data-wow-duration="0.8s">
           <div class="landing-cards-image-wrap d-flex align-items-center justify-content-center position-relative">
             <img width="484" height="437" alt="Screenshot" src="assets/img/hero-demo/404.webp" loading="lazy"
@@ -854,6 +891,7 @@
           </div>
           <div class="heading-four">404</div>
         </a>
+        </div>
       </div>
     </div>
   </section>
