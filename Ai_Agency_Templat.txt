@@ -3,9 +3,11 @@
 2-copy right name
 3-testimonails
 4-12134 css
+5-Footer border
 
   
 justify-content-between align-items-stretch
 flex-column
 align-items-start
+align-items
 py-3 py-md-0

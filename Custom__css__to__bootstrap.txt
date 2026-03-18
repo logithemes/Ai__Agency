@@ -1,0 +1,14 @@
+
+1-Home two testimonails
+2-Home two slider
+3-check all boder
+
+
+d-grid 
+d-lg-flex 
+justify-content-start 
+align-items-start
+flex-column 
+align-items-stretch
+align-items-center
+justify-content-between
