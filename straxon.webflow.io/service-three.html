@@ -358,7 +358,7 @@
                 <h1 class="service-three-hero-heading wow fadeInUp" data-wow-duration="0.8s">Craft a Website That <span class="text-gradiant">Converts</span>
                 </h1>
                 <p class="mb-30 service-hero-description wow fadeInUp" data-wow-duration="1s">Lorem ipsum dolor sit amet consetetur adipiscing elit. Vestibulum rhoncus efficitur enon hendrerit sapien ctor maecen sapien consectetur malesuada faucibus.</p>
-                <div class="tp-flex-horizontal gap-20 service-growth-bottom wow fadeInUp" data-wow-duration="0.8s">
+                <div class="tp-flex-horizontal  gap-20 align-items-center justify-content-start service-growth-bottom wow fadeInUp" data-wow-duration="0.8s">
                   <img width="186" height="60" alt="Users" src="assets/img/service-img/user.webp" loading="lazy" >
                   <div class="tp-flex-vertical">
                    <div class=" d-flex gap-2">
@@ -377,7 +377,7 @@
                   <img width="921" height="517" alt="Graphic Hallway" src="assets/img/service-img/service-three-hero-1.webp" loading="lazy"  class="tp-radius-30" >
                   <div class="service-three-hero-overlay"></div>
                 </div>
-                <div  class="service-three-hero-small-image">
+                <div  class="service-three-hero-small-image position-relative d-none d-lg-block wow fadeInRight" data-wow-duration="1s">
                   <img width="300" height="343" alt="Robot" src="assets/img/service-img/service-three-hero-2.webp" loading="lazy"  class="tp-radius-30" >
                 </div>
               </div>
@@ -396,53 +396,65 @@
             <h2 class="no-margin">Building Meaningful Connections <span class="service-heading-image">through</span> Web Design &amp; Development </h2>
             <div class="home-popup-text-overlay"></div>
           </div>
-          <div class="service-three-cards-wrapper">
-            <div  class="service-three-cards">
-              <div class="tp-flex-vertical service-three-cards-content">
-                <div class="tp-flex-vertical home-one-service-cards-icon pricing-icons">
-                  <i class="bi bi-compass  tp-fs-xxl tp-z-3 position-relative"></i>
-                  <div class="home-one-service-cards-icon-overlay transition-medium-2 "></div>
-                </div>
-                <div class="heading-four mb-30">Strategy</div>
-                <div>Lorem ipsum dolor sit amet adipscng gravida donec.</div>
-              </div>
-              <!-- ACTIVE -->
-              <div  class="service-three-cards-overlay"></div>
-            </div>
-            <div class="service-three-cards">
-              <div class="tp-flex-vertical service-three-cards-content">
-                <div class="tp-flex-vertical home-one-service-cards-icon pricing-icons">
-                 <i class="bi bi-pencil-square  tp-fs-xxl tp-z-3 position-relative"></i>
-                  <div class="home-one-service-cards-icon-overlay transition-medium-2 "></div>
-                </div>
-                <div class="heading-four mb-30">ui design</div>
-                <div>Lorem ipsum dolor sit amet adipscng gravida donec.</div>
-              </div>
-              <div class="service-three-cards-overlay in-active"></div>
-            </div>
-            <div class="service-three-cards">
-              <div class="tp-flex-vertical service-three-cards-content">
-                <div class="tp-flex-vertical home-one-service-cards-icon pricing-icons">
-                  <i class="bi bi-plug  tp-fs-xxl tp-z-3 position-relative"></i>
-                  <div class="home-one-service-cards-icon-overlay transition-medium-2 "></div>
-                </div>
-                <div class="heading-four mb-30">Integration</div>
-                <div>Lorem ipsum dolor sit amet adipscng gravida donec.</div>
-              </div>
-              <div class="service-three-cards-overlay "></div>
-            </div>
-            <div class="service-three-cards">
-              <div class="tp-flex-vertical service-three-cards-content">
-                <div class="tp-flex-vertical home-one-service-cards-icon pricing-icons">
-                 <i class="bi bi-graph-up  tp-fs-xxl tp-z-3 position-relative"></i>
-                  <div class="home-one-service-cards-icon-overlay transition-medium-2 "></div>
-                </div>
-                <div class="heading-four mb-30">data Analysis</div>
-                <div>Lorem ipsum dolor sit amet adipscng gravida donec.</div>
-              </div>
-              <div class="service-three-cards-overlay "></div>
-            </div>
-          </div>
+         <div class="service-three-cards-wrapper row">
+
+  <div class="col-12 col-sm-12 col-md-6 col-lg-3">
+    <div class="service-three-cards">
+      <div class="tp-flex-vertical service-three-cards-content">
+        <div class="tp-flex-vertical home-one-service-cards-icon pricing-icons">
+          <i class="bi bi-compass tp-fs-xxl tp-z-3 position-relative"></i>
+          <div class="home-one-service-cards-icon-overlay transition-medium-2"></div>
+        </div>
+        <div class="heading-four mb-30">Strategy</div>
+        <div>Lorem ipsum dolor sit amet adipscng gravida donec.</div>
+      </div>
+      <div class="service-three-cards-overlay"></div>
+    </div>
+  </div>
+
+  <div class="col-12 col-sm-12 col-md-6 col-lg-3">
+    <div class="service-three-cards">
+      <div class="tp-flex-vertical service-three-cards-content">
+        <div class="tp-flex-vertical home-one-service-cards-icon pricing-icons">
+          <i class="bi bi-pencil-square tp-fs-xxl tp-z-3 position-relative"></i>
+          <div class="home-one-service-cards-icon-overlay transition-medium-2"></div>
+        </div>
+        <div class="heading-four mb-30">ui design</div>
+        <div>Lorem ipsum dolor sit amet adipscng gravida donec.</div>
+      </div>
+      <div class="service-three-cards-overlay in-active"></div>
+    </div>
+  </div>
+
+  <div class="col-12 col-sm-12 col-md-6 col-lg-3">
+    <div class="service-three-cards">
+      <div class="tp-flex-vertical service-three-cards-content">
+        <div class="tp-flex-vertical home-one-service-cards-icon pricing-icons">
+          <i class="bi bi-plug tp-fs-xxl tp-z-3 position-relative"></i>
+          <div class="home-one-service-cards-icon-overlay transition-medium-2"></div>
+        </div>
+        <div class="heading-four mb-30">Integration</div>
+        <div>Lorem ipsum dolor sit amet adipscng gravida donec.</div>
+      </div>
+      <div class="service-three-cards-overlay"></div>
+    </div>
+  </div>
+
+  <div class="col-12 col-sm-12 col-md-6 col-lg-3">
+    <div class="service-three-cards">
+      <div class="tp-flex-vertical service-three-cards-content">
+        <div class="tp-flex-vertical home-one-service-cards-icon pricing-icons">
+          <i class="bi bi-graph-up tp-fs-xxl tp-z-3 position-relative"></i>
+          <div class="home-one-service-cards-icon-overlay transition-medium-2"></div>
+        </div>
+        <div class="heading-four mb-30">data Analysis</div>
+        <div>Lorem ipsum dolor sit amet adipscng gravida donec.</div>
+      </div>
+      <div class="service-three-cards-overlay"></div>
+    </div>
+  </div>
+
+</div>
         </div>
       </div>
     </section>
@@ -451,14 +463,14 @@
 		==================================================== -->
     <section>
       <div class="layout-container container tp-container progress-scroll">
-        <div class="service-three-progress">
-          <div class="service-three-image-wrap">
+        <div class="service-three-progress  position-relative">
+          <div class="service-three-image-wrap d-flex align-items-center justify-content-center">
             <div  class="overflow-hidden">
               <img width="1290" height="490" alt="Graphic Image" src="assets/img/service-img/service-three-inner-img.webp" loading="lazy"  class="tp-radius-30 tab-image-full-width" >
             </div>
           </div>
           <div class="service-three-progress-main wow fadeInUp" data-wow-duration="0.8s">
-            <div class="tp-flex-horizontal progress-main-top">
+            <div class="tp-flex-horizontal progress-main-top gap-30">
               <div class="progress-experience-text">
                 <div class="heading-one">12</div>
                 <div class="years-text">Years of Experience</div>
@@ -468,27 +480,27 @@
             <div>
                <div class="about-three-progress-right gap-30 d-flex flex-column wow fadeInUp" data-wow-duration="0.8s">
             <div>
-              <div class="tp-flex-horizontal about-progress-bar-top">
-                <div class="text-capitalize">uI/UX Design</div>
-                <div class="text-capitalize">95%</div>
+              <div class="tp-flex-horizontal about-progress-bar-top gap-30">
+                <strong class="text-capitalize fw-normal">uI/UX Design</strong>
+                <span class="text-capitalize">95%</span>
               </div>
               <div class="about-progress-bar-inner">
                 <div class="about-progress-gradiant-bar about-progress-bar-one width-0"></div>
               </div>
             </div>
             <div>
-              <div class="tp-flex-horizontal about-progress-bar-top">
-                <div class="text-capitalize">web development</div>
-                <div class="text-capitalize">91%</div>
+              <div class="tp-flex-horizontal about-progress-bar-top gap-30">
+                <strong class="text-capitalize fw-normal">web development</strong>
+                <span class="text-capitalize">91%</span>
               </div>
               <div class="about-progress-bar-inner">
                 <div class="about-progress-gradiant-bar about-progress-bar-two width-0"></div>
               </div>
             </div>
             <div>
-              <div class="tp-flex-horizontal about-progress-bar-top">
-                <div class="text-capitalize">digital marketing</div>
-                <div class="text-capitalize">98%</div>
+              <div class="tp-flex-horizontal about-progress-bar-top gap-30">
+                <strong class="text-capitalize fw-normal">digital marketing</strong>
+                <span class="text-capitalize">98%</span>
               </div>
               <div class="about-progress-bar-inner">
                 <div class="about-progress-gradiant-bar about-progress-bar-three width-0"></div>
@@ -561,79 +573,129 @@
     <section class="service-three-options">
       <div class="layout-container container tp-container">
         <div class="service-three-options-main">
-          <div class="tp-flex-horizontal service-three-options-cards  tp-hover-wrap cell-top wow fadeInUp" data-wow-duration="0.8s">
-            <div class="tp-flex-horizontal service-three-options-card-left">
-              <div>01</div>
-              <div class="tp-flex-horizontal service-three-options-name">
-                <div class="service-three-options-icons">
-                  <i class="bi bi-layout-text-window fs-3"></i>
-                </div>
-                <div class="heading-three">website design</div>
-              </div>
-            </div>
-            <div class="tp-flex-horizontal service-three-options-cards-right">
-              <p class="service-three-options-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulmut mauris ac dui <span class="text-white">vehicula rutrum.</span> Vivamus ac nibh in velit vulputate tempus. <span class="text-white">Curabitur </span>sit amet hendrerit sapien. </p>
-           
-              <a href="service-one.html" class="circle-icon tp-inline-block  arrow-button service-options-link">
-                <i class="bi bi-arrow-up-right fs-5 transition-medium"></i>
-              </a>
-            </div>
-          </div>
-          <div class="tp-flex-horizontal service-three-options-cards tp-hover-wrap cell-even wow fadeInUp" data-wow-duration="0.8s">
-            <div class="tp-flex-horizontal service-three-options-card-left">
-              <div>02</div>
-              <div class="tp-flex-horizontal service-three-options-name">
-                <div class="service-three-options-icons">
-                  <i class="bi bi-award fs-3"></i>
-                </div>
-          
-                <div class="heading-three">branding</div>
-              </div>
-            </div>
-            <div class="tp-flex-horizontal service-three-options-cards-right">
-              <p class="service-three-options-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulmut mauris ac dui <span class="text-white">vehicula rutrum.</span> Vivamus ac nibh in velit vulputate tempus. <span class="text-white">Curabitur </span>sit amet hendrerit sapien. </p>
-              <a href="service-two.html" class="circle-icon tp-inline-block  arrow-button service-options-link">
-                <i class="bi bi-arrow-up-right fs-5 transition-medium"></i>
-              </a>
-            </div>
-          </div>
-          <div  class="tp-flex-horizontal service-three-options-cards tp-hover-wrap wow fadeInUp" data-wow-duration="0.8s">
-            <div class="tp-flex-horizontal service-three-options-card-left">
-              <div>03</div>
-              <div class="tp-flex-horizontal service-three-options-name">
-                <div class="service-three-options-icons">
-                     <i class="bi bi-cpu fs-3"></i>
-                </div>
-        
+ 
 
-                <div class="heading-three">ai interface design</div>
-              </div>
-            </div>
-            <div class="tp-flex-horizontal service-three-options-cards-right">
-              <p class="service-three-options-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulmut mauris ac dui <span class="text-white">vehicula rutrum.</span> Vivamus ac nibh in velit vulputate tempus. <span class="text-white">Curabitur </span>sit amet hendrerit sapien. </p>
-               <a href="service-one.html" class="circle-icon tp-inline-block  arrow-button service-options-link">
-                <i class="bi bi-arrow-up-right fs-5 transition-medium"></i>
-              </a>
-            </div>
+  
+    <div class="service-three-options-cards align-items-center gap-3 gap-lg-0 tp-hover-wrap cell-top wow fadeInUp row" data-wow-duration="0.8s">
+      
+      <div class="col-12 col-lg-6">
+        <div class="d-flex service-three-options-card-left gap-30">
+        <div>01</div>
+        <div class="tp-flex-horizontal service-three-options-name gap-30">
+          <div class="service-three-options-icons d-flex justify-content-center align-items-center">
+            <i class="bi bi-layout-text-window fs-3"></i>
           </div>
-          <div class="tp-flex-horizontal service-three-options-cards tp-hover-wrap cell-even wow fadeInUp" data-wow-duration="0.8s">
-            <div class="tp-flex-horizontal service-three-options-card-left">
-              <div>04</div>
-              <div class="tp-flex-horizontal service-three-options-name">
-                <div class="service-three-options-icons">
-                        <i class="bi bi-code-slash fs-3"></i>
-                </div>
-       
-                <div class="heading-three">website development</div>
-              </div>
-            </div>
-            <div class="tp-flex-horizontal service-three-options-cards-right">
-              <p class="service-three-options-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulmut mauris ac dui <span class="text-white">vehicula rutrum.</span> Vivamus ac nibh in velit vulputate tempus. <span class="text-white">Curabitur </span>sit amet hendrerit sapien. </p>
-                <a href="service-two.html" class="circle-icon tp-inline-block  arrow-button service-options-link">
-                <i class="bi bi-arrow-up-right fs-5 transition-medium"></i>
-              </a>
-            </div>
-          </div>
+          <div class="heading-three">website design</div>
+        </div>
+      </div>
+      </div>
+
+     <div class="col-12 col-lg-6">
+       <div class=" service-three-options-cards-right d-flex gap-30 justify-content-between">
+        <p class="service-three-options-description">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulmut mauris ac dui 
+          <span class="text-white">vehicula rutrum.</span> Vivamus ac nibh in velit vulputate tempus. 
+          <span class="text-white">Curabitur </span>sit amet hendrerit sapien.
+        </p>
+
+        <a href="service-one.html" class="circle-icon tp-inline-block arrow-button service-options-link">
+          <i class="bi bi-arrow-up-right fs-5 transition-medium"></i>
+        </a>
+      </div>
+     </div>
+
+    </div>
+
+
+         <!-- 02 -->
+<div class="service-three-options-cards align-items-center gap-3 gap-lg-0 tp-hover-wrap cell-even wow fadeInUp row" data-wow-duration="0.8s">
+
+  <div class="col-12 col-lg-6">
+    <div class="d-flex service-three-options-card-left gap-30">
+      <div>02</div>
+      <div class="tp-flex-horizontal service-three-options-name gap-30">
+        <div class="service-three-options-icons d-flex justify-content-center align-items-center">
+          <i class="bi bi-award fs-3"></i>
+        </div>
+        <div class="heading-three">branding</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-12 col-lg-6">
+    <div class="service-three-options-cards-right justify-content-between d-flex gap-30">
+      <p class="service-three-options-description">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulmut mauris ac dui 
+        <span class="text-white">vehicula rutrum.</span> Vivamus ac nibh in velit vulputate tempus. 
+        <span class="text-white">Curabitur </span>sit amet hendrerit sapien.
+      </p>
+      <a href="service-two.html" class="circle-icon tp-inline-block arrow-button service-options-link">
+        <i class="bi bi-arrow-up-right fs-5 transition-medium"></i>
+      </a>
+    </div>
+  </div>
+
+</div>
+
+<!-- 03 -->
+<div class="service-three-options-cards align-items-center gap-3 gap-lg-0 tp-hover-wrap wow fadeInUp row" data-wow-duration="0.8s">
+
+  <div class="col-12 col-lg-6">
+    <div class="d-flex service-three-options-card-left gap-30">
+      <div>03</div>
+      <div class="tp-flex-horizontal service-three-options-name gap-30">
+        <div class="service-three-options-icons d-flex justify-content-center align-items-center">
+          <i class="bi bi-cpu fs-3"></i>
+        </div>
+        <div class="heading-three">ai interface design</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-12 col-lg-6">
+    <div class="service-three-options-cards-right justify-content-between d-flex gap-30">
+      <p class="service-three-options-description">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulmut mauris ac dui 
+        <span class="text-white">vehicula rutrum.</span> Vivamus ac nibh in velit vulputate tempus. 
+        <span class="text-white">Curabitur </span>sit amet hendrerit sapien.
+      </p>
+      <a href="service-one.html" class="circle-icon tp-inline-block arrow-button service-options-link">
+        <i class="bi bi-arrow-up-right fs-5 transition-medium"></i>
+      </a>
+    </div>
+  </div>
+
+</div>
+
+<!-- 04 -->
+<div class="service-three-options-cards align-items-center gap-3 gap-lg-0 tp-hover-wrap cell-even wow fadeInUp row" data-wow-duration="0.8s">
+
+  <div class="col-12 col-lg-6">
+    <div class="d-flex service-three-options-card-left gap-30">
+      <div>04</div>
+      <div class="tp-flex-horizontal service-three-options-name gap-30">
+        <div class="service-three-options-icons d-flex justify-content-center align-items-center">
+          <i class="bi bi-code-slash fs-3"></i>
+        </div>
+        <div class="heading-three">website development</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-12 col-lg-6">
+    <div class="service-three-options-cards-right justify-content-between d-flex gap-30">
+      <p class="service-three-options-description">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulmut mauris ac dui 
+        <span class="text-white">vehicula rutrum.</span> Vivamus ac nibh in velit vulputate tempus. 
+        <span class="text-white">Curabitur </span>sit amet hendrerit sapien.
+      </p>
+      <a href="service-two.html" class="circle-icon tp-inline-block arrow-button service-options-link">
+        <i class="bi bi-arrow-up-right fs-5 transition-medium"></i>
+      </a>
+    </div>
+  </div>
+
+</div>
         </div>
       </div>
     </section>

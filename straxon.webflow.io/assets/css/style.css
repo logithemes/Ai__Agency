@@ -5193,8 +5193,6 @@ opacity: 0;
 }
 
 .about-progress-bar-top {
-  grid-column-gap: 30px;
-  grid-row-gap: 30px;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 12px;
@@ -7010,10 +7008,6 @@ opacity: 0;
   position: relative;
 }
 
-.service-growth-bottom {
-  justify-content: flex-start;
-  align-items: center;
-}
 
 .service-two-hero {
   padding-top: 175px;
@@ -7084,15 +7078,10 @@ opacity: 0;
 .service-three-hero-small-image {
   z-index: 2;
   margin-left: -153px;
-  position: relative;
 }
 
 .service-three-options-cards {
-  grid-column-gap: 30px;
-  grid-row-gap: 30px;
   border-bottom: 1px solid var(--border-color);
-  justify-content: space-between;
-  align-items: center;
   padding-top: 50px;
   padding-bottom: 50px;
 }
@@ -7116,10 +7105,8 @@ opacity: 0;
 }
 
 .service-three-options-name {
-  grid-column-gap: 30px;
-  grid-row-gap: 30px;
+
   flex: 1;
-  justify-content: flex-start;
   align-items: center;
   max-width: 402px;
 }
@@ -7135,10 +7122,6 @@ opacity: 0;
 .service-three-hero {
   padding-top: 88px;
   overflow: hidden;
-}
-
-.service-three-progress {
-  position: relative;
 }
 
 .service-three-connection-top {
@@ -7162,28 +7145,15 @@ opacity: 0;
   margin-bottom: 12px;
 }
 
-.service-three-cards-wrapper {
-  grid-column-gap: 30px;
-  grid-row-gap: 30px;
-  grid-template-rows: auto;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-auto-columns: 1fr;
-  width: 100%;
-  display: grid;
-}
 
 .service-three-options-cards-right {
-  grid-column-gap: 30px;
-  grid-row-gap: 30px;
   flex: 1;
-  justify-content: space-between;
   align-items: center;
   max-width: 630px;
 }
 
 .service-three-options-card-left {
-  grid-column-gap: 30px;
-  grid-row-gap: 30px;
+
   flex: 1;
   justify-content: space-between;
   align-items: center;
@@ -7273,27 +7243,18 @@ opacity: 0;
   background-color: #1d1f34;
   border-radius: 6px;
   flex: none;
-  justify-content: center;
-  align-items: center;
   width: 59px;
   height: 59px;
-  display: flex;
+
 }
 
 .progress-main-top {
-  grid-column-gap: 30px;
-  grid-row-gap: 30px;
   justify-content: space-between;
   align-items: center;
   max-width: 372px;
   margin-bottom: 20px;
 }
 
-.service-three-image-wrap {
-  justify-content: center;
-  align-items: center;
-  display: flex;
-}
 
 .service-three-pricing {
   padding-bottom: 90px;
@@ -9811,9 +9772,6 @@ opacity: 0;
     padding-bottom: 70px;
   }
 
-  .service-three-hero-small-image {
-    display: none;
-  }
 
   .service-three-options-cards {
     border-top: 1px solid #444872;
@@ -9834,7 +9792,6 @@ opacity: 0;
 
   .service-three-options-name {
     flex-flow: column;
-    justify-content: flex-start;
     align-items: flex-start;
   }
 
@@ -9845,10 +9802,6 @@ opacity: 0;
   .service-three-hero-main {
     padding-top: 220px;
     padding-bottom: 60px;
-  }
-
-  .service-three-cards-wrapper {
-    grid-template-columns: 1fr 1fr;
   }
 
   .service-three-options-cards-right,
@@ -11369,16 +11322,11 @@ opacity: 0;
 
   .service-growth-bottom {
     flex-flow: column;
-    justify-content: flex-start;
-    align-items: flex-start;
+  
   }
 
   .service-three-hero-main {
     padding-top: 156px;
-  }
-
-  .service-three-cards-wrapper {
-    grid-template-columns: 1fr;
   }
 
   .progress-main-top {
