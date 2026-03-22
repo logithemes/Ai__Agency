@@ -1131,9 +1131,6 @@ textarea.tp-input {
   clear: both;
 }
 
-.tp-tabs {
-  position: relative;
-}
 
 .tp-tab-btn {
   vertical-align: top;
@@ -7377,11 +7374,8 @@ opacity: 0;
 }
 
 .service-one-wrap {
-  grid-column-gap: 30px;
-  grid-row-gap: 30px;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
   padding-bottom: 40px;
   padding-left: 40px;
   padding-right: 40px;
@@ -7543,8 +7537,6 @@ opacity: 0;
 }
 
 .service-hero-text {
-  grid-column-gap: 20px;
-  grid-row-gap: 20px;
   flex-flow: wrap;
   justify-content: flex-start;
   align-items: center;
@@ -7553,8 +7545,6 @@ opacity: 0;
 }
 
 .service-text-line-two {
-  grid-column-gap: 30px;
-  grid-row-gap: 30px;
   flex-flow: wrap-reverse;
   justify-content: flex-start;
   align-items: center;
