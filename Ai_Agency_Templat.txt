@@ -11,3 +11,11 @@ flex-column
 align-items-start
 align-items
 py-3 py-md-0
+justify-content-center
+
+
+992 above col-6 992 below col-12 
+dont add directly add one div dont change class  names
+
+col-12 col-lg-6
+gap-5 gap-lg-0
