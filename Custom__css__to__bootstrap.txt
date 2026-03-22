@@ -2,6 +2,9 @@
 1-Home two testimonails
 2-Home two slider
 3-check all boder
+4-service one number count section
+5-check all headlines
+6-margin-bottom- reduce services box
 
 
 d-grid 
