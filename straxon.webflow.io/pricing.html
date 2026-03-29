@@ -345,9 +345,9 @@
     <!-- ===================================================
 		pricing hero
 		==================================================== -->
-    <section class="pricing-hero">
+    <section class="pricing-hero overflow-hidden">
       <div class="layout-container container tp-container">
-        <div class="tp-flex-vertical pricing-hero-main">
+        <div class="tp-flex-vertical pricing-hero-main pb-3">
           <!-- ===================================================
 				pricing hero text
 				==================================================== -->
@@ -370,10 +370,10 @@
             </div>
               <div class="pricing-tabs-content tp-tabs-content">
               <div data-tab="Tab 1" class="tp-tabs-pane tp--tab-active">
-              <div class="pricing-plans-wrap row">
+           <div class="pricing-plans-wrap row ">
 
   <!-- CARD 1 -->
-  <div class="col-6 col-md-6 col-lg-4">
+  <div class="col-12 col-md-6 col-lg-4">
     <div class="tp-flex-vertical pricing-plans-cards">
       <div class="tp-flex-vertical home-one-service-cards-icon pricing-icons">
         <img width="57" height="57" alt="Icon" src="assets/img/service-icons/service-ic-15.png" loading="lazy" class="home-one-service-icon">
@@ -430,7 +430,7 @@
   </div>
 
   <!-- CARD 2 -->
-  <div class="col-6 col-md-6 col-lg-4">
+  <div class="col-12 col-md-6 col-lg-4">
     <div class="tp-flex-vertical pricing-plans-cards linear-background">
       <div class="tp-flex-vertical home-one-service-cards-icon pricing-icons">
         <img width="57" height="57" alt="Icon" src="assets/img/service-icons/service-ic-16.png" loading="lazy" class="home-one-service-icon">
@@ -491,7 +491,7 @@
   </div>
 
   <!-- CARD 3 -->
-  <div class="col-6 col-md-6 col-lg-4">
+  <div class="col-12 col-md-6 col-lg-4">
     <div class="tp-flex-vertical pricing-plans-cards">
       <div class="tp-flex-vertical home-one-service-cards-icon pricing-icons">
         <img width="49" height="57" alt="Icon" src="assets/img/service-icons/service-ic-17.png" loading="lazy" class="home-one-service-icon">
@@ -704,38 +704,7 @@
           <!-- ===================================================
 			pricing hero options
 			==================================================== -->
-          <div class="tp-flex-horizontal pricing-hero-options">
-            <div class="tp-flex-horizontal pricing-hero-options-boxes wow fadeInUp" data-wow-duration="0.5s">
-              <div class="pricing-bottom-icons">
-                <img width="24" height="22" alt="Free" src="assets/img/icons/pricing-free.svg" loading="lazy">
-              </div>
-              <div class="tp-flex-vertical pricing-features">
-                <div class="heading-five">30 days free trial </div>
-                <p class="no-margin-bottom">Completely free 30-day trial. Cancel anytime, no questions asked.</p>
-              </div>
-            </div>
-            <div class="tp-flex-horizontal pricing-hero-options-boxes pricing-hero-options-boxes-two wow fadeInUp	"
-              data-wow-duration="0.8s">
-              <div class="pricing-bottom-icons">
-                <img width="20" height="21" alt="Secure" src="assets/img/icons/pricing-secure.svg" loading="lazy">
-              </div>
-              <div class="tp-flex-vertical pricing-features">
-                <div class="heading-five">Secure payments</div>
-                <p class="no-margin-bottom">We believe in transparent transactions. Secure payments, clear costs.</p>
-              </div>
-            </div>
-            <div class="tp-flex-horizontal pricing-hero-options-boxes pricing-hero-options-boxes-three wow fadeInUp	"
-              data-wow-duration="1.3s">
-              <div class="pricing-bottom-icons">
-                <img width="26" height="16" alt="Money" src="assets/img/icons/pricing-money.svg" loading="lazy">
-              </div>
-              <div class="tp-flex-vertical pricing-features">
-                <div class="heading-five">Money back guarantee</div>
-                <p class="no-margin-bottom">Your satisfaction is our priority. That&#x27;s why we offer a hassle-free
-                  money-back guarantee.</p>
-              </div>
-            </div>
-          </div>
+         
         </div>
       </div>
     </section>
@@ -767,21 +736,31 @@
 	==================================================== -->
   <section class="home-three-faq">
     <div class="layout-container container tp-container">
-      <div class="tp-flex-horizontal home-three-faq-main">
-        <div class="tp-flex-vertical home-three-faq-text-wrapper">
-          <div class="tp-flex-horizontal small-tag-wrapper wow fadeInUp	" data-wow-duration="0.5s">
-            <div class="dot"></div>
-            <div class="text-capitalize">FAQ</div>
-          </div>
-          <h2 class="margin-top-twenty-five faq-heading wow fadeInUp	" data-wow-duration="0.8s">From Vision to <span
-              class="text-gradiant">Reality</span>
-          </h2>
-          <div  class="button-wrapper">
-            <a href="pricing.html" aria-current="page" class="tp-btn tp-active">learn more</a>
-            <div class="button-border-effect"></div>
-          </div>
-        </div>
-         <div class="col-12 col-md-7">
+        <div class="tp-flex-horizontal home-three-faq-main row g-4">
+
+  <!-- LEFT SIDE -->
+  <div class="col-12 col-md-5">
+    <div class="tp-flex-vertical home-three-faq-text-wrapper section-title">
+      
+      <div class="tp-flex-horizontal small-tag-wrapper">
+        <div class="dot"></div>
+        <div class="text-capitalize">FAQ</div>
+      </div>
+
+      <h2 class="margin-top-twenty-five faq-heading">
+        From Vision to <span class="text-gradiant">Reality</span>
+      </h2>
+
+      <div class="button-wrapper">
+        <a href="pricing.html" class="tp-btn text-white">learn more</a>
+        <div class="button-border-effect"></div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- RIGHT SIDE -->
+  <div class="col-12 col-md-7">
     <div class="home-three-faq-box accordion d-flex flex-column gap-3 gap-md-4 " id="faqAccordion">
 
       <div class="faq-border">
@@ -825,13 +804,14 @@
 
     </div>
   </div>
-      </div>
+
+</div>
     </div>
   </section>
   <!-- ===================================================
     Testimonial section 
 	==================================================== -->
-  <section class="home-one-testimonial">
+  <section class="home-one-testimonial overflow-hidden">
    <div class="layout-container container-small tp-container">
         <div class="tp-flex-vertical home-one-testimonial-main">
           <div class="home-one-testimonial-content text-capitalize wow fadeInUp" data-wow-duration="0.5s">testimonials
