@@ -121,7 +121,7 @@ document.addEventListener("DOMContentLoaded", function () {
     =============================== */
     const explore = document.querySelector(".explore-now");
     if (explore) {
-        const cards = gsap.utils.toArray(".landing-cards, .service-sticky");
+        const cards = gsap.utils.toArray(".landing-cards, .service-sticky, .blog-three-posts-image");
         
         cards.forEach((card) => {
             if (!card) return;
