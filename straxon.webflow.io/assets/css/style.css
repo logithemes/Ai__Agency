@@ -312,6 +312,7 @@ th {
 .pb-12{padding-bottom: 12px;}
 .pl-15{padding-left: 15px;}
 .pr-15{padding-right: 15px;}
+.mt-30{margin-top: 30px;}
 .mb-30{margin-bottom: 30px;}
 .row-gap-20{row-gap: 20px;}
 .row-gap-30{row-gap: 30px;}
@@ -5245,7 +5246,7 @@ opacity: 0;
   align-items: center;
   position: relative;
 }
-
+.contact-row-wrapper{padding-left: 35px;}
 .contact-one-top-wrap {
   background-image: radial-gradient(circle at 63% 36%, #f449723d, #f4497200 23%),
     radial-gradient(circle at 23% 25%, #b460f13b, #b460f100 20%);
@@ -5285,12 +5286,8 @@ opacity: 0;
 .contact-icon-wrapper {
   background-color: #161724;
   border-radius: 5px;
-  flex: none;
-  justify-content: center;
-  align-items: center;
   width: 60px;
   height: 60px;
-  display: flex;
 }
 
 .contact-one-form-top-wrapper {
@@ -5301,9 +5298,6 @@ opacity: 0;
 }
 
 .contact-main-right-wrapper {
-  grid-column-gap: 26px;
-  grid-row-gap: 26px;
-  flex: 1;
   max-width: 345px;
 }
 
@@ -5313,11 +5307,8 @@ opacity: 0;
 }
 
 .conact-one-form-wrapper {
-  grid-column-gap: 40px;
-  grid-row-gap: 40px;
   justify-content: flex-start;
   align-items: center;
-  margin-bottom: 40px;
 }
 
 .contact-one-hero-middle-wrapper {
@@ -5334,15 +5325,6 @@ opacity: 0;
   padding: 70px;
 }
 
-.contact-one-information-wrapper {
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
-  grid-template-rows: auto;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-auto-columns: 1fr;
-  display: grid;
-}
-
 .contact-one-heading-wrap {
   grid-row-gap: 20px;
   flex-flow: wrap;
@@ -5354,9 +5336,6 @@ opacity: 0;
 }
 
 .contact-one-informations {
-  grid-column-gap: 30px;
-  grid-row-gap: 30px;
-  justify-content: flex-start;
   align-items: center;
   padding-top: 25px;
   padding-bottom: 25px;
@@ -9278,18 +9257,12 @@ top: 0;
     padding: 40px;
   }
 
-  .contact-one-information-wrapper {
-    grid-column-gap: 37px;
-    grid-row-gap: 37px;
-  }
-
   .contact-one-heading-wrap {
     flex-flow: column-reverse;
   }
 
   .contact-one-informations {
     flex-flow: column;
-    justify-content: flex-start;
     align-items: flex-start;
     padding-top: 0;
     padding-bottom: 0;
@@ -10324,12 +10297,6 @@ top: 0;
     padding-right: 20px;
   }
 
-  .contact-one-information-wrapper {
-    grid-column-gap: 15px;
-    grid-row-gap: 15px;
-    grid-auto-flow: row;
-  }
-
   .contact-one-informations {
     max-width: 300px;
   }
@@ -11078,17 +11045,6 @@ top: 0;
     align-items: flex-start;
     max-width: 100%;
     width: 100%;
-  }
-
-  .conact-one-form-wrapper {
-    flex-flow: column;
-    align-items: stretch;
-  }
-
-  .contact-one-information-wrapper {
-    grid-column-gap: 25px;
-    grid-row-gap: 25px;
-    grid-template-columns: 1fr;
   }
 
   .contact-two-cta-wrap {

@@ -391,53 +391,71 @@
     <div class="col-lg-7 col-12">
       <div class="contact-main-left-wrapper wow fadeInUp" data-wow-duration="0.8s">
         <div class="m-0 tp-form">
-          <form>
-            <h3 class="heading-three mb-30">say hello!</h3>
+       <form>
+  <h3 class="heading-three mb-30">say hello!</h3>
 
-            <div class="tp-flex-horizontal conact-one-form-wrapper">
-              <div class="tp-flex-horizontal form-input-wrapper">
-                <input class="form-input-one tp-input" maxlength="256"
-                  name="Name" placeholder="Name" type="text" id="Name" required="">
-                <i class="bi bi-person contact-one-input-icon tp-input-icon"></i>
-              </div>
+  <!-- NAME + EMAIL -->
+  <div class="row conact-one-form-wrapper mb-30">
+    <div class="col-sm-6 col-12">
+      <div class="tp-flex-horizontal form-input-wrapper">
+        <input class="form-input-one tp-input" maxlength="256"
+          name="Name" placeholder="Name" type="text" id="Name" required="">
+        <i class="bi bi-person contact-one-input-icon tp-input-icon"></i>
+      </div>
+    </div>
 
-              <div class="tp-flex-horizontal form-input-wrapper">
-                <input class="form-input-one tp-input" maxlength="256"
-                  name="Email" placeholder="Email" type="email" id="Email" required="">
-                <i class="bi bi-envelope contact-one-input-icon tp-input-icon"></i>
-              </div>
-            </div>
+    <div class="col-sm-6 col-12 mt-30 mt-sm-0">
+      <div class="tp-flex-horizontal form-input-wrapper">
+        <input class="form-input-one tp-input" maxlength="256"
+          name="Email" placeholder="Email" type="email" id="Email" required="">
+        <i class="bi bi-envelope contact-one-input-icon tp-input-icon"></i>
+      </div>
+    </div>
+  </div>
 
-            <div class="tp-flex-horizontal conact-one-form-wrapper">
-              <div class="tp-flex-horizontal form-input-wrapper">
-                <input class="form-input-one tp-input" maxlength="256"
-                  name="Phone" placeholder="Phone" type="tel" id="Phone" required="">
-                <i class="bi bi-telephone contact-one-input-icon tp-input-icon"></i>
-              </div>
+  <!-- PHONE + ADDRESS -->
+  <div class="row conact-one-form-wrapper mb-30">
+    <div class="col-sm-6 col-12">
+      <div class="tp-flex-horizontal form-input-wrapper">
+        <input class="form-input-one tp-input" maxlength="256"
+          name="Phone" placeholder="Phone" type="tel" id="Phone" required="">
+        <i class="bi bi-telephone contact-one-input-icon tp-input-icon"></i>
+      </div>
+    </div>
 
-              <div class="tp-flex-horizontal form-input-wrapper">
-                <input class="form-input-one tp-input" maxlength="256"
-                  name="Address" placeholder="Address" type="text" id="Address" required="">
-                <i class="bi bi-geo-alt contact-one-input-icon tp-input-icon"></i>
-              </div>
-            </div>
+    <div class="col-sm-6 col-12 mt-30 mt-sm-0">
+      <div class="tp-flex-horizontal form-input-wrapper">
+        <input class="form-input-one tp-input" maxlength="256"
+          name="Address" placeholder="Address" type="text" id="Address" required="">
+        <i class="bi bi-geo-alt contact-one-input-icon tp-input-icon"></i>
+      </div>
+    </div>
+  </div>
 
-            <div class="tp-flex-horizontal conact-one-form-wrapper">
-              <div class="form-textarea-one">
-                <textarea id="message" name="message" maxlength="5000"
-                  placeholder="Message" class="contact-one-textarea tp-input"></textarea>
-                <i class="bi bi-chat-dots contact-one-input-icon tp-input-icon textarea-icon"></i>
-              </div>
-            </div>
+  <!-- MESSAGE -->
+  <div class="row conact-one-form-wrapper mb-30">
+    <div class="col-12">
+      <div class="form-textarea-one">
+        <textarea id="message" name="message" maxlength="5000"
+          placeholder="Message" class="contact-one-textarea tp-input"></textarea>
+        <i class="bi bi-chat-dots contact-one-input-icon tp-input-icon textarea-icon"></i>
+      </div>
+    </div>
+  </div>
 
-            <div class="tp-flex-horizontal">
-              <div class="button-wrapper">
-                <input type="submit"
-                  class="tp-btn contact-one-button border-0" value="enquire now">
-                <div class="button-border-effect"></div>
-              </div>
-            </div>
-          </form>
+  <!-- BUTTON -->
+  <div class="row">
+    <div class="col-12">
+      <div class="tp-flex-horizontal">
+        <div class="button-wrapper">
+          <input type="submit"
+            class="tp-btn contact-one-button border-0" value="enquire now">
+          <div class="button-border-effect"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</form>
         </div>
       </div>
     </div>
@@ -445,7 +463,7 @@
     <!-- RIGHT CONTENT -->
     <div class="col-lg-5 col-12">
       <div class="d-flex justify-content-end">
-        <div class="tp-flex-vertical contact-main-right-wrapper wow fadeInUp" data-wow-duration="1s">
+        <div class="tp-flex-vertical contact-main-right-wrapper gap-3 gap-sm-4 wow fadeInUp" data-wow-duration="1s">
         <h3 class="heading-three">
           let’s get in <span class="text-gradiant">touch</span>
         </h3>
@@ -538,39 +556,52 @@
 	contact one information
 	==================================================== -->
   <div class="contact-one-information">
-    <div class="layout-containerr container tp-container">
-     <div class="contact-one-information-wrapper">
+    <div class="layout-containerr">
+     <div class="contact-one-information-wrapper d-block w-100 ">
 
-  <div class="tp-flex-horizontal contact-one-informations">
-    <div class="contact-icon-wrapper">
-      <i class="bi bi-telephone tp-input-icon fs-4"></i>
+  <!-- NEW ROW WRAPPER -->
+  <div class="row contact-row-wrapper  w-100 align-items-start align-lg-items-center gap-sm-0 gap-4">
+
+    <!-- PHONE -->
+    <div class="col-sm-4 col-12">
+      <div class="tp-flex-horizontal contact-one-informations gap-30">
+        <div class="contact-icon-wrapper d-flex align-items-center justify-content-center">
+          <i class="bi bi-telephone tp-input-icon fs-4"></i>
+        </div>
+        <div class="tp-flex-vertical">
+          <h5 class="heading-five mb-1 mt-1">call us:</h5>
+          <a class="text-white" href="tel:8881234-5678">(888) 1234-5678</a>
+        </div>
+      </div>
     </div>
-    <div class="tp-flex-vertical">
-      <div class="heading-five margin-bottom-five">call us:</div>
-      <a class="text-white" href="tel:8881234-5678">(888) 1234-5678</a>
+
+    <!-- EMAIL -->
+    <div class="col-sm-4 col-12 p-0">
+      <div class="tp-flex-horizontal contact-one-informations gap-30 contact-one-information-two">
+        <div class="contact-icon-wrapper d-flex align-items-center justify-content-center">
+          <i class="bi bi-envelope tp-input-icon fs-4"></i>
+        </div>
+        <div class="tp-flex-vertical">
+          <h5 class="heading-five mb-1 mt-1">email us:</h5>
+          <a class="text-white" href="mailto:info@example.com">info@example.com</a>
+        </div>
+      </div>
     </div>
+
+    <!-- ADDRESS -->
+    <div class="col-sm-4 col-12 p-0">
+      <div class="tp-flex-horizontal contact-one-informations gap-30 contact-one-information-three">
+        <div class="contact-icon-wrapper d-flex align-items-center justify-content-center">
+          <i class="bi bi-geo-alt tp-input-icon fs-4"></i>
+        </div>
+        <div class="tp-flex-vertical">
+          <h5 class="heading-five mb-1 mt-1">find us:</h5>
+          <a href="#" class="text-white">410 Sandtown, California 94001, USA</a>
+        </div>
+      </div>
+    </div>
+
   </div>
-
-  <div class="tp-flex-horizontal contact-one-informations contact-one-information-two">
-    <div class="contact-icon-wrapper">
-      <i class="bi bi-envelope tp-input-icon fs-4"></i>
-    </div>
-    <div class="tp-flex-vertical">
-      <div class="heading-five margin-bottom-five">email us:</div>
-      <a class="text-white" href="mailto:info@example.com">info@example.com</a>
-    </div>
-  </div>
-
-  <div class="tp-flex-horizontal contact-one-informations contact-one-information-three">
-    <div class="contact-icon-wrapper">
-      <i class="bi bi-geo-alt tp-input-icon fs-4"></i>
-    </div>
-    <div class="tp-flex-vertical">
-      <div class="heading-five margin-bottom-five">find us:</div>
-      <a href="" class="text-white">410 Sandtown, California 94001, USA</a>
-    </div>
-  </div>
-
 </div>
     </div>
   </div>
