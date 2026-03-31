@@ -4597,10 +4597,6 @@ opacity: 0;
 }
 
 .team-details-hero-main {
-  grid-column-gap: 60px;
-  grid-row-gap: 60px;
-  justify-content: space-between;
-  align-items: center;
   max-width: 1095px;
 }
 .team-cards-text-wrapper {
@@ -5981,13 +5977,6 @@ opacity: 0;
   align-items: center;
 }
 
-.team-member-name {
-  grid-column-gap: 30px;
-  grid-row-gap: 30px;
-  justify-content: flex-start;
-  align-items: flex-end;
-  margin-bottom: 20px;
-}
 
 .my-approach-right {
   grid-column-gap: 40px;
@@ -5999,8 +5988,8 @@ opacity: 0;
 }
 
 .team-member-information {
-  flex: 1;
   max-width: 495px;
+  padding-left: 40px;
 }
 
 .team-details-top {
@@ -8398,7 +8387,7 @@ top: 0;
     width: 100%;
     float: left;
   }
-  
+  .team-member-information{padding-left: 20px;}
 .about-one-opitons h3{font-size: 30px;}
   .solutions-heading{margin-bottom: 34px;}
   .pr_slides-cards {
@@ -9350,15 +9339,6 @@ top: 0;
     padding-top: 60px;
     padding-bottom: 60px;
   }
-
-  .team-details-hero-main {
-    grid-column-gap: 20px;
-    grid-row-gap: 20px;
-    flex-flow: column;
-    justify-content: space-between;
-    align-items: flex-start;
-  }
-
   .team-member-details-main {
     grid-column-gap: 60px;
     grid-row-gap: 60px;
@@ -9810,7 +9790,7 @@ top: 0;
   .home-digital-solutions-option {
     padding: 25px 15px;
   }
-
+.team-member-information{padding-left: 0;}
   .heading-four.progress-heading {
     max-width: none;
   }
