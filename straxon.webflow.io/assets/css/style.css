@@ -3337,10 +3337,6 @@ opacity: 0;
   font-family: Roboto, sans-serif;
 }
 
-.heading-five.margin-bottom-ten {
-  margin-bottom: 10px;
-}
-
 .heading-five.experience-name {
   max-width: 115px;
 }
@@ -6573,7 +6569,6 @@ top: 0;
 
 .projects-details-heading {
   margin-top: 25px;
-  margin-bottom: 40px;
 }
 
 .project-details-container {
@@ -6583,12 +6578,6 @@ top: 0;
 }
 
 .projects-details-information {
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
-  grid-template-rows: auto;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-auto-columns: 1fr;
-  display: grid;
   position: relative;
 }
 
@@ -6624,8 +6613,6 @@ top: 0;
 }
 
 .task-wrapper {
-  grid-column-gap: 30px;
-  grid-row-gap: 30px;
   justify-content: space-between;
   align-items: flex-start;
   max-width: 340px;
@@ -9471,10 +9458,9 @@ top: 0;
   }
 
   .projects-details-column {
-    justify-content: center;
     align-items: flex-start;
     padding-top: 30px;
-    padding-bottom: 30px;
+    padding-bottom: 0;
   }
 
    .pr-div-img{   width: 30vw;
