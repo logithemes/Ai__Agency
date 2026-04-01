@@ -5963,11 +5963,6 @@ opacity: 0;
 
 .team-details-progress-wrap {
   background-color: #161724;
-  border-radius: 30px;
-  justify-content: flex-start;
-  align-items: stretch;
-  width: 100%;
-  overflow: hidden;
 }
 
 .team-member-details-main {
@@ -6042,15 +6037,8 @@ opacity: 0;
 .team-details-progress-right {
   justify-content: center;
   align-items: flex-start;
-  width: 50%;
   padding: 40px 20px 40px 4.6%;
 }
-
-.team-details-progress-image-wrap {
-  width: 50%;
-  overflow: hidden;
-}
-
 .team-member-details-image {
   flex: 1;
   max-width: 410px;
@@ -8393,6 +8381,7 @@ top: 0;
   .pr_slides-cards {
     width: 100%;
   }
+
   .humburger-wrapper {
     grid-column-gap: 7px;
     grid-row-gap: 7px;
@@ -10267,10 +10256,6 @@ top: 0;
     background-size: auto;
   }
 
-  .team-details-progress-wrap {
-    flex-flow: column;
-  }
-
   .team-member-details-main {
     grid-column-gap: 40px;
     grid-row-gap: 40px;
@@ -10289,13 +10274,9 @@ top: 0;
   }
 
   .team-details-progress-right {
-    width: 100%;
     padding-left: 20px;
   }
 
-  .team-details-progress-image-wrap {
-    width: 100%;
-  }
 
   .team-member-details-image {
     max-width: none;
