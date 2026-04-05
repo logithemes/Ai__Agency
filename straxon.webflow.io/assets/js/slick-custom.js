@@ -183,14 +183,35 @@ rotatingTexts.forEach((el) => {
   }, 16);
 });
 
-$('.humburger-wrapper').on('click', function () {
-  $('.main-menu')
-    .stop(true, true)
-    .slideToggle(500);
+function handleMenu() {
+  if ($(window).width() >= 992) {
+    $('.main-menu')
+      .removeAttr('style')   // remove inline display from slideToggle
+      .addClass('d-block')   // force visible
+      .removeClass('is-open');
+  } else {
+    $('.main-menu')
+      .removeClass('d-block'); // allow toggle in mobile
+  }
+}
 
-  $('.main-menu').toggleClass('is-open');
+// Run on load
+handleMenu();
+
+// Run on resize
+$(window).on('resize', function () {
+  handleMenu();
 });
 
+// Toggle for mobile
+$('.humburger-wrapper').on('click', function () {
+  if ($(window).width() < 992) {
+    $('.main-menu')
+      .stop(true, true)
+      .slideToggle(300)
+      .toggleClass('is-open');
+  }
+});
 
 $('.navbar-dropdown-toggle')
   .hide()
@@ -221,7 +242,7 @@ const isMobile = () => window.innerWidth < 992; // Bootstrap breakpoint
 $('.tp-dropdown').on('mouseenter', function () {
   if (!isMobile()) {
     $(this)
-      .find('.dp-menu')
+      .find('.dp-menu, .mega-menu')
       .stop(true, true)
       .css('visibility', 'visible')
       .slideDown(300);

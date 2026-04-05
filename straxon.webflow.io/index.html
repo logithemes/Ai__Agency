@@ -8,12 +8,12 @@
   <meta name="description" content="Stynero — sleek, responsive digital agency for startups & creatives.">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/spacing.css">
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/animate.css">
   <link rel="stylesheet" href="assets/css/slick.css">
   <link rel="stylesheet" href="assets/css/slick-theme.css">
   <link rel="stylesheet" href="assets/css/bootstrap-icons.css">
-
 </head>
 
 <body>
@@ -59,71 +59,90 @@
             <a href="index.html" class="stynero-wrapper header-logo  d-flex align-items-center">
               <img width="140" height="30" alt="logo-img" src="assets/img/logo/logo.svg" loading="lazy" class="stynero">
             </a>
-            <nav role="navigation" class="nav-menu main-menu ">
-              <div class="d-inline-block w-100 h-100 nav-inline">
-                <div class="tp-dropdown menu-item">
-                  <div class="tp-dropdown-toggle menu-item-toggle">
-                    <div>Home</div>
-                    <i class="bi bi-caret-down-fill tp-menu-dropdown-icon menu-dp-icon mt-0"></i>
+           <nav role="navigation" class="nav-menu main-menu" aria-label="Main Navigation">
+  
+  <ul class="d-inline-block w-100 h-100 nav-inline list-unstyled m-0 p-0">
 
-                  </div>
-                  <nav class="tp-dropdown-menu dp-menu">
-                    <a href="home-one.html" aria-current="page" class="dropdown-link menu-dd-link tp-active">Home
-                      One</a>
-                    <a href="home-two.html" class="dropdown-link menu-dd-link">Home Two</a>
-                    <a href="home-three.html" class="dropdown-link menu-dd-link">Home Three</a>
-                  </nav>
-                </div>
-                <div class="tp-dropdown menu-item">
-                  <div class="tp-dropdown-toggle menu-item-toggle">
-                    <div>About</div>
-                    <i class="bi bi-caret-down-fill tp-menu-dropdown-icon menu-dp-icon mt-0"></i>
-                  </div>
-                  <nav class="tp-dropdown-menu dp-menu">
-                    <a href="about-one.html" class="dropdown-link menu-dd-link">About One</a>
-                    <a href="about-two.html" class="dropdown-link menu-dd-link">About Two</a>
-                    <a href="about-three.html" class="dropdown-link menu-dd-link">About Three</a>
-                  </nav>
-                </div>
-                <div class="tp-dropdown menu-item">
-                  <div class="tp-dropdown-toggle menu-item-toggle">
-                    <div>Pages</div>
-                    <i class="bi bi-caret-down-fill tp-menu-dropdown-icon menu-dp-icon mt-0"></i>
-                  </div>
-                  <nav class="tp-dropdown-menu dp-menu">
-                    <a href="service-one.html" class="dropdown-link menu-dd-link">Service One</a>
-                    <a href="service-two.html" class="dropdown-link menu-dd-link">Service Two</a>
-                    <a href="service-three.html" class="dropdown-link menu-dd-link">Service Three</a>
-                    <a href="projects.html" class="dropdown-link menu-dd-link">Projects</a>
-                    <a href="team.html" class="dropdown-link menu-dd-link">Team</a>
-                    <a href="404.html" class="dropdown-link menu-dd-link">404</a>
-                  </nav>
-                </div>
-                <a href="pricing.html" class="tp-dropdown-toggle pricing">pricing</a>
-                <div class="tp-dropdown menu-item">
-                  <div class="tp-dropdown-toggle menu-item-toggle">
-                    <div>Blog</div>
-                    <i class="bi bi-caret-down-fill tp-menu-dropdown-icon menu-dp-icon mt-0"></i>
-                  </div>
-                  <nav class="tp-dropdown-menu dp-menu">
-                    <a href="blog-one.html" class="dropdown-link menu-dd-link">Blog One</a>
-                    <a href="blog-two.html" class="dropdown-link menu-dd-link">Blog Two</a>
-                    <a href="blog-three.html" class="dropdown-link menu-dd-link">Blog Three</a>
-                  </nav>
-                </div>
-                <div class="tp-dropdown menu-item">
-                  <div class="tp-dropdown-toggle menu-item-toggle">
-                    <div>contact</div>
-                    <i class="bi bi-caret-down-fill tp-menu-dropdown-icon menu-dp-icon mt-0"></i>
-                  </div>
-                  <nav class="tp-dropdown-menu dp-menu">
-                    <a href="contact-one.html" class="dropdown-link menu-dd-link">Contact One</a>
-                    <a href="contact-two.html" class="dropdown-link menu-dd-link">Contact Two</a>
-                    <a href="contact-three.html" class="dropdown-link menu-dd-link">Contact Three</a>
-                  </nav>
-                </div>
-              </div>
-            </nav>
+    <!-- Home -->
+    <li class="tp-dropdown menu-item">
+      <a href="javascript:void(0)" class="tp-dropdown-toggle menu-item-toggle d-flex align-items-center">
+        <span>Home</span>
+        <i class="bi bi-caret-down-fill tp-menu-dropdown-icon menu-dp-icon mt-0"></i>
+      </a>
+
+      <ul class="tp-dropdown-menu dp-menu list-unstyled">
+        <li><a href="home-one.html" class="dropdown-link menu-dd-link tp-active">Home One</a></li>
+        <li><a href="home-two.html" class="dropdown-link menu-dd-link">Home Two</a></li>
+        <li><a href="home-three.html" class="dropdown-link menu-dd-link">Home Three</a></li>
+      </ul>
+    </li>
+
+    <!-- About -->
+    <li class="tp-dropdown menu-item">
+      <a href="javascript:void(0)" class="tp-dropdown-toggle menu-item-toggle d-flex align-items-center">
+        <span>About</span>
+        <i class="bi bi-caret-down-fill tp-menu-dropdown-icon menu-dp-icon mt-0"></i>
+      </a>
+
+      <ul class="tp-dropdown-menu dp-menu list-unstyled">
+        <li><a href="about-one.html" class="dropdown-link menu-dd-link">About One</a></li>
+        <li><a href="about-two.html" class="dropdown-link menu-dd-link">About Two</a></li>
+        <li><a href="about-three.html" class="dropdown-link menu-dd-link">About Three</a></li>
+      </ul>
+    </li>
+
+    <!-- Pages -->
+    <li class="tp-dropdown menu-item">
+      <a href="javascript:void(0)" class="tp-dropdown-toggle menu-item-toggle d-flex align-items-center">
+        <span>Pages</span>
+        <i class="bi bi-caret-down-fill tp-menu-dropdown-icon menu-dp-icon mt-0"></i>
+      </a>
+
+      <ul class="tp-dropdown-menu dp-menu list-unstyled">
+        <li><a href="service-one.html" class="dropdown-link menu-dd-link">Service One</a></li>
+        <li><a href="service-two.html" class="dropdown-link menu-dd-link">Service Two</a></li>
+        <li><a href="service-three.html" class="dropdown-link menu-dd-link">Service Three</a></li>
+        <li><a href="projects.html" class="dropdown-link menu-dd-link">Projects</a></li>
+        <li><a href="team.html" class="dropdown-link menu-dd-link">Team</a></li>
+        <li><a href="404.html" class="dropdown-link menu-dd-link">404</a></li>
+      </ul>
+    </li>
+
+    <!-- Pricing -->
+    <li class="menu-item">
+      <a href="pricing.html" class="tp-dropdown-toggle pricing">Pricing</a>
+    </li>
+
+    <!-- Blog -->
+    <li class="tp-dropdown menu-item">
+      <a href="javascript:void(0)" class="tp-dropdown-toggle menu-item-toggle d-flex align-items-center">
+        <span>Blog</span>
+        <i class="bi bi-caret-down-fill tp-menu-dropdown-icon menu-dp-icon mt-0"></i>
+      </a>
+
+      <ul class="tp-dropdown-menu dp-menu list-unstyled">
+        <li><a href="blog-one.html" class="dropdown-link menu-dd-link">Blog One</a></li>
+        <li><a href="blog-two.html" class="dropdown-link menu-dd-link">Blog Two</a></li>
+        <li><a href="blog-three.html" class="dropdown-link menu-dd-link">Blog Three</a></li>
+      </ul>
+    </li>
+
+    <!-- Contact -->
+    <li class="tp-dropdown menu-item">
+      <a href="javascript:void(0)" class="tp-dropdown-toggle menu-item-toggle d-flex align-items-center">
+        <span>Contact</span>
+        <i class="bi bi-caret-down-fill tp-menu-dropdown-icon menu-dp-icon mt-0"></i>
+      </a>
+
+      <ul class="tp-dropdown-menu dp-menu list-unstyled">
+        <li><a href="contact-one.html" class="dropdown-link menu-dd-link">Contact One</a></li>
+        <li><a href="contact-two.html" class="dropdown-link menu-dd-link">Contact Two</a></li>
+        <li><a href="contact-three.html" class="dropdown-link menu-dd-link">Contact Three</a></li>
+      </ul>
+    </li>
+
+  </ul>
+</nav>
             <a href="tel:(888)1234567" class="let-s-talk tp-inline-block  d-flex align-items-center">
               <div class=" rounded-circle ph-icon-wrapper d-flex align-items-center justify-content-center">
                 <i class="bi bi-telephone navbar-icon transition-slow text-white"></i>
@@ -141,202 +160,17 @@
           </div>
         </div>
       </div>
-      <section class="navbar-desktop w-100">
-        <div class="layout-container container tp-container">
-          <div class="desktop-navbar-menu-wrapper">
-            <a href="index.html" class="stynero-wrapper tp-inline-block  d-flex align-items-center">
-              <img width="140" height="30" alt="logo-img" src="assets/img/logo/logo.svg" loading="lazy" class="stynero">
-            </a>
-            <div class="tp-flex-horizontal navbar-responsive-main d-flex">
-              <div class="tp-dropdown menu-item">
-                <div class="tp-dropdown-toggle menu-item-toggle">
-                  <div>Home</div>
-                  <i class="bi bi-caret-down-fill tp-menu-dropdown-icon menu-dp-icon mt-0"></i>
-                </div>
-                <nav class="tp-dropdown-menu dp-menu">
-                  <a href="home-one.html" aria-current="page" class="dropdown-link menu-dd-link tp-active">Home
-                    One</a>
-                  <a href="home-two.html" class="dropdown-link menu-dd-link">Home Two</a>
-                  <a href="home-three.html" class="dropdown-link menu-dd-link">Home Three</a>
-                </nav>
-              </div>
-              <div class="tp-dropdown menu-item">
-                <div class="tp-dropdown-toggle menu-item-toggle">
-                  <div>About</div>
-                  <i class="bi bi-caret-down-fill tp-menu-dropdown-icon menu-dp-icon mt-0"></i>
-                </div>
-                <nav class="tp-dropdown-menu dp-menu">
-                  <a href="about-one.html" class="dropdown-link menu-dd-link">About one</a>
-                  <a href="about-two.html" class="dropdown-link menu-dd-link">About two</a>
-                  <a href="about-three.html" class="dropdown-link menu-dd-link">About three</a>
-                </nav>
-              </div>
-              <div class="tp-dropdown pages-menu menu-item">
-                <div class="tp-dropdown-toggle menu-item-toggle">
-                  <div>Pages</div>
-                  <i class="bi bi-caret-down-fill tp-menu-dropdown-icon menu-dp-icon mt-0"></i>
-                </div>
-                <nav class="tp-dropdown-menu mega-menu dp-menu">
-                  <div class="layout-container container tp-container">
-                    <div class="mega-menu-container-main">
-                      <div class="mega-menu-pages">
-                        <a href="./service-one.html" class="menu-box-wrapper tp-inline-block ">
-                          <div class="tp-flex-horizontal menu-box-top">
-                            <div class="mega-menu-icon">
-                              <i class="bi bi-gear"></i>
-                            </div>
-                            <div class="heading-five">service one</div>
-                          </div>
-                          <div class="mega-menu-image-wrapper">
-                            <img width="211" height="99" alt="Screenshot"
-                              src="assets/img/mega-menu/mega-service-one.webp" loading="lazy" class="mega-menu-image">
-                            <div class="arrow-effect">
-                              <img src="assets/img/portfolios/arrow-white.svg" loading="lazy" width="10" height="10"
-                                alt="Icon">
-                            </div>
-                          </div>
-                        </a>
-                        <a href="./service-two.html" class="menu-box-wrapper tp-inline-block ">
-                          <div class="tp-flex-horizontal menu-box-top">
-                            <div class="mega-menu-icon">
-                              <i class="bi bi-gear"></i>
-                            </div>
-                            <div class="heading-five">service Two</div>
-                          </div>
-                          <div class="mega-menu-image-wrapper">
-                            <img width="211" height="99" alt="Screenshot"
-                              src="assets/img/mega-menu/mega-service-two.webp" loading="lazy" class="mega-menu-image">
-                            <div class="arrow-effect">
-                              <img src="assets/img/portfolios/arrow-white.svg" loading="lazy" width="10" height="10"
-                                alt="Icon">
-                            </div>
-                          </div>
-                        </a>
-                        <a href="./service-three.html" class="menu-box-wrapper tp-inline-block ">
-                          <div class="tp-flex-horizontal menu-box-top">
-                            <div class="mega-menu-icon">
-                              <i class="bi bi-gear"></i>
-                            </div>
-                            <div class="heading-five">service Three</div>
-                          </div>
-                          <div class="mega-menu-image-wrapper">
-                            <img width="211" height="99" alt="Screenshot"
-                              src="assets/img/mega-menu/mega-service-three.webp" loading="lazy" class="mega-menu-image">
-                            <div class="arrow-effect">
-                              <img src="assets/img/portfolios/arrow-white.svg" loading="lazy" width="10" height="10"
-                                alt="Icon">
-                            </div>
-                          </div>
-                        </a>
-                        <a href="./projects.html" class="menu-box-wrapper tp-inline-block ">
-                          <div class="tp-flex-horizontal menu-box-top">
-                            <div class="mega-menu-icon">
-                              <i class="bi bi-image"></i>
-                            </div>
-                            <div class="heading-five">projects</div>
-                          </div>
-                          <div class="mega-menu-image-wrapper">
-                            <img width="211" height="99" alt="Screenshot"
-                              src="assets/img/mega-menu/mega-service-one.webp" loading="lazy" class="mega-menu-image">
-                            <div class="arrow-effect">
-                              <img src="assets/img/portfolios/arrow-white.svg" loading="lazy" width="10" height="10"
-                                alt="Icon">
-                            </div>
-                          </div>
-                        </a>
-                        <a href="./team.html" class="menu-box-wrapper tp-inline-block ">
-                          <div class="tp-flex-horizontal menu-box-top">
-                            <div class="mega-menu-icon">
-                              <i class="bi bi-person"></i>
-                            </div>
-                            <div class="heading-five">team members</div>
-                          </div>
-                          <div class="mega-menu-image-wrapper">
-                            <img width="211" height="99" alt="Screenshot" src="assets/img/mega-menu/mega-team.webp"
-                              loading="lazy" class="mega-menu-image">
-                            <div class="arrow-effect">
-                              <img src="assets/img/portfolios/arrow-white.svg" loading="lazy" width="10" height="10"
-                                alt="Icon">
-                            </div>
-                          </div>
-                        </a>
-                        <a href="./404.html" class="menu-box-wrapper tp-inline-block ">
-                          <div class="tp-flex-horizontal menu-box-top">
-                            <div class="mega-menu-icon">
-                              <i class="bi bi-exclamation-triangle"></i>
-                            </div>
-                            <div class="heading-five">404 error</div>
-                          </div>
-                          <div class="mega-menu-image-wrapper">
-                            <img width="211" height="99" alt="Screenshot" src="assets/img/mega-menu/mega-404.webp"
-                              loading="lazy" class="mega-menu-image">
-                            <div class="arrow-effect">
-                              <img src="assets/img/portfolios/arrow-white.svg" loading="lazy" width="10" height="10"
-                                alt="Icon">
-                            </div>
-                          </div>
-                        </a>
-                        <div class="menu-border"></div>
-                        <div class="menu-border menu-border-two"></div>
-                      </div>
-                      <div class="mega-menu-right-icon">
-                        <div class="tp-flex-vertical menu-right-box">
-                          <div class="heading-four mega-menu-text">introducing new digital agency &amp; creative
-                            templates</div>
-                          <a href="./index.html" class="tp-btn tp-btn-primary">get started</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </nav>
-              </div>
-              <a href="pricing.html" class="tp-dropdown-toggle pricing">pricing</a>
-              <div class="tp-dropdown menu-item">
-                <div class="tp-dropdown-toggle menu-item-toggle">
-                  <div>blog</div>
-                  <div class="icon menu-dd-link"></div>
-                </div>
-                <nav class="tp-dropdown-menu dp-menu">
-                  <a href="blog-one.html" class="dropdown-link menu-dd-link">Blog One</a>
-                  <a href="blog-two.html" class="dropdown-link menu-dd-link">Blog Two</a>
-                  <a href="blog-three.html" class="dropdown-link menu-dd-link">Blog Three</a>
-                </nav>
-              </div>
-              <div class="tp-dropdown menu-item">
-                <div class="tp-dropdown-toggle menu-item-toggle">
-                  <div>contact</div>
-                  <i class="bi bi-caret-down-fill tp-menu-dropdown-icon menu-dp-icon mt-0"></i>
-                </div>
-                <nav class="tp-dropdown-menu dp-menu">
-                  <a href="contact-one.html" class="dropdown-link menu-dd-link">Contact One</a>
-                  <a href="contact-two.html" class="dropdown-link menu-dd-link">Contact Two</a>
-                  <a href="contact-three.html" class="dropdown-link menu-dd-link">Contact Three</a>
-                </nav>
-              </div>
-            </div>
-            <a href="tel:(888)1234567" class="let-s-talk tp-inline-block ">
-              <div class=" rounded-circle ph-icon-wrapper d-flex align-items-center justify-content-center">
-                <i class="bi bi-telephone navbar-icon transition-slow text-white"></i>
-              </div>
-              <div class="let-s-talk-text-wrapper ">
-                <div class="button-text-hover transition-slow">Lets&#x27; Talk</div>
-                <div class="button-text-hover-out transition-slow">(888) 123 4567</div>
-              </div>
-            </a>
-          </div>
-        </div>
-      </section>
     </div>
     <!-- ===================================================
 				landing hero sec
 				==================================================== -->
-    <section class="landing-hero">
+    <section class="landing-hero pt-200 md-pt-140 pb-80 md-pb-60 position-relative px-3">
       <div class="layout-container landing-hero-container tp-container">
-        <div class="tp-flex-vertical wow fadeInUp landing-hero-wrap" data-wow-duration="0.8s">
+        <div class="d-flex justify-content-start align-items-center flex-column text-center wow fadeInUp landing-hero-wrap mb-60" data-wow-duration="0.8s">
           <div class="landing-text">unique design - fast loading - awesome features</div>
           <h1 class="mt-3 mb-3">digital agency &amp; creative <span class="text-gradiant">template</span>
           </h1>
-        <div class="d-flex flex-column flex-sm-row justify-content-center justify-content-md-between align-items-stretch landing-hero-details">
+        <div class="d-flex flex-column flex-sm-row justify-content-center justify-content-md-between align-items-stretch landing-hero-details mt-25 mb-50">
   
   <div class="d-flex hero-details justify-content-start align-items-center mx-auto mx-sm-0">
     <h2 class="no-margin text-gradiant">03</h2>
@@ -377,21 +211,25 @@
   <!-- ===================================================
 				landing inner section
 				==================================================== -->
-  <div class="landing-inner-section">
+  <div class="landing-inner-section pt-90 pb-90 md-pt-70 md-pb-70">
     <!-- ===================================================
 				Easy To Create section
 				==================================================== -->
     <section>
       <div class="layout-container container tp-container">
         <div class="tp-flex-vertical">
-          <div class="d-block section-title">
-            <h2 class="landing-features-heading wow fadeInUp" data-wow-duration="0.8s">Easy To Create A
-              digital <span class="text-gradiant">agency</span> Website </h2>
-          </div>
+        <div class=" col-md-7 col-12 col-xl-6">
+           <div class="section-title wow fadeInUp" data-wow-duration="0.8s">
+  <h2 class="section-title-heading landing-features-heading mb-40">
+    Easy To Create A digital 
+    <span class="text-gradiant">agency</span> Website
+  </h2>
+</div>
+        </div>
           <div class="w-100 justify-content-between align-items-stretch  features-main-box  row">
         
               <div class="col-12 col-md-4 col-lg-6">
-            <div class=" tp-flex-vertical features-box-one h-100  wow fadeInUp" data-wow-duration="0.8s">
+            <div class=" tp-flex-vertical features-box-one pt-100 pb-100 md-pb-60 md-pt-60 h-100  wow fadeInUp" data-wow-duration="0.8s">
               <div class="screenshots-marquee-wrapper">
                 <div class="tp-flex-vertical screenshot-marquee-train">
                   <img width="100" alt="Screenshot" src="assets/img/hero-demo/marquee-group-one.webp" loading="lazy"
@@ -465,7 +303,7 @@
     <!-- ===================================================
 				landing counter section
 				==================================================== -->
-    <section class="landing-counter counters-wrapper">
+    <section class="landing-counter counters-wrapper pt-90 md-pt-30 pb-90 md-pb-50 position-relative xxl-pt-160 xxl-pb-160">
       <div class="container">
        <div class="tp-layout-grid home-one-counter-main text-center">
   <div class="row">
@@ -475,6 +313,7 @@
       <div class="home-one-counters-wrapper landing-counter-box">
         <div class="counter counter-text" data-target="3">00</div>
         <div class="heading-four mt-1 mt-md-0">unique home pages</div>
+        <span class="counter-border counter-border-right"></span>
       </div>
     </div>
 
@@ -483,6 +322,7 @@
       <div class="home-one-counters-wrapper landing-counter-box">
         <div class="counter counter-text" data-target="20">00</div>
         <div class="heading-four mt-1 mt-md-0">awesome Inner Pages</div>
+        <span class="counter-border counter-border-right"></span>
       </div>
     </div>
 
@@ -491,6 +331,7 @@
       <div class="home-one-counters-wrapper landing-counter-box">
         <div class="counter counter-text" data-target="30">00</div>
         <div class="heading-four mt-1 mt-md-0">smart design section</div>
+        
       </div>
     </div>
 
@@ -503,12 +344,15 @@
 				Stunning digital img section
 				==================================================== -->
     <section class=" position-relative d-block">
-      <div class="layout-container header-footer-container tp-container">
-        <div class="tp-flex-vertical header-footer-main">
-          <div class="d-block section-title">
-            <h2 class="no-margin-top header-footer-heading wow fadeInUp" data-wow-duration="0.8s"> Create Stunning
+     <div class="col-9 mx-auto px-3">
+       <div class="layout-container header-footer-container tp-container">
+        <div class="tp-flex-vertical header-footer-main ">
+        <div class=" col-md-9  col-11 mx-auto">
+            <div class="d-block section-title text-center mb-40">
+            <h2 class="mt-0 section-title-heading wow fadeInUp" data-wow-duration="0.8s"> Create Stunning
               digital agency &amp; <span class="text-gradiant">creative</span> Website </h2>
           </div>
+        </div>
           <div class="header-footer-box">
             <div class="tp-flex-horizontal header-footer-box-content">
               <div class="tp-flex-vertical header-footer-name">
@@ -538,19 +382,20 @@
           </div>
         </div>
       </div>
+     </div>
     </section>
   </div>
   <!-- ===================================================
 				landing homepages section
 				==================================================== -->
-  <section class="homepages">
+  <section class="xxl-pt-160 pt-90 md-pt-70">
     <div class="layout-container landing-container tp-container">
       <div class="tp-flex-vertical homepage-main">
         <div class="heading-one text-gradiant  wow fadeInUp" data-wow-duration="0.7s">03</div>
         <h2 class="mb-30  wow fadeInUp" data-wow-duration="0.9s">Unique Home Pages</h2>
         <div id="homepages" class="tp-layout-grid pages-landing-cards w-100 text-center row">
-         <div class="col-12 col-md-6 col-xl-4 pt-12 pb-12 py-md-0">
-           <a href="home-one.html" target="_blank" class="landing-cards tp-inline-block  wow fadeInUp"
+         <div class="col-12 col-md-6 col-xl-4 theme-pb-0 theme-pt-0  sm-pt-15 sm-pb-15">
+           <a href="home-one.html" target="_blank" class="landing-cards tp-inline-block gap-30   wow fadeInUp"
             data-wow-duration="0.7s">
             <div class="landing-cards-image-wrap d-flex align-items-center justify-content-center position-relative">
               <img width="484" height="437" alt="Screenshot" src="assets/img/hero-demo/home_one_sc.webp" loading="lazy"
@@ -560,8 +405,8 @@
             <div class="heading-four">Home One</div>
           </a>
          </div>
-         <div class="col-12 col-md-6 col-xl-4 pt-12 pb-12 py-md-0">
-           <a href="home-two.html" target="_blank" class="landing-cards tp-inline-block  wow fadeInUp"
+         <div class="col-12 col-md-6 col-xl-4 theme-pb-0 theme-pt-0  sm-pt-15 sm-pb-15">
+           <a href="home-two.html" target="_blank" class="landing-cards tp-inline-block gap-30   wow fadeInUp"
             data-wow-duration="0.8s">
             <div class="landing-cards-image-wrap d-flex align-items-center justify-content-center position-relative">
               <img width="484" height="437" alt="Screenshot" src="assets/img/hero-demo/home_two_sc.webp" loading="lazy"
@@ -573,7 +418,7 @@
           </a>
          </div>
         <div class="col-12 col-md-6 col-xl-4  pt-3 pt-xl-0">
-            <a href="home-three.html" target="_blank" class="landing-cards tp-inline-block wow fadeInUp"
+            <a href="home-three.html" target="_blank" class="landing-cards tp-inline-block gap-30  wow fadeInUp"
             data-wow-duration="0.9s">
             <div class="landing-cards-image-wrap d-flex align-items-center justify-content-center position-relative">
               <img width="484" height="437" alt="Screenshot" src="assets/img/hero-demo/home_three_sc.webp"
@@ -590,7 +435,7 @@
   <!-- ===================================================
 			   Marquee text animation
 			==================================================== -->
-  <section class="contact-text-marquee">
+  <section class="contact-text-marquee pt-85 md-pt-60 pb-85 md-pb-60 xxl-pt-150 xxl-pb-150">
     <div class="tp-flex-horizontal contact-text-marquee-wrapper">
       <div class="tp-flex-horizontal contact-text-marquee-train marquee-train-left">
         <div class="marquee-text stroke">digital art</div>
@@ -645,19 +490,19 @@
   <!-- ===================================================
 			 Landing innerpages pages
 			==================================================== -->
-  <section class="innerpages">
+  <section class="innerpages pb-90 md-pb-70 xxl-pb-160">
     <div class="layout-container landing-container tp-container">
       <div class="tp-flex-vertical innerpages-main">
         <img loading="lazy" alt="20+" src="assets/img/hero-demo/page-count.svg" class="page-count wow fadeInUp"
           data-wow-duration="0.6s">
-        <div class="tp-flex-horizontal innerpages-heading wow fadeInUp" data-wow-duration="0.7s">
-          <div class="innerpages-border"></div>
+        <div class="tp-flex-horizontal innerpages-heading gap-30 wow fadeInUp" data-wow-duration="0.7s">
+          <div class="innerpages-border mb-10"></div>
           <h2 class="no-margin">awesome inner Pages</h2>
         </div>
       </div>
       <div class="tp-layout-grid pages-landing-cards row">
         <div class="col-12 col-md-6 col-xl-4 pt-12 pb-12">
-        <a href="about-one.html" target="_blank" class="landing-cards tp-inline-block  wow fadeInUp"
+        <a href="about-one.html" target="_blank" class="landing-cards tp-inline-block gap-30   wow fadeInUp"
           data-wow-duration="0.7s">
           <div class="landing-cards-image-wrap d-flex align-items-center justify-content-center position-relative">
             <img width="484" height="437" alt="Screenshot" src="assets/img/hero-demo/about_one_sc.webp" loading="lazy"
@@ -667,7 +512,7 @@
           <div class="heading-four">About One</div>
         </a></div>
         <div class="col-12 col-md-6 col-xl-4 pt-12 pb-12">
-        <a href="about-two.html" target="_blank" class="landing-cards tp-inline-block  wow fadeInUp"
+        <a href="about-two.html" target="_blank" class="landing-cards tp-inline-block gap-30   wow fadeInUp"
           data-wow-duration="0.8s">
           <div class="landing-cards-image-wrap d-flex align-items-center justify-content-center position-relative">
             <img width="484" height="437" alt="Screenshot" src="assets/img/hero-demo/about_two_sc.webp" loading="lazy"
@@ -677,7 +522,7 @@
           <div class="heading-four">About Two</div>
         </a></div>
         <div class="col-12 col-md-6 col-xl-4 pt-12 pb-12">
-        <a href="about-three.html" target="_blank" class="landing-cards tp-inline-block  wow fadeInUp"
+        <a href="about-three.html" target="_blank" class="landing-cards tp-inline-block gap-30   wow fadeInUp"
           data-wow-duration="0.9s">
           <div class="landing-cards-image-wrap d-flex align-items-center justify-content-center position-relative">
             <img width="484" height="437" alt="Screenshot" src="assets/img/hero-demo/about_three_sc.webp" loading="lazy"
@@ -687,7 +532,7 @@
           <div class="heading-four">About Three</div>
         </a></div>
         <div class="col-12 col-md-6 col-xl-4 pt-12 pb-12">
-        <a href="service-one.html" target="_blank" class="landing-cards tp-inline-block  wow fadeInUp"
+        <a href="service-one.html" target="_blank" class="landing-cards tp-inline-block gap-30   wow fadeInUp"
           data-wow-duration="0.7s">
           <div class="landing-cards-image-wrap d-flex align-items-center justify-content-center position-relative">
             <img width="484" height="437" alt="Screenshot" src="assets/img/hero-demo/service_one_sc.webp" loading="lazy"
@@ -697,7 +542,7 @@
           <div class="heading-four">Service One </div>
         </a></div>
         <div class="col-12 col-md-6 col-xl-4 pt-12 pb-12">
-        <a href="service-two.html" target="_blank" class="landing-cards tp-inline-block  wow fadeInUp"
+        <a href="service-two.html" target="_blank" class="landing-cards tp-inline-block gap-30   wow fadeInUp"
           data-wow-duration="0.8s">
           <div class="landing-cards-image-wrap d-flex align-items-center justify-content-center position-relative">
             <img width="484" height="437" alt="Screenshot" src="assets/img/hero-demo/service_two_sc.webp" loading="lazy"
@@ -707,7 +552,7 @@
           <div class="heading-four">Service Two</div>
         </a></div>
         <div class="col-12 col-md-6 col-xl-4 pt-12 pb-12">
-        <a href="service-three.html" target="_blank" class="landing-cards tp-inline-block  wow fadeInUp "
+        <a href="service-three.html" target="_blank" class="landing-cards tp-inline-block gap-30   wow fadeInUp "
           data-wow-duration="0.9s">
           <div class="landing-cards-image-wrap d-flex align-items-center justify-content-center position-relative">
             <img width="484" height="437" alt="Screenshot" src="assets/img/hero-demo/service_three_sc.webp"
@@ -717,7 +562,7 @@
           <div class="heading-four">Service Three</div>
         </a></div>
         <div class="col-12 col-md-6 col-xl-4 pt-12 pb-12">
-        <a href="blog-one.html" target="_blank" class="landing-cards tp-inline-block  wow fadeInUp"
+        <a href="blog-one.html" target="_blank" class="landing-cards tp-inline-block gap-30   wow fadeInUp"
           data-wow-duration="0.7s">
           <div class="landing-cards-image-wrap d-flex align-items-center justify-content-center position-relative">
             <img width="484" height="437" alt="Screenshot" src="assets/img/hero-demo/blog_one_sc.webp" loading="lazy"
@@ -727,7 +572,7 @@
           <div class="heading-four">Blog One</div>
         </a></div>
         <div class="col-12 col-md-6 col-xl-4 pt-12 pb-12">
-        <a href="blog-two.html" target="_blank" class="landing-cards tp-inline-block  wow fadeInUp"
+        <a href="blog-two.html" target="_blank" class="landing-cards tp-inline-block gap-30   wow fadeInUp"
           data-wow-duration="0.8s">
           <div class="landing-cards-image-wrap d-flex align-items-center justify-content-center position-relative">
             <img width="484" height="437" alt="Screenshot" src="assets/img/hero-demo/blog_two_sc.webp" loading="lazy"
@@ -737,7 +582,7 @@
           <div class="heading-four">Blog Two</div>
         </a></div>
         <div class="col-12 col-md-6 col-xl-4 pt-12 pb-12">
-        <a href="blog-three.html" target="_blank" class="landing-cards tp-inline-block  wow fadeInUp"
+        <a href="blog-three.html" target="_blank" class="landing-cards tp-inline-block gap-30   wow fadeInUp"
           data-wow-duration="0.9s">
           <div class="landing-cards-image-wrap d-flex align-items-center justify-content-center position-relative">
             <img width="484" height="437" alt="Screenshot" src="assets/img/hero-demo/blog_three_sc.webp" loading="lazy"
@@ -747,7 +592,7 @@
           <div class="heading-four">Blog Three</div>
         </a></div>
         <div class="col-12 col-md-6 col-xl-4 pt-12 pb-12">
-        <a href="contact-one.html" target="_blank" class="landing-cards tp-inline-block wow fadeInUp"
+        <a href="contact-one.html" target="_blank" class="landing-cards tp-inline-block gap-30  wow fadeInUp"
           data-wow-duration="0.7s">
           <div class="landing-cards-image-wrap d-flex align-items-center justify-content-center position-relative">
             <img width="484" height="437" alt="Screenshot" src="assets/img/hero-demo/contact_one_sc.webp" loading="lazy"
@@ -757,7 +602,7 @@
           <div class="heading-four">Contact One</div>
         </a></div>
         <div class="col-12 col-md-6 col-xl-4 pt-12 pb-12">
-        <a href="contact-two.html" target="_blank" class="landing-cards tp-inline-block wow fadeInUp"
+        <a href="contact-two.html" target="_blank" class="landing-cards tp-inline-block gap-30  wow fadeInUp"
           data-wow-duration="0.8s">
           <div class="landing-cards-image-wrap d-flex align-items-center justify-content-center position-relative">
             <img width="484" height="437" alt="Screenshot" src="assets/img/hero-demo/contact_two_sc.webp" loading="lazy"
@@ -768,7 +613,7 @@
           <div class="heading-four">Contact Two</div>
         </a></div>
         <div class="col-12 col-md-6 col-xl-4 pt-12 pb-12">
-        <a href="contact-three.html" target="_blank" class="landing-cards tp-inline-block wow fadeInUp"
+        <a href="contact-three.html" target="_blank" class="landing-cards tp-inline-block gap-30  wow fadeInUp"
           data-wow-duration="0.9s">
           <div class="landing-cards-image-wrap d-flex align-items-center justify-content-center position-relative">
             <img width="484" height="437" alt="Screenshot" src="assets/img/hero-demo/contact_three_sc.webp"
@@ -778,7 +623,7 @@
           <div class="heading-four">Contact Three</div>
         </a></div>
         <div class="col-12 col-md-6 col-xl-4 pt-12 pb-12">
-        <a href="projects.html" target="_blank" class="landing-cards tp-inline-block wow fadeInUp"
+        <a href="projects.html" target="_blank" class="landing-cards tp-inline-block gap-30  wow fadeInUp"
           data-wow-duration="0.7s">
           <div class="landing-cards-image-wrap d-flex align-items-center justify-content-center position-relative">
             <img width="484" height="437" alt="Screenshot" src="assets/img/hero-demo/project_sc.webp" loading="lazy"
@@ -789,7 +634,7 @@
         </a>
         </div>
         <div class="col-12 col-md-6 col-xl-4 pt-12 pb-12">
-        <a href="pricing.html" target="_blank" class="landing-cards tp-inline-block wow fadeInUp"
+        <a href="pricing.html" target="_blank" class="landing-cards tp-inline-block gap-30  wow fadeInUp"
           data-wow-duration="0.8s">
           <div class="landing-cards-image-wrap d-flex align-items-center justify-content-center position-relative">
             <img width="484" height="437" alt="Screenshot" src="assets/img/hero-demo/pricing_sc.webp" loading="lazy"
@@ -800,7 +645,7 @@
         </a>
         </div>
         <div class="col-12 col-md-6 col-xl-4  pt-12 ">
-        <a href="team.html" target="_blank" class="landing-cards tp-inline-block wow fadeInUp" data-wow-duration="0.9s">
+        <a href="team.html" target="_blank" class="landing-cards tp-inline-block gap-30  wow fadeInUp" data-wow-duration="0.9s">
           <div class="landing-cards-image-wrap d-flex align-items-center justify-content-center position-relative">
             <img width="484" height="437" alt="Screenshot" src="assets/img/hero-demo/team_sc.webp" loading="lazy"
               class="border-radius-twenty image-height-auto">
@@ -815,7 +660,7 @@
   <!-- ===================================================
 			Landing cms pages
 			==================================================== -->
-  <section class="cms-pages overflow-hidden">
+  <section class="cms-pages overflow-hidden pt-90 md-pt-70 xxl-pt-160 pb-90 md-pb-70 xxl-pb-160 ">
     <div class="layout-container container tp-container">
       <div class="tp-flex-horizontal cms-pages-top">
         <div class="tp-flex-vertical">
@@ -832,7 +677,7 @@
     <div class="layout-container landing-container tp-container">
       <div class="tp-layout-grid pages-landing-cards row">
         <div class="col-12 col-md-6 col-xl-4 pt-12 pb-0">
-        <a href="projects/ai-interface-design.html" target="_blank" class="landing-cards tp-inline-block  wow fadeInUp"
+        <a href="projects/ai-interface-design.html" target="_blank" class="landing-cards tp-inline-block gap-30   wow fadeInUp"
           data-wow-duration="0.7s">
           <div class="landing-cards-image-wrap d-flex align-items-center justify-content-center position-relative">
             <img width="484" height="437" alt="Project Details" src="assets/img/hero-demo/project-details.webp"
@@ -842,7 +687,7 @@
           <div class="heading-four">Project Details</div>
         </a></div>
                 <div class="col-12 col-md-6 col-xl-4 pt-12 pb-0">
-        <a href="team-members/fred-smith.html" target="_blank" class="landing-cards tp-inline-block  wow fadeInUp"
+        <a href="team-members/fred-smith.html" target="_blank" class="landing-cards tp-inline-block gap-30   wow fadeInUp"
           data-wow-duration="0.8s">
           <div class="landing-cards-image-wrap d-flex align-items-center justify-content-center position-relative">
             <img width="484" height="437" alt="Screenshot" src="assets/img/hero-demo/team-details.webp" loading="lazy"
@@ -853,7 +698,7 @@
         </a></div>
                 <div class="col-12 col-md-6 col-xl-4 pt-12 pb-0">
         <a href="blog-posts/building-meaningful-connections-through-web-design-development.html" target="_blank"
-          class="landing-cards tp-inline-block  wow fadeInUp" data-wow-duration="0.9s">
+          class="landing-cards tp-inline-block gap-30   wow fadeInUp" data-wow-duration="0.9s">
           <div class="landing-cards-image-wrap d-flex align-items-center justify-content-center position-relative">
             <img width="484" height="437" alt="Screenshot" src="assets/img/hero-demo/blog-details.webp" loading="lazy"
               class="border-radius-twenty image-height-auto">
@@ -867,14 +712,14 @@
   <!-- ===================================================
 			  utility pages
 			==================================================== -->
-  <section class="tp-utility-section">
+  <section class="tp-utility-section pt-90 md-pt-70 xxl-pt-160 pb-90 md-pb-70 xxl-pb-160 ">
     <div class="layout-container container tp-container">
       <div class=" d-flex align-items-center justify-content-center mb-4">
         <h2 class="no-margin  wow fadeInUp" data-wow-duration="0.6s">Utility Pages</h2>
       </div>
       <div class="tp-layout-grid tp-utility-cards row">
         <div class="col-12 col-md-6 pt-12 pb-12">
-        <a href="401.html" target="_blank" class="landing-cards tp-inline-block  wow fadeInUp" data-wow-duration="0.7s">
+        <a href="401.html" target="_blank" class="landing-cards tp-inline-block gap-30   wow fadeInUp" data-wow-duration="0.7s">
           <div class="landing-cards-image-wrap d-flex align-items-center justify-content-center position-relative">
             <img width="484" height="437" alt="Screenshot" src="assets/img/hero-demo/password-protected.webp"
               loading="lazy" class="border-radius-twenty image-height-auto">
@@ -883,7 +728,7 @@
           <div class="heading-four">Password Protected</div>
         </a></div>
          <div class="col-12 col-md-6 pt-12 pb-0">
-        <a href="404.html" target="_blank" class="landing-cards tp-inline-block  wow fadeInUp" data-wow-duration="0.8s">
+        <a href="404.html" target="_blank" class="landing-cards tp-inline-block gap-30   wow fadeInUp" data-wow-duration="0.8s">
           <div class="landing-cards-image-wrap d-flex align-items-center justify-content-center position-relative">
             <img width="484" height="437" alt="Screenshot" src="assets/img/hero-demo/404.webp" loading="lazy"
               class="border-radius-twenty image-height-auto">
@@ -898,7 +743,7 @@
   <!-- ===================================================
 				Footer area
 				==================================================== -->
-  <section class="landing-footer">
+  <section class="landing-footer pt-90 md-pt-70 md-pb-70 pb-70 xxl-pt-310 xxl-pb-310 position-relative overflow-hidden">
     <div class="layout-container tp-container">
       <div class="tp-flex-vertical landing-footer-text-wrap">
         <a href="index.html" aria-current="page" class="tp-inline-block tp-active">

@@ -481,6 +481,8 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
 
+    
+
     /* ===============================
        ABOUT / HOME THREE MOUSE PARALLAX
     =============================== */
@@ -547,3 +549,4 @@ document.addEventListener("DOMContentLoaded", function () {
     // You can use safeGsapTo instead of gsap.to for extra safety
     // Example: safeGsapTo(".some-class", {opacity: 1});
 });
+
