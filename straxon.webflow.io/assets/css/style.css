@@ -1634,12 +1634,6 @@ label {
   position: relative;
 }
 
-
-.home-one-counter {
-  padding-bottom: 85px;
-}
-
-
 .counter-text {
   background-image: linear-gradient(
     124deg,
@@ -1763,9 +1757,6 @@ label {
   position: relative;
 }
 
-.home-digital-solutions {
-  padding-bottom: 90px;
-}
 .home-digital-solutions-text {
   flex: 1;
   max-width: 538px;
@@ -1984,9 +1975,7 @@ label {
   max-width: 619px;
 
 }
-.footer-cta-box {
-  padding-bottom: 70px;
-}
+
 
 .footer-one-email-box {
   grid-column-gap: 20px;
@@ -2048,8 +2037,6 @@ label {
 }
 .footer-one {
   background-image: linear-gradient(#161724, #16172400 50%);
-  padding-top: 85px;
-  padding-bottom: 20px;
 }
 .footer-submit-button {
   background-color: #3898ec00;
@@ -2145,8 +2132,6 @@ label {
   grid-column-gap: 30px;
   grid-row-gap: 30px;
   justify-content: space-between;
-  padding-top: 80px;
-  padding-bottom: 70px;
 }
 
 .footer-bottm-border {
@@ -7635,9 +7620,7 @@ top: 0;
     padding-bottom: 140px;
   }
 
-  .footer-cta-box {
-    padding-bottom: 80px;
-  }
+
 
   .little-boy-image-wrapper {
     right: -1%;
@@ -7646,10 +7629,6 @@ top: 0;
   .portfolio-one-details {
     grid-column-gap: 40px;
     grid-row-gap: 40px;
-  }
-
-  .home-digital-solutions {
-    padding-bottom: 160px;
   }
 
   .hero-heading-gap {
@@ -7674,28 +7653,12 @@ top: 0;
     bottom: 11%;
   }
 
-  .footer-one-main {
-    padding-top: 75px;
-    padding-bottom: 80px;
-  }
-
-
   .clients {
     padding-top: 10px;
     padding-bottom: 10px;
   }
-
-  .footer-one {
-    padding-top: 155px;
-  }
-
-
   .home-one-testimonial {
     padding-bottom: 152px;
-  }
-
-  .home-one-counter {
-    padding-bottom: 160px;
   }
 
   .home-two-faq-right {
@@ -8166,10 +8129,6 @@ top: 0;
     padding-bottom: 56px;
   }
 
-  .footer-cta-box {
-    padding-bottom: 60px;
-  }
-
   .little-boy-image-wrapper {
     top: -24px;
     right: 3%;
@@ -8201,10 +8160,6 @@ top: 0;
     grid-column-gap: 5px;
     grid-row-gap: 5px;
     max-width: none;
-  }
-
-  .home-digital-solutions {
-    padding-bottom: 70px;
   }
 
   .let-s-talk {
@@ -8293,14 +8248,6 @@ top: 0;
     grid-row-gap: 20px;
   }
 
-  .footer-one-main {
-    padding-top: 55px;
-    padding-bottom: 60px;
-  }
-
- 
-  
-
 
   .tp-radius-30.tab-image-full-width {
     width: 100%;
@@ -8314,10 +8261,6 @@ top: 0;
 
   .tp-radius-30.contact-hero-image-two {
     width: 15vw;
-  }
-
-  .footer-one {
-    padding-top: 65px;
   }
 
   .home-digital-solutions-image {
@@ -8346,9 +8289,6 @@ top: 0;
     padding-bottom: 60px;
   }
 
-  .home-one-counter {
-    padding-bottom: 65px;
-  }
 
   .home-one-portfolio-left {
     grid-column-gap: 60px;
@@ -9583,9 +9523,6 @@ top: 0;
     padding-bottom: 45px;
   }
 
-  .home-one-counter {
-    padding-bottom: 40px;
-  }
 
   .home-one-portfolio-left {
     grid-column-gap: 40px;
