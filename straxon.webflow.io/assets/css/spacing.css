@@ -149,10 +149,14 @@
 
 
 @media (min-width: 1440px) {
+    .xxl-mb-65 { margin-bottom: 65px; }
+     .xxl-pb-65 { padding-bottom: 65px; }
+     .xxl-pt-140 { padding-top: 140px; }
     .xxl-pt-150 { padding-top: 150px; }
     .xxl-pb-150 { padding-bottom: 150px; }
     .xxl-pt-160 { padding-top: 160px; }
     .xxl-pb-160 { padding-bottom: 160px; }
+
 }
 @media (max-width: 1399px) {
   .xl-p0 {padding: 0;}
@@ -305,7 +309,6 @@
 @media (max-width: 991px) {
   .md-p0 {padding: 0;}
   .md-m0 {margin: 0;}
-
   .md-pt-10  {padding-top: 10px;}
   .md-pt-20  {padding-top: 20px;}
   .md-pt-30  {padding-top: 30px;}
