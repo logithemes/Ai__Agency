@@ -315,7 +315,7 @@ th {
 
 .mt-30{margin-top: 30px;}
 .mb-25{margin-bottom: 25px;}
-.mb-30{margin-bottom: 30px;}
+
 .mb-40{margin-bottom: 40px;}
 .row-gap-20{row-gap: 20px;}
 .row-gap-30{row-gap: 30px;}
@@ -1388,7 +1388,6 @@ label {
   align-items: center;
   width: 100%;
   max-width: 1022px;
-  padding: 90px 15px;
   display: flex;
   position: absolute;
   top: 0;
@@ -2070,8 +2069,6 @@ label {
 
 .footer-two {
   background-image: linear-gradient(#161724, #16172400);
-  padding-top: 80px;
-  padding-bottom: 80px;
 }
 .footer-two-form {
   flex: 1;
@@ -2541,7 +2538,6 @@ label {
   position: relative;
 }
 .home-two-double-marquee {
-  padding: 90px 15px;
   overflow: hidden;
 }
 .home-three-text-marquee {
@@ -3303,14 +3299,6 @@ opacity: 0;
   background-size: auto, auto, 437px;
 }
 
-.home-two-hero-heading {
-  margin-top: 25px;
-  margin-bottom: 30px;
-}
-.home-two-hero {
-  padding-top: 180px;
-  padding-bottom: 90px;
-}
 .home-two-hero-buttons {
   grid-column-gap: 30px;
   grid-row-gap: 20px;
@@ -3329,9 +3317,7 @@ opacity: 0;
   overflow: hidden;
 }
 
-.home-two-hero-description {
-  margin-bottom: 50px;
-}
+
 
 .home-two-hero-text {
   flex: 1;
@@ -3357,13 +3343,9 @@ opacity: 0;
 
 .home-two-service-heading {
   max-width: 514px;
-  margin-top: 25px;
-  margin-bottom: 45px;
+
 }
-.home-two-service {
-  padding-top: 80px;
-  padding-bottom: 30px;
-}
+
 
 .home-two-service-boxes {
   border-bottom: 1px solid var(--border-color);
@@ -3377,7 +3359,7 @@ opacity: 0;
 /*---------------------------------
     projects two css start 
 ---------------------------------*/
-.no-margin-bottom.home-two-projects-description {
+.home-two-projects-description {
   max-width: 745px;
 }
 .home-two-projects-boxes {
@@ -3418,7 +3400,6 @@ opacity: 0;
 
 .home-two-portfolio {
   z-index: 1;
-  padding: 85px 15px;
   position: relative;
 }
 
@@ -3483,11 +3464,7 @@ opacity: 0;
   padding-bottom: 90px;
   position: relative;
 }
-.home-two-why-choose-us {
-  padding-left: 15px;
-  padding-right: 15px;
-  overflow: hidden;
-}
+
 /*---------------------------------
     heading three css start 
 ---------------------------------*/
@@ -7673,11 +7650,6 @@ top: 0;
     padding-top: 160px;
     padding-bottom: 160px;
   }
-
-  .home-two-testimonial-container {
-    padding-top: 155px;
-  }
-
   .home-two-portfolio {
     padding-top: 145px;
     padding-bottom: 155px;
@@ -7688,19 +7660,12 @@ top: 0;
     padding-bottom: 150px;
   }
 
-  .home-two-hero {
-    padding-bottom: 160px;
-  }
 
   .home-two-service {
     padding-top: 150px;
     padding-bottom: 90px;
   }
 
-  .home-two-double-marquee {
-    padding-top: 60px;
-    padding-bottom: 160px;
-  }
 
   .home-two-faq-left {
     margin-bottom: 0;
@@ -8066,7 +8031,7 @@ top: 0;
   .pr_slides-cards {
     width: 100%;
   }
-
+.home-two-testimonial-heading{transform: none !important;}
   .humburger-wrapper {
     grid-column-gap: 7px;
     grid-row-gap: 7px;
@@ -8360,7 +8325,7 @@ top: 0;
     justify-content: flex-start;
     align-items: center;
     height: auto;
-    padding-top: 60px;
+    padding-top: 30px;
     position: static;
   }
 
@@ -8373,38 +8338,19 @@ top: 0;
     grid-column-gap: 40px;
     grid-row-gap: 40px;
     border-bottom: 1px solid #444872;
-    padding: 20px 0 60px;
     position: static;
   }
 
-  .home-two-portfolio {
-    padding-top: 55px;
-    padding-bottom: 55px;
-  }
+
 
   .footer-two-left-wrapper {
     max-width: none;
-  }
-
-  .footer-two {
-    padding-top: 55px;
-    padding-bottom: 60px;
   }
 
 
   .footer-two-form,
   .home-two-service-text {
     max-width: none;
-  }
-
-  .home-two-hero {
-    padding-top: 140px;
-    padding-bottom: 70px;
-  }
-
-  .home-two-testimonial-row-two {
-    grid-column-gap: 40px;
-    grid-row-gap: 40px;
   }
 
   .home-two-hero-image-wrapper {
@@ -8426,24 +8372,16 @@ top: 0;
     margin-bottom: 50px;
   }
 
-  .home-two-service {
-    padding-top: 65px;
-    padding-bottom: 20px;
-  }
 
   .home-two-service-boxes {
     padding-top: 30px;
     padding-bottom: 30px;
   }
 
-  .home-two-testimonial-row-one {
+  .home-two-testimonial-row-one, .home-two-testimonial-row-two  {
     grid-column-gap: 40px;
-    grid-row-gap: 40px;
-  }
-
-  .home-two-double-marquee {
-    padding-top: 60px;
-    padding-bottom: 60px;
+    grid-row-gap: 25px;
+    transform: none !important;
   }
 
   .home-two-hero-text {
@@ -9547,16 +9485,8 @@ top: 0;
     align-items: stretch;
   }
 
-  .home-two-hero-heading {
-    margin-bottom: 20px;
-  }
-
   .home-two-testimonial-cards {
     max-width: none;
-  }
-
-  .home-two-hero-description {
-    margin-bottom: 35px;
   }
 
   .double-marquee-images {
