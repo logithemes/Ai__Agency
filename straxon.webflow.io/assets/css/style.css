@@ -1418,9 +1418,7 @@ label {
   flex-flow: column;
   display: flex;
 }
-.home-three-testimonial-top {
-  margin-bottom: 60px;
-}
+
 .testimonial-top-image-clone {
   z-index: 1;
   position: absolute;
@@ -1459,10 +1457,7 @@ label {
 }
 .home-three-testimonial {
   background-image: linear-gradient(#161724a1, #16172400);
-  padding-top: 84px;
-  padding-bottom: 90px;
-  position: relative;
-  overflow: hidden;
+
 }
 
 .home-three-testimonial-image-wrapper {
@@ -2031,8 +2026,6 @@ label {
 .footer-one-main {
   justify-content: space-between;
   align-items: flex-start;
-  padding-top: 65px;
-  padding-bottom: 70px;
 }
 .footer-one {
   background-image: linear-gradient(#161724, #16172400 50%);
@@ -2541,8 +2534,6 @@ label {
   overflow: hidden;
 }
 .home-three-text-marquee {
-  padding-top: 90px;
-  padding-bottom: 65px;
   overflow: hidden;
 }
 
@@ -2916,8 +2907,7 @@ opacity: 0;
 
 }
 
-.navbar,
-.navbar-three {
+.navbar {
   z-index: 999;
   position: absolute ;
   inset: 0% 0% auto;
@@ -3059,10 +3049,6 @@ opacity: 0;
 
 .no-margin-bottom.text-light-pink {
   color: var(--menu-color);
-}
-
-.no-margin-bottom.margin-top-twenty-five {
-  margin-top: 25px;
 }
 
 .no-margin-bottom.home-three-digital-description {
@@ -3223,7 +3209,6 @@ opacity: 0;
 .home-three-faq {
   padding-bottom: 90px;
 }
-.home-three-faq-box {
   max-width: 700px;
   margin-top: 7px;
 }
@@ -3693,8 +3678,6 @@ opacity: 0;
 .navbar-three {
   z-index: 999;
   border-bottom: 1px solid #444872;
-  padding-top: 20px;
-  padding-bottom: 20px;
   position: absolute;
   inset: 0% 0% auto;
 }
@@ -3748,8 +3731,6 @@ opacity: 0;
   z-index: 3;
   border-bottom: 1px solid #444872;
   max-width: 1290px;
-  padding-top: 50px;
-  padding-bottom: 50px;
 
   
 }
@@ -3853,7 +3834,6 @@ opacity: 0;
 .home-three-work-main {
   justify-content: flex-start;
   align-items: center;
-  padding-top: 75px;
   position: relative;
 }
 
@@ -3899,7 +3879,6 @@ opacity: 0;
   grid-auto-columns: 1fr;
   place-items: center;
   max-width: 1290px;
-  padding-bottom: 90px;
   display: grid;
 }
 
@@ -3927,8 +3906,6 @@ opacity: 0;
 .home-three-hero {
   background-image: radial-gradient(circle at 20% 64%, #f4497270, #f4497200 14%),
     radial-gradient(circle at 36% 32%, #b460f170, #b460f100 19%);
-  padding-top: 80px;
-  padding-bottom: 70px;
   position: relative;
   overflow: hidden;
 }
@@ -4011,10 +3988,7 @@ opacity: 0;
   padding-right: 30px;
   display: flex;
 }
-.clients-two {
-  padding-top: 85px;
-  padding-bottom: 80px;
-}
+
 .clients-two-boxes {
   border: 1px solid var(--border-color);
   background-color: var(--body-color);
@@ -4097,7 +4071,6 @@ opacity: 0;
   home three digital css start
 ---------------------------------*/
 .home-three-digital {
-  padding-bottom: 90px;
   overflow: hidden;
 }
 
@@ -7695,22 +7668,12 @@ top: 0;
     padding-bottom: 150px;
   }
 
-  .home-three-testimonial {
-    padding-top: 154px;
-    padding-bottom: 160px;
-  }
-
   .home-three-work-main {
     padding-top: 145px;
   }
 
   .home-three-hero-main {
     margin-bottom: 155px;
-  }
-
-  .recent-work-boxes {
-    padding-top: 260px;
-    padding-bottom: 160px;
   }
 
   .about-one-counter {
@@ -8340,9 +8303,6 @@ top: 0;
     border-bottom: 1px solid #444872;
     position: static;
   }
-
-
-
   .footer-two-left-wrapper {
     max-width: none;
   }
@@ -8429,11 +8389,6 @@ top: 0;
     margin-bottom: 60px;
   }
 
-  .home-three-testimonial {
-    padding-top: 60px;
-    padding-bottom: 70px;
-  }
-
   .home-three-digital-hover-box {
     background-color: #050610b3;
     justify-content: center;
@@ -8448,10 +8403,6 @@ top: 0;
   .home-three-digital-hover-box p{font-size: 14px;line-height: 22px;}
   .hover-hide, .hover-hide-des{transform: translateY(0);opacity: 1;}
 
-  .home-three-work-main {
-    padding-top: 60px;
-  }
-
   .home-three-service-description {
     grid-column-gap: 30px;
     grid-row-gap: 30px;
@@ -8465,7 +8416,7 @@ top: 0;
     grid-column-gap: 30px;
     grid-row-gap: 50px;
     padding-top: 0;
-    padding-bottom: 70px;
+
   }
 
   .home-three-faq-text-wrapper {
@@ -9501,7 +9452,6 @@ top: 0;
     text-align: center;
     justify-content: flex-start;
     align-items: center;
-    margin-bottom: 40px;
   }
 
   .home-three-service-cards {
@@ -9555,10 +9505,6 @@ top: 0;
 
   .flower {
     display: none;
-  }
-
-  .home-three-work-main {
-    padding-top: 0;
   }
 
   .heading-video {
@@ -10567,4 +10513,3 @@ top: 0;
     flex-direction: column;
   }
 }
-
