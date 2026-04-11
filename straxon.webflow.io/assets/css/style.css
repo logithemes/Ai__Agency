@@ -1564,7 +1564,6 @@ label {
 }
 
 .service-two-testimonial {
-  padding-bottom: 80px;
 }
 .testimonail-text {
   grid-column-gap: 10px;
@@ -6394,9 +6393,6 @@ top: 0;
   margin-bottom: 0;
 }
 
-.service-two-connection {
-  padding-bottom: 90px;
-}
 
 .ratting-image {
   margin-top: 8px;
@@ -6449,9 +6445,6 @@ top: 0;
   max-width: 1195px;
 }
 
-.service-two-growth {
-  padding-top: 80px;
-}
 
 .service-two-marquee-text {
   text-transform: capitalize;
@@ -6487,13 +6480,6 @@ top: 0;
 .service-two-top {
   position: relative;
 }
-
-
-.service-two-hero {
-  padding-top: 175px;
-  padding-bottom: 90px;
-}
-
 
 /*---------------------------------
     service three css start 
@@ -7577,10 +7563,6 @@ top: 0;
     padding-bottom: 150px;
   }
 
-  .home-three-work-main {
-    padding-top: 145px;
-  }
-
   .home-three-hero-main {
     margin-bottom: 155px;
   }
@@ -7733,23 +7715,7 @@ top: 0;
     padding-bottom: 160px;
   }
 
-  .service-two-connection {
-    padding-bottom: 160px;
-  }
-
-  .service-two-growth {
-    padding-top: 150px;
-  }
-
-  .service-two-hero {
-    padding-top: 245px;
-    padding-bottom: 160px;
-  }
-
-  .service-two-testimonial {
-    padding-bottom: 150px;
-  }
-
+  
   .service-three-connection {
     padding-top: 150px;
     padding-bottom: 160px;
@@ -8729,10 +8695,6 @@ top: 0;
     padding-bottom: 70px;
   }
 
-  .service-two-connection {
-    padding-bottom: 70px;
-  }
-
   .service-growth-left,
   .service-connection-image,
   .service-growth-right {
@@ -8755,10 +8717,6 @@ top: 0;
     align-items: stretch;
   }
 
-  .service-two-growth {
-    padding-top: 60px;
-  }
-
   .service-conntection-left {
     max-width: none;
   }
@@ -8769,13 +8727,10 @@ top: 0;
   }
 
   .service-two-hero {
-    padding-top: 140px;
-    padding-bottom: 70px;
   }
 
 
   .service-two-testimonial {
-    padding-bottom: 60px;
   }
 
   .service-three-options-main {
@@ -8955,6 +8910,8 @@ top: 0;
 }
 
 @media screen and (max-width: 767px) {
+.work-three-cards-inner-wrapper{padding-left: 15px;}
+  .recent-work-boxes{grid-template-columns: 1fr;}
   .blog-image-wrapper{height: auto;}
   .home-three-testimonial-content{flex-direction: column;}
   .pr_slides-cards {
