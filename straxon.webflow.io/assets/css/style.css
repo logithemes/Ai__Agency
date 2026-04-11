@@ -1485,10 +1485,7 @@ label {
   justify-content: space-between;
   align-items: center;
 }
-.about-three-testimonial {
-  padding-top: 90px;
-  padding-bottom: 90px;
-}
+
 .about-three-testimonial-left {
   flex-flow: column;
   flex: 1;
@@ -4751,11 +4748,6 @@ opacity: 0;
   grid-row-gap: 19px;
 }
 
-.about-three-service {
-  padding-top: 80px;
-  padding-bottom: 72px;
-}
-
 .about-three-background-glow {
   background-image: radial-gradient(
     circle at 31% 54%,
@@ -4813,7 +4805,6 @@ opacity: 0;
 .about-three-hero {
   background-image: radial-gradient(circle at 74% 62%, #b460f14a, #b460f100 15%),
     radial-gradient(circle at 44%, #f4497252, #f4497200 23%);
-  padding-top: 89px;
 }
 
 .about-three-content {
@@ -4839,8 +4830,6 @@ opacity: 0;
 }
 
 .about-three-hero-main {
-  padding-top: 90px;
-  padding-bottom: 90px;
   position: relative;
 }
 
@@ -4871,9 +4860,7 @@ opacity: 0;
   max-width: 1255px;
 }
 
-.about-three-progress {
-  padding-top: 82px;
-}
+
 
 .about-three-hero-social {
   justify-content: flex-start;
@@ -7633,19 +7620,6 @@ top: 0;
     padding-bottom: 160px;
   }
 
-  .about-three-service {
-    padding-bottom: 100px;
-  }
-
-  .about-three-testimonial,
-  .about-three-hero-main {
-    padding-top: 160px;
-    padding-bottom: 160px;
-  }
-
-  .about-three-progress {
-    padding-top: 152px;
-  }
 
   .about-three-image-main {
     padding-top: 160px;
@@ -8429,10 +8403,6 @@ top: 0;
     display: none;
   }
 
-  .about-three-service {
-    padding-top: 70px;
-    padding-bottom: 60px;
-  }
 
   .about-three-hero-bottom-right {
     max-width: none;
@@ -8443,23 +8413,8 @@ top: 0;
     padding-top: 69px;
   }
 
-
-  .about-three-testimonial {
-    padding-top: 65px;
-    padding-bottom: 55px;
-  }
-
-  .about-three-hero-main {
-    padding-top: 45px;
-    padding-bottom: 70px;
-  }
-
   .about-three-testimonial-left {
     max-width: none;
-  }
-
-  .about-three-progress {
-    padding-top: 60px;
   }
 
   .about-three-hero-right {
@@ -9455,10 +9410,6 @@ top: 0;
 
   .about-three-progress-left {
     max-width: none;
-  }
-
-  .about-three-testimonial {
-    padding-bottom: 60px;
   }
 
   .about-three-progress-right {
