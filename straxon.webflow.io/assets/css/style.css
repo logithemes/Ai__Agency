@@ -1332,9 +1332,7 @@ label {
   align-items: center;
 }
 
-.home-one-testimonial {
-  padding-bottom: 80px;
-}
+
 .home-two-testimonial-backdrop {
   background-image: linear-gradient(#161724, #16172400);
   border-bottom: 1px solid #444872;
@@ -2526,9 +2524,7 @@ label {
 .home-two-double-marquee {
   overflow: hidden;
 }
-.home-three-text-marquee {
-  overflow: hidden;
-}
+
 
 .home-three-text-marquee-train {
   grid-column-gap: 30px;
@@ -4519,9 +4515,6 @@ opacity: 0;
 
 
 .about-two-hero-main {
-  padding-top: 200px;
-  padding-bottom: 90px;
-
 }
 .about-two-hero-text-wrap {
   z-index: 5;
@@ -4536,7 +4529,6 @@ opacity: 0;
   border-bottom: 1px solid var(--border-color);
   justify-content: space-between;
   align-items: center;
-  padding: 30px 25px;
   transition: background-color 0.4s;
 }
 
@@ -4599,9 +4591,6 @@ opacity: 0;
   flex: 1;
   max-width: 406px;
 }
-.about-two-video {
-  padding-bottom: 90px;
-}
 
 .about-two-hero-image-four {
   position: absolute;
@@ -4637,15 +4626,10 @@ opacity: 0;
   margin-top: -40px;
 }
 
-.about-two-experience-middle {
-  padding-top: 80px;
-  padding-bottom: 80px;
-}
-
 .about-two-hero {
   background-image: radial-gradient(circle at 68% 65%, #b460f140, #b460f100 17%),
     radial-gradient(circle at 36% 45%, #f449724d, #f4497200 18%);
-  padding-top: 170px;
+
 }
 
 .about-two-image-overlay {
@@ -4655,7 +4639,6 @@ opacity: 0;
 }
 
 .about-two-process {
-  padding-bottom: 90px;
 }
 
 .about-two-hero-image-one {
@@ -4665,8 +4648,6 @@ opacity: 0;
 .about-two-experience-main {
   justify-content: flex-start;
   align-items: center;
-  padding-top: 125px;
-  padding-bottom: 30px;
   position: relative;
 }
 .about-two-heading {
@@ -4691,8 +4672,6 @@ opacity: 0;
   grid-column-gap: 12px;
   grid-row-gap: 12px;
   flex-flow: column;
-  padding-top: 35px;
-  padding-bottom: 30px;
   padding-left: 50px;
   display: flex;
 }
@@ -7583,9 +7562,6 @@ top: 0;
     padding-top: 10px;
     padding-bottom: 10px;
   }
-  .home-one-testimonial {
-    padding-bottom: 152px;
-  }
 
   .home-two-faq-right {
     padding-top: 120px;
@@ -7652,20 +7628,9 @@ top: 0;
   }
 
 
-  .about-two-video {
-    padding-bottom: 160px;
-  }
-
-  .about-two-hero {
-    padding-top: 250px;
-  }
 
   .about-two-process {
     padding-bottom: 160px;
-  }
-
-  .about-two-experience-main {
-    padding-top: 215px;
   }
 
   .about-three-service {
@@ -8428,9 +8393,6 @@ top: 0;
     max-width: none;
   }
 
-  .about-two-video {
-    padding-bottom: 70px;
-  }
 
   .about-two-hero-image-four {
     width: 21.6%;
@@ -8455,20 +8417,12 @@ top: 0;
     padding-bottom: 50px;
   }
 
-  .about-two-hero {
-    padding-top: 140px;
-  }
-
   .about-two-process {
     padding-bottom: 70px;
   }
 
   .about-two-hero-image-one {
     width: 17.17%;
-  }
-
-  .about-two-experience-main {
-    padding-top: 55px;
   }
 
   .about-two-hero-text {
