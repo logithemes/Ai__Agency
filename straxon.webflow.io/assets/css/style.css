@@ -6747,8 +6747,6 @@ top: 0;
 }
 
 .service-one-projects {
-  padding-top: 80px;
-  padding-bottom: 90px;
   overflow: hidden;
 }
 
@@ -6756,10 +6754,6 @@ top: 0;
   background-color: var(--border-color);
   width: 100%;
   height: 1px;
-}
-
-.service-one-video {
-  padding-bottom: 90px;
 }
 
 .service-one-main {
@@ -6799,12 +6793,6 @@ top: 0;
 /*---------------------------------
     awards css start 
 ---------------------------------*/
-.service-one-awards {
-  padding-top: 0;
-  padding-bottom: 90px;
-}
-
-
 .service-one-awards-text {
   flex: 1;
   max-width: 463px;
@@ -6834,10 +6822,6 @@ top: 0;
   border-top: 1px solid var(--border-color);
 }
 
-.service-one-hero {
-  padding-top: 175px;
-}
-
 .awards-name {
   flex: 1;
   max-width: 176px;
@@ -6846,12 +6830,8 @@ top: 0;
 .service-one-background {
   background-image: radial-gradient(circle at 50% 60%, #f449723d, #f4497200 27%),
     linear-gradient(#161724, #16172400);
-  padding-top: 20px;
 }
 
-.service-one-section {
-  padding-bottom: 90px;
-}
 
 .what-we-do {
   max-width: 649px;
@@ -7788,31 +7768,6 @@ top: 0;
     padding-bottom: 160px;
   }
 
-  .service-one-projects {
-    padding-top: 150px;
-    padding-bottom: 160px;
-  }
-
-  .service-one-video {
-    padding-bottom: 160px;
-  }
-
-  .service-one-awards {
-    padding-top: 60px;
-    padding-bottom: 160px;
-  }
-
-  .service-one-hero {
-    padding-top: 245px;
-  }
-
-  .service-one-background {
-    padding-top: 80px;
-  }
-
-  .service-one-section {
-    padding-bottom: 160px;
-  }
 
   .service-one-hero-image {
     display: block;
@@ -8889,27 +8844,6 @@ top: 0;
     padding-bottom: 70px;
   }
 
-  .service-one-projects {
-    padding-top: 60px;
-    padding-bottom: 70px;
-  }
-
-  .service-one-video,
-  .service-one-awards {
-    padding-bottom: 70px;
-  }
-
-  .service-one-hero {
-    padding-top: 140px;
-  }
-
-  .service-one-background {
-    padding-top: 40px;
-  }
-
-  .service-one-section {
-    padding-bottom: 70px;
-  }
 
   .service-hero-text {
     margin-bottom: 60px;
