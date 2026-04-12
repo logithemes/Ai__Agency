@@ -6246,10 +6246,6 @@ top: 0;
   inset: 0%;
 }
 
-.project-details-hero {
-  padding-top: 175px;
-  padding-bottom: 80px;
-}
 
 .projects-card-border {
   background-color: #444872;
@@ -6287,8 +6283,6 @@ top: 0;
     #f449723d,
     #f4497200 20%
   );
-  padding-top: 85px;
-  padding-bottom: 90px;
   overflow: hidden;
 }
 .projects-marquee .slick-list {
@@ -7571,11 +7565,6 @@ top: 0;
     padding-bottom: 155px;
   }
 
-  .projects-more-work {
-    padding-top: 155px;
-    padding-bottom: 160px;
-  }
-
  
   .service-three-progress-main {
     bottom: -80px;
@@ -8455,14 +8444,6 @@ top: 0;
    .pr-div-img{   width: 30vw;
     aspect-ratio: 403 / 612;}
 
-  .project-details-hero {
-    padding-top: 140px;
-  }
-
-  .projects-more-work {
-    padding-top: 65px;
-    padding-bottom: 70px;
-  }
 
   .service-growth-left,
   .service-connection-image,
