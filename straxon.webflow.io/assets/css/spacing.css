@@ -149,8 +149,10 @@
 
 
 @media (min-width: 1440px) {
+  .xxl-pb-40 { padding-bottom: 40px; }
     .xxl-mb-65 { margin-bottom: 65px; }
      .xxl-pb-65 { padding-bottom: 65px; }
+        .xxl-pb-80 { padding-bottom: 80px; }
      .xxl-pt-100 { padding-top: 100px; }
      .xxl-pb-100 { padding-bottom: 100px; }
        .xxl-pb-120 { padding-bottom: 120px; }
