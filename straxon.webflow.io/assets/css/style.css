@@ -1551,8 +1551,6 @@ label {
 .team-testimonial {
   background-image: radial-gradient(circle at 50% 34%, #f4497240, #f4497200 25%),
     linear-gradient(#161724a1, #16172400);
-  padding-top: 80px;
-  padding-bottom: 80px;
 }
 .team-details-testimonial {
   padding-top: 80px;
@@ -4249,11 +4247,6 @@ opacity: 0;
   position: relative;
 }
 
-.team-members {
-  padding-top: 90px;
-  padding-bottom: 80px;
-}
-
 .team-hero-image-one {
   inset: 0% auto auto 0%;
 }
@@ -4272,7 +4265,6 @@ opacity: 0;
 .team-hero {
   background-image: radial-gradient(circle at 31% 61%, #f4497233, #f4497200 22%),
     radial-gradient(circle at 70% 40%, #b460f13d, #b460f100 22%);
-  padding-top: 170px;
 }
 
 .team-hero-description {
@@ -7622,16 +7614,6 @@ top: 0;
     padding-bottom: 180px;
   }
 
-  .team-testimonial {
-    padding-top: 150px;
-    padding-bottom: 150px;
-  }
-
-  .team-members {
-    padding-top: 160px;
-    padding-bottom: 150px;
-  }
-
   .team-member-details {
     padding-bottom: 155px;
   }
@@ -8479,10 +8461,6 @@ top: 0;
     max-width: none;
   }
 
-  .team-testimonial {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
 
   .team-hero-image-two {
     width: 20vw;
@@ -8499,10 +8477,6 @@ top: 0;
     padding-bottom: 60px;
   }
 
-  .team-members {
-    padding-top: 70px;
-    padding-bottom: 60px;
-  }
 
   .team-hero-image-one {
     width: 21vw;
@@ -8513,10 +8487,7 @@ top: 0;
     display: none;
   }
 
-  .team-hero {
-    padding-top: 102px;
-  }
-
+  
   .dotted-line-one {
     display: none;
   }
