@@ -4987,7 +4987,8 @@ opacity: 0;
 
 .contact-main-form {
   background-color: #161724;
-  padding: 70px;
+   padding-left: 70px;
+    padding-right: 70px;
 }
 
 .contact-one-heading-wrap {
@@ -5015,15 +5016,6 @@ opacity: 0;
   border-left: 1px solid #444872;
   border-right: 1px solid #444872;
   padding-left: 40px;
-}
-
-.contact-one-information {
-  padding-bottom: 90px;
-}
-
-.contact-one-hero {
-  padding-top: 180px;
-  padding-bottom: 70px;
 }
 
 .contact-two-form-items {
@@ -5098,7 +5090,8 @@ opacity: 0;
   border-radius: 30px;
   justify-content: center;
   align-items: center;
-  padding: 70px 30px;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 .contact-two-form-main {
@@ -5106,16 +5099,6 @@ opacity: 0;
   grid-row-gap: 55px;
   justify-content: flex-start;
   align-items: center;
-}
-
-.contact-two-hero {
-  padding-top: 179px;
-  padding-bottom: 88px;
-}
-
-.contact-two-form {
-  padding-top: 80px;
-  padding-bottom: 90px;
 }
 
 .contact-social-tags {
@@ -5550,10 +5533,6 @@ opacity: 0;
   max-width: 544px;
 }
 
-.contact-three-form {
-  padding-bottom: 90px;
-}
-
 .contact-three-office-left {
   flex: 1;
   max-width: 290px;
@@ -5590,16 +5569,11 @@ opacity: 0;
   right: -9%;
 }
 
-.contact-three-office {
-  padding-top: 85px;
-  padding-bottom: 85px;
-}
+
 
 .contact-three-hero-main {
   justify-content: flex-start;
   align-items: center;
-  padding-top: 280px;
-  padding-bottom: 110px;
   position: relative;
 }
 
@@ -7538,15 +7512,6 @@ top: 0;
     padding-top: 160px;
   }
 
-  .contact-one-information {
-    padding-bottom: 160px;
-  }
-
-  .contact-one-hero {
-    padding-top: 250px;
-    padding-bottom: 140px;
-  }
-
   .contact-two-hero-text-buttom {
     flex-flow: row;
     justify-content: flex-start;
@@ -7556,16 +7521,6 @@ top: 0;
 
   .contact-two-hero-left {
     background-position: 79% 44%;
-  }
-
-  .contact-two-hero {
-    padding-top: 249px;
-    padding-bottom: 158px;
-  }
-
-  .contact-two-form {
-    padding-top: 150px;
-    padding-bottom: 160px;
   }
 
   .line-shape {
@@ -7581,18 +7536,6 @@ top: 0;
     padding: 40px;
   }
 
-  .contact-three-form {
-    padding-bottom: 160px;
-  }
-
-  .contact-three-office {
-    padding-top: 155px;
-    padding-bottom: 155px;
-  }
-
-  .contact-three-hero-main {
-    padding-bottom: 180px;
-  }
 
   .team-member-details {
     padding-bottom: 155px;
@@ -8293,7 +8236,8 @@ top: 0;
   .contact-main-form {
     flex-flow: column;
     align-items: stretch;
-    padding: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
   }
 
   .contact-one-heading-wrap {
@@ -8317,25 +8261,6 @@ top: 0;
     border-right-style: none;
     padding-left: 0;
     padding-right: 0;
-  }
-
-  .contact-one-information {
-    padding-bottom: 65px;
-  }
-
-  .contact-one-hero {
-    padding-top: 135px;
-    padding-bottom: 50px;
-  }
-
-  .contact-two-hero {
-    padding-top: 140px;
-    padding-bottom: 70px;
-  }
-
-  .contact-two-form {
-    padding-top: 65px;
-    padding-bottom: 70px;
   }
 
   .tp-utility-content.error-page-content {
@@ -8382,9 +8307,6 @@ top: 0;
     max-width: 700px;
   }
 
-  .contact-three-form {
-    padding-bottom: 70px;
-  }
 
   .contact-three-office-left {
     max-width: none;
@@ -8398,15 +8320,7 @@ top: 0;
     display: none;
   }
 
-  .contact-three-office {
-    padding-top: 65px;
-    padding-bottom: 65px;
-  }
 
-  .contact-three-hero-main {
-    padding-top: 138px;
-    padding-bottom: 84px;
-  }
 
   .contact-three-form-right {
     max-width: none;
@@ -9178,10 +9092,6 @@ top: 0;
     align-items: center;
   }
 
-  .contact-two-middlle-main {
-    padding-top: 65px;
-  }
-
   .contact-two-form-main {
     grid-column-gap: 35px;
     grid-row-gap: 35px;
@@ -9228,11 +9138,6 @@ top: 0;
 
   .contact-hero-vertical-borders-wrap {
     display: none;
-  }
-
-  .contact-three-hero-main {
-    padding-top: 70px;
-    padding-bottom: 70px;
   }
 
   .team-hero-image-two {
