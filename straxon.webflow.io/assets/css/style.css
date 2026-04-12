@@ -5276,7 +5276,6 @@ opacity: 0;
     #b460f13b,
     #b460f100 20%
   );
-  padding-top: 175px;
 }
 
 .pricing-features {
@@ -5306,7 +5305,6 @@ opacity: 0;
 .pricing-tabs-menu {
   border: 1px solid #d43fc5;
   border-radius: 60px;
-  margin-bottom: 80px;
   overflow: hidden;
 }
 
@@ -5339,7 +5337,7 @@ opacity: 0;
   justify-content: flex-start;
   align-items: center;
   max-width: 910px;
-  margin-bottom: 60px;
+
 }
 
 .pricing-hero-main {
@@ -5406,7 +5404,7 @@ opacity: 0;
 
 .pricing-hero-bottom {
   width: 100%;
-  margin-bottom: 80px;
+
 }
 .pricing-border {
   background-color: #323451;
@@ -5779,11 +5777,6 @@ opacity: 0;
 }
 .blog-image-wrapper{height: 500px;}
 .overlay-wrapper{padding: 30px;}
-
-.blog-one-hero {
-  padding-top: 175px;
-  padding-bottom: 90px;
-}
 
 .border-radius-full {
   border-radius: 100%;
@@ -7589,10 +7582,6 @@ top: 0;
     top: 36%;
   }
 
-  .pricing-hero {
-    padding-top: 245px;
-  }
-
   .tp-tab-btn.tp-active {
     background-image: linear-gradient(119deg, #f3476e, #af6aec);
   }
@@ -7637,7 +7626,6 @@ top: 0;
     padding-bottom: 143px;
   }
 
-  .blog-one-hero,
   .blog-two-hero {
     padding-top: 245px;
   }
@@ -7945,9 +7933,6 @@ top: 0;
     display: none;
   }
 
-  .home-one-testimonial {
-    padding-bottom: 60px;
-  }
 
 
   .home-one-portfolio-left {
@@ -8378,15 +8363,6 @@ top: 0;
     width: 90%;
     padding: 60px 40px;
   }
-
-  .pricing-hero {
-    padding-top: 155px;
-  }
-
-  .pricing-tabs-menu {
-    margin-bottom: 60px;
-  }
-
   .pricing-hero-options-boxes,
   .pricing-hero-options-boxes.pricing-hero-options-boxes-two,
   .pricing-hero-options-boxes.pricing-hero-options-boxes-three {
@@ -8402,17 +8378,8 @@ top: 0;
     display: grid;
   }
 
-  .pricing-hero-top {
-    margin-bottom: 40px;
-  }
-
   .pricing-plans-cards {
     padding: 30px 20px 20px;
-  }
-
-
-  .pricing-hero-bottom {
-    margin-bottom: 60px;
   }
 
   .rotate-box {
@@ -8522,11 +8489,6 @@ top: 0;
 
   .team-lines {
     display: none;
-  }
-
-  .blog-one-hero {
-    padding-top: 140px;
-    padding-bottom: 70px;
   }
 
   .blog-two-hero {
@@ -9261,7 +9223,6 @@ top: 0;
   .pricing-tabs-menu {
     justify-content: flex-start;
     align-items: center;
-    margin-bottom: 40px;
     display: flex;
   }
 
