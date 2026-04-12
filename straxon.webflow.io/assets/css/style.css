@@ -1552,10 +1552,6 @@ label {
   background-image: radial-gradient(circle at 50% 34%, #f4497240, #f4497200 25%),
     linear-gradient(#161724a1, #16172400);
 }
-.team-details-testimonial {
-  padding-top: 80px;
-  padding-bottom: 80px;
-}
 
 .testimonail-text {
   grid-column-gap: 10px;
@@ -1782,7 +1778,7 @@ label {
 .no-margin-top.team-details-progress-heading {
   text-align: center;
   max-width: 733px;
-  margin-bottom: 60px;
+
 }
 
 
@@ -4295,10 +4291,6 @@ opacity: 0;
   padding-right: 15px;
 }
 
-.team-member-details {
-  padding-top: 80px;
-  padding-bottom: 85px;
-}
 
 .team-horizental-line {
   background-color: #444872;
@@ -4324,9 +4316,6 @@ opacity: 0;
   margin-left: 6px;
 }
 
-.team-details-hero-main {
-  max-width: 1095px;
-}
 .team-cards-text-wrapper {
   z-index: 2;
   grid-column-gap: 13px;
@@ -5645,11 +5634,6 @@ opacity: 0;
   position: relative;
 }
 
-.team-details-hero {
-  padding-top: 175px;
-  padding-bottom: 60px;
-}
-
 .team-vertical-line {
   background-color: #444872;
   width: 1px;
@@ -5669,10 +5653,7 @@ opacity: 0;
   display: flex;
 }
 
-.team-details-approach {
-  padding-top: 80px;
-  padding-bottom: 73px;
-}
+
 
 .team-icons {
   margin-bottom: 3px;
@@ -7519,27 +7500,9 @@ top: 0;
   }
 
 
-  .team-member-details {
-    padding-bottom: 155px;
-  }
-
-  .team-details-testimonial {
-    padding-top: 150px;
-    padding-bottom: 150px;
-  }
-
   .team-member-details-main {
     grid-column-gap: 60px;
     grid-row-gap: 60px;
-  }
-
-  .team-details-hero {
-    padding-top: 245px;
-  }
-
-  .team-details-approach {
-    padding-top: 150px;
-    padding-bottom: 143px;
   }
 
   .service-three-progress-main {
@@ -7631,9 +7594,7 @@ top: 0;
     grid-column-gap: 60px;
     grid-row-gap: 60px;
   }
-  .no-margin-top.team-details-progress-heading {
-    margin-bottom: 40px;
-  }
+
 
   .humburger-bar {
     background-color: var(--white);
@@ -8322,33 +8283,20 @@ top: 0;
     display: none;
   }
 
-  .team-member-details {
-    padding-top: 0;
-    padding-bottom: 65px;
-  }
+
 
   .team-details-approach-left {
     background-size: 57%;
   }
 
-  .team-details-testimonial {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
+
   .team-member-details-main {
     grid-column-gap: 60px;
     grid-row-gap: 60px;
   }
 
-  .team-details-hero {
-    padding-top: 140px;
-    padding-bottom: 40px;
-  }
 
-  .team-details-approach {
-    padding-top: 60px;
-    padding-bottom: 0;
-  }
+
 
   .team-lines {
     display: none;
