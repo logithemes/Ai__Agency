@@ -2575,11 +2575,7 @@ label {
   padding-right: 20px;
 }
 
-.blog-three-marquee {
-  padding-top: 75px;
-  padding-bottom: 70px;
-  overflow: hidden;
-}
+
 .projects-marquee-main-wrap {
   border-top: 1px solid #444872;
   justify-content: flex-start;
@@ -5853,7 +5849,7 @@ opacity: 0;
     #f449724d,
     #f4497200 18%
   );
-  padding-top: 175px;
+
 }
 
 .blog-two-cards {
@@ -5944,11 +5940,6 @@ top: 0;
 /*---------------------------------
   blog three css start 
 ---------------------------------*/
-.blog-three-hero {
-  padding-top: 175px;
-  padding-bottom: 80px;
-  position: relative;
-}
 
 .blog-three-text {
   flex: 1;
@@ -7626,14 +7617,7 @@ top: 0;
     padding-bottom: 143px;
   }
 
-  .blog-two-hero {
-    padding-top: 245px;
-  }
 
-  .blog-three-hero {
-    padding-top: 245px;
-    padding-bottom: 150px;
-  }
 
   .related-blogs {
     padding-bottom: 150px;
@@ -8491,9 +8475,6 @@ top: 0;
     display: none;
   }
 
-  .blog-two-hero {
-    padding-top: 140px;
-  }
 
   .explore-now-button-wrap {
     display: none;
