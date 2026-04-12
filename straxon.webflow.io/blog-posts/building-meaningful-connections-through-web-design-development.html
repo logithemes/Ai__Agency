@@ -9,6 +9,7 @@
   <meta name="description" content="Stynero — sleek, responsive digital agency for startups & creatives.">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../assets/css/spacing.css">
   <link rel="stylesheet" href="../assets/css/style.css">
   <link rel="stylesheet" href="../assets/css/animate.css">
   <link rel="stylesheet" href="../assets/css/slick.css">
@@ -44,300 +45,114 @@
       <!-- ===================================================
 		header area start
 		==================================================== -->
-     <div class="navbar w-100">
-      <div  role="banner" class="navbar-one header-main w-100">
+    <div class="navbar w-100">
+      <div role="banner" class="navbar-one header-main w-100">
         <div class="container tp-container">
-          <div class="navbar-one-wrapper">
-            <a  href="../index.html"
-              class="stynero-wrapper header-logo  d-flex align-items-center">
+          <div class="navbar-one-wrapper align-items-center">
+            <a href="index.html" class="stynero-wrapper header-logo  d-flex align-items-center">
               <img width="140" height="30" alt="logo-img" src="../assets/img/logo/logo.svg" loading="lazy" class="stynero">
             </a>
-            <nav role="navigation" class="nav-menu main-menu ">
-              <div class="d-inline-block w-100 h-100 nav-inline">
-              <div class="tp-dropdown menu-item">
-                <div class="tp-dropdown-toggle menu-item-toggle">
-                  <div>Home</div>
-                   <i class="bi bi-caret-down-fill tp-menu-dropdown-icon menu-dp-icon mt-0"></i>
-                </div>
-                <nav class="tp-dropdown-menu dp-menu">
-                  <a href="../home-one.html" aria-current="page" class="dropdown-link menu-dd-link tp-active">Home
-                    One</a>
-                  <a href="../home-two.html" class="dropdown-link menu-dd-link">Home Two</a>
-                  <a href="../home-three.html" class="dropdown-link menu-dd-link">Home Three</a>
-                </nav>
-              </div>
-              <div class="tp-dropdown menu-item">
-                <div class="tp-dropdown-toggle menu-item-toggle">
-                  <div>About</div>
-                   <i class="bi bi-caret-down-fill tp-menu-dropdown-icon menu-dp-icon mt-0"></i>
-                </div>
-                <nav class="tp-dropdown-menu dp-menu">
-                  <a href="../about-one.html" class="dropdown-link menu-dd-link">About One</a>
-                  <a href="../about-two.html" class="dropdown-link menu-dd-link">About Two</a>
-                  <a href="../about-three.html" class="dropdown-link menu-dd-link">About Three</a>
-                </nav>
-              </div>
-              <div class="tp-dropdown menu-item">
-                <div class="tp-dropdown-toggle menu-item-toggle">
-                  <div>Pages</div>
-                   <i class="bi bi-caret-down-fill tp-menu-dropdown-icon menu-dp-icon mt-0"></i>
-                </div>
-                <nav class="tp-dropdown-menu dp-menu">
-                  <a href="../service-one.html" class="dropdown-link menu-dd-link">Service One</a>
-                  <a href="../service-two.html" class="dropdown-link menu-dd-link">Service Two</a>
-                  <a href="../service-three.html" class="dropdown-link menu-dd-link">Service Three</a>
-                  <a href="../projects.html" class="dropdown-link menu-dd-link">Projects</a>
-                  <a href="../team.html" class="dropdown-link menu-dd-link">Team</a>
-                  <a href="../404.html" class="dropdown-link menu-dd-link">404</a>
-                </nav>
-              </div>
-              <a href="../pricing.html" class="tp-dropdown-toggle pricing">pricing</a>
-              <div class="tp-dropdown menu-item">
-                <div class="tp-dropdown-toggle menu-item-toggle">
-                  <div>Blog</div>
-                   <i class="bi bi-caret-down-fill tp-menu-dropdown-icon menu-dp-icon mt-0"></i>
-                </div>
-                <nav class="tp-dropdown-menu dp-menu">
-                  <a href="../blog-one.html" class="dropdown-link menu-dd-link">Blog One</a>
-                  <a href="../blog-two.html" class="dropdown-link menu-dd-link">Blog Two</a>
-                  <a href="../blog-three.html" class="dropdown-link menu-dd-link">Blog Three</a>
-                </nav>
-              </div>
-              <div class="tp-dropdown menu-item">
-                <div class="tp-dropdown-toggle menu-item-toggle">
-                  <div>contact</div>
-                   <i class="bi bi-caret-down-fill tp-menu-dropdown-icon menu-dp-icon mt-0"></i>
-                </div>
-                <nav class="tp-dropdown-menu dp-menu">
-                  <a href="../contact-one.html" class="dropdown-link menu-dd-link">Contact One</a>
-                  <a href="../contact-two.html" class="dropdown-link menu-dd-link">Contact Two</a>
-                  <a href="../contact-three.html" class="dropdown-link menu-dd-link">Contact Three</a>
-                </nav>
-              </div>
-                </div>
-            </nav>
-            <a 
-               href="tel:(888)1234567"
-              class="let-s-talk tp-inline-block  d-flex align-items-center">
+           <nav role="navigation" class="nav-menu main-menu" aria-label="Main Navigation">
+  
+  <ul class="d-inline-block w-100 h-100 nav-inline list-unstyled m-0 p-0">
+
+    <!-- Home -->
+    <li class="tp-dropdown menu-item">
+      <a href="javascript:void(0)" class="tp-dropdown-toggle menu-item-toggle d-flex align-items-center">
+        <span>Home</span>
+        <i class="bi bi-caret-down-fill tp-menu-dropdown-icon menu-dp-icon mt-0"></i>
+      </a>
+
+      <ul class="tp-dropdown-menu dp-menu list-unstyled">
+        <li><a href="../home-one.html" class="dropdown-link menu-dd-link tp-active">Home One</a></li>
+        <li><a href="../home-two.html" class="dropdown-link menu-dd-link">Home Two</a></li>
+        <li><a href="../home-three.html" class="dropdown-link menu-dd-link">Home Three</a></li>
+      </ul>
+    </li>
+
+    <!-- About -->
+    <li class="tp-dropdown menu-item">
+      <a href="javascript:void(0)" class="tp-dropdown-toggle menu-item-toggle d-flex align-items-center">
+        <span>About</span>
+        <i class="bi bi-caret-down-fill tp-menu-dropdown-icon menu-dp-icon mt-0"></i>
+      </a>
+
+      <ul class="tp-dropdown-menu dp-menu list-unstyled">
+        <li><a href="../about-one.html" class="dropdown-link menu-dd-link">About One</a></li>
+        <li><a href="../about-two.html" class="dropdown-link menu-dd-link">About Two</a></li>
+        <li><a href="../about-three.html" class="dropdown-link menu-dd-link">About Three</a></li>
+      </ul>
+    </li>
+
+    <!-- Pages -->
+    <li class="tp-dropdown menu-item">
+      <a href="javascript:void(0)" class="tp-dropdown-toggle menu-item-toggle d-flex align-items-center">
+        <span>Pages</span>
+        <i class="bi bi-caret-down-fill tp-menu-dropdown-icon menu-dp-icon mt-0"></i>
+      </a>
+
+      <ul class="tp-dropdown-menu dp-menu list-unstyled">
+        <li><a href="../service-one.html" class="dropdown-link menu-dd-link">Service One</a></li>
+        <li><a href="../service-two.html" class="dropdown-link menu-dd-link">Service Two</a></li>
+        <li><a href="../service-three.html" class="dropdown-link menu-dd-link">Service Three</a></li>
+        <li><a href="../projects.html" class="dropdown-link menu-dd-link">Projects</a></li>
+        <li><a href="../team.html" class="dropdown-link menu-dd-link">Team</a></li>
+        <li><a href="../404.html" class="dropdown-link menu-dd-link">404</a></li>
+      </ul>
+    </li>
+
+    <!-- Pricing -->
+    <li class="menu-item">
+      <a href="../pricing.html" class="tp-dropdown-toggle pricing">Pricing</a>
+    </li>
+
+    <!-- Blog -->
+    <li class="tp-dropdown menu-item">
+      <a href="javascript:void(0)" class="tp-dropdown-toggle menu-item-toggle d-flex align-items-center">
+        <span>Blog</span>
+        <i class="bi bi-caret-down-fill tp-menu-dropdown-icon menu-dp-icon mt-0"></i>
+      </a>
+
+      <ul class="tp-dropdown-menu dp-menu list-unstyled">
+        <li><a href="../blog-one.html" class="dropdown-link menu-dd-link">Blog One</a></li>
+        <li><a href="../blog-two.html" class="dropdown-link menu-dd-link">Blog Two</a></li>
+        <li><a href="../blog-three.html" class="dropdown-link menu-dd-link">Blog Three</a></li>
+      </ul>
+    </li>
+
+    <!-- Contact -->
+    <li class="tp-dropdown menu-item">
+      <a href="javascript:void(0)" class="tp-dropdown-toggle menu-item-toggle d-flex align-items-center">
+        <span>Contact</span>
+        <i class="bi bi-caret-down-fill tp-menu-dropdown-icon menu-dp-icon mt-0"></i>
+      </a>
+
+      <ul class="tp-dropdown-menu dp-menu list-unstyled">
+        <li><a href="../contact-one.html" class="dropdown-link menu-dd-link">Contact One</a></li>
+        <li><a href="../contact-two.html" class="dropdown-link menu-dd-link">Contact Two</a></li>
+        <li><a href="../contact-three.html" class="dropdown-link menu-dd-link">Contact Three</a></li>
+      </ul>
+    </li>
+
+  </ul>
+</nav>
+            <a href="tel:(888)1234567" class="let-s-talk tp-inline-block  d-flex align-items-center">
               <div class=" rounded-circle ph-icon-wrapper d-flex align-items-center justify-content-center">
-               <i class="bi bi-telephone navbar-icon transition-slow text-white"></i>
-             </div>
+                <i class="bi bi-telephone navbar-icon transition-slow text-white"></i>
+              </div>
+
               <div class="let-s-talk-text-wrapper">
                 <div class="button-text-hover transition-slow">Lets&#x27; Talk</div>
                 <div class="button-text-hover-out transition-slow">(888) 123 4567</div>
               </div>
             </a>
-            <div  class="humburger-wrapper humburger-main">
+            <div class="humburger-wrapper humburger-main">
               <div class="humburger-bar humburger-bar-one"></div>
               <div class="humburger-bar humburger-bar-two"></div>
             </div>
           </div>
         </div>
       </div>
-      <section class="navbar-desktop w-100">
-        <div class="layout-container container tp-container">
-          <div class="desktop-navbar-menu-wrapper">
-            <a  href="index.html"
-              class="stynero-wrapper tp-inline-block  d-flex align-items-center">
-              <img width="140" height="30" alt="logo-img" src="../assets/img/logo/logo.svg" loading="lazy"
-                class="stynero">
-            </a>
-            <div 
-              class="tp-flex-horizontal navbar-responsive-main d-flex">
-              <div 
-                class="tp-dropdown menu-item">
-                <div class="tp-dropdown-toggle menu-item-toggle">
-                  <div>Home</div>
-                   <i class="bi bi-caret-down-fill tp-menu-dropdown-icon menu-dp-icon mt-0"></i>
-                </div>
-                <nav class="tp-dropdown-menu dp-menu">
-                  <a href="../home-one.html" aria-current="page" class="dropdown-link menu-dd-link tp-active">Home
-                    One</a>
-                  <a href="../home-two.html" class="dropdown-link menu-dd-link">Home Two</a>
-                  <a href="../home-three.html" class="dropdown-link menu-dd-link">Home Three</a>
-                </nav>
-              </div>
-              <div 
-                class="tp-dropdown menu-item">
-                <div class="tp-dropdown-toggle menu-item-toggle">
-                  <div>About</div>
-                   <i class="bi bi-caret-down-fill tp-menu-dropdown-icon menu-dp-icon mt-0"></i>
-                </div>
-                <nav class="tp-dropdown-menu dp-menu">
-                  <a href="../about-one.html" class="dropdown-link menu-dd-link">About one</a>
-                  <a href="../about-two.html" class="dropdown-link menu-dd-link">About two</a>
-                  <a href="../about-three.html" class="dropdown-link menu-dd-link">About three</a>
-                </nav>
-              </div>
-              <div 
-                class="tp-dropdown pages-menu menu-item">
-                <div class="tp-dropdown-toggle menu-item-toggle">
-                  <div>Pages</div>
-                   <i class="bi bi-caret-down-fill tp-menu-dropdown-icon menu-dp-icon mt-0"></i>
-                </div>
-                <nav class="tp-dropdown-menu mega-menu dp-menu">
-                  <div class="layout-container container tp-container">
-                    <div class="mega-menu-container-main">
-                      <div class="mega-menu-pages">
-                        <a 
-                           href="../service-one.html"
-                          class="menu-box-wrapper tp-inline-block ">
-                          <div class="tp-flex-horizontal menu-box-top">
-                            <div class="mega-menu-icon">
-                           <i class="bi bi-gear"></i>
-                               
-                            </div>
-                            <div class="heading-five">service one</div>
-                          </div>
-                          <div class="mega-menu-image-wrapper">
-                            <img width="211" height="99" alt="Screenshot"
-                              src="../assets/img/mega-menu/mega-service-one.webp" loading="lazy" class="mega-menu-image">
-                            <div class="arrow-effect">
-                              <img src="../assets/img/portfolios/arrow-white.svg" loading="lazy" width="10" height="10"
-                                alt="Icon">
-                            </div>
-                          </div>
-                        </a>
-                        <a  href="../service-two.html"
-                          class="menu-box-wrapper tp-inline-block ">
-                          <div class="tp-flex-horizontal menu-box-top">
-                            <div class="mega-menu-icon">
-                               <i class="bi bi-gear"></i>
-                            </div>
-                            <div class="heading-five">service Two</div>
-                          </div>
-                          <div class="mega-menu-image-wrapper">
-                            <img width="211" height="99" alt="Screenshot"
-                              src="../assets/img/mega-menu/mega-service-two.webp" loading="lazy" class="mega-menu-image">
-                            <div class="arrow-effect">
-                              <img src="../assets/img/portfolios/arrow-white.svg" loading="lazy" width="10" height="10"
-                                alt="Icon">
-                            </div>
-                          </div>
-                        </a>
-                        <a  href="../service-three.html"
-                          class="menu-box-wrapper tp-inline-block ">
-                          <div class="tp-flex-horizontal menu-box-top">
-                            <div class="mega-menu-icon">
-                             <i class="bi bi-gear"></i>
-                            </div>
-                            <div class="heading-five">service Three</div>
-                          </div>
-                          <div class="mega-menu-image-wrapper">
-                            <img width="211" height="99" alt="Screenshot"
-                              src="../assets/img/mega-menu/mega-service-three.webp" loading="lazy"
-                              class="mega-menu-image">
-                            <div class="arrow-effect">
-                              <img src="../assets/img/portfolios/arrow-white.svg" loading="lazy" width="10" height="10"
-                                alt="Icon">
-                            </div>
-                          </div>
-                        </a>
-                        <a  href="../projects.html"
-                          class="menu-box-wrapper tp-inline-block ">
-                          <div class="tp-flex-horizontal menu-box-top">
-                            <div class="mega-menu-icon">
-                               <i class="bi bi-image"></i>
-                            </div>
-                            <div class="heading-five">projects</div>
-                          </div>
-                          <div class="mega-menu-image-wrapper">
-                            <img width="211" height="99" alt="Screenshot"
-                              src="../assets/img/mega-menu/mega-service-one.webp" loading="lazy" class="mega-menu-image">
-                            <div class="arrow-effect">
-                              <img src="../assets/img/portfolios/arrow-white.svg" loading="lazy" width="10" height="10"
-                                alt="Icon">
-                            </div>
-                          </div>
-                        </a>
-                        <a  href="../team.html"
-                          class="menu-box-wrapper tp-inline-block ">
-                          <div class="tp-flex-horizontal menu-box-top">
-                            <div class="mega-menu-icon">
-                            <i class="bi bi-person"></i>
-                            </div>
-                            <div class="heading-five">team members</div>
-                          </div>
-                          <div class="mega-menu-image-wrapper">
-                            <img width="211" height="99" alt="Screenshot" src="../assets/img/mega-menu/mega-team.webp"
-                              loading="lazy" class="mega-menu-image">
-                            <div class="arrow-effect">
-                              <img src="../assets/img/portfolios/arrow-white.svg" loading="lazy" width="10" height="10"
-                                alt="Icon">
-                            </div>
-                          </div>
-                        </a>
-                        <a  href="../404.html"
-                          class="menu-box-wrapper tp-inline-block ">
-                          <div class="tp-flex-horizontal menu-box-top">
-                            <div class="mega-menu-icon">
-                             <i class="bi bi-exclamation-triangle"></i>
-                            </div>
-                            <div class="heading-five">404 error</div>
-                          </div>
-                          <div class="mega-menu-image-wrapper">
-                            <img width="211" height="99" alt="Screenshot" src="../assets/img/mega-menu/mega-404.webp"
-                              loading="lazy" class="mega-menu-image">
-                            <div class="arrow-effect">
-                              <img src="../assets/img/portfolios/arrow-white.svg" loading="lazy" width="10" height="10"
-                                alt="Icon">
-                            </div>
-                          </div>
-                        </a>
-                        <div  class="menu-border"></div>
-                        <div 
-                          class="menu-border menu-border-two"></div>
-                      </div>
-                      <div class="mega-menu-right-icon">
-                        <div class="tp-flex-vertical menu-right-box">
-                          <div class="heading-four mega-menu-text">introducing new digital agency &amp; creative
-                            templates</div>
-                          <a href="../index.html" class="tp-btn tp-btn-primary">get started</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </nav>
-              </div>
-              <a href="../pricing.html" class="tp-dropdown-toggle pricing">pricing</a>
-              <div 
-                class="tp-dropdown menu-item">
-                <div class="tp-dropdown-toggle menu-item-toggle">
-                  <div>blog</div>
-                  <div class="icon menu-dd-link"></div>
-                </div>
-                <nav class="tp-dropdown-menu dp-menu">
-                  <a href="../blog-one.html" class="dropdown-link menu-dd-link">Blog One</a>
-                  <a href="../blog-two.html" class="dropdown-link menu-dd-link">Blog Two</a>
-                  <a href="../blog-three.html" class="dropdown-link menu-dd-link">Blog Three</a>
-                </nav>
-              </div>
-              <div 
-                class="tp-dropdown menu-item">
-                <div class="tp-dropdown-toggle menu-item-toggle">
-                  <div>contact</div>
-                   <i class="bi bi-caret-down-fill tp-menu-dropdown-icon menu-dp-icon mt-0"></i>
-                </div>
-                <nav class="tp-dropdown-menu dp-menu">
-                  <a href="../contact-one.html" class="dropdown-link menu-dd-link">Contact One</a>
-                  <a href="../contact-two.html" class="dropdown-link menu-dd-link">Contact Two</a>
-                  <a href="../contact-three.html" class="dropdown-link menu-dd-link">Contact Three</a>
-                </nav>
-              </div>
-            </div>
-            <a  href="tel:(888)1234567"
-              class="let-s-talk tp-inline-block ">
-              <div class=" rounded-circle ph-icon-wrapper d-flex align-items-center justify-content-center">
-               <i class="bi bi-telephone navbar-icon transition-slow text-white"></i>
-             </div>
-              <div class="let-s-talk-text-wrapper">
-                <div class="button-text-hover transition-slow">Lets&#x27; Talk</div>
-                <div class="button-text-hover-out transition-slow">(888) 123 4567</div>
-              </div>
-            </a>
-          </div>
-        </div>
-      </section>
     </div>
       <!-- ===================================================
 		header area start
@@ -477,7 +292,7 @@
    <section class="footer-three">
       <div class="layout-container container tp-container">
         <div  class="footer-one-border"></div>
-        <div class="tp-flex-horizontal footer-one-main-wrapper  wow fadeInUp" data-wow-duration="0.8s">
+        <div class="tp-flex-horizontal pt-70 pb-70 md-pb-60 md-pt-60 footer-one-main-wrapper  wow fadeInUp" data-wow-duration="0.8s">
           <div class="footer-one-about-wrapper">
             <a href="../index.html" class="site-logo tp-inline-block">
               <img width="140" height="30" alt="logo-img" src="../assets/img/logo/logo.svg" loading="lazy">
