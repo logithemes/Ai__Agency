@@ -6952,7 +6952,6 @@ top: 0;
   color: var(--white);
   text-transform: capitalize;
   border-radius: 60px;
-  margin-bottom: 20px;
   padding: 10px 20px 8px;
 }
 
@@ -7215,8 +7214,7 @@ top: 0;
 
 
 .landing-hero-details{
-  column-gap:30px;
-  row-gap:30px;
+
   width:100%;
   max-width:490px
  
@@ -7399,10 +7397,6 @@ top: 0;
     bottom: 11%;
   }
 
-  .clients {
-    padding-top: 10px;
-    padding-bottom: 10px;
-  }
 
   .home-two-faq-right {
     padding-top: 120px;
@@ -7939,11 +7933,6 @@ top: 0;
 
   .work-three-cards-inner-wrapper {
     padding-left: 30px;
-  }
-
-  .clients-two {
-    padding-top: 65px;
-    padding-bottom: 60px;
   }
 
   .home-three-work-text {
