@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
     
     if (document.querySelector('.home-popup-video')) {
-        wordScrollAnimation('.home-popup-video', '.no-margin-bottom');
+        wordScrollAnimation('.home-popup-video', '.home-popup-video-desc');
     }
 
     /* ===============================
@@ -82,7 +82,7 @@ document.addEventListener("DOMContentLoaded", function () {
         
         if (portfolioLeft || portfolioRight) {
             gsap.to([portfolioLeft, portfolioRight].filter(el => el), {
-                y: -150,
+                y: -50,
                 ease: "none",
                 scrollTrigger: {
                     trigger: ".home-one-work",

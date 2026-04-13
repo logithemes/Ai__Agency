@@ -1307,10 +1307,7 @@ label {
 
   display: flex;
 }
-.testimonial-heading {
-  max-width: 461px;
 
-}
 .container.home-three-testimonial-container {
   z-index: 10;
   position: relative;
@@ -1761,11 +1758,6 @@ label {
 .home-three-img-swiper img {
   object-fit:cover;
 }
-.solutions-heading {
-  margin-top: 25px;
-  margin-bottom: 45px;
-}
-
 
 .no-margin-top {
   margin-top: 0;
@@ -1843,9 +1835,7 @@ label {
   transition: all var(--transition-medium);
 }
 
-.heading-four.text-align-center {
-  text-align: center;
-}
+
 .heading-four.margin-top-five {
   margin-top: 5px;
 }
@@ -2103,9 +2093,7 @@ label {
 /*---------------------------------
     service css start 
 ---------------------------------*/
-.home-service {
-  padding-bottom: 60px;
-}
+
 
 .border-movement-bar {
   background-color: var(--white);
@@ -2226,6 +2214,7 @@ label {
 .home-one-service-cards {
   grid-column-gap: 15px;
   grid-row-gap: 15px;
+  padding: 20px;
 
 }
 .home-one-service-cards-icon-overlay {
@@ -2420,10 +2409,6 @@ label {
 .double-marquee-wrapper {
   grid-column-gap: 38px;
   grid-row-gap: 38px;
-  flex-flow: column;
-  justify-content: center;
-  align-items: center;
-  display: flex;
   position: relative;
 }
 .marquee-text {
@@ -2441,10 +2426,7 @@ label {
 }
 .marquee-image-wrapper {
   z-index: 20;
-  justify-content: center;
-  align-items: center;
   height: 100%;
-  display: flex;
   position: absolute;
 }
 
@@ -2686,7 +2668,7 @@ opacity: 0;
   position: relative;
 }
 
-.big-heading {
+.portfolio-big-heading {
   color: var(--white);
   font-family: Bebas Neue, sans-serif;
   font-size: clamp(60px, 20vw, 300px);
@@ -2769,9 +2751,6 @@ opacity: 0;
   overflow: hidden;
 }
 
-.button-wrapper.button-margin {
-  margin-bottom: 65px;
-}
 
 .button-wrapper.pricing-button-wrapper {
   width: 100%;
@@ -2907,7 +2886,6 @@ opacity: 0;
   width: 100%;
   max-width: 665px;
   height: 1px;
-  margin-bottom: 30px;
   display: flex;
 }
 
@@ -4418,11 +4396,6 @@ opacity: 0;
   grid-row-gap: 20px;
   justify-content: flex-start;
   align-items: center;
-}
-
-
-.text-align-center {
-  text-align: center;
 }
 
 .text-align-center.members-heading {
@@ -7335,14 +7308,6 @@ top: 0;
     padding-bottom: 35px;
   }
 
-
-
-  .home-service {
-    padding-bottom: 140px;
-  }
-
-
-
   .little-boy-image-wrapper {
     right: -1%;
   }
@@ -7360,15 +7325,6 @@ top: 0;
   .home-one-hero-description {
     margin-bottom: 50px;
   }
-
-  .button-wrapper.button-margin {
-    margin-bottom: 75px;
-  }
-
-  .border-wrapper {
-    margin-bottom: 50px;
-  }
-
   
   .marquee-image-two {
     bottom: 11%;
@@ -7536,7 +7492,7 @@ top: 0;
   }
   .team-member-information{padding-left: 20px;}
 .about-one-opitons h3{font-size: 30px;}
-  .solutions-heading{margin-bottom: 34px;}
+
   .pr_slides-cards {
     width: 100%;
   }
@@ -7597,9 +7553,6 @@ top: 0;
     display: block;
   }
 
-  .home-service {
-    padding-bottom: 56px;
-  }
 
   .little-boy-image-wrapper {
     top: -24px;
@@ -7659,10 +7612,6 @@ top: 0;
     margin-bottom: 25px;
   }
 
-  .button-wrapper.button-margin {
-    margin-bottom: 50px;
-  }
-
   .tp-dropdown-menu {
     position: static;
     padding-bottom: 0;
@@ -7671,10 +7620,6 @@ top: 0;
   .slider-icon-arrow {
     width: 15px;
     height: auto;
-  }
-
-  .border-wrapper {
-    margin-bottom: 30px;
   }
 
   .no-margin-bottom.team-details-top-description,
@@ -7752,11 +7697,6 @@ top: 0;
     padding-right: 15px;
     display: flex;
   }
-
-  .marquee-image-wrapper {
-    display: none;
-  }
-
 
 
   .home-one-portfolio-left {
