@@ -314,7 +314,7 @@ th {
 .pr-15{padding-right: 15px;}
 
 .mt-30{margin-top: 30px;}
-.mb-25{margin-bottom: 25px;}
+
 
 .mb-40{margin-bottom: 40px;}
 .row-gap-20{row-gap: 20px;}
@@ -2059,8 +2059,6 @@ label {
   text-align: center;
   justify-content: flex-start;
   align-items: center;
-  padding-top: 15px;
-  padding-bottom: 15px;
 }
 .footer-one-link-wrapper {
   grid-column-gap: 30px;
@@ -5864,10 +5862,6 @@ top: 0;
   border-bottom: 1px solid #444872;
 }
 
-.landing-cards {
-  position: relative;
-  overflow: hidden;
-}
 
 .explore-now-button-wrap {
   z-index: 999;
@@ -6935,14 +6929,6 @@ top: 0;
   align-items: center;
 }
 
-.cms-pages-top {
-  grid-column-gap: 40px;
-  grid-row-gap: 40px;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 28px;
-}
-
 .cms-pages {
   background-color: #161724;
 }
@@ -7034,11 +7020,7 @@ top: 0;
   position: relative;
 }
 
-.innerpages-main {
-  justify-content: flex-start;
-  align-items: center;
-  margin-bottom: 18px;
-}
+
 
 .landing-footer-float-image-four {
   opacity: 0.7;
@@ -7047,10 +7029,6 @@ top: 0;
   inset: auto 200px 80px auto;
 }
 
-.cms-heading {
-  margin-top: 15px;
-  margin-bottom: 0;
-}
 
 .landing-cards {
   background-color: #3e4055;
@@ -7061,6 +7039,9 @@ top: 0;
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 100%;
+    position: relative;
+  overflow: hidden;
 }
 
 .landing-footer-float-image-one {
@@ -7084,7 +7065,6 @@ top: 0;
   background-position: 50% 0;
   background-repeat: no-repeat;
   background-size: cover;
-  border-radius: 30px;
   width: 100%;
   padding: 120px 90px 110px;
   transform-origin: center center;
@@ -7331,10 +7311,7 @@ top: 0;
 
 
 .contact-three-office-contact{gap: 0;}
-  .landing-footer {
-    padding-top: 310px;
-    padding-bottom: 310px;
-  }
+ 
 
   .landing-footer-float-image-four,
   .landing-footer-float-image-one {
@@ -8508,11 +8485,6 @@ top: 0;
   .landing-footer-button-wrap {
     flex-flow: wrap;
   }
-
-  .cms-heading {
-    margin-top: 10px;
-  }
-
 
   .header-footer-box {
     background-size: 100% 100%;

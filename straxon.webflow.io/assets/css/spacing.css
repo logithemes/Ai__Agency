@@ -240,6 +240,11 @@
   .xl-mb-150 {margin-bottom: 150px;}
   .xl-mb-200 {margin-bottom: 200px;}
 }
+/*(min-width: 1200px)*/
+@media (min-width: 1200px) {
+    .xl-pt-310 {padding-top: 310px;}
+      .xl-pb-310 {padding-bottom: 310px;}
+}
 /*(max-width: 1399px)*/
 
 @media (max-width: 1199px) {
