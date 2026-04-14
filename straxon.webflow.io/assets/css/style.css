@@ -318,8 +318,6 @@ th {
 .pr-15{padding-right: 15px;}
 
 
-
-.mb-40{margin-bottom: 40px;}
 .row-gap-20{row-gap: 20px;}
 .row-gap-30{row-gap: 30px;}
 .gap-10{column-gap:10px;row-gap:10px;}
@@ -1356,10 +1354,7 @@ label {
   line-height: 1;
   position: relative;
 }
-.heading-three.home-three-testimonial-heading {
-  margin-top: 25px;
-  margin-bottom: 20px;
-}
+
 .home-two-testimonial {
   height: 250vh;
   position: relative;
@@ -2274,10 +2269,7 @@ label {
   position: relative;
 }
 .navbar-three .modal-backdrop.show{display:none}
-.container.home-three-hero-container {
-  padding-top: 160px;
-  position: relative;
-}
+
 
 .container.navbar-three-container {
   z-index: 500;
@@ -3670,9 +3662,7 @@ opacity: 0;
   align-items: center;
 }
 
-.home-three-service-text {
-  max-width: 655px;
-}
+
 .top-border {
   background-color: #444872;
   height: 1px;
@@ -3703,12 +3693,6 @@ opacity: 0;
 .home-three-work-text {
   z-index: 3;
   text-align: center;
-  justify-content: flex-start;
-  align-items: center;
-  margin-bottom: 80px;
-  position: relative;
-}
-.home-three-work-main {
   justify-content: flex-start;
   align-items: center;
   position: relative;
@@ -3766,8 +3750,6 @@ opacity: 0;
   grid-column-gap: 20px;
   grid-row-gap: 0px;
   flex-flow: wrap;
-  margin-top: 25px;
-  margin-bottom: 25px;
 }
 
 
@@ -3788,10 +3770,6 @@ opacity: 0;
 }
 .home-three-hero-main {
   z-index: 5;
-}
-.home-three-hero-text {
-  flex: 1;
-  max-width: 815px;
 }
 
 
@@ -3947,10 +3925,6 @@ opacity: 0;
 /*---------------------------------
   home three digital css start
 ---------------------------------*/
-.home-three-digital {
-  overflow: hidden;
-}
-
 
 .home-three-digital-hover-box {
   grid-column-gap: 12px;
@@ -3968,11 +3942,6 @@ opacity: 0;
   opacity: 0;
 }
 .home-three-digital-boxes:hover .home-three-digital-hover-box{opacity: 1;}
-.home-three-digital-text {
-  justify-content: flex-start;
-  align-items: center;
-  margin-bottom: 60px;
-}
 
 .hover-hide, .hover-hide-des{transform: translateY(20px);opacity: 0;}
 
@@ -4376,7 +4345,6 @@ opacity: 0;
 .small-tag-wrapper {
   grid-column-gap: 7px;
   grid-row-gap: 7px;
-  justify-content: flex-start;
   align-items: center;
 }
 
@@ -7506,10 +7474,6 @@ top: 0;
     position: static;
   }
 
-  .container.home-three-hero-container {
-    padding-top: 60px;
-  }
-
   .container.blog-top-container {
     margin-bottom: 40px;
   }
@@ -7773,9 +7737,6 @@ top: 0;
     padding-left: 30px;
   }
 
-  .home-three-work-text {
-    margin-bottom: 60px;
-  }
 
   .home-three-digital-hover-box {
     background-color: #050610b3;
@@ -7812,9 +7773,6 @@ top: 0;
     max-width: none;
   }
 
-  .home-three-digital-text {
-    margin-bottom: 40px;
-  }
 
   .about-one-mission-text {
     max-width: none;
