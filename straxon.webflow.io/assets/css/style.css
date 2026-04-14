@@ -1930,12 +1930,6 @@ label {
 /*---------------------------------
     footer css start 
 ---------------------------------*/
-.footer-cta-container {
-  max-width: 619px;
-
-}
-
-
 .footer-one-email-box {
   grid-column-gap: 20px;
   grid-row-gap: 20px;
