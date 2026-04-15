@@ -72,7 +72,8 @@
   --tp-radius-30: 30px;
    --tp-radius-20: 20px;
   --tp-icon-color: #db4e93b0;
-  --menu-color: #aeb2d7;;
+  --menu-color: #aeb2d7;
+  --tp-common-white : #fff;
 }
 
 /*----------------------------------------*/
@@ -304,6 +305,7 @@ th {
 .tp-radius-10{
   border-radius: var(--tp-radius-10);
 }
+.tp-common-white{color: var(--tp-common-white);}
 .tp-radius-20{
   border-radius: var(--tp-radius-20);
 }
@@ -1674,7 +1676,7 @@ label {
 .about-one-counter-left {
   max-width: 744px;
 }
-
+.about-one-counter-left p{line-height: 30px;font-size: 20px;}
 .about-one-counter-box {
 
   padding: 60px 30px 50px;
@@ -2138,10 +2140,6 @@ label {
   justify-content: space-between;
 }
 
-.story-image-wrapper {
-  perspective: 2000px;
-  transform-origin: 50%;
-}
 
 .story-line {
   background-color: #2a2d4a;
@@ -2768,9 +2766,6 @@ opacity: 0;
   margin: 0;
 }
 
-.about-one-hero-text {
-  max-width: 640px;
-}
 
 .no-margin.contact-two-hero-description {
   max-width: 280px;
