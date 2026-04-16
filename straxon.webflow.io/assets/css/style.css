@@ -1657,22 +1657,16 @@ label {
 
 
 .about-one-counter-right {
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
   background-color: var(--light-black);
-  grid-template-rows: auto auto;
   grid-template-columns: 1fr;
   grid-auto-columns: 1fr;
-  width: 50%;
   max-width: 410px;
   display: grid;
   overflow: hidden;
+  width: 100%;
 }
 
-.about-one-counter-main {
-  justify-content: space-between;
-  align-items: center;
-}
+
 .about-one-counter-left {
   max-width: 744px;
 }
@@ -3113,10 +3107,6 @@ opacity: 0;
   max-width: 550px;
   margin-bottom: 24px;
 }
-.home-three-faq-text-wrapper {
-  flex: 1;
-  max-width: 344px;
-}
 
 .accordion-line {
   background-color: #444872;
@@ -3976,10 +3966,6 @@ opacity: 0;
   margin-bottom: 27px;
 }
 
-.margin-top-twenty-five.faq-heading {
-  margin-bottom: 25px;
-}
-
 .line {
   background-color: var(--heading-color);
   width: 35px;
@@ -4222,10 +4208,7 @@ opacity: 0;
 .about-one-bottom-background {
   background-image: linear-gradient(#161724, #16172400);
 }
-.about-mission-heading {
-  margin-top: 25px;
-  margin-bottom: 20px;
-}
+
 
 .about-one-mission-text {
   flex: 1;
@@ -4243,20 +4226,6 @@ opacity: 0;
 }
 
 
-
-.about-one-choose-us-main {
-  max-width: 1220px;
-}
-.about-missions {
-  grid-column-gap: 20px;
-  grid-row-gap: 20px;
-}
-
-.about-one-heading-two {
-  max-width: 414px;
-  margin-top: 25px;
-  margin-bottom: 55px;
-}
 
 .about-one-opitons {
   grid-column-gap: 15px;
@@ -4292,18 +4261,6 @@ opacity: 0;
   margin-bottom: 55px;
 }
 
-.about-one-mission-check {
-  grid-column-gap: 20px;
-  grid-row-gap: 20px;
-  justify-content: flex-start;
-  align-items: center;
-}
-
-.text-align-center.members-heading {
-  max-width: 547px;
-  margin-top: 25px;
-  margin-bottom: 65px;
-}
 
 .text-align-center.pricing-heading {
   max-width: 500px;
@@ -7763,18 +7720,9 @@ top: 0;
 
   }
 
-  .home-three-faq-text-wrapper {
-    flex: 0 auto;
-    max-width: none;
-  }
-
 
   .about-one-mission-text {
     max-width: none;
-  }
-
-  .text-align-center.members-heading {
-    margin-bottom: 40px;
   }
 
   .about-one-mission-image {
