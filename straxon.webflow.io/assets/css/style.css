@@ -6377,13 +6377,6 @@ top: 0;
   position: relative;
 }
 
-.service-one-video-image-wrapper {
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  display: flex;
-}
-
 .service-one-image-overlay {
   background-image: linear-gradient(#06071100, #060711ab);
   border-radius: 30px;
@@ -6401,22 +6394,10 @@ top: 0;
   bottom: 0;
 }
 
-.service-one-video-text-wrap {
-  justify-content: flex-start;
-  align-items: center;
-}
 /*---------------------------------
     awards css start 
 ---------------------------------*/
-.service-one-awards-text {
-  flex: 1;
-  max-width: 463px;
-}
 
-.sevice-one-awards-heading {
-  margin-top: 25px;
-  margin-bottom: 20px;
-}
 
 .awards-right {
   flex: 1;
@@ -6445,12 +6426,6 @@ top: 0;
 .service-one-background {
   background-image: radial-gradient(circle at 50% 60%, #f449723d, #f4497200 27%),
     linear-gradient(#161724, #16172400);
-}
-
-
-.what-we-do {
-  max-width: 649px;
-  margin-bottom: 60px;
 }
 
 .services {
@@ -6529,23 +6504,8 @@ top: 0;
   top: 140px;
 }
 
-.service-hero-text {
-  flex-flow: wrap;
-  justify-content: flex-start;
-  align-items: center;
-  margin-top: 25px;
-  margin-bottom: 80px;
-}
 
-.service-text-line-two {
-  flex-flow: wrap-reverse;
-  justify-content: flex-start;
-  align-items: center;
-}
 
-.service-one-hero-image {
-  display: none;
-}
 /*---------------------------------
     tab css start 
 ---------------------------------*/
@@ -7207,9 +7167,6 @@ top: 0;
     right: 100px;
   }
 
-  .service-one-hero-image {
-    display: block;
-  }
 
   .utility-banner {
     padding-top: 245px;
@@ -8076,19 +8033,7 @@ padding-left: 0;
     max-width: none;
   }
 
-  .service-three-pricing {
-  }
 
-
-  .service-hero-text {
-    margin-bottom: 60px;
-  }
-
-  .service-text-line-two {
-    flex-flow: column-reverse;
-    justify-content: center;
-    align-items: flex-start;
-  }
 
   .utility-banner {
     padding-top: 140px;
@@ -8919,9 +8864,6 @@ padding-left: 0;
     position: static;
   }
 
-  .service-hero-text {
-    margin-bottom: 40px;
-  }
 
   .tabs {
     flex-flow: column;
@@ -9424,11 +9366,6 @@ padding-left: 0;
     align-items: center;
     bottom: 40px;
     right: auto;
-  }
-
-  .service-hero-text {
-    grid-column-gap: 10px;
-    grid-row-gap: 10px;
   }
 
   .tab-links {
