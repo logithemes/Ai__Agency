@@ -1241,9 +1241,7 @@ label {
 .margin-bottom-fourty {
   margin-bottom: 40px;
 }
-.margin-bottom-fifteen {
-  margin-bottom: 15px;
-}
+
 
 .margin-top-twenty-five {
   margin-top: 25px;
@@ -2144,10 +2142,9 @@ label {
   margin-bottom: 0;
 }
 
-.home-one-service-cards-icon.pricing-icons {
+.home-one-service-cards-icon {
   width: 80px;
   height: 80px;
-  margin-bottom: 30px;
 }
 .home-one-service-cards {
   grid-column-gap: 15px;
@@ -3639,9 +3636,7 @@ opacity: 0;
   font-size: clamp(40px, 12vw, 130px);
   line-height: 1;
 }
-.home-three-work {
-  overflow: hidden;
-}
+
 .home-three-work-text {
   z-index: 3;
   text-align: center;
@@ -6063,25 +6058,6 @@ top: 0;
   max-width: 424px;
 }
 
-
-
-.service-two-hero-text {
-  flex: 1;
-  max-width: 404px;
-}
-
-.service-two-hero-image-wrap {
-  flex: 1;
-  justify-content: flex-start;
-  align-items: center;
-  max-width: 810px;
-}
-
-.service-growth-text {
-  margin-top: 25px;
-  margin-bottom: 20px;
-}
-
 .service-two-growth-main {
   max-width: 1195px;
 }
@@ -6093,10 +6069,7 @@ top: 0;
   max-width: 115px;
 }
 
-.service-two-heading {
-  margin-top: 25px;
-  margin-bottom: 20px;
-}
+
 
 .connections-check-icons {
   background-color: var(--light-black);
@@ -6104,11 +6077,6 @@ top: 0;
   width: 40px;
   height: 40px;
 
-}
-
-.service-conntection-left {
-  flex: 1;
-  max-width: 492px;
 }
 
 .service-two-marquee-main {
@@ -7953,9 +7921,7 @@ padding-left: 0;
     max-width: none;
   }
 
-  .service-two-hero-text {
-    max-width: none;
-  }
+
 
   .service-two-hero-image-wrap {
     align-items: stretch;
@@ -7969,9 +7935,6 @@ padding-left: 0;
     align-items: stretch;
   }
 
-  .service-conntection-left {
-    max-width: none;
-  }
 
   .service-two-marquee-main {
     text-align: center;
