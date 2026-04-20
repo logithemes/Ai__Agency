@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     /* CALL WORD SCROLL FUNCTIONS - WITH NULL CHECKS */
     if (document.querySelector('.service-three-connection')) {
-        wordScrollAnimation('.service-three-connection', '.no-margin');
+        wordScrollAnimation('.service-three-connection', '.service-three-text');
     }
     
     if (document.querySelector('.home-popup-video')) {
