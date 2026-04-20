@@ -51,6 +51,8 @@
   --border-color: #444872;
   --pink: #f44972;
   --arrow-hover: #e85189;
+   --heading-font: 'Bebas Neue', sans-serif;
+     --body-font: 'Roboto', sans-serif;
   --icons-background: #1d1f34;
   --border-color-two: #2a2d4a;
   --light-black: #161724;
@@ -278,7 +280,10 @@ td,
 th {
   padding: 0;
 }
-
+.heading-font {
+  font-family: var(--heading-font);
+}
+.body-font{font-family: var(--body-font);}
 .tp-dropdown-toggle::after {
   display: none;
 }
@@ -1307,7 +1312,7 @@ label {
   display: flex;
 }
 
-.container.home-three-testimonial-container {
+.home-three-testimonial-container {
   z-index: 10;
   position: relative;
 }
@@ -2127,7 +2132,6 @@ label {
   align-items: center;
   width: 145px;
   height: 145px;
-  margin-bottom: 15px;
   position: relative;
   overflow: hidden;
 }
@@ -2731,10 +2735,6 @@ opacity: 0;
 
 .no-margin.contact-two-hero-description {
   max-width: 280px;
-}
-
-.no-margin.mb-30 {
-  margin-bottom: 30px;
 }
 
 .contact-three-hero-heading {
@@ -4223,13 +4223,6 @@ opacity: 0;
   margin-bottom: 55px;
 }
 
-
-.text-align-center.pricing-heading {
-  max-width: 500px;
-  margin-top: 25px;
-  margin-bottom: 20px;
-}
-
 .mission-check-icon {
   border: 1px solid #444872;
   border-radius: 100%;
@@ -5179,9 +5172,7 @@ padding-left: 30px;
   line-height: 28px;
 }
 
-.body-font.body-font-border {
-  margin-left: 6px;
-}
+
 
 /*---------------------------------
     contact three css start 
@@ -6127,15 +6118,8 @@ top: 0;
   align-items: flex-end;
 }
 
-.service-three-hero-heading {
-  margin-top: 25px;
-  margin-bottom: 20px;
-}
-
 .service-three-hero-text {
   z-index: 3;
-  flex: 1;
-  max-width: 696px;
   position: relative;
 }
 
@@ -6189,19 +6173,10 @@ top: 0;
 
 .service-three-connection-top {
   max-width: 809px;
-  margin-bottom: 40px;
   padding-left: 5px;
   position: relative;
 }
 .service-three-connection-top span{opacity: 0.5;}
-.service-three-hero-main {
-  justify-content: center;
-  align-items: center;
-  padding-top: 270px;
-  padding-bottom: 150px;
-  display: flex;
-  position: relative;
-}
 
 .years-text {
   max-width: 85px;
@@ -6238,14 +6213,6 @@ top: 0;
 }
 
 .service-three-top {
-  position: relative;
-}
-
-.service-three-content {
-  z-index: 2;
-  justify-content: flex-start;
-  align-items: center;
-  width: 100%;
   position: relative;
 }
 
@@ -7970,10 +7937,7 @@ padding-left: 0;
     padding-bottom: 0;
   }
 
-  .service-three-hero-main {
-    padding-top: 220px;
-    padding-bottom: 60px;
-  }
+
 
   .service-three-options-cards-right,
   .service-three-options-card-left {
@@ -9299,11 +9263,6 @@ padding-left: 0;
     flex-flow: column;
   
   }
-
-  .service-three-hero-main {
-    padding-top: 156px;
-  }
-
   .progress-main-top {
     flex-flow: column;
     justify-content: space-between;
