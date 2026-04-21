@@ -5122,20 +5122,6 @@ padding-left: 30px;
   inset: -92% 6% auto auto;
 }
 
-.contact-three-office-main {
-  grid-column-gap: 60px;
-  grid-row-gap: 60px;
-  justify-content: space-between;
-  align-items: flex-start;
-}
-
-.contact-three-office-right {
-  grid-column-gap: 30px;
-  grid-row-gap: 30px;
-  flex: 1;
-  grid-template-rows: auto;
-  max-width: 850px;
-}
 
 .contact-three-hero-border {
   background-color: #444872;
@@ -5161,9 +5147,7 @@ padding-left: 30px;
 
 .contact-three-form-text {
   width: 100%;
-  max-width: 490px;
 }
-
 
 .contact-three-hero-top {
   position: relative;
@@ -5183,30 +5167,16 @@ padding-left: 30px;
   height: auto;
 }
 
-.contact-three-form-left {
-  max-width: 544px;
-}
-
-.contact-three-office-left {
-  flex: 1;
-  max-width: 290px;
-}
-
 .contact-three-office-contact {
   margin-top: 40px;
 }
 .contact-three-office-contact a{font-size: 14px;}
 .contact-three-office-contact{gap: 15px;}
-.contact-three-main-image {
-  justify-content: center;
-  align-items: center;
-  display: flex;
-}
 
 .contact-three-hero {
   background-image: radial-gradient(circle at 63% 62%, #f449723d, #f4497200 20%),
     radial-gradient(circle at 30%, #b460f13b, #b460f100 19%);
-  padding-top: 88px;
+ 
   position: relative;
 }
 
@@ -5241,9 +5211,6 @@ padding-left: 30px;
   display: flex;
 }
 
-.contact-three-form-right {
-  max-width: 631px;
-}
 
 /*---------------------------------
     team member details css start 
@@ -7629,35 +7596,10 @@ padding-left: 0;
     display: none;
   }
 
-  .contact-three-office-main {
-    flex-flow: column;
-  }
 
-  .contact-three-office-right {
-    max-width: none;
-  }
-
-  .contact-three-form-left {
-    max-width: 700px;
-  }
-
-
-  .contact-three-office-left {
-    max-width: none;
-  }
-
-  .contact-three-hero {
-    padding-top: 68px;
-  }
 
   .contact-three-dots {
     display: none;
-  }
-
-
-
-  .contact-three-form-right {
-    max-width: none;
   }
 
 
@@ -9050,11 +8992,6 @@ padding-left: 0;
   .tp-tab-btn {
     padding-left: 20px;
     padding-right: 20px;
-  }
-
-  .contact-three-office-right {
-    grid-row-gap: 50px;
-    grid-template-columns: 1fr;
   }
 
 
