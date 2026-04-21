@@ -1792,9 +1792,6 @@ label {
   transition: all var(--transition-medium);
 }
 
-.heading-four.margin-bottom-ten {
-  margin-bottom: 10px;
-}
 
 .heading-four.progress-heading {
   max-width: 421px;
@@ -2918,9 +2915,6 @@ opacity: 0;
   transition: all var(--transition-medium);
 }
 
-.no-margin-bottom.contact-two-description {
-  max-width: 344px;
-}
 
 .no-margin-bottom.team-details-top-description {
   max-width: 324px;
@@ -4713,16 +4707,10 @@ padding-left: 30px;
 
 .contact-two-cta-wrap { 
   width: 100%;
-  max-width: 1149px;
 }
 
 .contact-two-cta-left {
   max-width: 218px;
-}
-
-.contact-two-hero-right {
-  flex: 1;
-  max-width: 630px;
 }
 
 .contact-two-hero-text-buttom {
@@ -4741,8 +4729,6 @@ padding-left: 30px;
 
 .contact-two-hero-left {
   z-index: 2;
-  flex: 1;
-  max-width: 723px;
   position: relative;
 }
 
@@ -4795,12 +4781,7 @@ padding-left: 30px;
   display: flex;
 }
 
-.contact-two-form-heading {
-  text-align: center;
-  justify-content: flex-start;
-  align-items: center;
-  max-width: 650px;
-}
+
 
 .line-shape {
   z-index: -1;
@@ -6534,12 +6515,7 @@ top: 0;
   outline: 3px #aeb2d7;
 }
 
-.landing-footer-button-wrap {
-  grid-column-gap: 30px;
-  grid-row-gap: 30px;
-  justify-content: center;
-  align-items: center;
-}
+
 
 .page-count {
   width: 33vw;
