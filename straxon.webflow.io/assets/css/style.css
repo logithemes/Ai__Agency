@@ -4587,19 +4587,13 @@ padding-left: 30px;
 /*---------------------------------
     contact  css start 
 ---------------------------------*/
-.contact-one-number {
-  grid-column-gap: 12px;
-  grid-row-gap: 12px;
-  margin-bottom: 10px;
-}
+
 
 .contact-one-paragraph {
   max-width: 280px;
 }
 
-.contact-one-hero-left-image {
-  max-width: 190px;
-}
+
 
 .form-input-wrapper {
   flex: 1;
@@ -4672,14 +4666,6 @@ padding-left: 30px;
   align-items: center;
 }
 
-.contact-one-hero-middle-wrapper {
-  flex: 1;
-  max-width: 842px;
-}
-
-.contact-one-hero-right-image {
-  max-width: 161px;
-}
 
 .contact-main-form {
   background-color: #161724;
@@ -7597,16 +7583,12 @@ padding-left: 0;
     max-width: none;
   }
 
-  .contact-main-right-wrapper,
-  .contact-main-left-wrapper {
+  .contact-main-right-wrapper {
     max-width: none;
   }
 
   .contact-one-hero-middle-wrapper {
     order: -1;
-    justify-content: center;
-    align-items: center;
-    max-width: none;
   }
 
   .contact-main-form {
