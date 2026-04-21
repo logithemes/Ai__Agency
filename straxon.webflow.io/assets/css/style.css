@@ -2996,7 +2996,7 @@ opacity: 0;
   max-width: 115px;
 }
 
-.heading-five.blog-one-name {
+.blog-one-information .blog-one-name {
   max-width: 300px;
 }
 
@@ -5473,9 +5473,7 @@ padding-left: 30px;
 }
 
 .blog-one-heading {
-  justify-content: flex-start;
   align-items: center;
-  margin-bottom: 40px;
 }
 
 
