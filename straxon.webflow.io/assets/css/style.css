@@ -5514,8 +5514,6 @@ padding-left: 30px;
 }
 
 .blog-cards-text {
-  grid-column-gap: 10px;
-  grid-row-gap: 10px;
   flex: 1;
   padding-left: 30px;
 }
@@ -5533,9 +5531,6 @@ padding-left: 30px;
   padding-right: 20px;
 }
 
-.blog-two-heading {
-  margin-bottom: 40px;
-}
 
 .blog-two-image {
   z-index: 10;
