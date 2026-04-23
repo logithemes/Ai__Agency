@@ -505,9 +505,7 @@ blockquote {
   font-style: italic;
   line-height: 30px;
 }
-figure {
-  margin: 0 0 10px;
-}
+
 
 figcaption {
   text-align: center;
@@ -2238,9 +2236,7 @@ label {
   position: relative;
 }
 
-.container.blog-top-container {
-  margin-bottom: 70px;
-}
+
 .container-small {
   max-width: 975px;
   padding-left: 15px;
@@ -5600,11 +5596,8 @@ top: 0;
 }
 
 .blog-author-top {
-  grid-column-gap: 10px;
-  grid-row-gap: 10px;
   justify-content: flex-start;
   align-items: center;
-  margin-bottom: 10px;
 }
 /*---------------------------------
     blog detail css start 
@@ -5614,9 +5607,6 @@ top: 0;
 }
 .related-blogs-wrap .heading-five{line-height: 28px;}
 .blog-details-date {
-  grid-column-gap: 7px;
-  grid-row-gap: 7px;
-  justify-content: flex-start;
   align-items: center;
 }
 
@@ -5653,7 +5643,6 @@ top: 0;
   background-color: #161724;
   border-radius: 20px;
   margin-top: 20px;
-  margin-bottom: 40px;
   padding: 40px 35px;
 }
 
@@ -7092,9 +7081,6 @@ top: 0;
     position: static;
   }
 
-  .container.blog-top-container {
-    margin-bottom: 40px;
-  }
 
   .home-one-service-cards {
     grid-column-gap: 5px;
@@ -7999,9 +7985,6 @@ padding-left: 0;
     padding-right: 50px;
   }
 
-  .overflow-hidden.tp-radius-30.mobile-radius-twenty {
-    border-radius: 20px;
-  }
 
   .home-one-cards {
     grid-column-gap: 35px;
