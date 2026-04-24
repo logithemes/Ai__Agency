@@ -305,6 +305,10 @@ th {
 }
 .tp-fs-10{font-size: var(--tp-fs-10);}
 .tp-fs-12{font-size: var(--tp-fs-12);}
+.text-sm {
+  font-size: 14px;
+  line-height: 24px;
+}
 .tp-fs-xxl{font-size: var(--tp-fs-xxl);}
 .tp-z-3{z-index: var(--tp-z-3);}
 .tp-radius-10{
@@ -2202,24 +2206,19 @@ label {
 /*----------------------------------------*/
 /*   container css start
 /*----------------------------------------*/
-.container {
-  max-width: 1320px;
-  padding-left: 15px;
-  padding-right: 15px;
-}
+
 .max-w-100 {
   max-width: 100%;
 }
 
-.container.navbar-three-menu-container {
+.navbar-three-menu-container {
   z-index: 5;
   width: 100%;
   position: relative;
 }
 .navbar-three .modal-backdrop.show{display:none}
 
-
-.container.navbar-three-container {
+.navbar-three-container {
   z-index: 500;
   position: relative;
 }
@@ -2231,9 +2230,7 @@ label {
   padding-right: 15px;
 }
 
-.container-large {
-  max-width: 1400px;
-}
+
 /*---------------------------------
    marquee css start 
 ---------------------------------*/
@@ -6616,7 +6613,6 @@ top: 0;
 
 .landing-hero-container {
   z-index: 3;
-  max-width: 860px;
   position: relative;
 }
 
