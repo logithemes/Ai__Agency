@@ -920,13 +920,10 @@ label {
 .tp-arrow-next {
   cursor: pointer;
   color: var(--white);
-  -webkit-tap-highlight-color: #0000;
-  tap-highlight-color: #0000;
-  -webkit-user-select: none;
-  user-select: none;
-  width: 80px;
+
+  width: 65px;
+  height: 65px;
   margin: auto;
-  font-size: 40px;
   position: absolute;
   inset: 0;
   overflow: hidden;
@@ -1276,8 +1273,6 @@ label {
   border-radius: 100%;
   justify-content: center;
   align-items: center;
-  width: 65px;
-  height: 65px;
   display: flex;
   inset: auto auto 27% 0%;
 }
@@ -1591,6 +1586,7 @@ label {
   font-family: Bebas Neue, sans-serif;
   font-size: clamp(40px, 10vw, 120px);
   line-height: 1;
+  display: flex;
 }
 .counter-text.counter-text-small {
   align-self: center;
@@ -1614,7 +1610,7 @@ label {
   inset: 0% auto 0% 0%;
 }
 
-.counter-border.counter-border-right {
+.counter-border-right {
   inset: 0% 0% 0% auto;
 }
 
@@ -1687,10 +1683,6 @@ label {
   position: relative;
 }
 
-.home-digital-solutions-text {
-  flex: 1;
-  max-width: 538px;
-}
 .home-digital-solutions-image {
   flex: 1;
   max-width: 590px;
@@ -2134,10 +2126,7 @@ label {
   margin-bottom: 0;
 }
 
-.home-one-service-cards-icon {
-  width: 80px;
-  height: 80px;
-}
+
 .home-one-service-cards {
   grid-column-gap: 15px;
   grid-row-gap: 15px;
@@ -2159,10 +2148,6 @@ label {
   transform: scale(0.5);
 }
 .home-one-service-cards:hover .home-one-service-cards-icon-overlay{transform: scale(1);transition: all var(--transition-medium);}
-.home-one-work-text-container {
-  margin-bottom: 70px;
-
-}
 
 .links-hover-effect {
   color: var(--menu-color);
@@ -2269,9 +2254,6 @@ label {
   grid-row-gap: 35px;
   padding-left: 35px;
   padding-right: 0;
-}
-.cilents-container {
-  max-width: 1200px;
 }
 
 .clients-marquee-train {
@@ -2517,7 +2499,6 @@ opacity: 0;
 }
 .work-container {
   z-index: 10;
-  max-width: 1290px;
   position: relative;
 }
 .home-one-portfolio-right {
@@ -2690,9 +2671,6 @@ opacity: 0;
   position: relative;
 }
 
-.home-one-hero-container {
-  max-width: 960px;
-}
 
 .newsletter-form {
   justify-content: flex-start;
@@ -7008,8 +6986,8 @@ top: 0;
   }
 
   .home-one-work-text-container {
-    margin-bottom: 55px;
-    position: static;
+  
+    position: relative;
   }
 
 
@@ -7031,7 +7009,7 @@ top: 0;
     margin-bottom: 30px;
   }
 
-  .home-digital-solutions-text,
+
   .text-capitalize.text-white.service-tag {
     max-width: none;
   }
@@ -7812,8 +7790,8 @@ padding-left: 0;
   }
 
   .home-one-counters-wrapper {
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 0;
+    padding-bottom: 0;
   }
 
 
@@ -7874,9 +7852,7 @@ padding-left: 0;
     height: 100px;
   }
 
-  .home-one-work-text-container {
-    margin-bottom: 35px;
-  }
+
 
   .portfolio-one-details {
     grid-column-gap: 60px;
