@@ -5499,11 +5499,6 @@ top: 0;
   transform: scale(1.2);
 }
 
-.blog-details-container {
-  max-width: 890px;
-  padding-left: 15px;
-  padding-right: 15px;
-}
 
 .details-author-image {
   border-radius: 100%;
@@ -5706,13 +5701,6 @@ top: 0;
   inset: 0% 0% auto auto;
 }
 
-.projects-marquee {
-  justify-content: flex-start;
-  align-items: flex-start;
-  padding-left: 15px;
-  padding-right: 15px;
-  display: flex;
-}
 
 .projects-details-border {
   background-color: #444872;
