@@ -2341,9 +2341,7 @@ label {
   width: 100%;
   position: relative;
 }
-.double-marquee-top-container {
-  max-width: 1080px;
-}
+
 .double-marquee-train {
   grid-column-gap: 45px;
   grid-row-gap: 45px;
@@ -2983,10 +2981,7 @@ opacity: 0;
   margin-top: -58.5px;
 }
 
-.home-two-hover-faq {
-  padding-left: 15px;
-  padding-right: 15px;
-}
+
 .home-faq-border {
   background-color: #444872;
   width: 1px;
@@ -3102,14 +3097,10 @@ opacity: 0;
 
   max-width: 252px;
 }
-.home-two-service-image-wrapper {
-  max-width: 520px;
-}
+
 
 .home-two-service-text {
   border-top: 1px solid var(--border-color);
-  flex: 1;
-  max-width: 591px;
 }
 .home-two-service-boxes {
   border-bottom: 1px solid var(--border-color);
@@ -3214,8 +3205,6 @@ opacity: 0;
   position: relative;
 }
 .home-two-choose-us-main {
-  padding-top: 80px;
-  padding-bottom: 90px;
   position: relative;
 }
 
@@ -6764,10 +6753,7 @@ top: 0;
     padding-top: 120px;
   }
 
-  .home-two-choose-us-main {
-    padding-top: 160px;
-    padding-bottom: 160px;
-  }
+
   .home-two-portfolio {
     padding-top: 145px;
     padding-bottom: 155px;
@@ -7117,9 +7103,6 @@ top: 0;
     padding-right: 40px;
   }
 
-  .home-two-service-image-wrapper {
-    max-width: none;
-  }
 
   .home-two-projects-boxes {
     grid-column-gap: 50px;
@@ -7156,10 +7139,6 @@ top: 0;
     width: 100%;
   }
 
-  .home-two-choose-us-main {
-    padding-top: 70px;
-    padding-bottom: 70px;
-  }
 
   .home-two-testimonial-main {
     flex-flow: column;
@@ -7167,7 +7146,7 @@ top: 0;
     align-items: center;
     height: auto;
     padding-top: 30px;
-    position: static;
+    position: relative;
   }
 
 
@@ -7183,8 +7162,7 @@ top: 0;
   }
 
 
-  .footer-two-form,
-  .home-two-service-text {
+  .footer-two-form{
     max-width: none;
   }
 
