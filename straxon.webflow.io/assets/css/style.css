@@ -1619,7 +1619,7 @@ label {
   background-image: none;
 }
 .counter {
-  justify-content: flex-start;
+  justify-content: center;
   align-items: flex-start;
   height: clamp(40px, 10vw, 120px);
   overflow: hidden;
@@ -2196,7 +2196,7 @@ label {
   max-width: 100%;
 }
 
-.navbar-three-menu-container {
+.navbar-three-menu-wrap {
   z-index: 5;
   width: 100%;
   position: relative;
@@ -3637,12 +3637,6 @@ opacity: 0;
 }
 
 
-.home-three-hero-description {
-  max-width: 501px;
-  margin-bottom: 45px;
-  position: relative;
-}
-
 .home-three-hero-image {
   max-width: 480px;
 }
@@ -3683,7 +3677,6 @@ opacity: 0;
   justify-content: flex-start;
   align-items: center;
   max-width: 237px;
-  margin-top: 5px;
   padding: 10px;
   font-size: 18px;
 }

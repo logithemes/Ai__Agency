@@ -45,7 +45,7 @@
 				header area start
 				==================================================== -->
     <section class="navbar-three w-100 pt-20 pb-20">
-      <div class="layout-container container navbar-three-container tp-container">
+      <div class=" navbar-three-container container-fluid">
         <div class="tp-flex-horizontal navbar-three-main">
           <a href="index.html" class="tp-inline-block">
             <img width="140" height="30" alt="logo-img" src="assets/img/logo/logo.svg" loading="lazy">
@@ -59,8 +59,9 @@
       </div>
       <div class="navbar-three-main-menu offcanvas
        offcanvas-top " tabindex="-1" id="mobileMenu" aria-labelledby="mobileMenuLabel">
-        <div
-          class="offcanvas-body overflow-hidden p-0 layout-container container navbar-three-menu-container tp-container">
+        <div class="container-fluid">
+          <div
+          class="offcanvas-body overflow-hidden p-0  navbar-three-menu-wrap ">
           <div class="tp-flex-horizontal navbar-three-menu-items modal-content bg-transparent h-100">
             <div class="navbar-three-boxes modal-body">
               <div class="navbar-three-dropdown move-two ">
@@ -257,13 +258,14 @@
             </div>
           </div>
         </div>
+        </div>
       </div>
     </section>
     <!-- ===================================================
 				Home three hero
 				==================================================== -->
     <section class="home-three-hero  position-relative pt-200 md-pt-60">
-      <div class="layout-container container home-three-hero-container position-relative tp-container ">
+      <div class="container">
       <div class=" home-three-hero-main row  position-relative ">
 
   <div class="col-12 col-md-6 col-lg-5">
@@ -284,16 +286,21 @@
       </div>
 
       <div class="tp-flex-vertical home-three-hero-heading wow fadeInUp mt-25 mb-25" data-wow-duration="0.5s">
-        <div class="heading-one">We</div>
-        <div class="heading-one">design</div>
-        <div class="heading-one">Creative</div>
-
-        <img width="50" height="59" alt="Icon" src="assets/img/icons/flower.svg" loading="lazy"
-          class="flower mt-0 mx-3 rotate-ani">
-
-        <div class="heading-one text-gradiant">Websites</div>
-
-        <div class="tp-flex-horizontal heading-video">
+        <h1 class="heading-one mt-0 mb-0">
+  <span>We</span>
+  <span>design</span>
+  <span>Creative</span>
+     <span class="heading-one text-gradiant">Websites</span>
+  <img 
+    width="50" 
+    height="59" 
+    alt="Icon" 
+    src="assets/img/icons/flower.svg" 
+    loading="lazy"
+    class="flower mt-0 mx-3 rotate-ani">
+</h1>
+      
+        <div class="tp-flex-horizontal heading-video mt-20">
           <a href="#" class="no-shrink d-flex align-items-center position-relative justify-content-center">
             <img width="73" height="73" alt="Work Image" src="assets/img/hero/home-3-vid-prev.webp" loading="lazy"
               class="border-radius-five">
@@ -309,7 +316,7 @@
         <img width="104" height="89" alt="Icon" src="assets/img/shapes/line-3.svg" loading="lazy"
           class="arrow-icon">
         <p class="theme-pb-0 wow fadeInUp" data-wow-duration="0.8s">
-          Lorem ipsum dolor sit amet consetetur adipiscing elit vestibulum rhoncus efficitur enon hendrerit.
+          Lorem ipsum dolor sit amet consetetur adipiscing elit <br class="d-md-block d-none"> vestibulum rhoncus efficitur enon hendrerit.
         </p>
       </div>
 
@@ -342,7 +349,7 @@
 				what we do
 				==================================================== -->
   <section class="home-three-digital pt-80 md-pb-60 pb-90 overflow-hidden">
-    <div class="layout-container container tp-container">
+    <div class="container">
       <div class="row">
         <div class="col-12 mx-auto mb-60 md-mb-40">
         <div class="section-subtitle tp-flex-horizontal small-tag-wrapper justify-content-center wow fadeInUp" data-wow-duration="0.8s">
@@ -400,7 +407,7 @@
 				passion and skills
 				==================================================== -->
   <section>
-    <div class="layout-container container tp-container">
+    <div class="container">
       <div class="tp-flex-horizontal home-three-skills row">
        <div class="col-12 col-sm-8">
          <div class="skills-left-texts text-center text-sm-start">
@@ -415,7 +422,7 @@
         </div>
        </div>
        <div class="col-12  col-sm-4 d-flex justify-content-center align-items-center pt-4 pt-sm-0 d-sm-block">
-         <div class="tp-flex-vertical skills-right-texts ">
+         <div class="tp-flex-vertical skills-right-texts px-0 px-md-5">
           <div class="heading-five pb-3 text-center w-100 text-sm-start">skills</div>
           <div class="tp-flex-vertical skills-options justify-content-center align-items-center justify-content-sm-start align-items-sm-start">
             <a href="service-one.html" class="skills-options-wrapper tp-inline-block hover-line">
@@ -444,7 +451,7 @@
 			   Marquee clients
 			==================================================== -->
   <section class="clients-two pt-80 pb-80 md-pt-60 md-pb-60">
-    <div class="layout-container container tp-container">
+    <div class="container">
       <div class="tp-flex-horizontal clients-two-main">
         <div class="clients-two-train base-transform marquee-train-left">
           <div class="clients-two-boxes">
@@ -551,14 +558,17 @@
   <section class=" overflow-hidden">
     <div class="container-fluid">
       <div class="tp-flex-vertical home-three-service-main">
-        <div class="col-md-8 col-11 text-center mx-auto">
-          <div class="section-subtitle tp-flex-horizontal small-tag-wrapper justify-content-center wow fadeInUp" data-wow-duration="0.8s">
+        <div class="row">
+          <div class="col-md-8 col-11 text-center mx-auto">
+            <div class="section-subtitle tp-flex-horizontal small-tag-wrapper justify-content-center wow fadeInUp" data-wow-duration="0.8s">
             <div class="dot"></div>
             <div class="text-capitalize">our service</div>
           </div>
           <h2 class="section-title-heading mt-25  wow fadeInUp" data-wow-duration="0.8s">Empower Your Brand with <span
               class="text-gradiant">Our Expertise</span>
           </h2>
+        </div>
+        </div>
         </div>
       <div class="home-three-service-boxes row">
 
@@ -682,7 +692,7 @@
 			 Accordion area
 			==================================================== -->
     <section class="home-three-faq pb-90 md-pb-160">
-      <div class="layout-container container tp-container">
+      <div class="container">
         <div class="tp-flex-horizontal home-three-faq-main row g-4">
 
   <!-- LEFT SIDE -->
@@ -759,7 +769,7 @@
 			  recent portfolio work
 			==================================================== -->
     <section class="home-three-work">
-      <div class="layout-container container tp-container">
+      <div class="container">
         <div class="tp-flex-vertical home-three-work-main align-items-center position-relative pt-75 md-pt-50 sm-pt-10 xxl-pt-140">
           <div class="home-three-work-background"></div>
           <div class="tp-flex-vertical home-three-work-text mb-80 md-mb-60">
@@ -854,7 +864,7 @@
 	    Home three testimonial
 			==================================================== -->
   <section class="home-three-testimonial  pt-80 theme- md-pt-60 md-pb-70 xxl-pt-150 xxl-pb-65 position-relative overflow-hidden">
-    <div class="layout-container container home-three-testimonial-container tp-container">
+    <div class="container">
       <div class="tp-flex-vertical home-testimonial-main">
         <div class="tp-flex-vertical home-three-testimonial-top mb-50 md-mb-30">
           <div class="section-subtitle tp-flex-horizontal small-tag-wrapper justify-content-center">
@@ -969,19 +979,11 @@
 				==================================================== -->
     <section class=" footer-one  pt-85 md-pt-65 xxl-pt-150 pb-20">
     <div class="layout-container footer-cta-container pl-15 pr-15 tp-container">
-      <div class="tp-flex-vertical footer-cta-box pb-70 md-pb-60 xxl-pb-150  justify-content-start align-items-center text-center section-title wow fadeInUp" data-wow-duration="0.8s">
-        <h2 class="section-title-heading mt-0 mb-20">let�s get started <span class="text-gradiant">together</span>
-        </h2>
-        <div class="mb-30">Lorem ipsum dolor consectetur adipiscing.</div>
-        <div  class="button-wrapper">
-          <a href="contact-one.html" class="tp-btn text-white">contact us</a>
-          <div class="button-border-effect"></div>
-        </div>
-      </div>
+     
     </div>
-    <div class="layout-container container tp-container">
-    <div class="footer-one-border"></div>
-    <div class="tp-flex-horizontal footer-one-main pt-65 pb-70 wow fadeInUp" data-wow-duration="0.8s">
+    <div class="container">
+ 
+    <div class="tp-flex-horizontal footer-one-main  pb-70 wow fadeInUp" data-wow-duration="0.8s">
         <div class="tp-flex-vertical footer-one-left-box">
           <h3 class="mt-0 text-white">get in touch with us</h3>
           <div class="tp-flex-horizontal footer-one-email-box">
