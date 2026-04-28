@@ -328,6 +328,32 @@ th {
 .pl-15{padding-left: 15px;}
 .pr-15{padding-right: 15px;}
 
+/*---------------------------------
+  Border utilities css start 
+---------------------------------*/
+.tp-border {
+  border: 1px solid var(--border-color);
+}
+
+.tp-border-top {
+  border-top: 1px solid var(--border-color);
+}
+
+.tp-border-bottom {
+  border-bottom: 1px solid var(--border-color);
+}
+
+.tp-border-left {
+  border-left: 1px solid var(--border-color);
+}
+
+.tp-border-right {
+  border-right: 1px solid var(--border-color);
+}
+
+.tp-border-left-important {
+  border-left: 1px solid var(--border-color) !important;
+}
 
 .row-gap-20{row-gap: 20px;}
 .row-gap-30{row-gap: 30px;}
@@ -1269,7 +1295,7 @@ label {
    home two review css start 
 ---------------------------------*/
 .left-arrow {
-  border: 1px solid #2a2d4a;
+  border: 1px solid var(--border-color-two);
   border-radius: 100%;
   justify-content: center;
   align-items: center;
@@ -1334,7 +1360,7 @@ label {
 
 .home-two-testimonial-backdrop {
   background-image: linear-gradient(#161724, #16172400);
-  border-bottom: 1px solid #444872;
+  border-bottom: 1px solid var(--border-color);
   border-radius: 30px 30px 0 0;
   width: 100%;
   max-width: 1290px;
@@ -1625,8 +1651,8 @@ label {
   overflow: hidden;
 }
 .about-one-counter-marquee {
-  border-top: 1px solid #444872;
-  border-bottom: 1px solid #444872;
+  border-top: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
 
 }
 
@@ -1652,7 +1678,7 @@ label {
 }
 
 .about-one-counter-box.counter-bottom-border {
-  border-bottom: 1px solid #444872;
+  border-bottom: 1px solid var(--border-color);
 }
 .about-one-counter-marquee-train {
   grid-column-gap: 60px;
@@ -1752,7 +1778,7 @@ label {
 }
 
 .right-arrow {
-  border: 1px solid #2a2d4a;
+  border: 1px solid var(--border-color-two);
   border-radius: 100%;
   justify-content: center;
   align-items: center;
@@ -1922,7 +1948,7 @@ label {
 }
 .footer-submit-button {
   background-color: #3898ec00;
-    border-left: 1px solid #444872 !important;
+    border-left: 1px solid var(--border-color) !important;
     right:5px;
 }
 .footer-contact-border {
@@ -2013,7 +2039,7 @@ label {
 }
 
 .footer-bottm-border {
-  border-top: 1px solid #444872;
+  border-top: 1px solid var(--border-color);
 }
 /*---------------------------------
     service css start 
@@ -2092,7 +2118,7 @@ label {
 
 
 .story-line {
-  background-color: #2a2d4a;
+  background-color: var(--border-color-two);
  
   width: 1px;
   margin-top: 5px;
@@ -2413,8 +2439,8 @@ label {
 }
    
 .about-one-client-marquee-wrap {
-  border-top: 1px solid #444872;
-  border-bottom: 1px solid #444872;
+  border-top: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
   position: relative;
 }
 .contact-text-marquee-wrapper {
@@ -2443,7 +2469,7 @@ label {
 
 
 .projects-marquee-main-wrap {
-  border-top: 1px solid #444872;
+  border-top: 1px solid var(--border-color);
   justify-content: flex-start;
   align-items: center;
   width: 100%;
@@ -2462,7 +2488,7 @@ label {
 ---------------------------------*/
 .navbar-one {
   background-color: #ddd0;
-  border-bottom: 1px solid #444872;
+  border-bottom: 1px solid var(--border-color);
   position: relative;
 }
 
@@ -2658,7 +2684,7 @@ opacity: 0;
 }
 
 .circle-icon {
-  border: 1px solid #444872;
+  border: 1px solid var(--border-color);
   border-radius: 100%;
   flex: none;
   justify-content: center;
@@ -2764,7 +2790,7 @@ opacity: 0;
 
 
 .menu-border {
-  background-color: #2a2d4a;
+  background-color: var(--border-color-two);
   width: 1px;
   position: absolute;
   inset: 0% auto 0% 32%;
@@ -2983,7 +3009,7 @@ opacity: 0;
 
 
 .home-faq-border {
-  background-color: #444872;
+  background-color: var(--border-color);
   width: 1px;
   height: 100%;
 }
@@ -3004,7 +3030,7 @@ opacity: 0;
 
 .faq-border {
   cursor: pointer;
-  border-bottom: 1px solid #444872;
+  border-bottom: 1px solid var(--border-color);
 }
 .faq-answers {
   overflow: hidden;
@@ -3016,7 +3042,7 @@ opacity: 0;
 }
 
 .accordion-line {
-  background-color: #444872;
+  background-color: var(--border-color);
   width: 0;
   height: 1px;
   transition:  all var(--transition-medium);
@@ -3246,7 +3272,7 @@ opacity: 0;
   text-transform: capitalize;
   background-color: #fff0;
   border: 1px #000;
-  border-bottom: 1px solid #444872;
+  border-bottom: 1px solid var(--border-color);
   min-height: 80px;
   margin-bottom: 0;
   padding: 0;
@@ -3277,7 +3303,7 @@ opacity: 0;
   text-transform: capitalize;
   background-color: #fff0;
   border: 1px #000;
-  border-bottom: 1px solid #444872;
+  border-bottom: 1px solid var(--border-color);
   height: 50px;
   margin-bottom: 0;
   padding: 0 0 25px;
@@ -3431,7 +3457,7 @@ opacity: 0;
 
 .navbar-three {
   z-index: 999;
-  border-bottom: 1px solid #444872;
+  border-bottom: 1px solid var(--border-color);
   position: absolute;
   inset: 0% 0% auto;
   background-color: #050610;
@@ -3439,7 +3465,7 @@ opacity: 0;
 .navbar-three-menu-right {
   grid-column-gap: 40px;
   grid-row-gap: 40px;
-  border-left: 1px solid #444872;
+  border-left: 1px solid var(--border-color);
   flex: 1;
   justify-content: center;
   align-items: flex-start;
@@ -3484,7 +3510,7 @@ opacity: 0;
 
 .home-three-service-cards {
   z-index: 3;
-  border-bottom: 1px solid #444872;
+  border-bottom: 1px solid var(--border-color);
   max-width: 1290px;
 
   
@@ -3497,7 +3523,7 @@ opacity: 0;
 }
 
 .home-three-service-arrow {
-  border: 1px solid #444872;
+  border: 1px solid var(--border-color);
   border-radius: 100%;
   min-width: 50px;
   min-height: 50px;
@@ -3550,7 +3576,7 @@ opacity: 0;
 
 
 .top-border {
-  background-color: #444872;
+  background-color: var(--border-color);
   height: 1px;
   position: absolute;
   inset: 0% 0% auto;
@@ -3672,7 +3698,7 @@ opacity: 0;
   grid-column-gap: 20px;
   grid-row-gap: 20px;
   background-color: #131526;
-  border: 1px solid #3f436b;
+  border: 1px solid var(--border-color);
   border-radius: 5px;
   justify-content: flex-start;
   align-items: center;
@@ -3773,7 +3799,7 @@ opacity: 0;
 .skills-tag {
   grid-column-gap: 10px;
   grid-row-gap: 10px;
-  border: 1px solid #444872;
+  border: 1px solid var(--border-color);
   border-radius: 60px;
   align-items: center;
   padding: 6px 16px;
@@ -3833,7 +3859,7 @@ opacity: 0;
 ---------------------------------*/
 .input-field-three {
   background-color: #fff0;
-  border: 1px solid #444872;
+  border: 1px solid var(--border-color);
   border-radius: 60px;
   height: 50px;
   margin-bottom: 0;
@@ -3895,7 +3921,7 @@ opacity: 0;
 .form-input-one {
   color: var(--body-font-color);
   background-color: #fff0;
-  border: 1px solid #444872;
+  border: 1px solid var(--border-color);
   border-radius: 60px;
   width: 100%;
   height: 46px;
@@ -3974,7 +4000,7 @@ opacity: 0;
 }
 .team-members-cards:hover .team-members-social{transform: translateX(0);}
 .team-hero-border {
-  background-color: #444872;
+  background-color: var(--border-color);
   width: 100%;
   height: 1px;
 }
@@ -4018,7 +4044,7 @@ opacity: 0;
 
 
 .team-horizental-line {
-  background-color: #444872;
+  background-color: var(--border-color);
   width: 100%;
   max-width: 1290px;
   height: 1px;
@@ -4124,7 +4150,7 @@ opacity: 0;
 }
 
 .mission-check-icon {
-  border: 1px solid #444872;
+  border: 1px solid var(--border-color);
   border-radius: 100%;
   justify-content: center;
   align-items: center;
@@ -4295,7 +4321,7 @@ opacity: 0;
 
 .about-two-hero-text {
   border-top: 1px solid var(--border-color);
-  border-bottom: 1px solid #444872;
+  border-bottom: 1px solid var(--border-color);
   padding-top: 5px;
   padding-bottom: 5px;
   position: absolute;
@@ -4324,8 +4350,8 @@ opacity: 0;
 }
 
 .process-content {
-  border-top: 1px solid #444872;
-  border-bottom: 1px solid #444872;
+  border-top: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
   padding-left: 15px;
   padding-right: 30px;
 }
@@ -4334,7 +4360,7 @@ opacity: 0;
   border-top-style: none;
 }
 .process-line {
-  background-color: #444872;
+  background-color: var(--border-color);
   flex-flow: column;
   justify-content: center;
   width: 1px;
@@ -4408,7 +4434,7 @@ padding-left: 30px;
 }
 
 .about-three-hero-border-bottom {
-  background-color: #444872;
+  background-color: var(--border-color);
   width: 100%;
   height: 1px;
   position: absolute;
@@ -4442,7 +4468,7 @@ padding-left: 30px;
 }
 
 .about-progress-bar-inner {
-  background-color: #444872;
+  background-color: var(--border-color);
   border-radius: 60px;
   justify-content: flex-start;
   align-items: center;
@@ -4545,7 +4571,7 @@ padding-left: 30px;
 .contact-one-textarea {
   color: #72769e;
   background-color: #fff0;
-  border: 1px solid #444872;
+  border: 1px solid var(--border-color);
   border-radius: 30px;
   min-height: 126px;
   margin-bottom: 0;
@@ -4621,8 +4647,8 @@ padding-left: 30px;
 }
 
 .contact-one-informations.contact-one-information-two {
-  border-left: 1px solid #444872;
-  border-right: 1px solid #444872;
+  border-left: 1px solid var(--border-color);
+  border-right: 1px solid var(--border-color);
   padding-left: 40px;
 }
 
@@ -5056,7 +5082,7 @@ padding-left: 30px;
 
 
 .contact-three-hero-border {
-  background-color: #444872;
+  background-color: var(--border-color);
   width: 100%;
   height: 1px;
   position: absolute;
@@ -5072,7 +5098,7 @@ padding-left: 30px;
 }
 
 .contact-hero-vertical-border {
-  background-color: #444872b3;
+  background-color: rgba(68, 72, 114, 0.7);
   width: 1px;
   height: 100%;
 }
@@ -5188,7 +5214,7 @@ padding-left: 30px;
 }
 
 .team-vertical-line {
-  background-color: #444872;
+  background-color: var(--border-color);
   width: 1px;
   height: 100%
 }
@@ -5224,8 +5250,8 @@ padding-left: 30px;
 }
 
 .team-member-about {
-  border-top: 1px solid #444872;
-  border-bottom: 1px solid #444872;
+  border-top: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
   justify-content: flex-start;
   align-items: center;
   height: 78px;
@@ -5367,7 +5393,7 @@ padding-left: 30px;
 .blog-two-cards-author {
   grid-column-gap: 8px;
   grid-row-gap: 8px;
-  border-right: 1px solid #444872;
+  border-right: 1px solid var(--border-color);
   flex: 1;
   max-width: 191px;
   padding-right: 20px;
@@ -5394,7 +5420,7 @@ top: 0;
 }
 
 .border-last-item:last-child {
-  border-bottom: 1px solid #444872;
+  border-bottom: 1px solid var(--border-color);
 }
 
 
@@ -5522,8 +5548,8 @@ top: 0;
 }
 
 .blog-details-author-wrap {
-  border-top: 1px solid #444872;
-  border-bottom: 1px solid #444872;
+  border-top: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
   padding-top: 30px;
   padding-bottom: 30px;
 }
@@ -5587,7 +5613,7 @@ top: 0;
 }
 
 .projects-hero-border {
-  background-color: #444872;
+  background-color: var(--border-color);
   min-width: 26%;
   height: 1px;
   margin-top: 12px;
@@ -5605,7 +5631,7 @@ top: 0;
 }
 
 .clients-logo-wrap {
-  border: 1px solid #444872;
+  border: 1px solid var(--border-color);
   border-radius: 5px;
   justify-content: center;
   align-items: center;
@@ -5689,7 +5715,7 @@ top: 0;
 
 
 .projects-card-border {
-  background-color: #444872;
+  background-color: var(--border-color);
   width: 1px;
   height: 100%;
   position: absolute;
@@ -5698,7 +5724,7 @@ top: 0;
 
 
 .projects-details-border {
-  background-color: #444872;
+  background-color: var(--border-color);
   width: 100%;
   height: 1px;
   position: absolute;
@@ -5948,7 +5974,7 @@ top: 0;
 }
 
 .service-options-link {
-  border: 1px solid #444872;
+  border: 1px solid var(--border-color);
   border-radius: 100%;
   flex: none;
   justify-content: center;
@@ -6327,7 +6353,7 @@ top: 0;
 }
 
 .innerpages-border {
-  background-color: #444872;
+  background-color: var(--border-color);
   width: 192px;
   height: 1px;
 
@@ -7130,7 +7156,7 @@ top: 0;
   .home-two-testimonial-container {
     grid-column-gap: 40px;
     grid-row-gap: 40px;
-    border-bottom: 1px solid #444872;
+    border-bottom: 1px solid var(--border-color);
     position: static;
   }
   .footer-two-left-wrapper {
@@ -7264,7 +7290,7 @@ top: 0;
 
   .about-one-counter-box.counter-bottom-border {
     border-bottom-style: none;
-    border-right: 1px solid #444872;
+    border-right: 1px solid var(--border-color);
   }
 
   .about-two-experience-list {
@@ -7566,18 +7592,18 @@ padding-left: 0;
 
 
   .service-three-options-main {
-    border-bottom: 1px solid #444872;
+    border-bottom: 1px solid var(--border-color);
   }
 
 
   .service-three-options-cards {
-    border-top: 1px solid #444872;
+    border-top: 1px solid var(--border-color);
     border-bottom-style: none;
     padding: 40px 20px;
   }
 
   .service-three-options-cards.cell-even {
-    border-left: 1px solid #444872;
+    border-left: 1px solid var(--border-color);
   }
 
   .service-three-progress-right {
@@ -7968,12 +7994,12 @@ padding-left: 0;
   }
 
   .home-three-service-cards.home-three-service-cards-one {
-    border-right: 1px solid #444872;
+    border-right: 1px solid var(--border-color);
   }
 
   .home-three-service-cards.home-three-service-cards-three {
     border-bottom-style: none;
-    border-right: 1px solid #444872;
+    border-right: 1px solid var(--border-color);
   }
 
   .home-three-service-cards.home-three-service-cards-four {
