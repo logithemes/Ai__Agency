@@ -1494,12 +1494,6 @@ label {
   right: 0;
 }
 
-.home-three-testimonial-content {
-  grid-column-gap: 40px;
-  grid-row-gap: 40px;
-  justify-content: space-between;
-  align-items: center;
-}
 
 .about-three-testimonial-left {
 
@@ -4464,7 +4458,6 @@ padding-left: 30px;
 
 .about-three-content {
   z-index: 2;
-  max-width: 1260px;
 }
 
 .about-progress-bar-inner {
@@ -5101,6 +5094,7 @@ padding-left: 30px;
   background-color: rgba(68, 72, 114, 0.7);
   width: 1px;
   height: 100%;
+  z-index: 1;
 }
 
 .contact-three-form-text {
@@ -7742,7 +7736,6 @@ padding-left: 0;
 .work-three-cards-inner-wrapper{padding-left: 15px;}
   .recent-work-boxes{grid-template-columns: 1fr;}
   .blog-image-wrapper{height: auto;}
-  .home-three-testimonial-content{flex-direction: column;}
   .pr_slides-cards {
     padding: 0 15px;
   }
@@ -8065,9 +8058,7 @@ padding-left: 0;
     top: 58%;
   }
 
-  .home-three-testimonial-content {
-    flex-flow: column;
-  }
+
 
   .home-three-work-background {
     display: none;
