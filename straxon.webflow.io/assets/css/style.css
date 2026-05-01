@@ -6456,6 +6456,8 @@ top: 0;
   width: 100%;
   padding: 120px 90px 110px;
   transform-origin: center center;
+  max-width: 880px;
+  margin: 0 auto;
 }
 
 .header-footer-box-content {
