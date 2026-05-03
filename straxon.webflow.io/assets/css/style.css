@@ -1276,9 +1276,6 @@ label {
 }
 
 
-.margin-bottom-twelve {
-  margin-bottom: 12px;
-}
 .margin-bottom-three {
   margin-bottom: 3px;
 }
@@ -2995,8 +2992,6 @@ padding: 0;
 .faq-top .dropdown-icon {
   transition: transform 0.3s ease;
 }
-
-/* when open (NOT collapsed) */
 .faq-top:not(.collapsed) .dropdown-icon {
   transform: rotate(180deg);
 }
@@ -3039,6 +3034,9 @@ padding: 0;
 .faq-text {
   max-width: 550px;
   margin-bottom: 24px;
+}
+.navbar-toggle-icon i {
+  transition: transform 0.3s ease;
 }
 
 .accordion-line {
@@ -4146,8 +4144,7 @@ padding: 0;
 }
 
 .text-change-opacity {
-  grid-column-gap: 15px;
-  grid-row-gap: 15px;
+
   flex-flow: column;
   justify-content: space-between;
   align-items: flex-start;

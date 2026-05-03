@@ -270,13 +270,13 @@ wordScrollAnimation('.home-popup-video', '.home-popup-video-desc');
         return totalWidth;
     }
 
-    document.querySelectorAll(".marquee-train-left").forEach((train) => {
+    document.querySelectorAll(".marquee-train-left, .home-three-marquee").forEach((train) => {
         if (!train) return;
         const trainWidth = fillWithClones(train);
         if (trainWidth > 0) {
             gsap.to(train, {
                 x: `-=${trainWidth}`,
-                duration: 50,
+                duration: 100,
                 ease: "none",
                 repeat: -1,
                 modifiers: {
@@ -390,8 +390,8 @@ wordScrollAnimation('.home-popup-video', '.home-popup-video-desc');
     /* ===============================
        TESTIMONIAL HEADING
     =============================== */
-    const testimonialSection = document.querySelector(".home-two-testimonial");
-    const testimonialHeading = document.querySelector(".home-two-testimonial-heading");
+    const testimonialSection = document.querySelector(".home-two-testimonial, .home-three-testimonial");
+    const testimonialHeading = document.querySelector(".home-two-testimonial-heading, .testimonial-three-big-text");
     
     if (testimonialSection && testimonialHeading) {
         gsap.set(testimonialHeading, { x: "100%" });
