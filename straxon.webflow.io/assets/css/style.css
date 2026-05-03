@@ -2849,6 +2849,7 @@ padding: 0;
 }
 .navbar-three-dropdown {
   width: 100%;
+  padding: 0;
 }
 .navbar-dropdown-toggle {
   background-color: #ddd0;
