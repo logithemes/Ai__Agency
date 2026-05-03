@@ -989,7 +989,7 @@ label {
   position: relative;
    padding: 30px 15px 30px 10px;
    transition: var(--transition-medium);
-  margin-right: 20px;
+  margin-right: 0;
 }
 .menu-item:hover .menu-dp-icon{transform: rotate(180deg);transition: var(--transition-medium);}
 
@@ -1005,7 +1005,7 @@ label {
   text-decoration: none;
   position: relative;
 }
-
+.main-menu-section{position: relative;}
 .menu-item-toggle {
   -webkit-user-select: none;
   user-select: none;
@@ -1106,11 +1106,7 @@ label {
   cursor: pointer;
 }
 
-.main-menu {
-  float: right;
-  position: relative;
-  justify-self: center;
-}
+
 .main-menu{display: block;}
 .humburger-main {
   float: right;
@@ -1151,7 +1147,7 @@ label {
   transform: translateY(0);
    
 }
- 
+ .main-menu-section{position: absolute;}
 }
 
 /*---------------------------------
@@ -2800,14 +2796,7 @@ opacity: 0;
 .menu-border.menu-border-two {
   inset: 0% 32% 0% auto;
 }
-.navbar-one-wrapper {
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
-  grid-template-rows: auto;
-  grid-template-columns: 150px 1fr 150px;
-  grid-auto-columns: 1fr;
-  display: grid;
-}
+
 
 
 .navbar-one-wrapper .tp-dropdown-toggle::after {
@@ -6695,8 +6684,8 @@ top: 0;
   .landing-footer-float-image-two {
     display: block;
   }
-
-
+.menu-item{margin-right: 20px;}
+ 
 .contact-three-office-contact{gap: 0;}
  
 
@@ -7013,16 +7002,7 @@ top: 0;
   }
 
 
-  .navbar-one-wrapper {
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-    grid-template-rows: auto;
-    grid-template-columns: 1fr 1fr;
-    grid-auto-columns: 1fr;
-    justify-content: space-between;
-    align-items: center;
-    display: grid;
-  }
+
 
   .circle-icon {
     width: 60px;
