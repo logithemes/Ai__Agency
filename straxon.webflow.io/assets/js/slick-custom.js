@@ -157,11 +157,6 @@ if ($('.counters-wrapper').length) {
     nextArrow: $('.tp-arrow-next'),
 });
 
-// HOME ONE WHY CHOOSE
-$('.home-digital-options-background').hover(function() {
-  $('.home-digital-options-background').removeClass('active');
-  $(this).addClass('active');
-});
 
 
 // 

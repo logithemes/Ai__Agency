@@ -4,45 +4,98 @@ document.addEventListener("DOMContentLoaded", function () {
     /* ===============================
        WORD SCROLL ANIMATION
     =============================== */
-    function wordScrollAnimation(sectionSelector, textSelector) {
-        const section = document.querySelector(sectionSelector);
-        if (!section) return;
+    // function wordScrollAnimation(sectionSelector, textSelector) {
+    //     const section = document.querySelector(sectionSelector);
+    //     if (!section) return;
 
-        const textEl = section.querySelector(textSelector);
-        if (!textEl) return;
+    //     const textEl = section.querySelector(textSelector);
+    //     if (!textEl) return;
 
-        const words = textEl.innerText.split(" ");
+    //     const words = textEl.innerText.split(" ");
 
-        textEl.innerHTML = words.map(word =>
-            `<span class="word">${word}</span><span class="space"> </span>`
-        ).join("");
+    //     textEl.innerHTML = words.map(word =>
+    //         `<span class="word">${word}</span><span class="space"> </span>`
+    //     ).join("");
 
-        const wordEls = textEl.querySelectorAll(".word");
-        if (wordEls.length === 0) return;
+    //     const wordEls = textEl.querySelectorAll(".word");
+    //     if (wordEls.length === 0) return;
 
-        gsap.timeline({
-            scrollTrigger: {
-                trigger: section,
-                start: "top 80%",
-                end: "top 20%",
-                scrub: true
-            }
-        }).from(wordEls, {
-            opacity: 0,
-            color: "#ffffff",
-            stagger: 0.05,
-            ease: "none"
-        });
-    }
+    //     gsap.timeline({
+    //         scrollTrigger: {
+    //             trigger: section,
+    //             start: "top 80%",
+    //             end: "top 20%",
+    //             scrub: true
+    //         }
+    //     }).from(wordEls, {
+    //         opacity: 0,
+    //         color: "#ffffff",
+    //         stagger: 0.05,
+    //         ease: "none"
+    //     });
+    // }
 
-    /* CALL WORD SCROLL FUNCTIONS - WITH NULL CHECKS */
-    if (document.querySelector('.service-three-connection')) {
-        wordScrollAnimation('.service-three-connection', '.service-three-text');
-    }
+    // /* CALL WORD SCROLL FUNCTIONS - WITH NULL CHECKS */
+    // if (document.querySelector('.service-three-connection')) {
+    //     wordScrollAnimation('.service-three-connection', '.service-three-text');
+    // }
     
-    if (document.querySelector('.home-popup-video')) {
-        wordScrollAnimation('.home-popup-video', '.home-popup-video-desc');
-    }
+    // if (document.querySelector('.home-popup-video')) {
+    //     wordScrollAnimation('.home-popup-video', '.home-popup-video-desc');
+    // }
+
+    gsap.registerPlugin(ScrollTrigger);
+
+function wordScrollAnimation(sectionSelector, textSelector) {
+
+  const section = document.querySelector(sectionSelector);
+  if (!section) return;
+
+  // get ALL matching elements (fix for multiple selectors)
+  const textEls = document.querySelectorAll(textSelector);
+  if (!textEls.length) return;
+
+  textEls.forEach(textEl => {
+
+    // avoid re-running on same element
+    if (textEl.classList.contains("word-animated")) return;
+    textEl.classList.add("word-animated");
+
+    const words = textEl.innerText.trim().split(" ");
+
+    textEl.innerHTML = words.map(word =>
+      `<span class="word">${word}</span><span class="space"> </span>`
+    ).join("");
+
+    const wordEls = textEl.querySelectorAll(".word");
+
+    gsap.timeline({
+      scrollTrigger: {
+        trigger: textEl, // important: trigger each text separately
+        start: "top 80%",
+        end: "top 20%",
+        scrub: true
+      }
+    }).from(wordEls, {
+      opacity: 0,
+      y: 20,
+      stagger: 0.05,
+      ease: "none"
+    });
+
+  });
+}
+
+/* ✅ CALLS */
+
+// service section
+wordScrollAnimation('.service-three-connection', '.service-three-text');
+
+// home three skills section (your case)
+wordScrollAnimation('.home-three-skills', '.home-three-skills .home-three-skills-description p');
+
+// popup video
+wordScrollAnimation('.home-popup-video', '.home-popup-video-desc');
 
     /* ===============================
        HAMBURGER MENU
@@ -259,13 +312,13 @@ document.addEventListener("DOMContentLoaded", function () {
             const rect = img.getBoundingClientRect();
             const offsetX = ev.clientX - rect.left;
             const offsetY = ev.clientY - rect.top;
-            const rotateY = gsap.utils.clamp(-15, 15, ((offsetX / rect.width) - 0.5) * 30);
-            const rotateX = gsap.utils.clamp(-15, 15, ((offsetY / rect.height) - 0.5) * -30);
+            const rotateY = gsap.utils.clamp(-15, 15, ((offsetX / rect.width) - 0.9) * 10);
+            const rotateX = gsap.utils.clamp(-15, 15, ((offsetY / rect.height) - 0.9) * -10);
             
             gsap.to(img, {
                 rotationX: rotateX,
                 rotationY: rotateY,
-                transformPerspective: 800,
+                transformPerspective: 10000,
                 ease: "power2.out",
                 duration: 0.3
             });
@@ -521,6 +574,10 @@ document.addEventListener("DOMContentLoaded", function () {
             });
         }
     }
+
+    gsap.registerPlugin(ScrollTrigger);
+
+
 
     /* ===============================
        ADDITIONAL SAFE CHECKS FOR COMMON ELEMENTS
