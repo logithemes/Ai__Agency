@@ -276,7 +276,7 @@ wordScrollAnimation('.home-popup-video', '.home-popup-video-desc');
         if (trainWidth > 0) {
             gsap.to(train, {
                 x: `-=${trainWidth}`,
-                duration: 100,
+                duration: 50,
                 ease: "none",
                 repeat: -1,
                 modifiers: {

@@ -1495,6 +1495,7 @@ label {
   padding-right: 60px;
   position: relative;
 }
+.about-three-testimonial-points-wrap{padding-left: 40px;}
 .about-three-testimonial-box {
   background-color: #1d1f34;
   background-image: url("../img/icons/quotes.svg");
@@ -4091,13 +4092,6 @@ padding: 0;
 }
 
 
-
-.about-one-opitons {
-  grid-column-gap: 15px;
-  grid-row-gap: 15px;
-  flex: 1;
-  max-width: 350px;
-}
 .home-one-service-cards-icon-overlay {
   transition: all 0.3s ease-in;
 }
@@ -4160,10 +4154,7 @@ padding: 0;
 /*---------------------------------
     about two css start 
 ---------------------------------*/
-.about-two-experience-list {
-  flex: 1;
-  max-width: 540px;
-}
+
 
 .about-two-hero-text-wrap {
   z-index: 5;
@@ -4180,12 +4171,7 @@ padding: 0;
   align-items: center;
   transition: background-color 0.4s;
 }
-
-.about-two-experience-list-item:hover {
-  background-color: var(--light-black);
-}
-
-.about-two-experience-list-item.about-two-experience-border {
+.about-two-experience-border {
   border-top-style: none;
 }
 .about-two-hero-image-two {
@@ -4204,10 +4190,7 @@ padding: 0;
   position: absolute;
   top: 0;
 }
-.about-two-experince-image {
-  flex: 1;
-  max-width: 600px;
-}
+
 
 .about-two-top-horizontal-border {
   background-color: var(--border-color);
@@ -4391,7 +4374,7 @@ padding: 0;
     #f4497200 30%
   );
 }
-
+.about-three-hero-right{padding-left: 20px;}
 .about-three-top {
   position: relative;
 }
@@ -4438,9 +4421,6 @@ padding-left: 30px;
     radial-gradient(circle at 44%, #f4497252, #f4497200 23%);
 }
 
-.about-three-content {
-  z-index: 2;
-}
 
 .about-progress-bar-inner {
   background-color: var(--border-color);
@@ -4459,12 +4439,6 @@ padding-left: 30px;
 
 }
 
-.about-three-progress-right {
-
-  flex: 1;
-  max-width: 593px;
-
-}
 
 .hero-social-border {
   background-color: var(--menu-color);
@@ -4472,22 +4446,9 @@ padding-left: 30px;
   height: 1px;
 }
 
-.about-three-progress-main {
-
-  max-width: 1255px;
-}
-
-
-
 .about-three-hero-social {
   justify-content: flex-start;
 }
-
-.about-three-hero-right {
-  flex: 1;
-  max-width: 670px;
-}
-
 
 .about-progress-gradiant-bar {
   background-image: linear-gradient(90deg, var(--pink), var(--violet));
@@ -4499,11 +4460,6 @@ padding-left: 30px;
   margin-bottom: 20px;
 }
 
-.about-three-image-main {
-
-  padding-top: 90px;
-
-}
 
 .about-three-hero-main-image {
   flex: 1;
@@ -6783,10 +6739,6 @@ top: 0;
   }
 
 
-  .about-three-image-main {
-    padding-top: 160px;
-  }
-
   .contact-two-hero-text-buttom {
     flex-flow: row;
     justify-content: flex-start;
@@ -6868,9 +6820,10 @@ top: 0;
     width: 100%;
     float: left;
   }
+  .about-three-hero-right{padding-left:0;}
   .team-member-information{padding-left: 20px;}
 .about-one-opitons h3{font-size: 30px;}
-
+.about-three-testimonial-points-wrap{padding-left: 0;}
   .pr_slides-cards {
     width: 100%;
   }
@@ -7252,9 +7205,6 @@ top: 0;
     border-right: 1px solid var(--border-color);
   }
 
-  .about-two-experience-list {
-    max-width: none;
-  }
 
 
   .about-two-hero-main {
@@ -7268,10 +7218,6 @@ top: 0;
 
   .about-two-hero-image-three {
     width: 26.26%;
-  }
-
-  .about-two-experince-image {
-    max-width: none;
   }
 
 
@@ -7319,13 +7265,6 @@ padding-left: 0;
     padding-top: 69px;
   }
 
-
-  .about-three-hero-right {
-    grid-column-gap: 40px;
-    grid-row-gap: 40px;
-    max-width: none;
-  }
-
   .about-three-testimonial-points-text {
     max-width: none;
   }
@@ -7336,9 +7275,6 @@ padding-left: 0;
     max-width: none;
   }
 
-  .about-three-image-main {
-    padding-top: 70px;
-  }
 
   .about-three-hero-main-image {
     max-width: none;
@@ -8074,14 +8010,6 @@ padding-left: 0;
   }
 
 
-  .about-three-progress-right {
-    max-width: none;
-  }
-
-  .about-three-progress-main {
-    align-items: stretch;
-  }
-
   .contact-main-form {
     padding-left: 20px;
     padding-right: 20px;
@@ -8654,9 +8582,6 @@ padding-left: 0;
     grid-template-columns: 1fr;
   }
 
-  .about-one-opitons {
-    max-width: none;
-  }
 
   .about-one-skills-options {
     grid-column-gap: 10px;
