@@ -1197,10 +1197,6 @@ label {
   overflow: hidden;
 }
 
-.tp-tabs-pane {
-  display: none;
-  position: relative;
-}
 
 .tp--tab-active {
   display: block;
