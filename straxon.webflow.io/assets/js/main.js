@@ -70,18 +70,19 @@ function wordScrollAnimation(sectionSelector, textSelector) {
     const wordEls = textEl.querySelectorAll(".word");
 
     gsap.timeline({
-      scrollTrigger: {
-        trigger: textEl, // important: trigger each text separately
-        start: "top 80%",
-        end: "top 20%",
-        scrub: true
-      }
-    }).from(wordEls, {
-      opacity: 0,
-      y: 20,
-      stagger: 0.05,
-      ease: "none"
-    });
+  scrollTrigger: {
+    trigger: textEl,
+    start: "top 80%",
+    end: "top 20%",
+    scrub: true
+  }
+}).to(wordEls, {
+  opacity: 1,
+  y: 0,
+  color: "#fff", // ✅ animate to white
+  stagger: 0.05,
+  ease: "none"
+});
 
   });
 }
