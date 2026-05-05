@@ -2931,10 +2931,7 @@ padding: 0;
   inset: auto -5% -13% auto;
 }
 
-.tp-radius-30.image-full-width {
-  width: 100%;
-  height: auto;
-}
+
 /*---------------------------------
     heading five css start 
 ---------------------------------*/
@@ -4005,6 +4002,7 @@ padding: 0;
 .member-image {
   width: 100%;
   position: relative;
+  border-radius: var(--tp-radius-30);
 }
 
 
