@@ -3248,6 +3248,7 @@ padding: 0;
   line-height: 45px;
 }
 .blog-three-line span{line-height: 50px;}
+.blog-three-hero .blg-one-gradiant{font-size: clamp(40px, 12vw, 130px);    font-family: Bebas Neue, sans-serif;line-height: 1;}
 /*---------------------------------
     textarea css start 
 ---------------------------------*/
@@ -7397,10 +7398,6 @@ padding-left: 0;
     display: none;
   }
 
-  .blog-three-hero {
-    padding-top: 140px;
-    padding-bottom: 65px;
-  }
 
   .blog-three-text {
     padding-left: 30px;
