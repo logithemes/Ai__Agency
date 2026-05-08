@@ -1800,9 +1800,7 @@ left: 0;
   bottom: 1.563rem;
 }
 
-.heading-four.text-dark {
-  color: var(--body-color);
-}
+
 /*---------------------------------
     hero css start 
 ---------------------------------*/
@@ -2628,7 +2626,7 @@ opacity: 0;
 }
 
 
-.text-capitalize.text-light-grey {
+.small-tag-wrapper .text-light-grey {
   color: #6b6b6b;
 }
 
@@ -3316,17 +3314,13 @@ padding: 0;
 /*---------------------------------
     home two heading css start 
 ---------------------------------*/
-.text-white {
-  color: var(--white);
-}
+
+
 
 .text-white.no-margin-bottom.text-opacity-less {
   color: #ffffffb3;
 }
 
-.text-white.text-capitalize.features-box-two-text {
-  max-width: 201px;
-}
 
 .tag-wrapper {
   grid-column-gap: 10px;
