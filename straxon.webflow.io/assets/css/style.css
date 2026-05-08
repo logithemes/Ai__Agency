@@ -5577,7 +5577,7 @@ top: 0;
   transition: transform 0.2s;
 
 }
-.pr-div-img{ width: 21vw;aspect-ratio: 403 / 612;}
+.project-media{ width: 21vw;aspect-ratio: 403 / 612;}
 
 .hover-line .hover-line-bottom {
   background-image: linear-gradient(to bottom, #fff 0%, #fff 98%);
@@ -7432,7 +7432,7 @@ padding-left: 0;
     padding-bottom: 0;
   }
 
-   .pr-div-img{   width: 30vw;
+   .project-media{   width: 30vw;
     aspect-ratio: 403 / 612;}
 
 
@@ -8202,7 +8202,7 @@ padding-left: 0;
   }
 
 
-.pr-div-img {   width: 90vw;
+.project-media {   width: 90vw;
     aspect-ratio: 403 / 423;}
   .projects-card-border {
     display: none;
