@@ -540,11 +540,11 @@ wordScrollAnimation('.home-popup-video', '.home-popup-video-desc');
     /* ===============================
        ABOUT / HOME THREE MOUSE PARALLAX
     =============================== */
-    const aboutHero = document.querySelector('.about-two-hero');
+    const aboutHero = document.querySelector('.about-two-hero, .common-parallax-hover');
 
     if (aboutHero) {
         const images = document.querySelectorAll(
-            '.about-two-hero-image-one, .about-two-hero-image-two, .about-two-hero-image-three, .about-two-hero-image-four, .about-two-hero-image-five'
+            '.about-two-hero-image-one, .about-two-hero-image-two, .about-two-hero-image-three, .about-two-hero-image-four, .about-two-hero-image-five, .common-parallax-div' 
         );
 
         if (images.length > 0) {
