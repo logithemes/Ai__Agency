@@ -2977,8 +2977,8 @@ padding: 0;
 }
 .home-two-faq-right {
   z-index: 3;
-  flex: 0 46%;
   padding-top: 54px;
+  padding-left: 20px;
 }
 .home-two-faq-boxes {
   grid-column-gap: 20px;
@@ -3010,8 +3010,8 @@ padding: 0;
 }
 .home-two-faq-left {
   z-index: 10;
-  flex: 0 46%;
   margin-bottom: 20px;
+  padding-right: 20px;
 }
 
 .faq-border-wrapper {
@@ -3046,7 +3046,7 @@ padding: 0;
   transition:  all var(--transition-medium);
 }
 .home-two-options.act .accordion-line {
-  width: 100px;
+  width: 50px;
 }
 .home-two-options .dot{opacity: 0;}
 .home-two-options.act .dot{width: 6px;opacity: 1;}
@@ -6665,11 +6665,6 @@ top: 0;
   }
 
 
-  .home-two-faq-right {
-    padding-top: 120px;
-  }
-
-
   .home-two-portfolio {
     padding-top: 145px;
     padding-bottom: 155px;
@@ -7013,10 +7008,6 @@ top: 0;
   .home-two-testimonial-backdrop {
     background-image: linear-gradient(#161724 50%, #16172400);
     border-bottom-style: none;
-  }
-
-  .home-two-faq-right {
-    padding-top: 60px;
   }
 
   .home-two-projects-cards {

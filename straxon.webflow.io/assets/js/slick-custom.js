@@ -57,7 +57,7 @@
 
     // Animate accordion-line
     $('.accordion-line').css('width', '0');
-    $(this).find('.accordion-line').css('width', '100px');
+    $(this).find('.accordion-line').css('width', '50px');
 
     // Show corresponding left content
     $('.home-two-faq-boxes').hide().eq(index).fadeIn(400);
