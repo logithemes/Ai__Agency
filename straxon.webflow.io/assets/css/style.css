@@ -4173,7 +4173,7 @@ label {
     align-items: center;
     padding: 6px 16px;
 }
-
+.skills-tag:hover .skill-text{color: #d43fc5;}
 .arrow-icon {
     display: none;
     position: absolute;
