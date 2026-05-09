@@ -129,24 +129,38 @@ wordScrollAnimation('.home-popup-video', '.home-popup-video-desc');
     /* ===============================
        HOME ONE PORTFOLIO SCROLL
     =============================== */
-    const homeOneWork = document.querySelector(".home-one-work");
-    if (homeOneWork) {
-        const portfolioLeft = document.querySelector(".home-one-portfolio-left");
-        const portfolioRight = document.querySelector(".home-one-portfolio-right");
-        
-        if (portfolioLeft || portfolioRight) {
-            gsap.to([portfolioLeft, portfolioRight].filter(el => el), {
-                y: -50,
-                ease: "none",
-                scrollTrigger: {
-                    trigger: ".home-one-work",
-                    start: "top bottom",
-                    end: "bottom top",
-                    scrub: 1
-                }
-            });
-        }
+   gsap.registerPlugin(ScrollTrigger);
+
+gsap.utils.toArray(".tp-reveal-x").forEach((container) => {
+
+  const revealMedia = container.querySelector("img");
+
+  const revealTimeline = gsap.timeline({
+    scrollTrigger: {
+      trigger: container,
+      toggleActions: "restart none none reset"
     }
+  });
+
+  revealTimeline.set(container, {
+    autoAlpha: 1
+  });
+
+  revealTimeline.from(container, {
+    xPercent: -100,
+    duration: 1.5,
+    ease: "power2.out"
+  });
+
+  revealTimeline.from(revealMedia, {
+    xPercent: 100,
+    scale: 1.3,
+    duration: 1.5,
+    delay: -1.5,
+    ease: "power2.out"
+  });
+
+});
 
     /* ===============================
        HOME TWO TESTIMONIAL ROW SCROLL

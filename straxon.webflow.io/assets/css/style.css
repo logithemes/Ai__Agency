@@ -2590,8 +2590,7 @@ opacity: 0;
   font-size: clamp(60px, 20vw, 300px);
   font-weight: 400;
   line-height: 0.83;
-  position: sticky;
-  top: 0;
+
 }
 
 /*---------------------------------
