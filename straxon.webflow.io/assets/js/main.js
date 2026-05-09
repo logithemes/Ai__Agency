@@ -576,10 +576,87 @@ wordScrollAnimation('.home-popup-video', '.home-popup-video-desc');
         }
     }
 
+  
+
+
+
+    /* ===============================
+       INDEX / SCALE IMG
+    =============================== */
     gsap.registerPlugin(ScrollTrigger);
 
+gsap.utils.toArray(".image-scale-section").forEach((section) => {
+
+  const image = section.querySelector(".image-scale-media");
+
+  gsap.fromTo(
+    image,
+    {
+      scale: 0.7,
+    },
+    {
+      scale: 1,
+      ease: "none",
+      scrollTrigger: {
+        trigger: section,
+        start: "top bottom",
+        end: "bottom top",
+        scrub: true,
+      },
+    }
+  );
+
+});
 
 
+    /* ===============================
+       HOMEONE / GO TO DOWN
+    =============================== */
+gsap.fromTo(
+  ".tp-scroll-indicator__line",
+  {
+    y: -15,
+    opacity: 0
+  },
+  {
+    y: 3,
+    opacity: 1,
+    duration: 1.5,
+    ease: "power8.out",
+    repeat: -1
+  }
+);
+
+
+  /* ===============================
+       HOMEONE / STROY IMG
+    =============================== */
+gsap.registerPlugin(ScrollTrigger);
+
+gsap.utils.toArray(".tp-reveal-wrap").forEach((section) => {
+
+  const image = section.querySelector(".tp-reveal-img");
+
+  gsap.fromTo(
+    image,
+    {
+      scale: 1.3,
+      clipPath: "inset(20% 20% 20% 20% round 20px)"
+    },
+    {
+      scale: 1,
+      clipPath: "inset(0% 0% 0% 0% round 20px)",
+      ease: "expo.out",
+      scrollTrigger: {
+        trigger: section,
+        start: "top 85%",
+        end: "top 20%",
+        scrub: true,
+      }
+    }
+  );
+
+});
     /* ===============================
        ADDITIONAL SAFE CHECKS FOR COMMON ELEMENTS
     =============================== */

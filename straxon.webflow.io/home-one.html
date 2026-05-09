@@ -173,14 +173,18 @@
                 class="border-movement-bar"></span>
             </div>
           <div class="col-md-10 col-lg-8 mx-auto col-11">
-              <p  class="home-one-hero-description pb-30">Lorem ipsum dolor sit amet consetetur adipiscing
+              <p  class="home-one-hero-description pb-30 wow fadeInUp" data-wow-duration="1.3s">Lorem ipsum dolor sit amet consetetur adipiscing
               elit. Vestibulum rhoncus efficitur enon hendrerit sapien auctor maecen sapien faucibus.</p>
           </div>
-            <div  class="button-wrapper button-margin mb-60 md-mb-50">
+          <div class=" wow fadeInUp" data-wow-duration="1.3s">
+              <div  class="button-wrapper button-margin mb-60 md-mb-50">
               <a href="contact-one.html" class="tp-btn text-white">get in touch</a>
               <div class="button-border-effect"></div>
             </div>
-          
+          </div>
+          <div class="tp-scroll-indicator" aria-label="Scroll Down">
+  <span class="tp-scroll-indicator__line"></span>
+</div>
           </div>
           <div class="little-boy-image-wrapper parallax-img-two">
             <img width="177" loading="lazy" alt="Cartoon Image" src="assets/img/hero/hero-boy-img.webp"
@@ -253,34 +257,43 @@
     <!-- ===================================================
 			   our story
 			==================================================== -->
-    <section class="our-story pb-70 md-pb-50">
-      <div class="container-fluid">
-        <div class="story-image-wrapper d-flex align-items-center justify-content-center  wow fadeInUp" data-wow-duration="0.6s">
-          <div class="overflow-hidden story-image-wrapper tp-radius-20  position-relative anim-zoomin">
-            <img class="tp-radius-20 tab-image-full-width story-big-image"
-              src="assets/img/home-one-story/story-big-image.webp" width="1290" height="572" alt="Office Image"
-              loading="lazy">
-          </div>
-        </div>
-      </div>
-    </section>
+ <section class="tp-reveal-section">
+  <div class="container-fluid">
+
+    <div class="tp-reveal-wrap overflow-hidden tp-radius-20 position-relative">
+
+      <img
+        class="tp-reveal-img"
+        src="assets/img/home-one-story/story-big-image.webp"
+        width="1290"
+        height="572"
+        alt="Image"
+        loading="lazy">
+
+    </div>
+
   </div>
-  <div class="home-shape-background">
+</section>
+  </div>
+  <div class="home-shape-background mt-80 md-mt-30">
     <!-- ===================================================
 		Home popup vide
 			==================================================== -->
     <section class="home-popup-video pb-80 md-pb-60">
-      <div class="mx-auto home-popup-container ">
-        <div class=" home-popup-main row gap-20">
-          <div class=" col-12 col-md-3 ">
+      <div class="mx-auto container">
+       <div class="row">
+        <div class="col-md-10 mx-auto col-12">
+           <div class=" home-popup-main row gap-20">
+          <div class=" col-12 col-md-3 position-relative">
         <div class=" home-popup-video-heading gap-30 d-flex align-items-center justify-content-center flex-column text-center">
               <a  href="#" class="d-flex align-items-center justify-content-center border  border-secondary rounded-circle">
             <i class="bi bi-play-fill fs-3 text-white"></i>
             </a>
             <h4 class="heading-four my-0 text-align-center">explore our story</h4>
         </div>
+        <span class="story-line p-0 d-flex align-items-cent justify-content-center position-absolute "></span>
           </div>
-          <div class="story-line p-0 d-flex align-items-cent justify-content-center position-relative"></div>
+          
           <div class="col-12 col-md-9 px-3 px-md-0  home-popup-video-text">
             <p class="home-popup-video-desc mb-0">Lorem ipsum dolor sit amet consectetur adipiscing elit. Fusce sed gravida felis.
               In vel odio. Fusce utfk sapien pharetra pharetra purus sempr aliquet tortor. Nullam egestas venenatis quam
@@ -291,6 +304,8 @@
 
           </div>
         </div>
+        </div>
+       </div>
       </div>
     </section>
     <!-- ===================================================
@@ -316,7 +331,7 @@
          </div>
           <div class="home-one-services row ">
             <div class="col-12 col-md-6 col-lg-4 md-pb-15 theme-pb-0">
-            <div data-wow-duration="0.8s" class="tp-flex-vertical home-one-service-cards wow fadeInUp px-lg-2 px-1">
+            <div data-wow-duration="0.5s" class="tp-flex-vertical home-one-service-cards wow fadeInUp px-lg-2 px-1">
               <div class="tp-flex-vertical home-one-service-cards-icon">
                 <img width="114" height="91" alt="Megaphone" src="assets/img/service-icons/service-ic-1.png"
                   loading="lazy" class="home-one-service-icon">
@@ -334,7 +349,7 @@
              </div>
             <!-- 2 -->
                <div class="col-12 col-md-6 col-lg-4 md-pb-15 theme-pb-0">
-            <div data-wow-duration="0.9s" class=" wow fadeInUp tp-flex-vertical home-one-service-cards px-lg-2 px-1">
+            <div data-wow-duration="0.8s" class=" wow fadeInUp tp-flex-vertical home-one-service-cards px-lg-2 px-1">
               <div class="tp-flex-vertical home-one-service-cards-icon">
                 <img width="91" height="91" alt="Icon" src="assets/img/service-icons/service-ic-2.png" loading="lazy"
                   class="home-one-service-icon">
@@ -355,7 +370,7 @@
             <!-- 3 -->
 
                 <div class="col-12 col-md-6 col-lg-4 md-pb-15 theme-pb-0">
-            <div data-wow-duration="1.1s" class="tp-flex-vertical home-one-service-cards  wow fadeInUp px-lg-2 px-1">
+            <div data-wow-duration="1.3s" class="tp-flex-vertical home-one-service-cards  wow fadeInUp px-lg-2 px-1">
               <div class="tp-flex-vertical home-one-service-cards-icon">
                 <img width="65" height="91" alt="Icon" src="assets/img/service-icons/service-ic-3.png" loading="lazy"
                   class="home-one-service-icon">
