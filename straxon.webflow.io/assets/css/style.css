@@ -283,6 +283,10 @@ th {
 .heading-font {
   font-family: var(--heading-font);
 }
+a:hover{
+  color: #ffffff;
+}
+p{color: var(--body-font-color);}
 .body-font{font-family: var(--body-font);}
 .tp-dropdown-toggle::after {
   display: none;
@@ -1726,6 +1730,7 @@ left: 0;
   border-radius: 26px;
   overflow: hidden;
 }
+.home-testimonial-main{position: relative;z-index: 6;}
 .home-three-img-swiper img {
   object-fit:cover;
 }
@@ -3534,6 +3539,8 @@ padding: 0;
   transform: translate(0, -100%);
   transition: all var(--transition-medium);
 }
+
+.home-three-box{position: sticky;width: 100%;overflow: hidden;justify-content: center;align-items: center;margin: 0 auto;display: flex;top: 10%;}
 .home-three-box:hover .home-three-service-background{ transform: translate(0, 0);}
   .home-three-box:hover .home-three-service-cards{border: 0;}
 .home-three-box:hover .top-border{opacity: 0;}
@@ -3570,11 +3577,7 @@ padding: 0;
   position: absolute;
   inset: 0% 0% auto;
 }
-.home-three-box {
-  max-width: 1370px;
-  padding-left: 15px;
-  padding-right: 15px;
-}
+
 
 .service-paragraph {
   margin-bottom: 0;
@@ -3663,6 +3666,7 @@ padding: 0;
 }
 .home-three-hero-main {
   z-index: 5;
+  position: relative;
 }
 
 
@@ -6700,10 +6704,6 @@ top: 0;
     padding-bottom: 150px;
   }
 
-  .home-three-hero-main {
-    margin-bottom: 155px;
-  }
-
   .about-two-experience-list-item {
     padding-left: 30px;
     padding-right: 30px;
@@ -7129,9 +7129,6 @@ top: 0;
     grid-row-gap: 30px;
   }
 
-  .home-three-hero-main {
-    margin-bottom: 35px;
-  }
 
   .recent-work-boxes {
     grid-column-gap: 30px;

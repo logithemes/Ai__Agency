@@ -129,7 +129,7 @@ wordScrollAnimation('.home-popup-video', '.home-popup-video-desc');
     /* ===============================
        HOME ONE PORTFOLIO SCROLL
     =============================== */
-   gsap.registerPlugin(ScrollTrigger);
+  gsap.registerPlugin(ScrollTrigger);
 
 gsap.utils.toArray(".tp-reveal-x").forEach((container) => {
 
@@ -138,7 +138,8 @@ gsap.utils.toArray(".tp-reveal-x").forEach((container) => {
   const revealTimeline = gsap.timeline({
     scrollTrigger: {
       trigger: container,
-      toggleActions: "restart none none reset"
+      start: "top 80%",
+      toggleActions: "play none none reset"
     }
   });
 
@@ -549,6 +550,7 @@ gsap.utils.toArray(".tp-reveal-x").forEach((container) => {
         }
     }
 
+    
     
 
     /* ===============================
