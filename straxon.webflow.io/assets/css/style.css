@@ -76,6 +76,7 @@
     --tp-icon-color: #db4e93b0;
     --menu-color: #aeb2d7;
     --tp-common-white: #fff;
+  
 }
 
 /*----------------------------------------*/
@@ -357,7 +358,7 @@ p {
 .tp-input-icon {
     color: var(--tp-icon-color);
 }
-
+.tp-text-muted{color: #6c757d;}
 .pl-15 {
     padding-left: 15px;
 }
@@ -3898,7 +3899,7 @@ label {
 .home-three-service-cards:hover .home-three-service-icon-wrap {
     border: 1px solid #fff;
 }
-.home-three-service-cards:hover .service-icon-three {color: #fff !important;}
+.home-three-service-cards:hover .service-icon-three {color: #fff;}
 
 .home-three-box:hover .top-border {
     opacity: 0;
