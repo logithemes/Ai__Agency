@@ -1372,31 +1372,6 @@ label {
     }
 }
 
-/*---------------------------------
-   margin css start 
----------------------------------*/
-
-
-.margin-bottom-ten {
-    margin-bottom: 10px;
-}
-
-.margin-bottom-fourty {
-    margin-bottom: 40px;
-}
-
-
-.margin-bottom-three {
-    margin-bottom: 3px;
-}
-
-.margin-bottom-five {
-    margin-bottom: 5px;
-}
-
-.margin-top-ten {
-    margin-top: 10px;
-}
 
 /*---------------------------------
    home two review css start 
@@ -2363,9 +2338,6 @@ label {
     height: 110px;
 }
 
-.home-one-service-cards-icon.about-three-service-icons.no-margin-bottom {
-    margin-bottom: 0;
-}
 
 
 .home-one-service-cards {
@@ -2894,10 +2866,6 @@ label {
 
 /* IMPORTENT I CHECKED AFTER */
 
-.margin-bottom-twenty {
-    margin-bottom: 20px;
-}
-
 .body-small-text {
     font-size: 14px;
     line-height: 24px;
@@ -2979,15 +2947,6 @@ label {
 .newsletter {
     flex: 1;
     max-width: 330px;
-}
-
-.no-margin {
-    margin: 0;
-}
-
-
-.no-margin.contact-two-hero-description {
-    max-width: 280px;
 }
 
 .contact-three-hero-heading {
@@ -3157,32 +3116,9 @@ label {
     transform: scale(0);
 }
 
-.no-margin-bottom {
-    margin-bottom: 0;
-}
-
-.no-margin-bottom.text-light-pink {
-    color: var(--menu-color);
-}
-
-.no-margin-bottom.home-three-digital-description {
-    max-width: 285px;
-    transition: all var(--transition-medium);
-}
-
-
-.no-margin-bottom.service-one-hero-description {
-    max-width: 560px;
-}
-
 /*---------------------------------
    radius css start 
 ---------------------------------*/
-
-
-.border-radius-five {
-    border-radius: 5px;
-}
 
 
 .tp-radius-20.image-three,
@@ -3356,9 +3292,6 @@ label {
     transition: all var(--transition-medium);
 }
 
-.dot.no-shirk {
-    flex: none;
-}
 
 .tp-text-stroke {
     -webkit-text-stroke: 1px currentColor;
@@ -3616,9 +3549,6 @@ label {
     line-height: 28px;
 }
 
-.tp-textarea.margin-bottom-fourty {
-    margin-bottom: 40px;
-}
 
 .arrow-button {
     width: 60px;
@@ -3654,12 +3584,6 @@ label {
 /*---------------------------------
     home two heading css start 
 ---------------------------------*/
-
-
-
-.tp-common-white.no-margin-bottom.text-opacity-less {
-    color: #ffffffb3;
-}
 
 
 .tag-wrapper {
@@ -5159,16 +5083,6 @@ label {
     display: flex;
 }
 
-.utility-banner {
-    background-color: var(--light-black);
-    padding-top: 175px;
-    padding-bottom: 80px;
-}
-
-.utility-banner.no-background {
-    background-color: #16172400;
-}
-
 .tp-utility-hero-text {
     text-align: center;
     justify-content: flex-start;
@@ -5679,9 +5593,7 @@ label {
     padding: 30px;
 }
 
-.border-radius-full {
-    border-radius: 100%;
-}
+
 
 .blog-one-author {
     z-index: 2;
@@ -6194,10 +6106,6 @@ label {
     grid-column-gap: 30px;
     grid-row-gap: 30px;
     margin-bottom: 25px;
-}
-
-.connections-box.no-margin-bottom {
-    margin-bottom: 0;
 }
 
 
