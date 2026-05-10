@@ -5773,6 +5773,8 @@ label {
 .blog-cards-text {
     flex: 1;
     padding-left: 30px;
+    position: relative;z-index: 3;
+    mix-blend-mode: difference;
 }
 
 .blog-two-wrap {
@@ -5794,14 +5796,16 @@ label {
     border-radius: 15px;
     top: 0;
     position: absolute;
-    right: 140px;
+    right: 100px;
     opacity: 0;
     transition: all var(--transition-medium);
     transform: translate(0, 40px) rotate(-4deg);
+    z-index: 1;
+    max-width: 220px;
 }
 
 .blog-two-cards:hover .blog-two-image {
-    transform: translate(0, 2px) rotate(4deg);
+    transform: translate(0, 0) rotate(4deg);
     transition: all var(--transition-medium);
     opacity: 1;
 }
@@ -8738,8 +8742,9 @@ label {
         width: 100%;
         height: auto;
         display: block;
-        position: static;
+        position: relative;
         opacity: 1;
+        transform: none;
     }
 
     .blog-two-arrow {
