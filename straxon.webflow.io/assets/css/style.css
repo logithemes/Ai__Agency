@@ -925,28 +925,6 @@ label {
     width: 0;
 }
 
-@media screen and (max-width: 991px) {
-    .choose-slide-text {
-        max-width: 100%;
-        padding-left: 15px;
-    }
-
-    .rotate-text {
-        -webkit-transform: translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0deg) skew(0, 0);
-        -moz-transform: translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0deg) skew(0, 0);
-        -ms-transform: translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0deg) skew(0, 0);
-        transform: translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0deg) skew(0, 0);
-    }
-
-    .tp-container {
-        max-width: 728px;
-    }
-    
-    .team-hero-image-two, .team-hero-image-one{
-        display: none;
-    }
-
-}
 
 /*---------------------------------
 	Testimonial css start 
@@ -1143,33 +1121,6 @@ label {
     outline: 0;
 }
 
-@media screen and (max-width: 767px) {
-    .tp-container {
-        margin-left: 0;
-        margin-right: 0;
-    }
-
-    .choose-slide-text {
-        align-items: center;
-        justify-self: center;
-    }
-
-    .ctn_preloader .animation-preloader .spinner {
-        height: 8em;
-        width: 8em;
-    }
-
-    .home-three-img-swiper {
-        width: 260px;
-        height: 340px;
-        margin: auto;
-    }
-
-    .header-logo {
-        padding-left: 10px;
-    }
-
-}
 
 /*---------------------------------
 	nav css start 
@@ -1221,44 +1172,7 @@ label {
     outline: 0;
 }
 
-@media screen and (max-width: 991px) {
-    .header-main .container {
-        background-color: rgb(5, 6, 16);
-    }
 
-    .navbar.header-sticky,
-    .navbar-three.header-sticky {
-        position: fixed !important;
-        animation: none !important
-    }
-
-    .nav-inline {
-        padding-top: 64px;
-    }
-
-    .main-menu {
-        background-color: #050610;
-        width: 100%;
-        height: 100vh;
-        position: fixed;
-        inset: 0;
-        overflow-y: auto;
-        transition: var(--transition-medium);
-        transform: translateY(-100%);
-        display: none;
-        z-index: -1;
-    }
-
-    .main-menu.is-open {
-        transition: var(--transition-medium);
-        transform: translateY(0);
-
-    }
-
-    .main-menu-section {
-        position: absolute;
-    }
-}
 
 /*---------------------------------
 	tab content css start 
@@ -1353,24 +1267,6 @@ label {
     display: flex;
 }
 
-
-@media screen and (max-width: 991px) {
-    .layout-container {
-        max-width: 728px;
-    }
-
-}
-
-@media screen and (max-width: 767px) {
-    .layout-container {
-        max-width: none;
-    }
-
-    .testimonail-text {
-        margin: 0 auto;
-        max-width: 460px;
-    }
-}
 
 
 /*---------------------------------
@@ -7233,22 +7129,71 @@ label {
 }
 
 @media screen and (max-width: 991px) {
-    .menu-item {
-        padding: 25px 25px 25px 20px;
+     .choose-slide-text {
+        max-width: 100%;
+        padding-left: 15px;
     }
+
+    .tp-container {
+        max-width: 728px;
+    }
+    
+    .team-hero-image-two, .team-hero-image-one{
+        display: none;
+    }
+    .header-main .container {
+        background-color: rgb(5, 6, 16);
+    }
+
+    .navbar.header-sticky,
+    .navbar-three.header-sticky {
+        position: fixed !important;
+        animation: none !important
+    }
+
+    .nav-inline {
+        padding-top: 64px;
+    }
+
+    .main-menu {
+        background-color: #050610;
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+        inset: 0;
+        overflow-y: auto;
+        transition: var(--transition-medium);
+        transform: translateY(-100%);
+        display: none;
+        z-index: -1;
+    }
+
+    .main-menu.is-open {
+        transition: var(--transition-medium);
+        transform: translateY(0);
+
+    }
+
+    .main-menu-section {
+        position: absolute;
+    }
+    /* .menu-item {
+        padding: 20px 0 20px 0
+    } */
 
     .my-approach-right {
         padding-left: 0;
     }
 
     .navbar-three-dropdown .navbar-dropdown {
-        grid-column-gap: 0;
-        grid-row-gap: 0;
+        grid-column-gap: 15px;
+        grid-row-gap: 8px;
         padding-top: 0;
-        flex-direction: column;
+       flex-wrap: wrap;
         align-items: start;
+        padding: 6px 0;
     }
-
+.sub-menu-arrow{opacity: 1;}
     .navbar-three-boxes {
         grid-row-gap: 3.35vh
     }
@@ -7362,6 +7307,7 @@ label {
 
     .tp-dropdown {
         display: block;
+        padding: 15px 15px 5px 10px;
     }
 
 
@@ -7469,7 +7415,7 @@ label {
     .tp-dropdown-toggle {
         justify-content: space-between;
         align-items: center;
-
+        padding-bottom: 7px;
         border-bottom: var(--border-mobile-menu);
     }
 
@@ -8100,9 +8046,37 @@ label {
 }
 
 @media screen and (max-width: 767px) {
-    .menu-item {
-        padding-top: 20px;
-        padding-bottom: 20px;
+    .tp-container {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .choose-slide-text {
+        align-items: center;
+        justify-self: center;
+    }
+
+    .ctn_preloader .animation-preloader .spinner {
+        height: 8em;
+        width: 8em;
+    }
+
+    .home-three-img-swiper {
+        width: 260px;
+        height: 340px;
+        margin: auto;
+    }
+
+    .header-logo {
+        padding-left: 10px;
+    }
+    .layout-container {
+        max-width: none;
+    }
+
+    .testimonail-text {
+        margin: 0 auto;
+        max-width: 460px;
     }
 
     .work-three-cards-inner-wrapper {
