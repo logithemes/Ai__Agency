@@ -127,7 +127,8 @@ template {
 
 a {
     background-color: #0000;
-    text-decoration: none !important;
+    text-decoration: none;
+    transition: var(--transition-medium);
 }
 
 a:active,
@@ -287,7 +288,8 @@ th {
 }
 
 a:hover {
-    color: #ffffff;
+    color: var(--tp-common-white);
+    transition: var(--transition-medium);
 }
 
 p {
