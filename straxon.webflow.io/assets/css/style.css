@@ -3564,8 +3564,7 @@ label {
     color: #424355;
 }
 
-.heading-three.blog-two-name {
-    max-width: 540px;
+.blog-two-name {
     line-height: 48px;
 }
 
@@ -5761,20 +5760,21 @@ label {
 }
 
 .blog-two-cards {
-    flex-flow: row;
+    /* flex-flow: row;
     justify-content: flex-start;
     align-items: center;
     padding-top: 30px;
     padding-bottom: 30px;
-    display: flex;
+    display: flex; */
     position: relative;
 }
 
 .blog-cards-text {
-    flex: 1;
-    padding-left: 30px;
-    position: relative;z-index: 3;
+ 
+    position: relative;
+    z-index: 3;
     mix-blend-mode: difference;
+    padding-right: 30px;
 }
 
 .blog-two-wrap {
@@ -5782,11 +5782,11 @@ label {
 }
 
 .blog-two-cards-author {
-    grid-column-gap: 8px;
+    /* grid-column-gap: 8px; */
     grid-row-gap: 8px;
     border-right: 1px solid var(--border-color);
-    flex: 1;
-    max-width: 191px;
+    /* flex: 1;
+    max-width: 191px; */
     padding-right: 20px;
 }
 
@@ -5796,12 +5796,12 @@ label {
     border-radius: 15px;
     top: 0;
     position: absolute;
-    right: 100px;
+    right: 140px;
     opacity: 0;
     transition: all var(--transition-medium);
     transform: translate(0, 40px) rotate(-4deg);
     z-index: 1;
-    max-width: 220px;
+
 }
 
 .blog-two-cards:hover .blog-two-image {
@@ -7350,7 +7350,7 @@ label {
 
     .blog-two-name span,
     .blog-three-line span,
-    .heading-three.blog-two-name {
+    .blog-two-name {
         line-height: 33px;
     }
 
@@ -8706,7 +8706,7 @@ label {
         width: 100%;
     }
 
-    .blog-two-cards {
+    /* .blog-two-cards {
         grid-column-gap: 30px;
         grid-row-gap: 30px;
         text-align: center;
@@ -8714,11 +8714,12 @@ label {
         justify-content: center;
         align-items: center;
         padding: 40px 0;
-    }
+    } */
 
     .blog-cards-text {
-        justify-content: center;
+        text-align: center;
         align-items: center;
+        padding-right: 0;
     }
 
     .blog-two-cards-author {
@@ -8745,6 +8746,8 @@ label {
         position: relative;
         opacity: 1;
         transform: none;
+        right: 0;
+        text-align: center;
     }
 
     .blog-two-arrow {
@@ -9296,11 +9299,11 @@ label {
         padding-right: 20px;
     }
 
-    .blog-two-cards {
+    /* .blog-two-cards {
         grid-template-rows: auto auto;
         grid-template-columns: 1fr 1fr;
         grid-auto-columns: 1fr;
-    }
+    } */
 
     .blog-two-cards-wrap {
         grid-template-columns: 1fr;
