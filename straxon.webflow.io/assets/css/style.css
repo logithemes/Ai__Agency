@@ -6204,6 +6204,7 @@ label {
 .pricing-plans-cards .pricing-icons {
     width: 80px;
     height: 80px;
+    align-items: start;
 }
 
 .service-two-marquee-text {
