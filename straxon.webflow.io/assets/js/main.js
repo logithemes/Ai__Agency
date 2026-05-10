@@ -673,6 +673,26 @@ gsap.utils.toArray(".tp-reveal-wrap").forEach((section) => {
   );
 
 });
+
+
+
+  /* ===============================
+       BLOG DETAILS  / ANIM-WRAP
+    =============================== */
+     gsap.fromTo(".tp-anim-wrap", 
+    {
+      clipPath: "polygon(50% 0%, 50% 0%, 50% 100%, 50% 100%)",
+      scale: 1.2
+    },
+    {
+      clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
+      scale: 1,
+      duration: 1.5,
+      ease: "power4.inOut",
+      delay: 0.1
+    }
+  );
+
     /* ===============================
        ADDITIONAL SAFE CHECKS FOR COMMON ELEMENTS
     =============================== */

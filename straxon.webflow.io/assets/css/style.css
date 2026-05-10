@@ -5960,7 +5960,10 @@ label {
     padding-top: 30px;
     padding-bottom: 30px;
 }
-
+.tp-anim-wrap {
+  clip-path: polygon(50% 0%, 50% 0%, 50% 100%, 50% 100%);
+  will-change: clip-path, transform;
+}
 .profile {
     background-color: #33354c;
     border-radius: 3px;
