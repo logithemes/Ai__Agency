@@ -161,8 +161,8 @@ if ($('.counters-wrapper').length) {
 
 // 
 $(".service-three-cards").on("mouseenter", function () {
-  $(".service-three-cards-overlay").removeClass("in-active");
-  $(this).children(".service-three-cards-overlay").addClass("in-active");
+  $(".service-three-cards-overlay").removeClass("service-tp-in-active");
+  $(this).children(".service-three-cards-overlay").addClass("service-tp-in-active");
 
 });
 
