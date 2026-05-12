@@ -1925,6 +1925,10 @@
     }
 }
 
+@media screen and (max-width: 576px) {
+    .footer-one-information-wrapper{margin-bottom: 15px;}
+    .footer-one{padding: 0 15px;}
+}
 @media screen and (max-width: 500px) {
     .ctn_preloader .animation-preloader .spinner {
         height: 7em;
