@@ -1913,17 +1913,7 @@ label {
     align-items: center;
 }
 
-.footer-one-link-wrapper {
-    grid-column-gap: 30px;
-    grid-row-gap: 30px;
-    flex: 0 65.77%;
-    justify-content: space-between;
-}
 
-.footer-one-contact-wrapper {
-    max-width: 226px;
-    padding-top: 6px;
-}
 
 .footer-one-contact {
     grid-column-gap: 17px;
@@ -1933,9 +1923,7 @@ label {
 }
 
 .footer-one-about-wrapper {
-    flex: none;
-    max-width: 210px;
-    margin-top: 5px;
+ 
 }
 
 .footer-one-details-wrapper {
@@ -1945,12 +1933,6 @@ label {
 
 .footer-one-link-wrapper .footer-one-details-wrapper .text_mute {
     color: var(--menu-color);
-}
-
-.footer-one-main-wrapper {
-    grid-column-gap: 30px;
-    grid-row-gap: 30px;
-    justify-content: space-between;
 }
 
 .footer-bottm-border {
@@ -3322,12 +3304,6 @@ label {
     opacity: 1;
 }
 
-.quick-links-wrap {
-    grid-column-gap: 30px;
-    grid-row-gap: 30px;
-    max-width: 205px;
-    padding-top: 6px;
-}
 
 /*---------------------------------
     navbar three css start 
