@@ -1894,10 +1894,7 @@ label {
     max-width: 631px;
 }
 
-.footer-links-wrap {
-    grid-column-gap: 25px;
-    grid-row-gap: 25px;
-}
+
 
 .footer-three-bottom {
     text-align: center;
@@ -1922,14 +1919,7 @@ label {
     align-items: flex-start;
 }
 
-.footer-one-about-wrapper {
- 
-}
 
-.footer-one-details-wrapper {
-    max-width: 205px;
-    padding-top: 6px;
-}
 
 .footer-one-link-wrapper .footer-one-details-wrapper .text_mute {
     color: var(--menu-color);
@@ -6646,7 +6636,7 @@ label {
 }
 
 .site-logo {
-    margin-bottom: 25px;
+  
     padding-left: 0;
 }
 
