@@ -296,7 +296,7 @@ $('.tp-dropdown-toggle').on('click', function (e) {
       fadeEffect: { crossFade: true }
     });
 
-    const imageSwiper = new Swiper(".home-three-img-swiper", {
+    const imageSwiper = new Swiper(".home-three-slider-area", {
       effect: "cards",
       grabCursor: true,
       cardsEffect: {

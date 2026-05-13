@@ -1029,19 +1029,6 @@ a:hover {
     margin-top: 5px;
 }
 
-.arrow-effect {
-    background-color: var(--body-color);
-    border-radius: 100%;
-    justify-content: center;
-    align-items: center;
-    width: 40px;
-    height: 40px;
-    display: flex;
-    position: absolute;
-    transform: scale(0);
-}
-
-
 
 /*---------------------------------
    home two review css start 
@@ -1280,72 +1267,6 @@ a:hover {
     display: flex;
 }
 
-.testimonial-top-image-clone {
-    z-index: 1;
-    position: absolute;
-    transform: translate(-130%, 130%);
-}
-
-.testimonial-bottom-image {
-    z-index: 2;
-    position: absolute;
-    transform: translate(-60px, 60px);
-}
-
-.home-three-testimonial-text {
-    grid-column-gap: 15px;
-    grid-row-gap: 15px;
-    border-left: 1px solid #313344;
-    flex: 1;
-    max-width: 450px;
-    margin-bottom: 60px;
-    padding-top: 30px;
-    padding-bottom: 20px;
-    padding-left: 40px;
-    margin-left: 50px;
-}
-
-.home-three-testimonial-slide {
-    background-color: #ddd0;
-    width: 100%;
-    height: auto;
-}
-
-.home-three-testimonial-main {
-    width: 100%;
-    max-width: 1030px;
-}
-
-.testimonial-top-image {
-    z-index: 4;
-    position: relative;
-}
-
-.home-three-testimonial {
-    background-image: linear-gradient(#161724a1, #16172400);
-
-}
-
-.home-three-testimonial-image-wrapper {
-    justify-content: flex-start;
-    align-items: center;
-    padding-bottom: 60px;
-    padding-left: 60px;
-    display: flex;
-    position: relative;
-    overflow: hidden;
-}
-
-.testimonial-three-big-text {
-    color: #111322;
-    text-align: center;
-    font-size: clamp(60px, 20vw, 400px);
-    line-height: 1;
-    position: absolute;
-    top: 24%;
-    left: 0;
-    right: 0;
-}
 .testimonail-text {
     grid-column-gap: 10px;
     grid-row-gap: 10px;
@@ -1382,7 +1303,16 @@ a:hover {
 .tp-slider-viewport {
     max-width: 601px;
 }
-
+.right-arrow {
+    border: 1px solid var(--border-color-two);
+    border-radius: 100%;
+    justify-content: center;
+    align-items: center;
+    width: 65px;
+    height: 65px;
+    display: flex;
+    inset: auto 0% 27% auto;
+}
 .section-glow {
     background-image: radial-gradient(circle at 34% 44%,
             #f4497266,
@@ -1575,7 +1505,7 @@ a:hover {
 }
 
 /*---------------------------------
-   home digital css start 
+   home one why choose us  css start 
 ---------------------------------*/
 
 .home-digital-solutions-option {
@@ -1605,19 +1535,69 @@ a:hover {
 
 .home-digital-options-items {
     z-index: 2;
-    grid-column-gap: 20px;
-    grid-row-gap: 20px;
     position: relative;
 }
 
-.home-three-img-swiper {
-    width: 320px;
-    height: 420px;
+/*---------------------------------
+   home three slider  css start 
+---------------------------------*/
+.home-three-testimonial-text {
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
+    border-left: 1px solid #313344;
+    flex: 1;
+    max-width: 450px;
+    margin-bottom: 60px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    padding-left: 40px;
+    margin-left: 50px;
 }
 
-.home-three-img-swiper .swiper-slide {
-    border-radius: 26px;
+.home-three-testimonial-slide {
+    background-color: #ddd0;
+    width: 100%;
+    height: auto;
+}
+
+.home-three-testimonial-main {
+    width: 100%;
+    max-width: 1030px;
+}
+
+.testimonial-top-image {
+    z-index: 4;
+    position: relative;
+}
+
+.home-three-testimonial {
+    background-image: linear-gradient(#161724a1, #16172400);
+
+}
+
+.home-three-testimonial-image-wrapper {
+    justify-content: flex-start;
+    align-items: center;
+    padding-bottom: 60px;
+    padding-left: 60px;
+    display: flex;
+    position: relative;
     overflow: hidden;
+}
+
+.testimonial-three-big-text {
+    color: #111322;
+    text-align: center;
+    font-size: clamp(60px, 20vw, 400px);
+    line-height: 1;
+    position: absolute;
+    top: 24%;
+    left: 0;
+    right: 0;
+}
+.home-three-slider-area {
+    width: 320px;
+    height: 420px;
 }
 
 .home-testimonial-main {
@@ -1625,11 +1605,13 @@ a:hover {
     z-index: 6;
 }
 
-.home-three-img-swiper img {
+.home-three-slider-area img {
     object-fit: cover;
 }
 
-
+/*---------------------------------
+   Button  css start 
+---------------------------------*/
 .tp-btn {
     z-index: 10;
     background-color: var(--body-color);
@@ -1649,29 +1631,12 @@ a:hover {
     border: 1px solid #fff;
 }
 
-.contact-one-button {
-    background-color: #161825;
-}
+
 
 .button-full-width,
 .pricing-button {
     background-color: #161724;
     width: 100%;
-}
-
-.button-grey {
-    background-color: #212231;
-}
-
-.right-arrow {
-    border: 1px solid var(--border-color-two);
-    border-radius: 100%;
-    justify-content: center;
-    align-items: center;
-    width: 65px;
-    height: 65px;
-    display: flex;
-    inset: auto 0% 27% auto;
 }
 
 .button-text-hover-out {
@@ -1689,9 +1654,7 @@ a:hover {
     line-height: 1;
     transition: all var(--transition-medium);
 }
-
-
-
+/* XXXXXXXXXXXXXXXXXX */
 .projects-name {
     z-index: 2;
     bottom: 1.563rem;
@@ -1699,7 +1662,7 @@ a:hover {
 
 
 /*---------------------------------
-    hero css start 
+    hero one css start 
 ---------------------------------*/
 .girl-image-wrapper {
     position: absolute;
@@ -1724,8 +1687,6 @@ a:hover {
 
 .home-one-hero-text {
     z-index: 10;
-    max-width: 850px;
-
 }
 
 .tp-scroll-indicator {
@@ -1747,6 +1708,36 @@ a:hover {
     background: #fff;
 }
 
+
+.little-boy-image-wrapper {
+    z-index: 2;
+    perspective: 1000px;
+    position: absolute;
+    inset: 60px 0% auto auto;
+}
+
+
+.home-one-background-glow {
+    background-image: radial-gradient(circle at 50% 42%,
+            #b460f126,
+            #b460f100 33%);
+}
+
+.home-one-hero {
+    background-image: radial-gradient(circle at 65% 30%,
+            #b460f14d,
+            #b460f100 28%);
+
+}
+
+.border-movement-bar {
+    background-color: var(--white);
+    width: 50px;
+    height: 3px;
+}
+
+
+/* XXXXXXXXXXXXXXXXX */
 .home-one-work-main {
     justify-content: flex-start;
     align-items: center;
@@ -1760,31 +1751,11 @@ a:hover {
     font-size: 60px;
 }
 
-.little-boy-image-wrapper {
-    z-index: 2;
-    perspective: 1000px;
-    position: absolute;
-    inset: 60px 0% auto auto;
-}
-
 .home-one-work-border {
     transform-origin: 0%;
     background-color: #2a2d4a;
     flex: 1;
     height: 1px;
-}
-
-.home-one-background-glow {
-    background-image: radial-gradient(circle at 50% 42%,
-            #b460f126,
-            #b460f100 33%);
-}
-
-.home-one-hero {
-    background-image: radial-gradient(circle at 65% 30%,
-            #b460f14d,
-            #b460f100 28%);
-
 }
 
 /*---------------------------------
@@ -1816,7 +1787,7 @@ a:hover {
     margin-bottom: 0;
 }
 
-.email-wrapper a,
+
 .footer-one-contact-wrapper a {
     color: var(--white);
 }
@@ -1879,8 +1850,7 @@ a:hover {
 }
 
 .footer-two-form-bottom {
-    grid-column-gap: 30px;
-    grid-row-gap: 30px;
+
     justify-content: space-between;
     align-items: center;
 }
@@ -1895,12 +1865,6 @@ a:hover {
 .footer-two {
     background-image: linear-gradient(#161724, #16172400);
 }
-
-.footer-two-form {
-    flex: 1;
-    max-width: 631px;
-}
-
 
 
 .footer-three-bottom {
@@ -1917,8 +1881,6 @@ a:hover {
     align-items: center;
 }
 
-
-
 .footer-one-contact {
     grid-column-gap: 17px;
     grid-row-gap: 17px;
@@ -1934,17 +1896,6 @@ a:hover {
 
 .footer-bottm-border {
     border-top: 1px solid var(--border-color);
-}
-
-/*---------------------------------
-    service css start 
----------------------------------*/
-
-
-.border-movement-bar {
-    background-color: var(--white);
-    width: 50px;
-    height: 3px;
 }
 
 

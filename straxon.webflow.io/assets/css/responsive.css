@@ -167,7 +167,7 @@
 }
 
 @media screen and (max-width: 1024px) {
-    .home-three-img-swiper {
+    .home-three-slider-area {
         max-width: 235px;
         width: 100%;
         height: auto;
@@ -556,9 +556,6 @@
     }
 
 
-    .footer-two-form {
-        max-width: none;
-    }
 
     .home-two-hero-image-wrapper {
         max-width: none;
@@ -1100,7 +1097,7 @@
         width: 8em;
     }
 
-    .home-three-img-swiper {
+    .home-three-slider-area {
         width: 260px;
         height: 340px;
         margin: auto;
