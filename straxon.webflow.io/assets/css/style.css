@@ -696,146 +696,7 @@ a:hover {
   Form CSS Start
 ---------------------------------*/
 
-.tp-form {
-    margin-bottom: 15px;
-}
 
-label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: 700;
-}
-
-.tp-input,
-.tp-select {
-    display: block;
-    width: 100%;
-    height: 38px;
-    padding: 8px 12px;
-    margin-bottom: 10px;
-
-    color: #333333;
-    background-color: var(--white);
-
-    border: 1px solid #cccccc;
-
-    font-size: 14px;
-    line-height: 1.42857;
-
-    transition: border-color var(--transition-medium) ease;
-}
-
-.tp-input::placeholder,
-.tp-select::placeholder {
-    color: #999999;
-}
-
-.tp-input:focus,
-.tp-select:focus {
-    outline: none;
-    border-color: #3898ec;
-    box-shadow: none;
-}
-
-.tp-input:disabled,
-.tp-select:disabled,
-.tp-input[readonly],
-.tp-select[readonly] {
-    cursor: not-allowed;
-    background-color: #eeeeee;
-}
-
-.tp-select[multiple] {
-    height: auto;
-}
-
-.tp-form-label {
-    display: inline-block;
-    margin-bottom: 0;
-
-    font-weight: 400;
-    cursor: pointer;
-}
-
-.tp-checkbox {
-    display: block;
-    margin-bottom: 5px;
-    padding-left: 20px;
-}
-
-.tp-checkbox-input {
-    float: left;
-    margin: 4px 0 0 -20px;
-
-    appearance: none;
-    -webkit-appearance: none;
-
-    border: 0;
-    outline: 0;
-    box-shadow: none;
-
-    line-height: normal;
-}
-
-.shadow-none {
-    box-shadow: none;
-}
-
-.tp-checkbox-custom {
-    width: 12px;
-    height: 12px;
-
-    border: 1px solid #cccccc;
-    border-radius: 2px;
-
-    box-shadow: 0 0 3px 1px #3898ec;
-}
-
-.tp-input-field {
-    width: 100%;
-    min-height: 46px;
-
-    margin-bottom: 0;
-    padding-left: 24px;
-
-    color: var(--menu-color);
-    background-color: var(--light-black);
-
-    border: 1px solid transparent;
-    border-radius: 60px;
-
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 28px;
-
-    transition: border-color var(--transition-medium) ease;
-}
-
-.tp-input-field::placeholder {
-    color: var(--menu-color);
-
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 28px;
-
-    text-transform: capitalize;
-}
-
-.tp-input-field:focus {
-    outline: none;
-    border-color: var(--purple);
-}
-
-.tp-checkbox-field {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-
-    column-gap: 10px;
-    row-gap: 10px;
-
-    margin-bottom: 0;
-}
 
 /*---------------------------------
 	Testimonial css start 
@@ -3149,8 +3010,145 @@ label {
 }
 
 /*---------------------------------
-    textarea css start 
+    Form css start 
 ---------------------------------*/
+.tp-form {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+
+.tp-input,
+.tp-select {
+    display: block;
+    width: 100%;
+    height: 38px;
+    padding: 8px 12px;
+    margin-bottom: 10px;
+
+    color: #333333;
+    background-color: var(--white);
+
+    border: 1px solid #cccccc;
+
+    font-size: 14px;
+    line-height: 1.42857;
+
+    transition: border-color var(--transition-medium) ease;
+}
+
+.tp-input::placeholder,
+.tp-select::placeholder {
+    color: #999999;
+}
+
+.tp-input:focus,
+.tp-select:focus {
+    outline: none;
+    border-color: #3898ec;
+    box-shadow: none;
+}
+
+.tp-input:disabled,
+.tp-select:disabled,
+.tp-input[readonly],
+.tp-select[readonly] {
+    cursor: not-allowed;
+    background-color: #eeeeee;
+}
+
+.tp-select[multiple] {
+    height: auto;
+}
+
+.tp-form-label {
+    display: inline-block;
+    margin-bottom: 0;
+
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.tp-checkbox {
+    display: block;
+    margin-bottom: 5px;
+    padding-left: 20px;
+}
+
+.tp-checkbox-input {
+    float: left;
+    margin: 4px 0 0 -20px;
+
+    appearance: none;
+    -webkit-appearance: none;
+
+    border: 0;
+    outline: 0;
+    box-shadow: none;
+
+    line-height: normal;
+}
+
+
+.tp-checkbox-custom {
+    width: 12px;
+    height: 12px;
+
+    border: 1px solid #cccccc;
+    border-radius: 2px;
+
+    box-shadow: 0 0 3px 1px #3898ec;
+}
+
+.tp-input-field {
+    width: 100%;
+    min-height: 46px;
+
+    margin-bottom: 0;
+    padding-left: 24px;
+
+    color: var(--menu-color);
+    background-color: var(--light-black);
+
+    border: 1px solid transparent;
+    border-radius: 60px;
+
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 28px;
+
+    transition: border-color var(--transition-medium) ease;
+}
+
+.tp-input-field::placeholder {
+    color: var(--menu-color);
+
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 28px;
+
+    text-transform: capitalize;
+}
+
+.tp-input-field:focus {
+    outline: none;
+    border-color: var(--purple);
+}
+
+.tp-checkbox-field {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    column-gap: 10px;
+    row-gap: 10px;
+
+    margin-bottom: 0;
+}
 
 .tp-form-checkbox-label {
     text-transform: capitalize;
