@@ -692,108 +692,8 @@ a:hover {
     }
 }
 
-/*---------------------------------
-  Form CSS Start
----------------------------------*/
 
 
-
-/*---------------------------------
-	Testimonial css start 
----------------------------------*/
-.tp-testimonial-slider {
-    text-align: center;
-    clear: both;
-    -webkit-tap-highlight-color: #0000;
-    tap-highlight-color: #0000;
-    background: #ddd;
-    height: 300px;
-    position: relative;
-}
-
-.tp-testimonial-track,
-.tp-about3-testimonial-viewport {
-    z-index: 1;
-    white-space: nowrap;
-    height: 100%;
-    display: block;
-    position: relative;
-    left: 0;
-    right: 0;
-    overflow: hidden;
-}
-
-.tp-slider-inner {
-    white-space: normal;
-}
-
-.tp-testimonial-item {
-    vertical-align: top;
-    white-space: normal;
-    text-align: left;
-    width: 100%;
-    height: 100%;
-    display: inline-block;
-    position: relative;
-}
-
-.tp-slider-dots {
-    z-index: 2;
-    text-align: center;
-    -webkit-tap-highlight-color: #0000;
-    tap-highlight-color: #0000;
-    height: 40px;
-    margin: auto;
-    padding-top: 10px;
-    position: absolute;
-    inset: auto 0 0;
-}
-
-.tp-slider-dot {
-    cursor: pointer;
-    background-color: #fff6;
-    width: 1em;
-    height: 1em;
-    margin: 0 3px 0.5em;
-    transition: background-color 0.1s, color 0.1s;
-    display: inline-block;
-    position: relative;
-}
-
-
-
-.tp-slider-dot:focus {
-    outline: none;
-    box-shadow: 0 0 0 2px #fff;
-}
-
-.tp-arrow-prev,
-.tp-arrow-next {
-    cursor: pointer;
-    color: var(--white);
-
-    width: 65px;
-    height: 65px;
-    margin: auto;
-    position: absolute;
-    inset: 0;
-    overflow: hidden;
-}
-
-.tp-arrow-prev:focus,
-.tp-arrow-next:focus {
-    outline: 0;
-}
-
-.tp-arrow-prev {
-    z-index: 3;
-    right: auto;
-}
-
-.tp-arrow-next {
-    z-index: 4;
-    left: auto;
-}
 
 /*---------------------------------
 	Dropdown css start 
@@ -890,12 +790,7 @@ a:hover {
     position: relative;
 }
 
-.header-main:before,
-.header-main:after {
-    content: " ";
-    grid-area: 1 / 1 / 2 / 2;
-    display: table;
-}
+
 
 .header-main:after {
     clear: both;
@@ -931,47 +826,219 @@ a:hover {
     outline: 0;
 }
 
+.tp-menu-dropdown-icon {
+    font-size: 11px;
+    font-weight: 300;
+    position: relative;
+    margin: 0;
+    width: auto;
+    height: auto;
+}
 
 
+.navbar-three-menu-wrap {
+    z-index: 5;
+    width: 100%;
+    position: relative;
+}
+
+.navbar-three .modal-backdrop.show {
+    display: none
+}
+
+.navbar-three-container {
+    z-index: 500;
+    position: relative;
+}
+.navbar-one {
+    background-color: #ddd0;
+    border-bottom: 1px solid var(--border-color);
+    position: relative;
+}
 /*---------------------------------
-	tab content css start 
+    let-s talk css  
 ---------------------------------*/
-.tp-tabs {
-    position: relative;
-}
-
-
-.tp-tabs:after {
-    clear: both;
-}
-
-.tp-tab-btn {
-    vertical-align: top;
-    text-align: left;
-    cursor: pointer;
+.let-s-talk-text-wrapper {
     color: var(--menu-color);
-    background-color: #050610;
-    padding: 7px 30px;
-    text-decoration: none;
-    display: inline-block;
-    position: relative;
-    border-radius: 60px;
-    line-height: 24px;
-}
-
-.tp-tab-btn:focus {
-    outline: 0;
-}
-
-.tp-tabs-content {
-    display: block;
+    justify-content: flex-start;
+    align-items: center;
+    font-weight: 400;
+    display: flex;
     position: relative;
     overflow: hidden;
 }
 
+.let-s-talk {
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    justify-content: flex-start;
+    align-items: center;
+    display: flex;
+}
 
-.tp--tab-active {
-    display: block;
+.ph-icon-wrapper {
+    background-color: var(--mobile-bg-color);
+    width: 24px;
+    height: 24px;
+}
+
+ .navbar-icon {
+    font-size: 11px;
+}
+
+.let-s-talk:hover .navbar-icon {
+    transform: rotate(130deg);
+}
+
+.let-s-talk:hover .button-text-hover {
+    transform: translateY(-32px)
+}
+
+.let-s-talk:hover .button-text-hover-out {
+    transform: translateY(0px);
+}
+
+.button-text-hover {
+    position: absolute;
+}
+
+
+.pages-menu {
+    position: relative;
+}
+.tp-dropdown-toggle::after {
+    display: none;
+}
+.tp-dropdown-menu {
+    background-color: #0f0623;
+    height: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    top: 100%;
+    overflow: hidden;
+
+}
+
+
+.navbar {
+    z-index: 999;
+    position: absolute;
+    inset: 0% 0% auto;
+    padding: 0;
+    background-color: rgb(5, 6, 16);
+}
+
+.header-sticky,
+.header-sticky {
+    position: fixed;
+    animation: sticky-menu 0.8s;
+}
+
+.header-sticky .navbar-one {
+    border-bottom: 0;
+}
+
+@keyframes sticky-menu {
+    from {
+        top: -50px;
+    }
+
+    to {
+        top: 0;
+    }
+}
+
+
+.menu-border {
+    background-color: var(--border-color-two);
+    width: 1px;
+    position: absolute;
+    inset: 0% auto 0% 32%;
+}
+
+.menu-border.menu-border-two {
+    inset: 0% 32% 0% auto;
+}
+
+
+
+.navbar-one-wrapper .tp-dropdown-toggle::after {
+    display: none;
+}
+
+.tp-dropdown-toggle {
+    display: flex;
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+    color: var(--menu-color);
+    text-transform: capitalize;
+    justify-content: flex-start;
+    padding: 0;
+    font-weight: 400;
+    transition: var(--transition-medium);
+}
+
+.main-menu a:hover,
+.main-menu a:focus {
+    color: var(--menu-hover-color, #ffffff);
+    outline: none;
+    box-shadow: none;
+    transition: var(--transition-medium);
+}
+
+.dropdown-link {
+    color: var(--menu-color);
+    text-transform: capitalize;
+    padding: 7px 60px 7px 20px;
+    font-size: 15px;
+    transition: transform 0.2s, color 0.2s;
+    position: relative;
+}
+
+.dropdown-link:hover {
+    color: var(--heading-color);
+    transform: translate(7px);
+}
+
+.dropdown-link.tp-active {
+    color: var(--heading-color);
+}
+
+.navbar-dropdown {
+    grid-column-gap: 50px;
+    grid-row-gap: 50px;
+    flex-flow: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.navbar-three-dropdown {
+    width: 100%;
+    padding: 0;
+}
+
+.navbar-dropdown-toggle {
+    background-color: #ddd0;
+    width: 100%;
+    position: static;
+    overflow: hidden;
+}
+
+.dropdown-icon {
+    margin-top: 5px;
+}
+
+.arrow-effect {
+    background-color: var(--body-color);
+    border-radius: 100%;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    position: absolute;
+    transform: scale(0);
 }
 
 
@@ -979,6 +1046,96 @@ a:hover {
 /*---------------------------------
    home two review css start 
 ---------------------------------*/
+.tp-testimonial-slider {
+    text-align: center;
+    clear: both;
+    -webkit-tap-highlight-color: #0000;
+    tap-highlight-color: #0000;
+    background: #ddd;
+    height: 300px;
+    position: relative;
+}
+
+.tp-testimonial-track,
+.tp-about3-testimonial-viewport {
+    z-index: 1;
+    white-space: nowrap;
+    height: 100%;
+    display: block;
+    position: relative;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+}
+
+.tp-slider-inner {
+    white-space: normal;
+}
+
+.tp-testimonial-item {
+    vertical-align: top;
+    white-space: normal;
+    text-align: left;
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    position: relative;
+}
+
+.tp-slider-dots {
+    z-index: 2;
+    text-align: center;
+    -webkit-tap-highlight-color: #0000;
+    tap-highlight-color: #0000;
+    height: 40px;
+    margin: auto;
+    padding-top: 10px;
+    position: absolute;
+    inset: auto 0 0;
+}
+
+.tp-slider-dot {
+    cursor: pointer;
+    background-color: #fff6;
+    width: 1em;
+    height: 1em;
+    margin: 0 3px 0.5em;
+    transition: background-color 0.1s, color 0.1s;
+    display: inline-block;
+    position: relative;
+}
+.tp-slider-dot:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px #fff;
+}
+
+.tp-arrow-prev,
+.tp-arrow-next {
+    cursor: pointer;
+    color: var(--white);
+
+    width: 65px;
+    height: 65px;
+    margin: auto;
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+}
+
+.tp-arrow-prev:focus,
+.tp-arrow-next:focus {
+    outline: 0;
+}
+
+.tp-arrow-prev {
+    z-index: 3;
+    right: auto;
+}
+
+.tp-arrow-next {
+    z-index: 4;
+    left: auto;
+}
 .left-arrow {
     border: 1px solid var(--border-color-two);
     border-radius: 100%;
@@ -1189,7 +1346,54 @@ a:hover {
     left: 0;
     right: 0;
 }
+.testimonail-text {
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    text-align: center;
+    justify-content: flex-start;
+    align-items: center;
+}
 
+.tp-testimonial {
+    background-color: #ddd0;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    padding-left: 80px;
+    padding-right: 80px;
+    display: flex;
+}
+
+.slider-icon-arrow {
+    opacity: 0.7;
+}
+
+.slider-icon-arrow:hover {
+    opacity: 1;
+}
+
+.author-image-one {
+    border-radius: 100%;
+    width: 100%;
+    height: 100%;
+}
+
+.tp-slider-viewport {
+    max-width: 601px;
+}
+
+.section-glow {
+    background-image: radial-gradient(circle at 34% 44%,
+            #f4497266,
+            #f4497200 23%);
+    position: absolute;
+    inset: 0%;
+}
+
+/*---------------------------------
+   about three review css start 
+---------------------------------*/
 
 .about-three-testimonial-left {
 
@@ -1245,66 +1449,10 @@ a:hover {
     max-width: 421px;
 }
 
-.team-testimonial {
-    background-image: radial-gradient(circle at 50% 34%, #f4497240, #f4497200 25%),
-        linear-gradient(#161724a1, #16172400);
-}
-
-.testimonail-text {
-    grid-column-gap: 10px;
-    grid-row-gap: 10px;
-    text-align: center;
-    justify-content: flex-start;
-    align-items: center;
-}
-
-.tp-testimonial {
-    background-color: #ddd0;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: auto;
-    padding-left: 80px;
-    padding-right: 80px;
-    display: flex;
-}
-
 /* .slick-prev,
 .slick-next {
     display: none !important;
 } */
-
-.slider-icon-arrow {
-    opacity: 0.7;
-}
-
-.slider-icon-arrow:hover {
-    opacity: 1;
-}
-
-.author-image-one {
-    border-radius: 100%;
-    width: 100%;
-    height: 100%;
-}
-
-.tp-slider-viewport {
-    max-width: 601px;
-}
-
-.choose-slide-text {
-    grid-column-gap: 15px;
-    grid-row-gap: 15px;
-    max-width: 276px;
-}
-
-.section-glow {
-    background-image: radial-gradient(circle at 34% 44%,
-            #f4497266,
-            #f4497200 23%);
-    position: absolute;
-    inset: 0%;
-}
 
 /*---------------------------------
     counters css start 
@@ -1363,7 +1511,7 @@ a:hover {
     background-image: none;
 }
 
-.counter {
+.counter-wrapper {
     justify-content: center;
     align-items: flex-start;
     height: clamp(40px, 10vw, 120px);
@@ -1375,8 +1523,6 @@ a:hover {
     border-bottom: 1px solid var(--border-color);
 
 }
-
-
 .about-one-counter-right {
     background-color: var(--light-black);
     grid-template-columns: 1fr;
@@ -1801,14 +1947,6 @@ a:hover {
     height: 3px;
 }
 
-.tp-menu-dropdown-icon {
-    font-size: 11px;
-    font-weight: 300;
-    position: relative;
-    margin: 0;
-    width: auto;
-    height: auto;
-}
 
 /*---------------------------------
    gradiant line css start 
@@ -1978,21 +2116,6 @@ a:hover {
 /*   container css start
 /*----------------------------------------*/
 
-
-.navbar-three-menu-wrap {
-    z-index: 5;
-    width: 100%;
-    position: relative;
-}
-
-.navbar-three .modal-backdrop.show {
-    display: none
-}
-
-.navbar-three-container {
-    z-index: 500;
-    position: relative;
-}
 
 
 
@@ -2251,14 +2374,6 @@ a:hover {
     align-items: flex-start;
 }
 
-/*---------------------------------
-    navbar one css start 
----------------------------------*/
-.navbar-one {
-    background-color: #ddd0;
-    border-bottom: 1px solid var(--border-color);
-    position: relative;
-}
 
 /*---------------------------------
     Portfolio css start 
@@ -2367,62 +2482,12 @@ a:hover {
 
 }
 
-/*---------------------------------
-    let-s talk css  
----------------------------------*/
-.let-s-talk-text-wrapper {
-    color: var(--menu-color);
-    justify-content: flex-start;
-    align-items: center;
-    font-weight: 400;
-    display: flex;
-    position: relative;
-    overflow: hidden;
-}
-
-.let-s-talk {
-    grid-column-gap: 10px;
-    grid-row-gap: 10px;
-    justify-content: flex-start;
-    align-items: center;
-    display: flex;
-}
-
-.ph-icon-wrapper {
-    background-color: var(--mobile-bg-color);
-    width: 24px;
-    height: 24px;
-}
-
- .navbar-icon {
-    font-size: 11px;
-}
-
-.let-s-talk:hover .navbar-icon {
-    transform: rotate(130deg);
-}
-
-.let-s-talk:hover .button-text-hover {
-    transform: translateY(-32px)
-}
-
-.let-s-talk:hover .button-text-hover-out {
-    transform: translateY(0px);
-}
-
-.button-text-hover {
-    position: absolute;
-}
 
 /* IMPORTENT I CHECKED AFTER */
 
 .body-small-text {
     font-size: 14px;
     line-height: 24px;
-}
-
-.text-capitalize.tp-common-white.service-tag {
-    max-width: 106px;
 }
 
 
@@ -2510,50 +2575,6 @@ a:hover {
 ---------------------------------*/
 
 
-.pages-menu {
-    position: relative;
-}
-.tp-dropdown-toggle::after {
-    display: none;
-}
-.tp-dropdown-menu {
-    background-color: #0f0623;
-    height: auto;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    top: 100%;
-    overflow: hidden;
-
-}
-
-
-.navbar {
-    z-index: 999;
-    position: absolute;
-    inset: 0% 0% auto;
-    padding: 0;
-    background-color: rgb(5, 6, 16);
-}
-
-.header-sticky,
-.header-sticky {
-    position: fixed;
-    animation: sticky-menu 0.8s;
-}
-
-.header-sticky .navbar-one {
-    border-bottom: 0;
-}
-
-@keyframes sticky-menu {
-    from {
-        top: -50px;
-    }
-
-    to {
-        top: 0;
-    }
-}
 
 .border-wrapper {
     background-color: var(--border-color-two) ;
@@ -2567,97 +2588,6 @@ a:hover {
 }
 
 
-.menu-border {
-    background-color: var(--border-color-two);
-    width: 1px;
-    position: absolute;
-    inset: 0% auto 0% 32%;
-}
-
-.menu-border.menu-border-two {
-    inset: 0% 32% 0% auto;
-}
-
-
-
-.navbar-one-wrapper .tp-dropdown-toggle::after {
-    display: none;
-}
-
-.tp-dropdown-toggle {
-    display: flex;
-    grid-column-gap: 5px;
-    grid-row-gap: 5px;
-    color: var(--menu-color);
-    text-transform: capitalize;
-    justify-content: flex-start;
-    padding: 0;
-    font-weight: 400;
-    transition: var(--transition-medium);
-}
-
-.main-menu a:hover,
-.main-menu a:focus {
-    color: var(--menu-hover-color, #ffffff);
-    outline: none;
-    box-shadow: none;
-    transition: var(--transition-medium);
-}
-
-.dropdown-link {
-    color: var(--menu-color);
-    text-transform: capitalize;
-    padding: 7px 60px 7px 20px;
-    font-size: 15px;
-    transition: transform 0.2s, color 0.2s;
-    position: relative;
-}
-
-.dropdown-link:hover {
-    color: var(--heading-color);
-    transform: translate(7px);
-}
-
-.dropdown-link.tp-active {
-    color: var(--heading-color);
-}
-
-.navbar-dropdown {
-    grid-column-gap: 50px;
-    grid-row-gap: 50px;
-    flex-flow: wrap;
-    justify-content: flex-start;
-    align-items: center;
-    padding-top: 20px;
-}
-
-.navbar-three-dropdown {
-    width: 100%;
-    padding: 0;
-}
-
-.navbar-dropdown-toggle {
-    background-color: #ddd0;
-    width: 100%;
-    position: static;
-    overflow: hidden;
-}
-
-.dropdown-icon {
-    margin-top: 5px;
-}
-
-.arrow-effect {
-    background-color: var(--body-color);
-    border-radius: 100%;
-    justify-content: center;
-    align-items: center;
-    width: 40px;
-    height: 40px;
-    display: flex;
-    position: absolute;
-    transform: scale(0);
-}
 
 /*---------------------------------
    radius css start 
@@ -2871,7 +2801,7 @@ a:hover {
 }
 
 .home-two-service-boxes:hover .gradiant-arrow {
-    opacity: 1 !important;
+    opacity: 1 ;
     transition: all 0.2s ease;
 }
 
@@ -2944,6 +2874,9 @@ a:hover {
 .line-background {
     background-image: radial-gradient(circle at 50% 25%, #b460f14d, #fff0 26%);
 }
+/*---------------------------------
+    home two why choose us css start 
+---------------------------------*/
 
 .home-two-why-choose-us-background {
     border-bottom: 1px solid var(--border-color);
@@ -2958,7 +2891,11 @@ a:hover {
     position: absolute;
     inset: 0%;
 }
-
+.choose-slide-text {
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
+    max-width: 276px;
+}
 .choose-us-slides {
     flex: none;
     max-width: 673px;
@@ -4759,6 +4696,37 @@ label {
 /*---------------------------------
     pricing css start 
 ---------------------------------*/
+.tp-tabs {
+    position: relative;
+}
+
+.tp-tabs:after {
+    clear: both;
+}
+
+.tp-tab-btn {
+    vertical-align: top;
+    text-align: left;
+    cursor: pointer;
+    color: var(--menu-color);
+    background-color: #050610;
+    padding: 7px 30px;
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+    border-radius: 60px;
+    line-height: 24px;
+}
+
+.tp-tab-btn:focus {
+    outline: 0;
+}
+
+.tp-tabs-content {
+    display: block;
+    position: relative;
+    overflow: hidden;
+}
 .pricing-hero {
     background-image: radial-gradient(circle at 67% 34%,
             #b460f13b,
@@ -4937,7 +4905,7 @@ label {
 
 
 .tp-active {
-    color: var(--heading-color) !important;
+    color: var(--heading-color) ;
     background-image: linear-gradient(119deg, #f3476e, #af6aec);
 }
 

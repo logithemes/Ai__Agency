@@ -88,7 +88,7 @@ function startCounter() {
 
   if (started) return;
 
-  $('.counter').each(function () {
+  $('.counter-wrapper').each(function () {
 
     let $this = $(this);
     let target = parseInt($this.attr("data-target"));
