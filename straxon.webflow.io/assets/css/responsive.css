@@ -88,14 +88,6 @@
     }
 
 
-    .contact-two-hero-text-buttom {
-        flex-flow: row;
-        justify-content: flex-start;
-        align-items: center;
-        max-width: 470px;
-    }
-
-
 
     .line-shape {
         display: block;
@@ -760,10 +752,6 @@
         max-width: none;
     }
 
-    .contact-main-right-wrapper {
-        max-width: none;
-    }
-
     .contact-one-hero-middle-wrapper {
         order: -1;
     }
@@ -806,21 +794,6 @@
     .tp-utility-content.password-page-content {
         width: 90%;
         padding: 60px 40px;
-    }
-
-    .pricing-hero-options-boxes,
-    .pricing-hero-options-boxes.pricing-hero-options-boxes-two,
-    .pricing-hero-options-boxes.pricing-hero-options-boxes-three {
-        max-width: none;
-    }
-
-    .pricing-hero-options {
-        grid-column-gap: 30px;
-        grid-row-gap: 30px;
-        grid-template-rows: auto auto;
-        grid-template-columns: 1fr 1fr;
-        grid-auto-columns: 1fr;
-        display: grid;
     }
 
     .pricing-plans-cards {
@@ -1152,7 +1125,7 @@
         grid-column-gap: 40px;
         grid-row-gap: 40px;
         padding-top: 0;
-        transform: none !important;
+        transform: none ;
     }
 
     .tp-btn {
@@ -1168,6 +1141,7 @@
         display: none;
         bottom: 25%;
     }
+    .wrapper-404-img{max-width: 200px;}
 
     .home-digital-solutions-option {
         padding: 25px 15px;
@@ -1513,12 +1487,6 @@
         max-width: none;
     }
 
-    .contact-two-hero-text-buttom {
-        flex-flow: wrap;
-        justify-content: flex-start;
-        align-items: center;
-    }
-
     .contact-two-form-main {
         grid-column-gap: 35px;
         grid-row-gap: 35px;
@@ -1544,9 +1512,7 @@
         display: flex;
     }
 
-    .pricing-hero-options-boxes {
-        flex-flow: column;
-    }
+
 
     .pricing-plans-cards {
         padding-left: 15px;
@@ -2199,9 +2165,7 @@
         display: none;
     }
 
-    .pricing-hero-options {
-        grid-template-columns: 1fr;
-    }
+
 
     .tp-tab-btn {
         padding-left: 20px;

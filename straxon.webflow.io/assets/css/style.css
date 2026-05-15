@@ -4133,9 +4133,8 @@ label {
 
 
 /*---------------------------------
-    contact  css start 
+    contact page form  css start 
 ---------------------------------*/
-
 
 .form-input-wrapper {
     flex: 1;
@@ -4191,21 +4190,10 @@ label {
     justify-content: flex-start;
     align-items: center;
 }
-
-.contact-main-right-wrapper {
-    max-width: 345px;
-}
-
-.contact-main-left-wrapper {
-    flex: 1;
-    max-width: 581px;
-}
-
 .conact-one-form-wrapper {
     justify-content: flex-start;
     align-items: center;
 }
-
 
 .contact-main-form {
     background-color: #161724;
@@ -4214,15 +4202,17 @@ label {
 }
 
 .contact-one-heading-wrap {
-    grid-row-gap: 20px;
     flex-flow: wrap;
 }
 
 .form-textarea-one {
-    flex: 1;
+
     position: relative;
 }
 
+/*---------------------------------
+    contact informations css start 
+---------------------------------*/
 .contact-one-informations {
     align-items: center;
     padding-top: 25px;
@@ -4240,6 +4230,9 @@ label {
     padding-left: 40px;
 }
 
+/*---------------------------------
+    contact two form css start 
+---------------------------------*/
 .contact-two-form-items {
     width: 100%;
 }
@@ -4259,29 +4252,11 @@ label {
     max-width: 218px;
 }
 
-.contact-two-hero-text-buttom {
-    grid-column-gap: 40px;
-    grid-row-gap: 40px;
-    flex-flow: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    max-width: none;
-}
-
-.contact-two-form-wrap {
-    width: 100%;
-    max-width: 851px;
-}
-
-
-
 .contact-two-top {
     background-image: radial-gradient(circle at 50% 54%, #f4497233, #f4497200 25%),
         radial-gradient(circle at 18% 42%, #b460f13b, #b460f100 16%);
     position: relative;
 }
-
-
 
 .contact-two-middile {
     background-image: radial-gradient(circle at 64% 38%,
@@ -4289,10 +4264,6 @@ label {
             #f4497200 18%);
 }
 
-
-.contact-two-cta-right {
-    max-width: 679px;
-}
 
 .contact-two-middlle-main {
     background-image: linear-gradient(#161724, #16172480);
@@ -4311,8 +4282,6 @@ label {
 }
 
 .contact-social-tags {
-    grid-column-gap: 10px;
-    grid-row-gap: 10px;
     color: var(--menu-color);
     border: 1px solid #aeb2d7;
     border-radius: 60px;
@@ -4322,8 +4291,6 @@ label {
     display: flex;
 }
 
-
-
 .line-shape {
     z-index: -1;
     display: none;
@@ -4332,13 +4299,14 @@ label {
 }
 
 /*---------------------------------
-    utility css start 
+    401 css start 
 ---------------------------------*/
 .tp-utility-wrapper {
     background-image: radial-gradient(circle at 63% 35%, #f449723d, #f4497200 21%),
         radial-gradient(circle at 38% 53%, #b460f129, #b460f100 22%);
     padding-left: 15px;
     padding-right: 15px;
+    
 }
 
 .tp-utility-content {
@@ -4348,11 +4316,8 @@ label {
     display: flex;
 }
 
-.tp-utility-content.error-page-content {
-    max-width: 550px;
-}
 
-.tp-utility-content.password-page-content {
+.password-page-content {
     z-index: 4;
     background-color: #161724;
     border-radius: 30px;
@@ -4370,35 +4335,19 @@ label {
     display: flex;
 }
 
-.tp-utility-hero-text {
-    text-align: center;
-    justify-content: flex-start;
-    align-items: center;
+.form-button-wrapper-401 {
+    background-image: linear-gradient(98deg,
+            var(--orange),
+            var(--purple) 52%,
+            var(--violet));
+    border-radius: 60px;
+    width: 100%;
+    max-width: 410px;
+    padding: 2px;
 }
-
-
-.tp-utility-header {
-    justify-content: flex-start;
-    align-items: center;
-
-}
-
 /*---------------------------------
     404 css start 
 ---------------------------------*/
-.error-page-image {
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    position: relative;
-}
-
-.error-page-text {
-    grid-column-gap: 12px;
-    grid-row-gap: 12px;
-    justify-content: center;
-    align-items: center;
-}
 
 .tp-404-description {
     max-width: 352px;
@@ -4421,16 +4370,10 @@ label {
     inset: auto 7% 40% auto;
 }
 
-.form-button-wrapper {
-    background-image: linear-gradient(98deg,
-            var(--orange),
-            var(--purple) 52%,
-            var(--violet));
-    border-radius: 60px;
-    width: 100%;
-    max-width: 410px;
-    padding: 2px;
-}
+
+/*---------------------------------
+    pricing css start 
+---------------------------------*/
 
 .most-popular {
     color: var(--white);
@@ -4440,10 +4383,6 @@ label {
     font-size: 14px;
     line-height: 24px;
 }
-
-/*---------------------------------
-    pricing css start 
----------------------------------*/
 .tp-tabs {
     position: relative;
 }
@@ -4510,36 +4449,6 @@ label {
     border: 1px solid #d43fc5;
     border-radius: 60px;
     overflow: hidden;
-}
-
-.pricing-hero-options-boxes {
-    grid-column-gap: 30px;
-    grid-row-gap: 30px;
-    flex: 1;
-    max-width: 333px;
-}
-
-.pricing-hero-options-boxes-two {
-    max-width: 350px;
-}
-
-.pricing-hero-options-boxes-three {
-    max-width: 400px;
-}
-
-.pricing-hero-options {
-    grid-column-gap: 30px;
-    grid-row-gap: 30px;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    margin-bottom: -10px;
-}
-
-
-.pricing-hero-main {
-    justify-content: flex-start;
-    align-items: center;
 }
 
 .pricing-options-lists {
@@ -4627,7 +4536,6 @@ label {
     width: 16px;
     height: 16px;
     margin-top: 5px;
-    display: flex;
 }
 
 .tick-icon-wrapper {
