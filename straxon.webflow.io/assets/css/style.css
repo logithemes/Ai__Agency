@@ -91,6 +91,7 @@
     /* Font Size */
     --tp-fs-10: 10px;
     --tp-fs-12: 12px;
+    --tp-fs-14: 14px;
     --tp-fs-xxl: 50px;
 
     /* Radius */
@@ -410,6 +411,10 @@ a:hover {
     color: #6c757d;
 }
 
+.tp-text-light-dark {
+    color: #424355;
+}
+
 .tp-input-icon {
     color: var(--tp-icon-color);
 }
@@ -455,6 +460,10 @@ a:hover {
 .tp-fs-12 {
     font-size: var(--tp-fs-12);
 }
+.text-small {
+    font-size: var(--tp-fs-14);
+    line-height: 24px;
+}
 
 .tp-fs-xxl {
     font-size: var(--tp-fs-xxl);
@@ -464,7 +473,9 @@ a:hover {
     font-size: 14px;
     line-height: 24px;
 }
-
+.tp-text-body {
+    color: var(--body-font-color);
+}
 
 /*=========================================================
     Radius Utilities
@@ -1378,7 +1389,15 @@ a:hover {
     flex: 1;
     max-width: 421px;
 }
+.about-three-slider .slick-dots {
+    display: flex;
+}
 
+.about-three-slider .slick-dots li {
+    width: auto;
+    height: auto;
+    display: flex;
+}
 /* .slick-prev,
 .slick-next {
     display: none !important;
@@ -1642,6 +1661,83 @@ a:hover {
 .button-text-hover-out {
     transform: translate(0, 110%);
 }
+.links-hover-effect {
+    color: var(--menu-color);
+    transition: color 0.35s;
+}
+
+.links-hover-effect:hover {
+    color: var(--white);
+}
+.button-two {
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    justify-content: flex-start;
+    align-items: center;
+    display: flex;
+    color: var(--heading-color) ;
+}
+
+.button-two:hover .button-two-arrow {
+    transform: translateX(5px);
+}
+
+.button-two-arrow {
+    margin-left: -3px;
+    transition: all var(--transition-medium);
+}
+
+.button-two-icon-wrapper {
+    justify-content: flex-start;
+    align-items: center;
+    display: flex;
+}
+.button-wrapper {
+    border-radius: 60px;
+    justify-content: center;
+    align-items: center;
+    min-width: 148px;
+    padding: 2px;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.pricing-tabs-content .pricing-button-wrapper {
+    width: 100%;
+}
+
+.help-button-wrapper {
+    grid-column-gap: 8px;
+    grid-row-gap: 8px;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.button-border-effect {
+    z-index: 1;
+    background-image: linear-gradient(90deg,
+            #fe4d581a,
+            var(--purple) 50%,
+            #b264f31a);
+    width: 50%;
+    height: 900%;
+    position: absolute;
+}
+
+.circle-icon {
+    border: 1px solid var(--border-color);
+    border-radius: 100%;
+    flex: none;
+    justify-content: center;
+    align-items: center;
+    width: 93px;
+    height: 93px;
+    display: flex;
+    position: relative;
+}
+
 
 /*---------------------------------
     heading four css start 
@@ -1736,7 +1832,16 @@ a:hover {
     height: 3px;
 }
 
-
+.hero-border-wrapper {
+    background-color: var(--border-color-two) ;
+    transform-origin: 0%;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 665px;
+    height: 1px;
+    display: flex;
+}
 /* XXXXXXXXXXXXXXXXX */
 .home-one-work-main {
     justify-content: flex-start;
@@ -1803,6 +1908,10 @@ a:hover {
     grid-row-gap: 20px;
     flex: 1;
     max-width: 204px;
+}
+.email-text {
+    letter-spacing: normal;
+    text-transform: lowercase;
 }
 
 .footer-one-socials {
@@ -1985,13 +2094,11 @@ a:hover {
     overflow: hidden;
 }
 
-.home-one-service-cards-icon.about-three-service-icons {
+.about-three-service .about-three-service-icons {
     flex: none;
     width: 110px;
     height: 110px;
 }
-
-
 
 .home-one-service-cards {
     grid-column-gap: 15px;
@@ -2021,38 +2128,6 @@ a:hover {
     transition: all var(--transition-medium);
 }
 
-.links-hover-effect {
-    color: var(--menu-color);
-    transition: color 0.35s;
-}
-
-.links-hover-effect:hover {
-    color: var(--white);
-}
-
-.button-two {
-    grid-column-gap: 10px;
-    grid-row-gap: 10px;
-    justify-content: flex-start;
-    align-items: center;
-    display: flex;
-    color: var(--heading-color) ;
-}
-
-.button-two:hover .button-two-arrow {
-    transform: translateX(5px);
-}
-
-.button-two-arrow {
-    margin-left: -3px;
-    transition: all var(--transition-medium);
-}
-
-.button-two-icon-wrapper {
-    justify-content: flex-start;
-    align-items: center;
-    display: flex;
-}
 
 .home-one-work-bottom-text {
     grid-column-gap: 20px;
@@ -2062,12 +2137,6 @@ a:hover {
     width: 100%;
     max-width: 536px;
 }
-
-/*----------------------------------------*/
-/*   container css start
-/*----------------------------------------*/
-
-
 
 
 /*---------------------------------
@@ -2309,7 +2378,6 @@ a:hover {
     padding-right: 20px;
 }
 
-
 .projects-marquee-main-wrap {
     border-top: 1px solid var(--border-color);
     justify-content: flex-start;
@@ -2320,10 +2388,6 @@ a:hover {
     overflow: hidden;
 }
 
-.projects-hero-description {
-    justify-content: flex-start;
-    align-items: flex-start;
-}
 
 
 /*---------------------------------
@@ -2361,11 +2425,6 @@ a:hover {
     opacity: 0;
 }
 
-.work-container {
-    z-index: 10;
-    position: relative;
-}
-
 .home-one-portfolio-right {
     grid-column-gap: 80px;
     grid-row-gap: 80px;
@@ -2394,18 +2453,17 @@ a:hover {
     opacity: 1;
 }
 
-.tp-work-item .two {
+.tp-work-item .card-two-wrapper {
     max-width: 590px;
 }
 
-.tp-work-item .three {
+.tp-work-item .card-three-wrapper {
     max-width: 409px;
 }
 
-.tp-work-item .four {
+.tp-work-item .card-four-wrapper {
     max-width: 410px;
 }
-
 
 .portfolio-card-image {
     border-radius: 30px;
@@ -2433,141 +2491,9 @@ a:hover {
 
 }
 
-
-/* IMPORTENT I CHECKED AFTER */
-
-.body-small-text {
-    font-size: 14px;
-    line-height: 24px;
-}
-
-
-.small-tag-wrapper .text-light-grey {
-    color: #6b6b6b;
-}
-
-.background-glow {
-    background-image: radial-gradient(circle at 50% 72%,
-            #b460f13d,
-            #b460f100 37%);
-}
-
-
-/*---------------------------------
-    button wrapper css start 
----------------------------------*/
-.button-wrapper {
-    border-radius: 60px;
-    justify-content: center;
-    align-items: center;
-    min-width: 148px;
-    padding: 2px;
-    display: flex;
-    position: relative;
-    overflow: hidden;
-}
-
-
-.button-wrapper.pricing-button-wrapper {
-    width: 100%;
-}
-
-.help-button-wrapper {
-    grid-column-gap: 8px;
-    grid-row-gap: 8px;
-    justify-content: flex-start;
-    align-items: center;
-}
-
-.button-border-effect {
-    z-index: 1;
-    background-image: linear-gradient(90deg,
-            #fe4d581a,
-            var(--purple) 50%,
-            #b264f31a);
-    width: 50%;
-    height: 900%;
-    position: absolute;
-}
-
-.circle-icon {
-    border: 1px solid var(--border-color);
-    border-radius: 100%;
-    flex: none;
-    justify-content: center;
-    align-items: center;
-    width: 93px;
-    height: 93px;
-    display: flex;
-    position: relative;
-}
-
-
-.newsletter-form {
-    justify-content: flex-start;
-    align-items: center;
-    display: flex;
-    position: relative;
-}
-
-.newsletter {
-    flex: 1;
-    max-width: 330px;
-}
-
-.contact-three-hero-heading {
-    z-index: 4;
-    position: relative;
-}
-
-
-/*---------------------------------
-    dropdown mega-menu css start 
----------------------------------*/
-
-
-
-.border-wrapper {
-    background-color: var(--border-color-two) ;
-    transform-origin: 0%;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    max-width: 665px;
-    height: 1px;
-    display: flex;
-}
-
-
-
-/*---------------------------------
-   radius css start 
----------------------------------*/
-
-
-.marquee-image-one .image-three,
-.marquee-image-one .image-two {
-    position: absolute;
-}
-
-
-
 .work-three-image {
     margin-top: -50px;
 }
-
-.contact-hero-image-one {
-    height: auto;
-    position: absolute;
-    inset: -41% auto auto -23%;
-}
-
-.contact-hero-image-two {
-    height: auto;
-    position: absolute;
-    inset: auto -5% -13% auto;
-}
-
 
 /*---------------------------------
     heading five css start 
@@ -2581,38 +2507,16 @@ a:hover {
     line-height: 1.06;
 }
 
-.blog-one-name {
-    line-height: 28px;
-}
-.email-text {
-    letter-spacing: normal;
-    text-transform: lowercase;
-}
-
-.experience-name {
-    max-width: 115px;
-}
-
-.blog-one-information .blog-one-name {
-    max-width: 300px;
-}
-
-.text-small {
-    font-size: 14px;
-    line-height: 24px;
-}
 
 /*---------------------------------
     faq css start 
 ---------------------------------*/
-
 
 .home-two-faq-right {
     z-index: 3;
     padding-top: 54px;
     padding-left: 20px;
 }
-
 
 .faq-top .dropdown-icon {
     transition: transform 0.3s ease;
@@ -2621,43 +2525,29 @@ a:hover {
 .faq-top:not(.collapsed) .dropdown-icon {
     transform: rotate(180deg);
 }
-
-
-
-
 .home-faq-border {
     background-color: var(--border-color);
     width: 1px;
     height: 100%;
 }
-
-
 .faq-border-wrapper {
-
     height: 100%;
-
     position: absolute;
     inset: 0% 0% auto;
 }
-
 
 .faq-border {
     cursor: pointer;
     border-bottom: 1px solid var(--border-color);
 }
-
 .faq-answers {
     overflow: hidden;
 }
-
 .faq-text {
     max-width: 550px;
     margin-bottom: 24px;
 }
 
-.navbar-toggle-icon i {
-    transition: transform 0.3s ease;
-}
 
 .accordion-line {
     background-color: var(--border-color);
@@ -2665,10 +2555,6 @@ a:hover {
     height: 1px;
     transition: all var(--transition-medium);
 }
-
-
-
-
 .dot {
     background-image: linear-gradient(105deg, var(--pink), var(--violet));
     border-radius: 100%;
@@ -2676,7 +2562,6 @@ a:hover {
     height: 6px;
     transition: all var(--transition-medium);
 }
-
 
 .tp-text-stroke {
     -webkit-text-stroke: 1px currentColor;
@@ -2689,7 +2574,6 @@ a:hover {
 /*---------------------------------
     home two hero css start 
 ---------------------------------*/
-
 .home-two-hero-image-button {
     grid-column-gap: 10px;
     grid-row-gap: 10px;
@@ -2704,7 +2588,7 @@ a:hover {
 }
 .home-two-hero-glow {
     background-image: radial-gradient(circle at 90% 30%, #f4497238, #f4497200 18%),
-        radial-gradient(circle at 50% 40%, #b264f34d, #b264f300 31%),
+        radial-gradient(circle at 50% 40%, #3938394d, #b264f300 31%),
         url("../img/background/home-two-hero-glow.webp");
     background-position: 0 0, 0 0, 57% 7%;
     background-repeat: repeat, repeat, no-repeat;
@@ -2720,26 +2604,17 @@ a:hover {
 }
 
 .home-two-hero-image-wrapper {
-    border-radius: 30px;
-    flex: 1;
-    justify-content: flex-start;
-    align-items: center;
-    max-width: 573px;
-    display: flex;
     position: relative;
     overflow: hidden;
 }
-
 
 
 /*---------------------------------
   service two css start 
 ---------------------------------*/
 .home-two-service-description {
-
     max-width: 252px;
 }
-
 
 .home-two-service-text {
     border-top: 1px solid var(--border-color);
@@ -2778,7 +2653,6 @@ a:hover {
     width: 33vw;
     display: flex;
 }
-
 
 .home-two-projects-cards-image {
     width: 100%;
@@ -2876,26 +2750,6 @@ a:hover {
     line-height: 1;
 }
 
-.text-light-dark {
-    color: #424355;
-}
-
-.blog-two-name {
-    line-height: 48px;
-}
-
-.blog-two-name span {
-    line-height: 45px;
-}
-
-.blog-three-line span {
-    line-height: 50px;
-}
-
-.blog-three-hero .blg-one-gradiant {
-    font-size: clamp(40px, 12vw, 130px);
-    line-height: 1;
-}
 
 /*---------------------------------
     Form css start 
@@ -3093,11 +2947,20 @@ label {
 .footer-two-form .input-field-two {
     margin-bottom: 35px;
 }
+.newsletter-form {
+    justify-content: flex-start;
+    align-items: center;
+    display: flex;
+    position: relative;
+}
 
+.newsletter {
+    flex: 1;
+    max-width: 330px;
+}
 /*---------------------------------
-    home two heading css start 
+   tag-border home two heading css start 
 ---------------------------------*/
-
 
 .tag-wrapper {
     grid-column-gap: 10px;
@@ -3139,18 +3002,15 @@ label {
     opacity: 1;
 }
 
-
-/*---------------------------------
-    navbar three css start 
----------------------------------*/
-
 .navbar-three-menu-items {
     grid-column-gap: 60px;
     grid-row-gap: 60px;
     justify-content: space-between;
     align-items: center;
 }
-
+.navbar-toggle-icon i {
+    transition: transform 0.3s ease;
+}
 .navbar-three-bar-one {
     background-color: var(--white);
     width: 24px;
@@ -3219,7 +3079,7 @@ label {
     align-items: flex-start;
 }
 
-.wrap-two {
+.tp-content-wrap-two {
     grid-column-gap: 25px;
     grid-row-gap: 25px;
 }
@@ -3337,7 +3197,7 @@ label {
 }
 .home-three-service-cards:hover .service-icon-three {color: #fff;}
 
-.home-three-box:hover .top-border {
+.home-three-box:hover .tp-top-border {
     opacity: 0;
 }
 
@@ -3374,15 +3234,12 @@ label {
     background-size: auto, cover;
 }
 
-
-.top-border {
+.tp-top-border {
     background-color: var(--border-color);
     height: 1px;
     position: absolute;
     inset: 0% 0% auto;
 }
-
-
 .service-paragraph {
     margin-bottom: 0;
 }
@@ -3445,7 +3302,7 @@ label {
     padding-left: 50px;
 }
 
-.recent-work-boxes {
+.tp-recent-work-boxes {
     z-index: 3;
     grid-column-gap: 110px;
     grid-row-gap: 80px;
@@ -3466,7 +3323,6 @@ label {
     flex-flow: wrap;
 }
 
-
 .home-three-hero-image {
     max-width: 480px;
 }
@@ -3484,7 +3340,7 @@ label {
 }
 
 
-.flower {
+.tp-flower {
     align-self: flex-end;
     margin-bottom: 20px;
 }
@@ -3505,11 +3361,10 @@ label {
 
 
 /*---------------------------------
-    home three heading css start 
+    XXXXXXXXXXXXXXXXX
 ---------------------------------*/
 .heading-one {
     color: var(--white);
-    
     font-size: clamp(40px, 12vw, 130px);
     line-height: 0.9;
 }
@@ -3576,14 +3431,12 @@ label {
 }
 
 /*---------------------------------
-  skills css start 
+ home three skills css start 
 ---------------------------------*/
 .skills-left-texts {
     flex: 1;
     max-width: 735px;
 }
-
-
 .skills-options-wrapper {
     position: relative;
 }
@@ -3615,14 +3468,12 @@ label {
 }
 
 .theme-border {
-    background-color: var(--border-color) !important;
+    background-color: var(--border-color);
     height: 1px;
     inset: auto 0% 0%;
 }
 
-.tp-text-body {
-    color: var(--body-font-color);
-}
+
 
 /*---------------------------------
   home three digital css start
@@ -3737,7 +3588,7 @@ label {
     min-height: 150px;
 }
 
-.form-div .form-control:focus {
+.tp-form-wrapper .form-control:focus {
     color: var(--menu-color);
     background-color: #131421;
     box-shadow: none;
@@ -3925,18 +3776,11 @@ label {
 }
 
 /*---------------------------------
-    about one css start 
+    about one mission css start 
 ---------------------------------*/
 .about-one-bottom-background {
     background-image: linear-gradient(#161724, #16172400);
 }
-
-
-.about-one-mission-text {
-    flex: 1;
-    max-width: 524px;
-}
-
 
 .about-one-mission-image {
     flex: 1;
@@ -3947,12 +3791,6 @@ label {
     background-image: radial-gradient(circle at 76% 58%, #b460f13d, #b460f100 20%),
         radial-gradient(circle at 22% 59%, #f4497252, #f4497200 22%);
 }
-
-
-.home-one-service-cards-icon-overlay {
-    transition: all 0.3s ease-in;
-}
-
 
 .about-one-skills-options {
     flex-flow: wrap;
@@ -3986,13 +3824,7 @@ label {
     display: flex;
 }
 
-.body-text-big {
-    color: var(--white);
-    font-size: 20px;
-    line-height: 30px;
-}
-
-.text-change-opacity {
+.tp-text-change-opacity {
 
     flex-flow: column;
     justify-content: space-between;
@@ -4007,10 +3839,11 @@ label {
 }
 
 /*---------------------------------
-    about two css start 
+    about two award css start 
 ---------------------------------*/
-
-
+.experience-name {
+    max-width: 115px;
+}
 .about-two-hero-text-wrap {
     z-index: 5;
     text-align: center;
@@ -4031,6 +3864,9 @@ label {
     border-top-style: none;
 }
 
+/*---------------------------------
+    about two hero css start 
+---------------------------------*/
 .about-two-hero-image-two {
     position: absolute;
     top: 20px;
@@ -4070,32 +3906,19 @@ label {
     margin-bottom: 20px;
 }
 
-.about-two-experience-left {
-    flex: 1;
-    max-width: 550px;
-}
-
 
 .about-two-hero-image-four {
     position: absolute;
     left: 220px;
 }
 
-.about-two-process-right {
-    flex: 1;
-    max-width: 630px;
-}
+
 
 .about-two-hero-image-five {
     position: absolute;
     inset: auto 0% 0% auto;
 }
 
-.about-two-hero-container {
-    max-width: 1130px;
-    padding-left: 15px;
-    padding-right: 15px;
-}
 
 .about-two-experience-right {
     color: var(--white);
@@ -4144,7 +3967,7 @@ label {
 }
 
 /*---------------------------------
-    process  css start 
+   about two working process   css start 
 ---------------------------------*/
 .process-box-two {
     grid-column-gap: 12px;
@@ -4186,6 +4009,9 @@ label {
     overflow: hidden;
 }
 
+/*---------------------------------
+   XXXXXXXXXXXXXXXXXXXXX
+---------------------------------*/
 .heading-one-small {
     color: var(--white);
     font-size: clamp(40px, 12vw, 120px);
@@ -4261,27 +4087,9 @@ label {
     inset: auto auto 0% 0%;
 }
 
-.slide-nav {
-    height: auto;
-    margin-left: 0;
-    font-size: 6px;
-    display: flex;
-    position: static;
-}
-
-.hero-contact-main {
+.hero-contact-main-wrapper {
     grid-column-gap: 6px;
     grid-row-gap: 6px;
-}
-
-.about-three-slider .slick-dots {
-    display: flex;
-}
-
-.about-three-slider .slick-dots li {
-    width: auto;
-    height: auto;
-    display: flex;
 }
 
 .about-three-hero {
@@ -4289,7 +4097,19 @@ label {
         radial-gradient(circle at 44%, #f4497252, #f4497200 23%);
 }
 
+.about-three-main-image {
+    z-index: 2;
 
+}
+
+.hero-social-border {
+    background-color: var(--menu-color);
+    width: 85px;
+    height: 1px;
+}
+/*---------------------------------
+    about progress  css start 
+---------------------------------*/
 .about-progress-bar-inner {
     background-color: var(--border-color);
     border-radius: 60px;
@@ -4301,23 +4121,6 @@ label {
     overflow: hidden;
 }
 
-
-.about-three-main-image {
-    z-index: 2;
-
-}
-
-
-.hero-social-border {
-    background-color: var(--menu-color);
-    width: 85px;
-    height: 1px;
-}
-
-.about-three-hero-social {
-    justify-content: flex-start;
-}
-
 .about-progress-gradiant-bar {
     background-image: linear-gradient(90deg, var(--pink), var(--violet));
     height: 3px;
@@ -4326,12 +4129,6 @@ label {
 .about-three-progress-heading {
     margin-top: 25px;
     margin-bottom: 20px;
-}
-
-
-.about-three-hero-main-image {
-    flex: 1;
-    max-width: 480px;
 }
 
 
@@ -4871,6 +4668,22 @@ label {
 /*---------------------------------
     contact three css start 
 ---------------------------------*/
+.contact-hero-image-one {
+    height: auto;
+    position: absolute;
+    inset: -41% auto auto -23%;
+}
+
+.contact-hero-image-two {
+    height: auto;
+    position: absolute;
+    inset: auto -5% -13% auto;
+}
+.contact-three-hero-heading {
+    z-index: 4;
+    position: relative;
+}
+
 .contact-three-office-cards {
     padding-top: 5px;
 }
@@ -5098,6 +4911,12 @@ label {
 /*---------------------------------
   blog one css start 
 ---------------------------------*/
+.blog-one-name {
+    line-height: 28px;
+}
+.blog-one-information .blog-one-name {
+    max-width: 300px;
+}
 .blog-one-card {
     border-radius: 20px;
 
@@ -5136,6 +4955,15 @@ label {
 
 .home-popup-video-text .space {
     display: inline;
+}
+
+.blog-three-line span {
+    line-height: 50px;
+}
+
+.blog-three-hero .blg-one-gradiant {
+    font-size: clamp(40px, 12vw, 130px);
+    line-height: 1;
 }
 
 .blog-three-top {
@@ -5190,7 +5018,13 @@ label {
             #f4497200 18%);
 
 }
+.blog-two-name {
+    line-height: 48px;
+}
 
+.blog-two-name span {
+    line-height: 45px;
+}
 .blog-two-cards {
     position: relative;
 }

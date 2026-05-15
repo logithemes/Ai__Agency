@@ -639,18 +639,12 @@
     }
 
 
-    .recent-work-boxes {
+    .tp-recent-work-boxes {
         grid-column-gap: 30px;
         grid-row-gap: 50px;
         padding-top: 0;
 
     }
-
-
-    .about-one-mission-text {
-        max-width: none;
-    }
-
     .about-one-mission-image {
         max-width: none;
     }
@@ -707,9 +701,6 @@
         left: 100px;
     }
 
-    .about-two-process-right {
-        max-width: none;
-    }
 
     .about-two-hero-image-five {
         width: 22%;
@@ -756,10 +747,6 @@
         max-width: none;
     }
 
-
-    .about-three-hero-main-image {
-        max-width: none;
-    }
 
 
 
@@ -1119,7 +1106,7 @@
         padding-left: 15px;
     }
 
-    .recent-work-boxes {
+    .tp-recent-work-boxes {
         grid-template-columns: 1fr;
     }
 
@@ -1425,7 +1412,7 @@
         padding-right: 0;
     }
 
-    .flower {
+    .tp-flower {
         display: none;
     }
 
@@ -1470,9 +1457,6 @@
     }
 
 
-    .about-two-experience-left {
-        max-width: none;
-    }
 
     .process-box-one {
         padding-right: 30px;
@@ -2157,7 +2141,7 @@
         grid-template-columns: 1fr;
     }
 
-    .hero-contact-main {
+    .hero-contact-main-wrapper {
         padding-left: 0;
     }
 
