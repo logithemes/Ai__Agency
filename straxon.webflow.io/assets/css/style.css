@@ -4975,13 +4975,7 @@ text-align: center;
 /*---------------------------------
     blog detail css start 
 ---------------------------------*/
-.related-blogs-wrap {
-    grid-column-gap: 30px;
-}
 
-.related-blogs-wrap .heading-five {
-    line-height: 28px;
-}
 
 .blog-details-date {
     align-items: center;
@@ -5001,28 +4995,21 @@ text-align: center;
   clip-path: polygon(50% 0%, 50% 0%, 50% 100%, 50% 100%);
   will-change: clip-path, transform;
 }
-.profile {
+.more-blogs-text .heading-five {
+    line-height: 28px;
+}
+
+.tp-blog-details-author {
     background-color: #33354c;
     border-radius: 3px;
     margin-bottom: 3px;
     padding-left: 10px;
     padding-right: 10px;
-    font-size: 14px;
-}
-
-
-
-.more-blogs-date {
-    grid-column-gap: 10px;
-    grid-row-gap: 10px;
-    justify-content: flex-start;
-    align-items: center;
 }
 
 .blockquote-wrapper {
     background-color: #161724;
     border-radius: 20px;
-    margin-top: 20px;
     padding: 40px 35px;
 }
 
@@ -5037,13 +5024,9 @@ text-align: center;
 /*---------------------------------
     projects single css start 
 ---------------------------------*/
-
-
 .projects-top {
     position: relative;
 }
-
-
 .projects-bottom {
     background-image: linear-gradient(#161724, #16172400);
 }
@@ -5070,26 +5053,6 @@ text-align: center;
     margin-top: 12px;
 }
 
-.projects-cards-button {
-    grid-column-gap: 10px;
-    grid-row-gap: 10px;
-    justify-content: flex-start;
-    align-items: center;
-}
-
-.projects-tp-rotate-box {
-    display: flex;
-}
-
-.clients-logo-wrap {
-    border: 1px solid var(--border-color);
-    border-radius: 5px;
-    justify-content: center;
-    align-items: center;
-    width: 190px;
-    height: 100px;
-    display: flex;
-}
 
 .project-items:nth-child(2n) {
     margin-top: 60px;
@@ -5106,14 +5069,15 @@ text-align: center;
     position: relative;
 }
 
-
+/*---------------------------------
+    projects marquee css start 
+---------------------------------*/
 .projects-marquee-cards {
     border-radius: 30px;
     max-height: 580px;
     transition: transform 0.2s;
 
 }
-
 .project-media {
     width: 21vw;
     aspect-ratio: 403 / 612;
@@ -5140,16 +5104,12 @@ text-align: center;
     transition: all var(--transition-medium);
 }
 
-.task-wrapper {
-    justify-content: space-between;
-    align-items: flex-start;
-    max-width: 340px;
-}
-
+/*---------------------------------
+    projects details css start 
+---------------------------------*/
 .project-details-bottom {
     background-image: linear-gradient(#161724, #16172400);
 }
-
 .project-details-top {
     background-image: radial-gradient(circle at 48% 53%, #b460f13d, #b460f100 18%),
         radial-gradient(circle at 58% 15%, #f449723d, #f4497200 18%);
@@ -5160,9 +5120,9 @@ text-align: center;
     display: inline-block;
 }
 
-.pr_slides-cards {
+.marquee-tp-slides-cards {
     padding-right: 30px;
-    float: left;
+   display: inline-block;
 }
 
 .projects-card-overlay {

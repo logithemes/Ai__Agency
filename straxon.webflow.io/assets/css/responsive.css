@@ -242,7 +242,7 @@
         grid-row-gap: 3.35vh
     }
 
-    .related-blogs-wrap .heading-five {
+    .more-blogs-text .heading-five {
         line-height: 24px;
     }
 
@@ -277,7 +277,7 @@
         padding-left: 0;
     }
 
-    .pr_slides-cards {
+    .marquee-tp-slides-cards {
         width: 100%;
     }
 
@@ -869,11 +869,6 @@
         padding-bottom: 40px;
     }
 
-
-    .projects-tp-rotate-box {
-        display: none;
-    }
-
     .projects-details-column {
         align-items: flex-start;
         padding-top: 30px;
@@ -1083,7 +1078,7 @@
         height: auto;
     }
 
-    .pr_slides-cards {
+    .marquee-tp-slides-cards {
         padding: 0 15px;
     }
 
@@ -1647,10 +1642,7 @@
         grid-row-gap: 40px;
     }
 
-    .clients-logo-wrap {
-        width: 140px;
-        height: 80px;
-    }
+  
 
     .project-items:nth-child(2n) {
         margin-top: 0;
