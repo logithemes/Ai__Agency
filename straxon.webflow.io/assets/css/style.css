@@ -93,6 +93,7 @@
     --tp-fs-12: 12px;
     --tp-fs-14: 14px;
     --tp-fs-xxl: 50px;
+    --tp-lh-24 : 24px
 
     /* Radius */
     --tp-radius-10: 10px;
@@ -110,6 +111,9 @@
     --transition-medium: 0.5s;
     --transition-slow: 1s;
     --transition-default: var(--transition-medium);
+    --heading-fw: 400;
+    --heading-lh: 1;
+    --heading-spacing: 1px;
 
 }
 
@@ -315,11 +319,9 @@ h5,
 h6 {
     margin-top: 20px;
     margin-bottom: 10px;
-
     color: var(--heading-color);
-
     font-family: var(--heading-font);
-    font-weight: 400;
+    font-weight: var(--heading-fw);
     line-height: 1;
 }
 
@@ -356,7 +358,50 @@ h6 {
 .heading-font {
     font-family: var(--heading-font);
 }
+/*---------------------------------
+    common heading style
+---------------------------------*/
+.heading-one-small,
+.heading-three,
+.heading-four,
+.heading-five{
+font-weight: var(--heading-fw);
 
+}
+
+.heading-one-small{
+    --heading-size: clamp(40px, 12vw, 120px);
+    color: var(--white);
+    font-size: var(--heading-size);
+    line-height: 0.9;
+}
+
+
+.heading-three{
+    --heading-size: clamp(28px, 3.9vw, 40px);
+    color: var(--heading-color);
+    letter-spacing: 1.2px;
+    font-size: var(--heading-size);
+    line-height: var(--heading-lh);
+}
+
+
+.heading-four{
+    --heading-size: clamp(24px, 3.1vw, 32px);
+    color: var(--heading-color);
+    letter-spacing: 0.96px;
+    font-size: var(--heading-size);
+    line-height: var(--heading-lh);
+    transition: all var(--transition-medium);
+}
+
+.heading-five{
+    --heading-size: clamp(20px, 2.1vw, 22px);
+    color: var(--heading-color);
+    letter-spacing: var(--heading-spacing);
+    font-size: var(--heading-size);
+    line-height: 1.06;
+}
 
 /*=========================================================
     Anchor CSS
@@ -396,9 +441,6 @@ a:hover {
 /*----------------------------------------*/
 /*  Utility Classes
 /*----------------------------------------*/
-
-
-
 .tp-inline-block {
     display: inline-block;
 }
@@ -460,19 +502,15 @@ a:hover {
 .tp-fs-12 {
     font-size: var(--tp-fs-12);
 }
-.text-small {
+.text-sm {
     font-size: var(--tp-fs-14);
-    line-height: 24px;
+    line-height: var(--tp-lh-24);
 }
 
 .tp-fs-xxl {
     font-size: var(--tp-fs-xxl);
 }
 
-.text-sm {
-    font-size: 14px;
-    line-height: 24px;
-}
 .tp-text-body {
     color: var(--body-font-color);
 }
@@ -1764,14 +1802,7 @@ a:hover {
 /*---------------------------------
     heading four css start 
 ---------------------------------*/
-.heading-four {
-    color: var(--heading-color);
-    letter-spacing: 0.96px;
-    font-size: clamp(24px, 3.1vw, 32px);
-    font-weight: 400;
-    line-height: 1;
-    transition: all var(--transition-medium);
-}
+
 /* XXXXXXXXXXXXXXXXXX */
 .projects-name {
     z-index: 2;
@@ -2527,14 +2558,7 @@ a:hover {
 /*---------------------------------
     heading five css start 
 ---------------------------------*/
-.heading-five {
-    color: var(--heading-color);
-    letter-spacing: 1px;
-    font-family: Bebas Neue, sans-serif;
-    font-size: clamp(20px, 2.1vw, 22px);
-    font-weight: 400;
-    line-height: 1.06;
-}
+
 
 
 /*---------------------------------
@@ -2770,13 +2794,7 @@ a:hover {
 /*---------------------------------
     heading three css start 
 ---------------------------------*/
-.heading-three {
-    color: var(--heading-color);
-    letter-spacing: 1.2px;
-    font-size: clamp(28px, 3.9vw, 40px);
-    font-weight: 400;
-    line-height: 1;
-}
+
 
 
 /*---------------------------------
@@ -3390,11 +3408,7 @@ label {
 /*---------------------------------
     XXXXXXXXXXXXXXXXX
 ---------------------------------*/
-.heading-one {
-    color: var(--white);
-    font-size: clamp(40px, 12vw, 130px);
-    line-height: 0.9;
-}
+
 
 .text-outline {
     color: #fff0;
