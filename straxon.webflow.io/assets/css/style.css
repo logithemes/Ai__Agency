@@ -4677,20 +4677,9 @@ label {
     inset: 0%;
 }
 
-.team-hero-text {
-    text-align: center;
-    justify-content: flex-start;
-    align-items: center;
-    max-width: 628px;
-}
-
-
 .team-details-progress-wrap {
     background-color: #161724;
 }
-
-
-
 .my-approach-right {
     padding-left: 40px;
 }
@@ -4699,7 +4688,7 @@ label {
     padding-left: 70px;
 }
 
-.team-details-top {
+.team-details-top{
     background-image: radial-gradient(circle at 61% 53%, #f449722b, #f4497200 20%),
         radial-gradient(circle at 41% 25%, #b460f129, #b460f100 20%);
     position: relative;
@@ -4714,19 +4703,9 @@ label {
     width: 1px;
     height: 100%
 }
-
-
-.team-details-progress-box {
-    grid-column-gap: 20px;
-    grid-row-gap: 20px;
-    flex-flow: column;
-    width: 100%;
-    max-width: 427px;
-    display: flex;
+.team-details-progress-box, .team-details-progress-box{
+   width: 100%;
 }
-
-
-
 .team-icons {
     margin-bottom: 3px;
 }
@@ -4741,8 +4720,7 @@ label {
 }
 
 .team-member-details-image {
-    flex: 1;
-    max-width: 410px;
+text-align: center;
 }
 
 .team-member-about {
@@ -4770,13 +4748,6 @@ label {
     position: absolute;
     inset: 0%;
 }
-
-.team-details-image {
-    width: 100%;
-    height: 100%;
-}
-
-
 .my-approach-quote {
     color: var(--white);
     font-style: italic;

@@ -1531,8 +1531,7 @@
     }
 
 
-    .team-details-progress-text,
-    .team-details-progress-box {
+    .team-details-progress-text{
         max-width: none;
     }
 
