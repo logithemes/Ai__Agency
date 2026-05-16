@@ -1134,9 +1134,25 @@ a:hover {
     z-index: 4;
     left: auto;
 }
+.left-arrow,
+.testimonials-author-box-mid,
+.author-image-one,
+.right-arrow,
+.circle-icon,
+.gradiant-dot,
+.dot,
+.mission-check-icon,
+.cross-icon-wrapper,
+.tick-icon-wrapper,
+.home-three-service-arrow,
+.blog-two-arrow,
+.details-author-image,
+.service-options-link {
+    border-radius: 100%;
+}
+
 .left-arrow {
     border: 1px solid var(--border-color-two);
-    border-radius: 100%;
     justify-content: center;
     align-items: center;
     display: flex;
@@ -1145,7 +1161,6 @@ a:hover {
 
 .testimonials-author-box-mid {
     z-index: 4;
-    border-radius: 100%;
     justify-content: flex-end;
     align-items: center;
     width: 126px;
@@ -1306,7 +1321,6 @@ a:hover {
 }
 
 .author-image-one {
-    border-radius: 100%;
     width: 100%;
     height: 100%;
 }
@@ -1316,7 +1330,6 @@ a:hover {
 }
 .right-arrow {
     border: 1px solid var(--border-color-two);
-    border-radius: 100%;
     justify-content: center;
     align-items: center;
     width: 65px;
@@ -1728,7 +1741,6 @@ a:hover {
 
 .circle-icon {
     border: 1px solid var(--border-color);
-    border-radius: 100%;
     flex: none;
     justify-content: center;
     align-items: center;
@@ -2024,7 +2036,6 @@ a:hover {
 
 .gradiant-dot {
     background-image: linear-gradient(118deg, #d43fc5, #b264f3);
-    border-radius: 100%;
     width: 4px;
     height: 4px;
 }
@@ -2565,7 +2576,6 @@ a:hover {
 }
 .dot {
     background-image: linear-gradient(105deg, var(--pink), var(--violet));
-    border-radius: 100%;
     width: 6px;
     height: 6px;
     transition: all var(--transition-medium);
@@ -3165,7 +3175,6 @@ label {
 
 .home-three-service-arrow {
     border: 1px solid var(--border-color);
-    border-radius: 100%;
     min-width: 50px;
     min-height: 50px;
 }
@@ -3823,7 +3832,6 @@ label {
 
 .mission-check-icon {
     border: 1px solid var(--border-color);
-    border-radius: 100%;
     justify-content: center;
     align-items: center;
     width: 40px;
@@ -4534,7 +4542,6 @@ label {
 
 .cross-icon-wrapper {
     background-color: #2d2f49;
-    border-radius: 100%;
     justify-content: center;
     align-items: center;
     width: 16px;
@@ -4544,7 +4551,6 @@ label {
 
 .tick-icon-wrapper {
     background-image: linear-gradient(125deg, #fe4d58, #b264f3);
-    border-radius: 100%;
     flex: none;
     justify-content: center;
     align-items: center;
@@ -4868,7 +4874,6 @@ text-align: center;
 
 .blog-two-arrow {
     border: 1px solid #53618d;
-    border-radius: 100%;
     flex: none;
     width: 60px;
     height: 60px;
@@ -4935,9 +4940,7 @@ text-align: center;
 
 
 .blog-three-posts-text {
-    justify-content: flex-start;
     align-items: center;
-    margin-bottom: 15px;
     color: var(--white);
 }
 
@@ -4952,13 +4955,6 @@ text-align: center;
         radial-gradient(circle at 19% 15%, #b460f133, #b460f100 10%);
 }
 
-.blog-three-author {
-    grid-column-gap: 6px;
-    grid-row-gap: 6px;
-    justify-content: flex-start;
-    align-items: center;
-}
-
 .more-blogs-cards {
     width: 100%;
 }
@@ -4970,17 +4966,10 @@ text-align: center;
 .blog-cards-image:hover {
     transform: scale(1.2);
 }
-
 .details-author-image {
-    border-radius: 100%;
     flex: none;
     width: 80px;
     height: 80px;
-}
-
-.blog-author-top {
-    justify-content: flex-start;
-    align-items: center;
 }
 
 /*---------------------------------
@@ -5453,7 +5442,6 @@ text-align: center;
 
 .service-options-link {
     border: 1px solid var(--border-color);
-    border-radius: 100%;
     flex: none;
     justify-content: center;
     align-items: center;
