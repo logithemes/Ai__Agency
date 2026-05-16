@@ -4460,7 +4460,7 @@ label {
 
 .pricing-plans-cards {
     background-color: var(--light-black);
-    border-radius: 30px;
+  
     padding: 40px;
     position: relative;
 }
@@ -4481,11 +4481,7 @@ label {
 }
 
 .pricing-tab {
-    flex-flow: column;
-    justify-content: flex-start;
-    align-items: center;
     width: 100%;
-    display: flex;
 }
 
 .pricing-bottom-text {
@@ -4519,7 +4515,7 @@ label {
     margin-bottom: 20px;
 }
 
-.pricing-border.border-bright {
+.border-bright-pricing {
     background-color: var(--heading-color);
     opacity: 0.2;
 }
@@ -4569,13 +4565,23 @@ label {
     color: var(--menu-color);
     font-size: 16px;
     line-height: 28px;
+    font-family: var(--body-font);
 }
-
-
-
 /*---------------------------------
     contact three css start 
 ---------------------------------*/
+
+.contact-three-office-cards {
+    padding-top: 5px;
+}
+.contact-three-hero-border {
+    background-color: var(--border-color);
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    inset: auto 0% 0%;
+}
+
 .contact-hero-image-one {
     height: auto;
     position: absolute;
@@ -4587,36 +4593,14 @@ label {
     position: absolute;
     inset: auto -5% -13% auto;
 }
-.contact-three-hero-heading {
-    z-index: 4;
-    position: relative;
-}
-
-.contact-three-office-cards {
-    padding-top: 5px;
-}
-
-.rotate-box {
+.tp-rotate-box {
     width: 171px;
     height: 171px;
     position: absolute;
-    inset: -92% 6% auto auto;
+    inset: -85% 6% auto auto;
 }
-
-
-.contact-three-hero-border {
-    background-color: var(--border-color);
-    width: 100%;
-    height: 1px;
-    position: absolute;
-    inset: auto 0% 0%;
-}
-
-.contact-hero-heading {
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    max-width: 580px;
+.contact-three-hero-heading {
+    z-index: 4;
     position: relative;
 }
 
@@ -4626,11 +4610,6 @@ label {
     height: 100%;
     z-index: 1;
 }
-
-.contact-three-form-text {
-    width: 100%;
-}
-
 .contact-three-hero-top {
     position: relative;
 }
@@ -4644,28 +4623,20 @@ label {
     position: absolute;
     top: 0;
 }
-
-.rotate-text {
-    height: auto;
-}
-
-.contact-three-office-contact {
-    margin-top: 40px;
-}
-
-.contact-three-office-contact a {
-    font-size: 14px;
-}
-
-.contact-three-office-contact {
-    gap: 15px;
-}
-
 .contact-three-hero {
     background-image: radial-gradient(circle at 63% 62%, #f449723d, #f4497200 20%),
         radial-gradient(circle at 30%, #b460f13b, #b460f100 19%);
 
     position: relative;
+}
+/*---------------------------------
+    contact three branch  css start 
+---------------------------------*/
+.contact-three-form-text {
+    width: 100%;
+}
+.rotate-text {
+    height: auto;
 }
 
 .contact-three-options {
@@ -4681,10 +4652,7 @@ label {
     right: -9%;
 }
 
-
-
 .contact-three-hero-main {
-    justify-content: flex-start;
     align-items: center;
     position: relative;
 }
@@ -4698,8 +4666,6 @@ label {
     height: 40px;
     display: flex;
 }
-
-
 /*---------------------------------
     team member details css start 
 ---------------------------------*/
@@ -5203,7 +5169,7 @@ label {
     align-items: center;
 }
 
-.projects-rotate-box {
+.projects-tp-rotate-box {
     display: flex;
 }
 

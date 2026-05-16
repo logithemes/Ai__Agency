@@ -147,10 +147,6 @@
         margin-right: 20px;
     }
 
-    .contact-three-office-contact {
-        gap: 0;
-    }
-
 
     .landing-footer-float-image-four,
     .landing-footer-float-image-one {
@@ -326,7 +322,7 @@
         padding: 0;
     }
 
-    .rotate-box-two {
+    .tp-rotate-box-two {
         width: 150px;
         height: 150px;
     }
@@ -800,7 +796,7 @@
         padding: 30px 20px 20px;
     }
 
-    .rotate-box {
+    .tp-rotate-box {
         display: none;
     }
 
@@ -874,7 +870,7 @@
     }
 
 
-    .projects-rotate-box {
+    .projects-tp-rotate-box {
         display: none;
     }
 
@@ -1523,11 +1519,6 @@
         right: 20px;
     }
 
-
-    .contact-hero-heading {
-        grid-column-gap: 40px;
-        grid-row-gap: 40px;
-    }
 
     .contact-hero-vertical-borders-wrap {
         display: none;
