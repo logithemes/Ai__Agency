@@ -2075,6 +2075,14 @@ a:hover {
     width: 1px;
 
 }
+.home-popup-video-text .word {
+    display: inline-block;
+    opacity: 0.9;
+}
+
+.home-popup-video-text .space {
+    display: inline;
+}
 
 /*---------------------------------
     hero service css start 
@@ -4766,7 +4774,6 @@ text-align: center;
     border-radius: 20px;
 
 }
-
 .blog-image-wrapper {
     height: 500px;
 }
@@ -4775,48 +4782,14 @@ text-align: center;
     padding: 30px;
 }
 
-
-
 .blog-one-author {
     z-index: 2;
-    grid-column-gap: 10px;
-    grid-row-gap: 10px;
-    justify-content: flex-start;
     align-items: center;
     position: relative;
 }
-
-
 .blog-one-information {
     z-index: 2;
-    grid-column-gap: 11px;
-    grid-row-gap: 11px;
 }
-
-.home-popup-video-text .word {
-    display: inline-block;
-    opacity: 0.9;
-}
-
-.home-popup-video-text .space {
-    display: inline;
-}
-
-.blog-three-line span {
-    line-height: 50px;
-}
-
-.blog-three-hero .blg-one-gradiant {
-    font-size: clamp(40px, 12vw, 130px);
-    line-height: 1;
-}
-
-.blog-three-top {
-    background-image: radial-gradient(circle at 64% 29%,
-            #b460f13b,
-            #b460f100 19%);
-}
-
 .blog-one-overlay {
     pointer-events: none;
     background-image: linear-gradient(#0a0b1659, #0a0b1691);
@@ -4830,30 +4803,12 @@ text-align: center;
     flex-direction: column;
     justify-content: space-between;
 }
-
 .blog-one-overlay-hide {
     opacity: 0;
 }
-
-.blog-one-heading {
-    align-items: center;
-}
-
-
 .collection-list-height {
     width: 100%;
 }
-
-.collection-list {
-    grid-column-gap: 30px;
-    grid-row-gap: 30px;
-    display: flex;
-}
-
-.posted-by {
-    font-size: 14px;
-}
-
 /*---------------------------------
   blog two css start 
 ---------------------------------*/
@@ -4863,11 +4818,11 @@ text-align: center;
             #f4497200 18%);
 
 }
-.blog-two-name {
+.tp-blog-two-title {
     line-height: 48px;
 }
 
-.blog-two-name span {
+.tp-blog-two-title span {
     line-height: 45px;
 }
 .blog-two-cards {
@@ -4887,7 +4842,6 @@ text-align: center;
 }
 
 .blog-two-cards-author {
-    grid-row-gap: 8px;
     border-right: 1px solid var(--border-color);
     padding-right: 20px;
 }
@@ -4924,8 +4878,15 @@ text-align: center;
 .border-last-item:last-child {
     border-bottom: 1px solid var(--border-color);
 }
-
-
+.blog-image-overlay {
+    position: absolute;
+    inset: 0;
+    background-color: #0a0b1666;
+    opacity: 0;
+}
+/*---------------------------------
+  explore now css start 
+---------------------------------*/
 .explore-now-button-wrap {
     z-index: 999;
 }
@@ -4941,30 +4902,27 @@ text-align: center;
     transform: translate(-50%, -50%);
 }
 
-.blog-image-overlay {
-    position: absolute;
-    inset: 0;
-    background-color: #0a0b1666;
-    opacity: 0;
-}
-
-
 /*---------------------------------
   blog three css start 
 ---------------------------------*/
+.blog-three-line span {
+    line-height: 50px;
+}
 
+.blog-three-hero .blg-one-gradiant {
+    font-size: clamp(40px, 12vw, 130px);
+    line-height: 1;
+}
+
+.blog-three-top {
+    background-image: radial-gradient(circle at 64% 29%,
+            #b460f13b,
+            #b460f100 19%);
+}
 .blog-three-text {
     padding-left: 30px;
 }
 
-
-.blog-three-heading {
-    grid-column-gap: 20px;
-    grid-row-gap: 20px;
-    flex-flow: wrap;
-    justify-content: flex-start;
-    align-items: center;
-}
 
 .blog-three-posts-wrap {
     grid-column-gap: 70px;
@@ -4977,8 +4935,6 @@ text-align: center;
 
 
 .blog-three-posts-text {
-    grid-column-gap: 14px;
-    grid-row-gap: 14px;
     justify-content: flex-start;
     align-items: center;
     margin-bottom: 15px;
@@ -5007,13 +4963,6 @@ text-align: center;
     width: 100%;
 }
 
-.more-blogs-text {
-    grid-column-gap: 10px;
-    grid-row-gap: 10px;
-    max-width: 354px;
-    padding-top: 25px;
-}
-
 .blog-cards-image {
     transition: all var(--transition-medium);
 }
@@ -5021,7 +4970,6 @@ text-align: center;
 .blog-cards-image:hover {
     transform: scale(1.2);
 }
-
 
 .details-author-image {
     border-radius: 100%;
