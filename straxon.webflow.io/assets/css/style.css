@@ -5221,48 +5221,7 @@ text-align: center;
 /*---------------------------------
     service three css start 
 ---------------------------------*/
-
-.service-three-slider {
-    transition: all 0.5s linear, transform 0.5s linear;
-    transform: translateX(-1030px);
-}
-
-.service-three-options-description {
-    flex: 1;
-    max-width: 489px;
-    margin-bottom: 0;
-}
-
-.testi-top-img,
-.testi-bottom-img,
-.testi-img-translate,
-.testi-tp-img {
-    transform: translate3d(0px, 0%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-    transform-style: preserve-3d;
-}
-
-.testi-bottom-img {
-    transform: translate3d(-30px, 30px, 0px);
-}
-
-.testi-img-translate {
-    transform: translate3d(-60px, 30px, 0px);
-}
-
-.testi-tp-img {
-    transform: translate3d(-130%, 130px, 0px);
-}
-
-.progress-experience-text {
-    grid-column-gap: 10px;
-    grid-row-gap: 10px;
-    justify-content: flex-start;
-    align-items: flex-end;
-    display: flex;
-}
-
 .service-three-connection-main {
-    justify-content: flex-start;
     align-items: flex-end;
 }
 
@@ -5282,18 +5241,10 @@ text-align: center;
     padding-bottom: 50px;
 }
 
-.cell-top {
+.tp-service-cell-top {
     border-top: 1px solid var(--border-color);
 }
 
-.service-three-progress-right {
-    grid-column-gap: 30px;
-    grid-row-gap: 30px;
-    flex-flow: column;
-    flex: 1;
-    max-width: 593px;
-    display: flex;
-}
 
 .service-three-cards-content {
     z-index: 1;
@@ -5306,25 +5257,11 @@ text-align: center;
     align-items: center;
     max-width: 402px;
 }
-
-.service-heading-image {
-    background-image: url("../img/service-img/service-heading-img-three.png");
-    background-position: 100%;
-    background-repeat: no-repeat;
-    background-size: 166px;
-    padding-right: 178px;
-}
-
-.service-three-hero {
-    overflow: hidden;
-}
-
 .service-three-connection-top {
     max-width: 809px;
     padding-left: 5px;
     position: relative;
 }
-
 
 .years-text {
     max-width: 85px;
@@ -5337,9 +5274,7 @@ text-align: center;
 }
 
 .service-three-options-cards-right {
-    flex: 1;
     align-items: center;
-    max-width: 630px;
 }
 
 .service-three-options-card-left {
@@ -5358,6 +5293,9 @@ text-align: center;
     inset: auto 0% 8% auto;
 }
 
+/*---------------------------------
+    service three service css start 
+---------------------------------*/
 .service-three-hero-overlay {
     background-image: linear-gradient(75deg, #050610e6, #0506108a);
     position: absolute;
@@ -5440,19 +5378,12 @@ text-align: center;
     height: 59px;
 
 }
-
 .progress-main-top {
     justify-content: space-between;
     align-items: center;
     max-width: 372px;
     margin-bottom: 20px;
 }
-
-.service-three-pricing-main {
-    justify-content: flex-start;
-    align-items: center;
-}
-
 /*---------------------------------
     service one css start 
 ---------------------------------*/
@@ -5460,10 +5391,6 @@ text-align: center;
     background-image: radial-gradient(circle at 19% 77%, #f4497233, #f4497200 21%),
         radial-gradient(circle at 71% 44%, #b460f13d, #b460f100 22%);
     position: relative;
-}
-
-.service-one-projects {
-    overflow: hidden;
 }
 
 .service-one-border {
@@ -5496,10 +5423,8 @@ text-align: center;
 }
 
 /*---------------------------------
-    awards css start 
+    service one awards css start 
 ---------------------------------*/
-
-
 .awards-right {
     flex: 1;
     max-width: 520px;
@@ -5524,14 +5449,12 @@ text-align: center;
     max-width: 176px;
 }
 
+/*---------------------------------
+    service one solutions area css start 
+---------------------------------*/
 .service-one-background {
     background-image: radial-gradient(circle at 50% 60%, #f449723d, #f4497200 27%),
         linear-gradient(#161724, #16172400);
-}
-
-.services {
-    justify-content: space-between;
-    align-items: flex-start;
 }
 
 .services-number-wrap {
@@ -5585,19 +5508,11 @@ text-align: center;
 }
 
 .service-cards-information {
-    grid-column-gap: 86px;
-    grid-row-gap: 86px;
+
     border-bottom: 1px solid var(--border-color);
     justify-content: flex-start;
     align-items: center;
     padding-bottom: 40px;
-}
-
-.service-cards-client {
-    grid-column-gap: 10px;
-    grid-row-gap: 10px;
-    justify-content: flex-start;
-    align-items: center;
 }
 
 .service-sticky {
@@ -5607,29 +5522,24 @@ text-align: center;
     position: sticky;
     top: 140px;
 }
-
-
-
 /*---------------------------------
     tab css start 
 ---------------------------------*/
 
-.tabs {
+.tp-service-one-tabs{
     flex-flow: row-reverse;
     justify-content: flex-end;
     align-items: stretch;
-
-
 }
 
-.tabs-content {
+.tp-service-one-content {
     border-top-left-radius: 30px;
     border-bottom-left-radius: 30px;
     width: 100%;
     max-width: 740px;
 }
 
-.tabs-menu {
+.tp-service-tab-menu {
     border: 1px solid var(--border-color);
     border-top-right-radius: 30px;
     border-bottom-right-radius: 30px;
@@ -5645,52 +5555,39 @@ text-align: center;
     height: 100%;
 }
 
-.tab-links {
-    grid-column-gap: 30px;
-    grid-row-gap: 30px;
-    color: var(--heading-color);
+.tp-service-tab-links {
     letter-spacing: 0.66px;
     background-color: #ddd0;
-    justify-content: flex-start;
     align-items: center;
     height: 100%;
     padding: 10px 40px;
     font-size: clamp(20px, 2.1vw, 22px);
-    font-weight: 400;
     line-height: 1.06;
     transition-property: font-size;
     transition-duration: 0.2s;
     transition-timing-function: ease;
     display: flex;
+    font-family: var(--heading-font);
 }
 
-.tab-links.tp-active {
+.tp-service-tab-links.tp-active {
     background-color: var(--light-black);
-    color: var(--heading-color);
     letter-spacing: 0.96px;
     background-image: url("../img/background/tick-current.svg");
     background-position: 89%;
     background-repeat: no-repeat;
     background-size: auto;
     font-size: clamp(24px, 3.1vw, 32px);
-    font-weight: 400;
     line-height: 1;
 }
-
-.tab--text {
-    color: var(--heading-color);
-}
-
 
 /*---------------------------------
     screenshots css start 
 ---------------------------------*/
-.screenshots {
+.tp-screenshot-wrap {
     padding-bottom: 11px;
 }
-
-
-.innerpages-heading {
+.tp-innerpages-heading-wrap {
     justify-content: flex-start;
     align-items: center;
 }
@@ -5701,8 +5598,6 @@ text-align: center;
     position: absolute;
     inset: 100px 360px auto auto;
 }
-
-
 .homepage-main {
     text-align: center;
     justify-content: flex-start;
@@ -5776,8 +5671,6 @@ text-align: center;
 }
 
 .landing-footer-text-wrap {
-    grid-column-gap: 18px;
-    grid-row-gap: 18px;
     text-align: center;
     justify-content: flex-start;
     align-items: center;
@@ -5793,7 +5686,6 @@ text-align: center;
     position: absolute;
     inset: auto 200px 80px auto;
 }
-
 
 .landing-cards {
     background-color: #3e4055;
@@ -5823,7 +5715,7 @@ text-align: center;
 }
 
 /*---------------------------------
-    landing header footer css start 
+    landing Stunning  footer css start 
 ---------------------------------*/
 
 .header-footer-box {
@@ -5839,8 +5731,6 @@ text-align: center;
 }
 
 .header-footer-box-content {
-    grid-column-gap: 40px;
-    grid-row-gap: 40px;
     justify-content: space-between;
     align-items: flex-start;
 }
@@ -5852,19 +5742,9 @@ text-align: center;
     max-width: 126px;
 }
 
-.name-box-one {
-    grid-column-gap: 20px;
-    grid-row-gap: 20px;
-    cursor: pointer;
-}
-
 .name-box-two {
-    grid-column-gap: 20px;
-    grid-row-gap: 20px;
-    cursor: pointer;
     transform: translate(20px);
 }
-
 .header-footers-showcase {
     flex: 1;
     justify-content: center;
@@ -5875,11 +5755,6 @@ text-align: center;
     overflow: hidden;
 }
 
-.header-footer-train {
-    grid-column-gap: 20px;
-    grid-row-gap: 20px;
-    padding-bottom: 20px;
-}
 
 /*---------------------------------
     landing features  css start 

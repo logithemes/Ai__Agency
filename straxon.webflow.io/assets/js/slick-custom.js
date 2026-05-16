@@ -47,8 +47,8 @@
   // Initially show first tab
 
 
- $('.tab-links').on('click', function () {
-  $('.tab-links').removeClass('tp-active');  // remove from all
+ $('.tp-service-tab-links').on('click', function () {
+  $('.tp-service-tab-links').removeClass('tp-active');  // remove from all
   $(this).addClass('tp-active');             // add to clicked one
 });
 

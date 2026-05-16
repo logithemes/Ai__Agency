@@ -906,9 +906,6 @@
         border-left: 1px solid var(--border-color);
     }
 
-    .service-three-progress-right {
-        max-width: none;
-    }
 
     .service-three-options-name {
         flex-flow: column;
@@ -1669,14 +1666,6 @@
         border-left-style: none;
     }
 
-    .service-three-progress-right {
-        max-width: none;
-    }
-
-    .service-heading-image {
-        background-image: none;
-        padding-right: 0;
-    }
 
     .years-text {
         max-width: none;
@@ -1718,8 +1707,6 @@
     }
 
     .service-cards-information {
-        grid-column-gap: 30px;
-        grid-row-gap: 30px;
         flex-flow: wrap;
         justify-content: space-between;
         align-items: center;
@@ -1731,11 +1718,11 @@
     }
 
 
-    .tabs {
+    .tp-service-one-tabs{
         flex-flow: column;
     }
 
-    .tabs-content {
+    .tp-service-one-content {
         border-top-left-radius: 0;
         border-bottom-right-radius: 30px;
     }
@@ -1752,11 +1739,11 @@
         display: grid;
     }
 
-    .tab-links {
+    .tp-service-tab-links {
         height: auto;
     }
 
-    .tab-links.tp-active {
+    .tp-service-tab-links.tp-active {
         background-position: 94%;
     }
 
@@ -2210,9 +2197,7 @@
         align-items: flex-start;
     }
 
-    .awards-right-cards {
-        flex-flow: column;
-    }
+
 
     .service-overlays {
         background-image: linear-gradient(#05061000, #050610b3 74%);
@@ -2225,18 +2210,17 @@
 
     .service-cards-name {
         text-align: center;
-        justify-content: center;
         align-items: center;
         bottom: 40px;
         right: auto;
     }
 
-    .tab-links {
+    .tp-service-tab-links {
         padding-left: 10px;
         padding-right: 10px;
     }
 
-    .tab-links.tp-active {
+    .tp-service-tab-links.tp-active {
         background-image: none;
     }
 

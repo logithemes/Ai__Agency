@@ -248,9 +248,9 @@ gsap.utils.toArray(".tp-reveal-x").forEach((container) => {
     /* ===============================
        SCREENSHOT LOOP
     =============================== */
-    const screenshotsTop = document.querySelector(".screenshots.top");
+    const screenshotsTop = document.querySelector(".tp-screenshot-wrap.top");
     if (screenshotsTop) {
-        gsap.to(".screenshots.top", {
+        gsap.to(".tp-screenshot-wrap.top", {
             y: "+=300",
             duration: 17,
             repeat: -1,
@@ -258,9 +258,9 @@ gsap.utils.toArray(".tp-reveal-x").forEach((container) => {
         });
     }
 
-    const screenshotsBottom = document.querySelector(".screenshots.bottom");
+    const screenshotsBottom = document.querySelector(".tp-screenshot-wrap.bottom");
     if (screenshotsBottom) {
-        gsap.to(".screenshots.bottom", {
+        gsap.to(".tp-screenshot-wrap.bottom", {
             y: "-=300",
             duration: 17,
             repeat: -1,
