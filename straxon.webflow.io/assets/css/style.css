@@ -5187,33 +5187,11 @@ text-align: center;
 /*---------------------------------
     service two css start 
 ---------------------------------*/
-.connections-box {
-    grid-column-gap: 30px;
-    grid-row-gap: 30px;
-    margin-bottom: 25px;
-}
 
 
 .ratting-image {
     margin-top: 8px;
     margin-bottom: 5px;
-}
-
-.service-two-clients-wrap {
-    flex: 1;
-    justify-content: flex-start;
-    align-items: center;
-    max-width: 1070px;
-}
-
-.service-connection-image {
-    flex: 1;
-    max-width: 590px;
-}
-
-.service-growth-right {
-    flex: 1;
-    max-width: 424px;
 }
 
 .service-growth-left .home-one-service-cards-icon,
@@ -5224,12 +5202,9 @@ text-align: center;
 }
 
 .service-two-marquee-text {
-    text-transform: capitalize;
     flex: none;
     max-width: 115px;
 }
-
-
 
 .connections-check-icons {
     background-color: var(--light-black);
@@ -5237,13 +5212,6 @@ text-align: center;
     width: 40px;
     height: 40px;
 
-}
-
-.service-two-marquee-main {
-    grid-column-gap: 40px;
-    grid-row-gap: 40px;
-    justify-content: space-between;
-    align-items: center;
 }
 
 .service-two-top {
