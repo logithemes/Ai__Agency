@@ -1040,7 +1040,17 @@ a:hover {
     margin-top: 5px;
 }
 
+.full-width {
+    width: 100%;
+}
 
+.site-logo {
+    padding-left: 0;
+}
+
+.mobile-icon {
+    margin-top: 8px;
+}
 /*---------------------------------
    home two review css start 
 ---------------------------------*/
@@ -4889,6 +4899,13 @@ text-align: center;
     background-color: #0a0b1666;
     opacity: 0;
 }
+.blog-two-border {
+    background-color: var(--border-color);
+    height: 1px;
+    position: absolute;
+    inset: 0% 0% auto;
+}
+
 /*---------------------------------
   explore now css start 
 ---------------------------------*/
@@ -5755,11 +5772,10 @@ text-align: center;
     overflow: hidden;
 }
 
-
 /*---------------------------------
     landing features  css start 
 ---------------------------------*/
-.image-full-width {
+.tp-img-full-width {
     width: 100%;
     height: auto;
 }
@@ -5770,12 +5786,8 @@ text-align: center;
     position: absolute;
     inset: 0%;
 }
-
-
 .features-box-one {
     border-radius: 20px;
-    flex: 1;
-    max-width: 630px;
     padding-left: 60px;
     padding-right: 60px;
     position: relative;
@@ -5784,34 +5796,27 @@ text-align: center;
 
 .features-box-one-text-wrap {
     z-index: 4;
-    grid-column-gap: 25px;
-    grid-row-gap: 25px;
     max-width: 355px;
     position: relative;
 }
 
 .features-box-two {
-    grid-column-gap: 20px;
-    grid-row-gap: 20px;
+
     text-align: center;
     background-color: #0a0b16;
     border-radius: 20px;
     flex: 1;
     justify-content: center;
     align-items: center;
-    max-width: 300px;
     padding: 20px;
 }
 
 .features-box-three {
-    grid-column-gap: 15px;
-    grid-row-gap: 15px;
     background-color: var(--heading-color);
     border-radius: 20px;
     flex: 1;
     justify-content: center;
     align-items: flex-start;
-    max-width: 300px;
     padding-top: 20px;
     padding-bottom: 20px;
     padding-left: 20px;
@@ -5925,23 +5930,6 @@ text-align: center;
     inset: 0%;
 }
 
-.full-width {
-    width: 100%;
-}
 
-.site-logo {
-  
-    padding-left: 0;
-}
 
-.mobile-icon {
-    margin-top: 8px;
-}
-
-.blog-two-border {
-    background-color: var(--border-color);
-    height: 1px;
-    position: absolute;
-    inset: 0% 0% auto;
-}
 

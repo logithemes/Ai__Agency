@@ -1785,13 +1785,10 @@
     .features-box-one-text-wrap {
         justify-content: flex-start;
         align-items: flex-start;
-        max-width: none;
+      
     }
 
-    .features-box-two,
-    .features-box-three {
-        max-width: none;
-    }
+
 
     .landing-hero-details {
         column-gap: 40px;
