@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html  lang="en">
+<html lang="en">
 
 <head>
   <meta charset="utf-8">
@@ -8,13 +8,187 @@
   <meta name="description" content="Stynero — sleek, responsive digital agency for startups & creatives.">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/bootstrap-icons.css">
-    <link rel="stylesheet" href="assets/css/spacing.css">
+  <link rel="stylesheet" href="assets/css/bootstrap-icons.css">
+  <link rel="stylesheet" href="assets/css/spacing.css">
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/animate.css">
   <link rel="stylesheet" href="assets/css/slick.css">
   <link rel="stylesheet" href="assets/css/slick-theme.css">
-<link rel="stylesheet" href="assets/css/responsive.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+  <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+  <style>
+ 
+    .process-arrow-wrapper {
+      flex-shrink: 0;
+    }
+
+    .tp-left-arrow-btn,
+    .tp-arrow-arrow-btn {
+      width: 45px;
+      height: 45px;
+      border-radius: 50%;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: 0.4s ease;
+      background: rgba(255, 255, 255, 0.05);
+      color: var(--white);
+      position: relative;
+     
+    }
+    .tp-process-slider:hover .tp-left-arrow-btn {
+      transform: translate(-50px); z-index: 3;
+    }
+.tp-process-slider:hover  .tp-arrow-arrow-btn{
+      transform: translate(50px); z-index: 3;
+    }
+    /*=====================================
+SLIDER
+=====================================*/
+
+    .tp-process-slider {
+      overflow: visible;
+    }
+
+    .tp-process-item {
+      min-height: 420px;
+
+      padding: 30px;
+
+      border-radius: 30px;
+
+      background-image: linear-gradient(#161824, #161824cc);
+
+      backdrop-filter: blur(10px);
+
+      display: flex;
+      flex-direction: column;
+
+      transition: 0.4s ease;
+    }
+
+    .process-number {
+      font-size: 32px;
+      font-weight: 600;
+      margin-bottom: 30px;
+    }
+
+    .process-title {
+      color: var(--white);
+
+      font-size: 34px;
+
+      line-height: 1.2;
+
+      margin-bottom: 35px;
+    }
+
+    .process-text {
+      color: rgba(255, 255, 255, 0.65);
+      margin-top: 0;
+    }
+
+    /*=====================================
+BOTTOM AREA
+=====================================*/
+
+    .process-bottom-wrapper {
+
+
+      background: rgba(255, 255, 255, 0.12);
+
+      padding: 22px 30px;
+
+      border-radius: 100px;
+    }
+
+    /*=====================================
+USER IMAGES
+=====================================*/
+
+    .process-user-images img {
+      width: 48px;
+      height: 48px;
+
+      border-radius: 50%;
+
+      object-fit: cover;
+
+      border: 2px solid #060d63;
+
+      margin-left: -12px;
+    }
+
+    .process-user-images img:first-child {
+      margin-left: 0;
+    }
+
+.testimonial-navigation{width: 100%;height: 100%;position: absolute;top: 0;left: 0;}
+
+    /*=====================================
+RESPONSIVE
+=====================================*/
+
+    @media (max-width: 1199px) {
+
+      .tp-process-item {
+        min-height: 360px;
+      }
+
+      .process-title {
+        font-size: 28px;
+      }
+
+    }
+
+    @media (max-width: 991px) {
+
+
+      .tp-process-item {
+        min-height: auto;
+      }
+
+    }
+
+    @media (max-width: 767px) {
+
+      .home-one-process {
+        padding: 80px 0;
+      }
+
+      .tp-process-item {
+        padding: 30px;
+        border-radius: 24px;
+      }
+
+      .process-number {
+        font-size: 26px;
+      }
+
+      .process-title {
+        font-size: 24px;
+      }
+
+      .process-text {
+        font-size: 16px;
+      }
+
+      .tp-left-arrow-btn,
+      .tp-arrow-arrow-btn {
+        width: 50px;
+        height: 50px;
+      }
+
+      .process-bottom-wrapper {
+        border-radius: 30px;
+      }
+
+
+
+    }
+  </style>
 </head>
 
 <body>
@@ -43,170 +217,173 @@
     <!-- ===================================================
 				header area start
 				==================================================== -->
-     <div class="navbar w-100">
-  <div role="banner" class="navbar-one header-main w-100">
-    <div class="container-fluid">
-      <div class="navbar-one-wrapper align-items-center row">
+    <div class="navbar w-100">
+      <div role="banner" class="navbar-one header-main w-100">
+        <div class="container-fluid">
+          <div class="navbar-one-wrapper align-items-center row">
 
-        <!-- Logo -->
-        <div class="col-6 col-xl-3 col-lg-3">
-          <a href="index.html" class="stynero-wrapper header-logo d-flex align-items-center">
-            <img width="140" height="30" alt="logo-img" src="assets/img/logo/logo.svg" loading="lazy" class="stynero">
-          </a>
-        </div>
-
-        <!-- Menu -->
-        <div class="col-xl-7 col-lg-7 main-menu-section">
-          <nav role="navigation" class="nav-menu main-menu" aria-label="Main Navigation">
-            <ul class="d-inline-block w-100 h-100 nav-inline list-unstyled m-0">
-
-              <li class="tp-dropdown menu-item">
-                <a href="javascript:void(0)" class="tp-dropdown-toggle menu-item-toggle">
-                  <span>Home</span>
-                  <i class="bi bi-caret-down-fill tp-menu-dropdown-icon menu-dp-icon mt-0"></i>
-                </a>
-                <ul class="tp-dropdown-menu dp-menu list-unstyled">
-                  <li><a href="home-one.html" class="dropdown-link menu-dd-link tp-active">Home One</a></li>
-                  <li><a href="home-two.html" class="dropdown-link menu-dd-link">Home Two</a></li>
-                  <li><a href="home-three.html" class="dropdown-link menu-dd-link">Home Three</a></li>
-                </ul>
-              </li>
-
-              <li class="tp-dropdown menu-item">
-                <a href="javascript:void(0)" class="tp-dropdown-toggle menu-item-toggle">
-                  <span>About</span>
-                  <i class="bi bi-caret-down-fill tp-menu-dropdown-icon menu-dp-icon mt-0"></i>
-                </a>
-                <ul class="tp-dropdown-menu dp-menu list-unstyled">
-                  <li><a href="about-one.html" class="dropdown-link menu-dd-link">About One</a></li>
-                  <li><a href="about-two.html" class="dropdown-link menu-dd-link">About Two</a></li>
-                  <li><a href="about-three.html" class="dropdown-link menu-dd-link">About Three</a></li>
-                </ul>
-              </li>
-
-              <li class="tp-dropdown menu-item">
-                <a href="javascript:void(0)" class="tp-dropdown-toggle menu-item-toggle">
-                  <span>Pages</span>
-                  <i class="bi bi-caret-down-fill tp-menu-dropdown-icon menu-dp-icon mt-0"></i>
-                </a>
-                <ul class="tp-dropdown-menu dp-menu list-unstyled">
-                  <li><a href="service-one.html" class="dropdown-link menu-dd-link">Service One</a></li>
-                  <li><a href="service-two.html" class="dropdown-link menu-dd-link">Service Two</a></li>
-                  <li><a href="service-three.html" class="dropdown-link menu-dd-link">Service Three</a></li>
-                  <li><a href="projects.html" class="dropdown-link menu-dd-link">Projects</a></li>
-                  <li><a href="team.html" class="dropdown-link menu-dd-link">Team</a></li>
-                  <li><a href="404.html" class="dropdown-link menu-dd-link">404</a></li>
-                </ul>
-              </li>
-
-              <li class="tp-dropdown menu-item">
-                <a href="pricing.html" class="tp-dropdown-toggle">Pricing</a>
-              </li>
-
-              <li class="tp-dropdown menu-item">
-                <a href="javascript:void(0)" class="tp-dropdown-toggle menu-item-toggle">
-                  <span>Blog</span>
-                  <i class="bi bi-caret-down-fill tp-menu-dropdown-icon menu-dp-icon mt-0"></i>
-                </a>
-                <ul class="tp-dropdown-menu dp-menu list-unstyled">
-                  <li><a href="blog-one.html" class="dropdown-link menu-dd-link">Blog One</a></li>
-                  <li><a href="blog-two.html" class="dropdown-link menu-dd-link">Blog Two</a></li>
-                  <li><a href="blog-three.html" class="dropdown-link menu-dd-link">Blog Three</a></li>
-                </ul>
-              </li>
-
-              <li class="tp-dropdown menu-item">
-                <a href="javascript:void(0)" class="tp-dropdown-toggle menu-item-toggle">
-                  <span>Contact</span>
-                  <i class="bi bi-caret-down-fill tp-menu-dropdown-icon menu-dp-icon mt-0"></i>
-                </a>
-                <ul class="tp-dropdown-menu dp-menu list-unstyled">
-                  <li><a href="contact-one.html" class="dropdown-link menu-dd-link">Contact One</a></li>
-                  <li><a href="contact-two.html" class="dropdown-link menu-dd-link">Contact Two</a></li>
-                  <li><a href="contact-three.html" class="dropdown-link menu-dd-link">Contact Three</a></li>
-                </ul>
-              </li>
-
-            </ul>
-          </nav>
-        </div>
-
-        <!-- CTA + Hamburger -->
-        <div class="col-6 col-xl-2 col-lg-2 d-flex justify-content-end align-items-center">
-
-          <a href="tel:(888)1234567" class="let-s-talk tp-inline-block d-flex align-items-center">
-            <div class="rounded-circle ph-icon-wrapper d-flex align-items-center justify-content-center">
-              <i class="bi bi-telephone navbar-icon transition-slow tp-common-white"></i>
+            <!-- Logo -->
+            <div class="col-6 col-xl-3 col-lg-3">
+              <a href="index.html" class="stynero-wrapper header-logo d-flex align-items-center">
+                <img width="140" height="30" alt="logo-img" src="assets/img/logo/logo.svg" loading="lazy"
+                  class="stynero">
+              </a>
             </div>
 
-            <div class="let-s-talk-text-wrapper">
-              <div class="button-text-hover transition-slow">Lets&#x27; Talk</div>
-              <div class="button-text-hover-out transition-slow">(888) 123 4567</div>
-            </div>
-          </a>
+            <!-- Menu -->
+            <div class="col-xl-7 col-lg-7 main-menu-section">
+              <nav role="navigation" class="nav-menu main-menu" aria-label="Main Navigation">
+                <ul class="d-inline-block w-100 h-100 nav-inline list-unstyled m-0">
 
-          <div class="humburger-wrapper humburger-main ms-3">
-            <div class="humburger-bar humburger-bar-one"></div>
-            <div class="humburger-bar humburger-bar-two"></div>
+                  <li class="tp-dropdown menu-item">
+                    <a href="javascript:void(0)" class="tp-dropdown-toggle menu-item-toggle">
+                      <span>Home</span>
+                      <i class="bi bi-caret-down-fill tp-menu-dropdown-icon menu-dp-icon mt-0"></i>
+                    </a>
+                    <ul class="tp-dropdown-menu dp-menu list-unstyled">
+                      <li><a href="home-one.html" class="dropdown-link menu-dd-link tp-active">Home One</a></li>
+                      <li><a href="home-two.html" class="dropdown-link menu-dd-link">Home Two</a></li>
+                      <li><a href="home-three.html" class="dropdown-link menu-dd-link">Home Three</a></li>
+                    </ul>
+                  </li>
+
+                  <li class="tp-dropdown menu-item">
+                    <a href="javascript:void(0)" class="tp-dropdown-toggle menu-item-toggle">
+                      <span>About</span>
+                      <i class="bi bi-caret-down-fill tp-menu-dropdown-icon menu-dp-icon mt-0"></i>
+                    </a>
+                    <ul class="tp-dropdown-menu dp-menu list-unstyled">
+                      <li><a href="about-one.html" class="dropdown-link menu-dd-link">About One</a></li>
+                      <li><a href="about-two.html" class="dropdown-link menu-dd-link">About Two</a></li>
+                      <li><a href="about-three.html" class="dropdown-link menu-dd-link">About Three</a></li>
+                    </ul>
+                  </li>
+
+                  <li class="tp-dropdown menu-item">
+                    <a href="javascript:void(0)" class="tp-dropdown-toggle menu-item-toggle">
+                      <span>Pages</span>
+                      <i class="bi bi-caret-down-fill tp-menu-dropdown-icon menu-dp-icon mt-0"></i>
+                    </a>
+                    <ul class="tp-dropdown-menu dp-menu list-unstyled">
+                      <li><a href="service-one.html" class="dropdown-link menu-dd-link">Service One</a></li>
+                      <li><a href="service-two.html" class="dropdown-link menu-dd-link">Service Two</a></li>
+                      <li><a href="service-three.html" class="dropdown-link menu-dd-link">Service Three</a></li>
+                      <li><a href="projects.html" class="dropdown-link menu-dd-link">Projects</a></li>
+                      <li><a href="team.html" class="dropdown-link menu-dd-link">Team</a></li>
+                      <li><a href="404.html" class="dropdown-link menu-dd-link">404</a></li>
+                    </ul>
+                  </li>
+
+                  <li class="tp-dropdown menu-item">
+                    <a href="pricing.html" class="tp-dropdown-toggle">Pricing</a>
+                  </li>
+
+                  <li class="tp-dropdown menu-item">
+                    <a href="javascript:void(0)" class="tp-dropdown-toggle menu-item-toggle">
+                      <span>Blog</span>
+                      <i class="bi bi-caret-down-fill tp-menu-dropdown-icon menu-dp-icon mt-0"></i>
+                    </a>
+                    <ul class="tp-dropdown-menu dp-menu list-unstyled">
+                      <li><a href="blog-one.html" class="dropdown-link menu-dd-link">Blog One</a></li>
+                      <li><a href="blog-two.html" class="dropdown-link menu-dd-link">Blog Two</a></li>
+                      <li><a href="blog-three.html" class="dropdown-link menu-dd-link">Blog Three</a></li>
+                    </ul>
+                  </li>
+
+                  <li class="tp-dropdown menu-item">
+                    <a href="javascript:void(0)" class="tp-dropdown-toggle menu-item-toggle">
+                      <span>Contact</span>
+                      <i class="bi bi-caret-down-fill tp-menu-dropdown-icon menu-dp-icon mt-0"></i>
+                    </a>
+                    <ul class="tp-dropdown-menu dp-menu list-unstyled">
+                      <li><a href="contact-one.html" class="dropdown-link menu-dd-link">Contact One</a></li>
+                      <li><a href="contact-two.html" class="dropdown-link menu-dd-link">Contact Two</a></li>
+                      <li><a href="contact-three.html" class="dropdown-link menu-dd-link">Contact Three</a></li>
+                    </ul>
+                  </li>
+
+                </ul>
+              </nav>
+            </div>
+
+            <!-- CTA + Hamburger -->
+            <div class="col-6 col-xl-2 col-lg-2 d-flex justify-content-end align-items-center">
+
+              <a href="tel:(888)1234567" class="let-s-talk tp-inline-block d-flex align-items-center">
+                <div class="rounded-circle ph-icon-wrapper d-flex align-items-center justify-content-center">
+                  <i class="bi bi-telephone navbar-icon transition-slow tp-common-white"></i>
+                </div>
+
+                <div class="let-s-talk-text-wrapper">
+                  <div class="button-text-hover transition-slow">Lets&#x27; Talk</div>
+                  <div class="button-text-hover-out transition-slow">(888) 123 4567</div>
+                </div>
+              </a>
+
+              <div class="humburger-wrapper humburger-main ms-3">
+                <div class="humburger-bar humburger-bar-one"></div>
+                <div class="humburger-bar humburger-bar-two"></div>
+              </div>
+
+            </div>
+
           </div>
-
         </div>
-
       </div>
     </div>
-  </div>
-</div>
     <!-- ===================================================
 		    home one hero
 				==================================================== -->
     <section class="home-one-hero parallax-hero-sec md-pt-120 pt-160">
       <div class="container">
-       <div class="row">
-       <div class="col-xl-9 col-12 mx-auto">
-         <div class="home-one-hero-main pt-60 d-flex text-center justify-content-start flex-column align-items-center position-relative">
-          <div class=" flex-column d-flex position-relative  text-center justify-content-start align-items-center home-one-hero-text">
-            <span class="text-capitalize  wow fadeInUp">best design studio</span>
-            <h1 class="hero-heading-gap mt-15 mb-20  wow fadeInUp">ideation implementation <span
-                class="text-gradiant">execution</span>
-            </h1>
-            <div data-wow-duration="0.8s" class="hero-border-wrapper mb-30">
-              <span data-wow-duration="0.1s"
-                class="border-movement-bar"></span>
+        <div class="row">
+          <div class="col-xl-9 col-12 mx-auto">
+            <div
+              class="home-one-hero-main pt-60 d-flex text-center justify-content-start flex-column align-items-center position-relative">
+              <div
+                class=" flex-column d-flex position-relative  text-center justify-content-start align-items-center home-one-hero-text">
+                <span class="text-capitalize  wow fadeInUp">best design studio</span>
+                <h1 class="hero-heading-gap mt-15 mb-20  wow fadeInUp">ideation implementation <span
+                    class="text-gradiant">execution</span>
+                </h1>
+                <div data-wow-duration="0.8s" class="hero-border-wrapper mb-30">
+                  <span data-wow-duration="0.1s" class="border-movement-bar"></span>
+                </div>
+                <div class="col-md-10 col-lg-8 mx-auto col-11">
+                  <p class="home-one-hero-description pb-30 wow fadeInUp" data-wow-duration="1.3s">Lorem ipsum dolor sit
+                    amet consetetur adipiscing
+                    elit. Vestibulum rhoncus efficitur enon hendrerit sapien auctor maecen sapien faucibus.</p>
+                </div>
+                <div class=" wow fadeInUp" data-wow-duration="1.3s">
+                  <div class="button-wrapper button-margin mb-60 md-mb-50">
+                    <a href="contact-one.html" class="tp-btn tp-common-white">get in touch</a>
+                    <div class="button-border-effect"></div>
+                  </div>
+                </div>
+                <div class="tp-scroll-indicator" aria-label="Scroll Down">
+                  <span class="tp-scroll-indicator__line"></span>
+                </div>
+              </div>
+              <div class="little-boy-image-wrapper parallax-img-two">
+                <img width="177" loading="lazy" alt="Cartoon Image" src="assets/img/hero/hero-boy-img.webp"
+                  class="hero-images">
+              </div>
+              <div class="girl-image-wrapper parallax-img-one">
+                <img width="310" alt="Girl With Laptop" src="assets/img/hero/hero-girl-img.webp" loading="lazy"
+                  class="hero-images">
+                <div class="girl-image-glow"></div>
+              </div>
             </div>
-          <div class="col-md-10 col-lg-8 mx-auto col-11">
-              <p  class="home-one-hero-description pb-30 wow fadeInUp" data-wow-duration="1.3s">Lorem ipsum dolor sit amet consetetur adipiscing
-              elit. Vestibulum rhoncus efficitur enon hendrerit sapien auctor maecen sapien faucibus.</p>
-          </div>
-          <div class=" wow fadeInUp" data-wow-duration="1.3s">
-              <div  class="button-wrapper button-margin mb-60 md-mb-50">
-              <a href="contact-one.html" class="tp-btn tp-common-white">get in touch</a>
-              <div class="button-border-effect"></div>
-            </div>
-          </div>
-          <div class="tp-scroll-indicator" aria-label="Scroll Down">
-  <span class="tp-scroll-indicator__line"></span>
-</div>
-          </div>
-          <div class="little-boy-image-wrapper parallax-img-two">
-            <img width="177" loading="lazy" alt="Cartoon Image" src="assets/img/hero/hero-boy-img.webp"
-              class="hero-images">
-          </div>
-          <div class="girl-image-wrapper parallax-img-one">
-            <img width="310" alt="Girl With Laptop"
-              src="assets/img/hero/hero-girl-img.webp" loading="lazy"
-              class="hero-images">
-            <div class="girl-image-glow"></div>
           </div>
         </div>
-       </div>
-      </div>
     </section>
     <!-- ===================================================
 			   Marquee clients animation
 			==================================================== -->
     <section class="clients  wow fadeInUp px-3" data-wow-duration="0.8s">
       <div class="container">
-        <div class="clients-main d-flex flex-column gap-50  position-relative  align-items-center justify-content-start pt-50 pb-70 md-pt-40 md-pb-50">
+        <div
+          class="clients-main d-flex flex-column gap-50  position-relative  align-items-center justify-content-start pt-50 pb-70 md-pt-40 md-pb-50">
           <span class="text-capitalize">10k+ our trusted clients</span>
           <div class="clients-marquee-main">
             <div class="tp-flex-horizontal clients-marquee-train  marquee-train-left ">
@@ -258,23 +435,18 @@
     <!-- ===================================================
 			   our story
 			==================================================== -->
- <section class="tp-reveal-section">
-  <div class="container-fluid">
+    <section class="tp-reveal-section">
+      <div class="container-fluid">
 
-    <div class="tp-reveal-wrap overflow-hidden tp-radius-20 position-relative">
+        <div class="tp-reveal-wrap overflow-hidden tp-radius-20 position-relative">
 
-      <img
-        class="tp-reveal-img"
-        src="assets/img/home-one-story/story-big-image.webp"
-        width="1290"
-        height="572"
-        alt="Image"
-        loading="lazy">
+          <img class="tp-reveal-img" src="assets/img/home-one-story/story-big-image.webp" width="1290" height="572"
+            alt="Image" loading="lazy">
 
-    </div>
+        </div>
 
-  </div>
-</section>
+      </div>
+    </section>
   </div>
   <div class="home-shape-background mt-80 md-mt-30">
     <!-- ===================================================
@@ -282,31 +454,38 @@
 			==================================================== -->
     <section class="home-popup-video pb-80 md-pb-60">
       <div class="mx-auto container">
-       <div class="row">
-        <div class="col-md-10 mx-auto col-12">
-           <div class=" home-popup-main row gap-20">
-          <div class=" col-12 col-md-3 position-relative">
-        <div class=" home-popup-video-heading gap-30 d-flex align-items-center justify-content-center flex-column text-center">
-              <a  href="#" class="d-flex align-items-center justify-content-center border  border-secondary rounded-circle">
-            <i class="bi bi-play-fill fs-3 tp-common-white"></i>
-            </a>
-            <h4 class="heading-four my-0 text-align-center">explore our story</h4>
-        </div>
-        <span class="story-line p-0 d-flex align-items-cent justify-content-center position-absolute "></span>
-          </div>
-          
-          <div class="col-12 col-md-9 px-3 px-md-0  home-popup-video-text">
-            <p class="home-popup-video-desc mb-0">Lorem ipsum dolor sit amet consectetur adipiscing elit. Fusce sed gravida felis.
-              In vel odio. Fusce utfk sapien pharetra pharetra purus sempr aliquet tortor. Nullam egestas venenatis quam
-              vel tincidunt. Vivamus maximus suscipit ex, quis sollicitudin felis convallis eget. Etiam ac urna euismod
-              ullvamcorper mi sit amet, fringilla dui. Duis vitae dignissim arcu, id porttitor enim.Phasellus purus ri,
-              euismodt tortor srie molestie imperdiet qum. Morbi elementum nisil maursd facilisis tortor consequat sirt
-              amet. Vestibulum.</p>
+        <div class="row">
+          <div class="col-md-10 mx-auto col-12">
+            <div class=" home-popup-main row gap-20">
+              <div class=" col-12 col-md-3 position-relative">
+                <div
+                  class=" home-popup-video-heading gap-30 d-flex align-items-center justify-content-center flex-column text-center">
+                  <a href="#"
+                    class="d-flex align-items-center justify-content-center border  border-secondary rounded-circle">
+                    <i class="bi bi-play-fill fs-3 tp-common-white"></i>
+                  </a>
+                  <h4 class="heading-four my-0 text-align-center">explore our story</h4>
+                </div>
+                <span class="story-line p-0 d-flex align-items-cent justify-content-center position-absolute "></span>
+              </div>
 
+              <div class="col-12 col-md-9 px-3 px-md-0  home-popup-video-text">
+                <p class="home-popup-video-desc mb-0">Lorem ipsum dolor sit amet consectetur adipiscing elit. Fusce sed
+                  gravida felis.
+                  In vel odio. Fusce utfk sapien pharetra pharetra purus sempr aliquet tortor. Nullam egestas venenatis
+                  quam
+                  vel tincidunt. Vivamus maximus suscipit ex, quis sollicitudin felis convallis eget. Etiam ac urna
+                  euismod
+                  ullvamcorper mi sit amet, fringilla dui. Duis vitae dignissim arcu, id porttitor enim.Phasellus purus
+                  ri,
+                  euismodt tortor srie molestie imperdiet qum. Morbi elementum nisil maursd facilisis tortor consequat
+                  sirt
+                  amet. Vestibulum.</p>
+
+              </div>
+            </div>
           </div>
         </div>
-        </div>
-       </div>
       </div>
     </section>
     <!-- ===================================================
@@ -315,82 +494,83 @@
     <section class="home-service pb-60 md-pb-50 xxl-pb-140">
       <div class="container ">
         <div class="tp-flex-vertical home-service-main">
-         <div class="row">
-         <div class=" col-md-7 col-12 col-xl-6">
-          <div class="section-title mt-15 mb-60 md-mb-30 service-section-title">
+          <div class="row">
+            <div class=" col-md-7 col-12 col-xl-6">
+              <div class="section-title mt-15 mb-60 md-mb-30 service-section-title">
 
-  <span class="section-subtitle text-capitalize wow fadeInUp" data-wow-duration="0.6s">
-    Our Service
-  </span>
+                <span class="section-subtitle text-capitalize wow fadeInUp" data-wow-duration="0.6s">
+                  Our Service
+                </span>
 
-  <h2 class="section-title-heading service-title wow fadeInUp mb-0" data-wow-duration="0.8s">
-    Empower Brand with Dynamic 
-    <span class="text-gradiant">Services</span>
-  </h2>
+                <h2 class="section-title-heading service-title wow fadeInUp mb-0" data-wow-duration="0.8s">
+                  Empower Brand with Dynamic
+                  <span class="text-gradiant">Services</span>
+                </h2>
 
-</div>
-         </div>
-          <div class="home-one-services row ">
-            <div class="col-12 col-md-6 col-lg-4 md-pb-15 theme-pb-0">
-            <div data-wow-duration="0.5s" class="tp-flex-vertical home-one-service-cards wow fadeInUp px-lg-2 px-1">
-              <div class="tp-flex-vertical home-one-service-cards-icon">
-                <img width="114" height="91" alt="Megaphone" src="assets/img/service-icons/service-ic-1.png"
-                  loading="lazy" class="home-one-service-icon">
-                <div class="home-one-service-cards-icon-overlay "></div>
               </div>
-              <h3 class="m-0">digital marketing</h3>
-              <p class="m-0">Lorem ipsum dolor sit amet consect adipiscing  gravida elit praesent.</p>
-              <a href="service-one.html" class="button-two tp-inline-block ">
-                <div>Learn More</div>
-                <div class="button-two-icon-wrapper">
-                    <i class="bi bi-arrow-right button-two-arrow"></i>
-                </div>
-              </a>
             </div>
-             </div>
-            <!-- 2 -->
-               <div class="col-12 col-md-6 col-lg-4 md-pb-15 theme-pb-0">
-            <div data-wow-duration="0.8s" class=" wow fadeInUp tp-flex-vertical home-one-service-cards px-lg-2 px-1">
-              <div class="tp-flex-vertical home-one-service-cards-icon">
-                <img width="91" height="91" alt="Icon" src="assets/img/service-icons/service-ic-2.png" loading="lazy"
-                  class="home-one-service-icon">
-                <div class="home-one-service-cards-icon-overlay "></div>
+            <div class="home-one-services row ">
+              <div class="col-12 col-md-6 col-lg-4 md-pb-15 theme-pb-0">
+                <div data-wow-duration="0.5s" class="tp-flex-vertical home-one-service-cards wow fadeInUp px-lg-2 px-1">
+                  <div class="tp-flex-vertical home-one-service-cards-icon">
+                    <img width="114" height="91" alt="Megaphone" src="assets/img/service-icons/service-ic-1.png"
+                      loading="lazy" class="home-one-service-icon">
+                    <div class="home-one-service-cards-icon-overlay "></div>
+                  </div>
+                  <h3 class="m-0">digital marketing</h3>
+                  <p class="m-0">Lorem ipsum dolor sit amet consect adipiscing  gravida elit praesent.</p>
+                  <a href="service-one.html" class="button-two tp-inline-block ">
+                    <div>Learn More</div>
+                    <div class="button-two-icon-wrapper">
+                      <i class="bi bi-arrow-right button-two-arrow"></i>
+                    </div>
+                  </a>
+                </div>
               </div>
-              <h3 class="m-0">graphic design </h3>
-              <p class="m-0">Lorem ipsum dolor sit amet consect adipiscing  gravida elit praesent.</p>
-              <a href="service-two.html"
-                class="button-two tp-inline-block ">
-                <div>Learn More</div>
-                <div class="button-two-icon-wrapper">
-            
-                  <i class="bi bi-arrow-right button-two-arrow"></i>
-                </div>
-              </a>
-            </div>
-            </div>
-            <!-- 3 -->
+              <!-- 2 -->
+              <div class="col-12 col-md-6 col-lg-4 md-pb-15 theme-pb-0">
+                <div data-wow-duration="0.8s"
+                  class=" wow fadeInUp tp-flex-vertical home-one-service-cards px-lg-2 px-1">
+                  <div class="tp-flex-vertical home-one-service-cards-icon">
+                    <img width="91" height="91" alt="Icon" src="assets/img/service-icons/service-ic-2.png"
+                      loading="lazy" class="home-one-service-icon">
+                    <div class="home-one-service-cards-icon-overlay "></div>
+                  </div>
+                  <h3 class="m-0">graphic design </h3>
+                  <p class="m-0">Lorem ipsum dolor sit amet consect adipiscing  gravida elit praesent.</p>
+                  <a href="service-two.html" class="button-two tp-inline-block ">
+                    <div>Learn More</div>
+                    <div class="button-two-icon-wrapper">
 
-                <div class="col-12 col-md-6 col-lg-4 md-pb-15 theme-pb-0">
-            <div data-wow-duration="1.3s" class="tp-flex-vertical home-one-service-cards  wow fadeInUp px-lg-2 px-1">
-              <div class="tp-flex-vertical home-one-service-cards-icon">
-                <img width="65" height="91" alt="Icon" src="assets/img/service-icons/service-ic-3.png" loading="lazy"
-                  class="home-one-service-icon">
-                <div class="home-one-service-cards-icon-overlay "></div>
-              </div>
-              <h3 class="m-0">product design</h3>
-              <p class="m-0">Lorem ipsum dolor sit amet consect adipiscing  gravida elit praesent.</p>
-              <a href="service-three.html" class="button-two tp-inline-block ">
-                <div>Learn More</div>
-                <div class="button-two-icon-wrapper">
-             
-                 <i class="bi bi-arrow-right button-two-arrow"></i>
+                      <i class="bi bi-arrow-right button-two-arrow"></i>
+                    </div>
+                  </a>
                 </div>
-              </a>
-            </div>
+              </div>
+              <!-- 3 -->
+
+              <div class="col-12 col-md-6 col-lg-4 md-pb-15 theme-pb-0">
+                <div data-wow-duration="1.3s"
+                  class="tp-flex-vertical home-one-service-cards  wow fadeInUp px-lg-2 px-1">
+                  <div class="tp-flex-vertical home-one-service-cards-icon">
+                    <img width="65" height="91" alt="Icon" src="assets/img/service-icons/service-ic-3.png"
+                      loading="lazy" class="home-one-service-icon">
+                    <div class="home-one-service-cards-icon-overlay "></div>
+                  </div>
+                  <h3 class="m-0">product design</h3>
+                  <p class="m-0">Lorem ipsum dolor sit amet consect adipiscing  gravida elit praesent.</p>
+                  <a href="service-three.html" class="button-two tp-inline-block ">
+                    <div>Learn More</div>
+                    <div class="button-two-icon-wrapper">
+
+                      <i class="bi bi-arrow-right button-two-arrow"></i>
+                    </div>
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-         </div>
       </div>
     </section>
   </div>
@@ -398,7 +578,8 @@
 			  double marquee wrapper
 			==================================================== -->
   <section class="overflow-hidden">
-    <div class="double-marquee-wrapper d-flex align-items-center justify-content-center flex-column pt-130 pb-130 md-p0 ">
+    <div
+      class="double-marquee-wrapper d-flex align-items-center justify-content-center flex-column pt-130 pb-130 md-p0 ">
       <div class="tp-flex-horizontal double-marquees">
         <div class="tp-flex-horizontal marquee-train marquee-train-left base-transform">
           <div class="marquee-text">graphic design</div>
@@ -469,25 +650,17 @@
           <div class="marquee-text stroke">content creator</div>
         </div>
       </div>
-      <div  class="marquee-image-wrapper d-none d-xl-flex align-items-center justify-content-center">
+      <div class="marquee-image-wrapper d-none d-xl-flex align-items-center justify-content-center">
         <div class="marquee-image-one">
-          <img class="tp-radius-20 marquee-image-three position-absolute" src="assets/img/marquee/marquee-3.webp" width="320"
-            height="380" alt="Marquee Image"
-            
-            loading="lazy" >
-          <img class="tp-radius-20 marquee-image-two position-absolute" src="assets/img/marquee/marquee-2.webp" width="320" height="380"
-            alt="Marquee Image"
-           
-            loading="lazy" >
+          <img class="tp-radius-20 marquee-image-three position-absolute" src="assets/img/marquee/marquee-3.webp"
+            width="320" height="380" alt="Marquee Image" loading="lazy">
+          <img class="tp-radius-20 marquee-image-two position-absolute" src="assets/img/marquee/marquee-2.webp"
+            width="320" height="380" alt="Marquee Image" loading="lazy">
           <img class="tp-radius-20 image-one" src="assets/img/marquee/marquee-1.webp" width="320" height="380"
-            alt="Marquee Image"
-           
-            loading="lazy" >
+            alt="Marquee Image" loading="lazy">
         </div>
         <div class="marquee-image-two">
           <img width="320" height="380" alt="Marquee Image" src="assets/img/marquee//marquee-bg.webp" loading="lazy"
-          
-          
             class="tp-radius-20">
         </div>
       </div>
@@ -497,17 +670,17 @@
 			  Recent portfolio
 			==================================================== -->
   <section class="home-one-work pt-70 md-pb-70 xxl-pt-140 pb-100">
-   
+
     <div class="container-fluid">
-       <div class="mb-70 md-mb-50 sm-mb-30">
-      <div class="tp-flex-vertical home-one-work-main">
-        <h2 class="portfolio-big-heading wow fadeInUp" data-wow-duration="0.8s">work</h2>
-        <div class="tp-flex-horizontal home-one-work-bottom-text wow fadeInUp" data-wow-duration="1.3s">
-          <span class="home-one-work-border"></span>
-          <span class="text-capitalize tp-common-white">our portfolio</span>
+      <div class="mb-70 md-mb-50 sm-mb-30">
+        <div class="tp-flex-vertical home-one-work-main">
+          <h2 class="portfolio-big-heading wow fadeInUp" data-wow-duration="0.8s">work</h2>
+          <div class="tp-flex-horizontal home-one-work-bottom-text wow fadeInUp" data-wow-duration="1.3s">
+            <span class="home-one-work-border"></span>
+            <span class="text-capitalize tp-common-white">our portfolio</span>
+          </div>
         </div>
       </div>
-    </div>
       <div class=" home-one-portfolio-card-wrapper row">
         <div class="tp-flex-vertical home-one-portfolio-left col-12 col-md-6">
           <div class="tp-portfolio-list">
@@ -517,14 +690,12 @@
                   <a href="projects/ai-interface-design.html"
                     class="overflow-hidden portfolio-card-image tp-inline-block ">
                     <img width="590" height="620" alt="Portfolio img" src="assets/img/portfolios/portfolios-1.webp"
-                      loading="lazy" 
-                    
-                      class="tp-radius-30 mobile-image-full-width">
+                      loading="lazy" class="tp-radius-30 mobile-image-full-width">
                     <div class="portfolio-marquee transition-medium">
                       <div class="tp-flex-horizontal portfolio-marquee-train  marquee-train-left">
                         <h3 class="m-0">interface design</h3>
                         <i class="bi bi-star-fill tp-common-white image fs-5"></i>
-                        
+
                         <h3 class="m-0">graphic design</h3>
                         <i class="bi bi-star-fill tp-common-white image fs-5"></i>
                         <h3 class="m-0">logo design</h3>
@@ -568,11 +739,9 @@
                 <div class="home-one-cards tp-reveal-x card-four-wrapper hover-arrow-gradiant cards-hover">
                   <a href="projects/ui-ux-design.html" class="overflow-hidden portfolio-card-image tp-inline-block ">
                     <img width="410" height="480" alt="Portfolio img" src="assets/img/portfolios/portfolios-3.webp"
-                      loading="lazy" 
-                      class="tp-radius-30 mobile-image-full-width">
+                      loading="lazy" class="tp-radius-30 mobile-image-full-width">
                     <div class="portfolio-marquee transition-medium">
-                      <div 
-                        class="tp-flex-horizontal portfolio-marquee-train  marquee-train-left">
+                      <div class="tp-flex-horizontal portfolio-marquee-train  marquee-train-left">
                         <h3 class="m-0">interface design</h3>
                         <i class="bi bi-star-fill tp-common-white image fs-5"></i>
                         <h3 class="m-0">graphic design</h3>
@@ -580,8 +749,7 @@
                         <h3 class="m-0">logo design</h3>
                         <i class="bi bi-star-fill tp-common-white image fs-5"></i>
                       </div>
-                      <div 
-                        class="tp-flex-horizontal portfolio-marquee-train  marquee-train-left">
+                      <div class="tp-flex-horizontal portfolio-marquee-train  marquee-train-left">
                         <h3 class="m-0">interface design</h3>
                         <i class="bi bi-star-fill tp-common-white image fs-5"></i>
                         <h3 class="m-0">graphic design</h3>
@@ -589,8 +757,7 @@
                         <h3 class="m-0">logo design</h3>
                         <i class="bi bi-star-fill tp-common-white image fs-5"></i>
                       </div>
-                      <div 
-                        class="tp-flex-horizontal portfolio-marquee-train  marquee-train-left">
+                      <div class="tp-flex-horizontal portfolio-marquee-train  marquee-train-left">
                         <h3 class="m-0">interface design</h3>
                         <i class="bi bi-star-fill tp-common-white image fs-5"></i>
                         <h3 class="m-0">graphic design</h3>
@@ -607,7 +774,7 @@
                         turpis.</p>
                     </div>
                     <a href="projects/ui-ux-design.html" class="circle-icon tp-inline-block ">
-                 <i class="bi bi-arrow-up-right fs-3 transition-medium"></i>
+                      <i class="bi bi-arrow-up-right fs-3 transition-medium"></i>
                     </a>
                   </div>
                 </div>
@@ -623,11 +790,9 @@
                   <a href="projects/web-graphic-design.html"
                     class="overflow-hidden portfolio-card-image tp-inline-block ">
                     <img width="590" height="340" alt="Portfolio img" src="assets/img/portfolios/portfolios-2.webp"
-                      loading="lazy" 
-                      class="tp-radius-30 mobile-image-full-width">
+                      loading="lazy" class="tp-radius-30 mobile-image-full-width">
                     <div class="portfolio-marquee transition-medium">
-                      <div 
-                        class="tp-flex-horizontal portfolio-marquee-train  marquee-train-left">
+                      <div class="tp-flex-horizontal portfolio-marquee-train  marquee-train-left">
                         <h3 class="m-0">interface design</h3>
                         <i class="bi bi-star-fill tp-common-white image fs-5"></i>
                         <h3 class="m-0">graphic design</h3>
@@ -635,8 +800,7 @@
                         <h3 class="m-0">logo design</h3>
                         <i class="bi bi-star-fill tp-common-white image fs-5"></i>
                       </div>
-                      <div 
-                        class="tp-flex-horizontal portfolio-marquee-train  marquee-train-left">
+                      <div class="tp-flex-horizontal portfolio-marquee-train  marquee-train-left">
                         <h3 class="m-0">interface design</h3>
                         <i class="bi bi-star-fill tp-common-white image fs-5"></i>
                         <h3 class="m-0">graphic design</h3>
@@ -644,8 +808,7 @@
                         <h3 class="m-0">logo design</h3>
                         <i class="bi bi-star-fill tp-common-white image fs-5"></i>
                       </div>
-                      <div 
-                        class="tp-flex-horizontal portfolio-marquee-train  marquee-train-left">
+                      <div class="tp-flex-horizontal portfolio-marquee-train  marquee-train-left">
                         <h3 class="m-0">interface design</h3>
                         <i class="bi bi-star-fill tp-common-white image fs-5"></i>
                         <h3 class="m-0">graphic design</h3>
@@ -662,7 +825,7 @@
                         turpis.</p>
                     </div>
                     <a href="projects/web-graphic-design.html" class="circle-icon tp-inline-block ">
-                    <i class="bi bi-arrow-up-right fs-3 transition-medium"></i>
+                      <i class="bi bi-arrow-up-right fs-3 transition-medium"></i>
                     </a>
                   </div>
                 </div>
@@ -675,11 +838,9 @@
                 <div class="home-one-cards tp-reveal-x card-three-three cards-hover">
                   <a href="projects/product-design.html" class="overflow-hidden portfolio-card-image tp-inline-block ">
                     <img width="409" height="400" alt="Portfolio img" src="assets/img/portfolios/portfolios-4.webp"
-                      loading="lazy" 
-                      class="tp-radius-30 mobile-image-full-width">
+                      loading="lazy" class="tp-radius-30 mobile-image-full-width">
                     <div class="portfolio-marquee transition-medium">
-                      <div 
-                        class="tp-flex-horizontal portfolio-marquee-train  marquee-train-left">
+                      <div class="tp-flex-horizontal portfolio-marquee-train  marquee-train-left">
                         <h3 class="m-0">interface design</h3>
                         <i class="bi bi-star-fill tp-common-white image fs-5"></i>
                         <h3 class="m-0">graphic design</h3>
@@ -687,8 +848,7 @@
                         <h3 class="m-0">logo design</h3>
                         <i class="bi bi-star-fill tp-common-white image fs-5"></i>
                       </div>
-                      <div 
-                        class="tp-flex-horizontal portfolio-marquee-train  marquee-train-left">
+                      <div class="tp-flex-horizontal portfolio-marquee-train  marquee-train-left">
                         <h3 class="m-0">interface design</h3>
                         <i class="bi bi-star-fill tp-common-white image fs-5"></i>
                         <h3 class="m-0">graphic design</h3>
@@ -696,8 +856,7 @@
                         <h3 class="m-0">logo design</h3>
                         <i class="bi bi-star-fill tp-common-white image fs-5"></i>
                       </div>
-                      <div 
-                        class="tp-flex-horizontal portfolio-marquee-train  marquee-train-left">
+                      <div class="tp-flex-horizontal portfolio-marquee-train  marquee-train-left">
                         <h3 class="m-0">interface design</h3>
                         <i class="bi bi-star-fill tp-common-white image fs-5"></i>
                         <h3 class="m-0">graphic design</h3>
@@ -714,7 +873,7 @@
                         turpis.</p>
                     </div>
                     <a href="projects/product-design.html" class="circle-icon tp-inline-block ">
-                    <i class="bi bi-arrow-up-right fs-3 transition-medium"></i>
+                      <i class="bi bi-arrow-up-right fs-3 transition-medium"></i>
                     </a>
                   </div>
                 </div>
@@ -730,103 +889,361 @@
 			  Testimonial section
 			==================================================== -->
 
-    <section class="home-one-testimonial overflow-hidden">
+    <section class="home-one-process position-relative overflow-hidden pt-120 pb-120">
+
       <div class="container">
-        <div class="row">
-          <div class="col-12 col-md-10 col-lg-10 mx-auto">
-        
-          <div class="row align-items-center justify-content-center">
-              <span class="section-subtitle text-center home-one-testimonial-content pt-80 md-mt-60 xxl-pt-150 text-capitalize wow fadeInUp" data-wow-duration="0.5s">testimonials
+
+        <!-- heading -->
+        <div class="row align-items-center justify-content-center mb-40 position-relative">
+
+          <div class="col-xl-5 col-md-8 col-12 mx-auto text-center z-1">
+            <div class="section-title text-center mt-15 mb-60 md-mb-30 service-section-title pt-40">
+
+              <span class="section-subtitle text-capitalize wow fadeInUp" data-wow-duration="0.6s">
+                testimonials
               </span>
-            <h2 class="testimonial-heading text-center col-10 col-md-6 mx-auto section-title-heading mt-25 md-mt-10 mb-55 xxl-mb-65 wow fadeInUp" data-wow-duration="0.8s">Testimonials That Tell <span
-              class="text-gradiant">our journey</span>
-          </h2>
+
+              <h2 class="section-title-heading service-title wow fadeInUp mb-0" data-wow-duration="0.8s">
+                Testimonials That Tell
+                <span class="text-gradiant">our story</span>
+              </h2>
+            </div>
           </div>
-          <div class="tp-testimonial tp-testimonial-slider">
-            <div class="slider-main-wrapper">
-              <div class="tp-slider-viewport tp-testimonial-track">
-                <div class="tp-testimonial-item ">
-                  <div class="tp-flex-horizontal testimonial-author-images-wrapper pb-55 xxl-pb-65">
-                    <div class="testimonials-author-box-mid testimonials-author-box-left">
-                      <img width="91" height="91" alt="Author" src="assets/img/testimonials/author-2.webp"
-                        loading="lazy" class="author-image-one">
-                    </div>
-                    <div class="testimonials-author-box-mid">
-                      <img width="126" height="126" alt="Author" src="assets/img/testimonials/author-3.webp"
-                        loading="lazy" class="author-image-one">
-                    </div>
-                    <div class="testimonials-author-box-mid testimonials-author-box-right">
-                      <img width="91" height="91" alt="Author" src="assets/img/testimonials/author-1.webp"
-                        loading="lazy" class="author-image-one">
-                    </div>
+          <span class="home-one-testimonial-content h-100"></span>
+        </div>
+
+<div class=" d-block px-5 overflow-hidden">
+      <!-- slider -->
+        <div class="tp-process-slider swiper ">
+
+          <div class="swiper-wrapper position-relative">
+
+            <!-- item -->
+            <div class="swiper-slide">
+
+              <div class="tp-process-item">
+
+                <div class=" mb-30">
+                  <div class="process-number">
+                    <i class="bi bi-quote"></i>
                   </div>
-                  <div class="tp-flex-vertical testimonail-text">
-                    <p class="mb-20">“ Lorem ipsum dolor sit consectetur adipiscing.  Mauris scelerisque
-                      euismod ante mpor. Curabitur rutrum id odio sit amet efficitur. Vestibulum tempor mattis mollis.
-                      Phasellus eget sapien in nisi sollicitudin commodo ac quis tortor. ”</p>
-                    <div class="heading-five">Jeffery Robinson</div>
-                    <div class="text-sm text-capitalize">Professional</div>
-                  </div>
+
+                  <h4 class="process-title">
+                    Exceptional Quality <br> & Support
+                  </h4>
+
+                  <p class="process-text">
+                    Activate your subscription with just a click - no forms,
+                    no hassle.
+                  </p>
                 </div>
-                <div class="tp-testimonial-item ">
-                  <div class="tp-flex-horizontal testimonial-author-images-wrapper pb-55 xxl-pb-65">
-                    <div class="testimonials-author-box-mid testimonials-author-box-right">
-                      <img width="91" height="91" alt="Author" src="assets/img/testimonials/author-3.webp"
-                        loading="lazy" class="author-image-one">
+                <!--  -->
+                <span class="footer-one-border"></span>
+                <article class="row pt-25 align-items-center ">
+                  <div class="col-8 d-flex align-items-center gap-2 aline-items-center">
+                    <div>
+                      <img class="rounded-circle" width="50" height="50" src="assets/img/testimonials/author-1.webp"
+                        alt="">
                     </div>
-                    <div class="testimonials-author-box-mid">
-                      <img width="126" height="126" alt="Author" src="assets/img/testimonials/author-1.webp"
-                        loading="lazy" class="author-image-one">
-                    </div>
-                    <div class="testimonials-author-box-mid testimonials-author-box-left">
-                      <img width="91" height="91" alt="Author" src="assets/img/testimonials/author-2.webp"
-                        loading="lazy" class="author-image-one">
+                    <div>
+                      <h5 class="my-0 fs-6">George Barrow</h5>
+                      <span class="tp-fs-12">UI Designer</span>
                     </div>
                   </div>
-                  <div class="tp-flex-vertical testimonail-text">
-                    <p class="mb-20">“ Lorem ipsum dolor sit consectetur adipiscing.  Mauris scelerisque
-                      euismod ante mpor. Curabitur rutrum id odio sit amet efficitur. Vestibulum tempor mattis mollis.
-                      Phasellus eget sapien in nisi sollicitudin commodo ac quis tortor. ”</p>
-                    <div class="heading-five">Jennifer Chase</div>
-                    <div class="text-sm text-capitalize">Designer</div>
-                  </div>
-                </div>
-                <div class="tp-testimonial-item">
-                  <div class="tp-flex-horizontal testimonial-author-images-wrapper pb-55 xxl-pb-65">
-                    <div class="testimonials-author-box-mid testimonials-author-box-right">
-                      <img width="91" height="91" alt="Author" src="assets/img/testimonials/author-1.webp"
-                        loading="lazy" class="author-image-one">
+                  <div class="col-4">
+                    <div class="tp-flex-horizontal testimonial-rating justify-content-end gap-2">
+                      <i class="bi bi-star-fill tp-fs-12"></i>
+                      <i class="bi bi-star-fill tp-fs-12"></i>
+                      <i class="bi bi-star-fill tp-fs-12"></i>
+                      <i class="bi bi-star-fill tp-fs-12"></i>
+                      <i class="bi bi-star-fill tp-fs-12"></i>
                     </div>
-                    <div class="testimonials-author-box-mid">
-                      <img width="126" height="126" alt="Author" src="assets/img/testimonials/author-2.webp"
-                        loading="lazy" class="author-image-one">
-                    </div>
-                    <div class="testimonials-author-box-mid testimonials-author-box-left">
-                      <img width="91" height="91" alt="Author" src="assets/img/testimonials/author-3.webp"
-                        loading="lazy" class="author-image-one">
-                    </div>
-                  </div>
-                  <div class="tp-flex-vertical testimonail-text">
-                    <p class="mb-20">“ Lorem ipsum dolor sit consectetur adipiscing.  Mauris scelerisque
-                      euismod ante mpor. Curabitur rutrum id odio sit amet efficitur. Vestibulum tempor mattis mollis.
-                      Phasellus eget sapien in nisi sollicitudin commodo ac quis tortor. ”</p>
-                    <div class="heading-five">Susana Higgins</div>
-                    <div class="text-sm text-capitalize">Developer</div>
-                  </div>
-                </div>
+                </article>
               </div>
+
             </div>
-            <div class="left-arrow tp-arrow-prev">
-                <i class="bi bi-arrow-left slider-icon-rotated slider-icon-arrow fs-4 transition-medium"></i>
+
+            <!-- item -->
+            <div class="swiper-slide">
+
+              <div class="tp-process-item">
+
+                <div class="mb-30">
+                  <div class="process-number">
+                    <i class="bi bi-quote"></i>
+                  </div>
+
+                  <h4 class="process-title">
+                    Smooth & Modern <br> Experience
+                  </h4>
+
+                  <p class="process-text">
+                    Activate your subscription with just a click - no forms,
+                    no hassle.
+                  </p>
+                </div>
+                <span class="footer-one-border"></span>
+                <article class="row pt-25 align-items-center ">
+                  <div class="col-8 d-flex align-items-center gap-2 aline-items-center">
+                    <div>
+                      <img class="rounded-circle" width="50" height="50" src="assets/img/testimonials/author-2.webp"
+                        alt="">
+                    </div>
+                    <div>
+                      <h5 class="my-0 fs-6">George Barrow</h5>
+                      <span class="tp-fs-12">UI Designer</span>
+                    </div>
+                  </div>
+                  <div class="col-4">
+                    <div class="tp-flex-horizontal testimonial-rating justify-content-end gap-2">
+                      <i class="bi bi-star-fill tp-fs-12"></i>
+                      <i class="bi bi-star-fill tp-fs-12"></i>
+                      <i class="bi bi-star-fill tp-fs-12"></i>
+                      <i class="bi bi-star-fill tp-fs-12"></i>
+                      <i class="bi bi-star-fill tp-fs-12"></i>
+                    </div>
+                </article>
+
+              </div>
+
             </div>
-            <div class="right-arrow tp-arrow-next">
-                <i class="bi bi-arrow-right slider-icon-arrow fs-4 transition-medium"></i>
+
+            <!-- item -->
+            <div class="swiper-slide">
+
+              <div class="tp-process-item">
+
+                <div class="mb-30">
+                  <div class="process-number">
+                    <i class="bi bi-quote"></i>
+                  </div>
+
+                  <h4 class="process-title">
+                    Highly Recommended <br> Service
+
+                  </h4>
+
+                  <p class="process-text">
+                    Activate your subscription with just a click - no forms,
+                    no hassle.
+                  </p>
+                </div>
+                <span class="footer-one-border"></span>
+                <article class="row pt-25 align-items-center ">
+                  <div class="col-8 d-flex align-items-center gap-2 aline-items-center">
+                    <div>
+                      <img class="rounded-circle" width="50" height="50" src="assets/img/testimonials/author-3.webp"
+                        alt="">
+                    </div>
+                    <div>
+                      <h5 class="my-0 fs-6">George Barrow</h5>
+                      <span class="tp-fs-12">UI Designer</span>
+                    </div>
+                  </div>
+                  <div class="col-4">
+                    <div class="tp-flex-horizontal testimonial-rating justify-content-end gap-2">
+                      <i class="bi bi-star-fill tp-fs-12"></i>
+                      <i class="bi bi-star-fill tp-fs-12"></i>
+                      <i class="bi bi-star-fill tp-fs-12"></i>
+                      <i class="bi bi-star-fill tp-fs-12"></i>
+                      <i class="bi bi-star-fill tp-fs-12"></i>
+                    </div>
+                </article>
+              </div>
+
             </div>
-           
+
+            <!-- item -->
+            <div class="swiper-slide">
+
+              <div class="tp-process-item">
+
+                <div class=" mb-30">
+                  <div class="process-number">
+                    <i class="bi bi-quote"></i>
+                  </div>
+
+                  <h4 class="process-title">
+                    Exceptional Quality <br> & Support
+                  </h4>
+
+                  <p class="process-text">
+                    Activate your subscription with just a click - no forms,
+                    no hassle.
+                  </p>
+                </div>
+                <!--  -->
+                <span class="footer-one-border"></span>
+                <article class="row pt-25 align-items-center ">
+                  <div class="col-8 d-flex align-items-center gap-2 aline-items-center">
+                    <div>
+                      <img class="rounded-circle" width="50" height="50" src="assets/img/testimonials/author-4.webp"
+                        alt="">
+                    </div>
+                    <div>
+                      <h5 class="my-0 fs-6">George Barrow</h5>
+                      <span class="tp-fs-12">UI Designer</span>
+                    </div>
+                  </div>
+                  <div class="col-4">
+                    <div class="tp-flex-horizontal testimonial-rating justify-content-end gap-2">
+                      <i class="bi bi-star-fill tp-fs-12"></i>
+                      <i class="bi bi-star-fill tp-fs-12"></i>
+                      <i class="bi bi-star-fill tp-fs-12"></i>
+                      <i class="bi bi-star-fill tp-fs-12"></i>
+                      <i class="bi bi-star-fill tp-fs-12"></i>
+                    </div>
+                </article>
+              </div>
+
+            </div>
+
+            <!-- item -->
+            <div class="swiper-slide">
+
+              <div class="tp-process-item">
+
+                <div class="mb-30">
+                  <div class="process-number">
+                    <i class="bi bi-quote"></i>
+                  </div>
+
+                  <h4 class="process-title">
+                    Smooth & Modern <br> Experience
+                  </h4>
+
+                  <p class="process-text">
+                    Activate your subscription with just a click - no forms,
+                    no hassle.
+                  </p>
+                </div>
+                <span class="footer-one-border"></span>
+                <article class="row pt-25 align-items-center ">
+                  <div class="col-8 d-flex align-items-center gap-2 aline-items-center">
+                    <div>
+                      <img class="rounded-circle" width="50" height="50" src="assets/img/testimonials/author-2.webp"
+                        alt="">
+                    </div>
+                    <div>
+                      <h5 class="my-0 fs-6">George Barrow</h5>
+                      <span class="tp-fs-12">UI Designer</span>
+                    </div>
+                  </div>
+                  <div class="col-4">
+                    <div class="tp-flex-horizontal testimonial-rating justify-content-end gap-2">
+                      <i class="bi bi-star-fill tp-fs-12"></i>
+                      <i class="bi bi-star-fill tp-fs-12"></i>
+                      <i class="bi bi-star-fill tp-fs-12"></i>
+                      <i class="bi bi-star-fill tp-fs-12"></i>
+                      <i class="bi bi-star-fill tp-fs-12"></i>
+                    </div>
+                </article>
+
+              </div>
+
+            </div>
+
+            <!-- item -->
+            <div class="swiper-slide">
+
+              <div class="tp-process-item">
+
+                <div class="mb-30">
+                  <div class="process-number">
+                    <i class="bi bi-quote"></i>
+                  </div>
+
+                  <h4 class="process-title">
+                    Highly Recommended <br> Service
+
+                  </h4>
+
+                  <p class="process-text">
+                    Activate your subscription with just a click - no forms,
+                    no hassle.
+                  </p>
+                </div>
+                <span class="footer-one-border"></span>
+                <article class="row pt-25 align-items-center ">
+                  <div class="col-8 d-flex align-items-center gap-2 aline-items-center">
+                    <div>
+                      <img class="rounded-circle" width="50" height="50" src="assets/img/testimonials/author-4.webp"
+                        alt="">
+                    </div>
+                    <div>
+                      <h5 class="my-0 fs-6">George Barrow</h5>
+                      <span class="tp-fs-12">UI Designer</span>
+                    </div>
+                  </div>
+                  <div class="col-4">
+                    <div class="tp-flex-horizontal testimonial-rating justify-content-end gap-2">
+                      <i class="bi bi-star-fill tp-fs-12"></i>
+                      <i class="bi bi-star-fill tp-fs-12"></i>
+                      <i class="bi bi-star-fill tp-fs-12"></i>
+                      <i class="bi bi-star-fill tp-fs-12"></i>
+                      <i class="bi bi-star-fill tp-fs-12"></i>
+                    </div>
+                </article>
+              </div>
+
+            </div>
+
+
+
           </div>
+
+          <!-- arrows -->
+<div class="testimonial-navigation d-flex align-items-center justify-content-between w-100 h-100 gap-3">
+  <button class="tp-left-arrow-btn transition-medium testimonial-arrow">
+       <i class="bi bi-arrow-left"></i>
+  </button>
+  <button class="tp-arrow-arrow-btn transition-medium testimonial-arrow">
+    <i class="bi bi-arrow-right"></i>
+ 
+  </button>
+
+
+
+</div>
         </div>
+
+        <!-- bottom area -->
+        <div class="process-bottom-wrapper mt-30">
+
+          <div class="d-flex align-items-center justify-content-between flex-wrap gap-20">
+
+            <div class="d-flex align-items-center process-user-wrapper gap-15">
+
+              <div class="process-user-images d-flex align-items-center">
+
+                <img src="assets/img/testimonials/author-1.webp" alt="user">
+
+                <img src="assets/img/testimonials/author-2.webp" alt="user">
+
+                <img src="assets/img/testimonials/author-3.webp" alt="user">
+
+                <img src="assets/img/testimonials/author-4.webp" alt="user">
+
+              </div>
+
+              <p class="process-bottom-text mb-0 ps-3">
+                Align with Businesses that Choose Quality
+              </p>
+
+            </div>
+
+            <div class="button-wrapper">
+              <a href="contact-one.html" class="tp-btn">contact us</a>
+              <div class="button-border-effect"></div>
+            </div>
+
+          </div>
+
         </div>
+</div>
+
       </div>
+
     </section>
 
     <!-- ===================================================
@@ -837,34 +1254,34 @@
         <div class="home-one-counter-main row">
           <div class="col-12 col-md-6 col-lg-4 py-0 py-sm-3 py-md-0">
             <div class="home-one-counters-wrapper landing-counter-box">
-           <div class=" d-flex align-items-center justify-content-center">
-             <div class="counter-wrapper counter-text" data-target="15">00</div>
-              <span class="counter-text counter-text-small">+</span>
-           </div>
-            <h4 class="heading-four mt-10 text-center">years of experience</h4>
-             </div>
+              <div class=" d-flex align-items-center justify-content-center">
+                <div class="counter-wrapper counter-text" data-target="15">00</div>
+                <span class="counter-text counter-text-small">+</span>
+              </div>
+              <h4 class="heading-four mt-10 text-center">years of experience</h4>
+            </div>
           </div>
-         <div class="col-12 col-md-6 col-lg-4 py-0 py-sm-3 py-md-0">
-          <div class="home-one-counters-wrapper landing-counter-box">
-           <div class=" d-flex align-items-center justify-content-center">
-             <div class="counter-wrapper counter-text" data-target="50">00</div>
-             <span class="counter-text counter-text-small">%</span>
-           </div>
-            
-            <h4 class="heading-four mt-10 text-center">projects done on time</h4>
-             <div class="counter-border"></div>
-            <div class="counter-border counter-border-right d-none d-lg-block"></div>
-             </div>
+          <div class="col-12 col-md-6 col-lg-4 py-0 py-sm-3 py-md-0">
+            <div class="home-one-counters-wrapper landing-counter-box">
+              <div class=" d-flex align-items-center justify-content-center">
+                <div class="counter-wrapper counter-text" data-target="50">00</div>
+                <span class="counter-text counter-text-small">%</span>
+              </div>
+
+              <h4 class="heading-four mt-10 text-center">projects done on time</h4>
+              <div class="counter-border"></div>
+              <div class="counter-border counter-border-right d-none d-lg-block"></div>
+            </div>
           </div>
-       <div class=" col-12 col-md-12  col-lg-4 py-3 py-md-0">
-        <div class="home-one-counters-wrapper landing-counter-box md-mt-20 ms-mt-0">
-           <div class=" d-flex align-items-center justify-content-center">
-            <div class="counter-wrapper counter-text" data-target="35">00</div>
-              <span class="counter-text counter-text-small">+</span>
-          </div>
-          
-            <h4 class="heading-four mt-10 text-center">talented employees</h4>
-             </div>
+          <div class=" col-12 col-md-12  col-lg-4 py-3 py-md-0">
+            <div class="home-one-counters-wrapper landing-counter-box md-mt-20 ms-mt-0">
+              <div class=" d-flex align-items-center justify-content-center">
+                <div class="counter-wrapper counter-text" data-target="35">00</div>
+                <span class="counter-text counter-text-small">+</span>
+              </div>
+
+              <h4 class="heading-four mt-10 text-center">talented employees</h4>
+            </div>
           </div>
         </div>
       </div>
@@ -876,65 +1293,63 @@
       <div class="container">
         <div class="row">
           <div class="col-12 col-lg-6">
-          <div class="home-digital-solutions-text ">
-            <div class="d-block section-title">
-              <span class="text-capitalize section-title wow fadeInUp" data-wow-duration="0.8s">why choose us</span>
-              <h2 class="solutions-heading mt-25 mb-45 md-mb-30 md-mt-10 section-title-heading wow fadeInUp" data-wow-duration="0.8s">Reasons to Choose Our <span
-                  class="text-gradiant">Digital Solutions</span>
-              </h2>
-            </div>
-            <div class=" solutions row pe-0 pe-lg-2 pe-xl-5">
-               <div class="col-12 col-md-6 col-lg-12 p-3 p-lg-0">
-              <div class="home-digital-solutions-option wow fadeInUp" data-wow-duration="0.5s">
-                <div class="tp-flex-horizontal home-digital-options-items gap-20">
-                  <span>01/</span>
-                  <div>
-                    <h2 class="heading-four mb-15 mt-0">brand transform</h2>
-                    <p class="theme-mb-0">Lorem ipsum dolor sit amet consect adipscng gravida elit. Donec
-                      ultricies tortor vestibulum convallis maximus.</p>
+            <div class="home-digital-solutions-text ">
+              <div class="d-block section-title">
+                <span class="text-capitalize section-title wow fadeInUp" data-wow-duration="0.8s">why choose us</span>
+                <h2 class="solutions-heading mt-25 mb-45 md-mb-30 md-mt-10 section-title-heading wow fadeInUp"
+                  data-wow-duration="0.8s">Reasons to Choose Our <span class="text-gradiant">Digital Solutions</span>
+                </h2>
+              </div>
+              <div class=" solutions row pe-0 pe-lg-2 pe-xl-5">
+                <div class="col-12 col-md-6 col-lg-12 p-3 p-lg-0">
+                  <div class="home-digital-solutions-option wow fadeInUp" data-wow-duration="0.5s">
+                    <div class="tp-flex-horizontal home-digital-options-items gap-20">
+                      <span>01/</span>
+                      <div>
+                        <h2 class="heading-four mb-15 mt-0">brand transform</h2>
+                        <p class="theme-mb-0">Lorem ipsum dolor sit amet consect adipscng gravida elit. Donec
+                          ultricies tortor vestibulum convallis maximus.</p>
+                      </div>
+                    </div>
+                    <div class="home-digital-options-background common-scale-bg"></div>
                   </div>
                 </div>
-                <div class="home-digital-options-background common-scale-bg"></div>
-              </div>
-                 </div>
-                  <div class="col-12 col-md-6 col-lg-12 p-3 p-lg-0">
-              <div  class="home-digital-solutions-option wow fadeInUp"
-                data-wow-duration="0.6s">
-                <div class="tp-flex-horizontal home-digital-options-items gap-20">
-                  <span>02/</span>
-                  <div>
-                    <h2 class="heading-four mb-15 mt-0">advanced systems</h2>
-                    <p class="theme-mb-0">Lorem ipsum dolor sit amet consect adipscng gravida elit. Donec
-                      ultricies tortor vestibulum convallis maximus.</p>
+                <div class="col-12 col-md-6 col-lg-12 p-3 p-lg-0">
+                  <div class="home-digital-solutions-option wow fadeInUp" data-wow-duration="0.6s">
+                    <div class="tp-flex-horizontal home-digital-options-items gap-20">
+                      <span>02/</span>
+                      <div>
+                        <h2 class="heading-four mb-15 mt-0">advanced systems</h2>
+                        <p class="theme-mb-0">Lorem ipsum dolor sit amet consect adipscng gravida elit. Donec
+                          ultricies tortor vestibulum convallis maximus.</p>
+                      </div>
+                    </div>
+                    <div class="home-digital-options-background common-scale-bg ">
+                    </div>
                   </div>
                 </div>
-                <div class="home-digital-options-background common-scale-bg ">
-                </div>
-              </div>
-                 </div>
-                 <div class="col-12 col-md-6 col-lg-12 p-3 p-lg-0">
-              <div class="home-digital-solutions-option wow fadeInUp" data-wow-duration="0.7s">
-                <div class="tp-flex-horizontal home-digital-options-items gap-20">
-                  <span>03/</span>
-                  <div>
-                    <h2 class="heading-four mb-15 mt-0">friendly interface</h2>
-                    <p class="theme-mb-0">Lorem ipsum dolor sit amet consect adipscng gravida elit. Donec
-                      ultricies tortor vestibulum convallis maximus. dlss;ds;sds;</p>
+                <div class="col-12 col-md-6 col-lg-12 p-3 p-lg-0">
+                  <div class="home-digital-solutions-option wow fadeInUp" data-wow-duration="0.7s">
+                    <div class="tp-flex-horizontal home-digital-options-items gap-20">
+                      <span>03/</span>
+                      <div>
+                        <h2 class="heading-four mb-15 mt-0">friendly interface</h2>
+                        <p class="theme-mb-0">Lorem ipsum dolor sit amet consect adipscng gravida elit. Donec
+                          ultricies tortor vestibulum convallis maximus. dlss;ds;sds;</p>
+                      </div>
+                    </div>
+                    <div class="home-digital-options-background common-scale-bg"></div>
                   </div>
                 </div>
-                <div class="home-digital-options-background common-scale-bg"></div>
               </div>
-                 </div>
             </div>
           </div>
-           </div>
-         <div class="col-12 col-lg-6 pt-3 py-lg-0">
-           <div class="w-100 home-digital-solutions-image overflow-hidden wow fadeInUp" data-wow-duration="0.7s">
-            <img width="590" height="776" alt="Abstract Image" src="assets/img/feature/fea-1.webp" loading="lazy"
-             
-              class="tp-radius-30 home-digital-image img-hover-3d w-100">
+          <div class="col-12 col-lg-6 pt-3 py-lg-0">
+            <div class="w-100 home-digital-solutions-image overflow-hidden wow fadeInUp" data-wow-duration="0.7s">
+              <img width="590" height="776" alt="Abstract Image" src="assets/img/feature/fea-1.webp" loading="lazy"
+                class="tp-radius-30 home-digital-image img-hover-3d w-100">
+            </div>
           </div>
-         </div>
         </div>
       </div>
     </section>
@@ -944,133 +1359,124 @@
 				==================================================== -->
   <section class=" footer-one  pt-85 md-pt-65 xxl-pt-150  pb-20 overflow-hidden">
     <div class="row">
-    <div class="col-md-6 col-10 mx-auto">
-      <div class="  pl-15 pr-15">
-      <div class="d-flex text-center justify-content-start align-items-center flex-column footer-cta-box pb-70 md-pb-60 xxl-pb-150 section-title wow fadeInUp" data-wow-duration="0.8s">
-        <h2 class="mt-0 mb-20 mb-20">let’s get started <span class="text-gradiant">together</span>
-        </h2>
-        <div class="mb-30">Lorem ipsum dolor consectetur adipiscing.</div>
-        <div  class="button-wrapper">
-          <a href="contact-one.html" class="tp-btn">contact us</a>
-          <div class="button-border-effect"></div>
+      <div class="col-md-6 col-10 mx-auto">
+        <div class="  pl-15 pr-15">
+          <div
+            class="d-flex text-center justify-content-start align-items-center flex-column footer-cta-box pb-70 md-pb-60 xxl-pb-150 section-title wow fadeInUp"
+            data-wow-duration="0.8s">
+            <h2 class="mt-0 mb-20 mb-20">let’s get started <span class="text-gradiant">together</span>
+            </h2>
+            <div class="mb-30">Lorem ipsum dolor consectetur adipiscing.</div>
+            <div class="button-wrapper">
+              <a href="contact-one.html" class="tp-btn">contact us</a>
+              <div class="button-border-effect"></div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-    </div>
-    </div>
     <div class="container">
-    <div class="footer-one-border"></div>
-   <div class="row  pt-65 pb-70 md-pt-55 md-pb-60">
+      <div class="footer-one-border"></div>
+      <div class="row  pt-65 pb-70 md-pt-55 md-pb-60">
 
-  <div class="col-12 col-sm-6 col-lg-4">
-    <div class="tp-flex-vertical footer-one-left-box gap-20">
+        <div class="col-12 col-sm-6 col-lg-4">
+          <div class="tp-flex-vertical footer-one-left-box gap-20">
 
-      <h3 class="m-0-top tp-common-white">get in touch with us</h3>
+            <h3 class="m-0-top tp-common-white">get in touch with us</h3>
 
-      <div class="tp-flex-horizontal footer-one-email-box">
-        <span class="gradiant-line"></span>
+            <div class="tp-flex-horizontal footer-one-email-box">
+              <span class="gradiant-line"></span>
 
-        <span>
-          <span class="text-capitalize mb-10 d-block">
-            Instant Connectivity
-          </span>
+              <span>
+                <span class="text-capitalize mb-10 d-block">
+                  Instant Connectivity
+                </span>
 
-          <a href="mailto:info@example.com"
-            class="heading-five email-text tp-common-white">
-            info@example.com
-          </a>
-        </span>
-      </div>
+                <a href="mailto:info@example.com" class="heading-five email-text tp-common-white">
+                  info@example.com
+                </a>
+              </span>
+            </div>
 
-    </div>
-  </div>
+          </div>
+        </div>
 
-  <div class="col-12 col-sm-6 col-lg-4">
-    <div class="tp-flex-vertical footer-one-middle-box xs-pt-40 sm-pt-20">
+        <div class="col-12 col-sm-6 col-lg-4">
+          <div class="tp-flex-vertical footer-one-middle-box xs-pt-40 sm-pt-20">
 
-      <div class="tp-flex-horizontal footer-one-information-wrapper">
-        <i class="bi bi-geo-alt margin-top-five fs-6"></i>
+            <div class="tp-flex-horizontal footer-one-information-wrapper">
+              <i class="bi bi-geo-alt margin-top-five fs-6"></i>
 
-        <span>
-          410 Sandtown, California 94001, USA
-        </span>
-      </div>
+              <span>
+                410 Sandtown, California 94001, USA
+              </span>
+            </div>
 
-      <div class="tp-flex-horizontal footer-one-information-wrapper">
-        <i class="bi bi-telephone fs-6"></i>
+            <div class="tp-flex-horizontal footer-one-information-wrapper">
+              <i class="bi bi-telephone fs-6"></i>
 
-        <a href="tel:8881234567" class="links-hover-effect">
-          (888) 123 4567
-        </a>
-      </div>
+              <a href="tel:8881234567" class="links-hover-effect">
+                (888) 123 4567
+              </a>
+            </div>
 
-      <div class="tp-flex-horizontal footer-one-socials">
+            <div class="tp-flex-horizontal footer-one-socials">
 
-        <a href="#" class="tp-inline-block tp-common-white">
-          <i class="bi bi-twitter-x"></i>
-        </a>
+              <a href="#" class="tp-inline-block tp-common-white">
+                <i class="bi bi-twitter-x"></i>
+              </a>
 
-        <a href="#" class="tp-inline-block tp-common-white">
-          <i class="bi bi-linkedin"></i>
-        </a>
+              <a href="#" class="tp-inline-block tp-common-white">
+                <i class="bi bi-linkedin"></i>
+              </a>
 
-        <a href="#" class="tp-inline-block tp-common-white">
-          <i class="bi bi-skype"></i>
-        </a>
+              <a href="#" class="tp-inline-block tp-common-white">
+                <i class="bi bi-skype"></i>
+              </a>
 
-        <a href="#" class="tp-inline-block tp-common-white">
-          <i class="bi bi-send"></i>
-        </a>
+              <a href="#" class="tp-inline-block tp-common-white">
+                <i class="bi bi-send"></i>
+              </a>
 
-      </div>
+            </div>
 
-    </div>
-  </div>
+          </div>
+        </div>
 
-  <div class="col-12 col-sm-6 col-lg-4">
-    <div class="newsletter tp-flex-vertical sm-pt-10 md-pt-20">
+        <div class="col-12 col-sm-6 col-lg-4">
+          <div class="newsletter tp-flex-vertical sm-pt-10 md-pt-20">
 
-      <h5 class="heading-five mb-20">Newsletter</h5>
+            <h5 class="heading-five mb-20">Newsletter</h5>
 
-      <div class="mb-20 tp-form">
+            <div class="mb-20 tp-form">
 
-        <form id="email-form"
-          name="email-form"
-          method="post"
-          class="newsletter-form position-relative">
+              <form id="email-form" name="email-form" method="post" class="newsletter-form position-relative">
 
-          <input
-            class="tp-input-field tp-input pe-5"
-            maxlength="256"
-            name="field-2"
-            placeholder="Enter email"
-            type="email"
-            id="field-2"
-            required>
+                <input class="tp-input-field tp-input pe-5" maxlength="256" name="field-2" placeholder="Enter email"
+                  type="email" id="field-2" required>
 
-          <button type="submit"
-            class="footer-submit-button shadow-none position-absolute mx-2 border-0">
+                <button type="submit" class="footer-submit-button shadow-none position-absolute mx-2 border-0">
 
-            <i class="bi bi-send px-1"></i>
+                  <i class="bi bi-send px-1"></i>
 
-          </button>
+                </button>
 
-        </form>
+              </form>
+
+            </div>
+
+            <span class="text-sm d-block">
+              * Vivamus commodo dignissim tincidunt.
+            </span>
+
+          </div>
+        </div>
 
       </div>
-
-      <span class="text-sm d-block">
-        * Vivamus commodo dignissim tincidunt.
-      </span>
-
-    </div>
-  </div>
-
-</div>
       <!-- ===================================================
 				copy right
 				==================================================== -->
-      <div  class="footer-one-border"></div>
+      <div class="footer-one-border"></div>
       <div class="tp-flex-vertical footer-one-bottom text-center">
         <p class="text-sm mx-auto pt-3 mb-0"> © 2025 stynero, All Right Receved.</p>
       </div>
@@ -1079,15 +1485,62 @@
   <!-- ===================================================
 				js here
 				==================================================== -->
-<script src="assets/js/jquery.min.js"></script>
-<script src="assets/js/bootstrap.bundle.min.js"></script>
-<script src="assets/js/slick.js"></script>
-<script src="assets/js/wow.js"></script>
-<script src="assets/js/gsap-min.js"></script>
-<script src="assets/js/swiper-bundle.min.js"></script>
-<script src="assets/js/ScrollTrigger.js"></script>
-<script src="assets/js/slick-custom.js"></script>
-<script src="assets/js/main.js"></script>
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/slick.js"></script>
+  <script src="assets/js/wow.js"></script>
+  <script src="assets/js/gsap-min.js"></script>
+  <script src="assets/js/swiper-bundle.min.js"></script>
+  <script src="assets/js/ScrollTrigger.js"></script>
+  <script src="assets/js/slick-custom.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script>
+  const processSlider = new Swiper(".tp-process-slider", {
 
+  // basic
+  slidesPerView: 1,
+  spaceBetween: 25,
+  loop: true,
+  speed: 1200,
+
+  // cursor
+  grabCursor: true,
+  allowTouchMove: true,
+
+  // autoplay
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+    pauseOnMouseEnter: true,
+  },
+
+  // smooth transition
+  freeMode: false,
+
+  // navigation arrows
+  navigation: {
+    nextEl: ".tp-left-arrow-btn",
+    prevEl: ".tp-arrow-arrow-btn",
+  },
+
+  // responsive
+  breakpoints: {
+
+    576: {
+      slidesPerView: 1,
+    },
+
+    768: {
+      slidesPerView: 2,
+    },
+
+    1200: {
+      slidesPerView: 3,
+    }
+
+  },
+});
+  </script>
 </body>
+
 </html>

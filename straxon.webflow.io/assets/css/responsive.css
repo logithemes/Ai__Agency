@@ -1050,10 +1050,10 @@
         max-width: none;
     }
 
-    .testimonail-text {
+    /* .testimonail-text {
         margin: 0 auto;
         max-width: 460px;
-    }
+    } */
 
     .work-three-cards-inner-wrapper {
         padding-left: 15px;
@@ -1088,11 +1088,11 @@
         height: 104px;
     }
 
-    .testimonials-author-box-mid.testimonials-author-box-right,
+    /* .testimonials-author-box-mid.testimonials-author-box-right,
     .testimonials-author-box-mid.testimonials-author-box-left {
         width: 80px;
         height: 80px;
-    }
+    } */
 
     .home-one-counters-wrapper {
         padding-top: 0;
@@ -1208,10 +1208,10 @@
         max-width: 200px;
     }
 
-    .tp-testimonial {
+    /* .tp-testimonial {
         padding-left: 0;
         padding-right: 0;
-    }
+    } */
 
     .hero-images {
         height: auto;
@@ -1834,20 +1834,20 @@
         display: block;
     }
 
-    .testimonials-author-box-mid.testimonials-author-box-right,
+    /* .testimonials-author-box-mid.testimonials-author-box-right,
     .testimonials-author-box-mid.testimonials-author-box-left {
         width: 60px;
         height: 60px;
-    }
+    } */
 
     .testimonials-author-box-mid {
         width: 80px;
         height: 80px;
     }
-
+/* 
     .testimonail-text {
         max-width: 300px;
-    }
+    } */
 
     .left-arrow {
         inset: auto auto 0% 0%;

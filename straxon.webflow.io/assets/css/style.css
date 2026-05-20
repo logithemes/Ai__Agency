@@ -537,7 +537,7 @@ a:hover {
 .tp-z-3 {
     z-index: var(--tp-z-3);
 }
-
+.section-title{position: relative;z-index: var(--tp-z-3);}
 
 /*=========================================================
     Spacing Utilities
@@ -1118,7 +1118,7 @@ a:hover {
     white-space: normal;
 }
 
-.tp-testimonial-item {
+/* .tp-testimonial-item {
     vertical-align: top;
     white-space: normal;
     text-align: left;
@@ -1126,7 +1126,7 @@ a:hover {
     height: 100%;
     display: inline-block;
     position: relative;
-}
+} */
 
 .tp-slider-dots {
     z-index: 2;
@@ -1206,7 +1206,7 @@ a:hover {
     display: flex;
     inset: auto auto 27% 0%;
 }
-
+/* 
 .testimonials-author-box-mid {
     z-index: 4;
     justify-content: flex-end;
@@ -1216,15 +1216,15 @@ a:hover {
     display: flex;
     position: relative;
     overflow: hidden;
-}
+} */
 
-.testimonials-author-box-right,
+/* .testimonials-author-box-right,
 .testimonials-author-box-left {
     z-index: 1;
     opacity: 0.5;
     width: 90.87px;
     height: 90.87px;
-}
+} */
 
 .home-one-testimonial-content {
     text-align: center;
@@ -1235,7 +1235,7 @@ a:hover {
     align-items: center;
     width: 100%;
     max-width: 850px;
-
+position: absolute;
     display: flex;
 }
 
@@ -1255,12 +1255,12 @@ a:hover {
     font-style: italic;
 }
 
-.testimonial-author-images-wrapper {
+/* .testimonial-author-images-wrapper {
     grid-column-gap: 10px;
     grid-row-gap: 10px;
     justify-content: center;
     align-items: center;
-}
+} */
 
 
 .home-two-testimonial-backdrop {
@@ -1341,15 +1341,15 @@ a:hover {
     display: flex;
 }
 
-.testimonail-text {
+/* .testimonail-text {
     grid-column-gap: 10px;
     grid-row-gap: 10px;
     text-align: center;
     justify-content: flex-start;
     align-items: center;
-}
+} */
 
-.tp-testimonial {
+/* .tp-testimonial {
     background-color: #ddd0;
     justify-content: center;
     align-items: center;
@@ -1358,7 +1358,7 @@ a:hover {
     padding-left: 80px;
     padding-right: 80px;
     display: flex;
-}
+} */
 
 .slider-icon-arrow {
     opacity: 0.7;
@@ -1368,14 +1368,14 @@ a:hover {
     opacity: 1;
 }
 
-.author-image-one {
+/* .author-image-one {
     width: 100%;
     height: 100%;
-}
+} */
 
-.tp-slider-viewport {
+/* .tp-slider-viewport {
     max-width: 601px;
-}
+} */
 .right-arrow {
     border: 1px solid var(--border-color-two);
     justify-content: center;
