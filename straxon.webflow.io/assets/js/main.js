@@ -629,20 +629,39 @@ gsap.utils.toArray(".image-scale-section").forEach((section) => {
     /* ===============================
        HOMEONE / GO TO DOWN
     =============================== */
-gsap.fromTo(
-  ".tp-scroll-indicator__line",
-  {
-    y: -15,
-    opacity: 0
-  },
-  {
-    y: 3,
-    opacity: 1,
-    duration: 1.5,
-    ease: "power8.out",
-    repeat: -1
+// Wait for the element to exist
+function animateScrollIndicator() {
+  const element = document.querySelector(".tp-scroll-indicator__line");
+  if (!element) {
+    // Element not ready yet, try again
+    requestAnimationFrame(animateScrollIndicator);
+    return;
   }
-);
+  
+  // Element exists now, animate it
+  gsap.fromTo(
+    element,
+    {
+      y: -15,
+      opacity: 0
+    },
+    {
+      y: 3,
+      opacity: 1,
+      duration: 1.5,
+      ease: "power2.out",  // Fixed: changed from power8 to power2
+      repeat: -1,
+      yoyo: true  // Optional: makes it bounce back smoothly
+    }
+  );
+}
+
+// Start when DOM is ready
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', animateScrollIndicator);
+} else {
+  animateScrollIndicator();
+}
 
 
   /* ===============================
