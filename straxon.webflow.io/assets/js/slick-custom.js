@@ -310,6 +310,54 @@ $('.tp-dropdown-toggle').on('click', function (e) {
       }
     });
 
+    // SWIPRER SLIDE
+    const processSlider = new Swiper(".tp-process-slider", {
+
+  // basic
+  slidesPerView: 1,
+  spaceBetween: 25,
+  loop: true,
+  speed: 1200,
+
+  // cursor
+  grabCursor: true,
+  allowTouchMove: true,
+
+  // autoplay
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+    pauseOnMouseEnter: true,
+  },
+
+  // smooth transition
+  freeMode: false,
+
+  // navigation arrows
+  navigation: {
+    nextEl: ".tp-left-arrow-btn",
+    prevEl: ".tp-arrow-arrow-btn",
+  },
+
+  // responsive
+  breakpoints: {
+
+    576: {
+      slidesPerView: 1,
+    },
+
+    768: {
+      slidesPerView: 2,
+    },
+
+    1200: {
+      slidesPerView: 3,
+    }
+
+  },
+});
+
+
   });
 
   // HEADER STICKY
