@@ -366,9 +366,11 @@ h6 {
 .heading-four,
 .heading-five{
 font-weight: var(--heading-fw);
-
 }
-
+.heading-one {
+    font-size: clamp(40px, 12vw, 130px);
+    line-height: .9;
+}
 .heading-one-small{
     --heading-size: clamp(40px, 12vw, 120px);
     color: var(--white);
@@ -4133,15 +4135,6 @@ label {
     overflow: hidden;
 }
 
-/*---------------------------------
-   XXXXXXXXXXXXXXXXXXXXX
----------------------------------*/
-.heading-one-small {
-    color: var(--white);
-    font-size: clamp(40px, 12vw, 120px);
-    font-weight: 400;
-    line-height: 0.9;
-}
 
 .experience-wrap {
     grid-column-gap: 12px;
@@ -5939,12 +5932,12 @@ text-align: center;
     position: relative;
 }
 
-/* 
-.landing-hero-details {
 
-    width: 100%;
-    max-width: 490px
-} */
+.landing-hero-details {
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
 
 .hero-details {
     grid-column-gap: 12px;
@@ -5955,6 +5948,9 @@ text-align: center;
 .landing-hero-border {
     background-color: var(--border-color);
     width: 1px;
+    position: absolute;
+    height: 100%;
+    padding: 0;
 }
 
 .hero-details-text {

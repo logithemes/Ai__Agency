@@ -1834,12 +1834,6 @@
 
 
 
-    .landing-hero-details {
-        column-gap: 40px;
-        row-gap: 40px;
-
-    }
-
     .landing-hero-border {
         display: none;
     }
@@ -2293,10 +2287,6 @@
         width: 90%;
     }
 
-    .landing-hero-details {
-        column-gap: 20px;
-        row-gap: 20px;
-    }
 
 }
 
