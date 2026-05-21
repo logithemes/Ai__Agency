@@ -17,11 +17,6 @@
   <link rel="stylesheet" href="assets/css/responsive.css">
   <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
   <style>
- 
-    .process-arrow-wrapper {
-      flex-shrink: 0;
-    }
-
     .tp-left-arrow-btn,
     .tp-arrow-arrow-btn {
       width: 45px;
@@ -32,7 +27,6 @@
       align-items: center;
       justify-content: center;
       cursor: pointer;
-      transition: 0.4s ease;
       background: rgba(255, 255, 255, 0.05);
       color: var(--white);
       position: relative;
@@ -54,25 +48,12 @@ SLIDER
 
     .tp-process-item {
       min-height: 420px;
-
       padding: 30px;
-
-      border-radius: 30px;
-
       background-image: linear-gradient(#161824, #161824cc);
-
       backdrop-filter: blur(10px);
-
       display: flex;
       flex-direction: column;
-
       transition: 0.4s ease;
-    }
-
-    .process-number {
-      font-size: 32px;
-      font-weight: 600;
-      margin-bottom: 30px;
     }
 
     .process-title {
@@ -144,8 +125,8 @@ RESPONSIVE
     }
 
     @media (max-width: 991px) {
-
-
+.process-user-wrapper{width: 100%;justify-content: center;}
+.
       .tp-process-item {
         min-height: auto;
       }
@@ -163,9 +144,6 @@ RESPONSIVE
         border-radius: 24px;
       }
 
-      .process-number {
-        font-size: 26px;
-      }
 
       .process-title {
         font-size: 24px;
@@ -681,14 +659,14 @@ RESPONSIVE
           </div>
         </div>
       </div>
-      <div class=" home-one-portfolio-card-wrapper row">
+      <div class=" home-one-portfolio-card-wrapper row position-relative w-100 h-100">
         <div class="tp-flex-vertical home-one-portfolio-left col-12 col-md-6">
           <div class="tp-portfolio-list">
             <div role="list" class="tp-portfolio-items tp-hover-wrap">
               <div role="listitem" class="tp-work-item">
                 <div class="home-one-cards tp-reveal-x hover-arrow-gradiant cards-hover">
                   <a href="projects/ai-interface-design.html"
-                    class="overflow-hidden portfolio-card-image tp-inline-block ">
+                    class="overflow-hidden portfolio-card-image ">
                     <img width="590" height="620" alt="Portfolio img" src="assets/img/portfolios/portfolios-1.webp"
                       loading="lazy" class="tp-radius-30 mobile-image-full-width">
                     <div class="portfolio-marquee transition-medium">
@@ -736,8 +714,8 @@ RESPONSIVE
           <div class="tp-portfolio-list">
             <div role="list" class="tp-portfolio-items tp-hover-wrap">
               <div role="listitem" class="tp-work-item">
-                <div class="home-one-cards tp-reveal-x card-four-wrapper hover-arrow-gradiant cards-hover">
-                  <a href="projects/ui-ux-design.html" class="overflow-hidden portfolio-card-image tp-inline-block ">
+                <div class="home-one-cards  card-four-wrapper hover-arrow-gradiant cards-hover">
+                  <a href="projects/ui-ux-design.html" class="overflow-hidden portfolio-card-image ">
                     <img width="410" height="480" alt="Portfolio img" src="assets/img/portfolios/portfolios-3.webp"
                       loading="lazy" class="tp-radius-30 mobile-image-full-width">
                     <div class="portfolio-marquee transition-medium">
@@ -788,7 +766,7 @@ RESPONSIVE
               <div role="listitem" class="tp-work-item">
                 <div class="home-one-cards tp-reveal-x card-two-wrapper cards-hover">
                   <a href="projects/web-graphic-design.html"
-                    class="overflow-hidden portfolio-card-image tp-inline-block ">
+                    class="overflow-hidden portfolio-card-image ">
                     <img width="590" height="340" alt="Portfolio img" src="assets/img/portfolios/portfolios-2.webp"
                       loading="lazy" class="tp-radius-30 mobile-image-full-width">
                     <div class="portfolio-marquee transition-medium">
@@ -836,7 +814,7 @@ RESPONSIVE
             <div role="list" class="tp-portfolio-items tp-hover-wrap">
               <div role="listitem" class="tp-work-item">
                 <div class="home-one-cards tp-reveal-x card-three-three cards-hover">
-                  <a href="projects/product-design.html" class="overflow-hidden portfolio-card-image tp-inline-block ">
+                  <a href="projects/product-design.html" class="overflow-hidden portfolio-card-image ">
                     <img width="409" height="400" alt="Portfolio img" src="assets/img/portfolios/portfolios-4.webp"
                       loading="lazy" class="tp-radius-30 mobile-image-full-width">
                     <div class="portfolio-marquee transition-medium">
@@ -912,7 +890,7 @@ RESPONSIVE
           <span class="home-one-testimonial-content h-100"></span>
         </div>
 
-<div class=" d-block px-5 overflow-hidden">
+<div class=" d-block px-sm-5 px-0 overflow-hidden">
       <!-- slider -->
         <div class="tp-process-slider swiper ">
 
@@ -921,10 +899,10 @@ RESPONSIVE
             <!-- item -->
             <div class="swiper-slide">
 
-              <div class="tp-process-item">
+              <div class="tp-process-item tp-radius-20">
 
                 <div class=" mb-30">
-                  <div class="process-number">
+                  <div class="process-number mb-30 fs-2 fw-bold">
                     <i class="bi bi-quote"></i>
                   </div>
 
@@ -966,10 +944,10 @@ RESPONSIVE
             <!-- item -->
             <div class="swiper-slide">
 
-              <div class="tp-process-item">
+              <div class="tp-process-item tp-radius-20">
 
                 <div class="mb-30">
-                  <div class="process-number">
+                  <div class="process-number mb-30 fs-2 fw-bold">
                     <i class="bi bi-quote"></i>
                   </div>
 
@@ -1011,10 +989,10 @@ RESPONSIVE
             <!-- item -->
             <div class="swiper-slide">
 
-              <div class="tp-process-item">
+              <div class="tp-process-item tp-radius-20">
 
                 <div class="mb-30">
-                  <div class="process-number">
+                  <div class="process-number mb-30 fs-2 fw-bold">
                     <i class="bi bi-quote"></i>
                   </div>
 
@@ -1056,10 +1034,10 @@ RESPONSIVE
             <!-- item -->
             <div class="swiper-slide">
 
-              <div class="tp-process-item">
+              <div class="tp-process-item tp-radius-20">
 
                 <div class=" mb-30">
-                  <div class="process-number">
+                  <div class="process-number mb-30 fs-2 fw-bold">
                     <i class="bi bi-quote"></i>
                   </div>
 
@@ -1101,10 +1079,10 @@ RESPONSIVE
             <!-- item -->
             <div class="swiper-slide">
 
-              <div class="tp-process-item">
+              <div class="tp-process-item tp-radius-20">
 
                 <div class="mb-30">
-                  <div class="process-number">
+                  <div class="process-number mb-30 fs-2 fw-bold">
                     <i class="bi bi-quote"></i>
                   </div>
 
@@ -1146,10 +1124,10 @@ RESPONSIVE
             <!-- item -->
             <div class="swiper-slide">
 
-              <div class="tp-process-item">
+              <div class="tp-process-item tp-radius-20">
 
                 <div class="mb-30">
-                  <div class="process-number">
+                  <div class="process-number mb-30 fs-2 fw-bold">
                     <i class="bi bi-quote"></i>
                   </div>
 
@@ -1212,7 +1190,7 @@ RESPONSIVE
 
           <div class="d-flex align-items-center justify-content-between flex-wrap gap-20">
 
-            <div class="d-flex align-items-center process-user-wrapper gap-15">
+            <div class="d-flex align-items-center process-user-wrapper gap-2 flex-md-row flex-column">
 
               <div class="process-user-images d-flex align-items-center">
 
@@ -1232,7 +1210,7 @@ RESPONSIVE
 
             </div>
 
-            <div class="button-wrapper">
+            <div class="button-wrapper tp-testimonial-btn-wrapper mx-auto mx-lg-0">
               <a href="contact-one.html" class="tp-btn">contact us</a>
               <div class="button-border-effect"></div>
             </div>
@@ -1540,6 +1518,8 @@ RESPONSIVE
 
   },
 });
+
+
   </script>
 </body>
 

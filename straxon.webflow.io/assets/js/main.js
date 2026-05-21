@@ -126,43 +126,44 @@ wordScrollAnimation('.home-popup-video', '.home-popup-video-desc');
         });
     });
 
-    /* ===============================
-       HOME ONE PORTFOLIO SCROLL
+
+  /* ===============================
+       FOUR CARDS REVEAL ANIMATION (.tp-work-item)
     =============================== */
-  gsap.registerPlugin(ScrollTrigger);
+    gsap.utils.toArray(".tp-work-item").forEach((container) => {
+        
+        const revealMedia = container.querySelector("img");
+        
+        // Skip if no image found
+        if (!revealMedia) return;
 
-gsap.utils.toArray(".tp-reveal-x").forEach((container) => {
+        gsap.set(container, {
+            autoAlpha: 1,
+            overflow: "hidden"
+        });
 
-  const revealMedia = container.querySelector("img");
-
-  const revealTimeline = gsap.timeline({
-    scrollTrigger: {
-      trigger: container,
-      start: "top 80%",
-      toggleActions: "play none none reset"
-    }
-  });
-
-  revealTimeline.set(container, {
-    autoAlpha: 1
-  });
-
-  revealTimeline.from(container, {
-    xPercent: -100,
-    duration: 1.5,
-    ease: "power2.out"
-  });
-
-  revealTimeline.from(revealMedia, {
-    xPercent: 100,
-    scale: 1.3,
-    duration: 1.5,
-    delay: -1.5,
-    ease: "power2.out"
-  });
-
-});
-
+        gsap.fromTo(
+            revealMedia,
+            {
+                clipPath: "polygon(50% 0%, 50% 0%, 50% 100%, 50% 100%)",
+                scale: 1.2
+            },
+            {
+                clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
+                scale: 1,
+                duration: 1.5,
+                ease: "power4.inOut",
+                scrollTrigger: {
+                    trigger: container,
+                    start: "top bottom",  // 👈 starts when card enters viewport
+                    toggleActions: "play none none none",
+                    once: true,
+                    // markers: true  // uncomment to debug
+                }
+            }
+        );
+        
+    });
     /* ===============================
        HOME TWO TESTIMONIAL ROW SCROLL
     =============================== */
