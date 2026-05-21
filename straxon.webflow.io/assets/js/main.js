@@ -4,99 +4,48 @@ document.addEventListener("DOMContentLoaded", function () {
     /* ===============================
        WORD SCROLL ANIMATION
     =============================== */
-    // function wordScrollAnimation(sectionSelector, textSelector) {
-    //     const section = document.querySelector(sectionSelector);
-    //     if (!section) return;
+    function wordScrollAnimation(sectionSelector, textSelector) {
+        const section = document.querySelector(sectionSelector);
+        if (!section) return;
 
-    //     const textEl = section.querySelector(textSelector);
-    //     if (!textEl) return;
+        // get ALL matching elements (fix for multiple selectors)
+        const textEls = document.querySelectorAll(textSelector);
+        if (!textEls.length) return;
 
-    //     const words = textEl.innerText.split(" ");
+        textEls.forEach(textEl => {
+            // avoid re-running on same element
+            if (textEl.classList.contains("word-animated")) return;
+            textEl.classList.add("word-animated");
 
-    //     textEl.innerHTML = words.map(word =>
-    //         `<span class="word">${word}</span><span class="space"> </span>`
-    //     ).join("");
+            const words = textEl.innerText.trim().split(" ");
 
-    //     const wordEls = textEl.querySelectorAll(".word");
-    //     if (wordEls.length === 0) return;
+            textEl.innerHTML = words.map(word =>
+                `<span class="word">${word}</span><span class="space"> </span>`
+            ).join("");
 
-    //     gsap.timeline({
-    //         scrollTrigger: {
-    //             trigger: section,
-    //             start: "top 80%",
-    //             end: "top 20%",
-    //             scrub: true
-    //         }
-    //     }).from(wordEls, {
-    //         opacity: 0,
-    //         color: "#ffffff",
-    //         stagger: 0.05,
-    //         ease: "none"
-    //     });
-    // }
+            const wordEls = textEl.querySelectorAll(".word");
 
-    // /* CALL WORD SCROLL FUNCTIONS - WITH NULL CHECKS */
-    // if (document.querySelector('.service-three-connection')) {
-    //     wordScrollAnimation('.service-three-connection', '.service-three-text');
-    // }
-    
-    // if (document.querySelector('.home-popup-video')) {
-    //     wordScrollAnimation('.home-popup-video', '.home-popup-video-desc');
-    // }
+            gsap.timeline({
+                scrollTrigger: {
+                    trigger: textEl,
+                    start: "top 80%",
+                    end: "top 20%",
+                    scrub: true
+                }
+            }).to(wordEls, {
+                opacity: 1,
+                y: 0,
+                color: "#fff",
+                stagger: 0.05,
+                ease: "none"
+            });
+        });
+    }
 
-    gsap.registerPlugin(ScrollTrigger);
-
-function wordScrollAnimation(sectionSelector, textSelector) {
-
-  const section = document.querySelector(sectionSelector);
-  if (!section) return;
-
-  // get ALL matching elements (fix for multiple selectors)
-  const textEls = document.querySelectorAll(textSelector);
-  if (!textEls.length) return;
-
-  textEls.forEach(textEl => {
-
-    // avoid re-running on same element
-    if (textEl.classList.contains("word-animated")) return;
-    textEl.classList.add("word-animated");
-
-    const words = textEl.innerText.trim().split(" ");
-
-    textEl.innerHTML = words.map(word =>
-      `<span class="word">${word}</span><span class="space"> </span>`
-    ).join("");
-
-    const wordEls = textEl.querySelectorAll(".word");
-
-    gsap.timeline({
-  scrollTrigger: {
-    trigger: textEl,
-    start: "top 80%",
-    end: "top 20%",
-    scrub: true
-  }
-}).to(wordEls, {
-  opacity: 1,
-  y: 0,
-  color: "#fff", // ✅ animate to white
-  stagger: 0.05,
-  ease: "none"
-});
-
-  });
-}
-
-/* ✅ CALLS */
-
-// service section
-wordScrollAnimation('.service-three-connection', '.service-three-text');
-
-// home three skills section (your case)
-wordScrollAnimation('.home-three-skills', '.home-three-skills .home-three-skills-description p');
-
-// popup video
-wordScrollAnimation('.home-popup-video', '.home-popup-video-desc');
+    /* ✅ CALLS */
+    wordScrollAnimation('.service-three-connection', '.service-three-text');
+    wordScrollAnimation('.home-three-skills', '.home-three-skills .home-three-skills-description p');
+    wordScrollAnimation('.home-popup-video', '.home-popup-video-desc');
 
     /* ===============================
        HAMBURGER MENU
@@ -126,44 +75,42 @@ wordScrollAnimation('.home-popup-video', '.home-popup-video-desc');
         });
     });
 
-
-  /* ===============================
+    /* ===============================
        FOUR CARDS REVEAL ANIMATION (.tp-work-item)
     =============================== */
-    gsap.utils.toArray(".tp-work-item").forEach((container) => {
-        
-        const revealMedia = container.querySelector("img");
-        
-        // Skip if no image found
-        if (!revealMedia) return;
+    const workItems = gsap.utils.toArray(".tp-work-item");
+    if (workItems.length > 0) {
+        workItems.forEach((container) => {
+            const revealMedia = container.querySelector("img");
+            if (!revealMedia) return;
 
-        gsap.set(container, {
-            autoAlpha: 1,
-            overflow: "hidden"
-        });
+            gsap.set(container, {
+                autoAlpha: 1,
+                overflow: "hidden"
+            });
 
-        gsap.fromTo(
-            revealMedia,
-            {
-                clipPath: "polygon(50% 0%, 50% 0%, 50% 100%, 50% 100%)",
-                scale: 1.2
-            },
-            {
-                clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
-                scale: 1,
-                duration: 1.5,
-                ease: "power4.inOut",
-                scrollTrigger: {
-                    trigger: container,
-                    start: "top bottom",  // 👈 starts when card enters viewport
-                    toggleActions: "play none none none",
-                    once: true,
-                    // markers: true  // uncomment to debug
+            gsap.fromTo(
+                revealMedia,
+                {
+                    clipPath: "polygon(50% 0%, 50% 0%, 50% 100%, 50% 100%)",
+                    scale: 1.2
+                },
+                {
+                    clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
+                    scale: 1,
+                    duration: 1.5,
+                    ease: "power4.inOut",
+                    scrollTrigger: {
+                        trigger: container,
+                        start: "top bottom",
+                        toggleActions: "play none none none",
+                        once: true,
+                    }
                 }
-            }
-        );
-        
-    });
+            );
+        });
+    }
+
     /* ===============================
        HOME TWO TESTIMONIAL ROW SCROLL
     =============================== */
@@ -458,19 +405,17 @@ wordScrollAnimation('.home-popup-video', '.home-popup-video-desc');
     /* ===============================
        SERVICES COUNTER
     =============================== */
-    gsap.registerPlugin(ScrollTrigger);
-    
     const numbers = document.querySelectorAll('.services-counter .heading-one');
-    const cards = document.querySelectorAll('.service-sticky');
+    const cardsList = document.querySelectorAll('.service-sticky');
     
-    if (numbers.length > 0 && cards.length > 0) {
+    if (numbers.length > 0 && cardsList.length > 0) {
         gsap.set(numbers, { autoAlpha: 0 });
         
         if (numbers[0]) {
             gsap.set(numbers[0], { autoAlpha: 1 });
         }
         
-        cards.forEach((card, index) => {
+        cardsList.forEach((card, index) => {
             if (!card || !numbers[index]) return;
             
             ScrollTrigger.create({
@@ -551,9 +496,6 @@ wordScrollAnimation('.home-popup-video', '.home-popup-video-desc');
         }
     }
 
-    
-    
-
     /* ===============================
        ABOUT / HOME THREE MOUSE PARALLAX
     =============================== */
@@ -593,154 +535,105 @@ wordScrollAnimation('.home-popup-video', '.home-popup-video-desc');
         }
     }
 
-  
-
-
-
     /* ===============================
        INDEX / SCALE IMG
     =============================== */
-    gsap.registerPlugin(ScrollTrigger);
+    const scaleSections = gsap.utils.toArray(".image-scale-section");
+    if (scaleSections.length > 0) {
+        scaleSections.forEach((section) => {
+            const image = section.querySelector(".image-scale-media");
+            if (!image) return;
 
-gsap.utils.toArray(".image-scale-section").forEach((section) => {
-
-  const image = section.querySelector(".image-scale-media");
-
-  gsap.fromTo(
-    image,
-    {
-      scale: 0.7,
-    },
-    {
-      scale: 1,
-      ease: "none",
-      scrollTrigger: {
-        trigger: section,
-        start: "top bottom",
-        end: "bottom top",
-        scrub: true,
-      },
+            gsap.fromTo(
+                image,
+                { scale: 0.7 },
+                {
+                    scale: 1,
+                    ease: "none",
+                    scrollTrigger: {
+                        trigger: section,
+                        start: "top bottom",
+                        end: "bottom top",
+                        scrub: true,
+                    }
+                }
+            );
+        });
     }
-  );
-
-});
-
 
     /* ===============================
-       HOMEONE / GO TO DOWN
+       HOMEONE / GO TO DOWN (FIXED - Only runs if element exists)
     =============================== */
-// Wait for the element to exist
-function animateScrollIndicator() {
-  const element = document.querySelector(".tp-scroll-indicator__line");
-  if (!element) {
-    // Element not ready yet, try again
-    requestAnimationFrame(animateScrollIndicator);
-    return;
-  }
-  
-  // Element exists now, animate it
-  gsap.fromTo(
-    element,
-    {
-      y: -15,
-      opacity: 0
-    },
-    {
-      y: 3,
-      opacity: 1,
-      duration: 1.5,
-      ease: "power2.out",  // Fixed: changed from power8 to power2
-      repeat: -1,
-      yoyo: true  // Optional: makes it bounce back smoothly
-    }
-  );
-}
-
-// Start when DOM is ready
-if (document.readyState === 'loading') {
-  document.addEventListener('DOMContentLoaded', animateScrollIndicator);
-} else {
-  animateScrollIndicator();
-}
-
-
-  /* ===============================
-       HOMEONE / STROY IMG
-    =============================== */
-gsap.registerPlugin(ScrollTrigger);
-
-gsap.utils.toArray(".tp-reveal-wrap").forEach((section) => {
-
-  const image = section.querySelector(".tp-reveal-img");
-
-  gsap.fromTo(
-    image,
-    {
-      scale: 1.3,
-      clipPath: "inset(20% 20% 20% 20% round 20px)"
-    },
-    {
-      scale: 1,
-      clipPath: "inset(0% 0% 0% 0% round 20px)",
-      ease: "expo.out",
-      scrollTrigger: {
-        trigger: section,
-        start: "top 85%",
-        end: "top 20%",
-        scrub: true,
-      }
-    }
-  );
-
-});
-
-
-
-  /* ===============================
-       BLOG DETAILS  / ANIM-WRAP
-    =============================== */
-     gsap.fromTo(".tp-anim-wrap", 
-    {
-      clipPath: "polygon(50% 0%, 50% 0%, 50% 100%, 50% 100%)",
-      scale: 1.2
-    },
-    {
-      clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
-      scale: 1,
-      duration: 1.5,
-      ease: "power4.inOut",
-      delay: 0.1
-    }
-  );
-
-    /* ===============================
-       ADDITIONAL SAFE CHECKS FOR COMMON ELEMENTS
-    =============================== */
-    // Fix for any remaining NodeList issues
-    
-    const safeGsapTo = (selector, vars) => {
-        if (typeof selector === 'string') {
-            const elements = document.querySelectorAll(selector);
-            if (elements.length > 0) {
-                return gsap.to(elements, vars);
-            }
-        } else if (selector && selector.length) {
-            // It's a NodeList or array
-            const validElements = Array.from(selector).filter(el => el);
-            if (validElements.length > 0) {
-                return gsap.to(validElements, vars);
-            }
-        } else if (selector) {
-            // Single element
-            return gsap.to(selector, vars);
+    function animateScrollIndicator() {
+        const element = document.querySelector(".tp-scroll-indicator__line");
+        if (!element) {
+            // Silently exit - no error
+            return;
         }
-        return null;
-    };
+        
+        gsap.fromTo(
+            element,
+            { y: -15, opacity: 0 },
+            {
+                y: 3,
+                opacity: 1,
+                duration: 1.5,
+                ease: "power2.out",
+                repeat: -1,
+                yoyo: true
+            }
+        );
+    }
 
-    // You can use safeGsapTo instead of gsap.to for extra safety
-    // Example: safeGsapTo(".some-class", {opacity: 1});
+    // Only try to animate if element exists
+    if (document.querySelector(".tp-scroll-indicator__line")) {
+        animateScrollIndicator();
+    }
+
+    /* ===============================
+       HOMEONE / STORY IMG
+    =============================== */
+    const revealWraps = gsap.utils.toArray(".tp-reveal-wrap");
+    if (revealWraps.length > 0) {
+        revealWraps.forEach((section) => {
+            const image = section.querySelector(".tp-reveal-img");
+            if (!image) return;
+
+            gsap.fromTo(
+                image,
+                { scale: 1.3, clipPath: "inset(20% 20% 20% 20% round 20px)" },
+                {
+                    scale: 1,
+                    clipPath: "inset(0% 0% 0% 0% round 20px)",
+                    ease: "expo.out",
+                    scrollTrigger: {
+                        trigger: section,
+                        start: "top 85%",
+                        end: "top 20%",
+                        scrub: true,
+                    }
+                }
+            );
+        });
+    }
+
+    /* ===============================
+       BLOG DETAILS / ANIM-WRAP (FIXED - Only runs if element exists)
+    =============================== */
+    const animWrap = document.querySelector(".tp-anim-wrap");
+    if (animWrap) {
+        gsap.fromTo(".tp-anim-wrap", 
+            {
+                clipPath: "polygon(50% 0%, 50% 0%, 50% 100%, 50% 100%)",
+                scale: 1.2
+            },
+            {
+                clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
+                scale: 1,
+                duration: 1.5,
+                ease: "power4.inOut",
+                delay: 0.1
+            }
+        );
+    }
 });
-
-
-
-
