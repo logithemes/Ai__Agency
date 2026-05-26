@@ -76,9 +76,9 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     /* ===============================
-       FOUR CARDS REVEAL ANIMATION (.tp-work-item)
+       FOUR CARDS REVEAL ANIMATION (.tp-clip-path-wrapper)
     =============================== */
-    const workItems = gsap.utils.toArray(".tp-work-item");
+    const workItems = gsap.utils.toArray(".tp-clip-path-wrapper");
     if (workItems.length > 0) {
         workItems.forEach((container) => {
             const revealMedia = container.querySelector("img");
