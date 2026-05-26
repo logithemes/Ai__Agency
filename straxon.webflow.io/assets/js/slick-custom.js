@@ -61,12 +61,10 @@ const projectSlider = new Swiper('.project-slider-wrapper', {
 // Initialize Swiper for .choose-us-slider-services
 const chooseUsSlider = new Swiper('.choose-us-slider-services', {
 
-  slidesPerView: "auto",
-  centeredSlides: true,
   loop: true,
   speed: 1200,
+  centeredSlides: true,
   spaceBetween: 30,
-
   grabCursor: true,
 
   autoplay: {
@@ -80,9 +78,27 @@ const chooseUsSlider = new Swiper('.choose-us-slider-services', {
     prevEl: '.choose-slider-prev',
   },
 
-  
+  breakpoints: {
+
+    0: {
+      slidesPerView: 1,
+      centeredSlides: false,
+    },
+
+    768: {
+      slidesPerView: 2,
+      centeredSlides: false,
+    },
+
+    992: {
+      slidesPerView: 2,
+      centeredSlides: true,
+    }
+
+  }
 
 });
+
 const aboutThreeSlider = new Swiper('.about-three-slider', {
   loop: true,
   speed: 1000,
