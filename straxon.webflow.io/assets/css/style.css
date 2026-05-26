@@ -5229,6 +5229,8 @@ text-align: center;
 
 .proj-slider-box {
     display: inline-block;
+    margin: 0 auto;
+    display: table;
 }
 
 .marquee-tp-slides-cards {

@@ -1,18 +1,31 @@
  $(document).ready(function(){
 
-    $('.project-slider-wrapper').slick({
-      slidesToShow: 4,
-      slidesToScroll: 1,
-      infinite: true,
-      arrows: true,
-      dots: false,
-      autoplay: true,
-      autoplaySpeed: 1500,
-      responsive: [
-        { breakpoint: 991, settings: { slidesToShow: 3 } },
-        { breakpoint: 767, settings: { slidesToShow: 1 } }
-      ]
-    });
+const projectSlider = new Swiper('.project-slider-wrapper', {
+  loop: true,
+  speed: 800,
+
+  autoplay: {
+    delay: 1500,
+    disableOnInteraction: false,
+  },
+
+  slidesPerView: 4,
+  spaceBetween: 0,
+
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+    },
+
+    768: {
+      slidesPerView: 3,
+    },
+
+    992: {
+      slidesPerView: 4,
+    },
+  },
+});
 
   //  HOME TWO SWIPER
   // Initialize Swiper for .choose-us-slider-services

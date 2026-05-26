@@ -265,10 +265,6 @@
         line-height: 33px;
     }
 
-    .proj-slider-box {
-        width: 100%;
-        float: left;
-    }
 
     .about-three-hero-right {
         padding-left: 0;
@@ -1032,7 +1028,7 @@
      .home-one-process {
         padding: 80px 0;
       }
-
+.projects-more-work-text{align-items: center;}
       .tp-process-item {
         padding: 30px;
         border-radius: 24px;
