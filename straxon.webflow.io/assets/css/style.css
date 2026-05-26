@@ -1893,6 +1893,7 @@ position: absolute;
 .projects-name {
     z-index: 2;
     bottom: 1.563rem;
+    padding: 12px;
 }
 
 
