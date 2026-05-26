@@ -1238,7 +1238,8 @@ a:hover {
 }
 .about-three-slider-pagination .tp-slider-dot:focus {
     outline: none;
-    box-shadow: 0 0 0 2px #fff;
+    box-shadow: none;
+    border:none
 }
 
 .tp-arrow-prev,
