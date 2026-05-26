@@ -14,34 +14,82 @@
       ]
     });
 
-    $('.choose-us-slider-services').slick({
-      slidesToShow: 2,
-      slidesToScroll: 1,
-      infinite: true,
-      arrows: true,
-      dots: false,
-      autoplay: true,
-      autoplaySpeed: 1500,
-      responsive: [
-        { breakpoint: 1024, settings: { slidesToShow: 3 } },
-        { breakpoint: 991, settings: { slidesToShow: 2 } },
-        { breakpoint: 767, settings: { slidesToShow: 1 } }
-      ]
-    });
+  //  HOME TWO SWIPER
+  // Initialize Swiper for .choose-us-slider-services
+// const chooseUsSlider = new Swiper('.choose-us-slider-services', {
+//   slidesPerView: 2,
+//   slidesPerGroup: 1,
+//   spaceBetween: 30, // You can adjust this value (Slick doesn't have it by default)
+//   loop: true,
+//   autoplay: {
+//     delay: 1500,
+//     disableOnInteraction: false,
+//   },
+//   navigation: {
+//     nextEl: '.choose-us-slider-services + .swiper-button-next, .choose-us-slider-services .swiper-button-next',
+//     prevEl: '.choose-us-slider-services + .swiper-button-prev, .choose-us-slider-services .swiper-button-prev',
+//   },
+//   breakpoints: {
+//     0: {
+//       slidesPerView: 1,
+//       slidesPerGroup: 1,
+//     },
+//     768: {
+//       slidesPerView: 2,
+//       slidesPerGroup: 2,
+//     },
+//     1025: {
+//       slidesPerView: 3,
+//       slidesPerGroup: 3,
+//     },
+//   },
+// });
 
-    $('.about-three-slider').slick({
-  dots: true,
-  arrows: false,
-  dots:true,
-  infinite: true,
+// Initialize Swiper for .choose-us-slider-services
+const chooseUsSlider = new Swiper('.choose-us-slider-services', {
+
+  slidesPerView: "auto",
+  centeredSlides: true,
+  loop: true,
+  speed: 1200,
+  spaceBetween: 30,
+
+  grabCursor: true,
+
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+    pauseOnMouseEnter: true,
+  },
+
+  navigation: {
+    nextEl: '.choose-slider-next',
+    prevEl: '.choose-slider-prev',
+  },
+
+  
+
+});
+const aboutThreeSlider = new Swiper('.about-three-slider', {
+  loop: true,
   speed: 1000,
-  autoplay: true,
-  autoplaySpeed: 3000,
-  slidesToShow: 1,
-  slidesToScroll: 1,
-  customPaging: function(slider, i) {
-    return '<div class="tp-slider-dot"></div>';
-  }
+
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+  },
+
+  slidesPerView: 1,
+  spaceBetween: 0,
+
+  pagination: {
+    el: '.about-three-slider-pagination',
+    clickable: true,
+
+    renderBullet: function (index, className) {
+      return '<div class="tp-slider-dot ' + className + '"></div>';
+    },
+  },
 });
 
   // Initially show first tab
