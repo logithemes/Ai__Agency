@@ -107,10 +107,10 @@
     --tp-icon-color: #db4e93b0;
 
     /* Transition */
-    --transition-fast: 0.1s;
+    /* --transition-fast: 0.1s;
     --transition-medium: 0.5s;
     --transition-slow: 1s;
-    --transition-default: var(--transition-medium);
+    --transition-default: var(--transition-medium); */
     --heading-fw: 400;
     --heading-lh: 1;
     --heading-spacing: 1px;
@@ -476,7 +476,7 @@ a:hover {
 /*=========================================================
     Transition Utilities
 =========================================================*/
-.transition-fast {
+/* .transition-fast {
     transition: all var(--transition-fast) ease;
 }
 
@@ -490,8 +490,12 @@ a:hover {
 
 .transition-default {
     transition: all var(--transition-default) ease;
-}
-
+} */
+  .fadeInUp,
+  .fadeInLeft,
+  .fadeInRight {
+    opacity: 0;
+  }
 
 /*=========================================================
     Font Size Utilities
@@ -2599,7 +2603,11 @@ position: absolute;
 .cards-hover:hover .portfolio-marquee {
     opacity: 1;
 }
-
+/* .fadeInUp,
+.fadeInLeft,
+.fadeInRight{
+  will-change: transform, opacity;
+} */
 .tp-work-item .card-two-wrapper {
     max-width: 590px;
 }

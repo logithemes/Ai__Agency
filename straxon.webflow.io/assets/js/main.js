@@ -48,6 +48,67 @@ document.addEventListener("DOMContentLoaded", function () {
     wordScrollAnimation('.home-popup-video', '.home-popup-video-desc');
 
     /* ===============================
+       INDEX PAGE GSAP ANIMATIONS
+    =============================== */
+    const landingHeroWrap = document.querySelector('.landing-hero-wrap');
+    if (landingHeroWrap) {
+        const heroTimeline = gsap.timeline();
+        heroTimeline
+            .from('.landing-hero-wrap .landing-text', {
+                opacity: 0,
+                y: 24,
+                duration: 0.8,
+                ease: 'power3.out'
+            })
+            .from('.landing-hero-wrap h1', {
+                opacity: 0,
+                y: 24,
+                duration: 0.8,
+                ease: 'power3.out'
+            }, '-=0.5')
+            .from('.landing-hero-wrap .hero-details', {
+                opacity: 0,
+                y: 24,
+                duration: 0.8,
+                ease: 'power3.out',
+                stagger: 0.15
+            }, '-=0.6')
+            .from('.landing-hero-image-one', {
+                opacity: 0,
+                y: 30,
+                duration: 1,
+                ease: 'power3.out'
+            }, '-=0.5')
+            .from('.landing-hero-image-three', {
+                opacity: 0,
+                y: 30,
+                duration: 1,
+                ease: 'power3.out'
+            }, '-=0.8')
+            .from('.landing-hero-image-four', {
+                opacity: 0,
+                y: 30,
+                duration: 1,
+                ease: 'power3.out'
+            }, '-=0.8');
+    }
+
+    gsap.utils.toArray('.section-title, .features-box-one, .features-box-two, .features-box-three, .landing-cards').forEach((element) => {
+        gsap.from(element, {
+            scrollTrigger: {
+                trigger: element,
+                start: 'top 90%',
+                toggleActions: 'play none none none'
+            },
+            opacity: 0,
+            y: 30,
+            duration: 0.8,
+            ease: 'power3.out',
+            stagger: 0.1
+        });
+    });
+
+    /* ===============================
        HAMBURGER MENU
     =============================== */
     const hamburgers = document.querySelectorAll(".navbar-three-hamburger, .navbar-three-toggle, .humburger-wrapper");
@@ -616,6 +677,48 @@ document.addEventListener("DOMContentLoaded", function () {
             );
         });
     }
+    
+    // FADE IN ANIMATION ALL
+     // Register ScrollTrigger
+  gsap.registerPlugin(ScrollTrigger);
+
+  // Define animation settings
+  const animationSettings = {
+    fadeInUp: { y: 60 },
+    fadeInLeft: { x: 60 },
+    fadeInRight: { x: -60 }
+  };
+
+  // Loop through each animation type
+  Object.keys(animationSettings).forEach((animationClass) => {
+    gsap.utils.toArray(`.${animationClass}`).forEach((element) => {
+      // Read delay from data-wow-delay (in seconds)
+      const delay = parseFloat(element.dataset.wowDelay) || 0;
+
+      // Animate with GSAP
+      gsap.fromTo(
+        element,
+        {
+          opacity: 0,
+          ...animationSettings[animationClass]
+        },
+        {
+          opacity: 1,
+          x: 0,
+          y: 0,
+          duration: 1,
+          delay: delay, // your custom delay per element
+          ease: "power3.out",
+          overwrite: "auto",
+          scrollTrigger: {
+            trigger: element,
+            start: "top 80%", // animate when element enters viewport
+            toggleActions: "play none none none"
+          }
+        }
+      );
+    });
+  });
 
     /* ===============================
        BLOG DETAILS / ANIM-WRAP (FIXED - Only runs if element exists)
@@ -637,3 +740,5 @@ document.addEventListener("DOMContentLoaded", function () {
         );
     }
 });
+
+
