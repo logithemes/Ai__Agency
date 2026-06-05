@@ -52,45 +52,74 @@ document.addEventListener("DOMContentLoaded", function () {
     =============================== */
     const landingHeroWrap = document.querySelector('.landing-hero-wrap');
     if (landingHeroWrap) {
-        const heroTimeline = gsap.timeline();
+        const heroTimeline = gsap.timeline({ defaults: { ease: 'power3.out' } });
         heroTimeline
             .from('.landing-hero-wrap .landing-text', {
                 opacity: 0,
                 y: 24,
-                duration: 0.8,
-                ease: 'power3.out'
-            })
+                duration: 0.8
+            }, 0.3)
             .from('.landing-hero-wrap h1', {
                 opacity: 0,
                 y: 24,
-                duration: 0.8,
-                ease: 'power3.out'
-            }, '-=0.5')
+                duration: 0.8
+            }, 0.6)
             .from('.landing-hero-wrap .hero-details', {
                 opacity: 0,
                 y: 24,
                 duration: 0.8,
-                ease: 'power3.out',
                 stagger: 0.15
-            }, '-=0.6')
+            }, 0.9)
+            .from('.landing-hero-wrap .button-wrapper', {
+                opacity: 0,
+                y: 20,
+                duration: 0.8
+            }, 1.5)
             .from('.landing-hero-image-one', {
                 opacity: 0,
                 y: 30,
-                duration: 1,
-                ease: 'power3.out'
-            }, '-=0.5')
+                duration: 1
+            }, 0.8)
+            .from('.landing-hero-image-two', {
+                opacity: 0,
+                y: 30,
+                duration: 1
+            }, 0.9)
             .from('.landing-hero-image-three', {
                 opacity: 0,
                 y: 30,
-                duration: 1,
-                ease: 'power3.out'
-            }, '-=0.8')
+                duration: 1
+            }, 1.0)
             .from('.landing-hero-image-four', {
                 opacity: 0,
                 y: 30,
-                duration: 1,
-                ease: 'power3.out'
-            }, '-=0.8');
+                duration: 1
+            }, 1.1);
+    }
+
+    const homeOneHero = document.querySelector('.home-one-hero');
+    if (homeOneHero) {
+        const homeOneTimeline = gsap.timeline({ defaults: { opacity: 0, y: 30, ease: 'power3.out' } });
+        homeOneTimeline
+            .from('.home-one-hero .home-one-hero-text span.text-capitalize', { duration: 0.8 }, 0.2)
+            .from('.home-one-hero .hero-heading-gap', { duration: 0.8 }, 0.4)
+            .from('.home-one-hero-description', { duration: 0.8 }, 0.6)
+            .from('.home-one-hero .button-wrapper', { duration: 0.8 }, 0.8)
+            .from('.home-one-hero .tp-scroll-indicator', { duration: 0.8 }, 1.0)
+            .from('.little-boy-image-wrapper', { y: 40, duration: 1 }, 1.2)
+            .from('.girl-image-wrapper', { y: 40, duration: 1 }, 1.4);
+
+        const homeOneServiceCards = gsap.utils.toArray('.home-one-service-cards');
+        if (homeOneServiceCards.length) {
+            gsap.from(homeOneServiceCards, {
+                opacity: 0,
+                y: 40,
+                duration: 0.8,
+                ease: 'power3.out',
+                stagger: 0.18,
+                delay: 0.3
+            });
+        }
     }
 
     gsap.utils.toArray('.section-title, .features-box-one, .features-box-two, .features-box-three, .landing-cards').forEach((element) => {
@@ -678,24 +707,21 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
     
-    // FADE IN ANIMATION ALL
-     // Register ScrollTrigger
-  gsap.registerPlugin(ScrollTrigger);
+//     // FADE IN ANIMATION ALL
+    gsap.registerPlugin(ScrollTrigger);
 
-  // Define animation settings
   const animationSettings = {
     fadeInUp: { y: 60 },
-    fadeInLeft: { x: 60 },
-    fadeInRight: { x: -60 }
+    fadeInLeft: { x: -60 },
+    fadeInRight: { x: 60 }
   };
 
-  // Loop through each animation type
   Object.keys(animationSettings).forEach((animationClass) => {
+
     gsap.utils.toArray(`.${animationClass}`).forEach((element) => {
-      // Read delay from data-wow-delay (in seconds)
+
       const delay = parseFloat(element.dataset.wowDelay) || 0;
 
-      // Animate with GSAP
       gsap.fromTo(
         element,
         {
@@ -707,19 +733,20 @@ document.addEventListener("DOMContentLoaded", function () {
           x: 0,
           y: 0,
           duration: 1,
-          delay: delay, // your custom delay per element
+          delay: delay,
           ease: "power3.out",
           overwrite: "auto",
           scrollTrigger: {
             trigger: element,
-            start: "top 80%", // animate when element enters viewport
+            start: "top 80%",
             toggleActions: "play none none none"
           }
         }
       );
-    });
-  });
 
+    });
+
+  });
     /* ===============================
        BLOG DETAILS / ANIM-WRAP (FIXED - Only runs if element exists)
     =============================== */

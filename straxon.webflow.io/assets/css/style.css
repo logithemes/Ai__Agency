@@ -330,7 +330,7 @@ h1 {
 }
 
 h2 {
-    font-size: clamp(32px, 6.8vw, 70px);
+    font-size: clamp(36px, 6.8vw, 70px);
 }
 
 h3 {
@@ -476,7 +476,7 @@ a:hover {
 /*=========================================================
     Transition Utilities
 =========================================================*/
-/* .transition-fast {
+.transition-fast {
     transition: all var(--transition-fast) ease;
 }
 
@@ -490,12 +490,12 @@ a:hover {
 
 .transition-default {
     transition: all var(--transition-default) ease;
-} */
-  .fadeInUp,
+}
+  /* .fadeInUp,
   .fadeInLeft,
   .fadeInRight {
     opacity: 0;
-  }
+  } */
 
 /*=========================================================
     Font Size Utilities
@@ -555,47 +555,6 @@ a:hover {
     padding-right: 15px;
 }
 
-.row-gap-20 {
-    row-gap: 20px;
-}
-
-.row-gap-30 {
-    row-gap: 30px;
-}
-
-.row-gap-60 {
-    row-gap: 60px;
-}
-
-.gap-10 {
-    row-gap: 10px;
-    column-gap: 10px;
-}
-
-.gap-20 {
-    row-gap: 20px;
-    column-gap: 20px;
-}
-
-.gap-30 {
-    row-gap: 30px;
-    column-gap: 30px;
-}
-
-.gap-40 {
-    row-gap: 40px;
-    column-gap: 40px;
-}
-
-.gap-50 {
-    row-gap: 50px;
-    column-gap: 50px;
-}
-
-.gap-60 {
-    row-gap: 60px;
-    column-gap: 60px;
-}
 
 
 /*---------------------------------
@@ -1374,7 +1333,7 @@ position: absolute;
 .home-two-testimonial-heading {
     z-index: 2;
     color: #242532;
-    font-size: clamp(60px, 20vw, 400px);
+    font-size: clamp(40px, 10vw, 400px);
     line-height: 1;
     position: relative;
 }

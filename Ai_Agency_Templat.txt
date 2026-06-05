@@ -1,9 +1,12 @@
 
-1- Help Documnet Copy Right name
+1-Help Documnet Copy Right name
 2-copy right name
-3-testimonails
-4-12134 css
-5-Footer border
+
+
+THEME WORK
+
+2-check all header
+
 
   
 justify-content-between align-items-stretch
@@ -14,10 +17,20 @@ py-3 py-md-0
 justify-content-center
 
 
+
 992 above col-6 992 below col-12 
 dont add directly add one div dont change class  names
 themeforest version
 
+section-title
+section-title-heading
+section-subtitle
+
+
 col-12 col-lg-6
 gap-5 gap-lg-0
 themeforest
+
+
+
+ col-md-7 col-12 col-xl-6 left headlin

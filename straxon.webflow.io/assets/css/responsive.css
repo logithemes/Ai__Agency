@@ -181,7 +181,7 @@
 
 @media screen and (max-width: 991px) {
     .process-user-wrapper{width: 100%;justify-content: center;}
-
+.choose-slide-text{padding-left: 15px;}
       .tp-process-item {
         min-height: auto;
       }
@@ -379,7 +379,7 @@
 
     .home-one-service-cards {
         grid-column-gap: 5px;
-        grid-row-gap: 5px;
+        grid-row-gap: 10px;
         max-width: none;
     }
 
@@ -494,8 +494,8 @@
 
 
     .home-two-projects-boxes {
-        grid-column-gap: 50px;
-        grid-row-gap: 50px;
+        grid-column-gap: 30px;
+        grid-row-gap: 30px;
         grid-template-rows: auto auto;
         grid-template-columns: 1fr 1fr;
         grid-auto-columns: 1fr;
@@ -508,6 +508,8 @@
 
     .home-two-projects-cards {
         width: 100%;
+         grid-column-gap: 20px;
+    grid-row-gap: 20px;
     }
 
     .choose-us-slides {
@@ -519,8 +521,7 @@
 
     .home-two-testimonial {
         height: auto;
-        padding-left: 15px;
-        padding-right: 15px;
+       
     }
 
 
@@ -537,7 +538,7 @@
 
     .home-two-testimonial-container {
         grid-column-gap: 40px;
-        grid-row-gap: 40px;
+        grid-row-gap: 20px;
         border-bottom: 1px solid var(--border-color);
         position: static;
     }
@@ -1025,9 +1026,13 @@
 }
 
 @media screen and (max-width: 767px) {
+    .hero-details-text{    font-size: 14px;
+    line-height: 1.5;}
      .home-one-process {
         padding: 80px 0;
       }
+      .landing-text{font-size: 12px;        padding-left: 13px;
+        padding-right: 13px;}
 .projects-more-work-text{align-items: center;}
       .tp-process-item {
         padding: 30px;
@@ -1121,11 +1126,7 @@
         height: 80px;
     } */
 
-    .home-one-counters-wrapper {
-        padding-top: 0;
-        padding-bottom: 0;
-    }
-
+ 
 
     .home-one-portfolio-right,
     .home-one-portfolio-left {
@@ -1826,7 +1827,6 @@
 
 @media screen and (max-width: 576px) {
     .footer-one-information-wrapper{margin-bottom: 15px;}
-    .footer-one{padding: 0 15px;}
 }
 @media screen and (max-width: 500px) {
     .ctn_preloader .animation-preloader .spinner {
