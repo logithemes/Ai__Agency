@@ -1026,6 +1026,7 @@
 }
 
 @media screen and (max-width: 767px) {
+    .faq-border{padding:8px 0 8px 0}
     .hero-details-text{    font-size: 14px;
     line-height: 1.5;}
      .home-one-process {
@@ -1082,6 +1083,8 @@
         max-width: none;
     }
 
+    .video-preview-wrapper{height: 500px;}
+    .video-preview-wrapper img{height: 100%;}
     /* .testimonail-text {
         margin: 0 auto;
         max-width: 460px;
@@ -1379,10 +1382,6 @@
         line-height: 28px;
     }
 
-    .home-three-hero-image {
-        max-width: none;
-    }
-
     .home-three-box {
         padding-left: 0;
         padding-right: 0;
@@ -1393,10 +1392,7 @@
     }
 
 
-    .home-three-hero {
-        padding-top: 60px;
-    }
-
+ 
     .home-three-faq-text-wrapper {
         text-align: center;
         justify-content: flex-start;

@@ -93,7 +93,7 @@
     --tp-fs-12: 12px;
     --tp-fs-14: 14px;
     --tp-fs-xxl: 50px;
-    --tp-lh-24 : 24px
+    --tp-lh-24 : 24px;
 
     /* Radius */
     --tp-radius-10: 10px;
@@ -107,10 +107,10 @@
     --tp-icon-color: #db4e93b0;
 
     /* Transition */
-    /* --transition-fast: 0.1s;
+    --transition-fast: 0.1s;
     --transition-medium: 0.5s;
     --transition-slow: 1s;
-    --transition-default: var(--transition-medium); */
+    --transition-default: var(--transition-medium);
     --heading-fw: 400;
     --heading-lh: 1;
     --heading-spacing: 1px;
@@ -3424,9 +3424,6 @@ label {
     flex-flow: wrap;
 }
 
-.home-three-hero-image {
-    max-width: 480px;
-}
 
 .home-three-hero {
     background-image: radial-gradient(circle at 20% 64%, #f4497270, #f4497200 14%),
