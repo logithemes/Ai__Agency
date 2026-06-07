@@ -1822,6 +1822,9 @@
 }
 
 @media screen and (max-width: 576px) {
+    .about-three-service .about-three-service-icons{    width: 80px;
+    height: 80px;}
+    .home-one-service-cards{padding-left: 10px;padding-rigt: 10px;}
     .footer-one-information-wrapper{margin-bottom: 15px;}
 }
 @media screen and (max-width: 500px) {
