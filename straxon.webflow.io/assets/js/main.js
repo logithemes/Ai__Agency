@@ -426,20 +426,20 @@ document.addEventListener("DOMContentLoaded", function () {
     /* ===============================
        SERVICES TAB IMAGE
     =============================== */
-    document.addEventListener("shown.bs.tab", (event) => {
-        const targetPane = document.querySelector(event.target.getAttribute("href"));
-        if (!targetPane) return;
+    // document.addEventListener("shown.bs.tab", (event) => {
+    //     const targetPane = document.querySelector(event.target.getAttribute("href"));
+    //     if (!targetPane) return;
         
-        const image = targetPane.querySelector("img");
-        if (!image) return;
+    //     const image = targetPane.querySelector("img");
+    //     if (!image) return;
         
-        gsap.fromTo(image, { opacity: 0, scale: 0.8 }, {
-            opacity: 1,
-            scale: 1,
-            duration: 0.6,
-            ease: "power2.out"
-        });
-    });
+    //     gsap.fromTo(image, { opacity: 0, scale: 0.8 }, {
+    //         opacity: 1,
+    //         scale: 1,
+    //         duration: 0.6,
+    //         ease: "power2.out"
+    //     });
+    // });
 
     /* ===============================
        TESTIMONIAL HEADING

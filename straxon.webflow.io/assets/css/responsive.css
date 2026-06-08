@@ -1032,6 +1032,7 @@
      .home-one-process {
         padding: 80px 0;
       }
+      .tp-service-tab-menu{    border-bottom-right-radius: 0;    border-top-left-radius: 30px;}
       .landing-text{font-size: 12px;        padding-left: 13px;
         padding-right: 13px;}
 .projects-more-work-text{align-items: center;}
@@ -1040,6 +1041,7 @@
         border-radius: 24px;
       }
 
+.service-cards-image{height: 400px;}
 
       .process-title {
         font-size: 24px;
@@ -1083,7 +1085,7 @@
         max-width: none;
     }
 
-    .video-preview-wrapper{height: 500px;}
+    .video-preview-wrapper{height: 380px;}
     .video-preview-wrapper img{height: 100%;}
     /* .testimonail-text {
         margin: 0 auto;
@@ -1184,9 +1186,7 @@
         right: 5%;
     }
 
-    .home-popup-video-heading {
-        max-width: none;
-    }
+
 
     .home-one-service-cards-icon {
         width: 100px;

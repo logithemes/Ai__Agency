@@ -171,7 +171,7 @@
 		service one hero
 		==================================================== -->
     <section class="service-one-hero pt-170 md-pt-150  xxl-pt-200 pb-90 xl-pb-160 md-pb-70">
-      <div class="container">
+      <div class="container-fluid container-lg">
         <div class=" service-hero-main">
           <div class="row">
           <div class="col-lg-10 col-12">
@@ -206,22 +206,22 @@
             <div class="tp-service-tab-menu tp-tabs nav" role="tablist">
               <a class="tp-service-tab-links gap-30 tp-common-white   hover-line nav-link tp-active" id="tab1-tab" data-bs-toggle="tab"
                 href="#tab1" role="tab">
-                <div class="body-font">01/</div>
+                <span class="body-font">01/</span>
                 <div class="tp-common-white hover-line-bottom">Creative Innovation</div>
               </a>
               <a class="tp-service-tab-links gap-30 tp-common-white   hover-line nav-link active " id="tab2-tab"
                 data-bs-toggle="tab" href="#tab2" role="tab">
-                <div class="body-font">02/</div>
+                <span class="body-font">02/</span>
                 <div class="tp-common-white hover-line-bottom">Online help &amp; support</div>
               </a>
               <a class="tp-service-tab-links gap-30 tp-common-white   hover-line nav-link" id="tab3-tab" data-bs-toggle="tab"
                 href="#tab3" role="tab">
-                <div class="body-font">03/</div>
+                <span class="body-font">03/</span>
                 <div class="tp-common-white hover-line-bottom">100% secure solutions</div>
               </a>
               <a class="tp-service-tab-links gap-30 tp-common-white  hover-line nav-link" id="tab4-tab" data-bs-toggle="tab"
                 href="#tab4" role="tab">
-                <div class="body-font">04/</div>
+                <span class="body-font">04/</span>
                 <div class="tp-common-white hover-line-bottom">Seamless integration</div>
               </a>
             </div>
@@ -289,7 +289,7 @@
         </div>
         <div  class="tp-flex-horizontal services gap-60 position-relative">
         <!-- counter number start-->
-           <div class="services-number-wrap justify-content-center align-items-start flex-row d-flex">
+           <div class="services-number-wrap justify-content-center align-items-start flex-row d-none d-md-flex">
             <div class="heading-one text-outline">0</div>
             <div class="tp-flex-vertical services-counter">
               <div class="heading-one text-outline service-number-one">1</div>
@@ -476,7 +476,7 @@
               <span class="tp-common-white">2022</span>
               <div class="awards-name">
                 <span class="mb-15 text-capitalize">UI/UX Design</span>
-                <div class="heading-five pt-10">Red Dot Design Award</div>
+                <h5 class="heading-five pt-10 my-0">Red Dot Design Award</h5>
               </div>
               <img src="assets/img/about-us/batch-1.svg" loading="lazy" width="62" height="58" alt="Icon">
             </div>
@@ -484,7 +484,7 @@
               <span class="tp-common-white">2023</span>
               <div class="awards-name">
                 <span class="mb-15 text-capitalize">branding</span>
-                <div class="heading-five pt-10">top packaging Award</div>
+                <h5 class="heading-five pt-10 my-0">top packaging Award</h5>
               </div>
               <img src="assets/img/about-us/batch-2.svg" loading="lazy" width="59" height="60" alt="Icon">
             </div>
@@ -492,7 +492,7 @@
               <span class="tp-common-white">2024</span>
               <div class="awards-name">
                 <span class="mb-15 text-capitalize">Digital art</span>
-                <div class="heading-five pt-10">dbs Design Award</div>
+                <h5 class="heading-five pt-10 my-0">dbs Design Award</h5>
               </div>
               <img src="assets/img/about-us/batch-3.svg" loading="lazy" width="55" height="58" alt="Icon">
             </div>
@@ -508,7 +508,7 @@
       <div class="container-fluid">
         <div class="tp-flex-vertical service-one-main">
           <div class="d-flex align-items-center justify-content-center w-100">
-            <div class="tp-reveal-wrap overflow-hidden service-one-image d-flex align-items-center justify-content-center">
+            <div class="tp-reveal-wrap overflow-hidden service-one-image d-flex align-items-center justify-content-center video-preview-wrapper">
               <img src="assets/img/video-preview/video-preview-img-2.webp" class="tp-radius-30 tp-reveal-img" loading="lazy"
                 width="1290" height="491" alt="Video Image">
               <div class="service-one-image-overlay"></div>
@@ -1166,12 +1166,13 @@ gap-3 gap-md-4 wow fadeInUp" data-wow-delay="0.8s">
   <!-- ===================================================
 		footer area
 		==================================================== -->
-   <div class="footer-three">
+  <div class="footer-three">
       <div class="container">
         <div  class="footer-one-border"></div>
-        <div class="tp-flex-horizontal  pt-70 pb-70 md-pb-60 md-pt-60 footer-one-main-wrapper  wow fadeInUp" data-wow-delay="0.8s">
-          <div class="footer-one-about-wrapper">
-            <a href="index.html" class="site-logo tp-inline-block">
+          <div class="pt-70 pb-70 md-pb-60 md-pt-60 row" >
+         <div class="col-lg-3 col-12">
+           <div class="footer-one-about-wrapper">
+            <a href="index.html" class="site-logo tp-inline-block md-mb-20 mb-25">
               <img width="140" height="30" alt="logo-img" src="assets/img/logo/logo.svg" loading="lazy">
             </a>
             <p class="mb-20">Communication is the anchor that keeps us together.</p>
@@ -1191,12 +1192,15 @@ gap-3 gap-md-4 wow fadeInUp" data-wow-delay="0.8s">
             </a>
           </div>
           </div>
-          <div class="tp-flex-horizontal footer-one-link-wrapper">
-            <div class="footer-one-contact-wrapper">
-              <div class="heading-five mb-30">About Us</div>
-              <p class="mb-10">Variations of passages of lorem but the majority suffered.</p>
-              <a href="about-one.html" aria-current="page"
-                class="button-two mb-30 tp-inline-block tp-active">
+         </div>
+          <div class="col-lg-9 col-12">
+            <div class="row md-pt-40">
+            <div class=" col-md-4 col-12">
+               <div class="footer-one-contact-wrapper px-lg-3 px-0">
+                <h5 class="mt-0 heading-five mb-30 md-mb-20">About Us</h5>
+                <p class="mb-10">Variations of passages of lorem but the majority suffered.</p>
+                <a href="about-one.html" aria-current="page"
+                  class="button-two mb-30 tp-inline-block md-mb-20">
                 <div>Learn More</div>
                 <div class="button-two-icon-wrapper">
                   <div class="dot"></div>
@@ -1211,11 +1215,13 @@ gap-3 gap-md-4 wow fadeInUp" data-wow-delay="0.8s">
                 </div>
               </div>
             </div>
-            <div class="footer-one-details-wrapper">
-              <div class="heading-five mb-30">Get in touch</div>
+            </div>
+           <div class=" col-md-4 col-12">
+             <div class="footer-one-details-wrapper sm-pt-40 px-lg-3 px-0">
+              <h5 class="mt-0 heading-five mb-30 md-mb-20">Get in touch</h5>
               <div class="tp-flex-horizontal footer-one-information-wrapper">
                <i class="bi bi-geo-alt mt-1"></i>
-                <div>410 Sandtown, California 94001, USA</div>
+                <span>410 Sandtown, California 94001, USA</span>
               </div>
               <div class="tp-flex-horizontal footer-one-information-wrapper email-wrapper h-auto">
                <i class="bi bi-envelope fs-6"></i>
@@ -1224,23 +1230,27 @@ gap-3 gap-md-4 wow fadeInUp" data-wow-delay="0.8s">
                 </div>
               </div>
             </div>
-            <div class="tp-flex-vertical quick-links-wrap">
-              <div class="heading-five">useful links</div>
-              <div class="tp-flex-vertical footer-links-wrap">
-                <a href="about-one.html" aria-current="page" class="links-hover-effect tp-active">About</a>
+           </div>
+            <div class=" col-md-4 col-12">
+              <div class="tp-flex-vertical quick-links-wrap sm-pt-40 px-lg-3 px-0">
+              <h5 class="mt-0 heading-five mb-30 md-mb-20">useful links</h5>
+              <div class="tp-flex-vertical footer-links-wrap gap-20">
+                <a href="about-one.html" aria-current="page" class="links-hover-effect ">About</a>
                 <a href="service-two.html" class="links-hover-effect">Service</a>
                 <a href="home-one.html" class="links-hover-effect">Home</a>
               </div>
             </div>
+            </div>
           </div>
         </div>
+      </div>
       </div>
       <!-- ===================================================
 			   Copy Right
 			==================================================== -->
       <div class="container">
         <div class="footer-one-border"></div>
-        <div class="tp-flex-vertical footer-three-bottom">
+        <div class="tp-flex-vertical pt-70 pb-70 md-pb-60 md-pt-60 footer-three-bottom">
           <p class="text-sm mb-0"> © 2025 Stynero , All Right Receved. </p>
         </div>
       </div>
