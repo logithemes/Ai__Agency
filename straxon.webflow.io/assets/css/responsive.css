@@ -1040,7 +1040,7 @@
         padding: 30px;
         border-radius: 24px;
       }
-
+.service-growth-left .home-one-service-cards-icon{width: 65px;height: 65px;}
 .service-cards-image{height: 400px;}
 
       .process-title {
@@ -1186,14 +1186,10 @@
         right: 5%;
     }
 
-
-
     .home-one-service-cards-icon {
         width: 100px;
         height: 100px;
     }
-
-
 
     .portfolio-one-details {
         grid-column-gap: 60px;

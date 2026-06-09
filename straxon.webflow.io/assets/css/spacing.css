@@ -596,5 +596,7 @@
   .xs-mb-140 {margin-bottom: 140px;}
   .xs-mb-150 {margin-bottom: 150px;}
   .xs-mb-200 {margin-bottom: 200px;}
+  /* ROW GAP */
+  .xs-row-gap-15{row-gap:15px}
 }
 /*(max-width: 576px)*/
