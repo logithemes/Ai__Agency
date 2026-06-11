@@ -443,7 +443,8 @@
 
   /* row */
    .md-gap-20{row-gap: 20px;}
-   
+   .md-gap-10{row-gap: 10px;}
+   .md-row-gap-20{row-gap: 20px;}
 }
 /*(max-width: 991px)*/
 

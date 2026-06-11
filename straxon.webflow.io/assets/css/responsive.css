@@ -748,14 +748,9 @@
         align-items: center;
     }
 
-    .contact-one-paragraph {
-        max-width: none;
-    }
-
-    .contact-one-hero-middle-wrapper {
-        order: -1;
-    }
-
+  .contact-one-paragraph{    width: 100%;
+    flex-direction: column;
+    align-items: center;}
     .contact-main-form {
         flex-flow: column;
         align-items: stretch;
