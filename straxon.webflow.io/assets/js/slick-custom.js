@@ -207,16 +207,16 @@ if ($('.counters-wrapper').length) {
 
 
   // HOME ONE SLIDER
-    $('.tp-testimonial-track').slick({
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    arrows: true,
-    infinite: true,
-    speed: 600,
-    autoplay : true,
-    prevArrow: $('.tp-arrow-prev'),
-    nextArrow: $('.tp-arrow-next'),
-});
+//     $('.tp-testimonial-track').slick({
+//     slidesToShow: 1,
+//     slidesToScroll: 1,
+//     arrows: true,
+//     infinite: true,
+//     speed: 600,
+//     autoplay : true,
+//     prevArrow: $('.tp-arrow-prev'),
+//     nextArrow: $('.tp-arrow-next'),
+// });
 
 
 

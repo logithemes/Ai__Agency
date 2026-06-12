@@ -2435,6 +2435,7 @@ position: absolute;
 .home-three-text-marquee-wrapper {
     justify-content: flex-start;
     align-items: center;
+    font-family: var(--heading-font);
 }
 
 .banner-marquee-wrap {
@@ -2467,6 +2468,7 @@ position: absolute;
     align-items: center;
     width: 100%;
     overflow: hidden;
+    font-family: var(--heading-font);
 }
 
 .utility-page-marquee {
