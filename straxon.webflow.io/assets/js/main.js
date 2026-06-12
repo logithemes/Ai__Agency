@@ -713,45 +713,24 @@ document.addEventListener("DOMContentLoaded", function () {
     }
     
 //     // FADE IN ANIMATION ALL
-//     gsap.registerPlugin(ScrollTrigger);
+gsap.utils.toArray(".tp-fade-up").forEach((item) => {
 
-//   const animationSettings = {
-//     fadeInUp: { y: 60 },
-//     fadeInLeft: { x: -60 },
-//     fadeInRight: { x: 60 }
-//   };
+    let delay = parseFloat(item.dataset.delay) || 0;
 
-//   Object.keys(animationSettings).forEach((animationClass) => {
+    gsap.to(item, {
+        opacity: 1,
+        y: 0,
+        duration: 1,
+        delay: delay,
+        ease: "power3.out",
+        scrollTrigger: {
+            trigger: item,
+            start: "top 85%",
+            once: true
+        }
+    });
 
-//     gsap.utils.toArray(`.${animationClass}`).forEach((element) => {
-
-//       const delay = parseFloat(element.dataset.wowDelay) || 0;
-
-//       gsap.fromTo(
-//         element,
-//         {
-//           opacity: 0,
-//           ...animationSettings[animationClass]
-//         },
-//         {
-//           opacity: 1,
-//           x: 0,
-//           y: 0,
-//           duration: 1,
-//           delay: delay,
-//           ease: "power3.out",
-//           overwrite: "auto",
-//           scrollTrigger: {
-//             trigger: element,
-//             start: "top 80%",
-//             toggleActions: "play none none none"
-//           }
-//         }
-//       );
-
-//     });
-
-//   });
+});
     /* ===============================
        BLOG DETAILS / ANIM-WRAP (FIXED - Only runs if element exists)
     =============================== */

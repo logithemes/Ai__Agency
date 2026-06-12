@@ -2564,11 +2564,10 @@ position: absolute;
 .cards-hover:hover .portfolio-marquee {
     opacity: 1;
 }
-/* .fadeInUp,
-.fadeInLeft,
-.fadeInRight{
-  will-change: transform, opacity;
-} */
+.tp-fade-up {
+    opacity: 0;
+    transform: translateY(50px);
+}
 .tp-work-item .card-two-wrapper {
     max-width: 590px;
 }
