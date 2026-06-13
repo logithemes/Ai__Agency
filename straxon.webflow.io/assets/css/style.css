@@ -2564,10 +2564,7 @@ position: absolute;
 .cards-hover:hover .portfolio-marquee {
     opacity: 1;
 }
-.tp-fade-up {
-    opacity: 0;
-    transform: translateY(50px);
-}
+
 .tp-work-item .card-two-wrapper {
     max-width: 590px;
 }

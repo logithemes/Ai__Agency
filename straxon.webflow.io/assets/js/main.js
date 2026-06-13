@@ -713,22 +713,54 @@ document.addEventListener("DOMContentLoaded", function () {
     }
     
 //     // FADE IN ANIMATION ALL
-gsap.utils.toArray(".tp-fade-up").forEach((item) => {
+window.addEventListener("load", function () {
 
-    let delay = parseFloat(item.dataset.delay) || 0;
+    gsap.registerPlugin(ScrollTrigger);
 
-    gsap.to(item, {
-        opacity: 1,
-        y: 0,
-        duration: 1,
-        delay: delay,
-        ease: "power3.out",
-        scrollTrigger: {
-            trigger: item,
-            start: "top 85%",
-            once: true
+    const animations = {
+        ".tp-fade-up": {
+            y: 50,
+            opacity: 0
+        },
+        ".tp-fade-left": {
+            x: -50,
+            opacity: 0
+        },
+        ".tp-fade-right": {
+            x: 50,
+            opacity: 0
+        },
+        ".tp-zoom-in": {
+            scale: 0.8,
+            opacity: 0
+        },
+        ".tp-zoom-out": {
+            scale: 1.2,
+            opacity: 0
         }
+    };
+
+    Object.entries(animations).forEach(([selector, fromVars]) => {
+
+        gsap.utils.toArray(selector).forEach((item) => {
+
+            gsap.from(item, {
+                ...fromVars,
+                duration: 1,
+                ease: "power3.out",
+                delay: parseFloat(item.dataset.delay) || 0,
+                scrollTrigger: {
+                    trigger: item,
+                    start: "top 80%",
+                    once: true
+                }
+            });
+
+        });
+
     });
+
+    ScrollTrigger.refresh();
 
 });
     /* ===============================
