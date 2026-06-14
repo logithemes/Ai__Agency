@@ -138,7 +138,8 @@ body {
     min-height: 100%;
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
+ overflow: hidden;
+    overflow-y: auto;
 
     background-color: var(--body-color);
     color: var(--body-font-color);
@@ -473,6 +474,11 @@ a:hover {
     align-items: flex-start;
     display: flex;
 }
+.tp-flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 /*=========================================================
     Transition Utilities
 =========================================================*/
@@ -589,6 +595,10 @@ a:hover {
     transition: var(--transition-slow);
 }
 
+/*---------------------------------
+  section titls CSS
+---------------------------------*/
+.section-subtitle{display: inline-block;}
 /*---------------------------------
 	Preloader css start 
 ---------------------------------*/
@@ -1947,10 +1957,10 @@ position: absolute;
 }
 /* XXXXXXXXXXXXXXXXX */
 .home-one-work-main {
-    justify-content: flex-start;
     align-items: center;
-    position: relative;
-
+    position: sticky;
+    top: 10%;
+      will-change: opacity, transform;
 }
 
 .home-one-service-icon {
@@ -2255,9 +2265,7 @@ position: absolute;
 .marquee-image-one {
     z-index: 5;
     transform-origin: 100% 100%;
-    justify-content: center;
-    align-items: center;
-    display: flex;
+ 
     position: relative;
     bottom: 10px;
     transform: rotate(3deg);
@@ -2328,9 +2336,6 @@ position: absolute;
 .marquee-image-two {
     z-index: 2;
     transform-origin: 100% 100%;
-    justify-content: center;
-    align-items: center;
-    display: flex;
     position: absolute;
     bottom: 9%;
     transform: rotate(-5deg);

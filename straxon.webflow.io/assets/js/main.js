@@ -176,7 +176,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const workItems = gsap.utils.toArray(".tp-clip-path-wrapper");
     if (workItems.length > 0) {
         workItems.forEach((container) => {
-            const revealMedia = container.querySelector("img");
+            const revealMedia = container.querySelector(".tp-clip-path-target");
             if (!revealMedia) return;
 
             gsap.set(container, {
@@ -762,6 +762,17 @@ window.addEventListener("load", function () {
 
     ScrollTrigger.refresh();
 
+});
+
+// STICKY HOMW ONE FIXED
+gsap.registerPlugin(ScrollTrigger);
+
+ScrollTrigger.create({
+    trigger: ".home-one-work",
+    start: "top top",
+    end: "bottom bottom",
+    pin: ".home-one-work-main",
+    pinSpacing: false
 });
     /* ===============================
        BLOG DETAILS / ANIM-WRAP (FIXED - Only runs if element exists)
