@@ -1602,9 +1602,6 @@ position: absolute;
 }
 
 
-.about-one-counter-left {
-    max-width: 744px;
-}
 
 .about-one-counter-left p {
     line-height: 30px;
@@ -3892,8 +3889,7 @@ label {
 
 .about-one-skills-options {
     flex-flow: wrap;
-    justify-content: flex-start;
-    align-items: center;
+
 }
 
 .about-one-team-main {
