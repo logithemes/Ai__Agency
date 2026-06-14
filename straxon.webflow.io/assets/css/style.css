@@ -394,7 +394,6 @@ font-weight: var(--heading-fw);
     letter-spacing: 0.96px;
     font-size: var(--heading-size);
     line-height: var(--heading-lh);
-    transition: all var(--transition-medium);
 }
 
 .heading-five{
@@ -598,7 +597,7 @@ a:hover {
 /*---------------------------------
   section titls CSS
 ---------------------------------*/
-.section-subtitle{display: inline-block;}
+.section-subtitle{display: flex;}
 /*---------------------------------
 	Preloader css start 
 ---------------------------------*/
