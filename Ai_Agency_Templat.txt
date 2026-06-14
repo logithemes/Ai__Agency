@@ -1,36 +1,7 @@
 
 1-Help Documnet Copy Right name
 2-copy right name
-
-
-THEME WORK
-
-2-check all header
-
-
-  
-justify-content-between align-items-stretch
-flex-column
-align-items-start
-align-items
-py-3 py-md-0
-justify-content-center
-
-
-
-992 above col-6 992 below col-12 
-dont add directly add one div dont change class  names
-themeforest version
-
-section-title
-section-title-heading
-section-subtitle
-
-
-col-12 col-lg-6
-gap-5 gap-lg-0
-themeforest
-
-
-
- col-md-7 col-12 col-xl-6 left headlin
+3-check d-flex class name
+4-please ckeck row and bootstrap class with custom cls
+3-check all header
+4-check all script

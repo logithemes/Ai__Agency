@@ -3373,6 +3373,7 @@ label {
     min-height: 696px;
     position: absolute;
     top: 0;
+    display: inline-block;
 }
 
 .work-three-side-lines {
