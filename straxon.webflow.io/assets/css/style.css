@@ -3952,7 +3952,7 @@ label {
     align-items: center;
     transition: background-color 0.4s;
 }
-
+.about-two-experience-left{justify-content: space-between;}
 .about-two-experience-border {
     border-top-style: none;
 }
@@ -4036,6 +4036,7 @@ label {
     background-color: #05061066;
     position: absolute;
     inset: 0%;
+    z-index: 1;
 }
 
 .about-two-hero-image-one {
