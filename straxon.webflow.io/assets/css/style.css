@@ -4135,6 +4135,7 @@ label {
 .about-three-hero-contact {
     grid-column-gap: 19px;
     grid-row-gap: 19px;
+    padding-left: 20px;
 }
 
 .about-three-background-glow {
@@ -4180,6 +4181,7 @@ label {
 .about-three-hero {
     background-image: radial-gradient(circle at 74% 62%, #b460f14a, #b460f100 15%),
         radial-gradient(circle at 44%, #f4497252, #f4497200 23%);
+        position: relative;
 }
 
 .about-three-main-image {
