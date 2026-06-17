@@ -160,54 +160,82 @@
       <!-- ===================================================
 		service three hero
 		==================================================== -->
-      <section class="service-three-hero pt-90 md-pt-60 xxl-pt-140 common-parallax-hover overflow-hidden">
-        <div class="container">
-          <div class="service-three-hero-main d-flex align-items-center justify-content w-100 pt-270 pb-150  md-pt-220 md-pb-60 sm-pt-120 lg-pt-140">
+      <!-- ===== SERVICE THREE HERO SECTION ===== -->
+<!-- Corrected tp-fade-up animation timings + semantic HTML for ThemeForest -->
+<!-- All original class names and IDs remain unchanged -->
+<section class="service-three-hero pt-120 md-pt-60 xxl-pt-140 common-parallax-hover overflow-hidden">
+    <div class="container">
+        <div class="service-three-hero-main d-flex align-items-center justify-content w-100 pt-270 pb-150 md-pt-220 md-pb-60 sm-pt-120 lg-pt-140">
+            
+            <!-- Vertical Border Decorations -->
             <div class="tp-flex-horizontal contact-hero-vertical-borders-wrap">
-              <span class="contact-hero-vertical-border"></span>
-              <span class="contact-hero-vertical-border"></span>
-              <span class="contact-hero-vertical-border"></span>
+                <span class="contact-hero-vertical-border"></span>
+                <span class="contact-hero-vertical-border"></span>
+                <span class="contact-hero-vertical-border"></span>
             </div>
-            <div  class="contact-three-hero-border"></div>
+            <div class="tp-clip-path-wrapper d-block">
+              <span class="contact-three-hero-border tp-clip-path-target"></span>
+            </div>
+            
+            <!-- Main Content Area -->
             <div class="tp-flex-horizontal service-three-content position-relative">
-              <div class="service-three-hero-glow"></div>
-              <div class="tp-flex-vertical service-three-hero-text section-title col-lg-8 col-11">
-                <span class="section-subtitle text-capitalize wow fadeInUp" data-wow-delay="0.5s">our service</span>
-                <h1 class="service-three-hero-heading section-title-heading wow fadeInUp mt-25 mb-20" data-wow-delay="0.8s">Craft a Website That <span class="text-gradiant">Converts</span>
-                </h1>
-                <p class="mb-30 service-hero-description wow fadeInUp" data-wow-delay="1s">Lorem ipsum dolor sit amet consetetur adipiscing elit. Vestibulum rhoncus efficitur enon hendrerit sapien ctor maecen sapien consectetur malesuada faucibus.</p>
-                <div class="tp-flex-horizontal  gap-20 align-items-center justify-content-start service-growth-bottom wow fadeInUp" data-wow-delay="0.8s">
-                  <img width="186" height="60" alt="Users" src="assets/img/service-img/user.webp" loading="lazy" >
-                  <div class="tp-flex-vertical">
-                   <div class=" d-flex gap-2">
-                        <i class="bi bi-star-fill text-warning tp-fs-12"></i>
-                        <i class="bi bi-star-fill text-warning tp-fs-12"></i>
-                        <i class="bi bi-star-fill text-warning tp-fs-12"></i>
-                        <i class="bi bi-star-fill text-warning tp-fs-12"></i>
-                        <i class="bi bi-star-fill text-warning tp-fs-12"></i>
-                      </div>
-                    <span>180+ Reviews(4.9 of 5)</span>
-                  </div>
+                
+                <!-- Glow Effect -->
+                <div class="service-three-hero-glow"></div>
+                
+                <!-- Left Text Content -->
+                <div class="tp-flex-vertical service-three-hero-text section-title col-lg-8 col-11">
+                    <!-- Label -->
+                    <span class="section-subtitle text-capitalize tp-fade-up" data-delay="0.1s">our service</span>
+                    
+                    <!-- Main Heading -->
+                    <h1 class="service-three-hero-heading section-title-heading tp-fade-up mt-25 mb-20" data-delay="0.3s">
+                        Craft a Website That <span class="text-gradiant">Converts</span>
+                    </h1>
+                    
+                    <!-- Description -->
+                    <p class="mb-30 service-hero-description tp-fade-up" data-delay="0.3s">
+                        Lorem ipsum dolor sit amet consetetur adipiscing elit. Vestibulum rhoncus efficitur enon hendrerit sapien ctor maecen sapien consectetur malesuada faucibus.
+                    </p>
+                    
+                    <!-- Rating & User Avatars -->
+                    <div class="tp-flex-horizontal gap-20 align-items-center justify-content-start service-growth-bottom tp-fade-up" data-delay="0.4s">
+                        <img width="186" height="60" alt="Users" src="assets/img/service-img/user.webp" loading="lazy">
+                        <div class="tp-flex-vertical">
+                            <div class="d-flex gap-2">
+                                <i class="bi bi-star-fill text-warning tp-fs-12"></i>
+                                <i class="bi bi-star-fill text-warning tp-fs-12"></i>
+                                <i class="bi bi-star-fill text-warning tp-fs-12"></i>
+                                <i class="bi bi-star-fill text-warning tp-fs-12"></i>
+                                <i class="bi bi-star-fill text-warning tp-fs-12"></i>
+                            </div>
+                            <span>180+ Reviews (4.9 of 5)</span>
+                        </div>
+                    </div>
                 </div>
-              </div>
-              <div class="service-theree-hero-image-wrap">
-                <div class="position-relative h-100">
-                  <img width="921" height="517" alt="Graphic Hallway" src="assets/img/service-img/service-three-hero-1.webp" loading="lazy"  class="tp-radius-30 h-100" >
-                  <span class="service-three-hero-overlay"></span>
+                
+                <!-- Right Image Group -->
+                <div class="service-theree-hero-image-wrap">
+                    <div class="position-relative h-100">
+                        <!-- Main Large Image -->
+                        <img width="921" height="517" alt="Graphic Hallway" src="assets/img/service-img/service-three-hero-1.webp" loading="lazy" class="tp-radius-30 h-100">
+                        <span class="service-three-hero-overlay"></span>
+                    </div>
+                    <!-- Small Floating Image (Desktop only) -->
+                    <div class="service-three-hero-small-image position-relative d-none d-lg-block tp-fade-right" data-delay="0.5s">
+                        <img width="300" height="343" alt="Robot" src="assets/img/service-img/service-three-hero-2.webp" loading="lazy" class="tp-radius-30 common-parallax-div">
+                    </div>
                 </div>
-                <div  class="service-three-hero-small-image position-relative d-none d-lg-block wow fadeInRight" data-wow-delay="1s">
-                  <img width="300" height="343" alt="Robot" src="assets/img/service-img/service-three-hero-2.webp" loading="lazy"  class="tp-radius-30 common-parallax-div" >
-                </div>
-              </div>
+                
             </div>
-          </div>
         </div>
-      </section>
+    </div>
+</section>
     </div>
     <!-- ===================================================
 		service threeconnection
 		==================================================== -->
-    <section class="service-three-connection pt-80 pb-90 md-pt-60 md-pb-70 xxl-pt-150 xxl-pb-160">
+    <section class="service-three-connection pt-120 pb-120 md-pt-60 md-pb-120 xxl-pt-150 xxl-pb-160">
       <div class="container">
         <div class="tp-flex-vertical service-three-connection-main">
           <div class="service-three-connection-top section-title mb-40">
@@ -217,7 +245,7 @@
          <div class="row xs-row-gap-15">
 
   <div class="col-12 col-sm-12 col-md-6 col-lg-3">
-    <div class="service-three-cards wow fadeInUp" data-wow-delay="0.3s">
+    <div class="service-three-cards tp-fade-up" data-delay="0.2s">
       <div class="tp-flex-vertical service-three-cards-content">
         <div class="mb-10 tp-flex-vertical home-one-service-cards-icon pricing-icons">
           <i class="bi bi-compass tp-fs-xxl tp-z-3 position-relative"></i>
@@ -231,7 +259,7 @@
   </div>
 
   <div class="col-12 col-sm-12 col-md-6 col-lg-3">
-    <div class="service-three-cards wow fadeInUp" data-wow-delay="0.6s">
+    <div class="service-three-cards tp-fade-up" data-delay="0.4s">
       <div class="tp-flex-vertical service-three-cards-content">
         <div class="mb-10 tp-flex-vertical home-one-service-cards-icon pricing-icons">
           <i class="bi bi-pencil-square tp-fs-xxl tp-z-3 position-relative"></i>
@@ -245,7 +273,7 @@
   </div>
 
   <div class="col-12 col-sm-12 col-md-6 col-lg-3">
-    <div class="service-three-cards wow fadeInUp" data-wow-delay="0.9s">
+    <div class="service-three-cards tp-fade-up" data-delay="0.6s">
       <div class="tp-flex-vertical service-three-cards-content">
         <div class="mb-10 tp-flex-vertical home-one-service-cards-icon pricing-icons">
           <i class="bi bi-plug tp-fs-xxl tp-z-3 position-relative"></i>
@@ -259,7 +287,7 @@
   </div>
 
   <div class="col-12 col-sm-12 col-md-6 col-lg-3">
-    <div class="service-three-cards wow fadeInUp" data-wow-delay="1.3s">
+    <div class="service-three-cards tp-fade-up" data-delay="0.8s">
       <div class="tp-flex-vertical service-three-cards-content">
         <div class="mb-10 tp-flex-vertical home-one-service-cards-icon pricing-icons">
           <i class="bi bi-graph-up tp-fs-xxl tp-z-3 position-relative"></i>
@@ -280,9 +308,9 @@
 		service three progress
 		==================================================== -->
     <section>
-      <div class="container-fluid progress-scroll tp-reveal-section">
+      <div class="container-fluid progress-scroll">
         <div class="service-three-progress  position-relative">
-          <div class="service-three-image-wrap d-flex align-items-center justify-content-center">
+          <div class="service-three-image-wrap tp-flex-center">
             <div  class="overflow-hidden tp-reveal-wrap w-100">
               <img width="1290" height="490" alt="Graphic Image" src="assets/img/service-img/service-three-inner-img.webp" loading="lazy"  class="tp-radius-30 tab-image-full-width w-100 tp-reveal-img" >
             </div>
@@ -394,14 +422,14 @@
     <!-- ===================================================
 		service three options
 		==================================================== -->
-    <section class="service-three-options pb-90 md-pb-60 xxl-pb-150">
+    <section class="service-three-options pb-120 md-pb-60 xxl-pb-150">
       <div class="container">
         <div class="service-three-options-main row">
  
 
   
 <div class="col-12 col-md-6 col-lg-12">
-    <div class="service-three-options-cards align-items-center gap-3 gap-lg-0 tp-hover-wrap tp-service-cell-top wow fadeInUp row" data-wow-delay="0.8s">
+    <div class="service-three-options-cards align-items-center gap-3 gap-lg-0 tp-hover-wrap tp-service-cell-top tp-fade-up row" data-delay="0.2s">
       
       <div class="col-12 col-lg-6">
         <div class="d-flex service-three-options-card-left gap-30">
@@ -435,7 +463,7 @@
 
          <!-- 02 -->
 <div class="col-12 col-md-6 col-lg-12">
-  <div class="service-three-options-cards align-items-center gap-3 gap-lg-0 tp-hover-wrap cell-even wow fadeInUp row" data-wow-delay="0.8s">
+  <div class="service-three-options-cards align-items-center gap-3 gap-lg-0 tp-hover-wrap cell-even tp-fade-up row" data-delay="0.4s">
 
   <div class="col-12 col-lg-6">
     <div class="d-flex service-three-options-card-left gap-30">
@@ -467,7 +495,7 @@
 
 <!-- 03 -->
 <div class="col-12 col-md-6 col-lg-12">
-  <div class="service-three-options-cards align-items-center gap-3 gap-lg-0 tp-hover-wrap wow fadeInUp row" data-wow-delay="0.8s">
+  <div class="service-three-options-cards align-items-center gap-3 gap-lg-0 tp-hover-wrap tp-fade-up row" data-delay="0.7s">
 
   <div class="col-12 col-lg-6">
     <div class="d-flex service-three-options-card-left gap-30">
@@ -499,7 +527,7 @@
 
 <!-- 04 -->
 <div class="col-12 col-md-6 col-lg-12">
-  <div class="service-three-options-cards align-items-center gap-3 gap-lg-0 tp-hover-wrap cell-even wow fadeInUp row" data-wow-delay="0.8s">
+  <div class="service-three-options-cards align-items-center gap-3 gap-lg-0 tp-hover-wrap cell-even tp-fade-up row" data-delay="0.8s">
 
   <div class="col-12 col-lg-6">
     <div class="d-flex service-three-options-card-left gap-30">
@@ -534,17 +562,17 @@
     <!-- ===================================================
 		service three pricing
 		==================================================== -->
-    <section class="service-three-pricing md-pb-70 pb-90 xxl-pb-160">
+    <section class="service-three-pricing md-pb-120 pb-120 xxl-pb-160">
       <div class="container">
         <div class="tp-flex-vertical service-three-pricing-main section-title">
           <div class="col-md-8 col-10 mx-auto text-center">
-            <span class="section-subtitle text-capitalize wow fadeInUp" data-wow-delay="0.5s">pricing plan</span>
-          <h2 class="text-align-center pricing-heading section-title-heading wow fadeInUp" data-wow-delay="0.8s">Flexible Pricing for Every <span class="text-gradiant">Budget</span>
+            <span class="section-subtitle text-capitalize tp-flex-center tp-fade-up" data-delay="0.5s">pricing plan</span>
+          <h2 class="text-align-center pricing-heading section-title-heading tp-fade-up" data-delay="0.8s">Flexible Pricing for Every <span class="text-gradiant">Budget</span>
           </h2>
           </div>
-          <p class="mb-40 md-mb-30 w-100 text-center wow fadeInUp" data-wow-delay="0.8s">Peace of mind with our transparent pricing.</p>
+          <p class="mb-40 md-mb-30 w-100 text-center tp-fade-up" data-delay="0.8s">Peace of mind with our transparent pricing.</p>
           <div data-current="Tab 1" data-easing="ease" data-duration-in="0" data-duration-out="0" class="pricing-tab tp-flex-vertical align-items-center  tp-tab">
-            <div class="pricing-tabs-menu mb-80 md-mb-40 tp-tab-nav wow fadeInUp" data-wow-delay="0.8s">
+            <div class="pricing-tabs-menu mb-80 md-mb-40 tp-tab-nav tp-fade-up" data-delay="0.8s">
               <a data-tab="Tab 1" class="tab-button tp-inline-block tp-tab-btn tp-active" id="monthly-tab">
     <div>Monthly Plan</div>
   </a>
@@ -558,7 +586,7 @@
 
   <!-- CARD 1 -->
   <div class="col-12 col-md-6 col-lg-4">
-    <div class="tp-radius-30 tp-flex-vertical pricing-plans-cards wow fadeInUp linear-background" data-wow-delay="0.4s">
+    <div class="tp-radius-30 tp-flex-vertical pricing-plans-cards tp-fade-up linear-background" data-delay="0.4s">
       <div class="mb-15 tp-flex-vertical home-one-service-cards-icon pricing-icons">
         <img width="57" height="57" alt="Icon" src="assets/img/service-icons/service-ic-15.png" loading="lazy" class="home-one-service-icon">
         <div class="home-one-service-cards-icon-overlay"></div>
@@ -615,7 +643,7 @@
 
   <!-- CARD 2 -->
   <div class="col-12 col-md-6 col-lg-4">
-    <div class="tp-radius-30 sm-mt-20 tp-flex-vertical pricing-plans-cards pricing-bg wow fadeInUp" data-wow-delay="0.6s">
+    <div class="tp-radius-30 sm-mt-20 tp-flex-vertical pricing-plans-cards pricing-bg tp-fade-up" data-delay="0.6s">
       <div class="mb-15 tp-flex-vertical home-one-service-cards-icon pricing-icons">
         <img width="57" height="57" alt="Icon" src="assets/img/service-icons/service-ic-16.png" loading="lazy" class="home-one-service-icon">
         <div class="home-one-service-cards-icon-overlay"></div>
@@ -676,7 +704,7 @@
 
   <!-- CARD 3 -->
   <div class="col-12 col-md-6 col-lg-4">
-    <div class="md-mt-20 tp-radius-30 tp-flex-vertical pricing-plans-cards wow fadeInUp" data-wow-delay="0.8s">
+    <div class="md-mt-20 tp-radius-30 tp-flex-vertical pricing-plans-cards tp-fade-up" data-delay="0.8s">
       <div class="mb-15 tp-flex-vertical home-one-service-cards-icon pricing-icons">
         <img width="49" height="57" alt="Icon" src="assets/img/service-icons/service-ic-17.png" loading="lazy" class="home-one-service-icon">
         <div class="home-one-service-cards-icon-overlay"></div>
@@ -744,15 +772,15 @@
     <!-- ===================================================
 		home three testimonial
 		==================================================== -->
-     <section class="home-three-testimonial position-relative pt-90 md-pt-60 pb-10 md-pb-60 xxl-pt-150 xxl-pb-40 overflow-hidden">
+     <section class="home-three-testimonial position-relative pt-120 md-pt-60 pb-10 md-pb-60 xxl-pt-150 xxl-pb-40 overflow-hidden">
     <div class="container">
       <div class="tp-flex-vertical home-testimonial-main">
         <div class="tp-flex-vertical home-three-testimonial-top section-title">
-          <div class="tp-flex-horizontal small-tag-wrapper">
+          <div class="tp-flex-horizontal small-tag-wrapper tp-fade-up" data-delay="0.2s">
             <span class="dot"></span>
-            <span class="text-capitalize section-subtitle wow fadeInUp" data-wow-delay="0.5s">testimonials</span>
+            <span class="text-capitalize section-subtitle ">testimonials</span>
           </div>
-          <h3 class="section-title-heading mt-25 mb-55 xxl-mb-65 wow fadeInUp" data-wow-delay="0.8s">
+          <h3 class="section-title-heading mt-25 mb-55 xxl-mb-65 tp-fade-up" data-delay="0.4s">
             What Our Clients Are <span class="text-gradiant">Saying</span>
           </h3>
         </div>
@@ -855,7 +883,7 @@
      <section class="footer-three">
       <div class="container">
         <div  class="footer-one-border"></div>
-        <div class="pt-70 pb-70 md-pb-60 md-pt-60 row" >
+        <div class="pt-120 pb-120 md-pb-60 md-pt-60 row" >
          <div class="col-lg-3 col-12">
            <div class="footer-one-about-wrapper">
             <a href="index.html" class="site-logo tp-inline-block md-mb-20 mb-25">
