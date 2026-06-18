@@ -200,8 +200,8 @@
 
     .navbar.header-sticky,
     .navbar-three.header-sticky {
-        position: fixed !important;
-        animation: none !important
+        position: fixed ;
+        animation: none
     }
 
     .nav-inline {
@@ -265,7 +265,7 @@
         line-height: 33px;
     }
 
-
+.tp-details-hero-img-wrap{height: auto;}
     .about-three-hero-right {
         padding-left: 0;
     }

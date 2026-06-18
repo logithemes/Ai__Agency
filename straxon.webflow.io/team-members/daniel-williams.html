@@ -170,13 +170,13 @@
            <div class="row w-100 align-items-center row-gap-20">
 
   <div class="col-lg-8 col-12">
-    <h1 class="m-0 wow fadeInUp" data-wow-delay="0.8s">
+    <h1 class="m-0 tp-fade-up" data-delay="0.3s">
       Team <span class="text-gradiant">Details</span>
     </h1>
   </div>
 
   <div class="col-lg-4 col-12 d-flex justify-content-lg-end justify-content-start">
-    <p class="my-0 wow fadeInUp" data-wow-delay="0.8s" data-wow-delay="0.2s">
+    <p class="my-0 tp-fade-up"  data-delay="0.6s">
       Our diverse skillsets ensure we approach every project from multiple angles.
     </p>
   </div>
@@ -191,9 +191,11 @@
 		==================================================== -->
     <div class="team-details-lines-wrap">
       <div class="team-lines">
-        <div class="team-horizental-line top"></div>
-        <div class="team-vertical-line"></div>
-        <div class="team-horizental-line bottom"></div>
+       <div class="tp-clip-path-wrapper d-block position-relative w-100">
+         <span class="team-horizental-line top tp-clip-path-target d-block"></span>
+       </div>
+        <span class="team-vertical-line"></span>
+        <span class="team-horizental-line bottom"></span>
       </div>
       <section class="team-member-details pt-85 pb-85 xxl-pt-150 md-pt-10 md-pb-60">
      
@@ -202,210 +204,252 @@
 <div class="tp-flex-horizontal team-member-details-main">
 
   <!-- NEW ROW WRAPPER -->
-  <div class="row w-100 align-items-center row-gap-30">
+  <!-- ===== TEAM MEMBER DETAILS SECTION ===== -->
+<!-- Corrected tp-fade-up animation timings + semantic HTML for ThemeForest -->
+<!-- All original class names and IDs remain unchanged -->
+<div class="row w-100 align-items-center row-gap-30">
 
-    <!-- IMAGE -->
+    <!-- IMAGE COLUMN -->
     <div class="col-md-6 col-12">
-      <div class="team-member-details-image mx-auto wow fadeInUp" data-wow-delay="0.8s" data-wow-delay="0.2s">
-        <img width="410" height="575"
-          alt="Team member"
-          src="../assets/img/team/team-1.webp"
-          loading="lazy"
-          class="tp-radius-30 tab-image-full-width">
-      </div>
+        <div class="team-member-details-image mx-auto tp-fade-up" data-delay="0.1s">
+            <img width="410" height="575"
+                alt="Daniel Williams - Team Member"
+                src="../assets/img/team/team-1.webp"
+                loading="lazy"
+                class="tp-radius-30 tab-image-full-width">
+        </div>
     </div>
 
-    <!-- CONTENT -->
-    <div class="col-md-6 col-12 ">
-      <div class="team-member-information mx-auto">
+    <!-- CONTENT COLUMN -->
+    <div class="col-md-6 col-12">
+        <div class="team-member-information mx-auto">
 
-        <div class="text-capitalize mb-3 wow fadeInUp" data-wow-delay="0.8s" data-wow-delay="0.2s">
-          talented members
-        </div>
-
-        <div class=" team-member-name mb-2 wow fadeInUp" data-wow-delay="0.8s" data-wow-delay="0.4s">
-          <h4 class="heading-four">Daniel Williams</h4>
-          
-        </div>
-
-        <p class="mb-30 wow fadeInUp" data-wow-delay="0.8s" data-wow-delay="0.6s">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ultricies mauris vitae ultrices accumsan.
-          Orci varius natoque penatbs magnis dis parturient montes nascetur ridiculus mus.
-        </p>
-
-        <div class="mb-40">
-
-          <div class="tp-flex-horizontal team-member-about border-bottom-off gap-10 wow fadeInUp" data-wow-delay="0.8s" data-wow-delay="0.8s">
-            <i class="bi bi-envelope team-icons h-auto"></i>
-            <h5 class="heading-five">email:</h5>
-            <a href="mailto:info@example.com" class="tp-text-body tp-common-white">info@example.com</a>
-          </div>
-
-          <div class="tp-flex-horizontal team-member-about border-bottom-off gap-10 wow fadeInUp" data-wow-delay="0.8s" data-wow-delay="1s">
-            <i class="bi bi-telephone team-icons team-icon-two"></i>
-            <h5 class="heading-five">phone:</h5>
-            <a href="tel:(888)1234-5678" class="tp-text-body tp-common-white">(888) 1234-5678</a>
-          </div>
-          <div class="tp-flex-horizontal team-member-about wow fadeInUp" data-wow-delay="0.8s" data-wow-delay="1.2s">
-            <i class="bi bi-share team-icons team-icon-two h-auto"></i>
-            <h5 class="heading-five px-2">connect:</h5>
-
-            <div class="tp-flex-horizontal team-member-social-icons">
-              <a href="#" class="tp-inline-block tp-common-white">
-                <i class="bi bi-twitter-x"></i>
-              </a>
-
-              <a href="#" class="tp-inline-block tp-common-white">
-                <i class="bi bi-linkedin"></i>
-              </a>
-
-              <a href="#" class="tp-inline-block tp-common-white">
-                <i class="bi bi-skype"></i>
-              </a>
+            <!-- Label -->
+            <div class="text-capitalize mb-3 tp-fade-up" data-delay="0.2s">
+                talented members
             </div>
-          </div>
+
+            <!-- Name -->
+            <div class="team-member-name mb-2 tp-fade-up" data-delay="0.3s">
+                <h4 class="heading-four">Daniel Williams</h4>
+            </div>
+
+            <!-- Description -->
+            <p class="mb-30 tp-fade-up" data-delay="0.4s">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ultricies mauris vitae ultrices accumsan.
+                Orci varius natoque penatbs magnis dis parturient montes nascetur ridiculus mus.
+            </p>
+
+            <!-- Contact Details -->
+            <div class="mb-40">
+
+                <!-- Email -->
+                <div class="tp-flex-horizontal team-member-about border-bottom-off gap-10 tp-fade-up" data-delay="0.5s">
+                    <i class="bi bi-envelope team-icons h-auto" aria-hidden="true"></i>
+                    <h5 class="heading-five">email:</h5>
+                    <a href="mailto:info@example.com" class="tp-text-body tp-common-white">info@example.com</a>
+                </div>
+
+                <!-- Phone -->
+                <div class="tp-flex-horizontal team-member-about border-bottom-off gap-10 tp-fade-up" data-delay="0.6s">
+                    <i class="bi bi-telephone team-icons team-icon-two" aria-hidden="true"></i>
+                    <h5 class="heading-five">phone:</h5>
+                    <a href="tel:(888)1234-5678" class="tp-text-body tp-common-white">(888) 1234-5678</a>
+                </div>
+
+                <!-- Social Connect -->
+                <div class="tp-flex-horizontal team-member-about tp-fade-up" data-delay="0.7s">
+                    <i class="bi bi-share team-icons team-icon-two h-auto" aria-hidden="true"></i>
+                    <h5 class="heading-five px-2">connect:</h5>
+
+                    <div class="tp-flex-horizontal team-member-social-icons">
+                        <a href="#" class="tp-inline-block tp-common-white" aria-label="Twitter">
+                            <i class="bi bi-twitter-x" aria-hidden="true"></i>
+                        </a>
+
+                        <a href="#" class="tp-inline-block tp-common-white" aria-label="LinkedIn">
+                            <i class="bi bi-linkedin" aria-hidden="true"></i>
+                        </a>
+
+                        <a href="#" class="tp-inline-block tp-common-white" aria-label="Skype">
+                            <i class="bi bi-skype" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- CTA Button -->
+            <div class="tp-flex-horizontal tp-fade-up" data-delay="0.8s">
+                <div class="button-wrapper">
+                    <a href="mailto:info@example.com" class="tp-btn tp-common-white">get in touch</a>
+                    <div class="button-border-effect"></div>
+                </div>
+            </div>
 
         </div>
-
-        <div class="tp-flex-horizontal wow fadeInUp" data-wow-delay="0.8s" data-wow-delay="1.4s">
-          <div class="button-wrapper">
-            <a href="mailto:info@example.com" class="tp-btn tp-common-white">get in touch</a>
-            <div class="button-border-effect"></div>
-          </div>
-        </div>
-
-      </div>
     </div>
 
-  </div>
+</div>
 </div>
 
          <!--  -->
         </div>
       </section>
-      <section>
-        <div class="container">
-          <div class="tp-flex-vertical team-details-progress-main align-items-center">
-           <div class="row">
-             <h2 class="col-11 col-lg-8 mx-auto col-md-10 text-center mb-60 md-mb-40 wow fadeInUp" data-wow-delay="0.8s" data-wow-delay="0.2s">How
-              Our member&#x27;s Expertise Benefits <span class="text-gradiant">Project</span>
-            </h2>
-           </div>
-          <div class="tp-flex-horizontal team-details-progress-wrap progress-scroll tp-radius-30 overflow-hidden w-100">
-
-  <!-- NEW ROW WRAPPER -->
-  <div class="row w-100 align-items-center m-0">
-
-    <!-- IMAGE -->
-    <div class="col-md-6 col-12 px-0 h-100">
-      <div  class="team-details-progress-image-wrap h-100 w-100 wow fadeInUp" data-wow-delay="0.8s" data-wow-delay="0.2s">
-        <img class="team-details-image h-100 w-100" src="../assets/img/team/team-office-image-1.webp"
-          width="645" height="430" alt="Team office" loading="lazy">
-      </div>
-    </div>
-
-    <!-- CONTENT -->
-    <div class="col-md-6 col-12">
-      <div class="tp-flex-vertical team-details-progress-right mx-auto h-100 justify-content-center wow fadeInUp" data-wow-delay="0.8s" data-wow-delay="0.4s">
-        <div class="tp-flex-vertical team-details-progress-text mx-auto px-1 px-lg-5">
-          <div class="heading-four progress-heading mb-20">Our
-            members Bridges the Gap to Achieve top Goals</div>
-          <p class="mb-40">Lorem ipsum dolor sit
-            amet, consectetur adipiscing elit. Pellentesque ultricies mauris vitae ultrices accumsan orci varius
-            natoque.</p>
-
-          <div class="team-details-progress-box gap-20 tp-flex-vertical">
-
-            <div class="team-details-progress-box">
-              <div class="tp-flex-horizontal about-progress-bar-top gap-30 justify-content-between">
-                <div class="text-capitalize">market analysis</div>
-                <span class="text-capitalize">95%</span>
-              </div>
-              <div class="about-progress-bar-inner">
-                <div class="about-progress-gradiant-bar about-progress-bar-one width-0"></div>
-              </div>
+     <!-- ===== TEAM DETAILS PROGRESS SECTION ===== -->
+<!-- Corrected tp-fade-up animation timings + semantic HTML for ThemeForest -->
+<!-- All original class names and IDs remain unchanged -->
+<section class="team-details-progress-section">
+    <div class="container">
+        <div class="tp-flex-vertical team-details-progress-main align-items-center">
+            
+            <!-- Section Heading -->
+            <div class="row">
+                <h2 class="col-11 col-lg-8 mx-auto col-md-10 text-center mb-60 md-mb-40 tp-fade-up" data-delay="0.1s">
+                    How Our member&#x27;s Expertise Benefits <span class="text-gradiant">Project</span>
+                </h2>
             </div>
+            
+            <!-- Progress Content Wrapper -->
+            <div class="tp-flex-horizontal team-details-progress-wrap progress-scroll tp-radius-30 overflow-hidden w-100">
 
-            <div class="team-details-progress-box">
-              <div class="tp-flex-horizontal about-progress-bar-top gap-30 justify-content-between">
-                <div class="text-capitalize">online consulting</div>
-                <span class="text-capitalize">91%</span>
-              </div>
-              <div class="about-progress-bar-inner">
-                <div class="about-progress-gradiant-bar about-progress-bar-two width-0"></div>
-              </div>
+                <!-- NEW ROW WRAPPER -->
+                <div class="row w-100 align-items-center m-0">
+
+                    <!-- IMAGE COLUMN -->
+                    <div class="col-md-6 col-12 px-0 h-100">
+                        <div class="team-details-progress-image-wrap h-100 w-100 tp-fade-up" data-delay="0.2s">
+                            <img class="team-details-image h-100 w-100" src="../assets/img/team/team-office-image-1.webp"
+                                width="645" height="430" alt="Team office working together" loading="lazy">
+                        </div>
+                    </div>
+
+                    <!-- CONTENT COLUMN -->
+                    <div class="col-md-6 col-12">
+                        <div class="tp-flex-vertical team-details-progress-right mx-auto h-100 justify-content-center tp-fade-up" data-delay="0.3s">
+                            <div class="tp-flex-vertical team-details-progress-text mx-auto px-1 px-lg-5">
+                                
+                                <!-- Heading -->
+                                <div class="heading-four progress-heading mb-20">Our members Bridges the Gap to Achieve top Goals</div>
+                                
+                                <!-- Description -->
+                                <p class="mb-40">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ultricies mauris vitae ultrices accumsan orci varius natoque.</p>
+
+                                <!-- Progress Bars -->
+                                <div class="team-details-progress-box gap-20 tp-flex-vertical">
+
+                                    <!-- Progress Bar 1: Market Analysis -->
+                                    <div class="team-details-progress-box">
+                                        <div class="tp-flex-horizontal about-progress-bar-top gap-30 justify-content-between">
+                                            <div class="text-capitalize">market analysis</div>
+                                            <span class="text-capitalize">95%</span>
+                                        </div>
+                                        <div class="about-progress-bar-inner">
+                                            <div class="about-progress-gradiant-bar about-progress-bar-one width-0" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 95%;"></div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Progress Bar 2: Online Consulting -->
+                                    <div class="team-details-progress-box">
+                                        <div class="tp-flex-horizontal about-progress-bar-top gap-30 justify-content-between">
+                                            <div class="text-capitalize">online consulting</div>
+                                            <span class="text-capitalize">91%</span>
+                                        </div>
+                                        <div class="about-progress-bar-inner">
+                                            <div class="about-progress-gradiant-bar about-progress-bar-two width-0" role="progressbar" aria-valuenow="91" aria-valuemin="0" aria-valuemax="100" style="width: 91%;"></div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Progress Bar 3: Business Management -->
+                                    <div class="team-details-progress-box">
+                                        <div class="tp-flex-horizontal about-progress-bar-top gap-30 justify-content-between">
+                                            <div class="text-capitalize">business management</div>
+                                            <span class="text-capitalize">98%</span>
+                                        </div>
+                                        <div class="about-progress-bar-inner">
+                                            <div class="about-progress-gradiant-bar about-progress-bar-three width-0" role="progressbar" aria-valuenow="98" aria-valuemin="0" aria-valuemax="100" style="width: 98%;"></div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
             </div>
-
-            <div class="team-details-progress-box">
-              <div class="tp-flex-horizontal about-progress-bar-top gap-30 justify-content-between">
-                <div class="text-capitalize">business management</div>
-                <span class="text-capitalize">98%</span>
-              </div>
-              <div class="about-progress-bar-inner">
-                <div class="about-progress-gradiant-bar about-progress-bar-three width-0"></div>
-              </div>
+        </div>
+    </div>
+</section>
+     <!-- ===== TEAM DETAILS APPROACH SECTION ===== -->
+<!-- Corrected tp-fade-up animation timings + semantic HTML for ThemeForest -->
+<!-- All original class names and IDs remain unchanged -->
+<section class="team-details-approach pt-120 pb-120 xxl-pt-150 xxl-pb-120 md-pt-60 md-pb-10">
+    <div class="container">
+        <div class="w-100 team-details-approach-main d-block">
+            <div class="row row-gap-20">
+                
+                <!-- LEFT COLUMN: Approach Text -->
+                <div class="col-12 col-md-6">
+                    <div class="tp-flex-vertical team-details-approach-left">
+                        <!-- Label -->
+                        <span class="text-capitalize tp-fade-up" data-delay="0.1s">my approach</span>
+                        
+                        <!-- Heading -->
+                        <h3 class="my-approach-heading mb-25 tp-fade-up" data-delay="0.2s">
+                            explore service &amp; <br class="d-none d-md-block">
+                            <span class="text-gradiant">experience</span>
+                        </h3>
+                        
+                        <!-- Quote -->
+                        <p class="my-approach-quote mb-40 tp-fade-up" data-delay="0.3s">
+                            " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ultricies mauris vitae ultrices accumsan. Orci varius natoque penatibus magnis."
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- RIGHT COLUMN: Experience & Service Lists -->
+                <div class="col-12 col-md-6">
+                    <div class="my-approach-right d-block w-100 m-0 mx-md-auto">
+                        <div class="row row-gap-20">
+                            
+                            <!-- Experience List -->
+                            <div class="my-approach-columns col-12 col-sm-6 tp-fade-up" data-delay="0.4s">
+                                <div class="text-capitalize tp-common-white mb-2 mb-md-4">experience</div>
+                                <div class="text-capitalize tp-richtext">
+                                    <p>Marketing</p>
+                                    <p>15 years work experience</p>
+                                    <p>Quality Resourcing</p>
+                                    <p>Professional UI/UX Design</p>
+                                    <p>Digital strategy</p>
+                                </div>
+                            </div>
+                            
+                            <!-- Service List -->
+                            <div class="my-approach-columns col-12 col-sm-6 tp-fade-up" data-delay="0.5s">
+                                <div class="text-capitalize tp-common-white mb-2 mb-md-4">service</div>
+                                <div class="text-capitalize tp-richtext">
+                                    <p>Web development</p>
+                                    <p>75 established fact reader</p>
+                                    <p>Art direction</p>
+                                    <p>Creative UI designing</p>
+                                    <p>business management</p>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                
             </div>
-
-          </div>
         </div>
-      </div>
     </div>
-
-  </div>
-</div>
-          </div>
-        </div>
-      </section>
-      <section class="team-details-approach pt-80 pb-70 xxl-pt-150 xxl-pb-120 md-pt-60 md-pb-10">
-        <div class="container">
-         <div class="w-100 team-details-approach-main d-block">
-          <div class="row row-gap-20">
-  <div class="col-12 col-md-6">
-    <div class="tp-flex-vertical team-details-approach-left">
-      <span class="text-capitalize wow fadeInUp" data-wow-delay="0.8s" data-wow-delay="0.2s">my approach</span>
-     <h3 class="my-approach-heading mb-25 wow fadeInUp" data-wow-delay="0.8s" data-wow-delay="0.4s">explore service &amp; <br class="d-none d-md-block">
-  <span class="text-gradiant">experience</span>
-</h3>
-      <p class="my-approach-quote mb-40 wow fadeInUp" data-wow-delay="0.8s" data-wow-delay="0.6s">
-        “ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ultricies mauris vitae ultrices accumsan. Orci varius natoque penatibus magnis.”
-      </p>
-    </div>
-  </div>
-  <div class="col-12 col-md-6">
-    <div class="my-approach-right d-block w-100 m-0 mx-md-auto">
-       <div class="row row-gap-20">
-      <div class=" my-approach-columns col-12 col-sm-6 wow fadeInUp" data-wow-delay="0.8s" data-wow-delay="0.8s">
-        <div class="text-capitalize tp-common-white mb-2 mb-md-4">experience</div>
-        <div class="text-capitalize tp-richtext">
-          <p>Marketing</p>
-          <p>15 years work experience</p>
-          <p>Quality Resourcing</p>
-          <p>Professional UI/UX Design</p>
-          <p>Digital strategy</p>
-        </div>
-      </div>
-      <div class=" my-approach-columns col-12 col-sm-6 wow fadeInUp" data-wow-delay="0.8s" data-wow-delay="1.0s">
-        <div class="text-capitalize tp-common-white mb-2 mb-md-4">service</div>
-        <div class="text-capitalize tp-richtext">
-          <p>Web development</p>
-          <p>75 established fact reader</p>
-          <p>Art direction</p>
-          <p>Creative UI designing</p>
-          <p>business management</p>
-        </div>
-      </div>
-     </div>
-    </div>
-  </div>
-</div>
-</div>
-        </div>
-      </section>
+</section>
     </div>
     <!-- ===================================================
 		team details clients
 		==================================================== -->
-    <section class="clients  wow fadeInUp px-3 pt-80 md-pt-60 xxl-pt-120" data-wow-delay="0.8s">
+    <section class="clients  tp-fade-up px-3 pt-120 md-pt-60 xxl-pt-120" data-delay="0.8s">
       <div class="container-fluid">
         <div class="clients-main d-flex flex-column gap-50  position-relative  align-items-center justify-content-start pb-0">
         
@@ -471,11 +515,11 @@
           <div class="col-xl-5 col-md-8 col-12 mx-auto text-center z-1">
             <div class="section-title text-center mt-15 mb-60 md-mb-30 service-section-title pt-40">
 
-              <span class="section-subtitle text-capitalize wow fadeInUp" data-wow-delay="0.6s">
+              <span class="section-subtitle text-capitalize tp-fade-up tp-flex-center" data-delay="0.6s">
                 testimonials
               </span>
 
-              <h2 class="section-title-heading service-title wow fadeInUp mb-0" data-wow-delay="0.8s">
+              <h2 class="section-title-heading service-title tp-fade-up mb-0" data-delay="0.8s">
                 Testimonials That Tell
                 <span class="text-gradiant">our story</span>
               </h2>
@@ -823,7 +867,7 @@
   <section class="footer-three">
       <div class="container">
         <div  class="footer-one-border"></div>
-        <div class="pt-70 pb-70 md-pb-60 md-pt-60 row" >
+        <div class="pt-120 pb-120 md-pb-60 md-pt-60 row" >
          <div class="col-lg-3 col-12">
            <div class="footer-one-about-wrapper">
             <a href="index.html" class="site-logo tp-inline-block md-mb-20 mb-25">
