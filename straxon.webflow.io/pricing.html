@@ -172,17 +172,17 @@
 				==================================================== -->
           <div class="row">
           <div class="tp-flex-vertical col-10 text-center col-lg-8 mx-auto mb-60 md-mb-30">
-            <h1 class="mt-0 mb-20 wow fadeInUp" data-wow-delay="0.8s">pricing plan for your
+            <h1 class="mt-0 mb-20 tp-fade-up" data-delay="0.4s">pricing plan for your
               <span class="text-gradiant">business</span>
             </h1>
-            <p class="wow fadeInUp w-100 text-center" data-wow-delay="1.3s">Peace of mind with our transparent pricing. </p>
+            <p class="tp-fade-up w-100 text-center" data-delay="0.5s">Peace of mind with our transparent pricing. </p>
           </div>
           </div>
           <div class="pricing-hero-bottom mb-80 md-mb-60">
-            <div data-current="Tab 1" data-easing="ease" data-duration-in="0" data-duration-out="0"
+            <div data-current="Tab 1"
               class="pricing-tab tp-flex-vertical align-items-center tp-tabs">
-               <div class="pricing-tabs-menu mb-60 md-mb-40 tp-tab-nav wow fadeInUp" data-wow-delay="0.8s">
-              <a data-tab="Tab 1" class="tab-button tp-inline-block tp-tab-btn d-block" id="monthly-tab">
+               <div class="pricing-tabs-menu tp-flex-center mb-60 md-mb-40 tp-tab-nav tp-fade-up" data-delay="0.4s">
+              <a data-tab="Tab 1" class="tab-button tp-inline-block tp-tab-btn d-block tp-active" id="monthly-tab">
     <div>Monthly Plan</div>
   </a>
   <a data-tab="Tab 2" class="tab-button tp-inline-block tp-tab-btn" id="yearly-tab">
@@ -195,7 +195,7 @@
 
   <!-- CARD 1 -->
   <div class="col-12 col-md-6 col-lg-4">
-    <div class="tp-radius-30 tp-flex-vertical pricing-plans-cards wow fadeInUp" data-wow-delay="0.3s">
+    <div class="tp-radius-30 tp-flex-vertical pricing-plans-cards tp-fade-up" data-delay="0.3s">
       <div class="tp-flex-vertical home-one-service-cards-icon pricing-icons">
         <img width="57" height="57" alt="Icon" src="assets/img/service-icons/service-ic-15.png" loading="lazy" class="home-one-service-icon">
         <div class="home-one-service-cards-icon-overlay"></div>
@@ -252,7 +252,7 @@
 
   <!-- CARD 2 -->
   <div class="col-12 col-md-6 col-lg-4">
-    <div class="tp-radius-30 tp-flex-vertical pricing-plans-cards linear-background wow fadeInUp" data-wow-delay="0.5s">
+    <div class="tp-radius-30 tp-flex-vertical pricing-plans-cards linear-background tp-fade-up" data-delay="0.4s">
       <div class="tp-flex-vertical home-one-service-cards-icon pricing-icons">
         <img width="57" height="57" alt="Icon" src="assets/img/service-icons/service-ic-16.png" loading="lazy" class="home-one-service-icon">
         <div class="home-one-service-cards-icon-overlay"></div>
@@ -313,7 +313,7 @@
 
   <!-- CARD 3 -->
   <div class="col-12 col-md-6 col-lg-4">
-    <div class="tp-radius-30 tp-flex-vertical pricing-plans-cards wow fadeInUp" data-wow-delay="1s">
+    <div class="tp-radius-30 tp-flex-vertical pricing-plans-cards tp-fade-up" data-delay="0.8s">
       <div class="mb-15 tp-flex-vertical home-one-service-cards-icon pricing-icons">
         <img width="49" height="57" alt="Icon" src="assets/img/service-icons/service-ic-17.png" loading="lazy" class="home-one-service-icon">
         <div class="home-one-service-cards-icon-overlay"></div>
@@ -409,80 +409,89 @@
   <!-- ===================================================
 		accordion section
 	==================================================== -->
-  <section class="home-three-faq xxl-pb-120 md-pb-60 pb-80 xxl-pt-120 md-pt-60 pt-80">
+ <!-- ===== HOME THREE FAQ SECTION ===== -->
+<!-- Added tp-fade-up animation timings + semantic HTML for ThemeForest -->
+<!-- All original class names and IDs remain unchanged -->
+<section class="home-three-faq xxl-pb-120 md-pb-60 pb-120 xxl-pt-120 md-pt-60 pt-120">
     <div class="container">
         <div class="tp-flex-horizontal home-three-faq-main row g-4">
 
-  <!-- LEFT SIDE -->
-  <div class="col-12 col-md-5">
-    <div class="tp-flex-vertical home-three-faq-text-wrapper section-title">
-      
-      <div class="tp-flex-horizontal small-tag-wrapper">
-        <span class="dot"></span>
-        <div class="text-capitalize">FAQ</div>
-      </div>
+            <!-- LEFT SIDE: Heading & CTA -->
+            <div class="col-12 col-md-5">
+                <div class="tp-flex-vertical home-three-faq-text-wrapper section-title">
+                    
+                    <!-- Tag with Dot -->
+                    <div class="tp-flex-horizontal small-tag-wrapper tp-fade-up"  data-delay="0.1s">
+                        <span class="dot"></span>
+                        <div class="text-capitalize ">FAQ</div>
+                    </div>
 
-      <h2 class="mt-25 faq-heading">
-        From Vision to <span class="text-gradiant">Reality</span>
-      </h2>
+                    <!-- Main Heading -->
+                    <h2 class="mt-25 faq-heading tp-fade-up" data-delay="0.2s">
+                        From Vision to <span class="text-gradiant d-block">Reality</span>
+                    </h2>
 
-      <div class="button-wrapper">
-        <a href="pricing.html" class="tp-btn tp-common-white">learn more</a>
-        <div class="button-border-effect"></div>
-      </div>
+                    <!-- CTA Button -->
+                    <div class="button-wrapper tp-fade-up" data-delay="0.3s">
+                        <a href="pricing.html" class="tp-btn tp-common-white">learn more</a>
+                        <div class="button-border-effect"></div>
+                    </div>
 
+                </div>
+            </div>
+
+            <!-- RIGHT SIDE: FAQ Accordion -->
+            <div class="col-12 col-md-7">
+                <div class="home-three-faq-box accordion d-flex flex-column gap-3 gap-md-4" id="faqAccordion">
+
+                    <!-- FAQ Item 1 (Open by default) -->
+                    <div class="faq-border tp-fade-up" data-delay="0.2s">
+                        <div class="tp-flex-horizontal faq-top mb-2 align-items-center justify-content-between" data-bs-toggle="collapse" data-bs-target="#faqOne" role="button" aria-expanded="true" aria-controls="faqOne">
+                            <h3 class="heading-five my-0">What digital marketing services do you offer?</h3>
+                            <i class="bi bi-caret-down border-bottom-0 dropdown-icon dropdown-icon-one text-secondary"></i>
+                        </div>
+
+                        <div class="collapse faq-answers faq-answers-one show" id="faqOne" data-bs-parent="#faqAccordion">
+                            <p class="faq-text mt-0 mb-3">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 2 -->
+                    <div class="faq-border tp-fade-up" data-delay="0.3s">
+                        <div class="tp-flex-horizontal faq-top mb-2 align-items-center justify-content-between" data-bs-toggle="collapse" data-bs-target="#faqTwo" role="button" aria-expanded="false" aria-controls="faqTwo">
+                            <h3 class="heading-five my-0">Do you offer web design and development services?</h3>
+                            <i class="bi bi-caret-down border-bottom-0 dropdown-icon dropdown-icon-one text-secondary"></i>
+                        </div>
+
+                        <div class="collapse faq-answers faq-answers-two" id="faqTwo" data-bs-parent="#faqAccordion">
+                            <p class="faq-text mt-0 mb-3">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 3 -->
+                    <div class="faq-border tp-fade-up" data-delay="0.4s">
+                        <div class="tp-flex-horizontal faq-top mb-2 align-items-center justify-content-between" data-bs-toggle="collapse" data-bs-target="#faqThree" role="button" aria-expanded="false" aria-controls="faqThree">
+                            <h3 class="heading-five my-0">What are your payment terms?</h3>
+                            <i class="bi bi-caret-down border-bottom-0 dropdown-icon dropdown-icon-one text-secondary"></i>
+                        </div>
+
+                        <div class="collapse faq-answers faq-answers-three" id="faqThree" data-bs-parent="#faqAccordion">
+                            <p class="faq-text mt-0 mb-3">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
     </div>
-  </div>
-
-  <!-- RIGHT SIDE -->
-  <div class="col-12 col-md-7">
-    <div class="home-three-faq-box accordion d-flex flex-column gap-3 gap-md-4 " id="faqAccordion">
-
-      <div class="faq-border">
-        <div class="tp-flex-horizontal faq-top mb-2 align-items-center justify-content-between" data-bs-toggle="collapse" data-bs-target="#faqOne">
-          <h3 class="heading-five my-0">What digital marketing services do you offer?</h3>
-          <i class="bi bi-caret-down border-bottom-0 dropdown-icon dropdown-icon-one text-secondary"></i>
-        </div>
-
-        <div class="collapse faq-answers faq-answers-one show" id="faqOne" data-bs-parent="#faqAccordion">
-          <p class="faq-text mt-0 mb-3">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          </p>
-        </div>
-      </div>
-
-      <div class="faq-border">
-        <div class="tp-flex-horizontal faq-top mb-2 align-items-center justify-content-between" data-bs-toggle="collapse" data-bs-target="#faqTwo">
-          <h3 class="heading-five my-0">Do you offer web design and development services?</h3>
-          <i class="bi bi-caret-down border-bottom-0 dropdown-icon dropdown-icon-one text-secondary"></i>
-        </div>
-
-        <div class="collapse faq-answers faq-answers-two" id="faqTwo" data-bs-parent="#faqAccordion">
-          <p class="faq-text mt-0 mb-3">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          </p>
-        </div>
-      </div>
-
-      <div class="faq-border">
-        <div class="tp-flex-horizontal faq-top mb-2 align-items-center justify-content-between" data-bs-toggle="collapse" data-bs-target="#faqThree">
-          <h3 class="heading-five my-0">What are your payment terms?</h3>
-          <i class="bi bi-caret-down border-bottom-0 dropdown-icon dropdown-icon-one text-secondary"></i>
-        </div>
-
-        <div class="collapse faq-answers faq-answers-three" id="faqThree" data-bs-parent="#faqAccordion">
-          <p class="faq-text mt-0 mb-3">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          </p>
-        </div>
-      </div>
-
-    </div>
-  </div>
-
-</div>
-    </div>
-  </section>
+</section>
     <!-- ===================================================
 			  Testimonial section
 			==================================================== -->
@@ -492,24 +501,23 @@
       <div class="container">
 
         <!-- heading -->
-        <div class="row align-items-center justify-content-center mb-40 position-relative">
+        <div class="row align-items-center justify-content-center mb-40 position-relative tp-clip-path-wrapper">
 
           <div class="col-xl-5 col-md-8 col-12 mx-auto text-center z-1">
-            <div class="section-title text-center mt-15 mb-60 md-mb-30 service-section-title pt-40">
+            <div class="section-title text-center mt-15 mb-40 md-mb-30 service-section-title pt-40">
 
-              <span class="section-subtitle text-capitalize wow fadeInUp" data-wow-delay="0.6s">
+              <span class="section-subtitle justify-content-center text-capitalize tp-fade-up" data-delay="0.3s">
                 testimonials
               </span>
 
-              <h2 class="section-title-heading service-title wow fadeInUp mb-0" data-wow-delay="0.8s">
+              <h2 class="section-title-heading service-title tp-fade-up mb-0" data-delay="0.6s">
                 Testimonials That Tell
                 <span class="text-gradiant">our story</span>
               </h2>
             </div>
           </div>
-          <span class="home-one-testimonial-content h-100"></span>
+          <span class="home-one-testimonial-content h-100 tp-clip-path-target"></span>
         </div>
-
 <div class=" d-block px-sm-5 px-0 overflow-hidden">
       <!-- slider -->
         <div class="tp-process-slider swiper ">
@@ -849,7 +857,7 @@
  <section class="footer-three">
       <div class="container">
         <div  class="footer-one-border"></div>
-         <div class="pt-70 pb-70 md-pb-60 md-pt-60 row" >
+         <div class="pt-120 pb-120 md-pb-60 md-pt-60 row" >
          <div class="col-lg-3 col-12">
            <div class="footer-one-about-wrapper">
             <a href="index.html" class="site-logo tp-inline-block md-mb-20 mb-25">
