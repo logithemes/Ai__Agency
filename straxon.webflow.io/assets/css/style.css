@@ -2779,11 +2779,6 @@ position: absolute;
     line-height: 0.9;
 }
 
-.home-two-portfolio {
-    z-index: 1;
-    position: relative;
-}
-
 .crystal-shape {
     animation: up_down 5s infinite;
 }
