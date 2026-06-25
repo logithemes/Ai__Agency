@@ -185,7 +185,7 @@
       .tp-process-item {
         min-height: auto;
       }
- 
+ .center-menu-wrapper{position: absolute;}
 
     .tp-container {
         max-width: 728px;

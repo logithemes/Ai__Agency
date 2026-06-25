@@ -77,6 +77,7 @@
     --icons-background: #1d1f34;
     --light-black: #161724;
     --mobile-bg-color: #e85189;
+     --tp-section-bg: #ddd;
 
     /* Font Family */
     --heading-font: 'Bebas Neue', sans-serif;
@@ -272,13 +273,14 @@ th {
 
 ul,
 ol {
-    margin-top: 0;
-    margin-bottom: 10px;
-    padding-left: 40px;
+   margin: 0;
+    padding: 0;
+   
 }
 
 li {
     margin-bottom: 5px;
+    list-style-type: none;
 }
 
 p {
@@ -722,7 +724,6 @@ a:hover {
 ---------------------------------*/
 .menu-item {
     text-align: left;
-    z-index: 900;
     margin-left: auto;
     margin-right: auto;
     display: inline-block;
@@ -735,6 +736,7 @@ a:hover {
 .menu-item:hover .menu-dp-icon {
     transform: rotate(180deg);
     transition: var(--transition-medium);
+    color: var(--white);
 }
 
 .menu-item-toggle,
@@ -748,19 +750,14 @@ a:hover {
     padding: 20px;
     text-decoration: none;
     position: relative;
+    -webkit-user-select: none;
+    
+    user-select: none;
+    pointer-events: fill;
 }
 
 .main-menu-section {
     position: relative;
-}
-
-.menu-item-toggle {
-    -webkit-user-select: none;
-    user-select: none;
-    cursor: pointer;
-    padding-right: 40px;
-    display: inline-block;
-    pointer-events: fill;
 }
 
 .menu-item-toggle:focus {
@@ -777,10 +774,12 @@ a:hover {
     right: 0;
     pointer-events: auto;
     transition: var(--transition-medium);
+    -webkit-text-stroke: 0.5px;
+    color: var(--menu-color);
 }
 
 .dp-menu {
-    background: #ddd;
+    background: var(--tp-section-bg);
     min-width: 100%;
     position: absolute;
     visibility: hidden;
@@ -802,13 +801,13 @@ a:hover {
     outline: 0;
 }
 
-
+.main-menu{}
 /*---------------------------------
 	nav css start 
 ---------------------------------*/
 .header-main {
     z-index: 1000;
-    background: #ddd;
+    background: var(--tp-section-bg);
     position: relative;
 }
 
@@ -819,11 +818,8 @@ a:hover {
 }
 
 .header-logo {
-    float: left;
-    color: #333;
-    text-decoration: none;
     position: relative;
-    cursor: pointer;
+   display: inline-block;
 }
 
 
@@ -984,7 +980,7 @@ a:hover {
 
 
 
-.navbar-one-wrapper .tp-dropdown-toggle::after {
+.navbar-one .tp-dropdown-toggle::after {
     display: none;
 }
 
@@ -1154,7 +1150,7 @@ a:hover {
     clear: both;
     -webkit-tap-highlight-color: #0000;
     tap-highlight-color: #0000;
-    background: #ddd;
+    background: var(--tp-section-bg);
     height: 300px;
     position: relative;
 }
