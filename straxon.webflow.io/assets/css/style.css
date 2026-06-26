@@ -116,6 +116,13 @@
     --heading-lh: 1;
     --heading-spacing: 1px;
 
+    /* Bg-gradient */
+      --tp-section-gradient-bg:
+        radial-gradient(circle at 32%, rgba(180, 96, 241, 0.29), transparent 16%),
+        radial-gradient(circle at 64% 23%, rgba(244, 73, 114, 0.22), transparent 17%),
+        radial-gradient(circle at 94% 33%, rgba(180, 96, 241, 0.15), transparent 16%),
+        radial-gradient(circle at 11% 16%, rgba(244, 73, 114, 0.20), transparent 13%);
+    
 }
 
 
@@ -5707,11 +5714,6 @@ text-align: center;
 
 .screenshots-marquee-wrapper {
     z-index: 1;
-    grid-column-gap: 20px;
-    grid-row-gap: 20px;
-    justify-content: flex-start;
-    align-items: center;
-    display: flex;
     position: absolute;
     top: 0;
     bottom: 0;
@@ -5864,8 +5866,6 @@ text-align: center;
     background-color: #0a0b16;
     border-radius: 20px;
     flex: 1;
-    justify-content: center;
-    align-items: center;
     padding: 20px;
 }
 
@@ -5888,10 +5888,7 @@ text-align: center;
     landing hero css start 
 ---------------------------------*/
 .landing-hero {
-    background-image: radial-gradient(circle at 32%, #b460f14a, #b460f100 16%),
-        radial-gradient(circle at 64% 23%, #f4497238, #f4497200 17%),
-        radial-gradient(circle at 94% 33%, #b460f126, #b460f100 16%),
-        radial-gradient(circle at 11% 16%, #f4497233, #f4497200 13%);
+    background-image: var(--tp-section-gradient-bg)
 }
 
 .landing-hero-container {
@@ -5901,8 +5898,6 @@ text-align: center;
 
 
 .landing-hero-details {
-    align-items: center;
-    justify-content: center;
     position: relative;
 }
 
