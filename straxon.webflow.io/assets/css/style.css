@@ -1037,6 +1037,7 @@ a:hover {
     justify-content: flex-start;
     align-items: center;
     padding-top: 20px;
+    display: flex;
 }
 
 .navbar-three-dropdown {
@@ -3116,7 +3117,14 @@ label {
     grid-row-gap: 14px;
     max-width: 229px;
 }
+.rotate-arrow {
+    transition: transform .3s ease;
+}
 
+/* Open */
+.navbar-three-toggle:not(.collapsed) .rotate-arrow {
+    transform: rotate(180deg);
+}
 .navbar-three-main-menu {
     z-index: 150;
     background-color: var(--body-color);
