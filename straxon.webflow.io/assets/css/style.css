@@ -122,6 +122,7 @@
         radial-gradient(circle at 64% 23%, rgba(244, 73, 114, 0.22), transparent 17%),
         radial-gradient(circle at 94% 33%, rgba(180, 96, 241, 0.15), transparent 16%),
         radial-gradient(circle at 11% 16%, rgba(244, 73, 114, 0.20), transparent 13%);
+        --tp-gradient-overlay: linear-gradient(#161724, #16172400);
     
 }
 
@@ -1326,7 +1327,7 @@ position: absolute;
 
 
 .home-two-testimonial-backdrop {
-    background-image: linear-gradient(#161724, #16172400);
+    background-image: var(--tp-gradient-overlay);
     border-bottom: 1px solid var(--border-color);
     border-radius: 30px 30px 0 0;
     width: 100%;
@@ -1648,7 +1649,8 @@ position: absolute;
     position: relative;
 }
 .tp-pr-20{padding-right: 20px;}
-.tp-pl-30{padding-left: 20px;}
+.tp-pl-30{padding-left: 30px;}
+.tp-pl-40{padding-left: 40px;}
 /*---------------------------------
    home three slider  css start 
 ---------------------------------*/
@@ -2058,7 +2060,7 @@ position: absolute;
 }
 
 .footer-two {
-    background-image: linear-gradient(#161724, #16172400);
+    background-image: var(--tp-gradient-overlay);
 }
 
 
@@ -3248,10 +3250,7 @@ label {
     position: relative;
     width: 100%;
     overflow: hidden;
-    justify-content: center;
-    align-items: center;
     margin: 0 auto;
-    display: flex;
 }
 
 .home-three-box:hover .home-three-service-background {
@@ -3332,7 +3331,7 @@ label {
 }
 
 .home-three-work-background {
-    background-image: linear-gradient(#161724, #16172400);
+    background-image: var(--tp-gradient-overlay);
     border-radius: 30px;
     width: 100%;
     max-width: 850px;
@@ -3728,7 +3727,7 @@ label {
 }
 
 .team-bottom-wrap {
-    background-image: linear-gradient(#161724, #16172400);
+    background-image: var(--tp-gradient-overlay);
 }
 
 .team-members-social {
@@ -3843,7 +3842,7 @@ label {
     about one mission css start 
 ---------------------------------*/
 .about-one-bottom-background {
-    background-image: linear-gradient(#161724, #16172400);
+    background-image: var(--tp-gradient-overlay);
 }
 
 .about-one-mission-image {
@@ -4122,7 +4121,7 @@ label {
 }
 
 .about-three-image-background {
-    background-image: linear-gradient(#161724, #16172400);
+    background-image: var(--tp-gradient-overlay);
     border-radius: 20px;
     width: 630px;
     height: 413px;
@@ -5075,7 +5074,7 @@ text-align: center;
     position: relative;
 }
 .projects-bottom {
-    background-image: linear-gradient(#161724, #16172400);
+    background-image: var(--tp-gradient-overlay);
 }
 
 .projects-hero {
@@ -5155,7 +5154,7 @@ text-align: center;
     projects details css start 
 ---------------------------------*/
 .project-details-bottom {
-    background-image: linear-gradient(#161724, #16172400);
+    background-image: var(--tp-gradient-overlay);
 }
 .project-details-top {
     background-image: radial-gradient(circle at 48% 53%, #b460f13d, #b460f100 18%),
