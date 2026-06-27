@@ -180,6 +180,7 @@
 }
 
 @media screen and (max-width: 991px) {
+    
     .process-user-wrapper{width: 100%;justify-content: center;}
 .choose-slide-text{padding-left: 15px;}
       .tp-process-item {
@@ -230,14 +231,12 @@
     .main-menu-section {
         position: absolute;
     }
-    /* .menu-item {
-        padding: 20px 0 20px 0
-    } */
+ 
 
     .my-approach-right {
         padding-left: 0;
     }
-
+.tp-pr{padding-right: 0;}
     .navbar-three-dropdown .navbar-dropdown {
         grid-column-gap: 15px;
         grid-row-gap: 8px;

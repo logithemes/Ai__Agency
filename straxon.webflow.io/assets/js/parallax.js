@@ -2,7 +2,7 @@
  /* ===============================
        HOME ONE MOUSE PARALLAX
     =============================== */
-    const heroSection = document.querySelector('.parallax-hero-sec');
+    const heroSection = document.querySelector('.parallax-hero-section');
     
     if (heroSection) {
         const girlWrapper = document.querySelector('.parallax-img-one');
