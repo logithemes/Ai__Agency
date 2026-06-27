@@ -2,6 +2,11 @@
 1-Help Documnet Copy Right name
 2-copy right name
 3-check d-flex class name
-4-please ckeck row and bootstrap class with custom cls
-3-check all header
-4-check all script
+
+
+THEME WISE
+1-HOME TWO SLIDER 
+2-HOMW TWO SLIDER
+
+tp-clip-path-wrapper
+tp-flex-center

@@ -1647,7 +1647,8 @@ position: absolute;
     z-index: 2;
     position: relative;
 }
-.tp-pr{padding-right: 20px;}
+.tp-pr-20{padding-right: 20px;}
+.tp-pl-30{padding-left: 20px;}
 /*---------------------------------
    home three slider  css start 
 ---------------------------------*/
@@ -2772,9 +2773,7 @@ position: absolute;
     }
 }
 
-.line-background {
-    background-image: radial-gradient(circle at 50% 25%, #b460f14d, #fff0 26%);
-}
+
 /*---------------------------------
     home two why choose us css start 
 ---------------------------------*/
@@ -2991,7 +2990,7 @@ label {
 }
 
 
-.arrow-button {
+.tp-arrow-button {
     width: 60px;
     height: 60px;
 
