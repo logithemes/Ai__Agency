@@ -3992,10 +3992,10 @@ label {
 .about-two-experience-right {
     color: var(--white);
     flex: 1;
-    max-width: 584px;
+ 
     font-size: 18px;
     font-style: italic;
-    font-weight: 400;
+   
 }
 
 .about-two-experience {
