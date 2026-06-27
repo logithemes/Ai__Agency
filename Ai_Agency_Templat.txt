@@ -10,4 +10,5 @@ THEME WISE
 3-HOME THREE TOP MENU
 
 tp-clip-path-wrapper
+tp-clip-path-target
 tp-flex-center
