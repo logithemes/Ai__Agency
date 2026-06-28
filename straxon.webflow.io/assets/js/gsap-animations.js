@@ -168,48 +168,7 @@
             );
         });
 
-        /* ===============================
-           SERVICES COUNTER
-        =============================== */
-        var numbers = document.querySelectorAll('.services-counter .heading-one');
-        var cardsList = document.querySelectorAll('.service-sticky');
-        
-        if (numbers.length > 0 && cardsList.length > 0) {
-            gsap.set(numbers, { autoAlpha: 0 });
-            
-            if (numbers[0]) {
-                gsap.set(numbers[0], { autoAlpha: 1 });
-            }
-            
-            function activateNumber(index) {
-                if (!numbers.length || !numbers[index]) return;
-                
-                gsap.to(numbers, {
-                    autoAlpha: 0,
-                    duration: 0.25,
-                    ease: "power2.out"
-                });
-
-                gsap.to(numbers[index], {
-                    autoAlpha: 1,
-                    duration: 0.35,
-                    ease: "power2.out"
-                });
-            }
-            
-            cardsList.forEach(function(card, index) {
-                if (!card || !numbers[index]) return;
-                
-                ScrollTrigger.create({
-                    trigger: card,
-                    start: "top center",
-                    end: "bottom center",
-                    onEnter: function() { activateNumber(index); },
-                    onEnterBack: function() { activateNumber(index); }
-                });
-            });
-        }
-
+       
         /* ===============================
            TESTIMONIAL HEADING
         =============================== */

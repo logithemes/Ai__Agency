@@ -1043,7 +1043,6 @@
       .service-three-cards-overlay{transform: none;transform-origin: unset;}
       .service-tp-in-active{transform: scale(1);}
 .service-growth-left .home-one-service-cards-icon{width: 65px;height: 65px;}
-.service-cards-image{height: 400px;}
 .about-two-experience-left{justify-content: center;}
       .process-title {
         font-size: 24px;
@@ -1716,9 +1715,7 @@
         max-width: none;
     }
 
-    .services-number-wrap {
-        display: none;
-    }
+   
 
     .services-cards-wrapper {
         grid-column-gap: 40px;
@@ -1727,19 +1724,17 @@
 
     .service-card {
         margin-bottom: 20px;
+        height: 350px;
+        
     }
 
     .service-cards-information {
         flex-flow: wrap;
-        justify-content: space-between;
-        align-items: center;
+   
         padding-bottom: 20px;
     }
 
-    .service-sticky {
-        position: static;
-    }
-
+  
 
     .tp-service-one-tabs{
         flex-flow: column;
