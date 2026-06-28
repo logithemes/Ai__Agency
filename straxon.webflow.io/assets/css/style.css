@@ -4586,6 +4586,7 @@ label {
     width: 16px;
     height: 16px;
     margin-top: 5px;
+    display: flex;
 }
 
 .tick-icon-wrapper {
