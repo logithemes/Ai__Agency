@@ -1649,6 +1649,7 @@ position: absolute;
     z-index: 2;
     position: relative;
 }
+
 .tp-pr-20{padding-right: 20px;}
 .tp-pl-30{padding-left: 30px;}
 .tp-pl-40{padding-left: 40px;}
@@ -2196,10 +2197,7 @@ position: absolute;
     height: 110px;
 }
 
-.home-one-service-cards {
-    grid-column-gap: 15px;
-    grid-row-gap: 15px;
-}
+
 
 .home-one-service-cards-icon-overlay {
     background-color: var(--icons-background);
@@ -4155,8 +4153,7 @@ label {
 }
 
 .about-three-hero {
-    background-image: radial-gradient(circle at 74% 62%, #b460f14a, #b460f100 15%),
-        radial-gradient(circle at 44%, #f4497252, #f4497200 23%);
+    background-image:var(--tp-section-gradient-bg);
         position: relative;
 }
 

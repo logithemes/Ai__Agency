@@ -550,6 +550,7 @@
   .xs-pt-150 {padding-top: 150px;}
   .xs-pt-200 {padding-top: 200px;}
 
+  .xs-pb-0  {padding-bottom: 0;}
   .xs-pb-10  {padding-bottom: 10px;}
   .xs-pb-20  {padding-bottom: 20px;}
   .xs-pb-30  {padding-bottom: 30px;}
@@ -584,6 +585,7 @@
   .xs-mt-150 {margin-top: 150px;}
   .xs-mt-200 {margin-top: 200px;}
 
+    .xs-mb-0  {margin-bottom: 0;}
   .xs-mb-10  {margin-bottom: 10px;}
   .xs-mb-20  {margin-bottom: 20px;}
   .xs-mb-30  {margin-bottom: 30px;}
