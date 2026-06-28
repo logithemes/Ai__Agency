@@ -1745,7 +1745,7 @@ position: absolute;
 
 .button-full-width,
 .pricing-button {
-    background-color: #161724;
+    background-color: var(--light-black);
     width: 100%;
 }
 
@@ -4202,7 +4202,6 @@ label {
     background-image: radial-gradient(circle at 63% 36%, #f449723d, #f4497200 23%),
         radial-gradient(circle at 23% 25%, #b460f13b, #b460f100 20%);
 }
-
 .contact-one-input-icon {
     position: absolute;
     left: 24px;
@@ -4233,7 +4232,7 @@ label {
 }
 
 .contact-icon-wrapper {
-    background-color: #161724;
+    background-color: var(--light-black);
     border-radius: 5px;
     width: 60px;
     height: 60px;
@@ -4251,7 +4250,7 @@ label {
 }
 
 .contact-main-form {
-    background-color: #161724;
+    background-color: var(--light-black);
     padding-left: 70px;
     padding-right: 70px;
 }
@@ -4357,11 +4356,7 @@ label {
     401 css start 
 ---------------------------------*/
 .tp-utility-wrapper {
-    background-image: radial-gradient(circle at 63% 35%, #f449723d, #f4497200 21%),
-        radial-gradient(circle at 38% 53%, #b460f129, #b460f100 22%);
-    padding-left: 15px;
-    padding-right: 15px;
-    
+    background-image: var(--tp-section-gradient-bg);
 }
 
 .tp-utility-content {
@@ -4374,7 +4369,7 @@ label {
 
 .password-page-content {
     z-index: 4;
-    background-color: #161724;
+    background-color: var(--light-black);
     border-radius: 30px;
     width: 100%;
     max-width: 630px;
@@ -4712,7 +4707,7 @@ label {
 }
 
 .contact-three-icons-wrap {
-    background-color: #161724;
+    background-color: var(--light-black);
     border-radius: 5px;
     justify-content: center;
     align-items: center;
@@ -4732,7 +4727,7 @@ label {
 }
 
 .team-details-progress-wrap {
-    background-color: #161724;
+    background-color: var(--light-black);
 }
 .my-approach-right {
     padding-left: 40px;
@@ -5055,7 +5050,7 @@ text-align: center;
 }
 
 .blockquote-wrapper {
-    background-color: #161724;
+    background-color: var(--light-black);
     border-radius: 20px;
     padding: 40px 35px;
 }
@@ -5655,7 +5650,7 @@ text-align: center;
 }
 
 .cms-pages {
-    background-color: #161724;
+    background-color: var(--light-black);
 }
 
 .landing-text {

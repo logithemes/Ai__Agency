@@ -8,6 +8,7 @@ THEME WISE
 1-HOME TWO SLIDER 
 2-HOMW TWO SLIDER
 3-HOME THREE TOP MENU
+4-404 
 
 tp-clip-path-wrapper
 tp-clip-path-target
