@@ -2774,7 +2774,7 @@ position: absolute;
     home two why choose us css start 
 ---------------------------------*/
 
-.home-two-why-choose-us-background {
+/* .home-two-why-choose-us-background {
     border-bottom: 1px solid var(--border-color);
     background-image: linear-gradient(#1d1f3480, #1d1f3400);
     border-top-left-radius: 20px;
@@ -2810,6 +2810,79 @@ padding-right: 15px;
 .choose-us-slider-image-wrapper img{width: 100%;height: 100%;}
 .home-two-choose-us-main {
     position: relative;
+} */
+
+/* ============================================
+   PROCESS STEP CARDS - WITH STICKY
+   ============================================ */
+
+
+
+.process-step-card {
+    border-radius: var(--tp-radius-10);
+    padding: 25px;
+    height: 100%;
+    min-height: 282px;
+    position: relative;
+    transition: var(--transition-medium);  
+    justify-content: space-between;
+}
+
+/* STICKY POSITIONING - One by one */
+.process-step-wrapper:nth-child(1) .process-step-card {
+    position: sticky;
+    top: 100px;
+}
+
+.process-step-wrapper:nth-child(2) .process-step-card {
+    position: sticky;
+    top: 120px;
+}
+
+.process-step-wrapper:nth-child(3) .process-step-card {
+    position: sticky;
+    top: 140px;
+}
+
+.process-step-wrapper:nth-child(4) .process-step-card {
+    position: sticky;
+    top: 160px;
+}
+.process-step-number span{color: var(--menu-color);}
+
+
+/* Step Number */
+.process-step-number {
+   
+}
+
+
+/* Step Title */
+
+
+/* Step Description */
+.process-step-description {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #6c757d;
+    margin-bottom: 0;
+}
+
+/* Step Line - Connecting line */
+.process-step-line {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 3px;
+    background: linear-gradient(90deg, #667eea, #764ba2);
+    border-radius: 3px;
+    transition: width 0.6s ease;
+}
+
+.process-step-card:hover .process-step-line {
+    width: 60%;
 }
 
 /*---------------------------------
