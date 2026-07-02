@@ -96,31 +96,7 @@
             });
         }
 
-        /* ===============================
-           HOME TWO TESTIMONIAL ROW SCROLL
-        =============================== */
-        var homeTwoTestimonial = document.querySelector(".home-two-testimonial");
-        if (homeTwoTestimonial) {
-            var rowOne = document.querySelector(".home-two-testimonial-row-one");
-            var rowTwo = document.querySelector(".home-two-testimonial-row-two");
-            var rows = [];
-            
-            if (rowOne) rows.push(rowOne);
-            if (rowTwo) rows.push(rowTwo);
-            
-            if (rows.length > 0) {
-                gsap.to(rows, {
-                    yPercent: -55,
-                    ease: "none",
-                    scrollTrigger: {
-                        trigger: ".home-two-testimonial",
-                        start: "top bottom",
-                        end: "bottom top",
-                        scrub: 1
-                    }
-                });
-            }
-        }
+       
 
         /* ===============================
            PROGRESS BAR
@@ -169,37 +145,6 @@
         });
 
        
-        /* ===============================
-           TESTIMONIAL HEADING
-        =============================== */
-        var testimonialSection = document.querySelector(".home-two-testimonial, .home-three-testimonial");
-        var testimonialHeading = document.querySelector(".home-two-testimonial-heading, .testimonial-three-big-text");
-        
-        if (testimonialSection && testimonialHeading) {
-            gsap.set(testimonialHeading, { x: "100%" });
-            
-            gsap.to(testimonialHeading, {
-                x: "0%",
-                duration: 1,
-                ease: "power3.out",
-                scrollTrigger: {
-                    trigger: testimonialSection,
-                    start: "top 80%"
-                }
-            });
-
-            gsap.to(testimonialHeading, {
-                x: "-60%",
-                ease: "none",
-                scrollTrigger: {
-                    trigger: testimonialSection,
-                    start: "top bottom",
-                    end: "bottom top",
-                    scrub: 2
-                }
-            });
-        }
-
         /* ===============================
            SCROLL INDICATOR
         =============================== */
@@ -252,6 +197,8 @@
                 });
             });
         });
+
+  
 
         /* ===============================
            BLOG DETAILS / ANIM-WRAP

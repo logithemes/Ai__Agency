@@ -199,7 +199,7 @@
     .header-main .container {
         background-color: rgb(5, 6, 16);
     }
-
+.home-two-testimonial-container{padding: 0 25px;}
     .navbar.header-sticky,
     .navbar-three.header-sticky {
         position: fixed ;
@@ -287,9 +287,7 @@
         width: 100%;
     }
 
-    .home-two-testimonial-heading {
-        transform: none !important;
-    }
+
 
     .humburger-wrapper {
         grid-column-gap: 7px;
@@ -520,29 +518,6 @@
 
     }
 
-    .home-two-testimonial {
-        height: auto;
-       
-    }
-
-
-    .home-two-testimonial-main {
-        flex-flow: column;
-        justify-content: flex-start;
-        align-items: center;
-        height: auto;
-        padding-top: 30px;
-        position: relative;
-    }
-
-
-
-    .home-two-testimonial-container {
-        grid-column-gap: 40px;
-        grid-row-gap: 20px;
-        border-bottom: 1px solid var(--border-color);
-        position: static;
-    }
 
     .footer-two-left-wrapper {
         max-width: none;
@@ -576,13 +551,7 @@
         padding-bottom: 30px;
     }
 
-    .home-two-testimonial-row-one,
-    .home-two-testimonial-row-two {
-        grid-column-gap: 40px;
-        grid-row-gap: 25px;
-        transform: none !important;
-    }
-
+  
 
     .home-three-service-cards {
         padding-top: 35px;
@@ -1029,6 +998,7 @@
      .home-one-process {
         padding: 80px 0;
       }
+      .home-two-testimonial-container{padding: 0;}
       .service-three-cards{padding: 20px;}
       .tp-service-tab-menu{    border-bottom-right-radius: 0;    border-top-left-radius: 30px;}
       .landing-text{font-size: 12px;        padding-left: 13px;
@@ -1323,14 +1293,8 @@
     }
 
 
-    .home-two-testimonial-container {
-        flex-flow: column;
-        align-items: stretch;
-    }
 
-    .home-two-testimonial-cards {
-        max-width: none;
-    }
+
 
     .double-marquee-images {
         margin-bottom: 30px;
