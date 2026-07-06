@@ -37,8 +37,7 @@
 /*-------------------------------------------------------*/
 /* Google font
 /*-------------------------------------------------------*/
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@300;400;500;700;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 
 
 /*----------------------------------------*/
@@ -81,7 +80,7 @@
 
     /* Font Family */
     --heading-font: 'Bebas Neue', sans-serif;
-    --body-font: 'Roboto', sans-serif;
+    --body-font:  'Poppins', sans-serif;
 
     /* Menu Color */
     --menu-color: #aeb2d7;
@@ -149,12 +148,10 @@ body {
     padding: 0;
  overflow: hidden;
     overflow-y: auto;
-
     background-color: var(--body-color);
     color: var(--body-font-color);
-
     font-family: var(--body-font);
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 400;
     line-height: 28px;
     text-rendering: optimizeLegibility;
@@ -1015,8 +1012,8 @@ a:hover {
 .dropdown-link {
     color: var(--menu-color);
     text-transform: capitalize;
-    padding: 7px 60px 7px 20px;
-    font-size: 15px;
+    padding: 0 60px 0 20px;
+    font-size: 14px;
     transition: transform 0.2s, color 0.2s;
     position: relative;
 }
@@ -2034,7 +2031,7 @@ position: absolute;
     background-image: var(--tp-gradient-overlay);
 }
 
-
+.footer-links-wrap{    row-gap: 7px;}
 .footer-three-bottom {
     text-align: center;
     justify-content: center;
@@ -2787,11 +2784,9 @@ padding-right: 15px;
 
 /* ============================================
    PROCESS STEP CARDS - WITH STICKY
-   ============================================ */
+   ============================================ *
 
-
-
-.process-step-card {
+/* .process-step-card {
     border-radius: var(--tp-radius-10);
     padding: 25px;
     height: 100%;
@@ -2806,11 +2801,8 @@ padding-right: 15px;
 .process-step-number span{color: var(--menu-color);}
 
 
-/* Step Number */
 .process-step-wrapper{width: 100%;}
-/* Step Title */
 
-/* Step Description */
 .process-step-description {
     font-size: 16px;
     line-height: 1.8;
@@ -2818,7 +2810,6 @@ padding-right: 15px;
     margin-bottom: 0;
 }
 
-/* Step Line - Connecting line */
 .process-step-line {
     position: absolute;
     bottom: 0;
@@ -2834,14 +2825,9 @@ padding-right: 15px;
 .process-step-card:hover .process-step-line {
     width: 60%;
 }
-.process-step-img-wrapper{width: 100%;padding: 0;}
+.process-step-img-wrapper{width: 100%;padding: 0;} */
 
-/*---------------------------------
-    heading three css start 
----------------------------------*/
-
-
-
+.who-we-are-text{line-height: clamp(32px, 4vw, 42px);}
 /*---------------------------------
     Form css start 
 ---------------------------------*/
@@ -5972,7 +5958,3 @@ text-align: center;
     position: absolute;
     inset: 0%;
 }
-
-
-
-
