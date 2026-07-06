@@ -5043,10 +5043,7 @@ text-align: center;
     padding-top: 30px;
     padding-bottom: 30px;
 }
-.tp-anim-wrap {
-  clip-path: polygon(50% 0%, 50% 0%, 50% 100%, 50% 100%);
-  will-change: clip-path, transform;
-}
+
 .more-blogs-text .heading-five {
     line-height: 28px;
 }
@@ -5072,7 +5069,7 @@ text-align: center;
 .blog-three-cards:hover .blog-image-overlay {
     opacity: 1;
 }
-
+.blog-details-hero-img-wrapper{max-height: 600px;height: 100%;}
 /*---------------------------------
     projects single css start 
 ---------------------------------*/
