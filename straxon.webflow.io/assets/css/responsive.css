@@ -155,11 +155,11 @@
 }
   @media (max-width: 1199px) {
 
-      .tp-process-item {
+      .tp-testimonial-item {
         min-height: 360px;
       }
 
-      .process-title {
+      .tp-testimonial-author {
         font-size: 28px;
       }
       .home-one-service-cards{padding-left: 15px;padding-right: 15px;}
@@ -184,7 +184,7 @@
     
     .process-user-wrapper{width: 100%;justify-content: center;}
 .choose-slide-text{padding-left: 15px;}
-      .tp-process-item {
+      .tp-testimonial-item {
         min-height: auto;
       }
  .center-menu-wrapper{position: absolute;}
@@ -995,7 +995,7 @@
     .faq-border{padding:8px 0 8px 0}
     .hero-details-text{    font-size: 14px;
     line-height: 1.5;}
-     .home-one-process {
+     .tp-home-one-testimonials {
         padding: 80px 0;
       }
       .home-two-testimonial-container{padding: 0;}
@@ -1004,7 +1004,7 @@
       .landing-text{font-size: 12px;        padding-left: 13px;
         padding-right: 13px;}
 .projects-more-work-text{align-items: center;}
-      .tp-process-item {
+      .tp-testimonial-item {
         padding: 30px;
         border-radius: 24px;
       }
@@ -1014,7 +1014,7 @@
       .service-tp-in-active{transform: scale(1);}
 .service-growth-left .home-one-service-cards-icon{width: 65px;height: 65px;}
 .about-two-experience-left{justify-content: center;}
-      .process-title {
+      .tp-testimonial-author {
         font-size: 24px;
       }
 
@@ -1025,16 +1025,11 @@
   
     }
 
-      .process-text {
+      .tp-testimonial-quote {
         font-size: 16px;
       }
 
-      .tp-left-arrow-btn,
-      .tp-arrow-arrow-btn {
-        width: 50px;
-        height: 50px;
-      }
-
+    
       .process-bottom-wrapper {
         border-radius: 30px;
       }

@@ -1,14 +1,32 @@
+small small isues
+1-slider dots
+2-consol log issues
+3-check ../assests path with AI
+4-blog details design
+5-check button design
+6-w3c valaditions
+
+
+
+
+Website wise
+1-HOME TWO ABOUT US SECTIONS
+2-404 PAGE
+3-WOW ANIMATION FROM GSAP 
+
 
 1-Help Documnet Copy Right name
 2-copy right name
-3-check d-flex class name
+3-place Holder img
 
 
-THEME WISE
-1-HOME TWO SLIDER 
-2-HOMW TWO SLIDER
-4-404 
+CSS WISE
+1-CSS ARRAGE PROPER
 
-tp-clip-path-wrapper
-tp-clip-path-target
-tp-flex-center
+
+
+
+
+
+
+

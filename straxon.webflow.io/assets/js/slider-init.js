@@ -160,38 +160,45 @@
          * 
          * @since 1.0.0
          */
-        if ($('.tp-process-slider').length) {
-            var processSlider = new Swiper('.tp-process-slider', {
-                slidesPerView: 1,
-                spaceBetween: 25,
-                loop: true,
-                speed: 1200,
-                grabCursor: true,
-                allowTouchMove: true,
-                autoplay: {
-                    delay: 2500,
-                    disableOnInteraction: false,
-                    pauseOnMouseEnter: true,
-                },
-                freeMode: false,
-                navigation: {
-                    nextEl: '.tp-left-arrow-btn',
-                    prevEl: '.tp-arrow-arrow-btn',
-                },
-                breakpoints: {
-                    576: {
-                        slidesPerView: 1,
-                    },
-                    768: {
-                        slidesPerView: 2,
-                    },
-                    1200: {
-                        slidesPerView: 3,
-                    }
-                },
-            });
-        }
+       if ($('.tp-testimonial-slider').length) {
+    var processSlider = new Swiper('.tp-testimonial-slider', {
+        slidesPerView: 1,
+        spaceBetween: 25,
+        loop: true,
+        speed: 1200,
+        grabCursor: true,
+        allowTouchMove: true,
 
-    }); // End document ready
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+            pauseOnMouseEnter: true,
+        },
+
+        freeMode: false,
+
+        pagination: {
+            el: '.tp-testimonial-slider-pagination',
+            clickable: true,
+            renderBullet: function (index, className) {
+                return '<span class="tp-slider-dot ' + className + '"></span>';
+            }
+        },
+
+        breakpoints: {
+            576: {
+                slidesPerView: 1,
+            },
+            768: {
+                slidesPerView: 2,
+            },
+            1200: {
+                slidesPerView: 3,
+            }
+        }
+    });
+}
+
+}); // End document ready
 
 })(jQuery);
