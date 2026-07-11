@@ -217,7 +217,7 @@
                     scale: 1,
                     duration: 1.5,
                     ease: "power4.inOut",
-                    delay: 0.1
+                    delay: 0.7
                 }
             );
         }

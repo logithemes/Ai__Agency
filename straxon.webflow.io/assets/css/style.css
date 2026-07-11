@@ -66,11 +66,14 @@
     --violet: #b264f3;
     --pink: #f44972;
     --arrow-hover: #e85189;
+     --theme-hover-bg: #d43fc5;
 
     /* Border Colors */
     --border-color: #444872;
     --border-color-two: #2a2d4a;
     --border-mobile-menu: 1px solid #9999996e;
+    --bg-transparent-04: rgba(255, 255, 255, 0.04);
+     --bg-transparent-09: rgba(255, 255, 255, 0.09);
 
     /* Background Colors */
     --icons-background: #1d1f34;
@@ -305,15 +308,12 @@ p:last-child {
     margin-bottom: 0;
 }
 
-blockquote {
+.blog-blockquote-wrapper {
     margin-bottom: 0;
     padding: 0 30px;
-
-    border-left: 2px solid var(--purple);
-
-    font-size: 18px;
+    font-weight: 500;
+    border-left: 1.1px solid var(--purple);
     font-style: italic;
-    line-height: 30px;
 }
 
 figcaption {
@@ -516,6 +516,9 @@ a:hover {
     opacity: 0;
   } */
 
+  .theme-bg-hover:hover {
+    background-color: var(--theme-hover-bg);
+}
 /*=========================================================
     Font Size Utilities
 =========================================================*/
@@ -1254,7 +1257,6 @@ a:hover {
 .tick-icon-wrapper,
 .home-three-service-arrow,
 .blog-two-arrow,
-.details-author-image,
 .service-options-link {
     border-radius: 100%;
 }
@@ -1266,25 +1268,7 @@ a:hover {
     display: flex;
     inset: auto auto 27% 0%;
 }
-/* 
-.testimonials-author-box-mid {
-    z-index: 4;
-    justify-content: flex-end;
-    align-items: center;
-    width: 126px;
-    height: 126px;
-    display: flex;
-    position: relative;
-    overflow: hidden;
-} */
 
-/* .testimonials-author-box-right,
-.testimonials-author-box-left {
-    z-index: 1;
-    opacity: 0.5;
-    width: 90.87px;
-    height: 90.87px;
-} */
 
 .home-one-testimonial-content {
     text-align: center;
@@ -3530,7 +3514,7 @@ label {
     align-items: center;
     padding: 6px 16px;
 }
-.skills-tag:hover .skill-text{color: #d43fc5;}
+.skills-tag:hover .skill-text{color:var(--primary-hover-color)}
 .arrow-icon {
     display: none;
     position: absolute;
@@ -5012,17 +4996,12 @@ text-align: center;
 .blog-cards-image:hover {
     transform: scale(1.2);
 }
-.details-author-image {
-    flex: none;
-    width: 80px;
-    height: 80px;
-}
 
 /*---------------------------------
-    blog detail css start 
+    this is blog details css
 ---------------------------------*/
-
-
+.post-details-wrapper i{color: var(--purple);}
+.blog-meta{align-items: center;justify-content: center;flex-wrap: wrap;}
 .blog-details-date {
     align-items: center;
 }
@@ -5031,7 +5010,8 @@ text-align: center;
     position: relative;
 }
 
-.blog-details-author-wrap {
+
+.blog-meta-share{
     border-top: 1px solid var(--border-color);
     border-bottom: 1px solid var(--border-color);
     padding-top: 30px;
@@ -5064,6 +5044,39 @@ text-align: center;
     opacity: 1;
 }
 .blog-details-hero-img-wrapper{max-height: 600px;height: 100%;}
+
+.blog-comment-card {
+    border: 1px solid rgba(255,255,255,0.08);
+    background-color: var(--bg-transparent-04);
+    padding: 30px;
+}
+.tag-btn{background-color: var(--bg-transparent-09);color: var(--menu-color);font-size: var(--tp-fs-12);border: 1px solid rgba(255,255,255,0.08);line-height: 1.4rem;}
+
+.blog-share-icon{background-color: var(--bg-transparent-09);color: var(--menu-color);width: 35px;height: 35px;}
+
+.blog-comment-avatar {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.blog-comment-reply{margin-left: 70px;}
+.blog-comment-textarea-box{min-height: 180px;border-radius: 10px;}
+.blog-comment-meta{color: var(--menu-color);font-weight: 500;}
+.blog-comment-reply-btn{position: absolute;top: 0;right: 0;color: var(--purple);}
+.blog-comment-textarea-wrapper input{border-radius: 10px;}
+.blog-details-breadcrumb i{}
+.blog-details-breadcrumb span{}
+.blog-meta-info > div:not(:last-child) {
+    border-right: 1px solid var(--border-color);
+    padding-right: 1rem;
+    margin-right: 1rem;
+}
+.blog-details-title {
+    font-size: clamp(36px, 4vw, 60px);
+    line-height: 1.15;
+   
+}
 /*---------------------------------
     projects single css start 
 ---------------------------------*/

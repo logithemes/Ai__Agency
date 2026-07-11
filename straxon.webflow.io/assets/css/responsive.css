@@ -2116,13 +2116,6 @@
         align-items: start;
     }
 
-
-  
-
-    .blog-details-author-wrap {
-        flex-flow: column;
-    }
-
     .projects-hero-border {
         display: none;
     }
