@@ -205,7 +205,7 @@
         position: fixed ;
         animation: none
     }
-
+.blog-comment-reply{margin-left: 0;}
     .nav-inline {
         padding-top: 64px;
     }

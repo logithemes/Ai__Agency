@@ -425,12 +425,6 @@ a {
     color: var(--heading-color);
     text-decoration: none;
     background-color: transparent;
-
-    transition:
-        color var(--transition-medium) ease,
-        background-color var(--transition-medium) ease,
-        border-color var(--transition-medium) ease,
-        transform var(--transition-medium) ease;
 }
 
 a:hover {
@@ -5962,3 +5956,86 @@ text-align: center;
     position: absolute;
     inset: 0%;
 }
+
+.tp-button-wrapper{
+    gap:12px;
+    padding:9px 24px 9px 24px;
+    border:1px solid var(--border-color);
+    background:transparent;
+    color:var(--heading-color);
+    text-decoration:none;
+    font-weight:600;
+    transition:var(--transition-medium);
+    border-radius: 50px;
+    text-transform: capitalize;
+}
+
+.tp-button-icon{
+    width:40px;
+    height:40px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:var(--mobile-bg-color);
+    overflow:hidden;
+    transition:transform .4s ease; border-radius: 50px
+}
+
+.tp-button-arrow{
+    position:relative;
+    display:flex;
+    overflow:hidden;
+    transform:rotate(-45deg);
+}
+
+.tp-button-arrow i{
+    font-size:18px;
+    color:#fff;
+    transition:transform .35s ease;
+}
+
+.tp-button-arrow i:last-child{
+    position:absolute;
+    transform:translateX(-160%);
+}
+
+.tp-button-text{
+    position:relative;
+    overflow:hidden;
+    line-height:1.2;
+}
+
+.tp-button-front,
+.tp-button-back{
+    display:block;
+    transition:transform .35s ease;
+}
+
+.tp-button-back{
+    position:absolute;
+    left:0;
+    top:100%;
+}
+
+/* Hover */
+
+.tp-button-wrapper:hover .tp-button-icon{
+    transform:scale(.9);
+}
+
+.tp-button-wrapper:hover .tp-button-arrow i:first-child{
+    transform:translateX(160%);
+}
+
+.tp-button-wrapper:hover .tp-button-arrow i:last-child{
+    transform:translateX(0);
+}
+
+.tp-button-wrapper:hover .tp-button-front{
+    transform:translateY(-150%);
+}
+
+.tp-button-wrapper:hover .tp-button-back{
+    transform:translateY(-100%);
+}
+.tp-button-transparent:hover .tp-button-back{transform: translateY(-150%);}
