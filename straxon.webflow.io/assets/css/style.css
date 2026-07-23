@@ -613,7 +613,7 @@ a:hover {
 	Preloader css start 
 ---------------------------------*/
 
-.ctn_preloader {
+.ctn-preloader {
     align-items: center;
     display: flex;
     height: 100%;
@@ -628,12 +628,12 @@ a:hover {
 
 }
 
-.ctn_preloader .animation-preloader {
+.ctn-preloader .animation-preloader {
     position: absolute;
     z-index: 100;
 }
 
-.ctn_preloader .animation-preloader .spinner {
+.ctn-preloader .animation-preloader .spinner {
     animation: spinner 1.5s infinite linear;
     border-radius: 50%;
     border: 3px solid rgb(101 92 151 / 6%);
@@ -644,12 +644,12 @@ a:hover {
     width: 170px;
 }
 
-.ctn_preloader .animation-preloader .txt-loading {
+.ctn-preloader .animation-preloader .txt-loading {
     text-align: center;
     user-select: none;
 }
 
-.ctn_preloader .animation-preloader .txt-loading .letters-loading {
+.ctn-preloader .animation-preloader .txt-loading .letters-loading {
     font-family: "Rubik", sans-serif;
     font-weight: 500;
     letter-spacing: 15px;
@@ -660,7 +660,7 @@ a:hover {
     line-height: 70px;
 }
 
-.ctn_preloader .animation-preloader .txt-loading .letters-loading:before {
+.ctn-preloader .animation-preloader .txt-loading .letters-loading:before {
     animation: letters-loading 4s infinite;
     color: #655c97;
     content: attr(data-text-preloader);
@@ -671,35 +671,35 @@ a:hover {
     position: absolute;
 }
 
-.ctn_preloader .animation-preloader .txt-loading .letters-loading:nth-child(2):before {
+.ctn-preloader .animation-preloader .txt-loading .letters-loading:nth-child(2):before {
     animation-delay: 0.2s;
 }
 
-.ctn_preloader .animation-preloader .txt-loading .letters-loading:nth-child(3):before {
+.ctn-preloader .animation-preloader .txt-loading .letters-loading:nth-child(3):before {
     animation-delay: 0.4s;
 }
 
-.ctn_preloader .animation-preloader .txt-loading .letters-loading:nth-child(4):before {
+.ctn-preloader .animation-preloader .txt-loading .letters-loading:nth-child(4):before {
     animation-delay: 0.6s;
 }
 
-.ctn_preloader .animation-preloader .txt-loading .letters-loading:nth-child(5):before {
+.ctn-preloader .animation-preloader .txt-loading .letters-loading:nth-child(5):before {
     animation-delay: 0.8s;
 }
 
-.ctn_preloader .animation-preloader .txt-loading .letters-loading:nth-child(6):before {
+.ctn-preloader .animation-preloader .txt-loading .letters-loading:nth-child(6):before {
     animation-delay: 1s;
 }
 
-.ctn_preloader .animation-preloader .txt-loading .letters-loading:nth-child(7):before {
+.ctn-preloader .animation-preloader .txt-loading .letters-loading:nth-child(7):before {
     animation-delay: 1.2s;
 }
 
-.ctn_preloader .animation-preloader .txt-loading .letters-loading:nth-child(7):before {
+.ctn-preloader .animation-preloader .txt-loading .letters-loading:nth-child(7):before {
     animation-delay: 1.4s;
 }
 
-.ctn_preloader .animation-preloader .txt-loading .letters-loading:nth-child(7):before {
+.ctn-preloader .animation-preloader .txt-loading .letters-loading:nth-child(7):before {
     animation-delay: 1.6s;
 }
 
@@ -1079,15 +1079,15 @@ a:hover {
     }
 
     .tp-testimonial-item {
-      min-height: 420px;
       padding: 30px;
       background-image: linear-gradient(#161824, #161824cc);
       backdrop-filter: blur(10px);
-      display: flex;
+      display: grid;
       flex-direction: column;
       transition: 0.4s ease;
       align-items: start;
       text-align: start;
+      height: 100%;
     }
 
     .tp-testimonial-author {
@@ -1101,7 +1101,7 @@ a:hover {
     }
 
     .tp-testimonial-quote {
-      color: rgba(255, 255, 255, 0.65);
+      
       margin-top: 0;
     }
 
@@ -1670,24 +1670,6 @@ position: absolute;
 /*---------------------------------
    Button  css start 
 ---------------------------------*/
-.tp-btn {
-    z-index: 10;
-    background-color: var(--body-color);
-    text-transform: capitalize;
-    border-radius: 60px;
-    justify-content: center;
-    align-items: center;
-    height: 50px;
-    padding: 0 35px;
-    transition: background-color 0.35s;
-    display: flex;
-    position: relative;
-}
-
-.tp-btn-primary {
-    background-color: #05061000 ;
-    border: 1px solid #fff;
-}
 
 
 
@@ -1731,16 +1713,6 @@ position: absolute;
     align-items: center;
     display: flex;
 }
-.button-wrapper {
-    border-radius: 60px;
-    justify-content: center;
-    align-items: center;
-    min-width: 148px;
-    padding: 2px;
-    display: flex;
-    position: relative;
-    overflow: hidden;
-}
 
 
 .pricing-tabs-content .pricing-button-wrapper {
@@ -1754,16 +1726,6 @@ position: absolute;
     align-items: center;
 }
 
-.button-border-effect {
-    z-index: 1;
-    background-image: linear-gradient(90deg,
-            #fe4d581a,
-            var(--purple) 50%,
-            #b264f31a);
-    width: 50%;
-    height: 900%;
-    position: absolute;
-}
 
 .circle-icon {
     border: 1px solid var(--border-color);
@@ -2713,93 +2675,6 @@ position: absolute;
     }
 }
 
-
-/*---------------------------------
-    home two why choose us css start 
----------------------------------*/
-
-/* .home-two-why-choose-us-background {
-    border-bottom: 1px solid var(--border-color);
-    background-image: linear-gradient(#1d1f3480, #1d1f3400);
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    width: 100%;
-    max-width: 1290px;
-    height: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    position: absolute;
-    inset: 0%;
-}
-.choose-slide-text {
-padding-right: 15px;
-   width: 100%;
-}
-.choose-us-slides {
-    max-width: 100%;
-    width: 100%;
-    display: grid ;
-    grid-template-columns: 50% 50%;
-    height: 100%;
-   
-}
-
-.home-two-choose-us-slider {
-    justify-content: flex-start;
-    align-items: center;
-    display: flex;
-    position: relative;
-}
-.choose-us-slider-image-wrapper{width: 100%;height: 100%;}
-.choose-us-slider-image-wrapper img{width: 100%;height: 100%;}
-.home-two-choose-us-main {
-    position: relative;
-} */
-
-/* ============================================
-   PROCESS STEP CARDS - WITH STICKY
-   ============================================ *
-
-/* .process-step-card {
-    border-radius: var(--tp-radius-10);
-    padding: 25px;
-    height: 100%;
-    min-height: 282px;
-    position: relative;
-    transition: var(--transition-medium);  
-    justify-content: space-between;
-    width: 100%;
-}
-
-
-.process-step-number span{color: var(--menu-color);}
-
-
-.process-step-wrapper{width: 100%;}
-
-.process-step-description {
-    font-size: 16px;
-    line-height: 1.8;
-    color: #6c757d;
-    margin-bottom: 0;
-}
-
-.process-step-line {
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 0;
-    height: 3px;
-    background: linear-gradient(90deg, #667eea, #764ba2);
-    border-radius: 3px;
-    transition: width 0.6s ease;
-}
-
-.process-step-card:hover .process-step-line {
-    width: 60%;
-}
-.process-step-img-wrapper{width: 100%;padding: 0;} */
 
 .who-we-are-text{line-height: clamp(32px, 4vw, 42px);}
 /*---------------------------------
@@ -4918,10 +4793,18 @@ text-align: center;
 ---------------------------------*/
 .explore-now-button-wrap {
     z-index: 999;
+    pointer-events: none;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    display: flex;
+    position: fixed;
+    inset: 0%;
+
 }
 
 .explore-now {
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100px;
@@ -4929,6 +4812,11 @@ text-align: center;
     background: rgba(10, 11, 22, 0.83);
     opacity: 0;
     transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%
+    
 }
 
 /*---------------------------------
@@ -6039,3 +5927,30 @@ text-align: center;
     transform:translateY(-100%);
 }
 .tp-button-transparent:hover .tp-button-back{transform: translateY(-150%);}
+
+/* ABOUT US HOME TWO */
+
+
+/*  */
+.who-we-are-marquee-wrapper{
+    overflow: hidden;
+    width:100%;
+}
+
+.who-we-are-marquee{
+    gap:24px;
+    width:max-content;
+    height: 100%;
+      border-radius: 10px;
+}
+
+.who-we-are-marquee img{
+    flex:0 0 auto;
+    width:350px; /* your size */
+    display:block;
+    border-radius: 10px;
+    height: 100%;
+    object-fit: cover;
+}
+.who-we-are-container{position: relative;}
+.who-we-are-container::before{position: absolute;content: '';left: 30%;background-color: #444872;height: 100%;width: 1px;}

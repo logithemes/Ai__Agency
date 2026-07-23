@@ -121,6 +121,18 @@
             window.initParallax();
         }
 
+         /**
+         * 4c. Initialize AOS
+         * Animate On Scroll
+         */
+        AOS.init({
+    offset: 120,
+    duration: 800,
+    easing: 'ease',
+    once: true,
+    mirror: false
+});
+
 
         // ============================================
         // 5. FINAL CALLBACK

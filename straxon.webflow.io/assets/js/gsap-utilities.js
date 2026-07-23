@@ -126,6 +126,31 @@
             }
         });
 
+
+        // ABOUT US HOME TWO INFINITY LOOP
+        
+    document.querySelectorAll(".who-we-are-marquee").forEach(function (track) {
+
+        // Clone until content is at least twice the viewport width
+        while (track.scrollWidth < window.innerWidth * 2) {
+            track.innerHTML += track.innerHTML;
+        }
+
+        const moveWidth = track.scrollWidth / 2;
+
+        gsap.to(track, {
+            x: -moveWidth,
+            duration: 30,
+            ease: "none",
+            repeat: -1,
+            modifiers: {
+                x: function (x) {
+                    return (parseFloat(x) % moveWidth) + "px";
+                }
+            }
+        });
+
+    });
         /* ===============================
            IMAGE 3D HOVER
         =============================== */

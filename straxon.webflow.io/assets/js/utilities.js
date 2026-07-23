@@ -54,17 +54,7 @@
          * 
          * @since 1.0.0
          */
-        var rotatingTexts = document.querySelectorAll('.button-border-effect');
-        
-        if (rotatingTexts.length) {
-            rotatingTexts.forEach(function(el) {
-                var angle = 0;
-                setInterval(function() {
-                    angle += 1;
-                    el.style.transform = 'rotateZ(' + angle + 'deg)';
-                }, 16);
-            });
-        }
+       
 
         /**
          * Arrow Rotate Toggle

@@ -164,43 +164,23 @@
             );
         }
 
-        /* ===============================
-           FADE IN ANIMATIONS
-        =============================== */
-        var animations = {
-            ".tp-fade-up": { y: 50, opacity: 0 },
-            ".tp-fade-left": { x: -50, opacity: 0 },
-            ".tp-fade-right": { x: 50, opacity: 0 },
-            ".tp-zoom-in": { scale: 0.8, opacity: 0 },
-            ".tp-zoom-out": { scale: 1.2, opacity: 0 }
-        };
-
-        Object.keys(animations).forEach(function(selector) {
-            var fromVars = animations[selector];
-            
-            gsap.utils.toArray(selector).forEach(function(item) {
-                var delay = parseFloat(item.dataset.delay) || 0;
-                
-                gsap.from(item, {
-                    y: fromVars.y || 0,
-                    x: fromVars.x || 0,
-                    scale: fromVars.scale || 1,
-                    opacity: fromVars.opacity,
-                    duration: 1,
-                    ease: "power3.out",
-                    delay: delay,
-                    scrollTrigger: {
-                        trigger: item,
-                        start: "top 80%",
-                        once: true
-                    }
-                });
-            });
-        });
-
+      
  
+ // Register ScrollTrigger
+     // Register GSAP + ScrollTrigger
+gsap.registerPlugin(ScrollTrigger);
 
-  
+// Banner animation (runs immediately on page load)
+function bannerAnimation() {
+  if (document.querySelector(".banner")) {
+    gsap.from(".banner", {
+      opacity: 0,
+      y: 50,
+      duration: 1.2,
+      ease: "power2.out"
+    });
+  }
+}
 
         /* ===============================
            BLOG DETAILS / ANIM-WRAP

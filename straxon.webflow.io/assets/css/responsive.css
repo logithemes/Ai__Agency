@@ -183,7 +183,7 @@
 @media screen and (max-width: 991px) {
     
     .process-user-wrapper{width: 100%;justify-content: center;}
-.choose-slide-text{padding-left: 15px;}
+
       .tp-testimonial-item {
         min-height: auto;
       }
@@ -511,12 +511,6 @@
     grid-row-gap: 20px;
     }
 
-    .choose-us-slides {
-        padding-left: 15px;
-        padding-right: 15px;
-        flex-direction: column;
-
-    }
 
 
     .footer-two-left-wrapper {
@@ -1889,9 +1883,7 @@
     }
 
 
-    .choose-us-slider-image-wrapper {
-        width: 100%;
-    }
+    
 
     .footer-two-form-bottom {
         flex-flow: column;

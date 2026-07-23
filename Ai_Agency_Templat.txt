@@ -1,16 +1,11 @@
 small small isues
-1-slider dots
 2-consol log issues
-3-check ../assests path with AI
-4-blog details design
-5-check button design
 6-w3c valaditions
 
 
 
 
 Website wise
-1-HOME TWO ABOUT US SECTIONS
 2-404 PAGE
 3-WOW ANIMATION FROM GSAP 
 
@@ -26,7 +21,12 @@ CSS WISE
 
 
 
-
+Clean HTML/CSS/JS
+Responsive design
+Console errors இல்லாமல்
+Proper documentation
+Optimized assets
+Licensed/free third-party libraries மட்டும் பயன்படுத்துதல்
 
 
 
