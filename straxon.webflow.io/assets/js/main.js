@@ -126,8 +126,8 @@
          * Animate On Scroll
          */
         AOS.init({
-    offset: 120,
-    duration: 800,
+    offset: 10,
+    duration: 700,
     easing: 'ease',
     once: true,
     mirror: false
