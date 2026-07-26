@@ -96,6 +96,41 @@
             });
         }
 
+        // Check if GSAP is loaded
+if (typeof gsap !== 'undefined' && typeof ScrollTrigger !== 'undefined') {
+  
+  gsap.registerPlugin(ScrollTrigger);
+  
+  const elements = document.querySelectorAll('.home-three-testimonial .testimonial-three-big-text');
+  
+  if (elements.length > 0) {
+    
+    elements.forEach(function(el) {
+      const section = el.closest('.home-three-testimonial');
+      if (!section) return;
+      
+      gsap.fromTo(el,
+        { x: "100%", opacity: 0 },
+        {
+          x: "0%",
+          opacity: 1,
+          duration: 2,
+          ease: "power3.out",
+          scrollTrigger: {
+            trigger: section,
+            start: "top 85%",
+            end: "top 15%",
+            scrub: 1,
+            toggleActions: "play none none reverse",
+            invalidateOnRefresh: true
+          }
+        }
+      );
+    });
+    
+  }
+  
+}
        
 
         /* ===============================
