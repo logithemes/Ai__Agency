@@ -1,7 +1,7 @@
 /**
  * Utilities - Theme Functionality
  * Handles service tabs, card overlays, rotating buttons, arrow toggles,
- * and sticky header
+ * sticky header, and pricing plan toggles
  * 
  * @package YourThemeName
  * @version 1.0.0
@@ -80,6 +80,59 @@
                 } else {
                     currentArrow.css('transform', 'rotate(0deg)');
                 }
+            });
+        }
+
+        /**
+         * Pricing Plan Toggle
+         * Switches between monthly and yearly pricing plans
+         * 
+         * @since 1.0.0
+         */
+        if ($('#monthly-tab').length && $('#yearly-tab').length) {
+            
+            /**
+             * Monthly Pricing
+             * Displays monthly prices with "/Per Month" suffix
+             */
+            $('#monthly-tab').on('click', function() {
+                var $this = $(this);
+                
+                // Update all price items
+                $('.price-item').each(function() {
+                    var monthlyPrice = $(this).data('month');
+                    if (monthlyPrice) {
+                        // Safely update text content while preserving any child elements
+                        $(this).contents().first()[0].textContent = '$' + monthlyPrice + ' ';
+                        $(this).find('span').text('/Per Month');
+                    }
+                });
+                
+                // Toggle active states
+                $this.addClass('tp-active');
+                $('#yearly-tab').removeClass('tp-active');
+            });
+
+            /**
+             * Yearly Pricing
+             * Displays yearly prices with "/Per Year" suffix
+             */
+            $('#yearly-tab').on('click', function() {
+                var $this = $(this);
+                
+                // Update all price items
+                $('.price-item').each(function() {
+                    var yearlyPrice = $(this).data('year');
+                    if (yearlyPrice) {
+                        // Safely update text content while preserving any child elements
+                        $(this).contents().first()[0].textContent = '$' + yearlyPrice + ' ';
+                        $(this).find('span').text('/Per Year');
+                    }
+                });
+                
+                // Toggle active states
+                $this.addClass('tp-active');
+                $('#monthly-tab').removeClass('tp-active');
             });
         }
 
