@@ -3756,9 +3756,7 @@ label {
 /*---------------------------------
     about two award css start 
 ---------------------------------*/
-.experience-name {
-    max-width: 115px;
-}
+
 .about-two-hero-text-wrap {
     z-index: 5;
     text-align: center;
@@ -5011,7 +5009,7 @@ text-align: center;
 
 }
 .project-media {
-    width: 21vw;
+    width: 100%;
     aspect-ratio: 403 / 612;
 }
 
@@ -5050,8 +5048,7 @@ text-align: center;
 
 .proj-slider-box {
     display: inline-block;
-    margin: 0 auto;
-    display: table;
+   width: 100%;
 }
 .border-wrapper-one{position: relative;height: 1.2px;}
 .marquee-tp-slides-cards {

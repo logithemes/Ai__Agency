@@ -30,7 +30,7 @@
                 loop: true,
                 speed: 800,
                 autoplay: {
-                    delay: 1500,
+                    delay: 3500,
                     disableOnInteraction: false,
                 },
                 slidesPerView: 4,
@@ -43,7 +43,7 @@
                         slidesPerView: 3,
                     },
                     992: {
-                        slidesPerView: 4,
+                        slidesPerView: 3,
                     },
                 },
             });

@@ -59,6 +59,7 @@
         wordScrollAnimation('.service-three-connection', '.service-three-text');
         wordScrollAnimation('.home-three-skills', '.home-three-skills .home-three-skills-description p');
         wordScrollAnimation('.home-popup-video', '.home-popup-video-desc');
+         wordScrollAnimation('.about-one-counter-left', '.counter-left-text');
 
         /* ===============================
            FOUR CARDS REVEAL ANIMATION
