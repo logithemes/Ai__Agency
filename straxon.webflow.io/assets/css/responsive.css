@@ -492,14 +492,6 @@
     }
 
 
-    .home-two-projects-boxes {
-        grid-column-gap: 30px;
-        grid-row-gap: 30px;
-        grid-template-rows: auto auto;
-        grid-template-columns: 1fr 1fr;
-        grid-auto-columns: 1fr;
-    }
-
     .home-two-testimonial-backdrop {
         background-image: linear-gradient(#161724 50%, #16172400);
         border-bottom-style: none;
@@ -1117,9 +1109,8 @@
         line-height: 25px;
     }
 
-    .right-arrow {
+    .right-arrow, .story-line{
         display: none;
-        bottom: 25%;
     }
     .wrapper-404-img{max-width: 200px;}
 
@@ -1868,10 +1859,6 @@
 
     .footer-contact-border {
         display: none;
-    }
-
-    .home-two-projects-boxes {
-        grid-template-columns: 1fr;
     }
 
 

@@ -183,40 +183,6 @@
             });
         });
 
-        /* ===============================
-           PROJECTS MOUSE MOVE
-        =============================== */
-        var projectsSection = document.querySelector(".projects-section");
-        var projectsBoxes = document.querySelector(".home-two-projects-boxes");
-        
-        if (projectsSection && projectsBoxes) {
-            var mouseX = 0;
-            var targetX = 0;
-            var maxMovement = 400;
-
-            gsap.set(projectsBoxes, { x: 0 });
-
-            projectsSection.addEventListener("mousemove", function(e) {
-                var rect = projectsSection.getBoundingClientRect();
-                var sectionCenter = rect.width / 2;
-                mouseX = ((e.clientX - rect.left) - sectionCenter) / sectionCenter;
-                targetX = -mouseX * maxMovement;
-            });
-
-            gsap.ticker.add(function() {
-                if (projectsBoxes) {
-                    gsap.to(projectsBoxes, {
-                        x: targetX,
-                        duration: 0.8,
-                        ease: "power2.out"
-                    });
-                }
-            });
-            
-            projectsSection.addEventListener("mouseleave", function() {
-                targetX = 0;
-            });
-        }
 
     }
 

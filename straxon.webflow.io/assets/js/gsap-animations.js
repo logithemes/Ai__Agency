@@ -201,22 +201,50 @@ if (typeof gsap !== 'undefined' && typeof ScrollTrigger !== 'undefined') {
         }
 
       
- 
- // Register ScrollTrigger
-     // Register GSAP + ScrollTrigger
-gsap.registerPlugin(ScrollTrigger);
+        // storyBarAnimation
+function storyBarAnimation() {
+    const sections = document.querySelectorAll(".home-popup-video");
 
-// Banner animation (runs immediately on page load)
-function bannerAnimation() {
-  if (document.querySelector(".banner")) {
-    gsap.from(".banner", {
-      opacity: 0,
-      y: 50,
-      duration: 1.2,
-      ease: "power2.out"
+    if (!sections.length || typeof gsap === "undefined" || typeof ScrollTrigger === "undefined") {
+        return;
+    }
+
+    gsap.registerPlugin(ScrollTrigger);
+
+    sections.forEach(function (section) {
+
+        const storyLine = section.querySelector(".story-line");
+        const storyBar = section.querySelector(".story-bar");
+
+        if (!storyLine || !storyBar) {
+            return;
+        }
+
+        const start = section.getAttribute("data-story-start") || "top top";
+        const end = section.getAttribute("data-story-end") || "bottom bottom";
+
+        gsap.set(storyBar, {
+            height: "20%",
+            y: 0
+        });
+
+        gsap.to(storyBar, {
+            y: function () {
+                return storyLine.offsetHeight - storyBar.offsetHeight;
+            },
+            ease: "none",
+            scrollTrigger: {
+                trigger: section,
+                start: start,
+                end: end,
+                scrub: 1,
+                invalidateOnRefresh: true
+            }
+        });
     });
-  }
 }
+
+storyBarAnimation();
 
         /* ===============================
            BLOG DETAILS / ANIM-WRAP
