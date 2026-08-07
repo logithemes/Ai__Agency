@@ -1267,22 +1267,22 @@ a:hover {
 /*---------------------------------
    How we work  css start 
 ---------------------------------*/
-/* ----- expandable cards container (flex row) ----- */
+ /* ----- expandable cards container (flex row) ----- */
     .process-flex {
       display: flex;
-      flex-wrap: wrap; /* fallback for small screens */
+      flex-wrap: wrap;
       gap: 16px;
       align-items: stretch;
       min-height: 460px;
     }
     /* each card – base style */
     .process-card {
-      flex: 1 1 100px;    /* narrow by default */
+      flex: 1 1 100px;
       min-width: 80px;
       background-color: var(--base-color--mid-dark);
       border-radius: 28px;
-      box-shadow: 0 12px 30px -8px rgba(0,0,0,0.06);
-      border: 1px solid rgba(0,0,0,0.04);
+      /* box-shadow: 0 12px 30px -8px rgba(0,0,0,0.06);
+      border: 1px solid rgba(0,0,0,0.04); */
       padding: 24px 18px;
       transition: box-shadow 0.3s ease;
       cursor: pointer;
@@ -1290,20 +1290,18 @@ a:hover {
       flex-direction: column;
       position: relative;
       overflow: hidden;
-      /* flex-basis will be animated via GSAP */
       flex-basis: 100px;
       flex-grow: 0;
       flex-shrink: 1;
       align-items: center;
     }
-    /* active card gets more flex-basis (will be set via GSAP) */
+    /* active card gets more flex-basis */
     .process-card.active {
-      flex-basis: 340px;
+      flex-basis: 380px;
       flex-grow: 1;
       flex-shrink: 0;
       box-shadow: 0 20px 40px -12px rgba(0,0,0,0.10);
     }
-    /* card inner layout */
     .card-inner {
       display: flex;
       flex-direction: column;
@@ -1311,67 +1309,49 @@ a:hover {
       width: 100%;
       position: relative;
     }
-    /* large step number */
-    .step-number {
-      font-size: 5.2rem;
-      font-weight: 700;
-      line-height: 1;
-      color: #d8d6d0;
-      margin: 0 0 4px 0;
+
+    /* ----- ACTIVE LAYOUT (heading left, number right) ----- */
+    .active-header {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      width: 100%;
+      margin-bottom: 6px;
+      align-items: center;
+    }
+    .active-header .step-title {
+      
+      flex: 1;
+    }
+    .active-header .step-number {
+      font-family: var(--heading-font);
+      font-size: 3.8rem;
+    
+      margin: 0 0 0 12px;
       letter-spacing: 1px;
-      transition: color 0.2s;
       flex-shrink: 0;
     }
-    
-    .timeline_line{    width: 36px;
-    height: 1px;}
-    /* title – only visible when active (or we toggle opacity) */
-    .step-title {
-    
-      letter-spacing: 1.2px;
-      margin: 0 0 6px 0;
-      opacity: 0;
-      transition: opacity 0.2s;
-      line-height: 1.1;
-    }
-    .process-card.active .step-title {
-      opacity: 1;
-    }
-    /* description */
+    /* paragraph below header */
     .step-desc {
-     
-    
+ 
       margin: 0 0 16px 0;
-      opacity: 0;
-      transition: opacity 0.2s;
     }
-    .process-card.active .step-desc {
-      opacity: 1;
-    }
-    /* vertical/portrait image placeholder */
+    /* image – full height / expanded */
     .step-img-wrap {
       border-radius: 18px;
       overflow: hidden;
-      background: #eae7df;
+      
       margin: 8px 0 14px 0;
-      flex-shrink: 0;
-      opacity: 0;
-      transition: opacity 0.25s;
-      aspect-ratio: 3/4; /* portrait */
-      max-height: 220px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background: linear-gradient(145deg, #e0ddd4, #cdc9be);
-    }
-    .process-card.active .step-img-wrap {
-      opacity: 1;
+      flex-shrink: 2;
+      max-height: 100%;
+      width: 100%;
+     
     }
     .step-img-wrap .placeholder-icon {
       font-size: 3.2rem;
       opacity: 0.6;
     }
-    /* timeline & meta */
+    /* timeline */
     .step-meta {
       display: flex;
       flex-wrap: wrap;
@@ -1380,18 +1360,53 @@ a:hover {
       margin-top: auto;
       padding-top: 12px;
       border-top: 1px solid #efede7;
-      opacity: 0;
-      transition: opacity 0.25s;
     }
-    .process-card.active .step-meta {
-      opacity: 1;
-    }
-   
+    .timeline-line{    width: 36px;
+    height: 1px;}
     .step-meta i {
       font-style: normal;
-  
+    
     }
-    /* circular plus/close button */
+
+    /* ----- INACTIVE LAYOUT (only number + arrow) ----- */
+    .inactive-content {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      height: 100%;
+      width: 100%;
+    }
+    .inactive-content .step-number {
+      font-family: 'Bebas Neue', cursive;
+      font-size: 4.8rem;
+      font-weight: 700;
+      line-height: 1;
+      color: #d8d6d0;
+      margin: 0 0 8px 0;
+      letter-spacing: 1px;
+    }
+    
+
+    /* hide active content when inactive, hide inactive content when active */
+    .process-card:not(.active) .active-content {
+      display: none !important;
+    }
+    .process-card.active .inactive-content {
+      display: none !important;
+    }
+    .process-card.active .active-content {
+      display: flex !important;
+      flex-direction: column;
+      height: 100%;
+      width: 100%;
+    }
+    .process-card:not(.active) .inactive-content {
+      height: 100%;
+      justify-content: start;
+    }
+
+    /* toggle button (circular plus/close) – positioned in active & inactive */
     .toggle-btn {
       position: absolute;
       bottom: 20px;
@@ -1405,20 +1420,20 @@ a:hover {
       font-size: 1.6rem;
       font-weight: 300;
       line-height: 1;
-     
+      display: flex;
+      align-items: center;
+      justify-content: center;
       transition: transform 0.3s ease, background 0.2s;
       cursor: pointer;
       z-index: 5;
       box-shadow: 0 4px 12px rgba(0,0,0,0.08);
       pointer-events: auto;
     }
+
+    
     .toggle-btn:hover {
       background: #2a2a2a;
       transform: scale(1.05);
-    }
-    .process-card.active .toggle-btn {
-      background: #0a0a0a;
-      right: 20px;
     }
     .toggle-btn .icon-plus::before {
       content: '+';
@@ -1431,22 +1446,7 @@ a:hover {
       line-height: 1;
       margin-top: -4px;
     }
-    /* inactive cards: hide extra content, show number + button */
-    .process-card:not(.active) .step-title,
-    .process-card:not(.active) .step-desc,
-    .process-card:not(.active) .step-img-wrap,
-    .process-card:not(.active) .step-meta {
-      opacity: 0 !important;
-      pointer-events: none;
-    }
-    .process-card:not(.active) .step-number {
-      font-size: 4.8rem;
-      margin-bottom: 0;
-    }
-    .process-card:not(.active) .card-inner {
-      justify-content: center;
-      align-items: flex-start;
-    }
+.process-card.active .toggle-btn{right: 20px;}
     /* subtle dividers between cards */
     .process-flex .process-card:not(:last-child)::after {
       content: '';
@@ -1459,7 +1459,7 @@ a:hover {
       pointer-events: none;
     }
 
-    /* responsive – fallback to stacked on small */
+    /* responsive – stacked on small */
     @media (max-width: 768px) {
       .process-flex {
         flex-direction: column;
@@ -1470,22 +1470,30 @@ a:hover {
         min-width: unset;
         width: 100%;
         flex: 1 1 auto;
+        padding: 24px 20px;
       }
-      .process-card:not(.active) .step-title,
-      .process-card:not(.active) .step-desc,
-      .process-card:not(.active) .step-img-wrap,
-      .process-card:not(.active) .step-meta {
-        opacity: 1 !important;
-        pointer-events: auto;
+      .process-card:not(.active) .active-content {
+        display: none !important;
       }
-      .process-card:not(.active) .step-number {
+      .process-card.active .inactive-content {
+        display: none !important;
+      }
+      .process-card.active .active-content {
+        display: flex !important;
+      }
+      .process-card:not(.active) .inactive-content {
+        display: flex !important;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+      }
+      .process-card:not(.active) .inactive-content .step-number {
         font-size: 3.6rem;
+        margin: 0;
       }
-      .process-card:not(.active) .card-inner {
-        justify-content: flex-start;
-      }
-      .process-card:not(.active) .step-img-wrap {
-        max-height: 140px;
+      .process-card:not(.active) .inactive-arrow {
+        font-size: 1.6rem;
       }
       .process-card::after {
         display: none !important;
@@ -1497,7 +1505,22 @@ a:hover {
         height: 34px;
         font-size: 1.4rem;
       }
+      .active-header .step-number {
+        font-size: 2.8rem;
+      }
+      .step-img-wrap {
+        max-height: 180px;
+      }
     }
+    @media (max-width: 480px) {
+      .active-header {
+        flex-wrap: wrap;
+      }
+      .active-header .step-number {
+        margin-left: auto;
+      }
+    }
+
 
 .home-one-testimonial-content {
     text-align: center;

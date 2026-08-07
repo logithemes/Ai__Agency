@@ -246,6 +246,7 @@ function storyBarAnimation() {
 
 storyBarAnimation();
 
+
         /* ===============================
            BLOG DETAILS / ANIM-WRAP
         =============================== */
