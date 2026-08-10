@@ -82,6 +82,9 @@
     --tp-section-bg: #ddd;
     --base-color--mid-dark: #1a1a1a;
 
+    /* Line height */
+     --body-line-height: 1.7;
+
     /* Font Family */
     --heading-font: 'Bebas Neue', sans-serif;
     --body-font:  'Poppins', sans-serif;
@@ -310,6 +313,7 @@ p {
     margin-top: 0;
     margin-bottom: 10px;
     color: var(--color-body-text);
+    line-height: var(--body-line-height);
 }
 
 p:last-child {
@@ -1264,10 +1268,10 @@ a:hover {
 
 
 
-/*---------------------------------
-   How we work  css start 
----------------------------------*/
- /* ----- expandable cards container (flex row) ----- */
+  /* ----- your original classes (kept intact) ----- */
+    .working-process { padding-top: 60px; }
+    
+    /* ---------- expandable cards (your exact design) ---------- */
     .process-flex {
       display: flex;
       flex-wrap: wrap;
@@ -1275,15 +1279,12 @@ a:hover {
       align-items: stretch;
       min-height: 460px;
     }
-    /* each card – base style */
     .process-card {
       flex: 1 1 100px;
       min-width: 80px;
       background-color: var(--base-color--mid-dark);
       border-radius: 28px;
-      /* box-shadow: 0 12px 30px -8px rgba(0,0,0,0.06);
-      border: 1px solid rgba(0,0,0,0.04); */
-      padding: 24px 18px;
+      padding: 24px;
       transition: box-shadow 0.3s ease;
       cursor: pointer;
       display: flex;
@@ -1294,13 +1295,14 @@ a:hover {
       flex-grow: 0;
       flex-shrink: 1;
       align-items: center;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.02);
+      border: 1px solid rgba(0, 0, 0, 0.02);
     }
-    /* active card gets more flex-basis */
     .process-card.active {
       flex-basis: 380px;
       flex-grow: 1;
       flex-shrink: 0;
-      box-shadow: 0 20px 40px -12px rgba(0,0,0,0.10);
+      box-shadow: 0 20px 40px -12px rgba(0, 0, 0, 0.08);
     }
     .card-inner {
       display: flex;
@@ -1309,66 +1311,55 @@ a:hover {
       width: 100%;
       position: relative;
     }
-
-    /* ----- ACTIVE LAYOUT (heading left, number right) ----- */
     .active-header {
       display: flex;
       align-items: baseline;
       justify-content: space-between;
       width: 100%;
-      margin-bottom: 6px;
       align-items: center;
     }
     .active-header .step-title {
-      
       flex: 1;
+    
+      font-weight: 600;
+    
     }
+    .step-number{font-weight: 600;  font-size: clamp(36px, 6.8vw, 60px);}
     .active-header .step-number {
-      font-family: var(--heading-font);
-      font-size: 3.8rem;
     
       margin: 0 0 0 12px;
-      letter-spacing: 1px;
       flex-shrink: 0;
+      background-image: var(--tp-gradient-primary);
+        -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+      line-height: 1;
     }
-    /* paragraph below header */
-    .step-desc {
- 
-      margin: 0 0 16px 0;
-    }
-    /* image – full height / expanded */
     .step-img-wrap {
       border-radius: 18px;
       overflow: hidden;
-      
-      margin: 8px 0 14px 0;
-      flex-shrink: 2;
+    
+      flex-shrink: 1;
       max-height: 100%;
       width: 100%;
-     
+    
     }
-    .step-img-wrap .placeholder-icon {
-      font-size: 3.2rem;
-      opacity: 0.6;
-    }
-    /* timeline */
+    
+
     .step-meta {
       display: flex;
       flex-wrap: wrap;
       align-items: center;
       gap: 8px 14px;
       margin-top: auto;
-      padding-top: 12px;
-      border-top: 1px solid #efede7;
     }
-    .timeline-line{    width: 36px;
-    height: 1px;}
-    .step-meta i {
-      font-style: normal;
-    
+    .timeline-line {
+      width: 36px;
+      height: 1px;
+      background: #b0b0b0;
     }
 
-    /* ----- INACTIVE LAYOUT (only number + arrow) ----- */
+    /* inactive content */
     .inactive-content {
       display: flex;
       flex-direction: column;
@@ -1378,25 +1369,15 @@ a:hover {
       width: 100%;
     }
     .inactive-content .step-number {
-      font-family: 'Bebas Neue', cursive;
-      font-size: 4.8rem;
-      font-weight: 700;
+     
       line-height: 1;
-      color: #d8d6d0;
       margin: 0 0 8px 0;
       letter-spacing: 1px;
     }
-    
-
-    /* hide active content when inactive, hide inactive content when active */
-    .process-card:not(.active) .active-content {
-      display: none !important;
-    }
-    .process-card.active .inactive-content {
-      display: none !important;
-    }
+    .process-card:not(.active) .active-content { display: none; }
+    .process-card.active .inactive-content { display: none; }
     .process-card.active .active-content {
-      display: flex !important;
+      display: flex;
       flex-direction: column;
       height: 100%;
       width: 100%;
@@ -1406,7 +1387,7 @@ a:hover {
       justify-content: start;
     }
 
-    /* toggle button (circular plus/close) – positioned in active & inactive */
+    /* toggle button */
     .toggle-btn {
       position: absolute;
       bottom: 20px;
@@ -1420,17 +1401,12 @@ a:hover {
       font-size: 1.6rem;
       font-weight: 300;
       line-height: 1;
-      display: flex;
-      align-items: center;
-      justify-content: center;
       transition: transform 0.3s ease, background 0.2s;
       cursor: pointer;
       z-index: 5;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
       pointer-events: auto;
     }
-
-    
     .toggle-btn:hover {
       background: #2a2a2a;
       transform: scale(1.05);
@@ -1446,8 +1422,9 @@ a:hover {
       line-height: 1;
       margin-top: -4px;
     }
-.process-card.active .toggle-btn{right: 20px;}
-    /* subtle dividers between cards */
+    .process-card.active .toggle-btn { right: 20px; }
+
+    /* divider */
     .process-flex .process-card:not(:last-child)::after {
       content: '';
       position: absolute;
@@ -1455,72 +1432,64 @@ a:hover {
       top: 15%;
       height: 70%;
       width: 1px;
-      background: rgba(0,0,0,0.06);
+      background: rgba(0, 0, 0, 0.04);
       pointer-events: none;
     }
 
-    /* responsive – stacked on small */
-    @media (max-width: 768px) {
+    /* ----- responsive: below 992px (full card design) ----- */
+    @media (max-width: 991px) {
       .process-flex {
         flex-direction: column;
         gap: 20px;
       }
       .process-card {
-        flex-basis: auto !important;
+        flex-basis: auto ;
         min-width: unset;
         width: 100%;
-        flex: 1 1 auto;
+        flex: 1 1 auto ;
         padding: 24px 20px;
+        box-shadow: 0 6px 18px rgba(0, 0, 0, 0.02);
       }
-      .process-card:not(.active) .active-content {
-        display: none !important;
-      }
-      .process-card.active .inactive-content {
-        display: none !important;
-      }
-      .process-card.active .active-content {
-        display: flex !important;
-      }
-      .process-card:not(.active) .inactive-content {
-        display: flex !important;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
+      /* show full card content for all cards (like screenshot) */
+      .process-card .active-content {
+        display: flex;
+        flex-direction: column;
+        height: auto;
         width: 100%;
       }
-      .process-card:not(.active) .inactive-content .step-number {
-        font-size: 3.6rem;
-        margin: 0;
+      .process-card .inactive-content {
+        display: none;
       }
-      .process-card:not(.active) .inactive-arrow {
-        font-size: 1.6rem;
+      .process-card.active .active-content {
+        display: flex ;
       }
-      .process-card::after {
-        display: none !important;
+      .process-card.active .inactive-content {
+        display: none ;
+      }
+      .toggle-btn{display: none;}
+      .process-card:not(.active) .active-content {
+        display: flex ;
+      }
+      .process-card:not(.active) .inactive-content {
+        display: none ;
       }
       .toggle-btn {
-        top: 12px;
-        right: 12px;
-        width: 34px;
-        height: 34px;
-        font-size: 1.4rem;
+        position: relative;
+        bottom: auto;
+        right: auto;
+        margin-top: 16px;
+        align-self: flex-end;
       }
-      .active-header .step-number {
-        font-size: 2.8rem;
-      }
-      .step-img-wrap {
-        max-height: 180px;
-      }
-    }
-    @media (max-width: 480px) {
-      .active-header {
-        flex-wrap: wrap;
-      }
-      .active-header .step-number {
-        margin-left: auto;
-      }
+      .process-card.active .toggle-btn { right: auto; }
+      .process-card::after { display: none; }
+    
+      .process-inner { flex-direction: column; gap: 20px; }
     }
 
+    @media (max-width: 480px) {
+      .active-header { flex-wrap: wrap; }
+      .active-header .step-number { margin-left: auto; }
+    }
 
 .home-one-testimonial-content {
     text-align: center;

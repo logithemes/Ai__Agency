@@ -228,6 +228,7 @@
         transform: translateY(0);
 
     }
+    .process-flex{display: grid; grid-template-columns: 1fr 50%;}
 
     .main-menu-section {
         position: absolute;
@@ -383,7 +384,7 @@
     }
 
     .let-s-talk {
-        display: none !important;
+        display: none;
     }
 
     .home-one-work-bottom-text {
@@ -974,7 +975,7 @@
     }
 
 
-   
+   .process-inner{flex-direction: column;}
 }
 
 @media screen and (max-width: 767px) {
@@ -1766,10 +1767,12 @@
 }
 
 @media screen and (max-width: 576px) {
+   
     .about-three-service .about-three-service-icons{    width: 80px;
     height: 80px;}
     .home-one-service-cards{padding-left: 10px;padding-right: 10px;}
     .footer-one-information-wrapper{margin-bottom: 15px;}
+    .process-flex{display: flex;flex-direction: column;}
 }
 @media screen and (max-width: 500px) {
     .ctn_preloader .animation-preloader .spinner {
