@@ -462,9 +462,6 @@ a:hover {
 /*----------------------------------------*/
 /*  Utility Classes
 /*----------------------------------------*/
-.tp-inline-block {
-    display: inline-block;
-}
 
 .tp-common-white {
     color: var(--tp-common-white);

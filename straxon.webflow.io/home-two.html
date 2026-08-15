@@ -7,358 +7,362 @@
   <link href="assets/img/favicon.png" rel="shortcut icon">
   <meta name="description" content="Stynero — sleek, responsive digital agency for startups & creatives.">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-   <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-<link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
-<link rel="stylesheet" href="assets/css/bootstrap-icons.css">
-<link rel="stylesheet" href="assets/css/aos.css">
-<link rel="stylesheet" href="assets/css/style.css">
-<link rel="stylesheet" href="assets/css/spacing.css">
-<link rel="stylesheet" href="assets/css/responsive.css">
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="assets/css/bootstrap-icons.css">
+  <link rel="stylesheet" href="assets/css/aos.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/spacing.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
-.portfolio-sticky-wrapper {
-  position: relative;
-}
+    .portfolio-sticky-wrapper {
+      position: relative;
+    }
 
-.portfolio-sticky-wrapper .portfolio-sticky-inner {
-  max-width: 1180px;
-  margin: auto;
-}
+    .portfolio-sticky-wrapper .portfolio-sticky-inner {
+      max-width: 1180px;
+      margin: auto;
+    }
 
-.portfolio-sticky-wrapper .portfolio-sticky-layout {
-  display: flex;
-  flex-direction: column;
-  gap: 80px;
-}
+    .portfolio-sticky-wrapper .portfolio-sticky-layout {
+      display: flex;
+      flex-direction: column;
+      gap: 80px;
+    }
 
-.portfolio-sticky-wrapper .portfolio-content {
-  position: relative;
-  display: flex;
-  align-items: flex-start;
-  gap: 4vw;
-}
+    .portfolio-sticky-wrapper .portfolio-content {
+      position: relative;
+      display: flex;
+      align-items: flex-start;
+      gap: 4vw;
+    }
 
-.portfolio-sticky-wrapper .sticky-counter-wrapper {
-  position: relative;
-  overflow: hidden;
-  height: 310px;
-  width: 290px;
-}
+    .portfolio-sticky-wrapper .sticky-counter-wrapper {
+      position: relative;
+      overflow: hidden;
+      height: 310px;
+      width: 290px;
+    }
 
-.portfolio-sticky-wrapper .portfolio-counter {
-  position: absolute;
-  opacity: 0;
-  height: fit-content;
-  inset: 0;
-  width: fit-content;
-  margin: auto;
-  font-weight: 500;
-  font-size: 150px;
-  line-height: 100%;
-  background: linear-gradient(180.38deg, rgba(241, 164, 117, 0.3) -5.1%, rgba(252, 217, 184, 0.6) 30.72%, #CC835A 56.29%, #0C1F45 90.28%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-}
+    .portfolio-sticky-wrapper .portfolio-counter {
+      position: absolute;
+      opacity: 0;
+      height: fit-content;
+      inset: 0;
+      width: fit-content;
+      margin: auto;
+      font-weight: 500;
+      font-size: 150px;
+      line-height: 100%;
+      background: linear-gradient(180.38deg, rgba(241, 164, 117, 0.3) -5.1%, rgba(252, 217, 184, 0.6) 30.72%, #CC835A 56.29%, #0C1F45 90.28%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
 
 
-/* ---- card list ---- */
+    /* ---- card list ---- */
 
-.portfolio-sticky-wrapper .portfolio-img-wrapper {
-  flex: 1;
-  position: relative;
-  height: 450px;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
+    .portfolio-sticky-wrapper .portfolio-img-wrapper {
+      flex: 1;
+      position: relative;
+      height: 450px;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
 
-.portfolio-sticky-wrapper .portfolio-sticky-images {
-  position: absolute;
-  margin: auto;
-  margin-right: 0;
-  opacity: 0;
-  transform-origin: top center;
-  padding: 18px 27px;
-  display: flex;
-  flex-direction: column;
-  left: 50%;
-  transform: translateX(-50%);
-  gap: 14px;
-  background: linear-gradient(98.45deg, #BBBDBF 6.33%, #FFFFFF 32.29%, #F1F1F2 54.87%, #FFFFFF 72.83%, #BBBDBF 96.04%);
-  border-radius: 4px;
-  width: 620px;
-  height: 310px;
-  z-index: 1;
-  overflow: hidden;
-}
-.portfolio-sticky-wrapper .portfolio-sticky-images__copy {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-}
-/* ============================================================
+    .portfolio-sticky-wrapper .portfolio-sticky-images {
+      position: absolute;
+      margin: auto;
+      margin-right: 0;
+      opacity: 0;
+      transform-origin: top center;
+      padding: 18px 27px;
+      display: flex;
+      flex-direction: column;
+      left: 50%;
+      transform: translateX(-50%);
+      gap: 14px;
+      
+      width: 620px;
+      height: 310px;
+      z-index: 1;
+      overflow: hidden;
+    }
+
+    /* ============================================================
    Responsive
    ============================================================ */
 
-@media (max-width: 1200px) {
-  .portfolio-sticky-wrapper .stickyStepCounter-section__title {
-    font-size: 2.75rem;
-  }
-  .portfolio-sticky-wrapper .stickyStepCounter-section__subtitle {
-    font-size: 18px;
-  }
-  .portfolio-sticky-wrapper .portfolio-content {
-    padding: 40px 20px 40px;
-  }
-  .portfolio-sticky-wrapper .portfolio-counter {
-    font-size: 180px;
-  }
-}
+    @media (max-width: 1200px) {
+      .portfolio-sticky-wrapper .stickyStepCounter-section__title {
+        font-size: 2.75rem;
+      }
 
-@media (max-width: 1024px) {
-  .portfolio-sticky-wrapper {
-    padding: 30px 24px;
-  }
-  .portfolio-sticky-wrapper .portfolio-sticky-layout {
-    gap: 25px;
-  }
-  .portfolio-sticky-wrapper .portfolio-content {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 0 8vw;
-  }
-  .portfolio-sticky-wrapper .sticky-counter-wrapper {
-    width: 100%;
-    height: 160px;
-  }
-  .portfolio-sticky-wrapper .portfolio-counter {
-    font-size: 180px;
-    inset: 0;
-    margin: auto;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .portfolio-sticky-wrapper .portfolio-img-wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-}
+      .portfolio-sticky-wrapper .stickyStepCounter-section__subtitle {
+        font-size: 18px;
+      }
+
+      .portfolio-sticky-wrapper .portfolio-content {
+        padding: 40px 20px 40px;
+      }
+
+      .portfolio-sticky-wrapper .portfolio-counter {
+        font-size: 180px;
+      }
+    }
+
+    @media (max-width: 1024px) {
+      .portfolio-sticky-wrapper {
+        padding: 30px 24px;
+      }
+
+      .portfolio-sticky-wrapper .portfolio-sticky-layout {
+        gap: 25px;
+      }
+
+      .portfolio-sticky-wrapper .portfolio-content {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0 8vw;
+      }
+
+      .portfolio-sticky-wrapper .sticky-counter-wrapper {
+        width: 100%;
+        height: 160px;
+      }
+
+      .portfolio-sticky-wrapper .portfolio-counter {
+        font-size: 180px;
+        inset: 0;
+        margin: auto;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .portfolio-sticky-wrapper .portfolio-img-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
   </style>
 </head>
 
 <body>
-<header class="navbar w-100">
-  <div role="banner" class="navbar-one header-main w-100">
-    <div class="container-fluid">
-      <div class="navbar-one-wrapper align-items-center row">
+  <header class="navbar w-100">
+    <div role="banner" class="navbar-one header-main w-100">
+      <div class="container-fluid">
+        <div class="navbar-one-wrapper align-items-center row">
 
-        <!-- Logo -->
-        <div class="col-6 col-xl-3 col-lg-3">
-          <a href="index.html" class="stynero-wrapper header-logo tp-flex-center">
-            <img width="140" height="30" alt="logo-img" src="assets/img/logo/logo.svg" loading="lazy" class="stynero">
-          </a>
-        </div>
-
-        <!-- Menu -->
-        <div class="col-xl-7 col-lg-7 center-menu-wrapper">
-          <div class="main-menu-section">
-          <nav role="navigation" class="nav-menu main-menu" aria-label="Main Navigation">
-            <ul class="nav-inline">
-
-              <li class="tp-dropdown menu-item">
-                <a href="javascript:void(0)" class="tp-dropdown-toggle menu-item-toggle">
-                  <span>Home</span>
-                  <i class="bi bi-chevron-down tp-menu-dropdown-icon menu-dp-icon mt-0"></i>
-                </a>
-                <ul class="tp-dropdown-menu dp-menu">
-                  <li><a href="home-one.html" class="dropdown-link menu-dd-link d-block">Home One</a></li>
-                  <li><a href="home-two.html" class="dropdown-link menu-dd-link">Home Two</a></li>
-                  <li><a href="home-three.html" class="dropdown-link menu-dd-link">Home Three</a></li>
-                </ul>
-              </li>
-
-              <li class="tp-dropdown menu-item">
-                <a href="javascript:void(0)" class="tp-dropdown-toggle menu-item-toggle">
-                  <span>About</span>
-                  <i class="bi bi-chevron-down tp-menu-dropdown-icon menu-dp-icon mt-0"></i>
-                </a>
-                <ul class="tp-dropdown-menu dp-menu">
-                  <li><a href="about-one.html" class="dropdown-link menu-dd-link">About One</a></li>
-                  <li><a href="about-two.html" class="dropdown-link menu-dd-link">About Two</a></li>
-                  <li><a href="about-three.html" class="dropdown-link menu-dd-link">About Three</a></li>
-                </ul>
-              </li>
-
-              <li class="tp-dropdown menu-item">
-                <a href="javascript:void(0)" class="tp-dropdown-toggle menu-item-toggle">
-                  <span>Pages</span>
-                  <i class="bi bi-chevron-down tp-menu-dropdown-icon menu-dp-icon mt-0"></i>
-                </a>
-                <ul class="tp-dropdown-menu dp-menu">
-                  <li><a href="service-one.html" class="dropdown-link menu-dd-link">Service One</a></li>
-                  <li><a href="service-two.html" class="dropdown-link menu-dd-link">Service Two</a></li>
-                  <li><a href="service-three.html" class="dropdown-link menu-dd-link">Service Three</a></li>
-                  <li><a href="projects.html" class="dropdown-link menu-dd-link">Projects</a></li>
-                  <li><a href="team.html" class="dropdown-link menu-dd-link">Team</a></li>
-                  <li><a href="404.html" class="dropdown-link menu-dd-link">404</a></li>
-                </ul>
-              </li>
-
-              <li class="tp-dropdown menu-item">
-                <a href="pricing.html" class="tp-dropdown-toggle">Pricing</a>
-              </li>
-
-              <li class="tp-dropdown menu-item">
-                <a href="javascript:void(0)" class="tp-dropdown-toggle menu-item-toggle">
-                  <span>Blog</span>
-                  <i class="bi bi-chevron-down tp-menu-dropdown-icon menu-dp-icon mt-0"></i>
-                </a>
-                <ul class="tp-dropdown-menu dp-menu">
-                  <li><a href="blog-one.html" class="dropdown-link menu-dd-link">Blog One</a></li>
-                  <li><a href="blog-two.html" class="dropdown-link menu-dd-link">Blog Two</a></li>
-                  <li><a href="blog-three.html" class="dropdown-link menu-dd-link">Blog Three</a></li>
-                </ul>
-              </li>
-
-              <li class="tp-dropdown menu-item">
-                <a href="javascript:void(0)" class="tp-dropdown-toggle menu-item-toggle">
-                  <span>Contact</span>
-                  <i class="bi bi-chevron-down tp-menu-dropdown-icon menu-dp-icon mt-0"></i>
-                </a>
-                <ul class="tp-dropdown-menu dp-menu">
-                  <li><a href="contact-one.html" class="dropdown-link menu-dd-link">Contact One</a></li>
-                  <li><a href="contact-two.html" class="dropdown-link menu-dd-link">Contact Two</a></li>
-                  <li><a href="contact-three.html" class="dropdown-link menu-dd-link">Contact Three</a></li>
-                </ul>
-              </li>
-
-            </ul>
-          </nav>
-          </div>
-        </div>
-
-        <!-- CTA + Hamburger -->
-        <div class="col-6 col-xl-2 col-lg-2">
-
-       <div class="d-flex justify-content-end align-items-center">
-           <a href="tel:(888)1234567" class="let-s-talk">
-            <div class="rounded-circle ph-icon-wrapper d-flex align-items-center justify-content-center">
-              <i class="bi bi-telephone navbar-icon transition-slow tp-common-white"></i>
-            </div>
-
-            <div class="let-s-talk-text-wrapper">
-              <span class="button-text-hover transition-medium">Lets&#x27; Talk</span>
-              <span class="button-text-hover-out transition-medium">(888) 123 4567</span>
-            </div>
-          </a>
-       </div>
-
-          <div class="humburger-wrapper humburger-main ms-3">
-            <span class="humburger-bar humburger-bar-one"></span>
-            <span class="humburger-bar humburger-bar-two"></span>
+          <!-- Logo -->
+          <div class="col-6 col-xl-3 col-lg-3">
+            <a href="index.html" class="stynero-wrapper header-logo tp-flex-center">
+              <img width="140" height="30" alt="logo-img" src="assets/img/logo/logo.svg" loading="lazy" class="stynero">
+            </a>
           </div>
 
-        </div>
+          <!-- Menu -->
+          <div class="col-xl-7 col-lg-7 center-menu-wrapper">
+            <div class="main-menu-section">
+              <nav role="navigation" class="nav-menu main-menu" aria-label="Main Navigation">
+                <ul class="nav-inline">
 
+                  <li class="tp-dropdown menu-item">
+                    <a href="javascript:void(0)" class="tp-dropdown-toggle menu-item-toggle">
+                      <span>Home</span>
+                      <i class="bi bi-chevron-down tp-menu-dropdown-icon menu-dp-icon mt-0"></i>
+                    </a>
+                    <ul class="tp-dropdown-menu dp-menu">
+                      <li><a href="home-one.html" class="dropdown-link menu-dd-link d-block">Home One</a></li>
+                      <li><a href="home-two.html" class="dropdown-link menu-dd-link">Home Two</a></li>
+                      <li><a href="home-three.html" class="dropdown-link menu-dd-link">Home Three</a></li>
+                    </ul>
+                  </li>
+
+                  <li class="tp-dropdown menu-item">
+                    <a href="javascript:void(0)" class="tp-dropdown-toggle menu-item-toggle">
+                      <span>About</span>
+                      <i class="bi bi-chevron-down tp-menu-dropdown-icon menu-dp-icon mt-0"></i>
+                    </a>
+                    <ul class="tp-dropdown-menu dp-menu">
+                      <li><a href="about-one.html" class="dropdown-link menu-dd-link">About One</a></li>
+                      <li><a href="about-two.html" class="dropdown-link menu-dd-link">About Two</a></li>
+                      <li><a href="about-three.html" class="dropdown-link menu-dd-link">About Three</a></li>
+                    </ul>
+                  </li>
+
+                  <li class="tp-dropdown menu-item">
+                    <a href="javascript:void(0)" class="tp-dropdown-toggle menu-item-toggle">
+                      <span>Pages</span>
+                      <i class="bi bi-chevron-down tp-menu-dropdown-icon menu-dp-icon mt-0"></i>
+                    </a>
+                    <ul class="tp-dropdown-menu dp-menu">
+                      <li><a href="service-one.html" class="dropdown-link menu-dd-link">Service One</a></li>
+                      <li><a href="service-two.html" class="dropdown-link menu-dd-link">Service Two</a></li>
+                      <li><a href="service-three.html" class="dropdown-link menu-dd-link">Service Three</a></li>
+                      <li><a href="projects.html" class="dropdown-link menu-dd-link">Projects</a></li>
+                      <li><a href="team.html" class="dropdown-link menu-dd-link">Team</a></li>
+                      <li><a href="404.html" class="dropdown-link menu-dd-link">404</a></li>
+                    </ul>
+                  </li>
+
+                  <li class="tp-dropdown menu-item">
+                    <a href="pricing.html" class="tp-dropdown-toggle">Pricing</a>
+                  </li>
+
+                  <li class="tp-dropdown menu-item">
+                    <a href="javascript:void(0)" class="tp-dropdown-toggle menu-item-toggle">
+                      <span>Blog</span>
+                      <i class="bi bi-chevron-down tp-menu-dropdown-icon menu-dp-icon mt-0"></i>
+                    </a>
+                    <ul class="tp-dropdown-menu dp-menu">
+                      <li><a href="blog-one.html" class="dropdown-link menu-dd-link">Blog One</a></li>
+                      <li><a href="blog-two.html" class="dropdown-link menu-dd-link">Blog Two</a></li>
+                      <li><a href="blog-three.html" class="dropdown-link menu-dd-link">Blog Three</a></li>
+                    </ul>
+                  </li>
+
+                  <li class="tp-dropdown menu-item">
+                    <a href="javascript:void(0)" class="tp-dropdown-toggle menu-item-toggle">
+                      <span>Contact</span>
+                      <i class="bi bi-chevron-down tp-menu-dropdown-icon menu-dp-icon mt-0"></i>
+                    </a>
+                    <ul class="tp-dropdown-menu dp-menu">
+                      <li><a href="contact-one.html" class="dropdown-link menu-dd-link">Contact One</a></li>
+                      <li><a href="contact-two.html" class="dropdown-link menu-dd-link">Contact Two</a></li>
+                      <li><a href="contact-three.html" class="dropdown-link menu-dd-link">Contact Three</a></li>
+                    </ul>
+                  </li>
+
+                </ul>
+              </nav>
+            </div>
+          </div>
+
+          <!-- CTA + Hamburger -->
+          <div class="col-6 col-xl-2 col-lg-2">
+
+            <div class="d-flex justify-content-end align-items-center">
+              <a href="tel:(888)1234567" class="let-s-talk">
+                <div class="rounded-circle ph-icon-wrapper d-flex align-items-center justify-content-center">
+                  <i class="bi bi-telephone navbar-icon transition-slow tp-common-white"></i>
+                </div>
+
+                <div class="let-s-talk-text-wrapper">
+                  <span class="button-text-hover transition-medium">Lets&#x27; Talk</span>
+                  <span class="button-text-hover-out transition-medium">(888) 123 4567</span>
+                </div>
+              </a>
+            </div>
+
+            <div class="humburger-wrapper humburger-main ms-3">
+              <span class="humburger-bar humburger-bar-one"></span>
+              <span class="humburger-bar humburger-bar-two"></span>
+            </div>
+
+          </div>
+
+        </div>
       </div>
     </div>
-  </div>
-</header>
+  </header>
 
   <!-- ===================================================
                 home two hero
           ==================================================== -->
-    <section class="home-two-hero pt-220 md-pt-140 md-pb-20">
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-12 col-lg-6">
+  <section class="home-two-hero pt-220 md-pt-140 md-pb-20">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-12 col-lg-6">
 
-            <div class="tp-flex-vertical home-two-hero-text">
+          <div class="tp-flex-vertical home-two-hero-text">
 
-              <div class="section-subtitle tp-flex-horizontal tag-wrapper"  data-aos="fade-up" data-aos-delay="100">
-                <span class="tag-border"></span>
-                <span class="text-capitalize">best digital agency</span>
-              </div>
+            <div class="section-subtitle tp-flex-horizontal tag-wrapper" data-aos="fade-up" data-aos-delay="100">
+              <span class="tag-border"></span>
+              <span class="text-capitalize">best digital agency</span>
+            </div>
 
-              <h1 class="section-title-heading mt-25 mb-10 sm-mb-20" data-aos="fade-up" data-aos-delay="300">
-                explore our <span class="text-gradiant">Digital Journey</span>
-              </h1>
+            <h1 class="section-title-heading mt-25 mb-10 sm-mb-20" data-aos="fade-up" data-aos-delay="300">
+              explore our <span class="text-gradiant">Digital Journey</span>
+            </h1>
 
-              <p class="home-two-hero-description md-mb-30 mb-40"  data-aos="fade-up" data-aos-delay="300">
-                Lorem ipsum dolor sit amet,
-                <span class="tp-common-white">
-                  consectetur adipiscing elit. Suspendisse varius
-                </span>
-                enim in eros elem entum tristique. Duis cursus, mi quis viverra ornare,
-                eros dolor interdum
-                <span class="tp-common-white">
-                  nulla, ut commodo.
-                </span>
-              </p>
-
-              <div class="tp-flex-horizontal home-two-hero-buttons"  data-aos="fade-up" data-aos-delay="400">
-        
-                       <a href="service-one.html" class="tp-button-wrapper tp-flex-center">
-              <span class="tp-button-text">
-                <span class="tp-button-front">Explore services</span>
-                <span class="tp-button-back">Explore services</span>
+            <p class="home-two-hero-description md-mb-30 mb-40" data-aos="fade-up" data-aos-delay="300">
+              Lorem ipsum dolor sit amet,
+              <span class="tp-common-white">
+                consectetur adipiscing elit. Suspendisse varius
               </span>
-              <span class="tp-button-icon">
-                <span class="tp-button-arrow">
-                  <i class="bi bi-arrow-right"></i>
-                  <i class="bi bi-arrow-right"></i>
-                </span>
+              enim in eros elem entum tristique. Duis cursus, mi quis viverra ornare,
+              eros dolor interdum
+              <span class="tp-common-white">
+                nulla, ut commodo.
               </span>
-            </a>
+            </p>
 
+            <div class="tp-flex-horizontal home-two-hero-buttons" data-aos="fade-up" data-aos-delay="400">
 
-
-         
-                <address class="tp-flex-horizontal help-button-wrapper mb-0">
-                  <span class="text-capitalize tp-common-white">
-                    Need Any Help?
+              <a href="service-one.html" class="tp-button-wrapper tp-flex-center">
+                <span class="tp-button-text">
+                  <span class="tp-button-front">Explore services</span>
+                  <span class="tp-button-back">Explore services</span>
+                </span>
+                <span class="tp-button-icon">
+                  <span class="tp-button-arrow">
+                    <i class="bi bi-arrow-right"></i>
+                    <i class="bi bi-arrow-right"></i>
                   </span>
+                </span>
+              </a>
 
-                  <span class="gradiant-dot"></span>
 
-                  <a href="tel:8881234567" class="heading-five tp-common-white heading-font">
-                    (888) 123 4567
-                  </a>
-                </address>
 
-              </div>
+
+              <address class="tp-flex-horizontal help-button-wrapper mb-0">
+                <span class="text-capitalize tp-common-white">
+                  Need Any Help?
+                </span>
+
+                <span class="gradiant-dot"></span>
+
+                <a href="tel:8881234567" class="heading-five tp-common-white heading-font">
+                  (888) 123 4567
+                </a>
+              </address>
 
             </div>
 
           </div>
-          <div class="col-12 col-lg-6 pt-5 py-lg-0">
 
-            <figure class="home-two-hero-image-wrapper tp-pl-30 tp-radius-30 md-pt-40"  data-aos="fade-up" data-aos-delay="600">
+        </div>
+        <div class="col-12 col-lg-6 pt-5 py-lg-0">
 
-              <div class="overflow-hidden">
-                <img width="573" height="655" alt="Hero image" src="assets/img/hero/hero-2.webp" loading="lazy"
-                  class="tab-image-full-width img-hover-3d">
-              </div>
+          <figure class="home-two-hero-image-wrapper tp-pl-30 tp-radius-30 md-pt-40" data-aos="fade-up"
+            data-aos-delay="600">
 
-              <a href="contact-one.html" class="home-two-hero-image-button tp-inline-block">
-                <span class="heading-five heading-font">
-                  Get started today
-                </span>
+            <div class="overflow-hidden">
+              <img width="573" height="655" alt="Hero image" src="assets/img/hero/hero-2.webp" loading="lazy"
+                class="tab-image-full-width img-hover-3d">
+            </div>
 
-                <i class="bi bi-arrow-up-right fs-5 tp-common-white transition-medium mb-1"></i>
-              </a>
+            <a href="contact-one.html" class="home-two-hero-image-button tp-inline-block">
+              <span class="heading-five heading-font">
+                Get started today
+              </span>
 
-            </figure>
+              <i class="bi bi-arrow-up-right fs-5 tp-common-white transition-medium mb-1"></i>
+            </a>
 
-          </div>
+          </figure>
+
         </div>
       </div>
-    </section>
+    </div>
+  </section>
   </div>
   <!-- ===================================================
           why choose us
@@ -401,22 +405,22 @@
       </div>
 
     </div>
-      <!-- ============================================
+    <!-- ============================================
      HOW WE WORK SECTION
      ============================================ -->
-     <section class="d-block position-relative pt-120 md-pt-10">
+    <section class="d-block position-relative pt-120 md-pt-10">
       <div class="container who-we-are-container">
         <div class="row">
           <div class="col-12 col-lg-5 col-xl-5">
-             <span class="section-subtitle tp-flex-horizontal tag-wrapper"  data-aos="fade-up" data-aos-delay="500">
-          <span class="tag-border"></span>
-          <span class="text-capitalize"> About Our Studio</span>
-        </span>
-           
+            <span class="section-subtitle tp-flex-horizontal tag-wrapper" data-aos="fade-up" data-aos-delay="500">
+              <span class="tag-border"></span>
+              <span class="text-capitalize"> About Our Studio</span>
+            </span>
+
           </div>
-            <div class="col-12 col-lg-7 col-xl-7">
-         <div class=" tp-flex-vertical gap-20">
-           <!-- <div class="tp-flex-horizontal gap-20 align-items-md-center align-items-md-start flex-md-row flex-column">
+          <div class="col-12 col-lg-7 col-xl-7">
+            <div class=" tp-flex-vertical gap-20">
+              <!-- <div class="tp-flex-horizontal gap-20 align-items-md-center align-items-md-start flex-md-row flex-column">
              <img width="150" height="40" alt="Users" src="assets/img/service-img/user.webp" loading="lazy">
             <div>
                <div class="tp-flex-horizontal testimonial-rating  gap-2">
@@ -430,426 +434,533 @@
              
             </div>
            </div> -->
-           <h2>
-            More than an agency, we
-<span>
-  <span>
-    <span>
-      <img width="120" height="120" src="https://cdn.prod.website-files.com/6667d918c80d3c3ef174c92b/66c300c138c37f6586126257_Service%20Heading%20Image.png" alt="Image">
+              <h2>
+                More than an agency, we
+                <span>
+                  <span>
+                    <span>
+                      <img width="120" height="120"
+                        src="https://cdn.prod.website-files.com/6667d918c80d3c3ef174c92b/66c300c138c37f6586126257_Service%20Heading%20Image.png"
+                        alt="Image">
 
-    </span>
-  </span>
+                    </span>
+                  </span>
 
-  for partner, <span class=" text-secondary">crafting smart user</span>
+                  for partner, <span class=" text-secondary">crafting smart user</span>
 
-  <span>
-    <span>
-      <img width="48" height="48" class="rounded-circle" src="https://framerusercontent.com/images/cjK3OafvNoKgbLnjfkwhCVaUH8.png?scale-down-to=512" alt="Image">
-    </span>
-  </span>
+                  <span>
+                    <span>
+                      <img width="48" height="48" class="rounded-circle"
+                        src="https://framerusercontent.com/images/cjK3OafvNoKgbLnjfkwhCVaUH8.png?scale-down-to=512"
+                        alt="Image">
+                    </span>
+                  </span>
 
-  focused
+                  focused
 
- 
-</span>
-           </h2>
-           
-        <div class="d-flex gap-3 align-items-center">
-          <a href="#homepages" class="tp-button-wrapper tp-flex-center">
-              <span class="tp-button-text">
-                <span class="tp-button-front">Explore demos</span>
-                <span class="tp-button-back">Explore demos</span>
-              </span>
-              <span class="tp-button-icon">
-                <span class="tp-button-arrow">
-                  <i class="bi bi-arrow-right"></i>
-                  <i class="bi bi-arrow-right"></i>
+
                 </span>
-              </span>
-            </a>
-           
-        </div>
-         </div>
+              </h2>
+
+              <div class="d-flex gap-3 align-items-center">
+                <a href="#homepages" class="tp-button-wrapper tp-flex-center">
+                  <span class="tp-button-text">
+                    <span class="tp-button-front">Explore demos</span>
+                    <span class="tp-button-back">Explore demos</span>
+                  </span>
+                  <span class="tp-button-icon">
+                    <span class="tp-button-arrow">
+                      <i class="bi bi-arrow-right"></i>
+                      <i class="bi bi-arrow-right"></i>
+                    </span>
+                  </span>
+                </a>
+
+              </div>
             </div>
+          </div>
         </div>
       </div>
       <!-- IMG MARQEEN SECTION -->
-       <div class="tp-marquee-wrapper who-we-are-marquee-wrapper pt-60 md-pt-30 ">
-    <div class="who-we-are-marquee tp-flex-horizontal">
-       <img src="https://framerusercontent.com/images/k9mrZ24IxkiiTSg4YTycT98.png?scale-down-to=1024&width=1212&height=682" alt="">
-        <img src="https://framerusercontent.com/images/oAhRQnyAkpSDcjRlXV5F2fKCL00.png?scale-down-to=1024&width=1212&height=682" alt="">
-        <img src="https://framerusercontent.com/images/H1dURBUvGayYA8Ii2eTRrwFLEiE.png?scale-down-to=1024&width=1212&height=682" alt="">
-       <img src="https://framerusercontent.com/images/hF9Uo8YABXfuUxat0DfhhUtaO0M.png?scale-down-to=1024&width=1212&height=682" alt="">
+      <div class="tp-marquee-wrapper who-we-are-marquee-wrapper pt-60 md-pt-30 ">
+        <div class="who-we-are-marquee tp-flex-horizontal">
+          <img
+            src="https://framerusercontent.com/images/k9mrZ24IxkiiTSg4YTycT98.png?scale-down-to=1024&width=1212&height=682"
+            alt="">
+          <img
+            src="https://framerusercontent.com/images/oAhRQnyAkpSDcjRlXV5F2fKCL00.png?scale-down-to=1024&width=1212&height=682"
+            alt="">
+          <img
+            src="https://framerusercontent.com/images/H1dURBUvGayYA8Ii2eTRrwFLEiE.png?scale-down-to=1024&width=1212&height=682"
+            alt="">
+          <img
+            src="https://framerusercontent.com/images/hF9Uo8YABXfuUxat0DfhhUtaO0M.png?scale-down-to=1024&width=1212&height=682"
+            alt="">
 
-    </div>
-</div>
-<!-- NUMBER COUNTER -->
-  <div class="home-one-counter counters-wrapper pb-120  md-pb-50 pt-60 md-pt-30">
-      <div class="container">
-        <div class="home-one-counter-main row">
-          <div class="col-12 col-md-6 col-lg-3 py-0 py-sm-3 py-md-0">
-            <div class="home-one-counters-wrapper landing-counter-box xs-pb-20">
-              <div class=" d-flex align-items-center justify-content-center">
-                <div class="counter-wrapper counter-text" data-target="15">00</div>
-                <span class="counter-text counter-text-small">+</span>
+        </div>
+      </div>
+      <!-- NUMBER COUNTER -->
+      <div class="home-one-counter counters-wrapper pb-120  md-pb-50 pt-60 md-pt-30">
+        <div class="container">
+          <div class="home-one-counter-main row">
+            <div class="col-12 col-md-6 col-lg-3 py-0 py-sm-3 py-md-0">
+              <div class="home-one-counters-wrapper landing-counter-box xs-pb-20">
+                <div class=" d-flex align-items-center justify-content-center">
+                  <div class="counter-wrapper counter-text" data-target="15">00</div>
+                  <span class="counter-text counter-text-small">+</span>
+                </div>
+                <h4 class="heading-four mt-10 text-center">years of experience</h4>
               </div>
-              <h4 class="heading-four mt-10 text-center">years of experience</h4>
             </div>
-          </div>
-          <div class="col-12 col-md-6 col-lg-3 py-0 py-sm-3 py-md-0">
-            <div class="home-one-counters-wrapper landing-counter-box">
-              <div class=" d-flex align-items-center justify-content-center">
-                <div class="counter-wrapper counter-text" data-target="50">00</div>
-                <span class="counter-text counter-text-small">%</span>
-              </div>
+            <div class="col-12 col-md-6 col-lg-3 py-0 py-sm-3 py-md-0">
+              <div class="home-one-counters-wrapper landing-counter-box">
+                <div class=" d-flex align-items-center justify-content-center">
+                  <div class="counter-wrapper counter-text" data-target="50">00</div>
+                  <span class="counter-text counter-text-small">%</span>
+                </div>
 
-              <h4 class="heading-four mt-10 text-center">projects done on time</h4>
-              <div class="counter-border"></div>
-              <div class="counter-border counter-border-right d-none d-lg-block"></div>
+                <h4 class="heading-four mt-10 text-center">projects done on time</h4>
+                <div class="counter-border"></div>
+                <div class="counter-border counter-border-right d-none d-lg-block"></div>
+              </div>
             </div>
-          </div>
-          <div class=" col-12 col-md-6  col-lg-3 py-3 py-md-0">
-            <div class="home-one-counters-wrapper landing-counter-box md-mt-0 ms-mt-0">
-              <div class=" d-flex align-items-center justify-content-center">
-                <div class="counter-wrapper counter-text" data-target="35">00</div>
-                <span class="counter-text counter-text-small">+</span>
-              </div>
+            <div class=" col-12 col-md-6  col-lg-3 py-3 py-md-0">
+              <div class="home-one-counters-wrapper landing-counter-box md-mt-0 ms-mt-0">
+                <div class=" d-flex align-items-center justify-content-center">
+                  <div class="counter-wrapper counter-text" data-target="35">00</div>
+                  <span class="counter-text counter-text-small">+</span>
+                </div>
 
-              <h4 class="heading-four mt-10 text-center">talented employees</h4>
+                <h4 class="heading-four mt-10 text-center">talented employees</h4>
+              </div>
             </div>
-          </div>
-          <div class=" col-12 col-md-6  col-lg-3 py-3 py-md-0">
-            <div class="home-one-counters-wrapper landing-counter-box md-mt-0 ms-mt-0">
-              <div class=" d-flex align-items-center justify-content-center">
-                <div class="counter-wrapper counter-text" data-target="35">00</div>
-                <span class="counter-text counter-text-small">+</span>
-              </div>
+            <div class=" col-12 col-md-6  col-lg-3 py-3 py-md-0">
+              <div class="home-one-counters-wrapper landing-counter-box md-mt-0 ms-mt-0">
+                <div class=" d-flex align-items-center justify-content-center">
+                  <div class="counter-wrapper counter-text" data-target="35">00</div>
+                  <span class="counter-text counter-text-small">+</span>
+                </div>
 
-              <h4 class="heading-four mt-10 text-center">Expert-Vetted</h4>
+                <h4 class="heading-four mt-10 text-center">Expert-Vetted</h4>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-     </div>
-</section>
-  <!-- ===================================================
+      </div>
+    </section>
+    <!-- ===================================================
           home two service
           ==================================================== -->
-  <!-- lll -->
+    <!-- lll -->
     <section class="service-three-options ">
       <div class="container">
         <div class="service-three-options-main row">
- 
 
-  
-<div class="col-12 col-md-6 col-lg-12">
-    <div class="service-three-options-cards align-items-center gap-3 gap-lg-0 tp-hover-wrap tp-service-cell-top row"  data-aos="fade-up" data-aos-delay="200">
-      
-      <div class="col-12 col-lg-6">
-        <div class="d-flex service-three-options-card-left gap-30">
-        <span>01</span>
-        <div class="tp-flex-horizontal service-three-options-name gap-30">
-          <div class="service-three-options-icons d-flex justify-content-center align-items-center">
-            <i class="bi bi-layout-text-window fs-3"></i>
+
+
+          <div class="col-12 col-md-6 col-lg-12">
+            <div
+              class="service-three-options-cards align-items-center gap-3 gap-lg-0 tp-hover-wrap tp-service-cell-top row"
+              data-aos="fade-up" data-aos-delay="200">
+
+              <div class="col-12 col-lg-6">
+                <div class="d-flex service-three-options-card-left gap-30">
+                  <span>01</span>
+                  <div class="tp-flex-horizontal service-three-options-name gap-30">
+                    <div class="service-three-options-icons d-flex justify-content-center align-items-center">
+                      <i class="bi bi-layout-text-window fs-3"></i>
+                    </div>
+                    <h3 class="heading-three mt-0 mb-0">website design</h3>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12 col-lg-6">
+                <div class=" service-three-options-cards-right d-flex gap-30 justify-content-between">
+                  <p class="mb-0 service-three-options-description">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulmut mauris ac dui
+                    <span class="tp-common-white">vehicula rutrum.</span> Vivamus ac nibh in velit vulputate tempus.
+                    <span class="tp-common-white">Curabitur </span>sit amet hendrerit sapien.
+                  </p>
+
+                  <a href="service-one.html" class="circle-icon tp-inline-block tp-arrow-button service-options-link">
+                    <i class="bi bi-arrow-up-right fs-5 transition-medium"></i>
+                  </a>
+                </div>
+              </div>
+
+            </div>
           </div>
-          <h3 class="heading-three mt-0 mb-0">website design</h3>
-        </div>
-      </div>
-      </div>
-
-     <div class="col-12 col-lg-6">
-       <div class=" service-three-options-cards-right d-flex gap-30 justify-content-between">
-        <p class="mb-0 service-three-options-description">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulmut mauris ac dui 
-          <span class="tp-common-white">vehicula rutrum.</span> Vivamus ac nibh in velit vulputate tempus. 
-          <span class="tp-common-white">Curabitur </span>sit amet hendrerit sapien.
-        </p>
-
-        <a href="service-one.html" class="circle-icon tp-inline-block tp-arrow-button service-options-link">
-          <i class="bi bi-arrow-up-right fs-5 transition-medium"></i>
-        </a>
-      </div>
-     </div>
-
-    </div>
-</div>
 
 
-         <!-- 02 -->
-<div class="col-12 col-md-6 col-lg-12">
-  <div class="service-three-options-cards align-items-center gap-3 gap-lg-0 tp-hover-wrap cell-even row"  data-aos="fade-up" data-aos-delay="400">
+          <!-- 02 -->
+          <div class="col-12 col-md-6 col-lg-12">
+            <div class="service-three-options-cards align-items-center gap-3 gap-lg-0 tp-hover-wrap cell-even row"
+              data-aos="fade-up" data-aos-delay="400">
 
-  <div class="col-12 col-lg-6">
-    <div class="d-flex service-three-options-card-left gap-30">
-      <span>02</span>
-      <div class="tp-flex-horizontal service-three-options-name gap-30">
-        <div class="service-three-options-icons d-flex justify-content-center align-items-center">
-          <i class="bi bi-award fs-3"></i>
-        </div>
-        <h3 class="heading-three mt-0 mb-0">branding</h3>
-      </div>
-    </div>
-  </div>
+              <div class="col-12 col-lg-6">
+                <div class="d-flex service-three-options-card-left gap-30">
+                  <span>02</span>
+                  <div class="tp-flex-horizontal service-three-options-name gap-30">
+                    <div class="service-three-options-icons d-flex justify-content-center align-items-center">
+                      <i class="bi bi-award fs-3"></i>
+                    </div>
+                    <h3 class="heading-three mt-0 mb-0">branding</h3>
+                  </div>
+                </div>
+              </div>
 
-  <div class="col-12 col-lg-6">
-    <div class="service-three-options-cards-right justify-content-between d-flex gap-30">
-      <p class="mb-0 service-three-options-description">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulmut mauris ac dui 
-        <span class="tp-common-white">vehicula rutrum.</span> Vivamus ac nibh in velit vulputate tempus. 
-        <span class="tp-common-white">Curabitur </span>sit amet hendrerit sapien.
-      </p>
-      <a href="service-two.html" class="circle-icon tp-inline-block tp-arrow-button service-options-link">
-        <i class="bi bi-arrow-up-right fs-5 transition-medium"></i>
-      </a>
-    </div>
-  </div>
+              <div class="col-12 col-lg-6">
+                <div class="service-three-options-cards-right justify-content-between d-flex gap-30">
+                  <p class="mb-0 service-three-options-description">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulmut mauris ac dui
+                    <span class="tp-common-white">vehicula rutrum.</span> Vivamus ac nibh in velit vulputate tempus.
+                    <span class="tp-common-white">Curabitur </span>sit amet hendrerit sapien.
+                  </p>
+                  <a href="service-two.html" class="circle-icon tp-inline-block tp-arrow-button service-options-link">
+                    <i class="bi bi-arrow-up-right fs-5 transition-medium"></i>
+                  </a>
+                </div>
+              </div>
 
-</div>
-</div>
+            </div>
+          </div>
 
-<!-- 03 -->
-<div class="col-12 col-md-6 col-lg-12">
-  <div class="service-three-options-cards align-items-center gap-3 gap-lg-0 tp-hover-wrap row"  data-aos="fade-up" data-aos-delay="700">
+          <!-- 03 -->
+          <div class="col-12 col-md-6 col-lg-12">
+            <div class="service-three-options-cards align-items-center gap-3 gap-lg-0 tp-hover-wrap row"
+              data-aos="fade-up" data-aos-delay="700">
 
-  <div class="col-12 col-lg-6">
-    <div class="d-flex service-three-options-card-left gap-30">
-      <span>03</span>
-      <div class="tp-flex-horizontal service-three-options-name gap-30">
-        <div class="service-three-options-icons d-flex justify-content-center align-items-center">
-          <i class="bi bi-cpu fs-3"></i>
-        </div>
-        <h3 class="heading-three mt-0 mb-0">ai interface design</h3>
-      </div>
-    </div>
-  </div>
+              <div class="col-12 col-lg-6">
+                <div class="d-flex service-three-options-card-left gap-30">
+                  <span>03</span>
+                  <div class="tp-flex-horizontal service-three-options-name gap-30">
+                    <div class="service-three-options-icons d-flex justify-content-center align-items-center">
+                      <i class="bi bi-cpu fs-3"></i>
+                    </div>
+                    <h3 class="heading-three mt-0 mb-0">ai interface design</h3>
+                  </div>
+                </div>
+              </div>
 
-  <div class="col-12 col-lg-6">
-    <div class="service-three-options-cards-right justify-content-between d-flex gap-30">
-      <p class="mb-0 service-three-options-description">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulmut mauris ac dui 
-        <span class="tp-common-white">vehicula rutrum.</span> Vivamus ac nibh in velit vulputate tempus. 
-        <span class="tp-common-white">Curabitur </span>sit amet hendrerit sapien.
-      </p>
-      <a href="service-one.html" class="circle-icon tp-inline-block tp-arrow-button service-options-link">
-        <i class="bi bi-arrow-up-right fs-5 transition-medium"></i>
-      </a>
-    </div>
-  </div>
+              <div class="col-12 col-lg-6">
+                <div class="service-three-options-cards-right justify-content-between d-flex gap-30">
+                  <p class="mb-0 service-three-options-description">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulmut mauris ac dui
+                    <span class="tp-common-white">vehicula rutrum.</span> Vivamus ac nibh in velit vulputate tempus.
+                    <span class="tp-common-white">Curabitur </span>sit amet hendrerit sapien.
+                  </p>
+                  <a href="service-one.html" class="circle-icon tp-inline-block tp-arrow-button service-options-link">
+                    <i class="bi bi-arrow-up-right fs-5 transition-medium"></i>
+                  </a>
+                </div>
+              </div>
 
-</div>
-</div>
+            </div>
+          </div>
 
-<!-- 04 -->
-<div class="col-12 col-md-6 col-lg-12">
-  <div class="service-three-options-cards align-items-center gap-3 gap-lg-0 tp-hover-wrap cell-even row"  data-aos="fade-up" data-aos-delay="800">
+          <!-- 04 -->
+          <div class="col-12 col-md-6 col-lg-12">
+            <div class="service-three-options-cards align-items-center gap-3 gap-lg-0 tp-hover-wrap cell-even row"
+              data-aos="fade-up" data-aos-delay="800">
 
-  <div class="col-12 col-lg-6">
-    <div class="d-flex service-three-options-card-left gap-30">
-      <span>04</span>
-      <div class="tp-flex-horizontal service-three-options-name gap-30">
-        <div class="service-three-options-icons d-flex justify-content-center align-items-center">
-          <i class="bi bi-code-slash fs-3"></i>
-        </div>
-        <h3 class="heading-three mt-0 mb-0">website development</h3>
-      </div>
-    </div>
-  </div>
+              <div class="col-12 col-lg-6">
+                <div class="d-flex service-three-options-card-left gap-30">
+                  <span>04</span>
+                  <div class="tp-flex-horizontal service-three-options-name gap-30">
+                    <div class="service-three-options-icons d-flex justify-content-center align-items-center">
+                      <i class="bi bi-code-slash fs-3"></i>
+                    </div>
+                    <h3 class="heading-three mt-0 mb-0">website development</h3>
+                  </div>
+                </div>
+              </div>
 
-  <div class="col-12 col-lg-6">
-    <div class="service-three-options-cards-right justify-content-between d-flex gap-30">
-      <p class="mb-0 service-three-options-description">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulmut mauris ac dui 
-        <span class="tp-common-white">vehicula rutrum.</span> Vivamus ac nibh in velit vulputate tempus. 
-        <span class="tp-common-white">Curabitur </span>sit amet hendrerit sapien.
-      </p>
-      <a href="service-two.html" class="circle-icon tp-inline-block tp-arrow-button service-options-link">
-        <i class="bi bi-arrow-up-right fs-5 transition-medium"></i>
-      </a>
-    </div>
-  </div>
+              <div class="col-12 col-lg-6">
+                <div class="service-three-options-cards-right justify-content-between d-flex gap-30">
+                  <p class="mb-0 service-three-options-description">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulmut mauris ac dui
+                    <span class="tp-common-white">vehicula rutrum.</span> Vivamus ac nibh in velit vulputate tempus.
+                    <span class="tp-common-white">Curabitur </span>sit amet hendrerit sapien.
+                  </p>
+                  <a href="service-two.html" class="circle-icon tp-inline-block tp-arrow-button service-options-link">
+                    <i class="bi bi-arrow-up-right fs-5 transition-medium"></i>
+                  </a>
+                </div>
+              </div>
 
-</div>
-</div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
-  <!-- ===================================================
+    <!-- ===================================================
                 Marquee clients
           ==================================================== -->
-  <section class="clients px-3 pt-120 md-pt-40"  data-aos="fade-up" data-aos-delay="800">
-    <div class="container">
-      <div
-        class="clients-main d-flex flex-column gap-30  position-relative  align-items-center justify-content-start md-gap-20">
-        <span class="section-subtitle text-capitalize"  data-aos="fade-up" data-aos-delay="200">10k+ our trusted clients</span>
-        <div class="clients-marquee-main"  data-aos="fade-up" data-aos-delay="500">
-          <div class="tp-flex-horizontal clients-marquee-train  marquee-train-left ">
-            <img width="94" height="22" alt="Clients" src="assets/img/clients-marquee/logo-1.svg" loading="lazy"
-              class="logos">
-            <img width="100" height="22" alt="Clients" src="assets/img/clients-marquee/logo-2.svg" loading="lazy"
-              class="logos">
-            <img width="103" height="22" alt="Clients" src="assets/img/clients-marquee/logo-3.svg" loading="lazy"
-              class="logos">
-            <img width="79" height="22" alt="Clients" src="assets/img/clients-marquee/logo-4.svg" loading="lazy"
-              class="logos">
-            <img width="136" height="26" alt="Clients" src="assets/img/clients-marquee/logo-5.svg" loading="lazy"
-              class="logos">
-            <img width="106" height="22" alt="Clients" src="assets/img/clients-marquee/logo-6.svg" loading="lazy"
-              class="logos">
-          </div>
-          <div class="tp-flex-horizontal clients-marquee-train  marquee-train-left ">
-            <img width="94" height="22" alt="Clients" src="assets/img/clients-marquee/logo-1.svg" loading="lazy"
-              class="logos">
-            <img width="100" height="22" alt="Clients" src="assets/img/clients-marquee/logo-2.svg" loading="lazy"
-              class="logos">
-            <img width="103" height="22" alt="Clients" src="assets/img/clients-marquee/logo-3.svg" loading="lazy"
-              class="logos">
-            <img width="79" height="22" alt="Clients" src="assets/img/clients-marquee/logo-4.svg" loading="lazy"
-              class="logos">
-            <img width="136" height="26" alt="Clients" src="assets/img/clients-marquee/logo-5.svg" loading="lazy"
-              class="logos">
-            <img width="106" height="22" alt="Clients" src="assets/img/clients-marquee/logo-6.svg" loading="lazy"
-              class="logos">
-          </div>
-          <div class="tp-flex-horizontal clients-marquee-train  marquee-train-left ">
-            <img width="94" height="22" alt="Clients" src="assets/img/clients-marquee/logo-1.svg" loading="lazy"
-              class="logos">
-            <img width="100" height="22" alt="Clients" src="assets/img/clients-marquee/logo-2.svg" loading="lazy"
-              class="logos">
-            <img width="103" height="22" alt="Clients" src="assets/img/clients-marquee/logo-3.svg" loading="lazy"
-              class="logos">
-            <img width="79" height="22" alt="Clients" src="assets/img/clients-marquee/logo-4.svg" loading="lazy"
-              class="logos">
-            <img width="136" height="26" alt="Clients" src="assets/img/clients-marquee/logo-5.svg" loading="lazy"
-              class="logos">
-            <img width="106" height="22" alt="Clients" src="assets/img/clients-marquee/logo-6.svg" loading="lazy"
-              class="logos">
+    <section class="clients px-3 pt-120 md-pt-40" data-aos="fade-up" data-aos-delay="800">
+      <div class="container">
+        <div
+          class="clients-main d-flex flex-column gap-30  position-relative  align-items-center justify-content-start md-gap-20">
+          <span class="section-subtitle text-capitalize" data-aos="fade-up" data-aos-delay="200">10k+ our trusted
+            clients</span>
+          <div class="clients-marquee-main" data-aos="fade-up" data-aos-delay="500">
+            <div class="tp-flex-horizontal clients-marquee-train  marquee-train-left ">
+              <img width="94" height="22" alt="Clients" src="assets/img/clients-marquee/logo-1.svg" loading="lazy"
+                class="logos">
+              <img width="100" height="22" alt="Clients" src="assets/img/clients-marquee/logo-2.svg" loading="lazy"
+                class="logos">
+              <img width="103" height="22" alt="Clients" src="assets/img/clients-marquee/logo-3.svg" loading="lazy"
+                class="logos">
+              <img width="79" height="22" alt="Clients" src="assets/img/clients-marquee/logo-4.svg" loading="lazy"
+                class="logos">
+              <img width="136" height="26" alt="Clients" src="assets/img/clients-marquee/logo-5.svg" loading="lazy"
+                class="logos">
+              <img width="106" height="22" alt="Clients" src="assets/img/clients-marquee/logo-6.svg" loading="lazy"
+                class="logos">
+            </div>
+            <div class="tp-flex-horizontal clients-marquee-train  marquee-train-left ">
+              <img width="94" height="22" alt="Clients" src="assets/img/clients-marquee/logo-1.svg" loading="lazy"
+                class="logos">
+              <img width="100" height="22" alt="Clients" src="assets/img/clients-marquee/logo-2.svg" loading="lazy"
+                class="logos">
+              <img width="103" height="22" alt="Clients" src="assets/img/clients-marquee/logo-3.svg" loading="lazy"
+                class="logos">
+              <img width="79" height="22" alt="Clients" src="assets/img/clients-marquee/logo-4.svg" loading="lazy"
+                class="logos">
+              <img width="136" height="26" alt="Clients" src="assets/img/clients-marquee/logo-5.svg" loading="lazy"
+                class="logos">
+              <img width="106" height="22" alt="Clients" src="assets/img/clients-marquee/logo-6.svg" loading="lazy"
+                class="logos">
+            </div>
+            <div class="tp-flex-horizontal clients-marquee-train  marquee-train-left ">
+              <img width="94" height="22" alt="Clients" src="assets/img/clients-marquee/logo-1.svg" loading="lazy"
+                class="logos">
+              <img width="100" height="22" alt="Clients" src="assets/img/clients-marquee/logo-2.svg" loading="lazy"
+                class="logos">
+              <img width="103" height="22" alt="Clients" src="assets/img/clients-marquee/logo-3.svg" loading="lazy"
+                class="logos">
+              <img width="79" height="22" alt="Clients" src="assets/img/clients-marquee/logo-4.svg" loading="lazy"
+                class="logos">
+              <img width="136" height="26" alt="Clients" src="assets/img/clients-marquee/logo-5.svg" loading="lazy"
+                class="logos">
+              <img width="106" height="22" alt="Clients" src="assets/img/clients-marquee/logo-6.svg" loading="lazy"
+                class="logos">
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-  <!-- ===================================================
+    </section>
+    <!-- ===================================================
           Recent portfolio
         ==================================================== -->
-  <section class="mt-30 md-mt-0 pt-10 md-pt-20  position-relative">
-    <div class="home-two-portfolio  pt-85 md-pt-50 pb-85 md-pb-60">
-      <div class="container">
+    <section class="mt-30 md-mt-0 pt-10 md-pt-20  position-relative">
+      <div class="home-two-portfolio  pt-85 md-pt-50 pb-85 md-pb-60">
+        <div class="container">
 
-       
 
-        <div class="tp-flex-vertical home-two-portfolio-main align-items-center justify-content-start text-center">
-          <div class=" d-flex align-items-center justify-content-center   flex-column">
-            <h2 class="section-subtitle home-two-portfolio-text"  data-aos="fade-up" data-aos-delay="200">portfolio</h2>
-            <h3 class="section-title-heading mb-55 mt-0 portfolio-sub-heading"  data-aos="fade-up" data-aos-delay="400">explore our
-              brand
-              value</h3>
-          </div>
-          <figcaption  data-aos="zoom-in" data-aos-delay="600">
-            <img class="tab-image-full-width crystal-shape" src="assets/img/shapes/crystal.webp" width="593"
-              height="487" alt="3d Shape" loading="lazy">
-          </figcaption>
-        </div>
-      </div>
-    </div>
-    <div class="overflow-hidden projects-section pb-10">
-      <div class="container">
-        <div class="row  justify-content-between pb-100 md-mb-20">
-          <div class="col-12 col-sm-3 pb-3 py-sm-0">
-            <h4 class="heading-four mt-5 mb-20"  data-aos="fade-up" data-aos-delay="200">projects</h4>
-          </div>
-          <div class="col-12 col-sm-7">
-            <p class="md-pb-20 home-two-projects-description"  data-aos="fade-up" data-aos-delay="400"> Lorem ipsum
-              dolor sit amet consectetur adipiscing elit. Aenean ac orci nulla. Nunc ultricies lorem hendrt nisl
-              scelerisque eget pellentesque tortor mollis. Suspendisse feugiat diam nequet cursus nisi varius non. Ut
-              ultricies suscipit orci sed ultricies leo egestas at. Pellentesque et accumsan nulla.</p>
+
+          <div class="tp-flex-vertical home-two-portfolio-main align-items-center justify-content-start text-center">
+            <div class=" d-flex align-items-center justify-content-center   flex-column">
+              <h2 class="section-subtitle home-two-portfolio-text" data-aos="fade-up" data-aos-delay="200">portfolio
+              </h2>
+              <h3 class="section-title-heading mb-55 mt-0 portfolio-sub-heading" data-aos="fade-up"
+                data-aos-delay="400">explore our
+                brand
+                value</h3>
+            </div>
+            <figcaption data-aos="zoom-in" data-aos-delay="600">
+              <img class="tab-image-full-width crystal-shape" src="assets/img/shapes/crystal.webp" width="593"
+                height="487" alt="3d Shape" loading="lazy">
+            </figcaption>
           </div>
         </div>
-        
-      
-        <!-- Sticky Brand Cards — semantic, reusable markup -->
-<section class="portfolio-sticky-wrapper">
+      </div>
+      <div class="overflow-hidden projects-section pb-10">
+        <div class="container">
+          <div class="row  justify-content-between pb-100 md-mb-20">
+            <div class="col-12 col-sm-3 pb-3 py-sm-0">
+              <h4 class="heading-four mt-5 mb-20" data-aos="fade-up" data-aos-delay="200">projects</h4>
+            </div>
+            <div class="col-12 col-sm-7">
+              <p class="md-pb-20 home-two-projects-description" data-aos="fade-up" data-aos-delay="400"> Lorem ipsum
+                dolor sit amet consectetur adipiscing elit. Aenean ac orci nulla. Nunc ultricies lorem hendrt nisl
+                scelerisque eget pellentesque tortor mollis. Suspendisse feugiat diam nequet cursus nisi varius non. Ut
+                ultricies suscipit orci sed ultricies leo egestas at. Pellentesque et accumsan nulla.</p>
+            </div>
+          </div>
 
-  <div class="portfolio-sticky-inner">
 
-    <div class="portfolio-sticky-layout">
+          <!-- Sticky Brand Cards — semantic, reusable markup -->
+          <section class="portfolio-sticky-wrapper">
 
-      <div class="portfolio-content">
+            <div class="portfolio-sticky-inner">
 
-        <!-- Decorative step counter (visual only — hidden from assistive tech) -->
-        <div class="sticky-counter-wrapper" aria-hidden="true">
-          <span class="portfolio-counter">01</span>
-          <span class="portfolio-counter">02</span>
-          <span class="portfolio-counter">03</span>
-          <span class="portfolio-counter">04</span>
-          <span class="portfolio-counter">05</span>
+              <div class="portfolio-sticky-layout">
+
+                <div class="portfolio-content">
+
+                  <!-- Decorative step counter (visual only — hidden from assistive tech) -->
+                  <div class="sticky-counter-wrapper" aria-hidden="true">
+                    <span class="portfolio-counter">01</span>
+                    <span class="portfolio-counter">02</span>
+                    <span class="portfolio-counter">03</span>
+                    <span class="portfolio-counter">04</span>
+                    <span class="portfolio-counter">05</span>
+                  </div>
+
+                  <ul class="portfolio-img-wrapper">
+
+                    <li>
+                      <article class="portfolio-sticky-images " data-step="1">
+  <a href="service-three.html" class="tp-inline-block  hover-line">
+              <div class="service-card">
+                <div class="service-cards-image">
+                  <img class="service-one-images d-f" src="assets/img/service-img/service-digital-1.webp" width="960"
+                    height="350" alt="Service Image" loading="lazy">
+                  <div class="service-overlays"></div>
+                </div>
+
+                <div class="tp-flex-vertical service-cards-name gap-2">
+                  <h3 class="heading-three  hover-line-bottom m-0">ai interface design</h3>
+                  <div class="service-card-text">AI that simplifies your daily life.</div>
+                </div>
+              </div>
+              <div class="tp-flex-horizontal service-cards-information gap-40">
+                <div class="text-capitalize tp-text-body">web design &amp; application design</div>
+                <div class="tp-flex-horizontal service-cards-client gap-10 align-items-center">
+                  <div class="text-capitalize tp-common-white">clients:</div>
+                  <img  src="assets/img/clients-marquee/logo-1.svg" loading="lazy" width="94" height="22"
+                    alt="Clients">
+                </div>
+              </div>
+            </a>
+
+                      </article>
+                    </li>
+
+                    <li>
+                      <article class="portfolio-sticky-images" data-step="2">
+  <a href="service-three.html" class="tp-inline-block  hover-line">
+              <div class="service-card">
+                <div class="service-cards-image">
+                  <img class="service-one-images d-f" src="assets/img/service-img/service-digital-1.webp" width="960"
+                    height="350" alt="Service Image" loading="lazy">
+                  <div class="service-overlays"></div>
+                </div>
+
+                <div class="tp-flex-vertical service-cards-name gap-2">
+                  <h3 class="heading-three  hover-line-bottom m-0">ai interface design</h3>
+                  <div class="service-card-text">AI that simplifies your daily life.</div>
+                </div>
+              </div>
+              <div class="tp-flex-horizontal service-cards-information gap-40">
+                <div class="text-capitalize tp-text-body">web design &amp; application design</div>
+                <div class="tp-flex-horizontal service-cards-client gap-10 align-items-center">
+                  <div class="text-capitalize tp-common-white">clients:</div>
+                  <img  src="assets/img/clients-marquee/logo-1.svg" loading="lazy" width="94" height="22"
+                    alt="Clients">
+                </div>
+              </div>
+            </a>
+
+                      </article>
+                    </li>
+
+                    <li>
+                      <article class="portfolio-sticky-images " data-step="3">
+  <a href="service-three.html" class="tp-inline-block  hover-line">
+              <div class="service-card">
+                <div class="service-cards-image">
+                  <img class="service-one-images d-f" src="assets/img/service-img/service-digital-1.webp" width="960"
+                    height="350" alt="Service Image" loading="lazy">
+                  <div class="service-overlays"></div>
+                </div>
+
+                <div class="tp-flex-vertical service-cards-name gap-2">
+                  <h3 class="heading-three  hover-line-bottom m-0">ai interface design</h3>
+                  <div class="service-card-text">AI that simplifies your daily life.</div>
+                </div>
+              </div>
+              <div class="tp-flex-horizontal service-cards-information gap-40">
+                <div class="text-capitalize tp-text-body">web design &amp; application design</div>
+                <div class="tp-flex-horizontal service-cards-client gap-10 align-items-center">
+                  <div class="text-capitalize tp-common-white">clients:</div>
+                  <img  src="assets/img/clients-marquee/logo-1.svg" loading="lazy" width="94" height="22"
+                    alt="Clients">
+                </div>
+              </div>
+            </a>
+                      </article>
+                    </li>
+
+                    <li>
+                      <article class="portfolio-sticky-images" data-step="4">
+  <a href="service-three.html" class="tp-inline-block  hover-line">
+              <div class="service-card">
+                <div class="service-cards-image">
+                  <img class="service-one-images d-f" src="assets/img/service-img/service-digital-1.webp" width="960"
+                    height="350" alt="Service Image" loading="lazy">
+                  <div class="service-overlays"></div>
+                </div>
+
+                <div class="tp-flex-vertical service-cards-name gap-2">
+                  <h3 class="heading-three  hover-line-bottom m-0">ai interface design</h3>
+                  <div class="service-card-text">AI that simplifies your daily life.</div>
+                </div>
+              </div>
+              <div class="tp-flex-horizontal service-cards-information gap-40">
+                <div class="text-capitalize tp-text-body">web design &amp; application design</div>
+                <div class="tp-flex-horizontal service-cards-client gap-10 align-items-center">
+                  <div class="text-capitalize tp-common-white">clients:</div>
+                  <img  src="assets/img/clients-marquee/logo-1.svg" loading="lazy" width="94" height="22"
+                    alt="Clients">
+                </div>
+              </div>
+            </a>
+                      </article>
+                    </li>
+
+                    <li>
+                      <article class="portfolio-sticky-images " data-step="5">
+  <a href="service-three.html" class="tp-inline-block  hover-line">
+              <div class="service-card">
+                <div class="service-cards-image">
+                  <img class="service-one-images d-f" src="assets/img/service-img/service-digital-1.webp" width="960"
+                    height="350" alt="Service Image" loading="lazy">
+                  <div class="service-overlays"></div>
+                </div>
+
+                <div class="tp-flex-vertical service-cards-name gap-2">
+                  <h3 class="heading-three  hover-line-bottom m-0">ai interface design</h3>
+                  <div class="service-card-text">AI that simplifies your daily life.</div>
+                </div>
+              </div>
+              <div class="tp-flex-horizontal service-cards-information gap-40">
+                <div class="text-capitalize tp-text-body">web design &amp; application design</div>
+                <div class="tp-flex-horizontal service-cards-client gap-10 align-items-center">
+                  <div class="text-capitalize tp-common-white">clients:</div>
+                  <img  src="assets/img/clients-marquee/logo-1.svg" loading="lazy" width="94" height="22"
+                    alt="Clients">
+                </div>
+              </div>
+            </a>
+                      </article>
+                    </li>
+
+                  </ul>
+
+                </div>
+              </div>
+            </div>
+
+          </section>
         </div>
 
-        <ul class="portfolio-img-wrapper">
-
-          <li>
-            <article class="portfolio-sticky-images " data-step="1">
-              
-              <div class="portfolio-sticky-images__copy">
-                <h3>Loyalty Programs For Customer Retention</h3>
-                <p>Make every purchase a rewarding experience and turn buyers into loyal customers.</p>
-              </div>
-            </article>
-          </li>
-
-          <li>
-            <article class="portfolio-sticky-images" data-step="2">
-              
-              <div class="portfolio-sticky-images__copy">
-                <h3>Protect Your Brand's Integrity</h3>
-                <p>Keep fraudsters out and protect your legacy with our verification process.</p>
-              </div>
-            </article>
-          </li>
-
-          <li>
-            <article class="portfolio-sticky-images " data-step="3">
-             
-              <div class="portfolio-sticky-images__copy">
-                <h3>Build Unshakable Trust</h3>
-                <p>Open authentication & rewards for loyalty make buying worry-free for your customers.</p>
-              </div>
-            </article>
-          </li>
-
-          <li>
-            <article class="portfolio-sticky-images" data-step="4">
-             
-              <div class="portfolio-sticky-images__copy">
-                <h3>Let Data Guide You</h3>
-                <p>Your dashboard holds the key to smarter business moves. Check everything you need in one place.</p>
-              </div>
-            </article>
-          </li>
-
-          <li>
-            <article class="portfolio-sticky-images " data-step="5">
-              
-              <div class="portfolio-sticky-images__copy">
-                <h3>Be Future-Ready</h3>
-                <p>We adapt, evolve, and implement more new technologies to put you ahead of the competition and help you win the race.</p>
-              </div>
-            </article>
-          </li>
-
-        </ul>
-
       </div>
-    </div>
-  </div>
+    </section>
 
-</section>
-      </div>
-      
-    </div>
-  </section>
 
- 
     <!-- START WORKING PROCESS (your exact HTML) -->
     <section class="working-process pt-120 md-pt-50 md-pb-60">
       <div class="container">
@@ -882,11 +993,13 @@
                       <span class="step-number heading-font tp-common-white">01</span>
                     </div>
                     <div>
-                      <p class="step-desc">PowerPeak is an AI mobile app designed for smart, efficient, seamless performance. PowerPeak is an AI mobile app designed</p>
+                      <p class="step-desc">PowerPeak is an AI mobile app designed for smart, efficient, seamless
+                        performance. PowerPeak is an AI mobile app designed</p>
                     </div>
                   </div>
                   <div class="step-img-wrap tp-flex-center">
-               <img cl src="assets/img/service-img/service-tab-1.webp" class="h-100" alt="Online help &amp; support">
+                    <img cl src="assets/img/service-img/service-tab-1.webp" class="h-100"
+                      alt="Online help &amp; support">
                   </div>
                 </div>
                 <div class="step-meta mt-20 tp-border-top pt-20">
@@ -913,11 +1026,12 @@
                       <span class="step-number heading-font tp-common-white">02</span>
                     </div>
                     <div>
-                      <p class="step-desc">Define the design direction, user journey, and key features to create a clear plan aligned with business and user needs.</p>
+                      <p class="step-desc">Define the design direction, user journey, and key features to create a clear
+                        plan aligned with business and user needs.</p>
                     </div>
                   </div>
                   <div class="step-img-wrap tp-flex-center">
-          <img src="assets/img/service-img/service-tab-2.webp" class="h-100" alt="Creative Innovation">
+                    <img src="assets/img/service-img/service-tab-2.webp" class="h-100" alt="Creative Innovation">
                   </div>
                 </div>
                 <div class="step-meta mt-20 tp-border-top pt-20">
@@ -944,11 +1058,12 @@
                       <span class="step-number heading-font tp-common-white">03</span>
                     </div>
                     <div>
-                      <p class="step-desc">Create wireframes, visual concepts, and user interfaces that combine usability, aesthetics, and brand consistency.</p>
+                      <p class="step-desc">Create wireframes, visual concepts, and user interfaces that combine
+                        usability, aesthetics, and brand consistency.</p>
                     </div>
                   </div>
                   <div class="step-img-wrap tp-flex-center">
-                <img src="assets/img/service-img/service-tab-2.webp" class="h-100 " alt="Creative Innovation">
+                    <img src="assets/img/service-img/service-tab-2.webp" class="h-100 " alt="Creative Innovation">
                   </div>
                 </div>
                 <div class="step-meta mt-20 tp-border-top pt-20">
@@ -975,11 +1090,12 @@
                       <span class="step-number heading-font tp-common-white">04</span>
                     </div>
                     <div>
-                      <p class="step-desc">Finalize designs, prepare assets, and ensure smooth handoff for development while maintaining design quality and functionality.</p>
+                      <p class="step-desc">Finalize designs, prepare assets, and ensure smooth handoff for development
+                        while maintaining design quality and functionality.</p>
                     </div>
                   </div>
                   <div class="step-img-wrap tp-flex-center">
-           <img src="assets/img/service-img/service-tab-4.webp" class="h-100" alt="Integration">
+                    <img src="assets/img/service-img/service-tab-4.webp" class="h-100" alt="Integration">
                   </div>
                 </div>
                 <div class="step-meta mt-20 tp-border-top pt-20">
@@ -994,667 +1110,674 @@
         </div>
       </div>
     </section>
-  <!-- ===================================================
+    <!-- ===================================================
           home two testimonial
         ==================================================== -->
-  <section class="home-two-testimonial pt-120 md-pt-10 overflow-hidden">
-    <div class="container h-100 position-relative">
-      <div class="home-two-testimonial-main overflow-hidden pt-120 md-pt-70 pb-80">
-        <div class="home-two-testimonial-backdrop"></div>
+    <section class="home-two-testimonial pt-120 md-pt-10 overflow-hidden">
+      <div class="container h-100 position-relative">
+        <div class="home-two-testimonial-main overflow-hidden pt-120 md-pt-70 pb-80">
+          <div class="home-two-testimonial-backdrop"></div>
           <!-- Section Title -->
-        <div class="row">
+          <div class="row">
             <div class="col-12 pb-60 md-pb-30">
-                <div class="section-title-wrapper text-center"  data-aos="fade-up" data-aos-delay="100">
-                    <h2 class="section-title mt-0">Client <span class="text-gradiant">Feedback</span> </h2>
-                    <p class="section-description">We follow a systematic approach to deliver exceptional results</p>
+              <div class="section-title-wrapper text-center" data-aos="fade-up" data-aos-delay="100">
+                <h2 class="section-title mt-0">Client <span class="text-gradiant">Feedback</span> </h2>
+                <p class="section-description">We follow a systematic approach to deliver exceptional results</p>
+              </div>
+            </div>
+          </div>
+          <div class="home-two-testimonial-container">
+            <div class="row">
+              <div class="col-12 col-md-6">
+                <div class="home-two-testimonial-row-one gap-30">
+                  <div class="home-two-testimonial-cards mx-auto mx-md-0 tp-radius-30" data-aos="zoom-in"
+                    data-aos-delay="200">
+                    <div
+                      class="tp-flex-horizontal home-two-testimonial-card-top gap-30 align-items-center mb-30 justify-content-between">
+                      <div class="tp-flex-horizontal testimonial-cards-author-name">
+                        <img width="26" height="26" alt="J Icon" src="assets/img/testimonials/j-icon-1.svg"
+                          loading="lazy" class="mb-1">
+                        <h3 class="heading-five my-0">James Butler</h3>
+                      </div>
+                      <div>
+                        <img width="90" height="90" alt="Author" src="assets/img/testimonials/author-2.webp"
+                          loading="lazy" class="tp-radius-10">
+                      </div>
+                    </div>
+                    <p class="theme-mb-0 testimonial-cards-text">“ Lorem ipsum dolor amet consectetur adps elit. Aenean
+                      acer orci nulla. Nunic ultrics lore henidrt scelerisque eget pelleentese tortor.”</p>
+                  </div>
+                  <div class="home-two-testimonial-cards mx-auto mx-md-0 tp-radius-30" data-aos="zoom-in"
+                    data-aos-delay="400">
+                    <div
+                      class="tp-flex-horizontal home-two-testimonial-card-top gap-30 align-items-center mb-30 justify-content-between">
+                      <div class="tp-flex-horizontal testimonial-cards-author-name">
+                        <img width="23" height="26" alt="S Icon" src="assets/img/testimonials/s-icon.svg" loading="lazy"
+                          class="mb-1">
+                        <h3 class="heading-five my-0">Susana Higgins</h3>
+                      </div>
+                      <div>
+                        <img width="90" height="90" alt="Author" src="assets/img/testimonials/author-3.webp"
+                          loading="lazy" class="tp-radius-10">
+                      </div>
+                    </div>
+                    <p class="testimonial-cards-text mt-20">“ Lorem ipsum dolor amet consectetur adps elit. Aenean
+                      acer orci nulla. Nunic ultrics lore henidrt scelerisque eget pelleentese tortor.”</p>
+                  </div>
+                  <div class="home-two-testimonial-cards mx-auto mx-md-0 tp-radius-30" data-aos="zoom-in"
+                    data-aos-delay="600">
+                    <div
+                      class="tp-flex-horizontal home-two-testimonial-card-top gap-30 align-items-center mb-30 justify-content-between">
+                      <div class="tp-flex-horizontal testimonial-cards-author-name">
+                        <img width="26" height="26" alt="J Icon" src="assets/img/testimonials/j-icon-1.svg"
+                          loading="lazy" class="mb-1">
+                        <h3 class="heading-five my-0">James Butler</h3>
+                      </div>
+                      <div>
+                        <img width="90" height="90" alt="Author image" src="assets/img/testimonials/author-5.webp"
+                          loading="lazy" class="tp-radius-10">
+                      </div>
+                    </div>
+                    <p class="testimonial-cards-text mt-20">“ Lorem ipsum dolor amet consectetur adps elit. Aenean
+                      acer orci nulla. Nunic ultrics lore henidrt scelerisque eget pelleentese tortor.”</p>
+                  </div>
                 </div>
-            </div>
-        </div>
-        <div class="home-two-testimonial-container">
-  <div class="row">
-    <div class="col-12 col-md-6">
-      <div class="home-two-testimonial-row-one gap-30">
-        <div class="home-two-testimonial-cards mx-auto mx-md-0 tp-radius-30"  data-aos="zoom-in" data-aos-delay="200">
-          <div
-            class="tp-flex-horizontal home-two-testimonial-card-top gap-30 align-items-center mb-30 justify-content-between">
-            <div class="tp-flex-horizontal testimonial-cards-author-name">
-              <img width="26" height="26" alt="J Icon" src="assets/img/testimonials/j-icon-1.svg" loading="lazy"
-                class="mb-1">
-              <h3 class="heading-five my-0">James Butler</h3>
-            </div>
-            <div>
-              <img width="90" height="90" alt="Author" src="assets/img/testimonials/author-2.webp" loading="lazy"
-                class="tp-radius-10">
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="home-two-testimonial-row-two gap-30 md-pt-30">
+                  <div class="home-two-testimonial-cards mx-auto mx-md-0 tp-radius-30" data-aos="zoom-in"
+                    data-aos-delay="200">
+                    <div
+                      class="tp-flex-horizontal home-two-testimonial-card-top gap-30 align-items-center mb-30 justify-content-between">
+                      <div class="tp-flex-horizontal testimonial-cards-author-name">
+                        <img width="31" height="14" alt="M Icon" src="assets/img/testimonials/m-icon.svg" loading="lazy"
+                          class="mb-1">
+                        <h3 class="heading-five my-0">Michael Gorman</h3>
+                      </div>
+                      <div>
+                        <img width="90" height="90" alt="Author" src="assets/img/testimonials/author-1.webp"
+                          loading="lazy" class="tp-radius-10">
+                      </div>
+                    </div>
+                    <p class="testimonial-cards-text mt-20">“ Lorem ipsum dolor amet consectetur adps elit. Aenean
+                      acer orci nulla. Nunic ultrics lore henidrt scelerisque eget pelleentese tortor.”</p>
+                  </div>
+                  <div class="home-two-testimonial-cards mx-auto mx-md-0 tp-radius-30" data-aos="zoom-in"
+                    data-aos-delay="400">
+                    <div
+                      class="tp-flex-horizontal home-two-testimonial-card-top gap-30 align-items-center mb-30 justify-content-between">
+                      <div class="tp-flex-horizontal testimonial-cards-author-name">
+                        <img width="14" height="31" alt="J Icon" src="assets/img/testimonials/j-icon-2.svg"
+                          loading="lazy" class="mb-1">
+                        <h3 class="heading-five my-0">John Morales</h3>
+                      </div>
+                      <div>
+                        <img width="90" height="90" alt="Author image" src="assets/img/testimonials/author-4.webp"
+                          loading="lazy" class="tp-radius-10">
+                      </div>
+                    </div>
+                    <p class="testimonial-cards-text mt-20">“ Lorem ipsum dolor amet consectetur adps elit. Aenean
+                      acer orci nulla. Nunic ultrics lore henidrt scelerisque eget pelleentese tortor.”</p>
+                  </div>
+                  <div class="home-two-testimonial-cards mx-auto mx-md-0 tp-radius-30" data-aos="zoom-in"
+                    data-aos-delay="600">
+                    <div
+                      class="tp-flex-horizontal home-two-testimonial-card-top gap-30 align-items-center mb-30 justify-content-between">
+                      <div class="tp-flex-horizontal testimonial-cards-author-name">
+                        <img width="31" height="14" alt="M Icon" src="assets/img/testimonials/m-icon.svg" loading="lazy"
+                          class="mb-1">
+                        <h3 class="heading-five my-0">Michael Gorman</h3>
+                      </div>
+                      <div>
+                        <img width="90" height="90" alt="AI Boy image" src="assets/img/testimonials/author-6.webp"
+                          loading="lazy" class="tp-radius-10">
+                      </div>
+                    </div>
+                    <p class="testimonial-cards-text mt-20">“ Lorem ipsum dolor amet consectetur adps elit. Aenean
+                      acer orci nulla. Nunic ultrics lore henidrt scelerisque eget pelleentese tortor.”</p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-          <p class="theme-mb-0 testimonial-cards-text">“ Lorem ipsum dolor amet consectetur adps elit. Aenean
-            acer orci nulla. Nunic ultrics lore henidrt scelerisque eget pelleentese tortor.”</p>
-        </div>
-        <div class="home-two-testimonial-cards mx-auto mx-md-0 tp-radius-30"  data-aos="zoom-in" data-aos-delay="400">
-          <div
-            class="tp-flex-horizontal home-two-testimonial-card-top gap-30 align-items-center mb-30 justify-content-between">
-            <div class="tp-flex-horizontal testimonial-cards-author-name">
-              <img width="23" height="26" alt="S Icon" src="assets/img/testimonials/s-icon.svg" loading="lazy"
-                class="mb-1">
-              <h3 class="heading-five my-0">Susana Higgins</h3>
-            </div>
-            <div>
-              <img width="90" height="90" alt="Author" src="assets/img/testimonials/author-3.webp" loading="lazy"
-                class="tp-radius-10">
-            </div>
-          </div>
-          <p class="testimonial-cards-text mt-20">“ Lorem ipsum dolor amet consectetur adps elit. Aenean
-            acer orci nulla. Nunic ultrics lore henidrt scelerisque eget pelleentese tortor.”</p>
-        </div>
-        <div class="home-two-testimonial-cards mx-auto mx-md-0 tp-radius-30"  data-aos="zoom-in" data-aos-delay="600">
-          <div
-            class="tp-flex-horizontal home-two-testimonial-card-top gap-30 align-items-center mb-30 justify-content-between">
-            <div class="tp-flex-horizontal testimonial-cards-author-name">
-              <img width="26" height="26" alt="J Icon" src="assets/img/testimonials/j-icon-1.svg" loading="lazy"
-                class="mb-1">
-              <h3 class="heading-five my-0">James Butler</h3>
-            </div>
-            <div>
-              <img width="90" height="90" alt="Author image" src="assets/img/testimonials/author-5.webp"
-                loading="lazy" class="tp-radius-10">
-            </div>
-          </div>
-          <p class="testimonial-cards-text mt-20">“ Lorem ipsum dolor amet consectetur adps elit. Aenean
-            acer orci nulla. Nunic ultrics lore henidrt scelerisque eget pelleentese tortor.”</p>
         </div>
       </div>
-    </div>
-    <div class="col-12 col-md-6">
-      <div class="home-two-testimonial-row-two gap-30 md-pt-30">
-        <div class="home-two-testimonial-cards mx-auto mx-md-0 tp-radius-30"  data-aos="zoom-in" data-aos-delay="200">
-          <div
-            class="tp-flex-horizontal home-two-testimonial-card-top gap-30 align-items-center mb-30 justify-content-between">
-            <div class="tp-flex-horizontal testimonial-cards-author-name">
-              <img width="31" height="14" alt="M Icon" src="assets/img/testimonials/m-icon.svg" loading="lazy"
-                class="mb-1">
-              <h3 class="heading-five my-0">Michael Gorman</h3>
-            </div>
-            <div>
-              <img width="90" height="90" alt="Author" src="assets/img/testimonials/author-1.webp" loading="lazy"
-                class="tp-radius-10">
-            </div>
-          </div>
-          <p class="testimonial-cards-text mt-20">“ Lorem ipsum dolor amet consectetur adps elit. Aenean
-            acer orci nulla. Nunic ultrics lore henidrt scelerisque eget pelleentese tortor.”</p>
-        </div>
-        <div class="home-two-testimonial-cards mx-auto mx-md-0 tp-radius-30"  data-aos="zoom-in" data-aos-delay="400">
-          <div
-            class="tp-flex-horizontal home-two-testimonial-card-top gap-30 align-items-center mb-30 justify-content-between">
-            <div class="tp-flex-horizontal testimonial-cards-author-name">
-              <img width="14" height="31" alt="J Icon" src="assets/img/testimonials/j-icon-2.svg" loading="lazy"
-                class="mb-1">
-              <h3 class="heading-five my-0">John Morales</h3>
-            </div>
-            <div>
-              <img width="90" height="90" alt="Author image" src="assets/img/testimonials/author-4.webp"
-                loading="lazy" class="tp-radius-10">
-            </div>
-          </div>
-          <p class="testimonial-cards-text mt-20">“ Lorem ipsum dolor amet consectetur adps elit. Aenean
-            acer orci nulla. Nunic ultrics lore henidrt scelerisque eget pelleentese tortor.”</p>
-        </div>
-        <div class="home-two-testimonial-cards mx-auto mx-md-0 tp-radius-30"  data-aos="zoom-in" data-aos-delay="600">
-          <div
-            class="tp-flex-horizontal home-two-testimonial-card-top gap-30 align-items-center mb-30 justify-content-between">
-            <div class="tp-flex-horizontal testimonial-cards-author-name">
-              <img width="31" height="14" alt="M Icon" src="assets/img/testimonials/m-icon.svg" loading="lazy"
-                class="mb-1">
-              <h3 class="heading-five my-0">Michael Gorman</h3>
-            </div>
-            <div>
-              <img width="90" height="90" alt="AI Boy image" src="assets/img/testimonials/author-6.webp"
-                loading="lazy" class="tp-radius-10">
-            </div>
-          </div>
-          <p class="testimonial-cards-text mt-20">“ Lorem ipsum dolor amet consectetur adps elit. Aenean
-            acer orci nulla. Nunic ultrics lore henidrt scelerisque eget pelleentese tortor.”</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-      </div>
-    </div>
-  </section>
-  <!-- ===================================================
+    </section>
+    <!-- ===================================================
         home two double marquee
         ==================================================== -->
-  <section
-    class="home-two-double-marquee common-parallax-hover overflow-hidden px-3 pt-120 md-pt-60  pb-120 md-pb-60">
-    <div class="container">
-      <div class="d-flex flex-row  double-marquee-images justify-content-between align-items-start gap-30">
-        <div class="common-parallax-div ">
-          <img width="207" height="190" alt="Abstract" src="assets/img/abstract-image/abstract-1.webp" loading="lazy"
-   class="tp-radius-20 mobile-image-height-auto"  data-aos="zoom-in" data-aos-delay="200">
-        </div>
-        <div class="double-marquee-right-image common-parallax-div">
-          <img width="343" height="263" alt="Abstract" src="assets/img/abstract-image/abstract-2.webp" loading="lazy"
-   class="tp-radius-20 mobile-image-height-auto"  data-aos="zoom-in" data-aos-delay="400">
-        </div>
+    <section
+      class="home-two-double-marquee common-parallax-hover overflow-hidden px-3 pt-120 md-pt-60  pb-120 md-pb-60">
+      <div class="container">
+        <div class="d-flex flex-row  double-marquee-images justify-content-between align-items-start gap-30">
+          <div class="common-parallax-div ">
+            <img width="207" height="190" alt="Abstract" src="assets/img/abstract-image/abstract-1.webp" loading="lazy"
+              class="tp-radius-20 mobile-image-height-auto" data-aos="zoom-in" data-aos-delay="200">
+          </div>
+          <div class="double-marquee-right-image common-parallax-div">
+            <img width="343" height="263" alt="Abstract" src="assets/img/abstract-image/abstract-2.webp" loading="lazy"
+              class="tp-radius-20 mobile-image-height-auto" data-aos="zoom-in" data-aos-delay="400">
+          </div>
 
 
-      </div>
-    </div>
-    <div class="double-marquee-main">
-      <div class="tp-flex-horizontal double-marquee-top-wrapper">
-        <div class="tp-flex-horizontal double-marquee-train right-to-left marquee-train-left base-transform">
-          <div class="tp-flex-horizontal double-marquee-text-wrapper">
-            <div class="marquee-text stroke">promotion</div>
-            <img width="36" height="36" alt="Marquee Arrow" src="assets/img/marquee/marquee-arrow.svg" loading="lazy"
-              class="mt-10">
-          </div>
-          <div class="tp-flex-horizontal double-marquee-text-wrapper">
-            <div class="marquee-text">digital art</div>
-            <img width="36" height="36" alt="Marquee Arrow" src="assets/img/marquee/marquee-arrow.svg" loading="lazy"
-              class="mt-10">
-          </div>
-          <div class="tp-flex-horizontal double-marquee-text-wrapper">
-            <div class="marquee-text stroke">website se0</div>
-            <img width="36" height="36" alt="Marquee Arrow" src="assets/img/marquee/marquee-arrow.svg" loading="lazy"
-              class="mt-10">
-          </div>
-          <div class="tp-flex-horizontal double-marquee-text-wrapper">
-            <div class="marquee-text">motion</div>
-            <img width="36" height="36" alt="Marquee Arrow" src="assets/img/marquee/marquee-arrow.svg" loading="lazy"
-              class="mt-10">
-          </div>
-          <div class="tp-flex-horizontal double-marquee-text-wrapper">
-            <div class="marquee-text stroke">art direction</div>
-            <img width="36" height="36" alt="Marquee Arrow" src="assets/img/marquee/marquee-arrow.svg" loading="lazy"
-              class="mt-10">
-          </div>
-          <div class="tp-flex-horizontal double-marquee-text-wrapper">
-            <div class="marquee-text">agency</div>
-            <img width="36" height="36" alt="Marquee Arrow" src="assets/img/marquee/marquee-arrow.svg" loading="lazy"
-              class="mt-10">
-          </div>
-        </div>
-        <div class="tp-flex-horizontal double-marquee-train right-to-left marquee-train-left base-transform">
-          <div class="tp-flex-horizontal double-marquee-text-wrapper">
-            <div class="marquee-text stroke">promotion</div>
-            <img width="36" height="36" alt="Marquee Arrow" src="assets/img/marquee/marquee-arrow.svg" loading="lazy"
-              class="mt-10">
-          </div>
-          <div class="tp-flex-horizontal double-marquee-text-wrapper">
-            <div class="marquee-text">digital art</div>
-            <img width="36" height="36" alt="Marquee Arrow" src="assets/img/marquee/marquee-arrow.svg" loading="lazy"
-              class="mt-10">
-          </div>
-          <div class="tp-flex-horizontal double-marquee-text-wrapper">
-            <div class="marquee-text stroke">website se0</div>
-            <img width="36" height="36" alt="Marquee Arrow" src="assets/img/marquee/marquee-arrow.svg" loading="lazy"
-              class="mt-10">
-          </div>
-          <div class="tp-flex-horizontal double-marquee-text-wrapper">
-            <div class="marquee-text">motion</div>
-            <img width="36" height="36" alt="Marquee Arrow" src="assets/img/marquee/marquee-arrow.svg" loading="lazy"
-              class="mt-10">
-          </div>
-          <div class="tp-flex-horizontal double-marquee-text-wrapper">
-            <div class="marquee-text stroke">art direction</div>
-            <img width="36" height="36" alt="Marquee Arrow" src="assets/img/marquee/marquee-arrow.svg" loading="lazy"
-              class="mt-10">
-          </div>
-          <div class="tp-flex-horizontal double-marquee-text-wrapper">
-            <div class="marquee-text">agency</div>
-            <img width="36" height="36" alt="Marquee Arrow" src="assets/img/marquee/marquee-arrow.svg" loading="lazy"
-              class="mt-10">
-          </div>
-        </div>
-        <div class="tp-flex-horizontal double-marquee-train right-to-left marquee-train-left base-transform">
-          <div class="tp-flex-horizontal double-marquee-text-wrapper">
-            <div class="marquee-text stroke">promotion</div>
-            <img width="36" height="36" alt="Marquee Arrow" src="assets/img/marquee/marquee-arrow.svg" loading="lazy"
-              class="mt-10">
-          </div>
-          <div class="tp-flex-horizontal double-marquee-text-wrapper">
-            <div class="marquee-text">digital art</div>
-            <img width="36" height="36" alt="Marquee Arrow" src="assets/img/marquee/marquee-arrow.svg" loading="lazy"
-              class="mt-10">
-          </div>
-          <div class="tp-flex-horizontal double-marquee-text-wrapper">
-            <div class="marquee-text stroke">website se0</div>
-            <img width="36" height="36" alt="Marquee Arrow" src="assets/img/marquee/marquee-arrow.svg" loading="lazy"
-              class="mt-10">
-          </div>
-          <div class="tp-flex-horizontal double-marquee-text-wrapper">
-            <div class="marquee-text">motion</div>
-            <img width="36" height="36" alt="Marquee Arrow" src="assets/img/marquee/marquee-arrow.svg" loading="lazy"
-              class="mt-10">
-          </div>
-          <div class="tp-flex-horizontal double-marquee-text-wrapper">
-            <div class="marquee-text stroke">art direction</div>
-            <img width="36" height="36" alt="Marquee Arrow" src="assets/img/marquee/marquee-arrow.svg" loading="lazy"
-              class="mt-10">
-          </div>
-          <div class="tp-flex-horizontal double-marquee-text-wrapper">
-            <div class="marquee-text">agency</div>
-            <img width="36" height="36" alt="Marquee Arrow" src="assets/img/marquee/marquee-arrow.svg" loading="lazy"
-              class="mt-10">
-          </div>
         </div>
       </div>
-      <div class="tp-flex-horizontal double-marquee-bottom-wrapper">
-        <div class="tp-flex-horizontal double-marquee-train left-to-right marquee-train-right base-transform">
-          <div class="tp-flex-horizontal double-marquee-text-wrapper">
-            <div class="marquee-text stroke">art direction</div>
-            <img width="36" height="36" alt="Marquee Arrow" src="assets/img/marquee/marquee-arrow.svg" loading="lazy"
-              class="mt-10">
+      <div class="double-marquee-main">
+        <div class="tp-flex-horizontal double-marquee-top-wrapper">
+          <div class="tp-flex-horizontal double-marquee-train right-to-left marquee-train-left base-transform">
+            <div class="tp-flex-horizontal double-marquee-text-wrapper">
+              <div class="marquee-text stroke">promotion</div>
+              <img width="36" height="36" alt="Marquee Arrow" src="assets/img/marquee/marquee-arrow.svg" loading="lazy"
+                class="mt-10">
+            </div>
+            <div class="tp-flex-horizontal double-marquee-text-wrapper">
+              <div class="marquee-text">digital art</div>
+              <img width="36" height="36" alt="Marquee Arrow" src="assets/img/marquee/marquee-arrow.svg" loading="lazy"
+                class="mt-10">
+            </div>
+            <div class="tp-flex-horizontal double-marquee-text-wrapper">
+              <div class="marquee-text stroke">website se0</div>
+              <img width="36" height="36" alt="Marquee Arrow" src="assets/img/marquee/marquee-arrow.svg" loading="lazy"
+                class="mt-10">
+            </div>
+            <div class="tp-flex-horizontal double-marquee-text-wrapper">
+              <div class="marquee-text">motion</div>
+              <img width="36" height="36" alt="Marquee Arrow" src="assets/img/marquee/marquee-arrow.svg" loading="lazy"
+                class="mt-10">
+            </div>
+            <div class="tp-flex-horizontal double-marquee-text-wrapper">
+              <div class="marquee-text stroke">art direction</div>
+              <img width="36" height="36" alt="Marquee Arrow" src="assets/img/marquee/marquee-arrow.svg" loading="lazy"
+                class="mt-10">
+            </div>
+            <div class="tp-flex-horizontal double-marquee-text-wrapper">
+              <div class="marquee-text">agency</div>
+              <img width="36" height="36" alt="Marquee Arrow" src="assets/img/marquee/marquee-arrow.svg" loading="lazy"
+                class="mt-10">
+            </div>
           </div>
-          <div class="tp-flex-horizontal double-marquee-text-wrapper">
-            <div class="marquee-text">application</div>
-            <img width="36" height="36" alt="Marquee Arrow" src="assets/img/marquee/marquee-arrow.svg" loading="lazy"
-              class="mt-10">
+          <div class="tp-flex-horizontal double-marquee-train right-to-left marquee-train-left base-transform">
+            <div class="tp-flex-horizontal double-marquee-text-wrapper">
+              <div class="marquee-text stroke">promotion</div>
+              <img width="36" height="36" alt="Marquee Arrow" src="assets/img/marquee/marquee-arrow.svg" loading="lazy"
+                class="mt-10">
+            </div>
+            <div class="tp-flex-horizontal double-marquee-text-wrapper">
+              <div class="marquee-text">digital art</div>
+              <img width="36" height="36" alt="Marquee Arrow" src="assets/img/marquee/marquee-arrow.svg" loading="lazy"
+                class="mt-10">
+            </div>
+            <div class="tp-flex-horizontal double-marquee-text-wrapper">
+              <div class="marquee-text stroke">website se0</div>
+              <img width="36" height="36" alt="Marquee Arrow" src="assets/img/marquee/marquee-arrow.svg" loading="lazy"
+                class="mt-10">
+            </div>
+            <div class="tp-flex-horizontal double-marquee-text-wrapper">
+              <div class="marquee-text">motion</div>
+              <img width="36" height="36" alt="Marquee Arrow" src="assets/img/marquee/marquee-arrow.svg" loading="lazy"
+                class="mt-10">
+            </div>
+            <div class="tp-flex-horizontal double-marquee-text-wrapper">
+              <div class="marquee-text stroke">art direction</div>
+              <img width="36" height="36" alt="Marquee Arrow" src="assets/img/marquee/marquee-arrow.svg" loading="lazy"
+                class="mt-10">
+            </div>
+            <div class="tp-flex-horizontal double-marquee-text-wrapper">
+              <div class="marquee-text">agency</div>
+              <img width="36" height="36" alt="Marquee Arrow" src="assets/img/marquee/marquee-arrow.svg" loading="lazy"
+                class="mt-10">
+            </div>
           </div>
-          <div class="tp-flex-horizontal double-marquee-text-wrapper">
-            <div class="marquee-text stroke">agency</div>
-            <img width="36" height="36" alt="Marquee Arrow" src="assets/img/marquee/marquee-arrow.svg" loading="lazy"
-              class="mt-10">
-          </div>
-          <div class="tp-flex-horizontal double-marquee-text-wrapper">
-            <div class="marquee-text">ux design</div>
-            <img width="36" height="36" alt="Marquee Arrow" src="assets/img/marquee/marquee-arrow.svg" loading="lazy"
-              class="mt-10">
-          </div>
-          <div class="tp-flex-horizontal double-marquee-text-wrapper">
-            <div class="marquee-text stroke">photography</div>
-            <img width="36" height="36" alt="Marquee Arrow" src="assets/img/marquee/marquee-arrow.svg" loading="lazy"
-              class="mt-10">
-          </div>
-          <div class="tp-flex-horizontal double-marquee-text-wrapper">
-            <div class="marquee-text">digital art</div>
-            <img width="36" height="36" alt="Marquee Arrow" src="assets/img/marquee/marquee-arrow.svg" loading="lazy"
-              class="mt-10">
+          <div class="tp-flex-horizontal double-marquee-train right-to-left marquee-train-left base-transform">
+            <div class="tp-flex-horizontal double-marquee-text-wrapper">
+              <div class="marquee-text stroke">promotion</div>
+              <img width="36" height="36" alt="Marquee Arrow" src="assets/img/marquee/marquee-arrow.svg" loading="lazy"
+                class="mt-10">
+            </div>
+            <div class="tp-flex-horizontal double-marquee-text-wrapper">
+              <div class="marquee-text">digital art</div>
+              <img width="36" height="36" alt="Marquee Arrow" src="assets/img/marquee/marquee-arrow.svg" loading="lazy"
+                class="mt-10">
+            </div>
+            <div class="tp-flex-horizontal double-marquee-text-wrapper">
+              <div class="marquee-text stroke">website se0</div>
+              <img width="36" height="36" alt="Marquee Arrow" src="assets/img/marquee/marquee-arrow.svg" loading="lazy"
+                class="mt-10">
+            </div>
+            <div class="tp-flex-horizontal double-marquee-text-wrapper">
+              <div class="marquee-text">motion</div>
+              <img width="36" height="36" alt="Marquee Arrow" src="assets/img/marquee/marquee-arrow.svg" loading="lazy"
+                class="mt-10">
+            </div>
+            <div class="tp-flex-horizontal double-marquee-text-wrapper">
+              <div class="marquee-text stroke">art direction</div>
+              <img width="36" height="36" alt="Marquee Arrow" src="assets/img/marquee/marquee-arrow.svg" loading="lazy"
+                class="mt-10">
+            </div>
+            <div class="tp-flex-horizontal double-marquee-text-wrapper">
+              <div class="marquee-text">agency</div>
+              <img width="36" height="36" alt="Marquee Arrow" src="assets/img/marquee/marquee-arrow.svg" loading="lazy"
+                class="mt-10">
+            </div>
           </div>
         </div>
-        <div class="tp-flex-horizontal double-marquee-train left-to-right marquee-train-right base-transform">
-          <div class="tp-flex-horizontal double-marquee-text-wrapper">
-            <div class="marquee-text stroke">art direction</div>
-            <img width="36" height="36" alt="Marquee Arrow" src="assets/img/marquee/marquee-arrow.svg" loading="lazy"
-              class="mt-10">
+        <div class="tp-flex-horizontal double-marquee-bottom-wrapper">
+          <div class="tp-flex-horizontal double-marquee-train left-to-right marquee-train-right base-transform">
+            <div class="tp-flex-horizontal double-marquee-text-wrapper">
+              <div class="marquee-text stroke">art direction</div>
+              <img width="36" height="36" alt="Marquee Arrow" src="assets/img/marquee/marquee-arrow.svg" loading="lazy"
+                class="mt-10">
+            </div>
+            <div class="tp-flex-horizontal double-marquee-text-wrapper">
+              <div class="marquee-text">application</div>
+              <img width="36" height="36" alt="Marquee Arrow" src="assets/img/marquee/marquee-arrow.svg" loading="lazy"
+                class="mt-10">
+            </div>
+            <div class="tp-flex-horizontal double-marquee-text-wrapper">
+              <div class="marquee-text stroke">agency</div>
+              <img width="36" height="36" alt="Marquee Arrow" src="assets/img/marquee/marquee-arrow.svg" loading="lazy"
+                class="mt-10">
+            </div>
+            <div class="tp-flex-horizontal double-marquee-text-wrapper">
+              <div class="marquee-text">ux design</div>
+              <img width="36" height="36" alt="Marquee Arrow" src="assets/img/marquee/marquee-arrow.svg" loading="lazy"
+                class="mt-10">
+            </div>
+            <div class="tp-flex-horizontal double-marquee-text-wrapper">
+              <div class="marquee-text stroke">photography</div>
+              <img width="36" height="36" alt="Marquee Arrow" src="assets/img/marquee/marquee-arrow.svg" loading="lazy"
+                class="mt-10">
+            </div>
+            <div class="tp-flex-horizontal double-marquee-text-wrapper">
+              <div class="marquee-text">digital art</div>
+              <img width="36" height="36" alt="Marquee Arrow" src="assets/img/marquee/marquee-arrow.svg" loading="lazy"
+                class="mt-10">
+            </div>
           </div>
-          <div class="tp-flex-horizontal double-marquee-text-wrapper">
-            <div class="marquee-text">application</div>
-            <img width="36" height="36" alt="Marquee Arrow" src="assets/img/marquee/marquee-arrow.svg" loading="lazy"
-              class="mt-10">
+          <div class="tp-flex-horizontal double-marquee-train left-to-right marquee-train-right base-transform">
+            <div class="tp-flex-horizontal double-marquee-text-wrapper">
+              <div class="marquee-text stroke">art direction</div>
+              <img width="36" height="36" alt="Marquee Arrow" src="assets/img/marquee/marquee-arrow.svg" loading="lazy"
+                class="mt-10">
+            </div>
+            <div class="tp-flex-horizontal double-marquee-text-wrapper">
+              <div class="marquee-text">application</div>
+              <img width="36" height="36" alt="Marquee Arrow" src="assets/img/marquee/marquee-arrow.svg" loading="lazy"
+                class="mt-10">
+            </div>
+            <div class="tp-flex-horizontal double-marquee-text-wrapper">
+              <div class="marquee-text stroke">agency</div>
+              <img width="36" height="36" alt="Marquee Arrow" src="assets/img/marquee/marquee-arrow.svg" loading="lazy"
+                class="mt-10">
+            </div>
+            <div class="tp-flex-horizontal double-marquee-text-wrapper">
+              <div class="marquee-text">ux design</div>
+              <img width="36" height="36" alt="Marquee Arrow" src="assets/img/marquee/marquee-arrow.svg" loading="lazy"
+                class="mt-10">
+            </div>
+            <div class="tp-flex-horizontal double-marquee-text-wrapper">
+              <div class="marquee-text stroke">photography</div>
+              <img width="36" height="36" alt="Marquee Arrow" src="assets/img/marquee/marquee-arrow.svg" loading="lazy"
+                class="mt-10">
+            </div>
+            <div class="tp-flex-horizontal double-marquee-text-wrapper">
+              <div class="marquee-text">digital art</div>
+              <img width="36" height="36" alt="Marquee Arrow" src="assets/img/marquee/marquee-arrow.svg" loading="lazy"
+                class="mt-10">
+            </div>
           </div>
-          <div class="tp-flex-horizontal double-marquee-text-wrapper">
-            <div class="marquee-text stroke">agency</div>
-            <img width="36" height="36" alt="Marquee Arrow" src="assets/img/marquee/marquee-arrow.svg" loading="lazy"
-              class="mt-10">
-          </div>
-          <div class="tp-flex-horizontal double-marquee-text-wrapper">
-            <div class="marquee-text">ux design</div>
-            <img width="36" height="36" alt="Marquee Arrow" src="assets/img/marquee/marquee-arrow.svg" loading="lazy"
-              class="mt-10">
-          </div>
-          <div class="tp-flex-horizontal double-marquee-text-wrapper">
-            <div class="marquee-text stroke">photography</div>
-            <img width="36" height="36" alt="Marquee Arrow" src="assets/img/marquee/marquee-arrow.svg" loading="lazy"
-              class="mt-10">
-          </div>
-          <div class="tp-flex-horizontal double-marquee-text-wrapper">
-            <div class="marquee-text">digital art</div>
-            <img width="36" height="36" alt="Marquee Arrow" src="assets/img/marquee/marquee-arrow.svg" loading="lazy"
-              class="mt-10">
-          </div>
-        </div>
-        <div class="tp-flex-horizontal double-marquee-train left-to-right marquee-train-right base-transform">
-          <div class="tp-flex-horizontal double-marquee-text-wrapper">
-            <div class="marquee-text stroke">art direction</div>
-            <img width="36" height="36" alt="Marquee Arrow" src="assets/img/marquee/marquee-arrow.svg" loading="lazy"
-              class="mt-10">
-          </div>
-          <div class="tp-flex-horizontal double-marquee-text-wrapper">
-            <div class="marquee-text">application</div>
-            <img width="36" height="36" alt="Marquee Arrow" src="assets/img/marquee/marquee-arrow.svg" loading="lazy"
-              class="mt-10">
-          </div>
-          <div class="tp-flex-horizontal double-marquee-text-wrapper">
-            <div class="marquee-text stroke">agency</div>
-            <img width="36" height="36" alt="Marquee Arrow" src="assets/img/marquee/marquee-arrow.svg" loading="lazy"
-              class="mt-10">
-          </div>
-          <div class="tp-flex-horizontal double-marquee-text-wrapper">
-            <div class="marquee-text">ux design</div>
-            <img width="36" height="36" alt="Marquee Arrow" src="assets/img/marquee/marquee-arrow.svg" loading="lazy"
-              class="mt-10">
-          </div>
-          <div class="tp-flex-horizontal double-marquee-text-wrapper">
-            <div class="marquee-text stroke">photography</div>
-            <img width="36" height="36" alt="Marquee Arrow" src="assets/img/marquee/marquee-arrow.svg" loading="lazy"
-              class="mt-10">
-          </div>
-          <div class="tp-flex-horizontal double-marquee-tex7t-wrapper">
-            <div class="marquee-text">digital art</div>
-            <img width="36" height="36" alt="Marquee Arrow" src="assets/img/marquee/marquee-arrow.svg" loading="lazy"
-              class="mt-10">
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="container">
-      <div class="double-marquee-top-container">
-        <div
-          class="d-flex flex-row  double-marquee-images double-marquee-images-bottom justify-content-between align-items-start gap-30">
-          <div class="common-parallax-div">
-            <img width="173" height="162" alt="Robot" src="assets/img/abstract-image/abstract-robot.webp" loading="lazy"
-    class="tp-radius-20 mobile-image-height-auto"  data-aos="zoom-in" data-aos-delay="200">
-          </div>
-          <div class="double-marquee-right-image  common-parallax-div">
-            <img width="203" height="273" alt="Girl 3d image" src="assets/img/abstract-image/abstract-girl.webp"
-    loading="lazy" class="tp-radius-20 mobile-image-height-auto"  data-aos="zoom-in" data-aos-delay="400">
+          <div class="tp-flex-horizontal double-marquee-train left-to-right marquee-train-right base-transform">
+            <div class="tp-flex-horizontal double-marquee-text-wrapper">
+              <div class="marquee-text stroke">art direction</div>
+              <img width="36" height="36" alt="Marquee Arrow" src="assets/img/marquee/marquee-arrow.svg" loading="lazy"
+                class="mt-10">
+            </div>
+            <div class="tp-flex-horizontal double-marquee-text-wrapper">
+              <div class="marquee-text">application</div>
+              <img width="36" height="36" alt="Marquee Arrow" src="assets/img/marquee/marquee-arrow.svg" loading="lazy"
+                class="mt-10">
+            </div>
+            <div class="tp-flex-horizontal double-marquee-text-wrapper">
+              <div class="marquee-text stroke">agency</div>
+              <img width="36" height="36" alt="Marquee Arrow" src="assets/img/marquee/marquee-arrow.svg" loading="lazy"
+                class="mt-10">
+            </div>
+            <div class="tp-flex-horizontal double-marquee-text-wrapper">
+              <div class="marquee-text">ux design</div>
+              <img width="36" height="36" alt="Marquee Arrow" src="assets/img/marquee/marquee-arrow.svg" loading="lazy"
+                class="mt-10">
+            </div>
+            <div class="tp-flex-horizontal double-marquee-text-wrapper">
+              <div class="marquee-text stroke">photography</div>
+              <img width="36" height="36" alt="Marquee Arrow" src="assets/img/marquee/marquee-arrow.svg" loading="lazy"
+                class="mt-10">
+            </div>
+            <div class="tp-flex-horizontal double-marquee-tex7t-wrapper">
+              <div class="marquee-text">digital art</div>
+              <img width="36" height="36" alt="Marquee Arrow" src="assets/img/marquee/marquee-arrow.svg" loading="lazy"
+                class="mt-10">
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-  <div>
-    <!-- ===================================================
+      <div class="container">
+        <div class="double-marquee-top-container">
+          <div
+            class="d-flex flex-row  double-marquee-images double-marquee-images-bottom justify-content-between align-items-start gap-30">
+            <div class="common-parallax-div">
+              <img width="173" height="162" alt="Robot" src="assets/img/abstract-image/abstract-robot.webp"
+                loading="lazy" class="tp-radius-20 mobile-image-height-auto" data-aos="zoom-in" data-aos-delay="200">
+            </div>
+            <div class="double-marquee-right-image  common-parallax-div">
+              <img width="203" height="273" alt="Girl 3d image" src="assets/img/abstract-image/abstract-girl.webp"
+                loading="lazy" class="tp-radius-20 mobile-image-height-auto" data-aos="zoom-in" data-aos-delay="400">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div>
+      <!-- ===================================================
           Footer area
           ==================================================== -->
-    <section class="footer-two pt-120 md-pt-60">
-      <div class="container">
-        <div class="row">
-          <div class="col-12 col-lg-6">
-            <div  data-aos="fade-up" data-aos-delay="800">
-              <span class="d-block section-title">
-                <h2 class="m-0 section-title-heading">let’s get started <span class="text-gradiant">together</span>
-                </h2>
-              </span>
-              <div>
-                <h4 class="heading-four mb-30">let’s Talk</h4>
-                <div class="tp-flex-horizontal footer-two-contact-box">
-                  <div class=" tp-flex-vertical">
-                    <span class="text-capitalize mb-10">email us</span>
-                    <a href="mailto:info@example.com"
-                      class="heading-five email-text tp-common-white text_mute">info@example.com</a>
-                  </div>
-                  <div class="footer-contact-border"></div>
-                  <div class="tp-flex-vertical">
-                    <span class="text-capitalize mb-10">call us</span>
-                    <a href="tel:8881234-5678" class="heading-five email-text tp-common-white">(888) 1234-5678</a>
+      <section class="footer-two pt-120 md-pt-60">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-lg-6">
+              <div data-aos="fade-up" data-aos-delay="800">
+                <span class="d-block section-title">
+                  <h2 class="m-0 section-title-heading">let’s get started <span class="text-gradiant">together</span>
+                  </h2>
+                </span>
+                <div>
+                  <h4 class="heading-four mb-30">let’s Talk</h4>
+                  <div class="tp-flex-horizontal footer-two-contact-box">
+                    <div class=" tp-flex-vertical">
+                      <span class="text-capitalize mb-10">email us</span>
+                      <a href="mailto:info@example.com"
+                        class="heading-five email-text tp-common-white text_mute">info@example.com</a>
+                    </div>
+                    <div class="footer-contact-border"></div>
+                    <div class="tp-flex-vertical">
+                      <span class="text-capitalize mb-10">call us</span>
+                      <a href="tel:8881234-5678" class="heading-five email-text tp-common-white">(888) 1234-5678</a>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="col-12 col-lg-6 pt-4 py-lg-0  md-mb-50 mb-70">
-            <div class="footer-two-form"  data-aos="fade-up" data-aos-delay="1">
-              <div class="tp-form">
-                <form method="get" class="tp-form-wrapper">
-                  <input class="input-field-two  tp-input form-control" maxlength="256" name="name-2" placeholder="name"
-                    type="text" required>
+            <div class="col-12 col-lg-6 pt-4 py-lg-0  md-mb-50 mb-70">
+              <div class="footer-two-form" data-aos="fade-up" data-aos-delay="1">
+                <div class="tp-form">
+                  <form method="get" class="tp-form-wrapper">
+                    <input class="input-field-two  tp-input form-control" maxlength="256" name="name-2"
+                      placeholder="name" type="text" required>
 
-                  <input class="input-field-two  tp-input form-control" maxlength="256" name="email-2"
-                    placeholder="email" type="email" required>
+                    <input class="input-field-two  tp-input form-control" maxlength="256" name="email-2"
+                      placeholder="email" type="email" required>
 
-                  <textarea name="message-2" maxlength="5000" placeholder="message"
-                    class="tp-textarea mb-40 tp-input form-control"></textarea>
+                    <textarea name="message-2" maxlength="5000" placeholder="message"
+                      class="tp-textarea mb-40 tp-input form-control"></textarea>
 
-                  <div class="tp-flex-horizontal footer-two-form-bottom gap-30 mt-30">
+                    <div class="tp-flex-horizontal footer-two-form-bottom gap-30 mt-30">
 
-                    <label class="tp-checkbox tp-checkbox-field d-flex align-items-center px-0">
-                      <input type="checkbox" class="tp-checkbox-input-real border-0" name="Accept-our-privacy-policy-2"
-                        required>
+                      <label class="tp-checkbox tp-checkbox-field d-flex align-items-center px-0">
+                        <input type="checkbox" class="tp-checkbox-input-real border-0"
+                          name="Accept-our-privacy-policy-2" required>
 
-                      <span class="tp-checkbox-input tp-checkbox-custom border-0 shadow-none"></span>
+                        <span class="tp-checkbox-input tp-checkbox-custom border-0 shadow-none"></span>
 
-                      <span class="tp-form-checkbox-label tp-form-label ms-2 border-0">
-                        Accept our privacy policy
-                      </span>
-                    </label>
+                        <span class="tp-form-checkbox-label tp-form-label ms-2 border-0">
+                          Accept our privacy policy
+                        </span>
+                      </label>
 
-<div class="button-wrapper">
-    <button type="submit" class="tp-button-wrapper tp-flex-center">
-        <span class="tp-button-text">
-            <span class="tp-button-front">Send Message</span>
-            <span class="tp-button-back">Send Message</span>
-        </span>
+                      <div class="button-wrapper">
+                        <button type="submit" class="tp-button-wrapper tp-flex-center">
+                          <span class="tp-button-text">
+                            <span class="tp-button-front">Send Message</span>
+                            <span class="tp-button-back">Send Message</span>
+                          </span>
 
-        <span class="tp-button-icon">
-            <span class="tp-button-arrow">
-                <i class="bi bi-arrow-right"></i>
-                <i class="bi bi-arrow-right"></i>
-            </span>
-        </span>
-    </button>
-</div>
+                          <span class="tp-button-icon">
+                            <span class="tp-button-arrow">
+                              <i class="bi bi-arrow-right"></i>
+                              <i class="bi bi-arrow-right"></i>
+                            </span>
+                          </span>
+                        </button>
+                      </div>
 
-                  </div>
-                </form>
+                    </div>
+                  </form>
 
 
+                </div>
               </div>
             </div>
           </div>
-        </div>
-    </section>
-    <!-- ===================================================
+      </section>
+      <!-- ===================================================
           copy right area
           ==================================================== -->
-    <section class="footer-two-bottom pb-25">
-      <div class="container">
-        <div class="row gap-2 gap-md-0 footer-one-bottom pt-4 footer-bottm-border align-items-center">
+      <section class="footer-two-bottom pb-25">
+        <div class="container">
+          <div class="row gap-2 gap-md-0 footer-one-bottom pt-4 footer-bottm-border align-items-center">
 
-          <div
-            class="col-12 col-md-6 order-2 order-md-1 d-flex justify-content-center align-items-center justify-content-md-start">
-            <p class="text-sm mb-0">
-              © 2025 Digital Strategy , All Right Receved.
-            </p>
-          </div>
-
-          <div
-            class="col-12 col-md-6 order-1 order-md-2 d-flex justify-content-center   align-items-center justify-content-md-end">
-            <div class="d-flex justify-content-md-end footer-one-bottom-links">
-              <a href="contact-one.html" class="links-hover-effect text-capitalize me-3">contact</a>
-              <a href="about-one.html" class="links-hover-effect text-capitalize me-3">about</a>
-              <a href="pricing.html" class="links-hover-effect text-capitalize">pricing</a>
+            <div
+              class="col-12 col-md-6 order-2 order-md-1 d-flex justify-content-center align-items-center justify-content-md-start">
+              <p class="text-sm mb-0">
+                © 2025 Digital Strategy , All Right Receved.
+              </p>
             </div>
-          </div>
 
+            <div
+              class="col-12 col-md-6 order-1 order-md-2 d-flex justify-content-center   align-items-center justify-content-md-end">
+              <div class="d-flex justify-content-md-end footer-one-bottom-links">
+                <a href="contact-one.html" class="links-hover-effect text-capitalize me-3">contact</a>
+                <a href="about-one.html" class="links-hover-effect text-capitalize me-3">about</a>
+                <a href="pricing.html" class="links-hover-effect text-capitalize">pricing</a>
+              </div>
+            </div>
+
+          </div>
         </div>
-      </div>
-    </section>
-  </div>
-  <!-- ===================================================
+      </section>
+    </div>
+    <!-- ===================================================
           js here
           ==================================================== -->
-  <!-- ===================================================
+    <!-- ===================================================
 				Js here
 				==================================================== -->
 
-  <!-- ============================================
+    <!-- ============================================
      1. THIRD-PARTY LIBRARIES 
      ============================================ -->
     <!-- 1. VENDOR LIBRARIES (ALWAYS FIRST) -->
-   <script src="assets/vendor/jquery.min.js"></script>
-  <script src="assets/vendor/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/gsap.min.js"></script>
-  <script src="assets/vendor/ScrollTrigger.min.js"></script>
-  <script src="assets/vendor/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/aos.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.15.0/ScrollSmoother.min.js"></script>
+    <script src="assets/vendor/jquery.min.js"></script>
+    <script src="assets/vendor/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/gsap.min.js"></script>
+    <script src="assets/vendor/ScrollTrigger.min.js"></script>
+    <script src="assets/vendor/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.15.0/ScrollSmoother.min.js"></script>
 
 
-  <!-- 2. YOUR CUSTOM SCRIPTS -->
-  <script src="assets/js/utilities.js"></script>
-  <script src="assets/js/counter.js"></script>
-  <script src="assets/js/menu.js"></script>
-  <script src="assets/js/hamburger.js"></script>
-  <script src="assets/js/gsap-animations.js"></script>
-  <script src="assets/js/gsap-utilities.js"></script>
-  <script src="assets/js/slider-init.js"></script>
-  <script src="assets/js/parallax.js"></script>
-<script>
-  gsap.registerPlugin(ScrollTrigger);
+    <!-- 2. YOUR CUSTOM SCRIPTS -->
+    <script src="assets/js/utilities.js"></script>
+    <script src="assets/js/counter.js"></script>
+    <script src="assets/js/menu.js"></script>
+    <script src="assets/js/hamburger.js"></script>
+    <script src="assets/js/gsap-animations.js"></script>
+    <script src="assets/js/gsap-utilities.js"></script>
+    <script src="assets/js/slider-init.js"></script>
+    <script src="assets/js/parallax.js"></script>
+    <script>
+      gsap.registerPlugin(ScrollTrigger);
 
-    document.addEventListener("DOMContentLoaded", function () {
+      document.addEventListener("DOMContentLoaded", function () {
 
-      const cards = document.querySelectorAll(".process-card");
-      const flexContainer = document.getElementById("processFlex");
-      if (!cards.length || !flexContainer) return;
+        const cards = document.querySelectorAll(".process-card");
+        const flexContainer = document.getElementById("processFlex");
+        if (!cards.length || !flexContainer) return;
 
-      let activeIndex = 0;
+        let activeIndex = 0;
 
-      function isDesktop() {
-        return window.innerWidth >= 992;
-      }
+        function isDesktop() {
+          return window.innerWidth >= 992;
+        }
 
-      /* ---------------------------------
-         Desktop GSAP animation (992px+)
-         - only click event, no hover
-      --------------------------------- */
-      function expandCard(index) {
-        if (!isDesktop()) return;
-        if (index === activeIndex) return;
+        /* ---------------------------------
+           Desktop GSAP animation (992px+)
+           - only click event, no hover
+        --------------------------------- */
+        function expandCard(index) {
+          if (!isDesktop()) return;
+          if (index === activeIndex) return;
 
-        const prevActive = cards[activeIndex];
-        const newActive = cards[index];
+          const prevActive = cards[activeIndex];
+          const newActive = cards[index];
 
-        const tl = gsap.timeline({
-          defaults: { ease: "power2.inOut", duration: 0.7 }
-        });
+          const tl = gsap.timeline({
+            defaults: { ease: "power2.inOut", duration: 0.7 }
+          });
 
-        // Collapse others
-        cards.forEach((card, i) => {
-          if (i !== index) {
-            tl.to(card, {
-              flexBasis: "100px",
-              flexGrow: 0,
-              flexShrink: 1,
-              duration: 0.6
-            }, 0);
-          }
-        });
+          // Collapse others
+          cards.forEach((card, i) => {
+            if (i !== index) {
+              tl.to(card, {
+                flexBasis: "100px",
+                flexGrow: 0,
+                flexShrink: 1,
+                duration: 0.6
+              }, 0);
+            }
+          });
 
-        // Expand new active
-        tl.to(newActive, {
-          flexBasis: "380px",
-          flexGrow: 1,
-          flexShrink: 0,
-          duration: 0.7
-        }, 0);
+          // Expand new active
+          tl.to(newActive, {
+            flexBasis: "380px",
+            flexGrow: 1,
+            flexShrink: 0,
+            duration: 0.7
+          }, 0);
 
-        // Update active class
-        tl.call(() => {
-          prevActive.classList.remove("active");
-          newActive.classList.add("active");
+          // Update active class
+          tl.call(() => {
+            prevActive.classList.remove("active");
+            newActive.classList.add("active");
+            activeIndex = index;
+          }, [], 0.2);
+
+          // Active shadow
+          tl.to(newActive, {
+            boxShadow: "0 20px 40px -12px rgba(0,0,0,0.12)",
+            duration: 0.4
+          }, 0);
+          tl.to(prevActive, {
+            boxShadow: "0 12px 30px -8px rgba(0,0,0,0.06)",
+            duration: 0.4
+          }, 0);
+        }
+
+        /* ---------------------------------
+           Mobile/Tablet (< 992px)
+           - show full card design (no collapse)
+           - just toggle active class for styling
+        --------------------------------- */
+        function activateCard(index) {
+          if (isDesktop()) return;
+          if (index === activeIndex) return;
+
+          cards.forEach((card) => card.classList.remove("active"));
+          cards[index].classList.add("active");
           activeIndex = index;
-        }, [], 0.2);
+        }
 
-        // Active shadow
-        tl.to(newActive, {
-          boxShadow: "0 20px 40px -12px rgba(0,0,0,0.12)",
-          duration: 0.4
-        }, 0);
-        tl.to(prevActive, {
-          boxShadow: "0 12px 30px -8px rgba(0,0,0,0.06)",
-          duration: 0.4
-        }, 0);
-      }
-
-      /* ---------------------------------
-         Mobile/Tablet (< 992px)
-         - show full card design (no collapse)
-         - just toggle active class for styling
-      --------------------------------- */
-      function activateCard(index) {
-        if (isDesktop()) return;
-        if (index === activeIndex) return;
-
-        cards.forEach((card) => card.classList.remove("active"));
-        cards[index].classList.add("active");
-        activeIndex = index;
-      }
-
-      /* ---------------------------------
-         Click events
-      --------------------------------- */
-      cards.forEach((card, index) => {
-        card.addEventListener("click", function (e) {
-          if (e.target.closest(".toggle-btn")) return;
-          if (isDesktop()) {
-            expandCard(index);
-          } else {
-            activateCard(index);
-          }
-        });
-
-        const btn = card.querySelector(".toggle-btn");
-        if (btn) {
-          btn.addEventListener("click", function (e) {
-            e.preventDefault();
-            e.stopPropagation();
+        /* ---------------------------------
+           Click events
+        --------------------------------- */
+        cards.forEach((card, index) => {
+          card.addEventListener("click", function (e) {
+            if (e.target.closest(".toggle-btn")) return;
             if (isDesktop()) {
               expandCard(index);
             } else {
               activateCard(index);
             }
           });
-        }
-      });
 
-      /* ---------------------------------
-         Resize handler – kill tweens on resize
-      --------------------------------- */
-      let resizeTimer;
-      window.addEventListener("resize", function () {
-        clearTimeout(resizeTimer);
-        resizeTimer = setTimeout(function () {
-          if (!isDesktop()) {
-            cards.forEach((card) => {
-              gsap.killTweensOf(card);
-              gsap.set(card, {
-                clearProps: "flexBasis,flexGrow,flexShrink,boxShadow"
-              });
-            });
-            // Ensure all cards show full content (active class not needed for layout, but we keep)
-            // On mobile, all cards show active-content anyway.
-          } else {
-            // On desktop, ensure only one active
-            cards.forEach((card, i) => {
-              if (i !== activeIndex) {
-                card.classList.remove("active");
-                gsap.set(card, { flexBasis: "100px", flexGrow: 0, flexShrink: 1 });
+          const btn = card.querySelector(".toggle-btn");
+          if (btn) {
+            btn.addEventListener("click", function (e) {
+              e.preventDefault();
+              e.stopPropagation();
+              if (isDesktop()) {
+                expandCard(index);
               } else {
-                card.classList.add("active");
-                gsap.set(card, { flexBasis: "380px", flexGrow: 1, flexShrink: 0 });
+                activateCard(index);
               }
             });
           }
-        }, 200);
+        });
+
+        /* ---------------------------------
+           Resize handler – kill tweens on resize
+        --------------------------------- */
+        let resizeTimer;
+        window.addEventListener("resize", function () {
+          clearTimeout(resizeTimer);
+          resizeTimer = setTimeout(function () {
+            if (!isDesktop()) {
+              cards.forEach((card) => {
+                gsap.killTweensOf(card);
+                gsap.set(card, {
+                  clearProps: "flexBasis,flexGrow,flexShrink,boxShadow"
+                });
+              });
+              // Ensure all cards show full content (active class not needed for layout, but we keep)
+              // On mobile, all cards show active-content anyway.
+            } else {
+              // On desktop, ensure only one active
+              cards.forEach((card, i) => {
+                if (i !== activeIndex) {
+                  card.classList.remove("active");
+                  gsap.set(card, { flexBasis: "100px", flexGrow: 0, flexShrink: 1 });
+                } else {
+                  card.classList.add("active");
+                  gsap.set(card, { flexBasis: "380px", flexGrow: 1, flexShrink: 0 });
+                }
+              });
+            }
+          }, 200);
+        });
+
+        // On load, ensure desktop state is consistent
+        if (isDesktop()) {
+          cards.forEach((card, i) => {
+            if (i === activeIndex) {
+              card.classList.add("active");
+              gsap.set(card, { flexBasis: "380px", flexGrow: 1, flexShrink: 0 });
+            } else {
+              card.classList.remove("active");
+              gsap.set(card, { flexBasis: "100px", flexGrow: 0, flexShrink: 1 });
+            }
+          });
+        } else {
+          // On mobile, all cards show active-content, but we keep active class on first
+          cards.forEach((card, i) => {
+            if (i === activeIndex) card.classList.add("active");
+            else card.classList.remove("active");
+          });
+        }
+
       });
-
-      // On load, ensure desktop state is consistent
-      if (isDesktop()) {
-        cards.forEach((card, i) => {
-          if (i === activeIndex) {
-            card.classList.add("active");
-            gsap.set(card, { flexBasis: "380px", flexGrow: 1, flexShrink: 0 });
-          } else {
-            card.classList.remove("active");
-            gsap.set(card, { flexBasis: "100px", flexGrow: 0, flexShrink: 1 });
-          }
-        });
-      } else {
-        // On mobile, all cards show active-content, but we keep active class on first
-        cards.forEach((card, i) => {
-          if (i === activeIndex) card.classList.add("active");
-          else card.classList.remove("active");
-        });
-      }
-
-    });
-</script>
+    </script>
 
 
- </script>
-  <!-- 3. MAIN JS - ALWAYS LAST -->
-  <script src="assets/js/main.js"></script>
+    </script>
+    <!-- 3. MAIN JS - ALWAYS LAST -->
+    <script src="assets/js/main.js"></script>
+
 </html>
