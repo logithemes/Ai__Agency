@@ -14,7 +14,141 @@
 <link rel="stylesheet" href="assets/css/style.css">
 <link rel="stylesheet" href="assets/css/spacing.css">
 <link rel="stylesheet" href="assets/css/responsive.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
+.portfolio-sticky-wrapper {
+  position: relative;
+}
+
+.portfolio-sticky-wrapper .portfolio-sticky-inner {
+  max-width: 1180px;
+  margin: auto;
+}
+
+.portfolio-sticky-wrapper .portfolio-sticky-layout {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+
+.portfolio-sticky-wrapper .portfolio-content {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  gap: 4vw;
+}
+
+.portfolio-sticky-wrapper .sticky-counter-wrapper {
+  position: relative;
+  overflow: hidden;
+  height: 310px;
+  width: 290px;
+}
+
+.portfolio-sticky-wrapper .portfolio-counter {
+  position: absolute;
+  opacity: 0;
+  height: fit-content;
+  inset: 0;
+  width: fit-content;
+  margin: auto;
+  font-weight: 500;
+  font-size: 150px;
+  line-height: 100%;
+  background: linear-gradient(180.38deg, rgba(241, 164, 117, 0.3) -5.1%, rgba(252, 217, 184, 0.6) 30.72%, #CC835A 56.29%, #0C1F45 90.28%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+
+/* ---- card list ---- */
+
+.portfolio-sticky-wrapper .portfolio-img-wrapper {
+  flex: 1;
+  position: relative;
+  height: 450px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.portfolio-sticky-wrapper .portfolio-sticky-images {
+  position: absolute;
+  margin: auto;
+  margin-right: 0;
+  opacity: 0;
+  transform-origin: top center;
+  padding: 18px 27px;
+  display: flex;
+  flex-direction: column;
+  left: 50%;
+  transform: translateX(-50%);
+  gap: 14px;
+  background: linear-gradient(98.45deg, #BBBDBF 6.33%, #FFFFFF 32.29%, #F1F1F2 54.87%, #FFFFFF 72.83%, #BBBDBF 96.04%);
+  border-radius: 4px;
+  width: 620px;
+  height: 310px;
+  z-index: 1;
+  overflow: hidden;
+}
+.portfolio-sticky-wrapper .portfolio-sticky-images__copy {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+/* ============================================================
+   Responsive
+   ============================================================ */
+
+@media (max-width: 1200px) {
+  .portfolio-sticky-wrapper .stickyStepCounter-section__title {
+    font-size: 2.75rem;
+  }
+  .portfolio-sticky-wrapper .stickyStepCounter-section__subtitle {
+    font-size: 18px;
+  }
+  .portfolio-sticky-wrapper .portfolio-content {
+    padding: 40px 20px 40px;
+  }
+  .portfolio-sticky-wrapper .portfolio-counter {
+    font-size: 180px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .portfolio-sticky-wrapper {
+    padding: 30px 24px;
+  }
+  .portfolio-sticky-wrapper .portfolio-sticky-layout {
+    gap: 25px;
+  }
+  .portfolio-sticky-wrapper .portfolio-content {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 8vw;
+  }
+  .portfolio-sticky-wrapper .sticky-counter-wrapper {
+    width: 100%;
+    height: 160px;
+  }
+  .portfolio-sticky-wrapper .portfolio-counter {
+    font-size: 180px;
+    inset: 0;
+    margin: auto;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .portfolio-sticky-wrapper .portfolio-img-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+  </style>
 </head>
 
 <body>
@@ -632,269 +766,84 @@
           </div>
         </div>
         
+      
+        <!-- Sticky Brand Cards — semantic, reusable markup -->
+<section class="portfolio-sticky-wrapper">
 
-       <div class="projects-marquee d-block overflow-hidden">
-  <div class="project-slider-wrapper swiper">
+  <div class="portfolio-sticky-inner">
 
-    <div class="swiper-wrapper">
+    <div class="portfolio-sticky-layout">
 
-      <!-- Slide 1 -->
-      <div class="swiper-slide">
-        <div class="proj-slider-box d-flex">
-          <div class="marquee-tp-slides-cards">
-            <div class="tp-portfolio-list">
-              <div role="list" class="tp-portfolio-items">
-                <div role="listitem">
-                  <a href="portfolio-details.html"
-                    class="projects-marquee-cards d-flex flex-column justify-content-center align-items-center text-center overflow-hidden position-relative tp-inline-block hover-line">
+      <div class="portfolio-content">
 
-                    <div class="project-media overflow-hidden position-relative d-flex justify-content-center align-items-center">
-
-                      <div class="w-100 h-100">
-                        <img class="h-100 w-100"
-                          src="assets/img/portfolios/portfolios-1.webp"
-                          alt="AI Interface Design">
-                      </div>
-
-                      <h4 class="heading-four projects-name position-absolute start-0 w-100 text-center">
-                        <span class="d-inline lh-sm hover-line-bottom">
-                          AI Interface Design
-                        </span>
-                      </h4>
-
-                      <div class="projects-card-overlay"></div>
-
-                    </div>
-
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
+        <!-- Decorative step counter (visual only — hidden from assistive tech) -->
+        <div class="sticky-counter-wrapper" aria-hidden="true">
+          <span class="portfolio-counter">01</span>
+          <span class="portfolio-counter">02</span>
+          <span class="portfolio-counter">03</span>
+          <span class="portfolio-counter">04</span>
+          <span class="portfolio-counter">05</span>
         </div>
-      </div>
 
-      <!-- Slide 2 -->
-      <div class="swiper-slide">
-        <div class="proj-slider-box">
-          <div class="marquee-tp-slides-cards">
-            <div class="tp-portfolio-list">
-              <div role="list" class="tp-portfolio-items">
-                <div role="listitem">
-                  <a href="portfolio-details.html"
-                    class="projects-marquee-cards d-flex align-items-end flex-column justify-content-center text-center overflow-hidden position-relative tp-inline-block tp-active hover-line">
+        <ul class="portfolio-img-wrapper">
 
-                    <div class="project-media overflow-hidden position-relative d-flex justify-content-center align-items-center">
-
-                      <div class="h-100 w-100">
-                        <img class="h-100 w-100"
-                          src="assets/img/portfolios/portfolios-2.webp"
-                          alt="Web & Graphic Design">
-                      </div>
-
-                      <h4 class="heading-four projects-name position-absolute start-0 w-100 text-center">
-                        <span class="d-inline lh-sm hover-line-bottom">
-                          Web & Graphic Design
-                        </span>
-                      </h4>
-
-                      <div class="projects-card-overlay"></div>
-
-                    </div>
-
-                  </a>
-                </div>
+          <li>
+            <article class="portfolio-sticky-images " data-step="1">
+              
+              <div class="portfolio-sticky-images__copy">
+                <h3>Loyalty Programs For Customer Retention</h3>
+                <p>Make every purchase a rewarding experience and turn buyers into loyal customers.</p>
               </div>
-            </div>
-          </div>
-        </div>
-      </div>
+            </article>
+          </li>
 
-      <!-- Slide 3 -->
-      <div class="swiper-slide">
-        <div class="proj-slider-box">
-          <div class="marquee-tp-slides-cards">
-            <div class="tp-portfolio-list">
-              <div role="list" class="tp-portfolio-items">
-                <div role="listitem">
-                  <a href="portfolio-details.html"
-                    class="projects-marquee-cards d-flex flex-column align-items-end justify-content-center text-center overflow-hidden position-relative tp-inline-block hover-line">
-
-                    <div class="project-media overflow-hidden position-relative d-flex justify-content-center align-items-center">
-
-                      <div class="h-100 w-100">
-                        <img class="h-100 w-100"
-                          src="assets/img/portfolios/portfolios-3.webp"
-                          alt="UI/UX Design">
-                      </div>
-
-                      <h4 class="heading-four projects-name position-absolute start-0 w-100 text-center">
-                        <span class="d-inline lh-sm hover-line-bottom">
-                          UI/Ux Design
-                        </span>
-                      </h4>
-
-                      <div class="projects-card-overlay"></div>
-
-                    </div>
-
-                  </a>
-                </div>
+          <li>
+            <article class="portfolio-sticky-images" data-step="2">
+              
+              <div class="portfolio-sticky-images__copy">
+                <h3>Protect Your Brand's Integrity</h3>
+                <p>Keep fraudsters out and protect your legacy with our verification process.</p>
               </div>
-            </div>
-          </div>
-        </div>
-      </div>
+            </article>
+          </li>
 
-      <!-- Slide 4 -->
-      <div class="swiper-slide">
-        <div class="proj-slider-box">
-          <div class="marquee-tp-slides-cards">
-            <div class="tp-portfolio-list">
-              <div role="list" class="tp-portfolio-items">
-                <div role="listitem">
-                  <a href="portfolio-details.html"
-                    class="projects-marquee-cards d-flex align-items-end flex-column justify-content-center text-center overflow-hidden position-relative tp-inline-block hover-line">
-
-                    <div class="project-media overflow-hidden position-relative d-flex justify-content-center align-items-center">
-
-                      <div class="h-100 w-100">
-                        <img class="h-100 w-100"
-                          src="assets/img/portfolios/portfolios-4.webp"
-                          alt="Product Design">
-                      </div>
-
-                      <h4 class="heading-four projects-name position-absolute start-0 w-100 text-center">
-                        <span class="d-inline lh-sm hover-line-bottom">
-                          Product Design
-                        </span>
-                      </h4>
-
-                      <div class="projects-card-overlay"></div>
-
-                    </div>
-
-                  </a>
-                </div>
+          <li>
+            <article class="portfolio-sticky-images " data-step="3">
+             
+              <div class="portfolio-sticky-images__copy">
+                <h3>Build Unshakable Trust</h3>
+                <p>Open authentication & rewards for loyalty make buying worry-free for your customers.</p>
               </div>
-            </div>
-          </div>
-        </div>
-      </div>
+            </article>
+          </li>
 
-      <!-- Slide 5 -->
-      <div class="swiper-slide">
-        <div class="proj-slider-box">
-          <div class="marquee-tp-slides-cards">
-            <div class="tp-portfolio-list">
-              <div role="list" class="tp-portfolio-items">
-                <div role="listitem">
-                  <a href="portfolio-details.html"
-                    class="projects-marquee-cards d-flex align-items-end justify-content-center flex-column text-center overflow-hidden position-relative tp-inline-block hover-line">
-
-                    <div class="project-media overflow-hidden position-relative d-flex justify-content-center align-items-center">
-
-                      <div class="h-100 w-100">
-                        <img class="h-100 w-100"
-                          src="assets/img/portfolios/portfolios-5.webp"
-                          alt="AI Interface Design">
-                      </div>
-
-                      <h4 class="heading-four projects-name position-absolute start-0 w-100 text-center">
-                        <span class="d-inline lh-sm hover-line-bottom">
-                          AI Interface Design
-                        </span>
-                      </h4>
-
-                      <div class="projects-card-overlay"></div>
-
-                    </div>
-
-                  </a>
-                </div>
+          <li>
+            <article class="portfolio-sticky-images" data-step="4">
+             
+              <div class="portfolio-sticky-images__copy">
+                <h3>Let Data Guide You</h3>
+                <p>Your dashboard holds the key to smarter business moves. Check everything you need in one place.</p>
               </div>
-            </div>
-          </div>
-        </div>
-      </div>
+            </article>
+          </li>
 
-      <!-- Slide 6 -->
-      <div class="swiper-slide">
-        <div class="proj-slider-box">
-          <div class="marquee-tp-slides-cards">
-            <div class="tp-portfolio-list">
-              <div role="list" class="tp-portfolio-items">
-                <div role="listitem">
-                  <a href="portfolio-details.html"
-                    class="projects-marquee-cards d-flex align-items-end justify-content-center text-center flex-column overflow-hidden position-relative tp-inline-block tp-active hover-line">
-
-                    <div class="project-media overflow-hidden position-relative d-flex justify-content-center align-items-center">
-
-                      <div class="h-100 w-100">
-                        <img class="h-100 w-100"
-                          src="assets/img/portfolios/portfolios-6.webp"
-                          alt="Web & Graphic Design">
-                      </div>
-
-                      <h4 class="heading-four projects-name position-absolute start-0 w-100 text-center">
-                        <span class="d-inline lh-sm hover-line-bottom">
-                          Web & Graphic Design
-                        </span>
-                      </h4>
-
-                      <div class="projects-card-overlay"></div>
-
-                    </div>
-
-                  </a>
-                </div>
+          <li>
+            <article class="portfolio-sticky-images " data-step="5">
+              
+              <div class="portfolio-sticky-images__copy">
+                <h3>Be Future-Ready</h3>
+                <p>We adapt, evolve, and implement more new technologies to put you ahead of the competition and help you win the race.</p>
               </div>
-            </div>
-          </div>
-        </div>
+            </article>
+          </li>
+
+        </ul>
+
       </div>
-
-      <!-- Slide 7 -->
-      <div class="swiper-slide">
-        <div class="proj-slider-box">
-          <div class="marquee-tp-slides-cards">
-            <div class="tp-portfolio-list">
-              <div role="list" class="tp-portfolio-items">
-                <div role="listitem">
-                  <a href="portfolio-details.html"
-                    class="projects-marquee-cards d-flex align-items-end flex-column justify-content-center text-center overflow-hidden position-relative tp-inline-block hover-line">
-
-                    <div class="project-media overflow-hidden position-relative d-flex justify-content-center align-items-center">
-
-                      <div class="h-100 w-100">
-                        <img class="h-100 w-100"
-                          src="assets/img/portfolios/portfolios-7.webp"
-                          alt="UI/UX Design">
-                      </div>
-
-                      <h4 class="heading-four projects-name position-absolute start-0 w-100 text-center">
-                        <span class="d-inline lh-sm hover-line-bottom">
-                          UI/Ux Design
-                        </span>
-                      </h4>
-
-                      <div class="projects-card-overlay"></div>
-
-                    </div>
-
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
     </div>
-
   </div>
-</div>
-     
+
+</section>
       </div>
       
     </div>
@@ -1530,6 +1479,7 @@
   <script src="assets/vendor/ScrollTrigger.min.js"></script>
   <script src="assets/vendor/swiper-bundle.min.js"></script>
   <script src="assets/vendor/aos.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.15.0/ScrollSmoother.min.js"></script>
 
 
   <!-- 2. YOUR CUSTOM SCRIPTS -->
@@ -1702,6 +1652,9 @@
 
     });
 </script>
+
+
+ </script>
   <!-- 3. MAIN JS - ALWAYS LAST -->
   <script src="assets/js/main.js"></script>
 </html>

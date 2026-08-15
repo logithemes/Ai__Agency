@@ -2751,7 +2751,7 @@ position: absolute;
     max-width: 550px;
     margin-bottom: 24px;
 }
-
+.home-three-faq-box :last-child .faq-border{border-bottom: 0;}
 
 .accordion-line {
     background-color: var(--border-color);
@@ -2861,7 +2861,6 @@ position: absolute;
         transform: translateY(-30px);
     }
 }
-
 
 .who-we-are-text{line-height: clamp(32px, 4vw, 42px);}
 /*---------------------------------
