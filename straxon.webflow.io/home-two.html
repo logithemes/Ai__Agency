@@ -15,143 +15,132 @@
   <link rel="stylesheet" href="assets/css/spacing.css">
   <link rel="stylesheet" href="assets/css/responsive.css">
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
-    .portfolio-sticky-wrapper {
-      position: relative;
+  .portfolio-sticky-wrapper {
+    position: relative;
+  }
+
+  .portfolio-sticky-wrapper .portfolio-sticky-inner {
+    max-width: 1180px;
+    margin: auto;
+  }
+
+  .portfolio-sticky-wrapper .portfolio-sticky-layout {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+  }
+
+  .portfolio-sticky-wrapper .portfolio-content {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .portfolio-sticky-wrapper .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }
+
+  .portfolio-sticky-wrapper .sticky-counter-wrapper {
+    position: relative;
+    overflow: hidden;
+    height: 310px;
+    width: 290px;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+  }
+
+  .portfolio-sticky-wrapper .portfolio-counter {
+    position: absolute;
+    opacity: 0;
+    height: fit-content;
+    inset: 0;
+    width: fit-content;
+        color: #fff0;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #7e82a7;
+    font-family: var(--heading-font)
+  }
+
+  /* ---- card list ---- */
+
+  .portfolio-sticky-wrapper .portfolio-img-wrapper {
+    flex: 1;
+    position: relative;
+    height: 450px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .portfolio-sticky-wrapper .portfolio-sticky-images {
+    position: absolute;
+    margin: auto;
+    margin-right: 0;
+    opacity: 0;
+    transform-origin: top center;
+      display: flex;
+    flex-direction: column;
+    left: 50%;
+    transform: translateX(-50%);
+    gap: 14px;
+    /* Widened to accommodate the new right-side <img>; height/position untouched. */
+    width: 1000px;
+    z-index: 1;
+    overflow: hidden;
+  }
+
+  /* ============================================================
+     Responsive
+     ============================================================ */
+
+  @media (max-width: 1200px) {
+   
+
+    .portfolio-sticky-wrapper .portfolio-content {
+      padding: 40px 20px 40px;
     }
 
-    .portfolio-sticky-wrapper .portfolio-sticky-inner {
-      max-width: 1180px;
-      margin: auto;
+    
+  }
+
+  @media (max-width: 1024px) {
+    .portfolio-sticky-wrapper {
+      padding: 30px 24px;
     }
 
     .portfolio-sticky-wrapper .portfolio-sticky-layout {
-      display: flex;
-      flex-direction: column;
-      gap: 80px;
+      gap: 25px;
     }
 
     .portfolio-sticky-wrapper .portfolio-content {
-      position: relative;
-      display: flex;
-      align-items: flex-start;
-      gap: 4vw;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 0 8vw;
     }
 
     .portfolio-sticky-wrapper .sticky-counter-wrapper {
-      position: relative;
-      overflow: hidden;
-      height: 310px;
-      width: 290px;
+      width: 100%;
+      height: 160px;
     }
+  }
 
-    .portfolio-sticky-wrapper .portfolio-counter {
-      position: absolute;
-      opacity: 0;
-      height: fit-content;
-      inset: 0;
-      width: fit-content;
-      margin: auto;
-      font-weight: 500;
-      font-size: 150px;
-      line-height: 100%;
-      background: linear-gradient(180.38deg, rgba(241, 164, 117, 0.3) -5.1%, rgba(252, 217, 184, 0.6) 30.72%, #CC835A 56.29%, #0C1F45 90.28%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-    }
+  @media (max-width:767px){
+.portfolio-sticky-wrapper .sticky-counter-wrapper{height: 80px;}
 
-
-    /* ---- card list ---- */
-
-    .portfolio-sticky-wrapper .portfolio-img-wrapper {
-      flex: 1;
-      position: relative;
-      height: 450px;
-      list-style: none;
-      margin: 0;
-      padding: 0;
-    }
-
-    .portfolio-sticky-wrapper .portfolio-sticky-images {
-      position: absolute;
-      margin: auto;
-      margin-right: 0;
-      opacity: 0;
-      transform-origin: top center;
-      padding: 18px 27px;
-      display: flex;
-      flex-direction: column;
-      left: 50%;
-      transform: translateX(-50%);
-      gap: 14px;
-      
-      width: 620px;
-      height: 310px;
-      z-index: 1;
-      overflow: hidden;
-    }
-
-    /* ============================================================
-   Responsive
-   ============================================================ */
-
-    @media (max-width: 1200px) {
-      .portfolio-sticky-wrapper .stickyStepCounter-section__title {
-        font-size: 2.75rem;
-      }
-
-      .portfolio-sticky-wrapper .stickyStepCounter-section__subtitle {
-        font-size: 18px;
-      }
-
-      .portfolio-sticky-wrapper .portfolio-content {
-        padding: 40px 20px 40px;
-      }
-
-      .portfolio-sticky-wrapper .portfolio-counter {
-        font-size: 180px;
-      }
-    }
-
-    @media (max-width: 1024px) {
-      .portfolio-sticky-wrapper {
-        padding: 30px 24px;
-      }
-
-      .portfolio-sticky-wrapper .portfolio-sticky-layout {
-        gap: 25px;
-      }
-
-      .portfolio-sticky-wrapper .portfolio-content {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding: 0 8vw;
-      }
-
-      .portfolio-sticky-wrapper .sticky-counter-wrapper {
-        width: 100%;
-        height: 160px;
-      }
-
-      .portfolio-sticky-wrapper .portfolio-counter {
-        font-size: 180px;
-        inset: 0;
-        margin: auto;
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-      }
-
-      .portfolio-sticky-wrapper .portfolio-img-wrapper {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
-    }
-  </style>
+  }
+</style>
 </head>
 
 <body>
@@ -272,6 +261,13 @@
       </div>
     </div>
   </header>
+
+  
+<div class="explore-now-button-wrap">
+    <div class="explore-now button-small">
+        <span class="text-capitalize">Explore</span>
+    </div>
+</div>
 
   <!-- ===================================================
                 home two hero
@@ -789,172 +785,114 @@
                 ultricies suscipit orci sed ultricies leo egestas at. Pellentesque et accumsan nulla.</p>
             </div>
           </div>
+<section class="portfolio-sticky-wrapper" aria-labelledby="portfolio-sticky-heading">
+
+  <div class="portfolio-sticky-inner">
+
+    <div class="portfolio-sticky-layout">
+
+      <div class="row">
 
 
-          <!-- Sticky Brand Cards — semantic, reusable markup -->
-          <section class="portfolio-sticky-wrapper">
+        <!-- Decorative step counter (visual only — hidden from assistive tech) -->
+       <div class="col-12  col-lg-2">
+         <div class="sticky-counter-wrapper" aria-hidden="true">
+          <span class="portfolio-counter heading-one-small">01</span>
+          <span class="portfolio-counter heading-one-small">02</span>
+          <span class="portfolio-counter heading-one-small">03</span>
+          <span class="portfolio-counter heading-one-small">04</span>
+        </div>
 
-            <div class="portfolio-sticky-inner">
+       </div>
+       <div class="col-12 col-lg-10">
+         <ol class="portfolio-img-wrapper">
 
-              <div class="portfolio-sticky-layout">
-
-                <div class="portfolio-content">
-
-                  <!-- Decorative step counter (visual only — hidden from assistive tech) -->
-                  <div class="sticky-counter-wrapper" aria-hidden="true">
-                    <span class="portfolio-counter">01</span>
-                    <span class="portfolio-counter">02</span>
-                    <span class="portfolio-counter">03</span>
-                    <span class="portfolio-counter">04</span>
-                    <span class="portfolio-counter">05</span>
+          <li>
+            <article class="portfolio-sticky-images" data-step="1">
+              <a href="service-three.html" class="tp-inline-block hover-line">
+                <figure class="service-card">
+                  <div class="service-cards-image">
+                    <img class="service-one-images h-100 " src="assets/img/service-img/service-digital-1.webp"
+                      width="960" height="350" alt="AI interface design project preview" loading="lazy">
+                    <div class="service-overlays"></div>
                   </div>
 
-                  <ul class="portfolio-img-wrapper">
+                  <figcaption class="tp-flex-vertical service-cards-name gap-2">
+                    <h3 class="heading-three hover-line-bottom m-0">AI interface design</h3>
+                    <p class="service-card-text">AI that simplifies your daily life.</p>
+                  </figcaption>
+                </figure>
+             
+              </a>
+            </article>
+          </li>
 
-                    <li>
-                      <article class="portfolio-sticky-images " data-step="1">
-  <a href="service-three.html" class="tp-inline-block  hover-line">
-              <div class="service-card">
-                <div class="service-cards-image">
-                  <img class="service-one-images d-f" src="assets/img/service-img/service-digital-1.webp" width="960"
-                    height="350" alt="Service Image" loading="lazy">
-                  <div class="service-overlays"></div>
-                </div>
+          <li>
+            <article class="portfolio-sticky-images" data-step="2">
+              <a href="service-three.html" class="tp-inline-block hover-line">
+                <figure class="service-card">
+                  <div class="service-cards-image">
+                    <img class="service-one-images h-100 " src="assets/img/service-img/service-digital-2.webp"
+                      width="960" height="350" alt="AI interface design project preview" loading="lazy">
+                    <div class="service-overlays"></div>
+                  </div>
 
-                <div class="tp-flex-vertical service-cards-name gap-2">
-                  <h3 class="heading-three  hover-line-bottom m-0">ai interface design</h3>
-                  <div class="service-card-text">AI that simplifies your daily life.</div>
-                </div>
-              </div>
-              <div class="tp-flex-horizontal service-cards-information gap-40">
-                <div class="text-capitalize tp-text-body">web design &amp; application design</div>
-                <div class="tp-flex-horizontal service-cards-client gap-10 align-items-center">
-                  <div class="text-capitalize tp-common-white">clients:</div>
-                  <img  src="assets/img/clients-marquee/logo-1.svg" loading="lazy" width="94" height="22"
-                    alt="Clients">
-                </div>
-              </div>
-            </a>
+                  <figcaption class="tp-flex-vertical service-cards-name gap-2">
+                  <h3 class="heading-three  hover-line-bottom m-0">web &amp; graphic design</h3>
+                  <p class="service-card-text">Elevate your brand identity.</p>
+                  </figcaption>
+                </figure>
+              
+              </a>
+            </article>
+          </li>
 
-                      </article>
-                    </li>
+          <li>
+            <article class="portfolio-sticky-images" data-step="3">
+              <a href="service-three.html" class="tp-inline-block hover-line">
+                <figure class="service-card">
+                  <div class="service-cards-image">
+                    <img class="service-one-images h-100 " src="assets/img/service-img/service-digital-3.webp"
+                      width="960" height="350" alt="AI interface design project preview" loading="lazy">
+                    <div class="service-overlays"></div>
+                  </div>
 
-                    <li>
-                      <article class="portfolio-sticky-images" data-step="2">
-  <a href="service-three.html" class="tp-inline-block  hover-line">
-              <div class="service-card">
-                <div class="service-cards-image">
-                  <img class="service-one-images d-f" src="assets/img/service-img/service-digital-1.webp" width="960"
-                    height="350" alt="Service Image" loading="lazy">
-                  <div class="service-overlays"></div>
-                </div>
+                  <figcaption class="tp-flex-vertical service-cards-name gap-2">
+                  <h3 class="heading-three  hover-line-bottom m-0">ui/ux design</h3>
+                  <p class="service-card-text">Crafted with pixel-perfect design.</p>
+                  </figcaption>
+                </figure>
+               
+              </a>
+            </article>
+          </li>
 
-                <div class="tp-flex-vertical service-cards-name gap-2">
-                  <h3 class="heading-three  hover-line-bottom m-0">ai interface design</h3>
-                  <div class="service-card-text">AI that simplifies your daily life.</div>
-                </div>
-              </div>
-              <div class="tp-flex-horizontal service-cards-information gap-40">
-                <div class="text-capitalize tp-text-body">web design &amp; application design</div>
-                <div class="tp-flex-horizontal service-cards-client gap-10 align-items-center">
-                  <div class="text-capitalize tp-common-white">clients:</div>
-                  <img  src="assets/img/clients-marquee/logo-1.svg" loading="lazy" width="94" height="22"
-                    alt="Clients">
-                </div>
-              </div>
-            </a>
+          <li>
+            <article class="portfolio-sticky-images" data-step="4">
+              <a href="service-three.html" class="tp-inline-block hover-line">
+                <figure class="service-card">
+                  <div class="service-cards-image">
+                    <img class="service-one-images h-100 " src="assets/img/service-img/service-digital-4.webp"
+                      width="960" height="350" alt="AI interface design project preview" loading="lazy">
+                    <div class="service-overlays"></div>
+                  </div>
 
-                      </article>
-                    </li>
+                  <figcaption class="tp-flex-vertical service-cards-name gap-2">
+                  <h3 class="heading-three  hover-line-bottom m-0">product branding</h3>
+                  <p class="service-card-text">Strategic Branding Solutions.</p>  
+                  </figcaption>
+                </figure>
+              </a>
+            </article>
+          </li>
+        </ol>
+       </div>
+      </div>
+    </div>
+  </div>
 
-                    <li>
-                      <article class="portfolio-sticky-images " data-step="3">
-  <a href="service-three.html" class="tp-inline-block  hover-line">
-              <div class="service-card">
-                <div class="service-cards-image">
-                  <img class="service-one-images d-f" src="assets/img/service-img/service-digital-1.webp" width="960"
-                    height="350" alt="Service Image" loading="lazy">
-                  <div class="service-overlays"></div>
-                </div>
+</section>
 
-                <div class="tp-flex-vertical service-cards-name gap-2">
-                  <h3 class="heading-three  hover-line-bottom m-0">ai interface design</h3>
-                  <div class="service-card-text">AI that simplifies your daily life.</div>
-                </div>
-              </div>
-              <div class="tp-flex-horizontal service-cards-information gap-40">
-                <div class="text-capitalize tp-text-body">web design &amp; application design</div>
-                <div class="tp-flex-horizontal service-cards-client gap-10 align-items-center">
-                  <div class="text-capitalize tp-common-white">clients:</div>
-                  <img  src="assets/img/clients-marquee/logo-1.svg" loading="lazy" width="94" height="22"
-                    alt="Clients">
-                </div>
-              </div>
-            </a>
-                      </article>
-                    </li>
-
-                    <li>
-                      <article class="portfolio-sticky-images" data-step="4">
-  <a href="service-three.html" class="tp-inline-block  hover-line">
-              <div class="service-card">
-                <div class="service-cards-image">
-                  <img class="service-one-images d-f" src="assets/img/service-img/service-digital-1.webp" width="960"
-                    height="350" alt="Service Image" loading="lazy">
-                  <div class="service-overlays"></div>
-                </div>
-
-                <div class="tp-flex-vertical service-cards-name gap-2">
-                  <h3 class="heading-three  hover-line-bottom m-0">ai interface design</h3>
-                  <div class="service-card-text">AI that simplifies your daily life.</div>
-                </div>
-              </div>
-              <div class="tp-flex-horizontal service-cards-information gap-40">
-                <div class="text-capitalize tp-text-body">web design &amp; application design</div>
-                <div class="tp-flex-horizontal service-cards-client gap-10 align-items-center">
-                  <div class="text-capitalize tp-common-white">clients:</div>
-                  <img  src="assets/img/clients-marquee/logo-1.svg" loading="lazy" width="94" height="22"
-                    alt="Clients">
-                </div>
-              </div>
-            </a>
-                      </article>
-                    </li>
-
-                    <li>
-                      <article class="portfolio-sticky-images " data-step="5">
-  <a href="service-three.html" class="tp-inline-block  hover-line">
-              <div class="service-card">
-                <div class="service-cards-image">
-                  <img class="service-one-images d-f" src="assets/img/service-img/service-digital-1.webp" width="960"
-                    height="350" alt="Service Image" loading="lazy">
-                  <div class="service-overlays"></div>
-                </div>
-
-                <div class="tp-flex-vertical service-cards-name gap-2">
-                  <h3 class="heading-three  hover-line-bottom m-0">ai interface design</h3>
-                  <div class="service-card-text">AI that simplifies your daily life.</div>
-                </div>
-              </div>
-              <div class="tp-flex-horizontal service-cards-information gap-40">
-                <div class="text-capitalize tp-text-body">web design &amp; application design</div>
-                <div class="tp-flex-horizontal service-cards-client gap-10 align-items-center">
-                  <div class="text-capitalize tp-common-white">clients:</div>
-                  <img  src="assets/img/clients-marquee/logo-1.svg" loading="lazy" width="94" height="22"
-                    alt="Clients">
-                </div>
-              </div>
-            </a>
-                      </article>
-                    </li>
-
-                  </ul>
-
-                </div>
-              </div>
-            </div>
-
-          </section>
         </div>
 
       </div>
@@ -962,7 +900,7 @@
 
 
     <!-- START WORKING PROCESS (your exact HTML) -->
-    <section class="working-process pt-120 md-pt-50 md-pb-60">
+    <section class="working-process pt-40  md-pb-60">
       <div class="container">
         <!-- heading -->
         <div class="d-block section-title">

@@ -1520,16 +1520,6 @@
         width: 100%;
     }
 
-    /* .blog-two-cards {
-        grid-column-gap: 30px;
-        grid-row-gap: 30px;
-        text-align: center;
-        flex-flow: column;
-        justify-content: center;
-        align-items: center;
-        padding: 40px 0;
-    } */
-
     .blog-cards-text {
         text-align: center;
         align-items: center;

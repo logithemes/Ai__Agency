@@ -17,7 +17,7 @@
         =============================== */
         var explore = document.querySelector(".explore-now");
         if (explore) {
-            var cards = gsap.utils.toArray(".landing-cards, .service-sticky, .blog-three-posts-image");
+            var cards = gsap.utils.toArray(".landing-cards, .service-sticky, .blog-three-posts-image, .portfolio-sticky-images");
             
             cards.forEach(function(card) {
                 if (!card) return;
