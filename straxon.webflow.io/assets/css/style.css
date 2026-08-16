@@ -28,6 +28,7 @@
 19. blog 
 20. contact 
 21. footer 
+22. process
 /**********************************************/
 
 /**
@@ -513,11 +514,6 @@ a:hover {
 .transition-default {
     transition: all var(--transition-default) ease;
 }
-  /* .fadeInUp,
-  .fadeInLeft,
-  .fadeInRight {
-    opacity: 0;
-  } */
 
   .theme-bg-hover:hover {
     background-color: var(--theme-hover-bg);
