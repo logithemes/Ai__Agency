@@ -7,7 +7,9 @@
 
 -----------------------------------------------------------------------------------
 /************ TABLE OF CONTENTS ***************
+Root Variables
 1. General styles
+2.Typography CSS
 2. Preloader
 3. Header and navigation
 4. Hero Section
@@ -27,8 +29,8 @@
 18. testimonial 
 19. blog 
 20. contact 
-21. footer 
-22. process
+21. process 
+22. footer
 /**********************************************/
 
 /**
@@ -41,9 +43,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 
 
-/*----------------------------------------*/
-/*  01. theme default css
-/*----------------------------------------*/
 
 /*=========================================================
     Root Variables
@@ -149,7 +148,7 @@
 
 
 /*=========================================================
-    Reset CSS
+    General styles
 =========================================================*/
 *,
 *::before,
@@ -206,7 +205,7 @@ img {
     border: 0;
     max-width: 100%;
     height: auto;
-    display: inline-block;
+    display: block;
     vertical-align: middle;
     object-fit: cover;
     user-select: none;
@@ -385,9 +384,6 @@ h6 {
 .heading-font {
     font-family: var(--heading-font);
 }
-/*---------------------------------
-    common heading style
----------------------------------*/
 .heading-one-small,
 .heading-three,
 .heading-four,
@@ -431,9 +427,6 @@ font-weight: var(--heading-fw);
     line-height: 1.06;
 }
 
-/*=========================================================
-    Anchor CSS
-=========================================================*/
 a {
     color: var(--heading-color);
     text-decoration: none;
@@ -450,19 +443,10 @@ a:hover {
     outline: 0;
 }
 
-
-/*=========================================================
-    Selection CSS
-=========================================================*/
 ::selection {
     color: var(--tp-common-white);
     background-color: var(--purple);
 }
-
-
-/*----------------------------------------*/
-/*  Utility Classes
-/*----------------------------------------*/
 
 .tp-common-white {
     color: var(--tp-common-white);
@@ -496,9 +480,6 @@ a:hover {
     justify-content: center;
     align-items: center;
 }
-/*=========================================================
-    Transition Utilities
-=========================================================*/
 .transition-fast {
     transition: all var(--transition-fast) ease;
 }
@@ -518,9 +499,6 @@ a:hover {
   .theme-bg-hover:hover {
     background-color: var(--theme-hover-bg);
 }
-/*=========================================================
-    Font Size Utilities
-=========================================================*/
 .tp-fs-10 {
     font-size: var(--tp-fs-10);
 }
@@ -541,9 +519,6 @@ a:hover {
     color: var(--body-font-color);
 }
 
-/*=========================================================
-    Radius Utilities
-=========================================================*/
 .tp-radius-10 {
     border-radius: var(--tp-radius-10);
 }
@@ -556,26 +531,7 @@ a:hover {
     border-radius: var(--tp-radius-30);
 }
 
-
-/*=========================================================
-    Z-index Utilities
-=========================================================*/
-.tp-z-3 {
-    z-index: var(--tp-z-3);
-}
 .section-title{position: relative;z-index: var(--tp-z-3);}
-
-/*=========================================================
-    Spacing Utilities
-=========================================================*/
-.pl-15 {
-    padding-left: 15px;
-}
-
-.pr-15 {
-    padding-right: 15px;
-}
-
 
 
 /*---------------------------------
