@@ -148,7 +148,7 @@
      * @since 1.0.0
      */
     (function() {
-        var navbars = document.querySelectorAll('.navbar, .navbar-three');
+        var navbars = document.querySelectorAll('.tp-top-navbar, .navbar-three');
         
         if (navbars.length) {
             window.addEventListener('scroll', function() {

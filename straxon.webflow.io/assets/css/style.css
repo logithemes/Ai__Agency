@@ -11,7 +11,7 @@ Root Variables
 1. General styles
 2.Typography CSS
 2. Preloader
-3. Header and navigation
+3. Header css start
 4. Hero Section
 5. About us 
 6. service
@@ -534,9 +534,6 @@ a:hover {
 .section-title{position: relative;z-index: var(--tp-z-3);}
 
 
-/*---------------------------------
-  Border Utilities CSS
----------------------------------*/
 .tp-border {
     border: 1px solid var(--border-color);
 }
@@ -566,9 +563,6 @@ a:hover {
     transition: var(--transition-slow);
 }
 
-/*---------------------------------
-  section titls CSS
----------------------------------*/
 .section-subtitle{display: flex;}
 /*---------------------------------
 	Preloader css start 
@@ -687,11 +681,45 @@ a:hover {
 }
 
 
-
-
 /*---------------------------------
-	Dropdown css start 
+	Header css start
 ---------------------------------*/
+.header-main {
+    z-index: 1000;
+    background: var(--tp-section-bg);
+    position: relative;
+}
+
+.header-main:after {
+    clear: both;
+}
+
+.header-logo {
+    position: relative;
+   display: inline-block;
+}
+
+
+.main-menu {
+    display: block;
+}
+
+.humburger-main {
+    float: right;
+    cursor: pointer;
+    -webkit-tap-highlight-color: #0000;
+    tap-highlight-color: #0000;
+    -webkit-user-select: none;
+    user-select: none;
+    padding: 18px;
+    font-size: 24px;
+    display: none;
+    position: relative;
+}
+
+.humburger-main:focus {
+    outline: 0;
+}
 .menu-item {
     text-align: left;
     margin-left: auto;
@@ -771,49 +799,6 @@ a:hover {
     outline: 0;
 }
 
-.main-menu{}
-/*---------------------------------
-	nav css start 
----------------------------------*/
-.header-main {
-    z-index: 1000;
-    background: var(--tp-section-bg);
-    position: relative;
-}
-
-
-
-.header-main:after {
-    clear: both;
-}
-
-.header-logo {
-    position: relative;
-   display: inline-block;
-}
-
-
-.main-menu {
-    display: block;
-}
-
-.humburger-main {
-    float: right;
-    cursor: pointer;
-    -webkit-tap-highlight-color: #0000;
-    tap-highlight-color: #0000;
-    -webkit-user-select: none;
-    user-select: none;
-    padding: 18px;
-    font-size: 24px;
-    display: none;
-    position: relative;
-}
-
-.humburger-main:focus {
-    outline: 0;
-}
-
 .tp-menu-dropdown-icon {
     font-size: 11px;
     font-weight: 300;
@@ -843,9 +828,6 @@ a:hover {
     border-bottom: 1px solid var(--border-color);
     position: relative;
 }
-/*---------------------------------
-    let-s talk css  
----------------------------------*/
 .let-s-talk-text-wrapper {
     color: var(--menu-color);
     justify-content: flex-start;
@@ -890,10 +872,6 @@ a:hover {
     position: absolute;
 }
 
-
-.pages-menu {
-    position: relative;
-}
 .tp-dropdown-toggle::after {
     display: none;
 }
@@ -906,17 +884,13 @@ a:hover {
     overflow: hidden;
 
 }
-
-
-.navbar {
+.tp-top-navbar  {
     z-index: 999;
     position: absolute;
     inset: 0% 0% auto;
     padding: 0;
     background-color: rgb(5, 6, 16);
 }
-
-.header-sticky,
 .header-sticky {
     position: fixed;
     animation: sticky-menu 0.8s;
@@ -947,9 +921,6 @@ a:hover {
 .menu-border.menu-border-two {
     inset: 0% 32% 0% auto;
 }
-
-
-
 .navbar-one .tp-dropdown-toggle::after {
     display: none;
 }
@@ -988,10 +959,6 @@ a:hover {
     transform: translate(7px);
 }
 
-.dropdown-link.tp-active {
-    color: var(--heading-color);
-}
-
 .navbar-dropdown {
     grid-column-gap: 50px;
     grid-row-gap: 50px;
@@ -1010,7 +977,7 @@ a:hover {
 .navbar-dropdown-toggle {
     background-color: #ddd0;
     width: 100%;
-    position: static;
+    position: relative;
     overflow: hidden;
 }
 
@@ -1018,21 +985,13 @@ a:hover {
     margin-top: 5px;
 }
 
-.full-width {
-    width: 100%;
-}
-
 .site-logo {
     padding-left: 0;
 }
 
-.mobile-icon {
-    margin-top: 8px;
-}
 /*---------------------------------
    home one review css start 
 ---------------------------------*/
-
 
     .tp-testimonial-slider {
       position: relative;
