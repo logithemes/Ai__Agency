@@ -16,6 +16,7 @@ Root Variables
 5. cta css start
 5. brand css start 
 6. service css start 
+7. testimonial css start
 7. Marquee
 8. counter animation
 9. our mission
@@ -1529,12 +1530,14 @@ a:hover {
 }
 
 /*---------------------------------
-   home one review css start 
+   testimonial css start
 ---------------------------------*/
 
     .tp-testimonial-slider {
       position: relative;
       overflow: visible;
+        text-align: center;
+    clear: both;
     }
 
     .tp-testimonial-item {
@@ -1559,33 +1562,7 @@ a:hover {
     .tp-testimonial-quote {
       margin-top: 0;
     }
-    .process-bottom-wrapper {
-        display: none;
-      background: rgba(255, 255, 255, 0.12);
-      padding: 22px 30px;
-      border-radius: 100px;
-    }
-    .process-user-images img {
-      width: 48px;
-      height: 48px;
-      border-radius: 50%;
-      object-fit: cover;
-      border: 2px solid #060d63;
-      margin-left: -12px;
-    }
-    .process-user-images img:first-child {
-      margin-left: 0;
-    }
-
-/*---------------------------------
-   home two review css start 
----------------------------------*/
-.tp-testimonial-slider {
-    text-align: center;
-    clear: both;
-    position: relative;
-}
-
+   
 .tp-testimonial-track,
 .tp-about3-testimonial-viewport {
     z-index: 1;
@@ -1601,7 +1578,6 @@ a:hover {
 .tp-slider-inner {
     white-space: normal;
 }
-
 
 .tp-home-one-testimonials .tp-testimonial-slider .tp-slider-dots {
     z-index: 2;
@@ -1627,7 +1603,6 @@ a:hover {
     border-radius: 50px;
     background: var(--tp-gradient-primary);
 }
-
 
 .about-three-slider-pagination .tp-slider-dot {
     cursor: pointer;
@@ -1671,21 +1646,6 @@ a:hover {
 .tp-arrow-next {
     z-index: 4;
     left: auto;
-}
-.left-arrow,
-.testimonials-author-box-mid,
-.author-image-one,
-.right-arrow,
-.circle-icon,
-.gradiant-dot,
-.dot,
-.mission-check-icon,
-.cross-icon-wrapper,
-.tick-icon-wrapper,
-.home-three-service-arrow,
-.blog-two-arrow,
-.service-options-link {
-    border-radius: 100%;
 }
 
 .left-arrow {
