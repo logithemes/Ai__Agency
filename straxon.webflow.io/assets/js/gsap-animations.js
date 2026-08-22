@@ -58,7 +58,7 @@
         /* === CALL WORD ANIMATIONS === */
         wordScrollAnimation('.service-three-connection', '.service-three-text');
         wordScrollAnimation('.home-three-skills', '.home-three-skills .home-three-skills-description p');
-        wordScrollAnimation('.home-popup-video', '.home-popup-video-desc');
+        wordScrollAnimation('.tp-home-about-story', '.tp-home-about-video-desc');
          wordScrollAnimation('.about-one-counter-left', '.counter-left-text');
 
         /* ===============================
@@ -294,7 +294,7 @@ if (typeof gsap !== 'undefined' && typeof ScrollTrigger !== 'undefined') {
       
         // storyBarAnimation
 function storyBarAnimation() {
-    const sections = document.querySelectorAll(".home-popup-video");
+    const sections = document.querySelectorAll(".tp-home-about-video");
 
     if (!sections.length || typeof gsap === "undefined" || typeof ScrollTrigger === "undefined") {
         return;
@@ -304,8 +304,8 @@ function storyBarAnimation() {
 
     sections.forEach(function (section) {
 
-        const storyLine = section.querySelector(".story-line");
-        const storyBar = section.querySelector(".story-bar");
+        const storyLine = section.querySelector(".tp-about-story-line");
+        const storyBar = section.querySelector(".tp-about-story-bar");
 
         if (!storyLine || !storyBar) {
             return;
