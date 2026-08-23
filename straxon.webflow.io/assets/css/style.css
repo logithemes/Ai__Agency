@@ -36,16 +36,11 @@ Root Variables
 14. tab css start
 12. awards css start
 14. landing hero css start
-13. form 
-14. choose 
-15. brand 
-16. project 
-17. price 
-18. testimonial 
-19. blog 
-20. contact 
-21. process 
-22. footer
+15. screenshots css start
+16. 404 css start
+17. gradiant css start
+13. footer css start 
+
 /**********************************************/
 
 /**
@@ -75,10 +70,12 @@ Root Variables
     --yellow: #ffff00;
 
     /* Theme Colors */
-    --heading-color: #ffffff;
+      --heading-color: #ffffff;
+    --purple: #d43fc5;
+    --orange: #fe4d58;
+    --violet: #b264f3;
     --pink: #f44972;
     --arrow-hover: #e85189;
-    --theme-hover-bg: #d43fc5;
 
     /* Border Colors */
     --border-color: #444872;
@@ -1528,6 +1525,34 @@ a:hover {
     align-items: center;
     display: flex;
 }
+
+.explore-now-button-wrap {
+    z-index: 999;
+    pointer-events: none;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    display: flex;
+    position: fixed;
+    inset: 0%;
+
+}
+
+.explore-now {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 100px;
+    background: rgba(10, 11, 22, 0.83);
+    opacity: 0;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%
+}
+
 
 
 /*---------------------------------
@@ -5454,7 +5479,217 @@ label {
     padding-right: 10px;
 }
 /*---------------------------------
-   gradiant line css start 
+    screenshots css start 
+---------------------------------*/
+.tp-screenshot-wrap {
+    padding-bottom: 11px;
+}
+
+.tp-innerpages-heading-wrap {
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.landing-footer-float-image-three {
+    opacity: 0.7;
+    display: none;
+    position: absolute;
+    inset: 100px 360px auto auto;
+}
+
+.homepage-main {
+    text-align: center;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.cms-pages {
+    background-color: var(--light-black);
+}
+
+.landing-text {
+    background-image: linear-gradient(118deg, var(--pink), var(--purple));
+    color: var(--white);
+    text-transform: capitalize;
+    border-radius: 60px;
+    padding: 10px 20px 8px;
+}
+
+.landing-footer-float-image-two {
+    opacity: 0.7;
+    display: none;
+    position: absolute;
+    inset: auto auto 100px 300px;
+}
+
+.innerpages-border {
+    background-color: var(--border-color);
+    width: 192px;
+    height: 1px;
+
+}
+
+.screenshots-marquee-wrapper {
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0%;
+}
+
+.pages-landing-cards {
+    outline-offset: 0px;
+    outline: 3px #aeb2d7;
+}
+
+.page-count {
+    width: 33vw;
+    max-width: 645.89px;
+    height: auto;
+    margin-bottom: -66px;
+}
+
+.screenshot-marquee-train {
+    justify-content: flex-start;
+    align-items: flex-start;
+    transform: rotate(-13deg);
+}
+
+.bottom-screenshots {
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+.link-underline {
+    text-decoration: underline;
+}
+
+.landing-footer-text-wrap {
+    text-align: center;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.landing-footer {
+    background-color: #212231;
+    position: relative;
+}
+
+.landing-footer-float-image-four {
+    opacity: 0.7;
+    display: none;
+    position: absolute;
+    inset: auto 200px 80px auto;
+}
+
+.landing-cards {
+    background-color: #3e4055;
+    border-radius: 20px;
+    flex-flow: column;
+    width: 100%;
+    padding: 30px 30px 26px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.landing-footer-float-image-one {
+    opacity: 0.7;
+    display: none;
+    position: absolute;
+    inset: 120px auto auto 120px;
+}
+
+.landing-inner-section {
+    background-color: var(--light-black);
+    background-image: radial-gradient(circle at 70% 83%, #b460f133, #b460f100 13%),
+        radial-gradient(circle at 27% 59%, #f4497240, #f4497200 16%);
+}
+
+.header-footer-box {
+    background-image: url("../img/hero-demo/layout-bg.webp");
+    background-position: 50% 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    padding: 120px 90px 110px;
+    transform-origin: center center;
+    max-width: 880px;
+    margin: 0 auto;
+}
+
+.header-footer-box-content {
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.header-footer-name {
+    grid-column-gap: 80px;
+    grid-row-gap: 80px;
+    flex: 1;
+    max-width: 126px;
+}
+
+.name-box-two {
+    transform: translate(20px);
+}
+
+.header-footers-showcase {
+    flex: 1;
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 437px;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+}
+.landing-cards-image-wrap {
+    cursor: none;
+    border-radius: 20px;
+}
+
+.landing-image-overlay {
+    opacity: 0;
+    pointer-events: none;
+    background-image: linear-gradient(#00000080, #00000080);
+    border-radius: 20px;
+    position: absolute;
+    inset: 0%;
+}
+
+/*---------------------------------
+    404 css start 
+---------------------------------*/
+.tp-404-wrapper {
+    background-image: var(--tp-section-gradient-bg);
+}
+
+.tp-404-description {
+    max-width: 352px;
+    margin-bottom: 20px;
+}
+
+.tp-404-shape {
+    position: absolute;
+    top: -21%;
+    left: 44%;
+}
+
+.tp-404-circle-lg {
+    position: absolute;
+    inset: auto auto 6% 10%;
+}
+
+.tp-404-circle-sm {
+    position: absolute;
+    inset: auto 7% 40% auto;
+}
+
+/*---------------------------------
+   gradiant css start 
 ---------------------------------*/
 .gradiant-line {
     background-image: linear-gradient(#fe4d58, #d43fc5 50%, #b264f3);
@@ -5625,252 +5860,6 @@ label {
     border-top: 1px solid var(--border-color);
 }
 
-
-/*---------------------------------
-    404 css start 
----------------------------------*/
-.tp-404-wrapper {
-    background-image: var(--tp-section-gradient-bg);
-}
-
-.tp-404-description {
-    max-width: 352px;
-    margin-bottom: 20px;
-}
-
-.tp-404-shape {
-    position: absolute;
-    top: -21%;
-    left: 44%;
-}
-
-.tp-404-circle-lg {
-    position: absolute;
-    inset: auto auto 6% 10%;
-}
-
-.tp-404-circle-sm {
-    position: absolute;
-    inset: auto 7% 40% auto;
-}
-
-
-/*---------------------------------
-  explore now css start 
----------------------------------*/
-.explore-now-button-wrap {
-    z-index: 999;
-    pointer-events: none;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    display: flex;
-    position: fixed;
-    inset: 0%;
-
-}
-
-.explore-now {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100px;
-    height: 100px;
-    background: rgba(10, 11, 22, 0.83);
-    opacity: 0;
-    transform: translate(-50%, -50%);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%
-}
-
-/*---------------------------------
-    screenshots css start 
----------------------------------*/
-.tp-screenshot-wrap {
-    padding-bottom: 11px;
-}
-
-.tp-innerpages-heading-wrap {
-    justify-content: flex-start;
-    align-items: center;
-}
-
-.landing-footer-float-image-three {
-    opacity: 0.7;
-    display: none;
-    position: absolute;
-    inset: 100px 360px auto auto;
-}
-
-.homepage-main {
-    text-align: center;
-    justify-content: flex-start;
-    align-items: center;
-}
-
-.cms-pages {
-    background-color: var(--light-black);
-}
-
-.landing-text {
-    background-image: linear-gradient(118deg, var(--pink), var(--purple));
-    color: var(--white);
-    text-transform: capitalize;
-    border-radius: 60px;
-    padding: 10px 20px 8px;
-}
-
-.landing-footer-float-image-two {
-    opacity: 0.7;
-    display: none;
-    position: absolute;
-    inset: auto auto 100px 300px;
-}
-
-.innerpages-border {
-    background-color: var(--border-color);
-    width: 192px;
-    height: 1px;
-
-}
-
-.screenshots-marquee-wrapper {
-    z-index: 1;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 0%;
-}
-
-.pages-landing-cards {
-    outline-offset: 0px;
-    outline: 3px #aeb2d7;
-}
-
-.page-count {
-    width: 33vw;
-    max-width: 645.89px;
-    height: auto;
-    margin-bottom: -66px;
-}
-
-.screenshot-marquee-train {
-    justify-content: flex-start;
-    align-items: flex-start;
-    transform: rotate(-13deg);
-}
-
-.bottom-screenshots {
-    justify-content: flex-end;
-    align-items: flex-start;
-}
-
-.link-underline {
-    text-decoration: underline;
-}
-
-.landing-footer-text-wrap {
-    text-align: center;
-    justify-content: flex-start;
-    align-items: center;
-}
-
-.landing-footer {
-    background-color: #212231;
-    position: relative;
-}
-
-.landing-footer-float-image-four {
-    opacity: 0.7;
-    display: none;
-    position: absolute;
-    inset: auto 200px 80px auto;
-}
-
-.landing-cards {
-    background-color: #3e4055;
-    border-radius: 20px;
-    flex-flow: column;
-    width: 100%;
-    padding: 30px 30px 26px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    position: relative;
-    overflow: hidden;
-}
-
-.landing-footer-float-image-one {
-    opacity: 0.7;
-    display: none;
-    position: absolute;
-    inset: 120px auto auto 120px;
-}
-
-.landing-inner-section {
-    background-color: var(--light-black);
-    background-image: radial-gradient(circle at 70% 83%, #b460f133, #b460f100 13%),
-        radial-gradient(circle at 27% 59%, #f4497240, #f4497200 16%);
-}
-
-.header-footer-box {
-    background-image: url("../img/hero-demo/layout-bg.webp");
-    background-position: 50% 0;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    padding: 120px 90px 110px;
-    transform-origin: center center;
-    max-width: 880px;
-    margin: 0 auto;
-}
-
-.header-footer-box-content {
-    justify-content: space-between;
-    align-items: flex-start;
-}
-
-.header-footer-name {
-    grid-column-gap: 80px;
-    grid-row-gap: 80px;
-    flex: 1;
-    max-width: 126px;
-}
-
-.name-box-two {
-    transform: translate(20px);
-}
-
-.header-footers-showcase {
-    flex: 1;
-    justify-content: center;
-    align-items: flex-start;
-    max-width: 437px;
-    display: flex;
-    position: relative;
-    overflow: hidden;
-}
-
-
-/*---------------------------------
-    landing cards img css start 
----------------------------------*/
-.landing-cards-image-wrap {
-    cursor: none;
-    border-radius: 20px;
-}
-
-.landing-image-overlay {
-    opacity: 0;
-    pointer-events: none;
-    background-image: linear-gradient(#00000080, #00000080);
-    border-radius: 20px;
-    position: absolute;
-    inset: 0%;
-}
 
 /* AFER COMPLITED 
 1- CHECK B COLORS
