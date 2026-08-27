@@ -58,24 +58,20 @@ Root Variables
     Root Variables
 =========================================================*/
 :root {
-
-    /* Body Colors */
+    /*   @font family declaration */
+     --tp-font-heading: 'Bebas Neue', sans-serif;
+    --tp-font-body: 'Poppins', sans-serif;
+    /*  @color declaration*/
     --tp-body-bg: #050610;
     --tp-body-text-color: #aeb2d7;
     --tp-white: #ffffff;
-    /*  Theme Gradient Colors */
     --tp-purple: #d43fc5;
     --tp-orange: #fe4d58;
     --tp-violet: #b264f3;
     --tp-pink: #f44972;
-    /* Border Colors */
     --tp-border-color: #444872;
     --tp-border-color-two: #2a2d4a;
-    /* Background Colors */
     --tp-bg-secondary: #161724;
-    /* Font Family */
-    --tp-font-heading: 'Bebas Neue', sans-serif;
-    --tp-font-body: 'Poppins', sans-serif;
     --tp-common-white: #ffffff;
     /* Bg-gradient */
     --tp-section-gradient-bg:
@@ -90,17 +86,17 @@ Root Variables
             var(--tp-purple) 45%,
             var(--tp-violet));
 
-    --gradient-line: linear-gradient(144deg,
-            var(--tp-orange),
-            var(--tp-purple) 47%,
-            var(--tp-violet));
-
+/* @transition */
+--transition-fast: 0.2s;
+--transition-medium: 0.3s;
+--transition-slow: 0.5s;
+--transition-default: var(--transition-medium) ease-in-out;
 
 }
 
 
 /*=========================================================
-    General styles
+  typography css start 
 =========================================================*/
 *,
 *::before,
@@ -284,10 +280,6 @@ figcaption {
     text-align: center;
 }
 
-
-/*=========================================================
-    Typography CSS
-=========================================================*/
 h1,
 h2,
 h3,
@@ -397,10 +389,9 @@ a:hover {
     outline: 0;
 }
 
-::selection {
-    color: var(--tp-common-white);
-    background-color: var(--tp-purple);
-}
+/*=========================================================
+     common classes css start 
+=========================================================*/
 
 .tp-common-white {
     color: var(--tp-common-white);
@@ -435,10 +426,6 @@ a:hover {
     justify-content: center;
     align-items: center;
 }
-
-/*----------------------------------------*/
-/*  Transitions
-/*----------------------------------------*/
 
 .transition-fast {
     transition: all 0.1s ease;
@@ -576,7 +563,7 @@ a:hover {
     background-image: linear-gradient(105deg, var(--tp-pink), var(--tp-violet));
     width: 6px;
     height: 6px;
-    transition: all var(--transition-medium);
+    transition: all var(--transition-medium) ease-in-out;
 }
 .small-tag-wrapper {
     grid-column-gap: 7px;
@@ -747,13 +734,13 @@ a:hover {
     display: inline-block;
     position: relative;
     padding: 30px 15px 30px 10px;
-    transition: var(--transition-medium);
+    transition: var(--transition-medium) ease-in-out;
     margin-right: 0;
 }
 
 .menu-item:hover .menu-dp-icon {
     transform: rotate(180deg);
-    transition: var(--transition-medium);
+    transition: var(--transition-medium) ease-in-out;
     color: var(--tp-white);
 }
 
@@ -791,7 +778,7 @@ a:hover {
     bottom: 0;
     right: 0;
     pointer-events: auto;
-    transition: var(--transition-medium);
+    transition: var(--transition-medium) ease-in-out;
     -webkit-text-stroke: 0.5px;
     color: var(--menu-color);
 }
@@ -960,15 +947,7 @@ a:hover {
     justify-content: flex-start;
     padding: 0;
     font-weight: 400;
-    transition: var(--transition-medium);
-}
-
-.main-menu a:hover,
-.main-menu a:focus {
-    color: var(--menu-hover-color, #ffffff);
-    outline: none;
-    box-shadow: none;
-    transition: var(--transition-medium);
+    transition: var(--transition-medium) ease-in-out;
 }
 
 .dropdown-link {
@@ -976,7 +955,7 @@ a:hover {
     text-transform: capitalize;
     padding: 0 60px 0 20px;
     font-size: 14px;
-    transition: transform 0.2s, color 0.2s;
+    transition: var(--transition-medium) ease-in-out;
     position: relative;
 }
 
@@ -1100,6 +1079,7 @@ a:hover {
     z-index: 150;
     background-color: var(--tp-body-bg);
     transform-origin: 50% 0;
+    /* XXX */
     background-image: radial-gradient(circle, #b460f13d, #b460f100 54%);
     border-bottom: 1px solid #000;
     justify-content: center;
@@ -1239,13 +1219,7 @@ a:hover {
     inset: 60px 0% auto auto;
 }
 
-
-.home-one-background-glow {
-    background-image: radial-gradient(circle at 50% 42%,
-            #b460f126,
-            #b460f100 33%);
-}
-
+/* XXX */
 .home-one-hero {
     background-image: radial-gradient(circle at 65% 30%,
             #b460f14d,
@@ -1354,7 +1328,7 @@ a:hover {
     color: var(--tp-white);
     text-decoration: none;
     font-weight: 600;
-    transition: var(--transition-medium);
+    transition: var(--transition-medium) ease-in-out;
     border-radius: 50px;
     text-transform: capitalize;
 }
@@ -1466,7 +1440,7 @@ a:hover {
 
 .button-two-arrow {
     margin-left: -3px;
-    transition: all var(--transition-medium);
+    transition: all var(--transition-medium) ease-in-out;
 }
 
 .button-two-icon-wrapper {
@@ -1574,12 +1548,11 @@ a:hover {
     position: absolute;
     inset: 0%;
     overflow: hidden;
-    transition: all var(--transition-medium);
+    transition: all var(--transition-medium) ease-in-out;
 }
 
 .clients-hover:hover {
     opacity: 1;
-    transition: all var(--transition-medium);
 }
 
 .client-logo {
@@ -1621,7 +1594,6 @@ a:hover {
 
 .home-one-service-cards:hover .home-one-service-cards-icon-overlay {
     transform: scale(1);
-    transition: all var(--transition-medium);
 }
 
 .home-one-service-icon {
@@ -1684,7 +1656,7 @@ a:hover {
     position: absolute;
     inset: 0%;
     transform: translate(0, -100%);
-    transition: all var(--transition-medium);
+    transition: all var(--transition-medium) ease-in-out;
 }
 
 .home-three-box {
@@ -1724,7 +1696,6 @@ a:hover {
 
 .home-three-box:hover .home-three-service-arrow {
     background: var(--tp-white);
-    transition: all var(--transition-medium);
     transform: rotate(40deg);
 }
 
@@ -1770,7 +1741,7 @@ a:hover {
     position: absolute;
     inset: 0%;
 }
-
+.service-three-hero-text{position: relative;z-index: 2;}
 .service-three-top {
     position: relative;
 }
@@ -1865,7 +1836,6 @@ a:hover {
 
 .hover-box:hover .home-one-service-cards-icon-overlay {
     transform: scale(1);
-    transition: all var(--transition-medium);
 }
 .service-two-marquee-text {
     flex: none;
@@ -1942,11 +1912,7 @@ a:hover {
     position: absolute;
     inset: auto 0% 8% auto;
 }
-.service-one-top {
-    background-image: radial-gradient(circle at 19% 77%, #f4497233, #f4497200 21%),
-        radial-gradient(circle at 71% 44%, #b460f13d, #b460f100 22%);
-    position: relative;
-}
+
 
 .service-one-border {
     background-color: var(--tp-border-color);
@@ -2114,7 +2080,7 @@ a:hover {
     margin: 0 5px;
     background: #cccccc51;
     opacity: 1;
-    transition: var(--transition-medium);
+    transition: var(--transition-medium) ease-in-out;
 }
 
 .tp-home-one-testimonials .tp-slider-dots .swiper-pagination-bullet-active {
@@ -2850,7 +2816,6 @@ a:hover {
 }
 
 .hover-arrow-gradiant:hover .portfolio-one-details .gradiant-arrow {
-    transition: all var(--transition-medium);
     opacity: 1;
 }
 
@@ -3056,11 +3021,10 @@ a:hover {
 
 .work-three-image-wrapper {
     margin-bottom: 50px;
-    transition: all var(--transition-medium);
+    transition: all var(--transition-medium) ease-in-out;
 }
 
 .portfolio-three-wrapper:hover .work-three-image-wrapper {
-    transition: all var(--transition-medium);
     transform: translate(12px, -12px);
 }
 
@@ -3403,7 +3367,10 @@ a:hover {
     width: 3px;
     height: 20%;
     position: absolute;
-    background-image: var(--gradient-line);
+    background-image: linear-gradient(144deg,
+            var(--tp-orange),
+            var(--tp-purple) 47%,
+            var(--tp-violet));;
     top: 0;
 }
 
@@ -3683,7 +3650,7 @@ a:hover {
     background-color: var(--tp-border-color);
     width: 0;
     height: 1px;
-    transition: all var(--transition-medium);
+    transition: all var(--transition-medium) ease-in-out;
 }
 
 .tp-text-stroke {
@@ -4036,7 +4003,7 @@ what we do css start
     padding-right: 15px;
     position: absolute;
     inset: 0%;
-    transition: all var(--transition-medium);
+    transition: all var(--transition-medium) ease-in-out;
     opacity: 0;
 }
 
@@ -4189,7 +4156,7 @@ label {
     font-size: 14px;
     line-height: 1.42857;
 
-    transition: border-color var(--transition-medium) ease;
+    transition: border-color var(--transition-medium) ease-in-out ease;
 }
 
 .tp-input::placeholder,
@@ -4272,7 +4239,7 @@ label {
     font-weight: 400;
     line-height: 28px;
 
-    transition: border-color var(--transition-medium) ease;
+    transition: border-color var(--transition-medium) ease-in-out ease;
 }
 
 .tp-input-field::placeholder {
@@ -4989,7 +4956,7 @@ label {
     position: absolute;
     right: 140px;
     opacity: 0;
-    transition: all var(--transition-medium);
+    transition: all var(--transition-medium) ease-in-out;
     transform: translate(0, 40px) rotate(-4deg);
     z-index: 1;
 
@@ -4997,7 +4964,6 @@ label {
 
 .blog-two-cards:hover .blog-two-image {
     transform: translate(0, 0) rotate(4deg);
-    transition: all var(--transition-medium);
     opacity: 1;
 }
 
@@ -5077,7 +5043,7 @@ label {
 }
 
 .blog-cards-image {
-    transition: all var(--transition-medium);
+    transition: all var(--transition-medium) ease-in-out;
 }
 
 .blog-cards-image:hover {
@@ -5736,7 +5702,7 @@ label {
 }
 
 .footer-one {
-    background-image: linear-gradient(#161724, #16172400 50%);
+    background-image: var(--tp-bg-secondary);
 }
 
 .footer-submit-button {
