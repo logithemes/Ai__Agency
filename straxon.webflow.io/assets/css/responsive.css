@@ -969,6 +969,7 @@
 }
 
 @media screen and (max-width: 767px) {
+    .service-three-cards-content i{font-size: 40px;}
     .faq-border{padding:8px 0 8px 0}
     .hero-details-text{    font-size: 14px;
     line-height: 1.5;}
