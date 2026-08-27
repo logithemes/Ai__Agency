@@ -2,34 +2,47 @@
 // COUNTER ANIMATION
 // ============================================
 
-$(document).ready(function() {
+(function ($) {
+    "use strict";
 
-    let started = false;
+    var counterStarted = false;
 
     function startCounter() {
-        if (started) return;
-        $('.counter-wrapper').each(function() {
-            let $this = $(this);
-            let target = parseInt($this.attr("data-target"));
-            let count = 0;
-            let interval = setInterval(() => {
+        if (counterStarted) {
+            return;
+        }
+
+        $('.counter-wrapper').each(function () {
+            var $counter = $(this);
+            var target = parseInt($counter.attr('data-target'), 10);
+            var count = 0;
+
+            var interval = setInterval(function () {
                 count++;
-                $this.text(count < 10 ? "0" + count : count);
+
+                $counter.text(count < 10 ? '0' + count : count);
+
                 if (count >= target) {
                     clearInterval(interval);
                 }
             }, 40);
         });
-        started = true;
+
+        counterStarted = true;
     }
 
-    if ($('.counters-wrapper').length) {
-        $(window).on('scroll', function() {
-            let sectionTop = $('.counters-wrapper').offset().top - window.innerHeight + 100;
-            if ($(window).scrollTop() > sectionTop) {
-                startCounter();
-            }
-        });
-    }
+    $(window).on('scroll', function () {
+        var $section = $('.counters-wrapper');
 
-});
+        if (!$section.length || counterStarted) {
+            return;
+        }
+
+        var sectionTop = $section.offset().top - window.innerHeight + 100;
+
+        if ($(window).scrollTop() > sectionTop) {
+            startCounter();
+        }
+    });
+
+})(jQuery);

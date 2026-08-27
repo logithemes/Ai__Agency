@@ -86,8 +86,7 @@
         /**
          * Pricing Plan Toggle
          * Switches between monthly and yearly pricing plans
-         * 
-         * @since 1.0.0
+         
          */
         if ($('#monthly-tab').length && $('#yearly-tab').length) {
             
