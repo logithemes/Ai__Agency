@@ -2370,8 +2370,11 @@ a:hover {
     top: 0;
     opacity: 0;
     transform: translateY(0);
+    font-family: var(--tp-font-heading);
 }
-
+.home-two-portfolio-wrapper{ width: 100%;
+    aspect-ratio: 455 / 166;
+    overflow: hidden;}
 /* ---------- expandable cards (your exact design) ---------- */
 .process-flex {
     display: flex;

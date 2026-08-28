@@ -144,15 +144,15 @@ if (typeof gsap !== 'undefined' && typeof ScrollTrigger !== 'undefined') {
 
    nightMedia.add(
      {
-       darkDesk: "(min-width: 1025px)",
-       darkTab: "(min-width: 768px) and (max-width: 1024px)",
+       darkDesk: "(min-width: 992px)",
+       darkTab: "(min-width: 768px) and (max-width: 991px)",
        darkMob: "(max-width: 767px)",
      },
      (context) => {
        const { darkDesk, darkTab, darkMob } = context.conditions;
-       const baseSpan = darkDesk ? "900px" : darkTab ? "80vw" : "100%";
-       const headerSpan = darkDesk ? "120px" : darkTab ? "71px" : "80px";
-       const viewportH = window.innerHeight;
+         const baseSpan = "100%";
+        const headerSpan = darkDesk ? "120px" : darkTab ? "71px" : "80px";
+        const viewportH = window.innerHeight;
        const initY = darkMob ? viewportH * 0.8 : viewportH;
 
        shadowCards.forEach((deck, idx) => {
