@@ -135,96 +135,104 @@ if (typeof gsap !== 'undefined' && typeof ScrollTrigger !== 'undefined') {
 
 // GSAP POSITION STICKY IMAGES WITH NUMBER
  // GSAP position-sticky images with counter sync
-  const shadowCards = gsap.utils.toArray(".portfolio-sticky-images");
-  const darkCounters = gsap.utils.toArray(".portfolio-counter");
-  const nightMedia = gsap.matchMedia();
-  const voidWrapper = document.querySelector(".portfolio-sticky-wrapper .portfolio-sticky-inner");
+ const shadowCards = gsap.utils.toArray(".portfolio-sticky-images");
+ const darkCounters = gsap.utils.toArray(".portfolio-counter");
+ const voidWrapper = document.querySelector(".portfolio-sticky-wrapper .portfolio-sticky-inner");
 
-  if (voidWrapper) {
-    nightMedia.add(
-      {
-        darkDesk: "(min-width: 1025px)",
-        darkTab: "(min-width: 768px) and (max-width: 1024px)",
-        darkMob: "(max-width: 767px)",
-      },
-      (context) => {
-        const { darkDesk, darkTab, darkMob } = context.conditions;
-        // Base/target spans widened to fit the new right-side <img>; all other
-        // timing, positions, and easing are unchanged from the original animation.
-        const baseSpan = darkDesk ? "800px" : darkTab ? "80vw" : "100%";
-        const headerSpan = darkDesk ? "120px" : darkTab ? "71px" : "80px";
-        const viewportH = window.innerHeight;
-        const initY = darkMob ? viewportH * 0.8 : viewportH;
+ if (voidWrapper && shadowCards.length && darkCounters.length) {
+   const nightMedia = gsap.matchMedia();
 
-        shadowCards.forEach((deck, idx) => {
-          gsap.set(deck, {
-            opacity: 1,
-            top: darkMob ? (idx * 17) : (idx * 26),
-            y: idx === 0 ? 0 : initY,
-            scale: 1,
-            width: baseSpan,
-            zIndex: idx + 1,
-          });
-          gsap.set(darkCounters[idx], {
-            y: idx === 0 ? 0 : initY,
-            opacity: idx === 0 ? 1 : 0,
-            position: "absolute",
-            top: 0,
-            left: 0,
-          });
-        });
+   nightMedia.add(
+     {
+       darkDesk: "(min-width: 1025px)",
+       darkTab: "(min-width: 768px) and (max-width: 1024px)",
+       darkMob: "(max-width: 767px)",
+     },
+     (context) => {
+       const { darkDesk, darkTab, darkMob } = context.conditions;
+       const baseSpan = darkDesk ? "900px" : darkTab ? "80vw" : "100%";
+       const headerSpan = darkDesk ? "120px" : darkTab ? "71px" : "80px";
+       const viewportH = window.innerHeight;
+       const initY = darkMob ? viewportH * 0.8 : viewportH;
 
-        const deckGap = 20;
-        const darkBuffer = 100;
-        const scrollSpan = (shadowCards.length - 1) * initY + shadowCards.length * deckGap + darkBuffer;
+       shadowCards.forEach((deck, idx) => {
+         const targetCounter = darkCounters[idx];
+         gsap.set(deck, {
+           position: "absolute",
+           left: 0,
+           top: 0,
+           opacity: 1,
+           y: idx === 0 ? 0 : initY,
+           scale: 1,
+           width: baseSpan,
+           zIndex: idx + 1,
+         });
 
-        const obsidianTimeline = gsap.timeline({
-          scrollTrigger: {
-            trigger: voidWrapper,
-            start: `top top+=${headerSpan}`,
-            end: `+=${scrollSpan}`,
-            scrub: 0.8,
-            pin: true,
-            pinSpacing: true,
-            anticipatePin: 1,
-            invalidateOnRefresh: true,
-          },
-        });
+         if (targetCounter) {
+           gsap.set(targetCounter, {
+             position: "absolute",
+             top: 0,
+             left: 0,
+             y: idx === 0 ? 0 : initY,
+             opacity: idx === 0 ? 1 : 0,
+           });
+         }
+       });
 
-        shadowCards.forEach((deck, idx) => {
-          if (idx === 0) return;
-          const stepPhase = idx - 0.5;
-          // Every card animates to the SAME width as card 1 (baseSpan) — no growth per step.
-          const targetSpan = baseSpan;
+       const deckGap = 20;
+       const darkBuffer = 100;
+       const scrollSpan = (shadowCards.length - 1) * initY + shadowCards.length * deckGap + darkBuffer;
 
-          obsidianTimeline.fromTo(
-            deck,
-            { y: initY, width: baseSpan, zIndex: idx },
-            {
-              y: 0,
-              width: targetSpan,
-              zIndex: shadowCards.length + idx,
-              duration: 0.5,
-              ease: "power1.inOut",
-            },
-            stepPhase
-          );
-          obsidianTimeline.to(
-            darkCounters[idx - 1],
-            { y: "-100%", opacity: 0, duration: 0.5, ease: "power1.inOut" },
-            stepPhase
-          );
-          obsidianTimeline.to(
-            darkCounters[idx],
-            { y: 0, opacity: 1, duration: 0.5, ease: "power1.inOut" },
-            stepPhase
-          );
-        });
-      }
-    );
-  }
-       
+       const obsidianTimeline = gsap.timeline({
+         scrollTrigger: {
+           trigger: voidWrapper,
+           start: `top top+=${headerSpan}`,
+           end: `+=${scrollSpan}`,
+           scrub: 0.8,
+           pin: true,
+           pinSpacing: true,
+           anticipatePin: 1,
+           invalidateOnRefresh: true,
+         },
+       });
 
+       shadowCards.forEach((deck, idx) => {
+         if (idx === 0) return;
+         const stepPhase = idx - 0.5;
+         const targetSpan = baseSpan;
+
+         obsidianTimeline.fromTo(
+           deck,
+           { y: initY, width: baseSpan, zIndex: idx },
+           {
+             y: 0,
+             width: targetSpan,
+             zIndex: shadowCards.length + idx,
+             duration: 0.5,
+             ease: "power1.inOut",
+           },
+           stepPhase
+         );
+
+         if (darkCounters[idx - 1]) {
+           obsidianTimeline.to(
+             darkCounters[idx - 1],
+             { y: "-100%", opacity: 0, duration: 0.5, ease: "power1.inOut" },
+             stepPhase
+           );
+         }
+
+         if (darkCounters[idx]) {
+           obsidianTimeline.to(
+             darkCounters[idx],
+             { y: 0, opacity: 1, duration: 0.5, ease: "power1.inOut" },
+             stepPhase
+           );
+         }
+       });
+     }
+   );
+ }
         /* ===============================
            PROGRESS BAR
         =============================== */

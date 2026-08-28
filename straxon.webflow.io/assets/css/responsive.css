@@ -1,5 +1,5 @@
 /*----------------------------------------*/
-/*   Responsive Css Start
+/*   Responsive Css Start */
 /*----------------------------------------*/
 
 @media screen and (min-width: 1440px) {
@@ -165,7 +165,31 @@
       .home-one-service-cards{padding-left: 15px;padding-right: 15px;}
 
     }
+    @media screen and (max-width: 1200px) {
+ .portfolio-sticky-wrapper .portfolio-content {
+      padding: 40px 20px 40px;
+    }
+    }
 @media screen and (max-width: 1024px) {
+     .portfolio-sticky-wrapper {
+      padding: 30px 24px;
+    }
+
+    .portfolio-sticky-wrapper .portfolio-sticky-layout {
+      gap: 25px;
+    }
+
+    .portfolio-sticky-wrapper .portfolio-content {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 0 8vw;
+    }
+
+    .portfolio-sticky-wrapper .sticky-counter-wrapper {
+      width: 100%;
+      height: 160px;
+    }
     .home-three-slider-area {
         max-width: 235px;
         width: 100%;
@@ -1036,7 +1060,7 @@
     .layout-container {
         max-width: none;
     }
-
+.portfolio-sticky-wrapper .sticky-counter-wrapper{height: 80px;}
     .video-preview-wrapper{height: 380px;}
     .video-preview-wrapper img{height: 100%;}
     /* .testimonail-text {

@@ -17,6 +17,7 @@ Root Variables
 5. brand css start 
 6. service css start 
 7. testimonial css start
+8. couner sticky css start
 8. counters css start
 9. projects css start
 7. marquee css start 
@@ -91,6 +92,7 @@ Root Variables
 --transition-medium: 0.3s;
 --transition-slow: 0.5s;
 --transition-default: var(--transition-medium) ease-in-out;
+
 }
 
 
@@ -2329,6 +2331,46 @@ a:hover {
     object-fit: cover;
 }
 
+/*---------------------------------
+   couner sticky css start
+---------------------------------*/
+.portfolio-sticky-wrapper {
+    position: relative;
+}
+
+.portfolio-sticky-inner {
+    position: relative;
+    min-height: 520px;
+}
+
+.portfolio-sticky-layout {
+    position: relative;
+}
+
+.portfolio-img-wrapper {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    min-height: 420px;
+}
+
+.portfolio-sticky-images {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    margin: 0;
+    z-index: 1;
+}
+
+.portfolio-counter {
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    transform: translateY(0);
+}
 
 /* ---------- expandable cards (your exact design) ---------- */
 .process-flex {
@@ -2426,7 +2468,7 @@ a:hover {
 .timeline-line {
     width: 36px;
     height: 1px;
-    background: #b0b0b0;
+    border: 1px solid var(--tp-border-color);
 }
 
 /* inactive content */
