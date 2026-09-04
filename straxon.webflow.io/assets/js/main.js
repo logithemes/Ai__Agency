@@ -138,8 +138,6 @@
         // 5. FINAL CALLBACK
         // ============================================
 
-        console.log('Theme initialized successfully');
-
     }); // End document ready
 
 })(jQuery);

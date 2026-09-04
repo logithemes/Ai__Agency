@@ -1,85 +1,150 @@
- document.addEventListener("DOMContentLoaded", function () {
- /* ===============================
-       HOME ONE MOUSE PARALLAX
-    =============================== */
-    const heroSection = document.querySelector('.parallax-hero-section');
-    
+"use strict";
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    /*----------------------------------------*/
+    /*  Home One Mouse Parallax
+    /*----------------------------------------*/
+
+    const heroSection = document.querySelector(".parallax-hero-section");
+
     if (heroSection) {
-        const girlWrapper = document.querySelector('.parallax-img-one');
-        const boyWrapper = document.querySelector('.little-boy-image-wrapper img');
-        const borderMovementBar = document.querySelector('.border-movement-bar');
-        
+        const girlWrapper = heroSection.querySelector(".parallax-img-one");
+        const boyWrapper = heroSection.querySelector(
+            ".little-boy-image-wrapper img"
+        );
+        const borderMovementBar = heroSection.querySelector(
+            ".border-movement-bar"
+        );
+
         if (girlWrapper && boyWrapper && borderMovementBar) {
-            heroSection.addEventListener('mousemove', (e) => {
-                const { left, top, width, height } = heroSection.getBoundingClientRect();
+
+            const girlX = gsap.quickTo(girlWrapper, "x", {
+                duration: 0.8,
+                ease: "power2.out"
+            });
+
+            const girlY = gsap.quickTo(girlWrapper, "y", {
+                duration: 0.8,
+                ease: "power2.out"
+            });
+
+            const boyX = gsap.quickTo(boyWrapper, "x", {
+                duration: 0.8,
+                ease: "power2.out"
+            });
+
+            const boyY = gsap.quickTo(boyWrapper, "y", {
+                duration: 0.8,
+                ease: "power2.out"
+            });
+
+            const borderX = gsap.quickTo(borderMovementBar, "x", {
+                duration: 0.8,
+                ease: "power2.out"
+            });
+
+            heroSection.addEventListener("mousemove", function (e) {
+
+                const {
+                    left,
+                    top,
+                    width,
+                    height
+                } = heroSection.getBoundingClientRect();
+
                 const x = (e.clientX - left) / width - 0.5;
                 const y = (e.clientY - top) / height - 0.5;
 
-                gsap.to(girlWrapper, {
-                    x: x * -20,
-                    y: y * -20,
-                    duration: 0.8,
-                    ease: "power2.out"
-                });
+                girlX(x * -20);
+                girlY(y * -20);
 
-                gsap.to(boyWrapper, {
-                    x: x * 20,
-                    y: y * 20,
-                    duration: 0.8,
-                    ease: "power2.out"
-                });
+                boyX(x * 20);
+                boyY(y * 20);
 
-                gsap.to(borderMovementBar, {
-                    x: x * 250,
-                    duration: 0.8,
-                    ease: "power2.out"
-                });
+                borderX(x * 250);
             });
 
-            heroSection.addEventListener('mouseleave', () => {
-                gsap.to([girlWrapper, boyWrapper], {
-                    x: 0,
-                    y: 0,
-                    duration: 0.5
-                });
+            heroSection.addEventListener("mouseleave", function () {
 
-                gsap.to(borderMovementBar, {
-                    x: 0,
-                    duration: 0.5
-                });
+                girlX(0);
+                girlY(0);
+
+                boyX(0);
+                boyY(0);
+
+                borderX(0);
             });
         }
     }
 
-    /* ===============================
-       ABOUT / HOME THREE MOUSE PARALLAX
-    =============================== */
-    const aboutHero = document.querySelector('.about-two-hero, .common-parallax-hover');
+
+    /*----------------------------------------*/
+    /*  About / Home Three Mouse Parallax
+    /*----------------------------------------*/
+
+    const aboutHero = document.querySelector(
+        ".about-two-hero, .common-parallax-hover"
+    );
 
     if (aboutHero) {
-        const images = document.querySelectorAll(
-            '.about-two-hero-image-one, .about-two-hero-image-two, .about-two-hero-image-three, .about-two-hero-image-four, .about-two-hero-image-five, .common-parallax-div' 
+
+        const images = aboutHero.querySelectorAll(
+            ".about-two-hero-image-one, " +
+            ".about-two-hero-image-two, " +
+            ".about-two-hero-image-three, " +
+            ".about-two-hero-image-four, " +
+            ".about-two-hero-image-five, " +
+            ".common-parallax-div"
         );
 
         if (images.length > 0) {
-            aboutHero.addEventListener('mousemove', (e) => {
-                const { left, top, width, height } = aboutHero.getBoundingClientRect();
+
+            const quickToX = [];
+            const quickToY = [];
+
+            images.forEach(function (img, index) {
+
+                const speed = (index + 1) * 15;
+
+                quickToX[index] = gsap.quickTo(img, "x", {
+                    duration: 0.8,
+                    ease: "power2.out"
+                });
+
+                quickToY[index] = gsap.quickTo(img, "y", {
+                    duration: 0.8,
+                    ease: "power2.out"
+                });
+
+                img.dataset.parallaxSpeed = speed;
+            });
+
+            aboutHero.addEventListener("mousemove", function (e) {
+
+                const {
+                    left,
+                    top,
+                    width,
+                    height
+                } = aboutHero.getBoundingClientRect();
+
                 const x = (e.clientX - left) / width - 0.5;
                 const y = (e.clientY - top) / height - 0.5;
-                
-                images.forEach((img, index) => {
-                    if (!img) return;
-                    const speed = (index + 1) * 15;
-                    gsap.to(img, {
-                        x: x * speed,
-                        y: y * speed,
-                        duration: 0.8,
-                        ease: "power2.out"
-                    });
+
+                images.forEach(function (img, index) {
+
+                    const speed = Number(
+                        img.dataset.parallaxSpeed
+                    );
+
+                    quickToX[index](x * speed);
+                    quickToY[index](y * speed);
                 });
             });
-            
-            aboutHero.addEventListener('mouseleave', () => {
+
+            aboutHero.addEventListener("mouseleave", function () {
+
                 gsap.to(images, {
                     x: 0,
                     y: 0,
@@ -89,4 +154,5 @@
             });
         }
     }
+
 });
