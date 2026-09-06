@@ -19,9 +19,155 @@
 <link rel="stylesheet" href="assets/css/style.css">
 <link rel="stylesheet" href="assets/css/spacing.css">
 <link rel="stylesheet" href="assets/css/responsive.css">
-</head>
 
-<body>
+<style>
+  .tp-feature-section {
+    background: #f5f5f5;
+    border-top: 1px solid rgba(15, 23, 42, 0.08);
+    border-bottom: 1px solid rgba(15, 23, 42, 0.08);
+  }
+
+  .tp-feature-intro {
+    position: relative;
+    padding-right: 15px;
+  }
+
+  .tp-feature-kicker {
+    display: inline-block;
+    margin-bottom: 20px;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #111827;
+    opacity: 0.7;
+  }
+
+  .tp-feature-intro h2 {
+    font-size: clamp(2.5rem, 4vw, 5rem);
+    line-height: 0.96;
+    font-weight: 800;
+    letter-spacing: -0.06em;
+    color: #111111;
+    margin: 0 0 22px;
+    max-width: 420px;
+  }
+
+  .tp-feature-intro p {
+    max-width: 360px;
+    margin: 0;
+    font-size: 1.05rem;
+    line-height: 1.7;
+    color: rgba(17, 17, 17, 0.72);
+  }
+
+  .tp-feature-curve {
+    position: relative;
+    width: 180px;
+    height: 120px;
+    margin-top: 24px;
+    margin-left: 30px;
+    border: 3px solid transparent;
+    border-bottom: 3px solid #111111;
+    border-left: 3px solid #111111;
+    border-radius: 0 0 0 120px;
+    transform: rotate(10deg);
+    opacity: 0.7;
+  }
+
+  .tp-feature-curve::after {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-left: 3px solid #111111;
+    border-bottom: 3px solid #111111;
+    transform: rotate(45deg);
+    right: -10px;
+    bottom: -10px;
+    background: transparent;
+  }
+
+  .tp-feature-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 220px;
+    padding: 28px 24px 22px;
+    background: rgba(255, 255, 255, 0.55);
+    border: 1px solid rgba(17, 17, 17, 0.06);
+    border-radius: 18px;
+    box-shadow: 0 10px 25px rgba(17, 17, 17, 0.02);
+    text-align: center;
+    transition: transform 0.28s ease, box-shadow 0.28s ease, border-color 0.28s ease;
+  }
+
+  .tp-feature-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 18px 35px rgba(17, 17, 17, 0.08);
+    border-color: rgba(17, 17, 17, 0.12);
+  }
+
+  .tp-feature-icon-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 96px;
+    height: 96px;
+    margin-bottom: 18px;
+    border-radius: 18px;
+    background: linear-gradient(135deg, rgba(255,255,255,0.8), rgba(240,240,240,0.8));
+    box-shadow: inset 0 1px 0 rgba(255,255,255,0.9);
+  }
+
+  .tp-feature-icon {
+    max-width: 68px;
+    max-height: 68px;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    filter: drop-shadow(0 8px 18px rgba(17, 17, 17, 0.08));
+  }
+
+  .tp-feature-card h3 {
+    margin: 0;
+    font-size: 1.05rem;
+    font-weight: 600;
+    line-height: 1.4;
+    color: #111111;
+    letter-spacing: -0.03em;
+  }
+
+  @media (max-width: 991.98px) {
+    .tp-feature-intro {
+      margin-bottom: 30px;
+      padding-right: 0;
+    }
+
+    .tp-feature-intro h2,
+    .tp-feature-intro p {
+      max-width: 100%;
+    }
+  }
+
+  @media (max-width: 575.98px) {
+    .tp-feature-card {
+      min-height: 190px;
+      padding: 26px 18px 18px;
+    }
+
+    .tp-feature-icon-wrap {
+      width: 78px;
+      height: 78px;
+    }
+
+    .tp-feature-icon {
+      max-width: 56px;
+      max-height: 56px;
+    }
+  }
+</style>
 
     <!-- Preloader Start -->
   <section>
@@ -54,7 +200,7 @@
   <!-- Preloader end -->
 
   <header class="tp-top-navbar w-100">
-    <div role="banner" class="navbar-one header-main w-100">
+    <div  class="navbar-one header-main w-100">
       <div class="container-fluid">
         <div class="navbar-one-wrapper align-items-center row">
 
@@ -67,7 +213,7 @@
           <!-- Menu -->
           <div class="col-xl-7 col-lg-7 center-menu-wrapper">
             <div class="main-menu-section">
-              <nav role="navigation" class="nav-menu main-menu" aria-label="Main Navigation">
+              <nav  class="nav-menu main-menu" aria-label="Main Navigation">
                 <ul class="nav-inline">
 
                   <li class="tp-dropdown menu-item">
@@ -254,7 +400,8 @@
   class="landing-hero-image-four" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="700">
     </div>
   </section>
-  </div>
+
+
   <!-- ===================================================
 				landing inner section
 				==================================================== -->
@@ -308,7 +455,7 @@
       </div>
       <div class="box-overlay"></div>
       <div class="tp-flex-vertical features-box-one-text-wrap gap-20">
-        <h4 class="heading-four"> digital agency &amp; creative website </h4>
+        <h2 class="heading-four"> digital agency &amp; creative website </h2>
         <div class="tp-flex-horizontal">
           <a href="home-one.html"
             class="bg-transparent tp-button-transparent border border-white tp-common-white tp-button-wrapper tp-flex-center">
@@ -328,8 +475,8 @@
         data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
         <img src="assets/img/hero-demo/speed-icon.svg" loading="lazy" width="75" height="75" alt="Icon"
           class="mb-10">
-        <h4 class="heading-four">Fast <span class="text-gradiant">loading</span>
-        </h4>
+        <h3 class="heading-three">Fast <span class="text-gradiant">loading</span>
+        </h3>
         <p class="tp-common-white text-capitalize">Pages are Google page speed optimized</p>
       </div>
     </div>
@@ -418,11 +565,11 @@
                     <div class="tp-flex-vertical header-footer-name">
                       <div class="tp-flex-vertical name-box-one gap-20">
                         <span class="tp-common-white">01</span>
-                        <h5 class="heading-five my-0">header style</h5>
+                        <h2 class="heading-five my-0">header style</h2>
                       </div>
                       <div class="tp-flex-vertical name-box-two gap-20">
                         <span class="tp-common-white">02</span>
-                        <h5 class="heading-five my-0">Footer style</h5>
+                        <h3 class="heading-five my-0">Footer style</h3>
                       </div>
 
                     </div>
@@ -465,7 +612,7 @@
                     loading="lazy" class="tp-radius-20 w-100 h-auto">
                   <div class="landing-image-overlay"></div>
                 </div>
-                <h4 class="heading-four">Home One</h4>
+                <h3 class="heading-four">Home One</h3>
               </a>
             </div>
           </div>
@@ -579,7 +726,7 @@
                   loading="lazy" class="tp-radius-20 w-100 h-auto">
                 <div class="landing-image-overlay"></div>
               </div>
-              <h4 class="heading-four">About One</h4>
+              <h3 class="heading-four">About One</h3>
             </a>
           </div>
         </div>
@@ -759,124 +906,108 @@
   <!-- ===================================================
 			Landing cms pages
 			==================================================== -->
-  <section class="cms-pages overflow-hidden pt-120 md-pt-70  pb-120 md-pb-70">
-    <div class="container-fluid">
-      <div class="mb-30 row align-items-center">
+  <section class="tp-feature-section pt-120 md-pt-60 pb-120 md-pb-60">
+    <div class="container">
+      <div class="row align-items-center g-4 g-lg-5">
+        <div class="col-lg-4">
+          <div class="tp-feature-intro" data-aos="fade-up" data-aos-duration="900" data-aos-delay="100">
+            <span class="tp-feature-kicker">Feature</span>
+            <h2>With popular <span class="text-gradiant">features</span></h2>
+            <p>
+              We provide impressive and amazing features for your website so that you can easily and quickly manage your website.
+            </p>
+            <div class="tp-feature-curve" aria-hidden="true"></div>
+          </div>
+        </div>
 
-        <!-- Left Content -->
-        <div class="col-12 col-md-9">
-          <div class="section-title">
-            <div class="section-title-heading">
-              <div class="tp-flex-vertical">
-                <span class="landing-text"  data-aos="fade-up" data-aos-delay="300">
-                  unique &amp; useful
-                </span>
-                <h2 class="mb-0 mt-25 md-mt-10"  data-aos="fade-up" data-aos-delay="500">
-                  smart cms Pages
-                </h2>
-              </div>
+        <div class="col-lg-8">
+          <div class="row g-4">
+            <div class="col-6 col-md-4">
+              <article class="tp-feature-card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
+                <div class="tp-feature-icon-wrap">
+                  <img class="tp-feature-icon" src="https://crowdytheme.com/html/axtra-preview/assets/imgs/tech/tech-1.png" alt="HTML5" loading="lazy">
+                </div>
+                <h3>HTML5</h3>
+              </article>
+            </div>
+
+            <div class="col-6 col-md-4">
+              <article class="tp-feature-card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="150">
+                <div class="tp-feature-icon-wrap">
+                  <img class="tp-feature-icon" src="https://crowdytheme.com/html/axtra-preview/assets/imgs/tech/tech-2.png" alt="CSS3" loading="lazy">
+                </div>
+                <h3>CSS3</h3>
+              </article>
+            </div>
+
+            <div class="col-6 col-md-4">
+              <article class="tp-feature-card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+                <div class="tp-feature-icon-wrap">
+                  <img class="tp-feature-icon" src="https://crowdytheme.com/html/axtra-preview/assets/imgs/tech/tech-11.png" alt="Bootstrap 5" loading="lazy">
+                </div>
+                <h3>Bootstrap 5</h3>
+              </article>
+            </div>
+
+            <div class="col-6 col-md-4">
+              <article class="tp-feature-card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="250">
+                <div class="tp-feature-icon-wrap">
+                  <img class="tp-feature-icon" src="https://crowdytheme.com/html/axtra-preview/assets/imgs/tech/tech-5.png" alt="W3C Validation" loading="lazy">
+                </div>
+                <h3>W3C Validation</h3>
+              </article>
+            </div>
+
+            <div class="col-6 col-md-4">
+              <article class="tp-feature-card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
+                <div class="tp-feature-icon-wrap">
+                  <img class="tp-feature-icon" src="https://crowdytheme.com/html/axtra-preview/assets/imgs/tech/tech-7.png" alt="Fully Responsive" loading="lazy">
+                </div>
+                <h3>Fully Responsive</h3>
+              </article>
+            </div>
+
+            <div class="col-6 col-md-4">
+              <article class="tp-feature-card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="350">
+                <div class="tp-feature-icon-wrap">
+                  <img class="tp-feature-icon" src="https://crowdytheme.com/html/axtra-preview/assets/imgs/tech/tech-3.png" alt="SEO Optimized" loading="lazy">
+                </div>
+                <h3>SEO Optimized</h3>
+              </article>
+            </div>
+
+            <div class="col-6 col-md-4">
+              <article class="tp-feature-card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
+                <div class="tp-feature-icon-wrap">
+                  <img class="tp-feature-icon" src="https://crowdytheme.com/html/axtra-preview/assets/imgs/tech/tech-8.png" alt="Google Fonts" loading="lazy">
+                </div>
+                <h3>Google Fonts</h3>
+              </article>
+            </div>
+
+            <div class="col-6 col-md-4">
+              <article class="tp-feature-card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="450">
+                <div class="tp-feature-icon-wrap">
+                  <img class="tp-feature-icon" src="https://crowdytheme.com/html/axtra-preview/assets/imgs/tech/tech-7.png" alt="Clean Code" loading="lazy">
+                </div>
+                <h3>Clean Code</h3>
+              </article>
+            </div>
+
+            <div class="col-6 col-md-4">
+              <article class="tp-feature-card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="500">
+                <div class="tp-feature-icon-wrap">
+                  <img class="tp-feature-icon" src="https://crowdytheme.com/html/axtra-preview/assets/imgs/tech/tech-5.png" alt="Well Documented" loading="lazy">
+                </div>
+                <h3>Well Documented</h3>
+              </article>
             </div>
           </div>
         </div>
-
-        <!-- Right Content -->
-        <div class="col-12 col-md-3">
-          <aside
-   class="tp-rotate-box-two align-items-center justify-content-center position-relative d-none d-md-flex"
-    data-aos="zoom-in" data-aos-delay="700">
-
-            <img width="171" height="171" alt="Rotating Text" src="assets/img/hero-demo/round-text.svg" loading="lazy"
-              class="rotate-text rotate-ani">
-
-            <img width="24" height="45" alt="S" src="assets/img/hero-demo/s-text.svg" loading="lazy"
-              class="position-absolute">
-
-          </aside>
-        </div>
-
-      </div>
-    </div>
-    <div class="container-fluid">
-      <div class="tp-layout-grid pages-landing-cards row">
-        <div class="col-12 col-md-6 col-xl-4 ">
-          <div class="pt-12 pb-2 pb-xl-0"  data-aos="fade-up" data-aos-delay="300">
-            <a href="projects/portfolio-details.html" target="_blank" class="landing-cards tp-inline-block gap-30"
-     data-aos="fade-up" data-aos-delay="700">
-              <div class="landing-cards-image-wrap d-flex align-items-center justify-content-center position-relative">
-                <img width="484" height="437" alt="Project Details" src="assets/img/hero-demo/project-details.webp"
-                  loading="lazy" class="tp-radius-20 w-100 h-auto">
-                <div class="landing-image-overlay"></div>
-              </div>
-              <h4 class="heading-four">Project Details</h4>
-            </a>
-          </div>
-        </div>
-        <div class="col-12 col-md-6 col-xl-4 ">
-          <div class="pt-12 theme-pb-0 lg-pb-10"  data-aos="fade-up" data-aos-delay="600">
-            <a href="team-members/team-details.html" target="_blank" class="landing-cards tp-inline-block gap-30"
-     data-aos="fade-up" data-aos-delay="800">
-              <div class="landing-cards-image-wrap d-flex align-items-center justify-content-center position-relative">
-                <img width="484" height="437" alt="Screenshot" src="assets/img/hero-demo/team-details.webp"
-                  loading="lazy" class="tp-radius-20 w-100 h-auto">
-                <div class="landing-image-overlay"></div>
-              </div>
-              <h4 class="heading-four">Team Details</h4>
-            </a>
-          </div>
-        </div>
-        <div class="col-12 col-md-6 col-xl-4 ">
-          <div class="pt-12 theme-pb-0 lg-pb-10"  data-aos="fade-up" data-aos-delay="900">
-            <a href="blog-posts/blog-details.html" target="_blank" class="landing-cards tp-inline-block gap-30"
-     data-aos="fade-up" data-aos-delay="900">
-              <div class="landing-cards-image-wrap d-flex align-items-center justify-content-center position-relative">
-                <img width="484" height="437" alt="Screenshot" src="assets/img/hero-demo/blog-details.webp"
-                  loading="lazy" class="tp-radius-20 w-100 h-auto">
-                <div class="landing-image-overlay"></div>
-              </div>
-              <h4 class="heading-four">Blog Details</h4>
-            </a>
-
-          </div>
-        </div>
       </div>
     </div>
   </section>
-  <!-- ===================================================
-			  utility pages
-			==================================================== -->
-  <section class="tp-utility-section pt-100 md-pt-50  pb-110 md-pb-50 ">
-    <div class="container-fluid">
-      <div class="d-flex align-items-center justify-content-center mb-25">
-        <h2 class="theme-mb-0"  data-aos="fade-up" data-aos-delay="200">Utility Pages</h2>
-      </div>
-      <div class="tp-layout-grid tp-utility-cards row">
-        <div class="col-12 col-md-6">
-          <div class="pt-12 pb-12 d-inline-block position-relative"  data-aos="fade-up" data-aos-delay="300">
-            <a href="401.html" target="_blank" class="landing-cards tp-inline-block gap-30">
-              <div class="landing-cards-image-wrap d-flex align-items-center justify-content-center position-relative">
-                <img width="484" height="437" alt="Screenshot" src="assets/img/hero-demo/password-protected.webp"
-                  loading="lazy" class="tp-radius-20 w-100 h-auto">
-                <div class="landing-image-overlay"></div>
-              </div>
-              <h4 class="heading-four">Password Protected</h4>
-            </a>
-          </div>
-        </div>
-        <div class="col-12 col-md-6 ">
-          <div class="pt-12 pb-12"  data-aos="fade-up" data-aos-delay="600">
-            <a href="404.html" target="_blank" class="landing-cards tp-inline-block gap-30">
-              <div class="landing-cards-image-wrap d-flex align-items-center justify-content-center position-relative">
-                <img width="484" height="437" alt="Screenshot" src="assets/img/hero-demo/404.webp" loading="lazy"
-                  class="tp-radius-20 w-100 h-auto">
-                <div class="landing-image-overlay"></div>
-              </div>
-              <h4 class="heading-four">404</h4>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+
   <!-- ===================================================
 				Footer area
 				==================================================== -->
@@ -942,8 +1073,6 @@
   <script src="assets/vendor/ScrollTrigger.min.js"></script>
   <script src="assets/vendor/swiper-bundle.min.js"></script>
   <script src="assets/vendor/aos.js"></script>
-
-
   <!-- 2. YOUR CUSTOM SCRIPTS -->
   <script src="assets/js/utilities.js"></script>
   <script src="assets/js/counter.js"></script>
