@@ -97,6 +97,163 @@
             });
         }
 
+
+
+        // **********************
+        // caer active
+         // **********************
+        gsap.registerPlugin(ScrollTrigger);
+        const cards = document.querySelectorAll(".process-card");
+        const flexContainer = document.getElementById("processFlex");
+        if (!cards.length || !flexContainer) return;
+
+        let activeIndex = 0;
+
+        function isDesktop() {
+          return window.innerWidth >= 992;
+        }
+
+        /* ---------------------------------
+           Desktop GSAP animation (992px+)
+           - only click event, no hover
+        --------------------------------- */
+        function expandCard(index) {
+          if (!isDesktop()) return;
+          if (index === activeIndex) return;
+
+          const prevActive = cards[activeIndex];
+          const newActive = cards[index];
+
+          const tl = gsap.timeline({
+            defaults: { ease: "power2.inOut", duration: 0.7 }
+          });
+
+          // Collapse others
+          cards.forEach((card, i) => {
+            if (i !== index) {
+              tl.to(card, {
+                flexBasis: "100px",
+                flexGrow: 0,
+                flexShrink: 1,
+                duration: 0.6
+              }, 0);
+            }
+          });
+
+          // Expand new active
+          tl.to(newActive, {
+            flexBasis: "380px",
+            flexGrow: 1,
+            flexShrink: 0,
+            duration: 0.7
+          }, 0);
+
+          // Update active class
+          tl.call(() => {
+            prevActive.classList.remove("active");
+            newActive.classList.add("active");
+            activeIndex = index;
+          }, [], 0.2);
+
+          // Active shadow
+          tl.to(newActive, {
+            boxShadow: "0 20px 40px -12px rgba(0,0,0,0.12)",
+            duration: 0.4
+          }, 0);
+          tl.to(prevActive, {
+            boxShadow: "0 12px 30px -8px rgba(0,0,0,0.06)",
+            duration: 0.4
+          }, 0);
+        }
+
+        /* ---------------------------------
+           Mobile/Tablet (< 992px)
+           - show full card design (no collapse)
+           - just toggle active class for styling
+        --------------------------------- */
+        function activateCard(index) {
+          if (isDesktop()) return;
+          if (index === activeIndex) return;
+
+          cards.forEach((card) => card.classList.remove("active"));
+          cards[index].classList.add("active");
+          activeIndex = index;
+        }
+
+        /* ---------------------------------
+           Click events
+        --------------------------------- */
+        cards.forEach((card, index) => {
+          card.addEventListener("click", function (e) {
+            if (e.target.closest(".toggle-btn")) return;
+            if (isDesktop()) {
+              expandCard(index);
+            } else {
+              activateCard(index);
+            }
+          });
+
+          const btn = card.querySelector(".toggle-btn");
+          if (btn) {
+            btn.addEventListener("click", function (e) {
+              e.preventDefault();
+              e.stopPropagation();
+              if (isDesktop()) {
+                expandCard(index);
+              } else {
+                activateCard(index);
+              }
+            });
+          }
+        });
+
+        /* ---------------------------------
+           Resize handler – kill tweens on resize
+        --------------------------------- */
+        let resizeTimer;
+        window.addEventListener("resize", function () {
+          clearTimeout(resizeTimer);
+          resizeTimer = setTimeout(function () {
+            if (!isDesktop()) {
+              cards.forEach((card) => {
+                gsap.killTweensOf(card);
+                gsap.set(card, {
+                  clearProps: "flexBasis,flexGrow,flexShrink,boxShadow"
+                });
+              });
+          
+            } else {
+              cards.forEach((card, i) => {
+                if (i !== activeIndex) {
+                  card.classList.remove("active");
+                  gsap.set(card, { flexBasis: "100px", flexGrow: 0, flexShrink: 1 });
+                } else {
+                  card.classList.add("active");
+                  gsap.set(card, { flexBasis: "380px", flexGrow: 1, flexShrink: 0 });
+                }
+              });
+            }
+          }, 200);
+        });
+
+        if (isDesktop()) {
+          cards.forEach((card, i) => {
+            if (i === activeIndex) {
+              card.classList.add("active");
+              gsap.set(card, { flexBasis: "380px", flexGrow: 1, flexShrink: 0 });
+            } else {
+              card.classList.remove("active");
+              gsap.set(card, { flexBasis: "100px", flexGrow: 0, flexShrink: 1 });
+            }
+          });
+        } else {
+          cards.forEach((card, i) => {
+            if (i === activeIndex) card.classList.add("active");
+            else card.classList.remove("active");
+          });
+        }
+
+
         // Check if GSAP is loaded
 if (typeof gsap !== 'undefined' && typeof ScrollTrigger !== 'undefined') {
   
@@ -133,106 +290,7 @@ if (typeof gsap !== 'undefined' && typeof ScrollTrigger !== 'undefined') {
   
 }
 
-// GSAP POSITION STICKY IMAGES WITH NUMBER
- // GSAP position-sticky images with counter sync
- const shadowCards = gsap.utils.toArray(".portfolio-sticky-images");
- const darkCounters = gsap.utils.toArray(".portfolio-counter");
- const voidWrapper = document.querySelector(".portfolio-sticky-wrapper .portfolio-sticky-inner");
-
- if (voidWrapper && shadowCards.length && darkCounters.length) {
-   const nightMedia = gsap.matchMedia();
-
-   nightMedia.add(
-     {
-       darkDesk: "(min-width: 992px)",
-       darkTab: "(min-width: 768px) and (max-width: 991px)",
-       darkMob: "(max-width: 767px)",
-     },
-     (context) => {
-       const { darkDesk, darkTab, darkMob } = context.conditions;
-         const baseSpan = "100%";
-        const headerSpan = darkDesk ? "120px" : darkTab ? "71px" : "80px";
-        const viewportH = window.innerHeight;
-       const initY = darkMob ? viewportH * 0.8 : viewportH;
-
-       shadowCards.forEach((deck, idx) => {
-         const targetCounter = darkCounters[idx];
-         gsap.set(deck, {
-           position: "absolute",
-           left: 0,
-           top: 0,
-           opacity: 1,
-           y: idx === 0 ? 0 : initY,
-           scale: 1,
-           width: baseSpan,
-           zIndex: idx + 1,
-         });
-
-         if (targetCounter) {
-           gsap.set(targetCounter, {
-             position: "absolute",
-             top: 0,
-             left: 0,
-             y: idx === 0 ? 0 : initY,
-             opacity: idx === 0 ? 1 : 0,
-           });
-         }
-       });
-
-       const deckGap = 20;
-       const darkBuffer = 100;
-       const scrollSpan = (shadowCards.length - 1) * initY + shadowCards.length * deckGap + darkBuffer;
-
-       const obsidianTimeline = gsap.timeline({
-         scrollTrigger: {
-           trigger: voidWrapper,
-           start: `top top+=${headerSpan}`,
-           end: `+=${scrollSpan}`,
-           scrub: 0.8,
-           pin: true,
-           pinSpacing: true,
-           anticipatePin: 1,
-           invalidateOnRefresh: true,
-         },
-       });
-
-       shadowCards.forEach((deck, idx) => {
-         if (idx === 0) return;
-         const stepPhase = idx - 0.5;
-         const targetSpan = baseSpan;
-
-         obsidianTimeline.fromTo(
-           deck,
-           { y: initY, width: baseSpan, zIndex: idx },
-           {
-             y: 0,
-             width: targetSpan,
-             zIndex: shadowCards.length + idx,
-             duration: 0.5,
-             ease: "power1.inOut",
-           },
-           stepPhase
-         );
-
-         if (darkCounters[idx - 1]) {
-           obsidianTimeline.to(
-             darkCounters[idx - 1],
-             { y: "-100%", opacity: 0, duration: 0.5, ease: "power1.inOut" },
-             stepPhase
-           );
-         }
-
-         if (darkCounters[idx]) {
-           obsidianTimeline.to(
-             darkCounters[idx],
-             { y: 0, opacity: 1, duration: 0.5, ease: "power1.inOut" },
-             stepPhase
-           );
-         }
-       });
-     }
-   );
- }
+  
         /* ===============================
            PROGRESS BAR
         =============================== */
@@ -372,4 +430,10 @@ storyBarAnimation();
 
     window.initGSAPAnimations = initGSAPAnimations;
 
+    
+
 })();
+
+
+
+      
