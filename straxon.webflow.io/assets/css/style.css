@@ -1020,6 +1020,11 @@ a:hover {
     width: 100%;
     padding: 0;
     display: flex;
+    color: inherit;
+    font: inherit;
+    text-align: left;
+    background: transparent;
+    border: 0;
 }
 
 .navbar-three-toggle h3,
@@ -1064,6 +1069,9 @@ a:hover {
     cursor: pointer;
     justify-content: flex-start;
     align-items: flex-start;
+    background: transparent;
+    border: 0;
+    color: inherit;
     padding-top: 15px;
     padding-bottom: 15px;
     padding-left: 15px;

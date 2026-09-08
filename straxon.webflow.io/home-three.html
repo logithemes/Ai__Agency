@@ -48,35 +48,38 @@
           <a href="index.html" class="tp-inline-block">
             <img width="140" height="30" alt="logo-img" src="assets/img/logo/logo.svg" loading="lazy">
           </a>
-          <div class="tp-flex-vertical navbar-three-hamburger" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu"
+          <button type="button" class="tp-flex-vertical navbar-three-hamburger" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu"
             aria-controls="mobileMenu">
-            <div class="navbar-three-bar-one"></div>
-            <div class="navbar-three-bar-two"></div>
-          </div>
+            <span class="navbar-three-bar-one"></span>
+            <span class="navbar-three-bar-two"></span>
+          </button>
         </div>
       </div>
       <div class="navbar-three-main-menu offcanvas
-       offcanvas-top " tabindex="-1" id="mobileMenu" aria-labelledby="mobileMenuLabel">
+       offcanvas-top " tabindex="-1" id="mobileMenu" >
         <div class="container-fluid">
           <div
           class="offcanvas-body overflow-hidden p-0  navbar-three-menu-wrap ">
           <div class="tp-flex-horizontal navbar-three-menu-items modal-content bg-transparent h-100">
-         <div class="navbar-three-boxes" id="mobileMenu">
+         <div class="navbar-three-boxes">
 
   <!-- HOME -->
   <div class="navbar-three-dropdown">
-    <div class="navbar-three-toggle d-flex align-items-center justify-content-between"
-      data-bs-toggle="collapse"
-      data-bs-target="#homeMenu"
-      aria-expanded="false"
-      aria-controls="homeMenu">
+    <button type="button" class="navbar-three-toggle d-flex align-items-center justify-content-between"
+      role="button"
+    tabindex="0"
+    data-bs-toggle="collapse"
+    data-bs-target="#homeMenu"
+    aria-expanded="false"
+    aria-controls="homeMenu"
+      >
 
-      <h3 class="heading-three my-0">HOME</h3>
+      <span class="heading-three my-0 heading-font">HOME</span>
 
-      <div class="navbar-toggle-icon">
+      <span class="navbar-toggle-icon">
         <i class="bi bi-chevron-down rotate-arrow fs-6 tp-common-white"></i>
-      </div>
-    </div>
+      </span>
+    </button>
 
     <div id="homeMenu" class="collapse navbar-dropdown-toggle" data-bs-parent="#mobileMenu">
       <div class="navbar-dropdown">
@@ -100,18 +103,17 @@
 
   <!-- ABOUT -->
   <div class="navbar-three-dropdown">
-    <div class="navbar-three-toggle d-flex align-items-center justify-content-between"
+    <button type="button" class="navbar-three-toggle d-flex align-items-center justify-content-between"
       data-bs-toggle="collapse"
       data-bs-target="#aboutMenu"
       aria-expanded="false"
       aria-controls="aboutMenu">
+      <span class="heading-three my-0 heading-font">ABOUT</span>
 
-      <h3 class="heading-three my-0">ABOUT</h3>
-
-      <div class="navbar-toggle-icon">
+      <span class="navbar-toggle-icon">
         <i class="bi bi-chevron-down rotate-arrow fs-6 tp-common-white"></i>
-      </div>
-    </div>
+      </span>
+    </button>
 
     <div id="aboutMenu" class="collapse navbar-dropdown-toggle" data-bs-parent="#mobileMenu">
       <div class="navbar-dropdown">
@@ -135,18 +137,17 @@
 
   <!-- SERVICE -->
   <div class="navbar-three-dropdown">
-    <div class="navbar-three-toggle d-flex align-items-center justify-content-between"
+    <button type="button" class="navbar-three-toggle d-flex align-items-center justify-content-between"
       data-bs-toggle="collapse"
       data-bs-target="#serviceMenu"
       aria-expanded="false"
       aria-controls="serviceMenu">
+      <span class="heading-three my-0 heading-font">SERVICE</span>
 
-      <h3 class="heading-three my-0">SERVICE</h3>
-
-      <div class="navbar-toggle-icon">
+      <span class="navbar-toggle-icon">
         <i class="bi bi-chevron-down rotate-arrow fs-6 tp-common-white"></i>
-      </div>
-    </div>
+      </span>
+    </button>
 
     <div id="serviceMenu" class="collapse navbar-dropdown-toggle" data-bs-parent="#mobileMenu">
       <div class="navbar-dropdown">
@@ -159,18 +160,18 @@
 
   <!-- BLOG -->
   <div class="navbar-three-dropdown">
-    <div class="navbar-three-toggle d-flex align-items-center justify-content-between"
+    <button type="button" class="navbar-three-toggle d-flex align-items-center justify-content-between"
       data-bs-toggle="collapse"
       data-bs-target="#blogMenu"
       aria-expanded="false"
       aria-controls="blogMenu">
+      <span class="heading-three my-0 heading-font">BLOG</span>
+      
 
-      <h3 class="heading-three my-0">BLOG</h3>
-
-      <div class="navbar-toggle-icon">
+      <span class="navbar-toggle-icon">
         <i class="bi bi-chevron-down rotate-arrow fs-6 tp-common-white"></i>
-      </div>
-    </div>
+      </span>
+    </button>
 
     <div id="blogMenu" class="collapse navbar-dropdown-toggle" data-bs-parent="#mobileMenu">
       <div class="navbar-dropdown">
@@ -183,18 +184,18 @@
 
   <!-- CONTACT -->
   <div class="navbar-three-dropdown">
-    <div class="navbar-three-toggle d-flex align-items-center justify-content-between"
+    <button type="button" class="navbar-three-toggle d-flex align-items-center justify-content-between"
       data-bs-toggle="collapse"
       data-bs-target="#contactMenu"
       aria-expanded="false"
       aria-controls="contactMenu">
+      <span class="heading-three my-0 heading-font">CONTACT</span>
+      
 
-      <h3 class="heading-three my-0">CONTACT</h3>
-
-      <div class="navbar-toggle-icon">
+      <span class="navbar-toggle-icon">
         <i class="bi bi-chevron-down rotate-arrow fs-6 tp-common-white"></i>
-      </div>
-    </div>
+      </span>
+    </button>
 
     <div id="contactMenu" class="collapse navbar-dropdown-toggle" data-bs-parent="#mobileMenu">
       <div class="navbar-dropdown">
@@ -211,7 +212,7 @@
                
                   <i class="bi bi-envelope no-shrink h-auto fs-3"></i>
                 <div class="tp-flex-vertical navbar-three-contacts gap-10">
-                  <h4 class="heading-four mb-0 mt-0">get in touch</h4>
+                  <h2 class="heading-four mb-0 mt-0">get in touch</h2>
                   <div>Phone: <a href="tel:8881234-5678" class="tp-text-body ">(888) 1234-5678</a>
                   </div>
                   <div>Email: <a href="mailto:info@example.com" class="tp-text-body text_mute">info@example.com</a>
@@ -222,7 +223,7 @@
                 <i class="bi bi-geo-alt no-shrink h-auto fs-3"></i>
               
                 <div class="tp-flex-vertical navbar-three-contacts gap-10">
-                  <h4 class="heading-four mb-0 mt-0">find us</h4>
+                  <h2 class="heading-four mb-0 mt-0">find us</h2>
                   <div>410 Sandtown, California 94001, USA</div>
                 </div>
               </div>
@@ -322,9 +323,9 @@
         what we do?
     </span>
 
-    <time class="col-6 text-end pb-10 " data-aos="fade-up" data-aos-delay="400">
+    <span class="col-6 text-end pb-10 " data-aos="fade-up" data-aos-delay="400">
         2025 / 26
-    </time>
+    </span>
 
     <span class="theme-border position-absolute bottom-0 start-0 w-100 mx-auto tp-clip-path-target"></span>
 
@@ -366,9 +367,9 @@
       <div class="h-100 tp-flex-center overflow-hidden position-relative image-wrapper">
         <img width="410" height="580" alt="Head Image" src="assets/img/portfolios/portfolios-3.webp" loading="lazy" class="tp-radius-30 h-100">
         <div class="tp-flex-vertical home-three-digital-hover-box">
-          <h4 class="heading-four hover-line transition-medium hover-hide">
+          <h3 class="heading-four hover-line transition-medium hover-hide">
             <span class="hover-line-bottom">product promotion</span>
-          </h4>
+          </h3>
           <p class="theme-pb-0 home-three-digital-description tp-common-white hover-hide-des transition-medium">
             Lorem ipsum dolor sit amet consect adipiscing ? gravida elit praesent.
           </p>
@@ -382,9 +383,9 @@
       <div class="h-100 tp-flex-center overflow-hidden position-relative">
         <img width="410" height="580" alt="Digital Image" src="assets/img/portfolios/portfolios-5.webp" loading="lazy" class="tp-radius-30 h-100">
         <div class="tp-flex-vertical home-three-digital-hover-box">
-          <h4 class="heading-four hover-line transition-medium hover-hide">
+          <h3 class="heading-four hover-line transition-medium hover-hide">
             <span class="hover-line-bottom d-inline">power of solution</span>
-          </h4>
+          </h3>
           <p class="theme-pb-0 home-three-digital-description tp-common-white hover-hide-des transition-medium">
             Lorem ipsum dolor sit amet consect adipiscing ? gravida elit praesent.
           </p>
@@ -398,9 +399,9 @@
       <div class="h-100 tp-flex-center overflow-hidden position-relative">
         <img width="410" height="580" alt="Digital Image" src="assets/img/portfolios/portfolios-1.webp" loading="lazy" class="tp-radius-30 h-100">
         <div class="tp-flex-vertical home-three-digital-hover-box">
-          <h4 class="heading-four hover-line transition-medium hover-hide">
+          <h3 class="heading-four hover-line transition-medium hover-hide">
             <span class="hover-line-bottom d-inline">Agile Development</span>
-          </h4>
+          </h3>
           <p class="theme-pb-0 home-three-digital-description tp-common-white hover-hide-des transition-medium">
             Lorem ipsum dolor sit amet consect adipiscing ? gravida elit praesent.
           </p>
@@ -420,7 +421,7 @@
       <div class="row">
        <div class="col-12 col-sm-8">
          <div class="skills-left-texts text-center text-sm-start">
-          <h5 class="heading-five pb-3">passion</h5>
+          <h3 class="heading-five pb-3">passion</h3>
           <div class="home-three-skills-description">
             <p class="theme-pb-0 tp-common-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim
               in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo
@@ -432,7 +433,7 @@
        </div>
        <div class="col-12  col-sm-4 d-flex justify-content-center align-items-center pt-4 pt-sm-0 d-sm-block">
          <div class="tp-flex-vertical skills-right-texts px-0 px-md-5">
-          <h5 class="heading-five pb-3 text-center w-100 text-sm-start">skills</h5>
+          <h3 class="heading-five pb-3 text-center w-100 text-sm-start">skills</h3>
           <div class="tp-flex-vertical skills-options justify-content-center align-items-center justify-content-sm-start align-items-sm-start">
             <a href="service-one.html" class="skills-options-wrapper tp-inline-block hover-line">
               <div class="tp-common-white hover-line-bottom d-inline">UI/UX Design</div>
@@ -588,9 +589,9 @@
           <div class="home-three-service-icon-wrap d-flex justify-content-center align-items-center position-relative mb-1 mb-md-0 transition-medium">
             <i class="bi bi-palette fs-3 tp-text-muted transition-medium service-icon-three"></i>
           </div>
-          <h4 class="heading-four hover-line">
+          <h3 class="heading-four hover-line">
             <span class="hover-line-bottom d-inline">graphic design</span>
-          </h4>
+          </h3>
         </div>
         <div class="tp-flex-horizontal home-three-service-description align-items-center col-12 col-md-6 flex-column flex-md-row">
           <p class="service-paragraph tp-common-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit dolor sit amet, consectetur adipiscing elit</p>
@@ -612,9 +613,9 @@
           <div class="home-three-service-icon-wrap d-flex justify-content-center align-items-center position-relative mb-1 mb-md-0 transition-medium">
             <i class="bi bi-brush fs-3 tp-text-muted transition-medium service-icon-three"></i>
           </div>
-          <h4 class="heading-four hover-line">
+          <h3 class="heading-four hover-line">
             <span class="hover-line-bottom d-inline">application design</span>
-          </h4>
+          </h3>
         </div>
         <div class="tp-flex-horizontal home-three-service-description align-items-center col-12 col-md-6 flex-column flex-md-row">
           <p class="service-paragraph tp-common-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit dolor sit amet, consectetur adipiscing elit</p>
@@ -635,9 +636,9 @@
           <div class="home-three-service-icon-wrap d-flex justify-content-center align-items-center position-relative mb-1 mb-md-0 transition-medium">
             <i class="bi bi-vector-pen fs-3 tp-text-muted transition-medium service-icon-three"></i>
           </div>
-          <h4 class="heading-four hover-line">
+          <h3 class="heading-four hover-line">
             <span class="hover-line-bottom d-inline">product branding</span>
-          </h4>
+          </h3>
         </div>
         <div class="tp-flex-horizontal home-three-service-description align-items-center col-12 col-md-6 flex-column flex-md-row">
           <p class="service-paragraph tp-common-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit dolor sit amet, consectetur adipiscing elit</p>
@@ -658,9 +659,9 @@
           <div class="home-three-service-icon-wrap d-flex justify-content-center align-items-center position-relative mb-1 mb-md-0 transition-medium">
             <i class="bi bi-ui-checks fs-3 tp-text-muted transition-medium service-icon-three"></i>
           </div>
-          <h4 class="heading-four hover-line">
+          <h3 class="heading-four hover-line">
             <span class="hover-line-bottom d-inline">ui/ux design</span>
-          </h4>
+          </h3>
         </div>
         <div class="tp-flex-horizontal home-three-service-description align-items-center col-12 col-md-6 flex-column flex-md-row">
           <p class="service-paragraph tp-common-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit dolor sit amet, consectetur adipiscing elit</p>
@@ -676,7 +677,6 @@
 
 </div>
       </div>
-    </div>
   </section>
   <!-- ===================================================
 			   Marquee text animation
@@ -813,8 +813,8 @@
                           class="tp-radius-30 mobile-image-full-width work-three-image">
                       </div>
                       <div class="tp-flex-vertical">
-                        <h4 class="heading-four mt-0 mb-15"><span class="hover-line-bottom d-inline">AI
-                            Interface Design</span></h4>
+                        <h2 class="heading-four mt-0 mb-15"><span class="hover-line-bottom d-inline">AI
+                            Interface Design</span></h2>
                         <p class="theme-pb-0">AI is revolutionizing the field of user interface
                           design.</p>
                       </div>
@@ -833,8 +833,8 @@
                           class="tp-radius-30 mobile-image-full-width work-three-image">
                       </div>
                       <div class="tp-flex-vertical">
-                        <h4 class="heading-four mt-0 mb-15"><span class="hover-line-bottom d-inline">Web
-                            &amp; Graphic Design</span></h4>
+                        <h2 class="heading-four mt-0 mb-15"><span class="hover-line-bottom d-inline">Web
+                            &amp; Graphic Design</span></h2>
                         <p class="theme-pb-0">Ideas brought to life across all platforms.</p>
                       </div>
                     </div>
@@ -852,8 +852,8 @@
                           class="tp-radius-30 mobile-image-full-width work-three-image">
                       </div>
                       <div class="tp-flex-vertical">
-                        <h4 class="heading-four mt-0 mb-15"><span class="hover-line-bottom d-inline">UI/Ux
-                            Design</span></h4>
+                        <h2 class="heading-four mt-0 mb-15"><span class="hover-line-bottom d-inline">UI/Ux
+                            Design</span></h2>
                         <p class="theme-pb-0">Design thinking for the Digital Age.</p>
                       </div>
                     </div>
@@ -871,8 +871,8 @@
                           class="tp-radius-30 mobile-image-full-width work-three-image">
                       </div>
                       <div class="tp-flex-vertical">
-                        <h4 class="heading-four mt-0 mb-15"><span class="hover-line-bottom d-inline">Product
-                            Design</span></h4>
+                        <h2 class="heading-four mt-0 mb-15"><span class="hover-line-bottom d-inline">Product
+                            Design</span></h2>
                         <p class="theme-pb-0">Emphasizes the product&#x27;s reliability.</p>
                       </div>
                     </div>
@@ -1072,7 +1072,7 @@
   <div class="col-12 col-sm-6 col-lg-4">
     <div class="newsletter tp-flex-vertical sm-pt-10 md-pt-20 " data-aos="fade-up" data-aos-delay="600">
 
-      <h5 class="heading-five mb-20">Newsletter</h5>
+      <h3 class="heading-five mb-20">Newsletter</h3>
 
       <div class="mb-20 tp-form">
 
