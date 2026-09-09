@@ -160,8 +160,8 @@
          * 
          * @since 1.0.0
          */
-       if ($('.tp-testimonial-slider').length) {
-    var processSlider = new Swiper('.tp-testimonial-slider', {
+         if ($('.tp-testimonial-slider.swiper').length) {
+     var processSlider = new Swiper('.tp-testimonial-slider.swiper', {
         slidesPerView: 1,
         spaceBetween: 25,
         loop: true,
