@@ -3618,6 +3618,7 @@ a:hover {
     width: 6px;
     height: 6px;
     transition: all var(--transition-medium) ease-in-out;
+    border-radius: 50%;
 }
 .small-tag-wrapper {
     grid-column-gap: 7px;
