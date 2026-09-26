@@ -36,10 +36,6 @@
         margin-bottom: 50px;
     }
 
-    .marquee-image-two {
-        bottom: 11%;
-    }
-
 
     .home-two-portfolio {
         padding-top: 145px;
@@ -217,9 +213,7 @@
         max-width: 728px;
     }
     
-    .team-hero-image-two, .team-hero-image-one{
-        display: none;
-    }
+    
     .header-main .container {
         background-color: rgb(5, 6, 16);
     }
@@ -618,10 +612,6 @@
         padding-top: 0;
 
     }
-    .about-one-mission-image {
-        max-width: none;
-    }
-
     .about-one-counter-right {
         grid-template-rows: auto;
         grid-template-columns: 1fr 1fr;

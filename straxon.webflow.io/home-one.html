@@ -190,12 +190,12 @@
             </div>
 
             <figure class="little-boy-image-wrapper parallax-img-two" data-aos="zoom-in" data-aos-delay="900">
-              <img width="177" loading="lazy" alt="Cartoon Image" src="assets/img/hero/hero-boy-img.webp"
+              <img width="344" loading="lazy" alt="Cartoon Image" src="assets/img/hero/hero-boy-img.png"
                 class="home-one-hero-images" >
             </figure>
 
             <figure class="girl-image-wrapper parallax-img-one">
-              <img width="310" alt="Girl With Laptop" src="assets/img/hero/hero-girl-img.webp" loading="lazy"
+              <img width="410" height="560" alt="Girl With Laptop" src="assets/img/hero/hero-girl-img.png" loading="lazy"
                 class="home-one-hero-images" data-aos="zoom-in" data-aos-delay="700">
               <div class="girl-image-glow"></div>
             </figure>
@@ -263,18 +263,24 @@ tp-flex-center flex-column gap-30 position-relative  pt-50 pb-70 md-pt-40 md-pb-
   <!-- ===================================================
 			   our story
 			==================================================== -->
-  <section>
-    <div class="container-fluid">
+  <section class="image-scroll-section">
+  <div class="container-fluid">
 
-      <div class="tp-clip-path-wrapper overflow-hidden tp-radius-20 position-relative">
+    <!-- Image wrapper -->
+    <div class="story-image-wrapper tp-radius-20">
 
-        <img class="tp-clip-path-target w-100" src="assets/img/home-one-story/story-big-image.webp" width="1290" height="572"
-          alt="Image" loading="lazy">
-
-      </div>
+      <img
+        class="scroll-image"
+        src="assets/img/home-one-story/story-big-image.webp"
+        width="1290"
+        height="572"
+        alt="Image"
+        loading="lazy">
 
     </div>
-  </section>
+
+  </div>
+</section>
   <div class="tp-home-about-story mt-80 md-mt-30">
     <!-- ===================================================
 		Home popup vide
@@ -323,7 +329,7 @@ tp-flex-center position-absolute ">
     <!-- ===================================================
 		      home  service
 			==================================================== -->
-    <section class="home-service pb-60 md-pb-50">
+    <section class="home-service  ">
       <div class="container ">
         <div class="tp-flex-vertical home-service-main">
           <div class="row">
@@ -409,7 +415,7 @@ tp-flex-center position-absolute ">
 			  double marquee wrapper
 			==================================================== -->
   <section class="overflow-hidden">
-    <div class="double-marquee-wrapper tp-flex-center flex-column pt-160 pb-150 md-p0">
+    <div class="double-marquee-wrapper tp-flex-center flex-column pt-120  md-pt-70">
       <div class="tp-flex-horizontal double-marquees">
         <div class="tp-flex-horizontal marquee-train marquee-train-left base-transform">
           <div class="marquee-text">graphic design</div>
@@ -480,26 +486,13 @@ tp-flex-center position-absolute ">
           <div class="marquee-text stroke">content creator</div>
         </div>
       </div>
-      <div class="marquee-image-wrapper d-none d-xl-flex align-items-center justify-content-center">
-        <div class="marquee-image-one tp-flex-center">
-          <img class="tp-radius-20 marquee-image-three position-absolute" src="assets/img/marquee/marquee-3.webp"
-            width="320" height="380" alt="Marquee Image" loading="lazy">
-          <img class="tp-radius-20 marquee-image-two tp-flex-center" src="assets/img/marquee/marquee-2.webp" width="320"
-            height="380" alt="Marquee Image" loading="lazy">
-          <img class="tp-radius-20 image-one" src="assets/img/marquee/marquee-1.webp" width="320" height="380"
-            alt="Marquee Image" loading="lazy">
-        </div>
-        <div class="marquee-image-two tp-flex-center">
-          <img width="320" height="380" alt="Marquee Image" src="assets/img/marquee//marquee-bg.webp" loading="lazy"
-            class="tp-radius-20">
-        </div>
-      </div>
+     
     </div>
   </section>
   <!-- ===================================================
 			  Recent portfolio
 			==================================================== -->
-  <section class="home-one-work pt-90 md-pb-70  pb-40 position-relative">
+  <section class="home-one-work pt-120 md-pb-70  pb-40 position-relative">
 
     <div class="container-fluid">
       <div class="mb-70 md-mb-50 sm-mb-30">
@@ -1040,8 +1033,8 @@ tp-flex-center position-absolute ">
             </div>
           </div>
           <div class="col-12 col-lg-6 pt-3 py-lg-0">
-            <div class="w-100 home-digital-solutions-image overflow-hidden " data-aos="fade-up" data-aos-delay="700">
-              <img width="590" height="776" alt="Abstract Image" src="assets/img/feature/fea-1.webp" loading="lazy"
+            <div class="w-100 overflow-hidden " data-aos="fade-up" data-aos-delay="700">
+              <img width="590" height="776" alt="Abstract Image" src="assets/img/why-choose-us/why-choose-us-1.webp" loading="lazy"
                 class="tp-radius-30 home-digital-image img-hover-3d w-100">
             </div>
           </div>
@@ -1211,7 +1204,23 @@ tp-flex-center position-absolute ">
   <script src="assets/js/gsap-effects.js"></script>
   <script src="assets/js/slider-init.js"></script>
   <script src="assets/js/parallax.js"></script>
+   <script>
+    gsap.registerPlugin(ScrollTrigger);
 
+    gsap.to(".story-image-wrapper .scroll-image", {
+        y: -30,
+        ease: "none",
+
+        scrollTrigger: {
+            trigger: ".story-image-wrapper",
+            start: "top bottom",
+            end: "bottom top",
+            scrub: 1,
+
+            // markers: true
+        }
+    });
+</script>
   <!-- 3. MAIN JS - ALWAYS LAST -->
   <script src="assets/js/main.js"></script>
 </body>
