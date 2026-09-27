@@ -2036,14 +2036,9 @@ a:hover {
 
 .home-one-services-item {
     background: transparent;
-    border: 0;
-    border-top: 1px solid var(--tp-border-color);
-    border-radius: 0 !important;
+    border-radius: 0 ;
 }
 
-.home-one-services-item:last-child {
-    border-bottom: 1px solid var(--tp-border-color);
-}
 
 .home-one-services-toggle,
 .home-one-services-toggle:not(.collapsed) {
@@ -2101,10 +2096,16 @@ a:hover {
 }
 
 .home-one-services-copy {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
     max-width: 330px;
-    
 }
-.home-one-services-btn{max-width:200px}
+
+.home-one-services-btn {
+    max-width: 200px;
+    margin-top: auto;
+}
 .home-one-services-description {
     margin: 0 0 18px;
     color: var(--tp-body-text-color);
