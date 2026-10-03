@@ -3108,6 +3108,14 @@ filter: brightness(0) saturate(100%) invert(76%) sepia(18%) saturate(518%) hue-r
     align-items: center;
     display: flex;
     position: relative;
+    overflow: hidden;
+}
+
+.home-one-work .portfolio-card-image > img {
+    display: block;
+    width: 100%;
+    height: auto;
+    will-change: transform;
 }
 
 .portfolio-one-text {

@@ -2,47 +2,47 @@
 // COUNTER ANIMATION
 // ============================================
 
-(function ($) {
+(function () {
     "use strict";
 
-    var counterStarted = false;
+    gsap.registerPlugin(ScrollTrigger);
 
-    function startCounter() {
-        if (counterStarted) {
-            return;
-        }
+    var counters = document.querySelectorAll(".counter-wrapper");
 
-        $('.counter-wrapper').each(function () {
-            var $counter = $(this);
-            var target = parseInt($counter.attr('data-target'), 10);
-            var count = 0;
-
-            var interval = setInterval(function () {
-                count++;
-
-                $counter.text(count < 10 ? '0' + count : count);
-
-                if (count >= target) {
-                    clearInterval(interval);
-                }
-            }, 40);
-        });
-
-        counterStarted = true;
+    if (!counters.length) {
+        return;
     }
 
-    $(window).on('scroll', function () {
-        var $section = $('.counters-wrapper');
+    counters.forEach(function (counter) {
+        var target = parseInt(counter.getAttribute("data-target"), 10);
 
-        if (!$section.length || counterStarted) {
+        if (isNaN(target)) {
             return;
         }
 
-        var sectionTop = $section.offset().top - window.innerHeight + 100;
+        var counterValue = { value: 0 };
 
-        if ($(window).scrollTop() > sectionTop) {
-            startCounter();
-        }
+        gsap.to(counterValue, {
+            value: target,
+            duration: 2,
+            ease: "power2.out",
+
+            scrollTrigger: {
+                trigger: counter.closest(".counters-wrapper"),
+                start: "top 85%",
+                once: true
+            },
+
+            onUpdate: function () {
+                var value = Math.floor(counterValue.value);
+
+                counter.textContent = value < 10 ? "0" + value : value;
+            },
+
+            onComplete: function () {
+                counter.textContent = target < 10 ? "0" + target : target;
+            }
+        });
     });
 
-})(jQuery);
+})();

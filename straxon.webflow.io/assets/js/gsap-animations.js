@@ -64,48 +64,89 @@
         /* ===============================
            FOUR CARDS REVEAL ANIMATION
         =============================== */
-        var workItems = gsap.utils.toArray(".tp-clip-path-wrapper");
-        if (workItems.length > 0) {
-            workItems.forEach(function(container) {
-                var revealMedia = container.querySelector(".tp-clip-path-target");
-                if (!revealMedia) return;
+        // var workItems = gsap.utils.toArray(".tp-clip-path-wrapper");
+        // if (workItems.length > 0) {
+        //     workItems.forEach(function(container) {
+        //         var revealMedia = container.querySelector(".tp-clip-path-target");
+        //         if (!revealMedia) return;
 
-                gsap.set(container, {
-                    autoAlpha: 1,
-                    overflow: "hidden"
-                });
+        //         gsap.set(container, {
+        //             autoAlpha: 1,
+        //             overflow: "hidden"
+        //         });
 
-                gsap.fromTo(
-                    revealMedia,
-                    {
-                        clipPath: "polygon(50% 0%, 50% 0%, 50% 100%, 50% 100%)",
-                        scale: 1.2
-                    },
-                    {
-                        clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
-                        scale: 1,
-                        duration: 1.5,
-                        ease: "power4.inOut",
-                        scrollTrigger: {
-                            trigger: container,
-                            start: "top bottom",
-                            toggleActions: "play none none none",
-                            once: true,
-                        }
-                    }
-                );
-            });
+        //         gsap.fromTo(
+        //             revealMedia,
+        //             {
+        //                 clipPath: "polygon(50% 0%, 50% 0%, 50% 100%, 50% 100%)",
+        //                 scale: 1.2
+        //             },
+        //             {
+        //                 clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
+        //                 scale: 1,
+        //                 duration: 1.5,
+        //                 ease: "power4.inOut",
+        //                 scrollTrigger: {
+        //                     trigger: container,
+        //                     start: "top bottom",
+        //                     toggleActions: "play none none none",
+        //                     once: true,
+        //                 }
+        //             }
+        //         );
+        //     });
+        // }
+
+       
+        // HOME ONE ABOUT US 
+          gsap.registerPlugin(ScrollTrigger);
+
+    gsap.to(".story-image-wrapper .scroll-image", {
+      y: -30,
+      ease: "none",
+
+      scrollTrigger: {
+        trigger: ".story-image-wrapper",
+        start: "top bottom",
+        end: "bottom top",
+        scrub: 1,
+
+        // markers: true
+      }
+    });
+
+
+    // HOME ONE PORTFOLIO
+    var portfolioImages = gsap.utils.toArray(".home-one-work .portfolio-card-image > img");
+
+    portfolioImages.forEach(function (image) {
+      var imageFrame = image.closest(".portfolio-card-image");
+      if (!imageFrame) return;
+
+      gsap.to(image, {
+        y: function () {
+          return window.matchMedia("(max-width: 767px)").matches ? -16 : -32;
+        },
+        scale: 1.1,
+        ease: "none",
+        scrollTrigger: {
+          trigger: imageFrame,
+          start: "top bottom",
+          end: "bottom top",
+          scrub: 2,
+          invalidateOnRefresh: true
         }
+      });
+    });
 
-
-
+  
         // **********************
         // caer active
          // **********************
         gsap.registerPlugin(ScrollTrigger);
         const cards = document.querySelectorAll(".process-card");
         const flexContainer = document.getElementById("processFlex");
-        if (!cards.length || !flexContainer) return;
+        if (cards.length && flexContainer) {
 
         let activeIndex = 0;
 
@@ -251,6 +292,7 @@
             if (i === activeIndex) card.classList.add("active");
             else card.classList.remove("active");
           });
+        }
         }
 
 

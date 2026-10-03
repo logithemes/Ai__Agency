@@ -1507,23 +1507,7 @@ tp-flex-center position-absolute ">
   <script src="assets/js/gsap-effects.js"></script>
   <script src="assets/js/slider-init.js"></script>
   <script src="assets/js/parallax.js"></script>
-  <script>
-    gsap.registerPlugin(ScrollTrigger);
-
-    gsap.to(".story-image-wrapper .scroll-image", {
-      y: -30,
-      ease: "none",
-
-      scrollTrigger: {
-        trigger: ".story-image-wrapper",
-        start: "top bottom",
-        end: "bottom top",
-        scrub: 1,
-
-        // markers: true
-      }
-    });
-  </script>
+  
   <!-- 3. MAIN JS - ALWAYS LAST -->
   <script src="assets/js/main.js"></script>
 </body>
