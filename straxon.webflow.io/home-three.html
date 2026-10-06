@@ -22,7 +22,7 @@
 			==================================================== -->
   <section>
     <div id="preloader">
-      <div id="ctn_preloader" class="ctn_preloader">
+      <div id="ctn_preloader" class="ctn_preloader d-none">
         <div class="animation-preloader">
           <div class="spinner"></div>
           <div class="txt-loading">
@@ -246,6 +246,7 @@
               </div>
             </div>
           </div>
+          
         </div>
         </div>
       </div>
@@ -253,98 +254,79 @@
     <!-- ===================================================
 				Home three hero
 				==================================================== -->
-    <section class="home-three-hero  position-relative pt-220 sm-pt-120">
-      <div class="container">
-      <div class=" home-three-hero-main row">
 
-  <div class="col-12 col-md-6 col-lg-5">
-    <div class="home-three-hero-image">
-      <div class="overflow-hidden w-100 h-100" data-aos="fade-up" data-aos-delay="500">
-        <img width="425" height="610" alt="Digital Image" src="assets/img/hero/hero-3.webp" loading="lazy"
-          class="tp-radius-30">
+    <section class="home-three-hero" data-home-three-hero aria-labelledby="home-three-hero-title">
+      <div class="home-three-hero-art" aria-hidden="true">
+        <img src="assets/img/hero/hero-3.png" alt="" width="1536" height="1024" data-home-three-hero-image>
       </div>
-    </div>
-  </div>
+      <div class="home-three-hero-shade" aria-hidden="true"></div>
+      <div class="home-three-hero-content container  d-flex flex-column justify-content-between">
+       
 
-  <div class="col-12 col-md-6 col-lg-7">
-    <div class="tp-flex-vertical home-three-hero-text sm-pt-50 theme-pt-0 tp-pl-40">
-      
-      <div class="section-subtitle tp-flex-horizontal small-tag-wrapper justify-content-center " data-aos="fade-up" data-aos-delay="1000">
-        <span class="dot"></span>
-        <span class="text-capitalize">digital agency</span>
-      </div>
+        <div class="home-three-hero-middle">
+          <h1 class="home-three-hero-title mb-0 mt-0" id="home-three-hero-title">STYNERО STUDIO</h1>
+          <div class="home-three-hero-services d-flex justify-content-between flex-wrap pt-140 pb-120">
+            <span>BRANDING</span>
+            <span>ART DIRECTION</span>
+            <span>DESIGN</span>
+            <span>DEVELOPMENT</span>
+            <span>PRODUCTION</span>
+          </div>
+        </div>
 
-      <div class="tp-flex-vertical home-three-hero-heading  mt-25 mb-25" data-aos="fade-up" data-aos-delay="1000">
-        <h1 class="heading-one mt-0 mb-0">
-  <span>We</span>
-  <span>design</span>
-  <span>Creative</span>
-     <span class="heading-one text-gradiant">Websites</span>
-  <img 
-    width="50" 
-    height="59" 
-    alt="Icon" 
-    src="assets/img/icons/flower.svg" 
-    loading="lazy"
-    class="tp-flower mt-0 mx-3 rotate-ani">
-</h1>
-      
-      </div>
-
-      <div class="home-three-hero-description">
-        <img width="104" height="89" alt="Icon" src="assets/img/shapes/line-3.svg" loading="lazy"
-          class="arrow-icon">
-        <p class=" pb-20 " data-aos="fade-up" data-aos-delay="600">
-          Lorem ipsum dolor sit amet consetetur adipiscing elit <br class="d-md-block d-none"> vestibulum rhoncus efficitur enon hendrerit.
-        </p>
-      </div>
-      <div class=" mt-20" data-aos="fade-up" data-aos-delay="1000"> 
-         <a href="service-one.html" class="tp-button-wrapper tp-flex-center">
-              <span class="tp-button-text">
-                <span class="tp-button-front">Explore service</span>
-                <span class="tp-button-back">Explore service</span>
-              </span>
-              <span class="tp-button-icon">
-                <span class="tp-button-arrow">
-                  <i class="bi bi-arrow-right"></i>
-                  <i class="bi bi-arrow-right"></i>
-                </span>
-              </span>
-            </a> 
-      </div>
-      
-    </div>
-  </div>
-
-</div>
-   <div class=" row position-relative sm-pt-50 pb-10 pt-120 tp-clip-path-wrapper">
-
-    <span class="text-capitalize col-6 pb-10 " data-aos="fade-up" data-aos-delay="200">
-        what we do?
-    </span>
-
-    <span class="col-6 text-end pb-10 " data-aos="fade-up" data-aos-delay="400">
-        2025 / 26
-    </span>
-
-    <span class="theme-border position-absolute bottom-0 start-0 w-100 mx-auto tp-clip-path-target"></span>
-
-</div>
-
-      </div>
-      <div class="banner-marquee-wrap tp-zoom-in" data-aos="zoom-in" data-aos-delay="1000">
-        <div class="banner-marquee-inner home-three-marquee d-inline-flex text-nowrap">
-          <span class="banner-marquee-text heading-font">Creative Solutions that Drive Success</span>
-          <span class="banner-marquee-text heading-font">Creative Solutions that Drive Success</span>
+        <div class="home-three-hero-bottom d-flex flex-column align-items-center">
+          <p class="home-three-hero-description text-center mb-40">
+         Rydge is a full-service creative studio crafting beautiful digital experiences. We are an award-winning design and art collective specializing in branding and digital engineering.
+          </p>
+         <a href="contact-one.html" class="tp-button-wrapper tp-flex-center">
+                  <span class="tp-button-text">
+                    <span class="tp-button-front">Get in touch</span>
+                    <span class="tp-button-back">Get in touch</span>
+                  </span>
+                  <span class="tp-button-icon">
+                    <span class="tp-button-arrow">
+                      <i class="bi bi-arrow-right"></i>
+                      <i class="bi bi-arrow-right"></i>
+                    </span>
+                  </span>
+                </a>
+          <div class="home-three-hero-meta d-flex justify-content-between align-items-center w-100">
+            <span>PORTFOLIO / ©2026</span>
+            <a href="#what-we-do" class="home-three-hero-scroll d-inline-flex align-items-center">
+              SCROLL DOWN <i class="bi bi-arrow-down-right" aria-hidden="true"></i>
+            </a>
+          </div>
         </div>
       </div>
-
     </section>
+
+    <script>
+      (() => {
+        const hero = document.querySelector('[data-home-three-hero]');
+        const image = hero?.querySelector('[data-home-three-hero-image]');
+        const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+
+        if (!hero || !image || reduceMotion.matches || !window.matchMedia('(pointer: fine)').matches) return;
+
+        hero.addEventListener('pointermove', (event) => {
+          const bounds = hero.getBoundingClientRect();
+          const x = (event.clientX - bounds.left) / bounds.width - 0.5;
+          const y = (event.clientY - bounds.top) / bounds.height - 0.5;
+          image.style.setProperty('--hero-shift-x', `${x * -14}px`);
+          image.style.setProperty('--hero-shift-y', `${y * -10}px`);
+        });
+
+        hero.addEventListener('pointerleave', () => {
+          image.style.setProperty('--hero-shift-x', '0px');
+          image.style.setProperty('--hero-shift-y', '0px');
+        });
+      })();
+    </script>
   </div>
   <!-- ===================================================
 				what we do
 				==================================================== -->
-  <section class="home-three-digital pt-120 md-pb-60 pb-120 overflow-hidden">
+  <section class="home-three-digital pt-120 md-pb-60 pb-120 overflow-hidden" id="what-we-do">
     <div class="container">
       <div class="row">
         <div class="col-12 mx-auto mb-60 md-mb-30">
@@ -929,6 +911,8 @@
                         </div>
                       </div>
 
+                      
+
                     </div>
                   </div>
                 </div>
@@ -1146,4 +1130,91 @@
 </html>
 
 
+<!-- 
+<section class="home-three-hero  position-relative pt-220 sm-pt-120">
+      <div class="container">
+      <div class=" home-three-hero-main row">
 
+  <div class="col-12 col-md-6 col-lg-5">
+    <div class="home-three-hero-image">
+      <div class="overflow-hidden w-100 h-100" data-aos="fade-up" data-aos-delay="500">
+        <img width="425" height="610" alt="Digital Image" src="assets/img/hero/hero-3.webp" loading="lazy"
+          class="tp-radius-30">
+      </div>
+    </div>
+  </div>
+
+  <div class="col-12 col-md-6 col-lg-7">
+    <div class="tp-flex-vertical home-three-hero-text sm-pt-50 theme-pt-0 tp-pl-40">
+      
+      <div class="section-subtitle tp-flex-horizontal small-tag-wrapper justify-content-center " data-aos="fade-up" data-aos-delay="1000">
+        <span class="dot"></span>
+        <span class="text-capitalize">digital agency</span>
+      </div>
+
+      <div class="tp-flex-vertical home-three-hero-heading  mt-25 mb-25" data-aos="fade-up" data-aos-delay="1000">
+        <h1 class="heading-one mt-0 mb-0">
+  <span>We</span>
+  <span>design</span>
+  <span>Creative</span>
+     <span class="heading-one text-gradiant">Websites</span>
+  <img 
+    width="50" 
+    height="59" 
+    alt="Icon" 
+    src="assets/img/icons/flower.svg" 
+    loading="lazy"
+    class="tp-flower mt-0 mx-3 rotate-ani">
+</h1>
+      
+      </div>
+
+      <div class="home-three-hero-description">
+        <img width="104" height="89" alt="Icon" src="assets/img/shapes/line-3.svg" loading="lazy"
+          class="arrow-icon">
+        <p class=" pb-20 " data-aos="fade-up" data-aos-delay="600">
+          Lorem ipsum dolor sit amet consetetur adipiscing elit <br class="d-md-block d-none"> vestibulum rhoncus efficitur enon hendrerit.
+        </p>
+      </div>
+      <div class=" mt-20" data-aos="fade-up" data-aos-delay="1000"> 
+         <a href="service-one.html" class="tp-button-wrapper tp-flex-center">
+              <span class="tp-button-text">
+                <span class="tp-button-front">Explore service</span>
+                <span class="tp-button-back">Explore service</span>
+              </span>
+              <span class="tp-button-icon">
+                <span class="tp-button-arrow">
+                  <i class="bi bi-arrow-right"></i>
+                  <i class="bi bi-arrow-right"></i>
+                </span>
+              </span>
+            </a> 
+      </div>
+      
+    </div>
+  </div>
+
+</div>
+   <div class=" row position-relative sm-pt-50 pb-10 pt-120 tp-clip-path-wrapper">
+
+    <span class="text-capitalize col-6 pb-10 " data-aos="fade-up" data-aos-delay="200">
+        what we do?
+    </span>
+
+    <span class="col-6 text-end pb-10 " data-aos="fade-up" data-aos-delay="400">
+        2025 / 26
+    </span>
+
+    <span class="theme-border position-absolute bottom-0 start-0 w-100 mx-auto tp-clip-path-target"></span>
+
+</div>
+
+      </div>
+      <div class="banner-marquee-wrap tp-zoom-in" data-aos="zoom-in" data-aos-delay="1000">
+        <div class="banner-marquee-inner home-three-marquee d-inline-flex text-nowrap">
+          <span class="banner-marquee-text heading-font">Creative Solutions that Drive Success</span>
+          <span class="banner-marquee-text heading-font">Creative Solutions that Drive Success</span>
+        </div>
+      </div>
+
+    </section> -->

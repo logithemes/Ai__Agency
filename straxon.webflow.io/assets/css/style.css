@@ -1140,10 +1140,9 @@ a:hover {
 
 .navbar-three {
     z-index: 999;
-    border-bottom: 1px solid var(--tp-border-color);
     position: absolute;
     inset: 0% 0% auto;
-    background-color: #050610;
+    background: transparent;
 }
 
 .navbar-three-menu-right {
@@ -1342,21 +1341,230 @@ a:hover {
     flex-flow: wrap;
 }
 
-
+/* Home Three hero banner: image-led layout, responsive typography, and pointer parallax. */
 .home-three-hero {
-    background-image: radial-gradient(circle at 20% 64%, #f4497270, #f4497200 14%),
-        radial-gradient(circle at 36% 32%, #b460f170, #b460f100 19%);
     position: relative;
     overflow: hidden;
+    isolation: isolate;
+    color: var(--tp-common-white);
+    background: #090708;
+    background-image: url('../img/hero/hero-three-bg.png');
+    background-position: top center;
+    background-size: cover;
 }
 
-.home-three-hero-main {
-    z-index: 5;
+.home-three-hero-art,
+.home-three-hero-shade {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+}
+
+.home-three-hero-art {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.home-three-hero-art img {
+    width: min(88vw, 1420px);
+    height: 96%;
+    object-fit: contain;
+    object-position: center bottom;
+    transform: translate3d(var(--hero-shift-x, 0px), var(--hero-shift-y, 0px), 0) scale(1.025);
+    transition: transform 500ms ease-out;
+    will-change: transform;
+    filter: grayscale(100);
+}
+
+.home-three-hero-shade {
+    z-index: 1;
+    background: linear-gradient(180deg, rgba(8, 6, 7, 0.18), rgba(8, 6, 7, 0.08) 45%, #090708 100%),
+        linear-gradient(90deg, #090708 0%, rgba(9, 7, 8, 0.22) 38%, rgba(9, 7, 8, 0.12) 68%, #090708 100%);
+}
+
+.home-three-hero-content {
+    z-index: 2;
     position: relative;
+    min-height: 100vh;
+    min-height: 100svh;
+    padding: 128px 3vw 28px;
 }
 
-.home-three-hero-image{width: 100%;height:100%}
-.home-three-hero-image img{height:100%;object-position: right;width: 100%;}
+.home-three-hero-kicker,
+.home-three-hero-location,
+.home-three-hero-services,
+.home-three-hero-meta {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.home-three-hero-kicker,
+.home-three-hero-location,
+.home-three-hero-services,
+.home-three-hero-description,
+.home-three-hero-meta {
+    text-shadow: 0 1px 12px rgba(0, 0, 0, 0.6);
+}
+
+.home-three-hero-title {
+    position: relative;
+    z-index: 1;
+    font-family: var(--tp-font-heading);
+    font-size: 190px;
+    font-weight: 400;
+    line-height: 0.82;
+    white-space: nowrap;
+    color: #f5f1ef;
+    text-shadow: 0 4px 38px rgba(0, 0, 0, 0.28);
+    text-align: center;
+}
+
+.home-three-hero-services {
+    position: relative;
+    z-index: 1;
+    gap: 16px 24px;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.home-three-hero-bottom {
+    position: relative;
+    z-index: 1;
+}
+
+.home-three-hero-description {
+    max-width: 590px;
+    color: rgba(255, 255, 255, 0.88);
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 1.6;
+}
+
+
+.home-three-hero-meta {
+    position: absolute;
+    right: 3vw;
+    bottom: 28px;
+    left: 3vw;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.home-three-hero-scroll {
+    gap: 8px;
+    color: inherit;
+    transition: color 200ms ease;
+}
+
+.home-three-hero-scroll:hover {
+    color: #ff594a;
+}
+
+.home-three-hero-scroll i {
+    font-size: 16px;
+}
+
+@media (max-width: 1199px) {
+    .home-three-hero-title {
+        font-size: 150px;
+    }
+
+    .home-three-hero-services {
+        margin-top: 58px;
+    }
+}
+
+@media (max-width: 767px) {
+    [data-home-three-hero] {
+        min-height: 670px;
+        min-height: min(100svh, 670px);
+    }
+
+    [data-home-three-hero] .home-three-hero-content {
+        min-height: 670px;
+        min-height: min(100svh, 670px);
+        padding: 218px 24px 36px;
+    }
+
+    [data-home-three-hero] .home-three-hero-art {
+        justify-content: center;
+    }
+
+    [data-home-three-hero] .home-three-hero-art img {
+        width: 100%;
+        max-width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center center;
+        transform: translate3d(var(--hero-shift-x, 0px), var(--hero-shift-y, 0px), 0) scale(1.02);
+    }
+
+    [data-home-three-hero] .home-three-hero-title {
+        font-size: 56px;
+        line-height: 0.95;
+        white-space: nowrap;
+    }
+
+    [data-home-three-hero] .home-three-hero-services,
+    [data-home-three-hero] .home-three-hero-meta {
+        display: none !important;
+    }
+
+    [data-home-three-hero] .home-three-hero-description {
+        max-width: 500px;
+        margin-bottom: 40px;
+        font-size: 19px;
+        line-height: 1.6;
+    }
+
+    [data-home-three-hero] .tp-button-wrapper {
+        width: 272px;
+        max-width: 100%;
+        min-height: 76px;
+        justify-content: space-between;
+        padding: 10px 34px;
+        font-size: 20px;
+    }
+
+    [data-home-three-hero] .tp-button-icon {
+        width: 48px;
+        height: 48px;
+        flex: 0 0 48px;
+    }
+
+    [data-home-three-hero] .home-three-hero-bottom {
+        width: 100%;
+    }
+}
+
+@media (max-width: 479px) {
+    [data-home-three-hero] {
+        min-height: 640px;
+        min-height: min(100svh, 670px);
+    }
+
+    [data-home-three-hero] .home-three-hero-content {
+        min-height: 640px;
+        min-height: min(100svh, 670px);
+        padding: 200px 18px 32px;
+    }
+
+    [data-home-three-hero] .home-three-hero-title {
+        font-size: 40px;
+    }
+
+    [data-home-three-hero] .home-three-hero-description {
+        font-size: 16px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .home-three-hero-art img
+    .home-three-hero-scroll {
+        transition: none;
+    }
+}
+
 .tp-flower {
     align-self: flex-end;
     margin-bottom: 20px;
