@@ -558,12 +558,6 @@
 
   
 
-    .home-three-service-cards {
-        padding-top: 35px;
-        padding-bottom: 35px;
-    }
-
-
     .home-three-digital {
         padding-bottom: 65px;
     }
@@ -599,12 +593,6 @@
         transform: translateY(0);
         opacity: 1;
     }
-
-    .home-three-service-description {
-        grid-column-gap: 30px;
-        grid-row-gap: 30px;
-    }
-
 
     .tp-recent-work-boxes {
         grid-column-gap: 30px;
@@ -983,6 +971,48 @@
 }
 
 @media screen and (max-width: 767px) {
+    .home-two-testimonial-slide {
+        min-height: 0;
+        grid-template-columns: minmax(0, 1fr);
+        gap: 14px;
+        padding: 12px;
+    }
+
+    .home-two-testimonial-copy {
+        min-height: 310px;
+        padding: 16px 14px 58px;
+    }
+
+    .home-two-testimonial-quote p {
+        font-size: 21px;
+    }
+
+    .home-two-testimonial-footer {
+        gap: 12px;
+        padding-top: 20px;
+    }
+
+    .home-two-testimonial-logo {
+        width: 112px;
+    }
+
+    .home-two-testimonial-portrait {
+        height: 300px;
+    }
+
+    .home-two-testimonial-portrait img {
+        min-height: 0;
+        object-position: center 32%;
+    }
+
+    .home-two-testimonial-controls {
+        left: auto;
+        right: 18px;
+        bottom: 24px;
+    }
+}
+
+@media screen and (max-width: 767px) {
     .service-three-cards-content i{font-size: 40px;}
     .faq-border{padding:8px 0 8px 0}
     .hero-details-text{    font-size: 14px;
@@ -1297,26 +1327,6 @@
         align-items: center;
     }
 
-    .home-three-service-cards {
-        text-align: center;
-        flex-flow: column;
-        padding-left: 10px;
-        padding-right: 10px;
-    }
-
-    .home-three-service-cards.home-three-service-cards-one {
-        border-right: 1px solid var(--border-color);
-    }
-
-    .home-three-service-cards.home-three-service-cards-three {
-        border-bottom-style: none;
-        border-right: 1px solid var(--border-color);
-    }
-
-    .home-three-service-cards.home-three-service-cards-four {
-        border-bottom-style: none;
-    }
-
     .home-three-hero-heading {
         grid-column-gap: 10px;
         grid-row-gap: 0px;
@@ -1337,10 +1347,6 @@
         line-height: 28px;
     }
 
-    .home-three-box {
-        padding-left: 0;
-        padding-right: 0;
-    }
 
     .tp-flower {
         display: none;
@@ -1887,19 +1893,7 @@
         flex-flow: column;
     }
 
-    .home-three-service-cards.home-three-service-cards-one {
-        border-right-style: none;
-    }
-
-    .home-three-service-cards.home-three-service-cards-three {
-        border-bottom-style: solid;
-        border-right-style: none;
-    }
-
-    .home-three-service-cards.home-three-service-cards-four {
-        border-bottom-style: solid;
-    }
-
+   
     .skills-left-texts {
         text-align: center;
         flex-flow: column;

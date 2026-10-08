@@ -199,6 +199,26 @@
     });
 }
 
+        /**
+         * 7. Home Two Testimonial Slider
+         * Shows one client quote and portrait at a time
+         */
+        if ($('.home-two-testimonial-slider').length) {
+            var homeTwoTestimonialSlider = new Swiper('.home-two-testimonial-slider', {
+                loop: true,
+                speed: 700,
+                slidesPerView: 1,
+                grabCursor: true,
+                navigation: {
+                    nextEl: '.home-two-testimonial-next',
+                    prevEl: '.home-two-testimonial-prev',
+                },
+                keyboard: {
+                    enabled: true,
+                },
+            });
+        }
+
 }); // End document ready
 
 })(jQuery);

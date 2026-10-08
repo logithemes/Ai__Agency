@@ -1891,95 +1891,6 @@ filter: brightness(0) saturate(100%) invert(76%) sepia(18%) saturate(518%) hue-r
     transition: all 0.2s ease;
 }
 
-.home-three-service-icon-wrap {
-    border: 1px solid #6a6fa0;
-    border-radius: 5px;
-    width: 50px;
-    height: 50px;
-
-}
-
-.home-three-service-cards {
-    z-index: 3;
-    border-bottom: 1px solid var(--tp-border-color);
-    max-width: 1290px;
-}
-
-.home-three-service-cards-three,
-.home-three-service-cards-four,
-.home-three-service-cards-two {
-    border-top-style: none;
-}
-
-.home-three-service-arrow {
-    border: 1px solid var(--tp-border-color);
-    min-width: 50px;
-    min-height: 50px;
-}
-
-.home-three-service-background {
-    background-image: linear-gradient(#05061099, #05061099),
-        url("../img/service-bg/service-bg-1.webp");
-    background-position: 0 0, 50%;
-    background-repeat: repeat, no-repeat;
-    background-size: auto, cover;
-    position: absolute;
-    inset: 0%;
-    transform: translate(0, -100%);
-    transition: all var(--transition-medium) ease-in-out;
-}
-
-.home-three-box {
-    position: relative;
-    width: 100%;
-    overflow: hidden;
-    margin: 0 auto;
-}
-
-.home-three-box:hover .home-three-service-background {
-    transform: translate(0, 0);
-}
-
-.home-three-box:hover .home-three-service-cards {
-    border: 0;
-}
-.home-three-service-cards:hover .home-three-service-icon-wrap {
-    border: 1px solid #fff;
-}
-
-.home-three-service-cards:hover .service-icon-three {
-    color: #fff;
-}
-
-.home-three-box:hover .tp-top-border {
-    opacity: 0;
-}
-
-.home-three-service-background-two {
-    background-image: linear-gradient(#05061099, #05061099),
-        url("../img/service-bg/service-bg-2.webp");
-    background-position: 0 0, 50%;
-    background-repeat: repeat, no-repeat;
-    background-size: auto, cover;
-}
-
-.home-three-box:hover .home-three-service-arrow {
-    background: var(--tp-white);
-    transform: rotate(40deg);
-}
-
-.home-three-box:hover .service-arrow {
-    color: #000;
-}
-
-.home-three-service-background-three {
-    background-image: linear-gradient(#05061099, #05061099),
-        url("../img/service-bg/service-bg-3.webp");
-    background-position: 0 0, 50%;
-    background-repeat: repeat, no-repeat;
-    background-size: auto, cover;
-}
-
 .about-three-service .about-three-service-icons {
     flex: none;
     width: 110px;
@@ -2542,11 +2453,6 @@ filter: brightness(0) saturate(100%) invert(76%) sepia(18%) saturate(518%) hue-r
     align-items: center;
 }
 
-.testimonial-cards-text {
-    color: var(--tp-white);
-    font-style: italic;
-}
-
 
 .home-two-testimonial-backdrop {
     background-image: var(--tp-gradient-overlay);
@@ -2559,12 +2465,6 @@ filter: brightness(0) saturate(100%) invert(76%) sepia(18%) saturate(518%) hue-r
     top: 0;
 }
 
-.testimonial-cards-author-name {
-    grid-column-gap: 10px;
-    grid-row-gap: 10px;
-    justify-content: flex-start;
-    align-items: center;
-}
 .home-two-testimonial {
     position: relative;
 }
@@ -2572,24 +2472,144 @@ filter: brightness(0) saturate(100%) invert(76%) sepia(18%) saturate(518%) hue-r
     z-index: 5;
     position: relative;
     margin: 0 auto;
-    display: table;
+    width: 100%;
 }
 
-.home-two-testimonial-cards {
-    background-color: #050610;
-    max-width: 410px;
-    padding: 40px 34px 30px;
+.home-two-testimonial-slider {
+    position: relative;
+    overflow: hidden;
+    border-radius: 30px;
 }
 
-.home-two-testimonial-row-two {
-    grid-column-gap: 80px;
-    grid-row-gap: 80px;
-    flex-flow: column;
-    display: flex;
+.home-two-testimonial-slide {
+    min-height: 470px;
+    padding: 16px;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(280px, 0.8fr);
+    gap: 20px;
+    align-items: stretch;
+    background: #e7e7e7;
+    border-radius: 30px;
 }
-.home-two-testimonial-row-one {
-    flex-flow: column;
+
+.home-two-testimonial-copy {
+    min-width: 0;
     display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 24px 12px 20px 20px;
+    color: #202020;
+}
+
+.home-two-testimonial-quote {
+    margin: 0;
+}
+
+.home-two-testimonial-quote p {
+    margin: 0;
+    font-size: 25px;
+    line-height: 1.24;
+    font-weight: 400;
+}
+
+.home-two-testimonial-footer {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 24px;
+    padding-top: 24px;
+}
+
+.home-two-testimonial-author {
+    min-width: 0;
+    flex: 1;
+}
+
+.home-two-testimonial-rule {
+    display: block;
+    width: 100%;
+    max-width: 420px;
+    height: 1px;
+    margin-bottom: 14px;
+    background: #c8c8c8;
+}
+
+.home-two-testimonial-author h3,
+.home-two-testimonial-author p {
+    margin: 0;
+    color: #222;
+}
+
+.home-two-testimonial-author h3 {
+    font-size: 13px;
+    line-height: 1.4;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.home-two-testimonial-author p {
+    margin-top: 3px;
+    font-size: 10px;
+    line-height: 1.4;
+    font-weight: 600;
+}
+
+.home-two-testimonial-logo {
+    display: block;
+    width: 145px;
+    max-width: 35%;
+    max-height: 42px;
+    object-fit: contain;
+    object-position: left bottom;
+}
+
+.home-two-testimonial-portrait {
+    min-width: 0;
+    min-height: 0;
+    overflow: hidden;
+    border-radius: 22px;
+    background: #343434;
+}
+
+.home-two-testimonial-portrait img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    min-height: 438px;
+    object-fit: cover;
+    object-position: center 35%;
+}
+
+.home-two-testimonial-controls {
+    position: absolute;
+    z-index: 2;
+    left: calc(58% - 116px);
+    bottom: 32px;
+    display: flex;
+    gap: 10px;
+}
+
+.home-two-testimonial-controls button {
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border: 0;
+    background: transparent;
+    color: #171717;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.home-two-testimonial-controls button:focus-visible {
+    outline: 2px solid #171717;
+    outline-offset: 2px;
+}
+
+.home-two-testimonial-controls button:hover {
+    color: #16706d;
 }
 .about-three-slider-pagination .tp-slider-dot {
     cursor: pointer;
