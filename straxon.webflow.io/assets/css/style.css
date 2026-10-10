@@ -5331,11 +5331,11 @@ label {
 }
 
 .tp-body-secondary {
-    color: var(--menu-color);
-    font-size: 16px;
+    font-size: 14px;
     line-height: 28px;
     font-family: var(--tp-font-body);
 }
+.tp-service-tab-links.tp-active .tp-body-secondary{font-size: 16px;}
 /*---------------------------------
     our branch css start 
 ---------------------------------*/
@@ -5701,12 +5701,12 @@ label {
     border-bottom-right-radius: 30px;
     flex-flow: column;
     width: 100%;
-
+    height: 100%;
     padding-top: 30px;
     padding-bottom: 30px;
     display: flex;
 }
-
+.tab-wrapper{width: 100%;}
 .tab-pane {
     height: 100%;
 }

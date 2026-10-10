@@ -9,6 +9,50 @@
 (function() {
     "use strict";
 
+  function initCounter() {
+    if (typeof gsap === "undefined" || typeof ScrollTrigger === "undefined") {
+      return;
+    }
+
+    gsap.registerPlugin(ScrollTrigger);
+
+    document.querySelectorAll(".counter-wrapper").forEach(function(counter) {
+      if (counter.dataset.counterInitialized === "true") {
+        return;
+      }
+
+      var target = parseInt(counter.getAttribute("data-target"), 10);
+      var section = counter.closest(".counters-wrapper");
+
+      if (isNaN(target) || !section) {
+        return;
+      }
+
+      counter.dataset.counterInitialized = "true";
+      var counterValue = { value: 0 };
+
+      gsap.to(counterValue, {
+        value: target,
+        duration: 2,
+        ease: "power2.out",
+        scrollTrigger: {
+          trigger: section,
+          start: "top 85%",
+          once: true
+        },
+        onUpdate: function() {
+          var value = Math.floor(counterValue.value);
+          counter.textContent = value < 10 ? "0" + value : value;
+        },
+        onComplete: function() {
+          counter.textContent = target < 10 ? "0" + target : target;
+        }
+      });
+    });
+  }
+
+  window.initCounter = initCounter;
+
     function initGSAPAnimations() {
         
         gsap.registerPlugin(ScrollTrigger, ModifiersPlugin);
@@ -420,7 +464,6 @@ function storyBarAnimation() {
 }
 
 storyBarAnimation();
-
 
         /* ===============================
            BLOG DETAILS / ANIM-WRAP

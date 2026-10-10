@@ -26,13 +26,21 @@
          * 
          * @since 1.0.0
          */
-        if ($('.tp-service-tab-links').length) {
-            $('.tp-service-tab-links').on('click', function() {
-                var $this = $(this);
-                $('.tp-service-tab-links').removeClass('tp-active');
-                $this.addClass('tp-active');
-            });
-        }
+      
+if ($('.tp-service-tab-links').length) {
+    $('.tp-service-tab-links').on('click', function () {
+        var $this = $(this);
+        var target = $this.attr('data-tab');
+
+        $('.tp-service-tab-links').removeClass('tp-active');
+        $this.addClass('tp-active');
+
+        $('.tp-service-tab-content').removeClass('tp-active');
+
+        $(target).addClass('tp-active');
+    });
+}
+
 
         /**
          * Service Three Cards Overlay

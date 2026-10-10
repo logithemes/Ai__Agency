@@ -1758,6 +1758,9 @@
 
     .tp-service-tab-links.tp-active {
         background-position: 94%;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        margin-bottom: 10px;
     }
 
     .mobile-image-full-width {
