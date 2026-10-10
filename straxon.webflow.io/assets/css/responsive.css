@@ -415,11 +415,6 @@
         bottom: 30%;
     }
 
-    .home-one-portfolio-right {
-        grid-column-gap: 60px;
-        grid-row-gap: 60px;
-    }
-
 
     .humburger-bar {
         background-color: var(--white);
@@ -576,11 +571,6 @@
         display: flex;
     }
 
-
-    .home-one-portfolio-left {
-        grid-column-gap: 60px;
-        grid-row-gap: 60px;
-    }
 
     .dropdown-link {
         padding-left: 15px;
@@ -1204,21 +1194,6 @@
         height: 104px;
     }
 
-    /* .testimonials-author-box-mid.testimonials-author-box-right,
-    .testimonials-author-box-mid.testimonials-author-box-left {
-        width: 80px;
-        height: 80px;
-    } */
-
- 
-
-    .home-one-portfolio-right,
-    .home-one-portfolio-left {
-        grid-column-gap: 40px;
-        grid-row-gap: 40px;
-        padding-top: 0;
-        transform: none ;
-    }
 
     .tp-btn {
         width: 100%;
@@ -1381,12 +1356,6 @@
     }
 
 
-    .home-one-portfolio-left {
-        grid-column-gap: 40px;
-        grid-row-gap: 40px;
-    }
-
-  
 
     .home-two-hover-faq {
         display: none;

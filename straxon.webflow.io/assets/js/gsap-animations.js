@@ -62,39 +62,6 @@
          wordScrollAnimation('.about-one-counter-left', '.counter-left-text');
 
        
-        /* ===============================
-           FOUR CARDS REVEAL ANIMATION
-        =============================== */
-       
-var workItems = gsap.utils.toArray(".tp-clip-path-wrapper");
-
-workItems.forEach(function (container) {
-    var revealMedia = container.querySelector(".tp-clip-path-target");
-
-    if (!revealMedia) return;
-
-    gsap.set(revealMedia, {
-        clipPath: "polygon(0 0, 100% 0, 100% 0, 0 0)",
-        willChange: "clip-path"
-    });
-
-    gsap.to(revealMedia, {
-        clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 100%)",
-        duration: 2,
-        ease: "power2.inOut",
-        scrollTrigger: {
-            trigger: container,
-            start: "top 85%",
-            toggleActions: "play none none none",
-            once: true
-        },
-        onComplete: function () {
-            gsap.set(revealMedia, {
-                clearProps: "willChange"
-            });
-        }
-    });
-});
         // HOME ONE ABOUT US 
           gsap.registerPlugin(ScrollTrigger);
 
@@ -112,30 +79,42 @@ workItems.forEach(function (container) {
       }
     });
 
+   
 
-    // HOME ONE PORTFOLIO
-    // var portfolioImages = gsap.utils.toArray(".home-one-work .portfolio-card-image > img");
+        /* ===============================
+           FOUR CARDS REVEAL ANIMATION
+        =============================== */
+    
+var portfolioImages = gsap.utils.toArray(
+  ".home-one-work .portfolio-card-image > img"
+);
 
-    // portfolioImages.forEach(function (image) {
-    //   var imageFrame = image.closest(".portfolio-card-image");
-    //   if (!imageFrame) return;
+portfolioImages.forEach(function (image) {
+  var imageFrame = image.closest(".portfolio-card-image");
+  if (!imageFrame) return;
 
-    //   gsap.to(image, {
-    //     y: function () {
-    //       return window.matchMedia("(max-width: 767px)").matches ? -16 : -32;
-    //     },
-    //     scale: 1.1,
-    //     ease: "none",
-    //     scrollTrigger: {
-    //       trigger: imageFrame,
-    //       start: "top bottom",
-    //       end: "bottom top",
-    //       scrub: 2,
-    //       invalidateOnRefresh: true
-    //     }
-    //   });
-    // });
+  gsap.fromTo(
+    image,
+    {
+      scale: 1.1,
+      y: window.matchMedia("(max-width: 767px)").matches ? -16 : -32
+    },
+    {
+      scale: 1,
+      y: 0,
+      ease: "none",
+      scrollTrigger: {
+        trigger: imageFrame,
+        start: "top bottom",
+        end: "bottom top",
+        scrub: 2,
+        invalidateOnRefresh: true
+      }
+    }
+  );
+});
 
+//
   
         // **********************
         // caer active
