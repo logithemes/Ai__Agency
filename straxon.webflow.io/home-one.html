@@ -280,11 +280,11 @@ tp-flex-center flex-column gap-30 position-relative  pt-50 pb-70 md-pt-40 md-pb-
     <!-- ===================================================
 		Home popup vide
 			==================================================== -->
-    <section class="tp-home-about-video pb-120 md-pb-60" data-story-start="top 80%" data-story-end="bottom 20%">
+    <section class="tp-home-about-video md-pt-40 pb-120 md-pb-60" data-story-start="top 80%" data-story-end="bottom 20%">
       <div class="container">
         <div class="row">
-          <div class="col-md-10 mx-auto col-12">
-            <div class="row gap-20  justify-content-between">
+          <div class=" col-lg-10 mx-auto col-12">
+            <div class="row   justify-content-between">
               <div class=" col-12 col-md-3 position-relative">
                 <div class=" tp-home-video-story-heading gap-30 
 tp-flex-center flex-column text-center">
@@ -294,12 +294,13 @@ tp-flex-center flex-column text-center">
                   <h3 class="heading-four my-0 text-align-center">explore our story</h3>
                 </div>
                 <div class="tp-about-story-line p-0 
-tp-flex-center position-absolute ">
+ position-absolute d-md-flex d-none">
                   <span class=" tp-about-story-bar"></span>
                 </div>
               </div>
 
-              <div class="col-12 col-md-9 px-3 px-md-0  tp-home-video-story-text tp-flex-center">
+              <div class="col-12 col-md-9">
+                <div class="tp-home-video-story-text tp-flex-center md-pt-30">
                 <p class="tp-home-about-video-desc mb-0">Lorem ipsum dolor sit amet consectetur adipiscing elit. Fusce
                   seds
                   gravida felis.
@@ -312,7 +313,7 @@ tp-flex-center position-absolute ">
                   euismodt tortor srie molestie imperdiet qum. Morbi elementum nisil maursd facilisis tortor consequat
                   sirt
                   amet. Vestibulum.</p>
-
+  </div>
               </div>
 
             </div>
@@ -888,37 +889,24 @@ tp-flex-center position-absolute ">
   <section class="home-one-award pt-120 md-pt-70" aria-labelledby="awards-heading">
     <div class="container">
       <div class="row">
-        <div class="col-lg-4 col-12">
-          <span class="text-capitalize section-title" data-aos="fade-up" data-aos-delay="200">Recognition</span>
-        </div>
-        <div class="col-12 col-lg-8">
-          <div>
-            <h2 id="awards-heading" class="mt-0 mb-30 md-mb-30 md-mt-10" data-aos="fade-up" data-aos-delay="300">Awarded for <span
-                class="text-gradiant d-block">Excellence</span>
+        <div class="col-lg-5 col-12">
+          <div class="md-mb-50">
+              <div class="section-subtitle tp-flex-horizontal tag-wrapper" data-aos="fade-up" data-aos-delay="100">
+            <span class="tag-border"></span>
+            <span class="text-capitalize">Achievements</span>
+          </div>
+            <span class="tp-text-outline heading-one-small body-text heading-font pt-30 pb-30">05</span>
+              <div>
+            <h2 id="awards-heading" class="mt-0 mb-30 md-mb-30 md-mt-10" data-aos="fade-up" data-aos-delay="300">Awarded  &amp; <span
+                class="text-gradiant d-block">Recognition</span>
             </h2>
           </div>
-        </div>
-        <div class="col-12"><span class="center-devider d-inline-block"></span></div>
-        <div class="col-12 pb-80">
-          <div class="row award-text">
-            <div class="col-lg-8 col-12">
-           <div class=" tp-flex-horizontal award-text-wrapper">
-              <p>Recognized for delivering thoughtful design, memorable digital experiences, and outstanding creative work.</p>
-             <span class="d-inline-block w-100 section-title text-end" data-aos="fade-up"
-                  data-aos-delay="200">Featured[05]</span>
-           </div>
-              </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-12">
-          <div class="md-mb-50">
-            <span class="tp-text-outline heading-one-small body-text heading-font">05</span>
-          <p class="pt-20 text-sm">Awards, Recognition &amp; <br class="d-none d-md-block">Achievements</p>
+        
           </div>
         </div>
 
-        <div class="col-lg-8 col-12">
-          <div class="row align-items-start tp-border-bottom pb-30">
+        <div class="col-lg-7 col-12">
+          <div class="row align-items-start tp-border-bottom pb-30 award-images">
             <div class="col-sm-5 col-6">
               <h3 class=" heading-three mt-0"> Web Design Agenc</h3>
               <span>Featured Project</span>
@@ -927,13 +915,13 @@ tp-flex-center position-absolute ">
               <span class="text-sm">12x</span>
             </div>
             <div class="col-sm-5 col-6">
-              <div class="tp-flex-horizontal award-images gap-20 justify-content-end">
+              <div class="tp-flex-horizontal  gap-20 justify-content-end">
                 <img width="94" height="78" src="assets/img/award/award-1.webp" alt="Creative excellence award emblem">
                 <img class="d-none d-sm-block" width="94" height="78" src="assets/img/award/award-2.webp" alt="Award recognition badge">
               </div>
             </div>
           </div>
-            <div class="row align-items-start tp-border-bottom pb-30 pt-30">
+            <div class="row align-items-start tp-border-bottom pb-30 pt-30 ">
             <div class="col-sm-5 col-6">
               <h3 class=" heading-three mt-0">PixelCraft Design</h3>
               <span>Honourable Mention</span>
@@ -1500,14 +1488,40 @@ tp-flex-center position-absolute ">
 
   <!-- 2. YOUR CUSTOM SCRIPTS -->
   <script src="assets/js/utilities.js"></script>
-  <script src="assets/js/counter.js"></script>
   <script src="assets/js/menu.js"></script>
   <script src="assets/js/hamburger.js"></script>
   <script src="assets/js/gsap-animations.js"></script>
   <script src="assets/js/gsap-effects.js"></script>
   <script src="assets/js/slider-init.js"></script>
   <script src="assets/js/parallax.js"></script>
-  
+  <script>
+    
+gsap.registerPlugin(ScrollTrigger);
+
+var awardSection = document.querySelector(".home-one-award");
+var awardImages = document.querySelector(".home-one-award .award-images");
+
+if (awardSection && awardImages) {
+
+    gsap.set(awardImages, {
+        xPercent: 100
+    });
+
+    gsap.to(awardImages, {
+        xPercent: 0,
+        ease: "none",
+        scrollTrigger: {
+            trigger: awardSection,
+            start: "top 80%",
+            end: "top 30%",
+            scrub: 1,
+            invalidateOnRefresh: true
+        }
+    });
+
+}
+
+  </script>
   <!-- 3. MAIN JS - ALWAYS LAST -->
   <script src="assets/js/main.js"></script>
 </body>

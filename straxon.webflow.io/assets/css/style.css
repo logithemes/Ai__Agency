@@ -540,6 +540,7 @@ a:hover {
     color: #fff0;
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: #7e82a7;
+    display: inline-block;
 }
 
 
@@ -981,6 +982,7 @@ a:hover {
     width: 100%;
     height: 100%;
     transform: rotate(-45deg);
+      overflow: hidden;
 }
 
 .tp-inner-arrow i {
@@ -988,6 +990,7 @@ a:hover {
     top: 50%;
     left: 50%;
     transition: transform 0.35s ease;
+  
 }
 
 /* Normal arrow */
@@ -2087,11 +2090,12 @@ a:hover {
     border-bottom: 1px solid var(--tp-border-color);
     padding-top: 50px;
     padding-bottom: 50px;
+    display: flex;
+    align-items: center;
+    border-top: 1px solid var(--tp-border-color);
+
 }
 
-.tp-service-cell-top {
-    border-top: 1px solid var(--tp-border-color);
-}
 
 .service-three-cards-content {
     z-index: 1;
@@ -2843,12 +2847,13 @@ a:hover {
     position: relative;
 }
 
-.portfolio-img-wrapper {
+.home-two-portfolio-img-wrapper {
     list-style: none;
     margin: 0;
     padding: 0;
     position: relative;
     min-height: 420px;
+    overflow: hidden;
 }
 
 .portfolio-sticky-images {
@@ -3827,7 +3832,7 @@ a:hover {
 
 .tp-home-video-story-text {
     color: var(--tp-white);
-    flex: 1;
+   padding-left: 65px;
     max-width: 624px;
     font-size: 20px;
     line-height: 30px;
@@ -5790,14 +5795,6 @@ label {
 .top-cards-border {
     border-top: 1px solid var(--tp-border-color);
 }
-
-.awards-name {
-    flex: 1;
-    max-width: 176px;
-}
-.center-devider{background-color:var(--tp-border-color);width: 100%;height: 1px;}
-.award-text{margin-left: auto;padding-top: 35px;justify-content: end;}
-.award-broder{}
 /*---------------------------------
     landing hero css start 
 ---------------------------------*/

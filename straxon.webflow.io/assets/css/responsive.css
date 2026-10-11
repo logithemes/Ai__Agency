@@ -200,7 +200,7 @@
 
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 991.98px) {
     .home-three-service-card {
         position: relative;
         top: auto;
@@ -229,13 +229,13 @@
     }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.98px) {
   
 
     .home-three-service-stack {
         margin-top: 32px;
     }
-
+.tp-home-video-story-text{padding-left: 0;}
     .home-three-service-card {
         gap: 18px;
         margin-bottom: 28px;
@@ -283,7 +283,7 @@
     }
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 991.98px) {
     
     .process-user-wrapper{width: 100%;justify-content: center;}
 
@@ -417,7 +417,7 @@
 
 
     .humburger-bar {
-        background-color: var(--white);
+        background-color: #fff;
         width: 24px;
         height: 1px;
         padding: 0;
@@ -1043,7 +1043,7 @@
    .process-inner{flex-direction: column;}
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.98px) {
     .home-two-testimonial-slide {
         min-height: 0;
         grid-template-columns: minmax(0, 1fr);
@@ -1068,7 +1068,7 @@
     .home-two-testimonial-logo {
         width: 112px;
     }
-
+.tp-home-video-story-heading{margin: 0 auto;max-width: 100%;}
     .home-two-testimonial-portrait {
         height: 300px;
     }
@@ -1077,7 +1077,6 @@
         min-height: 0;
         object-position: center 32%;
     }
-
     .home-two-testimonial-controls {
         left: auto;
         right: 18px;
@@ -1085,7 +1084,7 @@
     }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.98px) {
     .service-three-cards-content i{font-size: 40px;}
     .faq-border{padding:8px 0 8px 0}
     .hero-details-text{    font-size: 14px;
