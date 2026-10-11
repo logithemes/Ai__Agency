@@ -210,7 +210,9 @@
         margin-bottom: 36px;
         padding: 20px 0 36px;
     }
-
+.faq-img-wrapper,  .faq-img-inner img{  min-height: 100%;
+    max-height: 100%;}
+   
     .home-three-service-visual img {
         aspect-ratio: 1.65;
     }
@@ -245,7 +247,8 @@
     .home-three-service-visual {
         border-radius: 18px;
     }
-
+    .faq-border .dropdown-icon{margin-top: 0;}
+.faq-qustion-number{font-size: 13px;}
     .home-three-service-visual img {
         aspect-ratio: 1.35;
     }
@@ -1086,7 +1089,7 @@
 
 @media screen and (max-width: 767.98px) {
     .service-three-cards-content i{font-size: 40px;}
-    .faq-border{padding:8px 0 8px 0}
+    .faq-border{padding:8px 22px 8px 50px}
     .hero-details-text{    font-size: 14px;
     line-height: 1.5;}
      .tp-home-one-testimonials {
