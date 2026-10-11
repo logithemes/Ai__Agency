@@ -223,11 +223,10 @@
 
          obsidianTimeline.fromTo(
            deck,
-           { y: initY, width: baseSpan, zIndex: idx },
+                     { y: initY, width: baseSpan, zIndex: shadowCards.length + idx },
            {
              y: 0,
              width: targetSpan,
-             zIndex: shadowCards.length + idx,
              duration: 0.5,
              ease: "power1.inOut",
            },
