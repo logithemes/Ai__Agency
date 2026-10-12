@@ -643,9 +643,6 @@
         max-width: none;
     }
 
-    .work-three-cards-inner-wrapper {
-        padding-left: 30px;
-    }
 
 
     .home-three-digital-hover-box {
@@ -670,12 +667,6 @@
         opacity: 1;
     }
 
-    .tp-recent-work-boxes {
-        grid-column-gap: 30px;
-        grid-row-gap: 50px;
-        padding-top: 0;
-
-    }
     .about-one-counter-right {
         grid-template-rows: auto;
         grid-template-columns: 1fr 1fr;
@@ -1163,13 +1154,6 @@
         max-width: 460px;
     } */
 
-    .work-three-cards-inner-wrapper {
-        padding-left: 15px;
-    }
-
-    .tp-recent-work-boxes {
-        grid-template-columns: 1fr;
-    }
 
     .blog-image-wrapper {
         height: auto;
@@ -1960,11 +1944,6 @@
     }
 
 
-
-    .home-three-testimonial-text,
-    .work-three-cards-inner-wrapper {
-        padding-left: 20px;
-    }
 
     .home-three-skills-description {
         font-size: 16px;
