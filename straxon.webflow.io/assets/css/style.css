@@ -1516,12 +1516,15 @@ a:hover {
     position: relative;
     height: min(72vh, 700px);
     min-height: min(520px, calc(100vh - 140px));
+    overflow: hidden;
 }
 
 .home-three-branding-stack.is-stacked .home-three-brand-item {
     position: absolute;
     inset: 0;
     min-height: 0;
+    background: var(--tp-body-bg);
+    border-radius: 24px;
 }
 
 .home-three-branding-stack.is-stacked .home-three-brand-card {
@@ -4090,14 +4093,6 @@ a:hover {
     position: relative;
 }
 
-.about-two-experience-list-item {
-    border-top: 1px solid var(--tp-border-color);
-    border-bottom: 1px solid var(--tp-border-color);
-    justify-content: space-between;
-    align-items: center;
-    transition: background-color 0.4s;
-}
-
 .about-two-experience-left {
     justify-content: space-between;
 }
@@ -4167,9 +4162,7 @@ a:hover {
 
 }
 
-.about-two-experience {
-    margin-top: -40px;
-}
+
 
 .about-two-hero {
     background-image: radial-gradient(circle at 68% 65%, #b460f140, #b460f100 17%),
@@ -4220,7 +4213,7 @@ a:hover {
 .about-three-hero-right {
     padding-left: 20px;
 }
-
+.about-three-hero-right-top{align-items: end;}
 .about-three-top {
     position: relative;
 }
@@ -4262,7 +4255,7 @@ a:hover {
 }
 
 .hero-social-border {
-    background-color: var(--menu-color);
+    background-color: var(--tp-body-text-color);
     width: 85px;
     height: 1px;
 }

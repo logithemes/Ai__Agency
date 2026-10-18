@@ -68,11 +68,6 @@
         padding-bottom: 150px;
     }
 
-    .about-two-experience-list-item {
-        padding-left: 30px;
-        padding-right: 30px;
-    }
-
     .about-two-hero-image-three {
         right: 80px;
     }
@@ -728,11 +723,6 @@
         height: auto;
     }
 
-    .about-two-experience-middle {
-        padding-top: 50px;
-        padding-bottom: 50px;
-    }
-
     .about-two-process {
         padding-bottom: 70px;
     }
@@ -1102,7 +1092,6 @@
       .service-three-cards-overlay{transform: none;transform-origin: unset;}
       .service-tp-in-active{transform: scale(1);}
 .service-growth-left .home-one-service-cards-icon{width: 65px;height: 65px;}
-.about-two-experience-left{justify-content: center;}
       .tp-testimonial-author {
         font-size: 24px;
       }

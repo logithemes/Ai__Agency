@@ -66,8 +66,14 @@
 
             brandingMedia.add("(min-width: 992px) and (prefers-reduced-motion: no-preference)", function() {
               brandingStack.classList.add("is-stacked");
-              gsap.set(servicePanels, { autoAlpha: 0, yPercent: 12, scale: 0.97 });
-              gsap.set(servicePanels[0], { autoAlpha: 1, yPercent: 0, scale: 1 });
+              gsap.set(servicePanels, {
+                autoAlpha: 1,
+                yPercent: 100,
+                zIndex: function(index) {
+                  return index + 1;
+                }
+              });
+              gsap.set(servicePanels[0], { yPercent: 0 });
 
               var brandingTimeline = gsap.timeline({
                 scrollTrigger: {
@@ -84,23 +90,13 @@
               });
 
               servicePanels.slice(1).forEach(function(panel, index) {
-                brandingTimeline.to(servicePanels[index], {
-                  autoAlpha: 0,
-                  yPercent: -100,
-                  scale: 0.96,
-                  duration: 0.48,
-                  ease: "none"
-                }, index).fromTo(panel, {
-                  autoAlpha: 0,
-                  yPercent: 12,
-                  scale: 0.97
+                brandingTimeline.fromTo(panel, {
+                  yPercent: 100
                 }, {
-                  autoAlpha: 1,
                   yPercent: 0,
-                  scale: 1,
-                  duration: 0.48,
+                  duration: 1,
                   ease: "none"
-                }, index + 0.52);
+                }, index);
               });
 
               return function() {
