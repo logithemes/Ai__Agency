@@ -465,6 +465,35 @@ function storyBarAnimation() {
 
 storyBarAnimation();
 
+
+// AWARD
+gsap.registerPlugin(ScrollTrigger);
+
+var awardImages = document.querySelectorAll(
+    ".home-one-award .award-images-wrapper"
+);
+
+awardImages.forEach(function (awardImage) {
+
+    gsap.set(awardImage, {
+        xPercent: 100
+    });
+
+    gsap.to(awardImage, {
+        xPercent: 0,
+        ease: "none",
+        scrollTrigger: {
+            trigger: awardImage,
+            start: "top 85%",
+            end: "top 40%",
+            scrub: 1,
+            invalidateOnRefresh: true
+        }
+    });
+
+});
+
+
         /* ===============================
            BLOG DETAILS / ANIM-WRAP
         =============================== */
