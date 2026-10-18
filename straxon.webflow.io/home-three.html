@@ -292,36 +292,16 @@
                 </a>
           <div class="home-three-hero-meta d-flex justify-content-between align-items-center w-100">
             <span  data-aos="fade-right" data-aos-delay="500" data-aos-once="true">PORTFOLIO / ©2026</span>
-            <a  data-aos="fade-left" data-aos-delay="500" data-aos-once="true" href="#what-we-do" class="home-three-hero-scroll d-inline-flex align-items-center">
+            <div  data-aos="fade-left" data-aos-delay="500" data-aos-once="true" >
+              <a href="#what-we-do" class="home-three-hero-scroll transition-medium  d-inline-flex align-items-center">
               SCROLL DOWN <i class="bi bi-arrow-down-right" aria-hidden="true"></i>
             </a>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <script>
-      (() => {
-        const hero = document.querySelector('[data-home-three-hero]');
-        const image = hero?.querySelector('[data-home-three-hero-image]');
-        const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
-
-        if (!hero || !image || reduceMotion.matches || !window.matchMedia('(pointer: fine)').matches) return;
-
-        hero.addEventListener('pointermove', (event) => {
-          const bounds = hero.getBoundingClientRect();
-          const x = (event.clientX - bounds.left) / bounds.width - 0.5;
-          const y = (event.clientY - bounds.top) / bounds.height - 0.5;
-          image.style.setProperty('--hero-shift-x', `${x * -14}px`);
-          image.style.setProperty('--hero-shift-y', `${y * -10}px`);
-        });
-
-        hero.addEventListener('pointerleave', () => {
-          image.style.setProperty('--hero-shift-x', '0px');
-          image.style.setProperty('--hero-shift-y', '0px');
-        });
-      })();
-    </script>
   </div>
 
  
@@ -332,12 +312,12 @@
     <div class="container">
       <div class="row">
         <div class="col-12 mx-auto mb-60 md-mb-30">
-        <div class="section-subtitle tp-flex-horizontal small-tag-wrapper justify-content-center " data-aos="fade-up" data-aos-delay="300">
+        <div class="section-subtitle tp-flex-horizontal small-tag-wrapper justify-content-center " data-aos="fade-up" data-aos-delay="300" data-aos-duration="800">
           <span class="dot"></span>
           <span class="text-capitalize">what we do</span>
         </div>
         <div class="d-block section-title text-center">
-          <h2 class="section-title-heading mt-25 " data-aos="fade-up" data-aos-delay="400">We Speak <span
+          <h2 class="section-title-heading mt-25 " data-aos="fade-up" data-aos-delay="450" data-aos-duration="900">We Speak <span
               class="text-gradiant">Digital</span>
           </h2>
        
@@ -348,7 +328,7 @@
 
   <div class="col-12  col-md-4 md-mt-30">
     <a href="about-one.html" class="home-three-digital-boxes tp-radius-30 full-screen-hover" data-aos="fade-up" data-aos-delay="300">
-      <div class="h-100 tp-flex-center overflow-hidden position-relative image-wrapper">
+      <div class="home-three-digital-inner">
         <img width="410" height="580" alt="Head Image" src="assets/img/portfolios/portfolios-3.webp" loading="lazy" class="tp-radius-30 h-100">
         <div class="tp-flex-vertical home-three-digital-hover-box">
           <h3 class="heading-four hover-line transition-medium hover-hide">
@@ -363,8 +343,8 @@
   </div>
 
   <div class="col-12  col-md-4 md-mt-30">
-    <a href="about-two.html" class="home-three-digital-boxes tp-radius-30 full-screen-hover" data-aos="fade-up" data-aos-delay="600">
-      <div class="h-100 tp-flex-center overflow-hidden position-relative">
+    <a href="about-two.html" class="home-three-digital-boxes tp-radius-30 full-screen-hover" data-aos="fade-up" data-aos-delay="500">
+      <div class="home-three-digital-inner">
         <img width="410" height="580" alt="Digital Image" src="assets/img/portfolios/portfolios-5.webp" loading="lazy" class="tp-radius-30 h-100">
         <div class="tp-flex-vertical home-three-digital-hover-box">
           <h3 class="heading-four hover-line transition-medium hover-hide">
@@ -379,8 +359,8 @@
   </div>
 
   <div class="col-12  col-md-4 md-mt-30">
-    <a href="about-three.html" class="home-three-digital-boxes tp-radius-30 full-screen-hover" data-aos="fade-up" data-aos-delay="900">
-      <div class="h-100 tp-flex-center overflow-hidden position-relative">
+    <a href="about-three.html" class="home-three-digital-boxes tp-radius-30 full-screen-hover" data-aos="fade-up" data-aos-delay="700" >
+      <div class="home-three-digital-inner">
         <img width="410" height="580" alt="Digital Image" src="assets/img/portfolios/portfolios-1.webp" loading="lazy" class="tp-radius-30 h-100">
         <div class="tp-flex-vertical home-three-digital-hover-box">
           <h3 class="heading-four hover-line transition-medium hover-hide">
@@ -897,13 +877,21 @@
           </div>
         <div class=" row g-4 ">
   <div class="col-12 col-lg-6" data-aos="fade-up" data-aos-delay="100" data-aos-once="true">
-    <a href="projects/portfolio-details.html" class="portfolio-showcase-card">
+    <a href="projects/portfolio-details.html" class="portfolio-showcase-card tp-commen-arrow">
       <img src="assets/img/portfolios/portfolios-1.webp" alt="Emotive branding project" loading="lazy">
       <span class="portfolio-showcase-shade" aria-hidden="true"></span>
       <h3 class="portfolio-showcase-title">Emotive</h3>
-      <span class="portfolio-showcase-arrow" aria-hidden="true">
-        <i class="bi bi-arrow-up-right"></i>
-      </span>
+       <div class="portfolio-showcase-arrow" aria-hidden="true">
+        <span class="tp-commen-arrow-wrapper tp-flex-center">
+                      <span class="tp-inner-arrow tp-flex-center">
+
+            <i class="bi bi-arrow-up-right tp-normal-arrow fs-5"></i>
+
+            <i class="bi bi-arrow-up-right tp-arrow-hover fs-5"></i>
+
+        </span>
+                    </span>
+      </div >
       <span class="portfolio-showcase-meta">
         <span>Branding</span>
         <time datetime="2024-06-06">June 6, 2024</time>
@@ -912,13 +900,21 @@
   </div>
 
   <div class="col-12 col-lg-6" data-aos="fade-up" data-aos-delay="200" data-aos-once="true">
-    <a href="projects/portfolio-details.html" class="portfolio-showcase-card">
+    <a href="projects/portfolio-details.html" class="portfolio-showcase-card tp-commen-arrow">
       <img src="assets/img/portfolios/portfolios-2.webp" alt="Bugashop branding project" loading="lazy">
       <span class="portfolio-showcase-shade" aria-hidden="true"></span>
       <h3 class="portfolio-showcase-title">Bugashop</h3>
-      <span class="portfolio-showcase-arrow" aria-hidden="true">
-        <i class="bi bi-arrow-up-right"></i>
-      </span>
+      <div class="portfolio-showcase-arrow" aria-hidden="true">
+        <span class="tp-commen-arrow-wrapper tp-flex-center">
+                      <span class="tp-inner-arrow tp-flex-center">
+
+            <i class="bi bi-arrow-up-right tp-normal-arrow fs-5"></i>
+
+            <i class="bi bi-arrow-up-right tp-arrow-hover fs-5"></i>
+
+        </span>
+                    </span>
+      </div >
       <span class="portfolio-showcase-meta">
         <span>Branding</span>
         <time datetime="2024-06-06">June 6, 2024</time>
@@ -927,13 +923,21 @@
   </div>
 
   <div class="col-12 col-lg-6" data-aos="fade-up" data-aos-delay="100" data-aos-once="true">
-    <a href="projects/portfolio-details.html" class="portfolio-showcase-card">
+    <a href="projects/portfolio-details.html" class="portfolio-showcase-card tp-commen-arrow">
       <img src="assets/img/portfolios/portfolios-3.webp" alt="UI and UX design project" loading="lazy">
       <span class="portfolio-showcase-shade" aria-hidden="true"></span>
       <h3 class="portfolio-showcase-title">UI/UX Design</h3>
-      <span class="portfolio-showcase-arrow" aria-hidden="true">
-        <i class="bi bi-arrow-up-right"></i>
-      </span>
+        <div class="portfolio-showcase-arrow" aria-hidden="true">
+        <span class="tp-commen-arrow-wrapper tp-flex-center">
+                      <span class="tp-inner-arrow tp-flex-center">
+
+            <i class="bi bi-arrow-up-right tp-normal-arrow fs-5"></i>
+
+            <i class="bi bi-arrow-up-right tp-arrow-hover fs-5"></i>
+
+        </span>
+                    </span>
+      </div >
       <span class="portfolio-showcase-meta">
         <span>Digital Design</span>
         <time datetime="2024-06-06">June 6, 2024</time>
@@ -942,7 +946,7 @@
   </div>
 
   <div class="col-12 col-lg-6" data-aos="fade-up" data-aos-delay="200" data-aos-once="true">
-    <a href="projects/portfolio-details.html" class="portfolio-showcase-card">
+    <a href="projects/portfolio-details.html" class="portfolio-showcase-card tp-commen-arrow">
       <img src="assets/img/portfolios/portfolios-4.webp" alt="Product design project" loading="lazy">
       <span class="portfolio-showcase-shade" aria-hidden="true"></span>
       <h3 class="portfolio-showcase-title">Product Design</h3>

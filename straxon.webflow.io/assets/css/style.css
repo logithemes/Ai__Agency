@@ -972,11 +972,11 @@ a:hover {
     padding-left: 0;
 }
 
-.tp-comment-arrow {
+.tp-commen-arrow {
     overflow: hidden;
 }
 
-.tp-comment-arrow-wrapper {
+.tp-commen-arrow-wrapper {
     position: relative;
     width: 100%;
     height: 100%;
@@ -1010,12 +1010,12 @@ a:hover {
 }
 
 /* Hover - normal arrow goes right */
-.tp-comment-arrow:hover .tp-normal-arrow {
+.tp-commen-arrow:hover .tp-normal-arrow {
     transform: translate(180%, -50%) rotate(45deg);
 }
 
 /* Hover - second arrow comes to center */
-.tp-comment-arrow:hover .tp-arrow-hover {
+.tp-commen-arrow:hover .tp-arrow-hover {
     transform: translate(-50%, -50%) rotate(45deg);
 }
 
@@ -1339,9 +1339,7 @@ a:hover {
 }
 
 .home-two-hero-glow {
-    background-image: radial-gradient(circle at 90% 30%, #f4497238, #f4497200 18%),
-        radial-gradient(circle at 50% 40%, #3938394d, #b264f300 31%),
-        url("../img/background/home-two-hero-glow.webp");
+    background-image: radial-gradient(circle at 90% 30%, #f4497282, #f4497200 18%), radial-gradient(circle at 50% 40%, #3938394d, #b264f300 31%), url(../img/background/home-two-hero-glow.webp);
     background-position: 0 0, 0 0, 57% 7%;
     background-repeat: repeat, repeat, no-repeat;
     background-size: auto, auto, 437px;
@@ -1477,12 +1475,12 @@ a:hover {
 
 .home-three-hero-scroll {
     gap: 8px;
-    color: inherit;
+    color: var(--tp-white);
     transition: color 200ms ease;
 }
 
 .home-three-hero-scroll:hover {
-    color: #ff594a;
+    color: #e85189;
 }
 
 .home-three-hero-scroll i {
@@ -2581,7 +2579,7 @@ a:hover {
     grid-template-columns: minmax(0, 1fr) minmax(280px, 0.8fr);
     gap: 20px;
     align-items: stretch;
-    background: #e7e7e7;
+    background: linear-gradient(135deg, var(--tp-bg-secondary), #20213a 58%, #2b2437);
     border-radius: 30px;
 }
 
@@ -2591,7 +2589,7 @@ a:hover {
     flex-direction: column;
     justify-content: space-between;
     padding: 24px 12px 20px 20px;
-    color: #202020;
+    color: var(--tp-white);
 }
 
 .home-two-testimonial-quote {
@@ -2600,22 +2598,21 @@ a:hover {
 
 .home-two-testimonial-quote p {
     margin: 0;
-    font-size: 25px;
+    font-size: 23px;
     line-height: 1.24;
     font-weight: 400;
 }
-
 .home-two-testimonial-footer {
     display: flex;
-    align-items: flex-end;
+    align-items: start;
     justify-content: space-between;
     gap: 24px;
     padding-top: 24px;
+    flex-direction: column;
 }
 
 .home-two-testimonial-author {
-    min-width: 0;
-    flex: 1;
+ width: 100%;
 }
 
 .home-two-testimonial-rule {
@@ -2624,20 +2621,12 @@ a:hover {
     max-width: 420px;
     height: 1px;
     margin-bottom: 14px;
-    background: #c8c8c8;
+    background: var(--tp-border-color);
 }
 
-.home-two-testimonial-author h3,
 .home-two-testimonial-author p {
     margin: 0;
-    color: #222;
-}
-
-.home-two-testimonial-author h3 {
-    font-size: 13px;
-    line-height: 1.4;
-    font-weight: 600;
-    text-transform: uppercase;
+    color: var(--tp-white);
 }
 
 .home-two-testimonial-author p {
@@ -2654,6 +2643,7 @@ a:hover {
     max-height: 42px;
     object-fit: contain;
     object-position: left bottom;
+    filter: var(--tp-logo-filter);
 }
 
 .home-two-testimonial-portrait {
@@ -2691,18 +2681,18 @@ a:hover {
     align-items: center;
     border: 0;
     background: transparent;
-    color: #171717;
+    color: var(--tp-white);
     font-size: 22px;
     cursor: pointer;
 }
 
 .home-two-testimonial-controls button:focus-visible {
-    outline: 2px solid #171717;
+    outline: 2px solid var(--tp-white);
     outline-offset: 2px;
 }
 
 .home-two-testimonial-controls button:hover {
-    color: #16706d;
+    color: var(--tp-pink);
 }
 
 .about-three-slider-pagination .tp-slider-dot {
@@ -3355,9 +3345,7 @@ a:hover {
     padding: 12px;
 }
 
-.home-one-work-main {
-    align-items: center;
-}
+
 
 .home-one-work-border {
     transform-origin: 0%;
@@ -3458,38 +3446,6 @@ a:hover {
     position: relative;
 }
 
-.portfolio-big-heading {
-    color: var(--tp-white);
-    font-size: clamp(60px, 20vw, 300px);
-    font-weight: 400;
-    line-height: 0.83;
-
-}
-
-.home-two-portfolio-text {
-    color: var(--tp-white);
-    font-size: clamp(60px, 15vw, 220px);
-    font-weight: 400;
-    line-height: 0.9;
-}
-
-.crystal-shape {
-    animation: up_down 5s infinite;
-}
-
-@keyframes up_down {
-    0% {
-        transform: translateY(-30px);
-    }
-
-    50% {
-        transform: translateY(30px);
-    }
-
-    100% {
-        transform: translateY(-30px);
-    }
-}
 
 .projects-top {
     position: relative;
@@ -3576,6 +3532,8 @@ a:hover {
 .portfolio-showcase-card>img {
     object-fit: cover;
     transition: transform 700ms ease;
+    height: 100%;
+    width: 100%;
 }
 
 .portfolio-showcase-shade {
@@ -4753,7 +4711,9 @@ what we do css start
 /* HOME THREE SERVICES CSS */
 
 
-
+.home-three-digital-boxes{display: inline-block;height: 100%;}
+.home-three-digital-inner{position: relative;width: 100%;height: 100%;display: grid;}
+.home-three-digital-inner img{height: 100%;}
 .hover-hide,
 .hover-hide-des {
     transform: translateY(20px);

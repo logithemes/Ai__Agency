@@ -493,6 +493,27 @@ awardImages.forEach(function (awardImage) {
 
 });
 
+// HOME THREE BANNE
+ (() => {
+        const hero = document.querySelector('[data-home-three-hero]');
+        const image = hero?.querySelector('[data-home-three-hero-image]');
+        const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+
+        if (!hero || !image || reduceMotion.matches || !window.matchMedia('(pointer: fine)').matches) return;
+
+        hero.addEventListener('pointermove', (event) => {
+          const bounds = hero.getBoundingClientRect();
+          const x = (event.clientX - bounds.left) / bounds.width - 0.5;
+          const y = (event.clientY - bounds.top) / bounds.height - 0.5;
+          image.style.setProperty('--hero-shift-x', `${x * -14}px`);
+          image.style.setProperty('--hero-shift-y', `${y * -10}px`);
+        });
+
+        hero.addEventListener('pointerleave', () => {
+          image.style.setProperty('--hero-shift-x', '0px');
+          image.style.setProperty('--hero-shift-y', '0px');
+        });
+      })();
 
         /* ===============================
            BLOG DETAILS / ANIM-WRAP
