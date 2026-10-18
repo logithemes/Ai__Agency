@@ -57,6 +57,59 @@
         
         gsap.registerPlugin(ScrollTrigger, ModifiersPlugin);
 
+        var brandingStack = document.querySelector(".home-three-branding-stack");
+        if (brandingStack) {
+          var servicePanels = gsap.utils.toArray(".home-three-brand-item", brandingStack);
+
+          if (servicePanels.length > 1) {
+            var brandingMedia = gsap.matchMedia();
+
+            brandingMedia.add("(min-width: 992px) and (prefers-reduced-motion: no-preference)", function() {
+              brandingStack.classList.add("is-stacked");
+              gsap.set(servicePanels, { autoAlpha: 0, yPercent: 12, scale: 0.97 });
+              gsap.set(servicePanels[0], { autoAlpha: 1, yPercent: 0, scale: 1 });
+
+              var brandingTimeline = gsap.timeline({
+                scrollTrigger: {
+                  trigger: brandingStack,
+                  start: "top top+=100",
+                  end: function() {
+                    return "+=" + window.innerHeight * (servicePanels.length - 1);
+                  },
+                  pin: true,
+                  pinSpacing: true,
+                  scrub: 1,
+                  invalidateOnRefresh: true
+                }
+              });
+
+              servicePanels.slice(1).forEach(function(panel, index) {
+                brandingTimeline.to(servicePanels[index], {
+                  autoAlpha: 0,
+                  yPercent: -100,
+                  scale: 0.96,
+                  duration: 0.48,
+                  ease: "none"
+                }, index).fromTo(panel, {
+                  autoAlpha: 0,
+                  yPercent: 12,
+                  scale: 0.97
+                }, {
+                  autoAlpha: 1,
+                  yPercent: 0,
+                  scale: 1,
+                  duration: 0.48,
+                  ease: "none"
+                }, index + 0.52);
+              });
+
+              return function() {
+                brandingStack.classList.remove("is-stacked");
+              };
+            });
+          }
+        }
+
         /* ===============================
            WORD SCROLL ANIMATION
         =============================== */

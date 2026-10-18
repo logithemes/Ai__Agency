@@ -1487,6 +1487,19 @@ a:hover {
     font-size: 16px;
 }
 
+.home-three-branding-stack {
+    display: grid;
+    gap: clamp(64px, 10vh, 120px);
+}
+
+.home-three-brand-item {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    gap: clamp(24px, 5vw, 72px);
+    align-items: center;
+    min-height: 560px;
+}
+
 .home-three-brand-card {
     position: relative;
     /* min-height: 560px; */
@@ -1496,6 +1509,44 @@ a:hover {
     border: 1px solid rgba(255, 255, 255, 0.08);
     display: grid;
     height: 100%;
+    min-height: 420px;
+}
+
+.home-three-branding-stack.is-stacked {
+    position: relative;
+    height: min(72vh, 700px);
+    min-height: min(520px, calc(100vh - 140px));
+}
+
+.home-three-branding-stack.is-stacked .home-three-brand-item {
+    position: absolute;
+    inset: 0;
+    min-height: 0;
+}
+
+.home-three-branding-stack.is-stacked .home-three-brand-card {
+    height: 100%;
+    min-height: 0;
+}
+
+@media (max-width: 991px) {
+    .home-three-branding-stack {
+        gap: 72px;
+    }
+
+    .home-three-brand-item {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 28px;
+        min-height: 0;
+    }
+
+    .home-three-brand-card {
+        min-height: 360px;
+    }
+
+    .home-three-brand-copy {
+        padding-left: 0;
+    }
 }
 
 .home-three-services-tags i {
