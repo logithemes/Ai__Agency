@@ -196,6 +196,8 @@
 }
 
 @media screen and (max-width: 991.98px) {
+    .service-cards-image{  max-height: 380px;
+    aspect-ratio: 4 / 3;}
     .home-three-service-card {
         position: relative;
         top: auto;
