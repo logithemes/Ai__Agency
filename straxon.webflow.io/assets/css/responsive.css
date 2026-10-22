@@ -157,6 +157,7 @@
 
     }
     @media screen and (max-width: 1200px) {
+        .about-three-service-card-featured img{margin-top: 20px;}
  .portfolio-sticky-wrapper .portfolio-content {
       padding: 40px 20px 40px;
     }
