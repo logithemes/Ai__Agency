@@ -39,11 +39,11 @@
                     0: {
                         slidesPerView: 1,
                     },
-                    768: {
-                        slidesPerView: 3,
-                    },
-                    992: {
+                    767: {
                         slidesPerView: 2,
+                    },
+                    1200: {
+                        slidesPerView: 3,
                     },
                 },
             });

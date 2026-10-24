@@ -3640,32 +3640,22 @@ a:hover {
     position: relative;
 }
 
-.projects-marquee-cards {
-    border-radius: 30px;
-    max-height: 580px;
-    transition: transform 0.2s;
-    position: relative;
-    overflow: hidden;
-    text-align: center;
-
-}
-
 .service-one-projects .projects-marquee-cards {
-    aspect-ratio: 1.2 / 1;
     min-height: 420px;
     max-height: none;
     border: 1px solid rgba(255, 255, 255, 0.22);
     border-radius: 18px;
     background: #222;
     text-align: left;
+    transition: transform 0.2s;
+    position: relative;
+    overflow: hidden;
 }
 
 .service-one-projects .project-media {
-    position: absolute;
-    inset: 0;
+   
     width: 100%;
     height: 100%;
-    aspect-ratio: auto;
 }
 
 .service-one-projects .project-media img {
@@ -3702,24 +3692,6 @@ a:hover {
     background: rgba(30, 36, 42, 0.9);
 }
 
-@media (max-width: 575.98px) {
-    .service-one-projects .projects-marquee-cards {
-        aspect-ratio: 0.95 / 1;
-        min-height: 380px;
-    }
-
-    .service-one-projects .projects-name {
-        top: 22px;
-        left: 20px;
-    }
-
-    .service-one-projects .projects-marquee-cards::after {
-        top: 18px;
-        right: 18px;
-        width: 54px;
-        height: 54px;
-    }
-}
 
 @media (prefers-reduced-motion: reduce) {
     .service-one-projects .project-media img,
@@ -3921,7 +3893,6 @@ a:hover {
 }
 
 .marquee-tp-slides-cards {
-    padding-right: 30px;
     display: inline-block;
 }
 
