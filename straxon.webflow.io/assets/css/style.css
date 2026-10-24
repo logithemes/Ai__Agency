@@ -3526,10 +3526,10 @@ a:hover {
     display: flex;
 }
 
-.cards-hover:hover .portfolio-marquee {
+.project-hover-wrapper:hover .portfolio-marquee {
     opacity: 1;
 }
-
+.project-hover-wrapper{position: relative;overflow: hidden;}
 .tp-work-item .card-two-wrapper {
     max-width: 590px;
 }
@@ -3590,6 +3590,7 @@ a:hover {
     grid-template-columns: 1fr 1fr;
     grid-auto-columns: 1fr;
     display: grid;
+    overflow: hidden;
 }
 
 .projects-hero-border {
@@ -3613,7 +3614,7 @@ a:hover {
 .projects-details-information {
     position: relative;
 }
-
+.projects-cards-button .tp-arrow-button{width: 40px;height: 40px;}
 .service-one-projects .projects-marquee-cards {
     min-height: 420px;
     max-height: none;
