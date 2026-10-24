@@ -1071,7 +1071,6 @@
 }
 
 @media screen and (max-width: 767.98px) {
-    .service-three-cards-content i{font-size: 40px;}
     .faq-border{padding:8px 22px 8px 50px}
     .hero-details-text{    font-size: 14px;
     line-height: 1.5;}
@@ -1794,7 +1793,7 @@
 
 @media screen and (max-width: 576px) {
    
-    .about-three-service .about-three-service-icons{    width: 80px;
+    .about-three-service .tp-service-icon-wrapper{    width: 80px;
     height: 80px;}
     .home-one-service-cards{padding-left: 10px;padding-right: 10px;}
     .footer-one-information-wrapper{margin-bottom: 15px;}
@@ -1876,7 +1875,7 @@
         width: 25%;
     }
 
-    .home-one-service-cards-icon.about-three-service-icons {
+    .home-one-service-cards-icon.tp-service-icon-wrappers {
         width: 80px;
         height: 80px;
     }
