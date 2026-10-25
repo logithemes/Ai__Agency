@@ -71,6 +71,7 @@ Root Variables
     --tp-orange: #fe4d58;
     --tp-violet: #b264f3;
     --tp-pink: #f44972;
+    --tp-hover-color:#e85189;
     --tp-border-color: #444872;
     --tp-border-color-two: #2a2d4a;
     --tp-bg-secondary: #161724;
@@ -836,7 +837,7 @@ a:hover {
 }
 
 .ph-icon-wrapper {
-    background-color: #e85189;
+    background-color: var(--tp-hover-color);
     width: 24px;
     height: 24px;
 }
@@ -1482,7 +1483,7 @@ a:hover {
 }
 
 .home-three-hero-scroll:hover {
-    color: #e85189;
+    color: var(--tp-hover-color);
 }
 
 .home-three-hero-scroll i {
@@ -1735,7 +1736,7 @@ a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #e85189;
+    background: var(--tp-hover-color);
     overflow: hidden;
     transition: transform .4s ease;
     border-radius: 50px
@@ -2234,7 +2235,7 @@ a:hover {
     z-index: 2;
     margin-left: -153px;
 }
-.service-three-box:hover .service-three-arrow-button{transform: scale(1);background-color: #e85189;color: var(--tp-bg-white);}
+.service-three-box:hover .service-three-arrow-button{transform: scale(1);background-color: var(--tp-hover-color);color: var(--tp-bg-white);}
 .service-three-options-cards {
     border-bottom: 1px solid var(--tp-border-color);
     padding-top: 50px;
@@ -2393,7 +2394,7 @@ a:hover {
 }
 
 .home-one-services-list {
-    --home-one-services-accent: #e85189;
+    --home-one-services-accent: var(--tp-hover-color);
     --bs-accordion-bg: transparent;
     --bs-accordion-border-color: transparent;
     --bs-accordion-btn-focus-box-shadow: none;
@@ -4560,12 +4561,56 @@ a:hover {
     right: 0;
     bottom: 0;
     z-index: 2;
-    background-color: var(--tp-bg-white);
-    width: 50px;
-    height: 50px;
+    background-color: var(--tp-body-bg);
+       width: 65px;
+    height: 45px;
     border-radius: 50%;
+        padding: 10px 0 0 14px;
+    border-radius: 20px 0 0;
 }
-.team-card-arrow-wrap i{color: var(--tp-black);}
+.team-card-arrow-wrap::before{    content: "";
+    width: 20px;
+    height: 20px;
+    clip-path: path("M 0 0 Q 0,20 21,21 L -1 21 Z");
+    background-color: var(--tp-body-bg);
+    position: absolute;
+    bottom: 100%;
+    right: 0;
+    transform: rotate(-90deg);}
+    .team-card-arrow-wrap::after{    content: "";
+    width: 20px;
+    height: 20px;
+    clip-path: path("M 0 0 Q 0,20 21,21 L -1 21 Z");
+    background-color: var(--tp-body-bg);
+    position: absolute;
+    bottom: 0;
+    right: 100%;
+    transform: rotate(-90deg);}
+
+    .team-card-arrow{position: relative;
+        background-color: var(--tp-bg-secondary);
+    width: 32px;
+    height: 32px;
+    border-radius: 5px;}
+    .team-card-arrow:before{    position: absolute;
+    width: 48px;
+    height: 48px;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    color: var(--accent);
+    font-size: 14px;
+    bottom: -22px;
+    right: 0;
+    z-index: 3;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;}
+.team-card-arrow-wrap i{color: var(--tp-common-white);}
 
 .team-bottom-wrap {
     background-image: var(--tp-gradient-overlay);
@@ -4612,9 +4657,9 @@ a:hover {
     width: 100%;
     position: relative;
     max-height: 400px;
-    mask-image: url('../img/team/team-bg-mask.svg');
+    /* mask-image: url('../img/team/team-bg-mask.svg');
     mask-size: 100% 100%;
-    mask-repeat: no-repeat;
+    mask-repeat: no-repeat; */
 
 }
 
@@ -5784,7 +5829,7 @@ label {
     height: 40px;
     display: flex;
 }
-
+.contact-three-options a:hover{color: var(--tp-hover-color);}
 /*---------------------------------
   blog css start 
 ---------------------------------*/
@@ -6488,6 +6533,12 @@ label {
 ---------------------------------*/
 .tp-404-wrapper {
     background-image: var(--tp-section-gradient-bg);
+  
+    overflow: hidden;
+}
+
+.error-page-text {
+    align-items: center;
 }
 
 .tp-404-description {
@@ -6693,3 +6744,4 @@ label {
 1- CHECK B COLORS
 2-REMOVED UNWANTER VARABLES
 */
+/* Dark team cards styled to match the supplied team reference. */
