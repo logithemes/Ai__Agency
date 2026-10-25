@@ -564,25 +564,7 @@ awardImages.forEach(function (awardImage) {
         });
       })();
 
-        /* ===============================
-           BLOG DETAILS / ANIM-WRAP
-        =============================== */
-        var animWrap = document.querySelector(".tp-anim-wrap");
-        if (animWrap) {
-            gsap.fromTo(".tp-anim-wrap", 
-                {
-                    clipPath: "polygon(50% 0%, 50% 0%, 50% 100%, 50% 100%)",
-                    scale: 1.2
-                },
-                {
-                    clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
-                    scale: 1,
-                    duration: 1.5,
-                    ease: "power4.inOut",
-                    delay: 0.7
-                }
-            );
-        }
+    
 
         ScrollTrigger.refresh();
 

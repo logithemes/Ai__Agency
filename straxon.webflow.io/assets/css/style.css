@@ -571,6 +571,7 @@ a:hover {
     display: none;
 
 }
+.txt-loading{display: none;}
 
 .ctn-preloader .animation-preloader {
     position: absolute;
@@ -6077,7 +6078,7 @@ label {
 }
 
 .blog-details-hero-img-wrapper {
-    max-height: 600px;
+    max-height: 500px;
     height: 100%;
 }
 
@@ -6146,7 +6147,11 @@ label {
     line-height: 1.15;
 
 }
-
+.blog-details-img-wrapper{height: 100%;min-height: 300px;display: grid;}
+.blog-details-img-wrapper img{height: 100%;}
+.author-info{display: flex;align-items: center;}
+.author-info .author-avatar{width: 60px;height: 60px;}
+.author-info a img{object-position: top;}
 /*---------------------------------
     tab css start 
 ---------------------------------*/
