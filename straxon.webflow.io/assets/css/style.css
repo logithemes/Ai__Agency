@@ -6251,111 +6251,11 @@ label {
     max-width: 93px;
 }
 
-.landing-hero-image-wraper {
-    justify-content: center;
-    align-items: center;
-    max-width: 845px;
-}
 
-
-.landing-hero-overlay-wrapper {
-    justify-content: center;
-    align-items: flex-start;
-    height: 55%;
-    padding-left: 15px;
-    padding-right: 15px;
-    display: flex;
-    position: absolute;
-    inset: 160px 0% auto;
-}
-
-.landing-hero-overlay {
-    background-image: linear-gradient(#16172400, #161724);
-    border-radius: 30px;
-    width: 100%;
-    height: 100%;
-}
-
-.landing-hero-image-one {
-    display: none;
-    position: absolute;
-    inset: 40px auto auto 56px;
-}
-
-.landing-hero-image-two {
-    display: none;
-    position: absolute;
-    inset: 14% 50px auto auto;
-}
-
-.landing-hero-image-three {
-    display: none;
-    position: absolute;
-    inset: auto auto 25% 200px;
-}
-
-.landing-hero-image-four {
-    display: none;
-    position: absolute;
-    inset: auto 170px 170px auto;
-}
-
-.tp-img-full-width {
-    width: 100%;
-    height: auto;
-}
-
-.box-overlay {
-    z-index: 2;
-    background-image: linear-gradient(124deg, #eb457d, #b85fdd54);
-    position: absolute;
-    inset: 0%;
-}
-
-.features-box-one {
-    border-radius: 20px;
-    padding-left: 60px;
-    padding-right: 60px;
-    position: relative;
-    overflow: hidden;
-}
-
-.features-box-one-text-wrap {
-    z-index: 4;
-    max-width: 355px;
-    position: relative;
-}
-
-.features-box-two {
-
-    text-align: center;
-    background-color: #0a0b16;
-    border-radius: 20px;
-    flex: 1;
-    padding: 20px;
-}
-
-.features-box-three {
-    background-color: var(--tp-bg-white);
-    border-radius: 20px;
-    flex: 1;
-    justify-content: center;
-    align-items: flex-start;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 20px;
-}
-
-.featrues-box-three-text {
-    padding-right: 10px;
-}
 
 /*---------------------------------
     screenshots css start 
 ---------------------------------*/
-.tp-screenshot-wrap {
-    padding-bottom: 11px;
-}
 
 .tp-innerpages-heading-wrap {
     justify-content: flex-start;
@@ -6401,13 +6301,6 @@ label {
 
 }
 
-.screenshots-marquee-wrapper {
-    z-index: 1;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 0%;
-}
 
 .pages-landing-cards {
     outline-offset: 0px;
@@ -6419,17 +6312,6 @@ label {
     max-width: 645.89px;
     height: auto;
     margin-bottom: -66px;
-}
-
-.screenshot-marquee-train {
-    justify-content: flex-start;
-    align-items: flex-start;
-    transform: rotate(-13deg);
-}
-
-.bottom-screenshots {
-    justify-content: flex-end;
-    align-items: flex-start;
 }
 
 .link-underline {

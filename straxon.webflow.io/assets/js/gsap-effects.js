@@ -48,29 +48,7 @@
             });
         }
 
-        /* ===============================
-           SCREENSHOT LOOP
-        =============================== */
-        var screenshotsTop = document.querySelector(".tp-screenshot-wrap.top");
-        if (screenshotsTop) {
-            gsap.to(".tp-screenshot-wrap.top", {
-                y: "+=300",
-                duration: 17,
-                repeat: -1,
-                ease: "none"
-            });
-        }
-
-        var screenshotsBottom = document.querySelector(".tp-screenshot-wrap.bottom");
-        if (screenshotsBottom) {
-            gsap.to(".tp-screenshot-wrap.bottom", {
-                y: "-=300",
-                duration: 17,
-                repeat: -1,
-                ease: "none"
-            });
-        }
-
+     
         /* ===============================
            MARQUEE
         =============================== */

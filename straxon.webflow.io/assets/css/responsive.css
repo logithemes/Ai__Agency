@@ -117,13 +117,6 @@
         padding-bottom: 160px;
     }
 
-
-    .landing-hero-image-one,
-    .landing-hero-image-two,
-    .landing-hero-image-three,
-    .landing-hero-image-four {
-        display: block;
-    }
 }
 
 @media screen and (min-width: 1280px) {
@@ -1017,10 +1010,6 @@
     }
 
 
-    .landing-hero-overlay-wrapper {
-        display: none;
-    }
-
     .landing-cards-image-wrap {
         cursor: auto;
     }
@@ -1770,11 +1759,6 @@
         max-width: none;
     }
 
-    .features-box-one-text-wrap {
-        justify-content: flex-start;
-        align-items: flex-start;
-      
-    }
 
 
 
