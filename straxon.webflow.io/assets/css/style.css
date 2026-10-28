@@ -6237,7 +6237,7 @@ label {
     grid-row-gap: 12px;
     max-width: 210px;
 }
-
+.inner-page-heading{text-align: center;margin-top: 20px;}
 .landing-hero-border {
     background-color: var(--tp-border-color);
     width: 1px;
@@ -6307,6 +6307,53 @@ label {
     outline: 3px #aeb2d7;
 }
 
+.inner-pages-slider {
+    overflow: hidden;
+    padding: 18px 0 24px;
+}
+
+.inner-pages-slider .swiper-slide {
+    height: auto;
+    opacity: 0.55;
+    filter: blur(4px);
+    transition: opacity 0.35s ease, filter 0.35s ease;
+}
+
+.inner-pages-slider .swiper-slide-active {
+    opacity: 1;
+    filter: none;
+}
+
+.inner-pages-slider .swiper-slide > div {
+    width: 100%;
+    height: 100%;
+}
+
+.inner-pages-slider-controls {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;position: relative;z-index: 2;
+}
+
+.inner-pages-slider-controls button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    color: var(--tp-common-white);
+    background: transparent;
+    border: 1px solid var(--tp-border-color);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.inner-pages-slider-controls button:focus-visible {
+    outline: 2px solid currentColor;
+    outline-offset: 3px;
+}
+
 .page-count {
     width: 33vw;
     max-width: 645.89px;
@@ -6341,10 +6388,10 @@ label {
     border-radius: 20px;
     flex-flow: column;
     width: 100%;
-    padding: 30px 30px 26px;
+    padding: 25px;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: start;
+    justify-content:start;
     height: 100%;
     position: relative;
     overflow: hidden;
@@ -6404,7 +6451,10 @@ label {
 .landing-cards-image-wrap {
     cursor: none;
     border-radius: 20px;
+    height: 100%;
+    position: relative;
 }
+.landing-card-img{height: 100%;}
 
 .landing-image-overlay {
     opacity: 0;

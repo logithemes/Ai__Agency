@@ -219,6 +219,33 @@
             });
         }
 
+        /**
+         * 8. Inner Pages Slider
+         * Centers the active page card and blurs the neighboring cards
+         */
+        if ($('.inner-pages-slider').length) {
+            var innerPagesSlider = new Swiper('.inner-pages-slider', {
+                loop: true,
+                speed: 700,
+                centeredSlides: true,
+                slidesPerView: 1,
+                spaceBetween: 24,
+                grabCursor: true,
+                navigation: {
+                    nextEl: '.inner-pages-slider-next',
+                    prevEl: '.inner-pages-slider-prev',
+                },
+                keyboard: {
+                    enabled: true,
+                },
+                breakpoints: {
+                    768: {
+                        slidesPerView: 3,
+                    },
+                },
+            });
+        }
+
 }); // End document ready
 
 })(jQuery);
