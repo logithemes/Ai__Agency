@@ -68,7 +68,42 @@
             return totalWidth;
         }
 
-        document.querySelectorAll(".marquee-train-left, .home-three-marquee").forEach(function(train) {
+          function initHomepageMarquees() {
+            document.querySelectorAll(".homepage-marquee-track").forEach(function(train) {
+              var group = train.querySelector(".homepage-marquee-group");
+              if (!group || !train.parentElement) return;
+
+              var gap = parseFloat(window.getComputedStyle(train).columnGap) || 0;
+              var period = group.getBoundingClientRect().width + gap;
+              if (!period) return;
+
+              while (train.scrollWidth < train.parentElement.clientWidth + period) {
+                var clone = group.cloneNode(true);
+                clone.setAttribute("aria-hidden", "true");
+                clone.setAttribute("inert", "");
+                train.appendChild(clone);
+              }
+
+              var movesRight = train.classList.contains("marquee-train-right");
+              gsap.killTweensOf(train);
+              gsap.set(train, { x: movesRight ? -period : 0 });
+              gsap.to(train, {
+                x: movesRight ? 0 : -period,
+                duration: 50,
+                ease: "none",
+                repeat: -1
+              });
+            });
+          }
+
+          initHomepageMarquees();
+          var homepageMarqueeResizeTimer;
+          window.addEventListener("resize", function() {
+            window.clearTimeout(homepageMarqueeResizeTimer);
+            homepageMarqueeResizeTimer = window.setTimeout(initHomepageMarquees, 150);
+          });
+
+          document.querySelectorAll(".marquee-train-left:not(.homepage-marquee-track), .home-three-marquee").forEach(function(train) {
             if (!train) return;
             var trainWidth = fillWithClones(train);
             if (trainWidth > 0) {
@@ -86,7 +121,7 @@
             }
         });
 
-        document.querySelectorAll(".marquee-train-right").forEach(function(train) {
+        document.querySelectorAll(".marquee-train-right:not(.homepage-marquee-track)").forEach(function(train) {
             if (!train) return;
             var trainWidth = fillWithClones(train);
             if (trainWidth > 0) {

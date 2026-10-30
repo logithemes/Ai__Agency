@@ -21,150 +21,99 @@
 <link rel="stylesheet" href="assets/css/responsive.css">
 
 <style>
-  .tp-feature-section {
-    background: #f5f5f5;
-    border-top: 1px solid rgba(15, 23, 42, 0.08);
-    border-bottom: 1px solid rgba(15, 23, 42, 0.08);
-  }
 
-  .tp-feature-intro {
-    position: relative;
-    padding-right: 15px;
-  }
 
-  .tp-feature-kicker {
-    display: inline-block;
-    margin-bottom: 20px;
-    font-size: 15px;
-    font-weight: 600;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    color: #111827;
-    opacity: 0.7;
-  }
-
+.tp-feature-intro{padding-right: 80px}
   .tp-feature-intro h2 {
-    font-size: clamp(2.5rem, 4vw, 5rem);
-    line-height: 0.96;
-    font-weight: 800;
-    letter-spacing: -0.06em;
-    color: #111111;
-    margin: 0 0 22px;
-    max-width: 420px;
+    margin: 0 0 46px;
+  
+    font-size: clamp(2.25rem, 3.15vw, 3.25rem);
+    font-weight: 400;
+    line-height: 1.3;
   }
 
-  .tp-feature-intro p {
-    max-width: 360px;
-    margin: 0;
-    font-size: 1.05rem;
-    line-height: 1.7;
-    color: rgba(17, 17, 17, 0.72);
+  .tp-feature-intro h2 span {
+    display: block;
   }
 
-  .tp-feature-curve {
-    position: relative;
-    width: 180px;
-    height: 120px;
-    margin-top: 24px;
-    margin-left: 30px;
-    border: 3px solid transparent;
-    border-bottom: 3px solid #111111;
-    border-left: 3px solid #111111;
-    border-radius: 0 0 0 120px;
-    transform: rotate(10deg);
-    opacity: 0.7;
+  .tp-feature-intro h2 .tp-feature-muted {
+    color: #bcbab9;
   }
 
-  .tp-feature-curve::after {
-    content: "";
-    position: absolute;
-    width: 16px;
-    height: 16px;
-    border-left: 3px solid #111111;
-    border-bottom: 3px solid #111111;
-    transform: rotate(45deg);
-    right: -10px;
-    bottom: -10px;
-    background: transparent;
+  .tp-feature-devices {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    max-width: 500px;
+    gap: 16px;
   }
 
-  .tp-feature-card {
+  .tp-feature-device {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    min-height: 220px;
-    padding: 28px 24px 22px;
-    background: rgba(255, 255, 255, 0.55);
-    border: 1px solid rgba(17, 17, 17, 0.06);
-    border-radius: 18px;
-    box-shadow: 0 10px 25px rgba(17, 17, 17, 0.02);
+    gap: 12px;
+    line-height: 1.25;
     text-align: center;
-    transition: transform 0.28s ease, box-shadow 0.28s ease, border-color 0.28s ease;
   }
 
-  .tp-feature-card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 18px 35px rgba(17, 17, 17, 0.08);
-    border-color: rgba(17, 17, 17, 0.12);
+  .tp-feature-device-icon {
+    display: grid;
+    width: 92px;
+    aspect-ratio: 1;
+    place-items: center;
+    border: 1px solid var(--tp-border-color);
+    border-radius: 50%;
+    color: var(--tp-common-white);
+    font-size: 2rem;
   }
 
-  .tp-feature-icon-wrap {
+  .tp-feature-visual {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 96px;
-    height: 96px;
-    margin-bottom: 18px;
-    border-radius: 18px;
-    background: linear-gradient(135deg, rgba(255,255,255,0.8), rgba(240,240,240,0.8));
-    box-shadow: inset 0 1px 0 rgba(255,255,255,0.9);
+    min-width: 0;
   }
 
-  .tp-feature-icon {
-    max-width: 68px;
-    max-height: 68px;
-    width: auto;
+  .tp-feature-visual img {
+    display: block;
+    width: 100%;
+    max-width: 760px;
     height: auto;
     object-fit: contain;
-    filter: drop-shadow(0 8px 18px rgba(17, 17, 17, 0.08));
-  }
-
-  .tp-feature-card h3 {
-    margin: 0;
-    font-size: 1.05rem;
-    font-weight: 600;
-    line-height: 1.4;
-    color: #111111;
-    letter-spacing: -0.03em;
   }
 
   @media (max-width: 991.98px) {
+    
+
     .tp-feature-intro {
-      margin-bottom: 30px;
-      padding-right: 0;
+      max-width: 720px;
     }
 
-    .tp-feature-intro h2,
-    .tp-feature-intro p {
-      max-width: 100%;
+    .tp-feature-visual {
+      max-width: 700px;
+      margin: 0 auto;
     }
   }
 
   @media (max-width: 575.98px) {
-    .tp-feature-card {
-      min-height: 190px;
-      padding: 26px 18px 18px;
+    .tp-feature-intro h2 {
+      margin-bottom: 32px;
+      font-size: clamp(2rem, 8vw, 2.75rem);
+      line-height: 1.25;
     }
 
-    .tp-feature-icon-wrap {
-      width: 78px;
-      height: 78px;
+    .tp-feature-devices {
+      gap: 10px;
     }
 
-    .tp-feature-icon {
-      max-width: 56px;
-      max-height: 56px;
+    .tp-feature-device {
+      gap: 8px;
+      font-size: 0.875rem;
+    }
+
+    .tp-feature-device-icon {
+      width: min(18vw, 72px);
+      font-size: 1.6rem;
     }
   }
 </style>
@@ -324,7 +273,7 @@
   <!-- ===================================================
 				landing hero sec
 				==================================================== -->
-  <section class="landing-hero pt-200 md-pt-140 pb-100 md-pb-60 position-relative">
+  <section class="landing-hero pt-200 md-pt-140 pb-30  position-relative">
     <div class="container">
       <div class="row">
         <div class="landing-hero-container col-md-10 col-12 mx-auto">
@@ -388,6 +337,61 @@
 
 
   <!-- ===================================================
+				Homepage preview marquee
+				==================================================== -->
+  <section id="homepages" class="homepage-showcase" aria-label="Homepage and inner page previews">
+    <div class="homepage-marquee homepage-marquee-first">
+      <div class="homepage-marquee-track marquee-train-left">
+        <div class="homepage-marquee-group">
+          <a class="homepage-preview-card" href="home-one.html" target="_blank" rel="noopener" aria-label="View Home One">
+            <img src="assets/img/hero-demo/home_one_sc.webp" alt="Home One website preview" loading="lazy">
+          </a>
+          <a class="homepage-preview-card" href="home-two.html" target="_blank" rel="noopener" aria-label="View Home Two">
+            <img src="assets/img/hero-demo/home_two_sc.webp" alt="Home Two website preview" loading="lazy">
+          </a>
+          <a class="homepage-preview-card" href="about-one.html" target="_blank" rel="noopener" aria-label="View About One">
+            <img src="assets/img/hero-demo/about_one_sc.webp" alt="About One website preview" loading="lazy">
+          </a>
+          <a class="homepage-preview-card" href="service-one.html" target="_blank" rel="noopener" aria-label="View Service One">
+            <img src="assets/img/hero-demo/service_one_sc.webp" alt="Service One website preview" loading="lazy">
+          </a>
+        </div>
+        <div class="homepage-marquee-group" aria-hidden="true" inert>
+          <a class="homepage-preview-card" href="home-one.html" tabindex="-1"><img src="assets/img/hero-demo/home_one_sc.webp" alt="" loading="lazy"></a>
+          <a class="homepage-preview-card" href="home-two.html" tabindex="-1"><img src="assets/img/hero-demo/home_two_sc.webp" alt="" loading="lazy"></a>
+          <a class="homepage-preview-card" href="about-one.html" tabindex="-1"><img src="assets/img/hero-demo/about_one_sc.webp" alt="" loading="lazy"></a>
+          <a class="homepage-preview-card" href="service-one.html" tabindex="-1"><img src="assets/img/hero-demo/service_one_sc.webp" alt="" loading="lazy"></a>
+        </div>
+      </div>
+    </div>
+    <div class="homepage-marquee homepage-marquee-second">
+      <div class="homepage-marquee-track marquee-train-right">
+        <div class="homepage-marquee-group">
+          <a class="homepage-preview-card" href="blog-one.html" target="_blank" rel="noopener" aria-label="View Blog One">
+            <img src="assets/img/hero-demo/blog_one_sc.webp" alt="Blog One website preview" loading="lazy">
+          </a>
+          <a class="homepage-preview-card" href="contact-one.html" target="_blank" rel="noopener" aria-label="View Contact One">
+            <img src="assets/img/hero-demo/contact_one_sc.webp" alt="Contact One website preview" loading="lazy">
+          </a>
+          <a class="homepage-preview-card" href="projects.html" target="_blank" rel="noopener" aria-label="View Projects">
+            <img src="assets/img/hero-demo/project_sc.webp" alt="Projects website preview" loading="lazy">
+          </a>
+          <a class="homepage-preview-card" href="team.html" target="_blank" rel="noopener" aria-label="View Team">
+            <img src="assets/img/hero-demo/team_sc.webp" alt="Team website preview" loading="lazy">
+          </a>
+        </div>
+        <div class="homepage-marquee-group" aria-hidden="true" inert>
+          <a class="homepage-preview-card" href="blog-one.html" tabindex="-1"><img src="assets/img/hero-demo/blog_one_sc.webp" alt="" loading="lazy"></a>
+          <a class="homepage-preview-card" href="contact-one.html" tabindex="-1"><img src="assets/img/hero-demo/contact_one_sc.webp" alt="" loading="lazy"></a>
+          <a class="homepage-preview-card" href="projects.html" tabindex="-1"><img src="assets/img/hero-demo/project_sc.webp" alt="" loading="lazy"></a>
+          <a class="homepage-preview-card" href="team.html" tabindex="-1"><img src="assets/img/hero-demo/team_sc.webp" alt="" loading="lazy"></a>
+        </div>
+      </div
+    </div>
+    <span class="preview-image-shadow"></span>
+  </section>
+
+   <!-- ===================================================
 				landing homepages section
 				==================================================== -->
   <section class=" pt-120 md-pt-70">
@@ -495,6 +499,8 @@
       </div>
     </div>
   </section>
+
+  
   <!-- ===================================================
 			 Landing innerpages pages
 			==================================================== -->
@@ -723,102 +729,39 @@
   <!-- ===================================================
 			Landing cms pages
 			==================================================== -->
-  <section class="tp-feature-section pt-120 md-pt-60 pb-120 md-pb-60">
+  <section class="tp-feature-section  pb-120 md-pb-60">
     <div class="container">
-      <div class="row align-items-center g-4 g-lg-5">
-        <div class="col-lg-4">
+      <div class="row align-items-center">
+        <div class="col-12 col-xl-6">
           <div class="tp-feature-intro" data-aos="fade-up" data-aos-duration="900" data-aos-delay="100">
-            <span class="tp-feature-kicker">Feature</span>
-            <h2>With popular <span class="text-gradiant">features</span></h2>
-            <p>
-              We provide impressive and amazing features for your website so that you can easily and quickly manage your website.
-            </p>
-            <div class="tp-feature-curve" aria-hidden="true"></div>
+            <p class="heading-font heading-three pb-30 tp-feature-intro-text">fully responsive and pixel-perfect. It looks great on any device, from mobile phones to desktop computers.</p>
+            
+          
+            <div class="tp-feature-devices" aria-label="Responsive across devices">
+              <div class="tp-feature-device">
+                <span class="tp-feature-device-icon"><i class="bi bi-phone" aria-hidden="true"></i></span>
+                <span>Smartphone</span>
+              </div>
+              <div class="tp-feature-device">
+                <span class="tp-feature-device-icon"><i class="bi bi-tablet" aria-hidden="true"></i></span>
+                <span>Tablet</span>
+              </div>
+              <div class="tp-feature-device">
+                <span class="tp-feature-device-icon"><i class="bi bi-laptop" aria-hidden="true"></i></span>
+                <span>Laptop</span>
+              </div>
+              <div class="tp-feature-device">
+                <span class="tp-feature-device-icon"><i class="bi bi-display" aria-hidden="true"></i></span>
+                <span>Desktop</span>
+              </div>
+            </div>
           </div>
         </div>
-
-        <div class="col-lg-8">
-          <div class="row g-4">
-            <div class="col-6 col-md-4">
-              <article class="tp-feature-card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
-                <div class="tp-feature-icon-wrap">
-                  <img class="tp-feature-icon" src="https://crowdytheme.com/html/axtra-preview/assets/imgs/tech/tech-1.png" alt="HTML5" loading="lazy">
-                </div>
-                <h3>HTML5</h3>
-              </article>
-            </div>
-
-            <div class="col-6 col-md-4">
-              <article class="tp-feature-card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="150">
-                <div class="tp-feature-icon-wrap">
-                  <img class="tp-feature-icon" src="https://crowdytheme.com/html/axtra-preview/assets/imgs/tech/tech-2.png" alt="CSS3" loading="lazy">
-                </div>
-                <h3>CSS3</h3>
-              </article>
-            </div>
-
-            <div class="col-6 col-md-4">
-              <article class="tp-feature-card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
-                <div class="tp-feature-icon-wrap">
-                  <img class="tp-feature-icon" src="https://crowdytheme.com/html/axtra-preview/assets/imgs/tech/tech-11.png" alt="Bootstrap 5" loading="lazy">
-                </div>
-                <h3>Bootstrap 5</h3>
-              </article>
-            </div>
-
-            <div class="col-6 col-md-4">
-              <article class="tp-feature-card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="250">
-                <div class="tp-feature-icon-wrap">
-                  <img class="tp-feature-icon" src="https://crowdytheme.com/html/axtra-preview/assets/imgs/tech/tech-5.png" alt="W3C Validation" loading="lazy">
-                </div>
-                <h3>W3C Validation</h3>
-              </article>
-            </div>
-
-            <div class="col-6 col-md-4">
-              <article class="tp-feature-card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
-                <div class="tp-feature-icon-wrap">
-                  <img class="tp-feature-icon" src="https://crowdytheme.com/html/axtra-preview/assets/imgs/tech/tech-7.png" alt="Fully Responsive" loading="lazy">
-                </div>
-                <h3>Fully Responsive</h3>
-              </article>
-            </div>
-
-            <div class="col-6 col-md-4">
-              <article class="tp-feature-card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="350">
-                <div class="tp-feature-icon-wrap">
-                  <img class="tp-feature-icon" src="https://crowdytheme.com/html/axtra-preview/assets/imgs/tech/tech-3.png" alt="SEO Optimized" loading="lazy">
-                </div>
-                <h3>SEO Optimized</h3>
-              </article>
-            </div>
-
-            <div class="col-6 col-md-4">
-              <article class="tp-feature-card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
-                <div class="tp-feature-icon-wrap">
-                  <img class="tp-feature-icon" src="https://crowdytheme.com/html/axtra-preview/assets/imgs/tech/tech-8.png" alt="Google Fonts" loading="lazy">
-                </div>
-                <h3>Google Fonts</h3>
-              </article>
-            </div>
-
-            <div class="col-6 col-md-4">
-              <article class="tp-feature-card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="450">
-                <div class="tp-feature-icon-wrap">
-                  <img class="tp-feature-icon" src="https://crowdytheme.com/html/axtra-preview/assets/imgs/tech/tech-7.png" alt="Clean Code" loading="lazy">
-                </div>
-                <h3>Clean Code</h3>
-              </article>
-            </div>
-
-            <div class="col-6 col-md-4">
-              <article class="tp-feature-card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="500">
-                <div class="tp-feature-icon-wrap">
-                  <img class="tp-feature-icon" src="https://crowdytheme.com/html/axtra-preview/assets/imgs/tech/tech-5.png" alt="Well Documented" loading="lazy">
-                </div>
-                <h3>Well Documented</h3>
-              </article>
-            </div>
+        <!-- col-12 col-xl-6 -->
+        <div class="col-12 col-xl-6">
+          <div class="tp-feature-visual" data-aos="fade-left" data-aos-duration="1000">
+            <img src="https://mixdesign.dev/themeforest/rayo/img/demo/01_resp-img.webp"
+              alt="Rayo website displayed on a smartphone and mobile device" loading="lazy">
           </div>
         </div>
       </div>

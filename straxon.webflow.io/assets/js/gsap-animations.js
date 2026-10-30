@@ -153,6 +153,7 @@
         wordScrollAnimation('.home-three-skills', '.home-three-skills .home-three-skills-description p');
         wordScrollAnimation('.tp-home-about-story', '.tp-home-about-video-desc');
          wordScrollAnimation('.about-one-counter-left', '.counter-left-text');
+         wordScrollAnimation('.tp-feature-intro', '.tp-feature-intro-text');
 
        
         // HOME ONE ABOUT US 
