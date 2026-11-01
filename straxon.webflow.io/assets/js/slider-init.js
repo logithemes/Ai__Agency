@@ -206,9 +206,16 @@
         if ($('.home-two-testimonial-slider').length) {
             var homeTwoTestimonialSlider = new Swiper('.home-two-testimonial-slider', {
                 loop: true,
-                speed: 700,
+                speed: 10000,
                 slidesPerView: 1,
+                slidesPerGroup: 1,
                 grabCursor: true,
+                allowTouchMove: true,
+                longSwipesRatio: 0.1,
+                autoplay: {
+                    delay: 0,
+                    disableOnInteraction: false,
+                },
                 navigation: {
                     nextEl: '.home-two-testimonial-next',
                     prevEl: '.home-two-testimonial-prev',
