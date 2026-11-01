@@ -2786,16 +2786,17 @@ a:hover {
     object-position: center 35%;
 }
 
-.home-two-testimonial-controls {
+/* .home-two-testimonial-controls {
     position: absolute;
     z-index: 2;
     left: calc(58% - 116px);
     bottom: 32px;
-    display: none;
+    display: flex;
     gap: 10px;
 }
 
-.home-two-testimonial-controls button {
+.home-two-testimonial-prev,
+.home-two-testimonial-next {
     width: 40px;
     height: 40px;
     padding: 0;
@@ -2809,14 +2810,16 @@ a:hover {
     cursor: pointer;
 }
 
-.home-two-testimonial-controls button:focus-visible {
+.home-two-testimonial-prev:focus-visible,
+.home-two-testimonial-next:focus-visible {
     outline: 2px solid var(--tp-bg-white);
     outline-offset: 2px;
 }
 
-.home-two-testimonial-controls button:hover {
+.home-two-testimonial-prev:hover,
+.home-two-testimonial-next:hover {
     color: var(--tp-pink);
-}
+} */
 
 .about-three-slider-pagination .tp-slider-dot {
     cursor: pointer;

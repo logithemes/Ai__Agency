@@ -203,28 +203,33 @@
          * 7. Home Two Testimonial Slider
          * Shows one client quote and portrait at a time
          */
-        if ($('.home-two-testimonial-slider').length) {
-            var homeTwoTestimonialSlider = new Swiper('.home-two-testimonial-slider', {
-                loop: true,
-                speed: 10000,
-                slidesPerView: 1,
-                slidesPerGroup: 1,
-                grabCursor: true,
-                allowTouchMove: true,
-                longSwipesRatio: 0.1,
-                autoplay: {
-                    delay: 0,
-                    disableOnInteraction: false,
-                },
-                navigation: {
-                    nextEl: '.home-two-testimonial-next',
-                    prevEl: '.home-two-testimonial-prev',
-                },
-                keyboard: {
-                    enabled: true,
-                },
-            });
-        }
+     if ($('.home-two-testimonial-slider').length) {
+    var homeTwoTestimonialSlider = new Swiper('.home-two-testimonial-slider', {
+        loop: true,
+        speed: 8000,
+        slidesPerView: 1,
+        slidesPerGroup: 1,
+
+        grabCursor: true,
+        allowTouchMove: true,
+
+        // Require a full-slide drag
+        threshold: 10,
+        longSwipesRatio: 1,
+        longSwipesMs: 100,
+
+        autoplay: {
+            delay: 0,
+            disableOnInteraction: false,
+        },
+
+       
+
+        keyboard: {
+            enabled: true,
+        },
+    });
+}
 
         /**
          * 8. Inner Pages Slider
