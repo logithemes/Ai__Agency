@@ -15,39 +15,50 @@
         /* ===============================
            EXPLORE CURSOR
         =============================== */
-        var explore = document.querySelector(".explore-now");
-        if (explore) {
-            var cards = gsap.utils.toArray(".landing-cards, .service-sticky, .blog-three-posts-image, .portfolio-sticky-images");
-            
-            cards.forEach(function(card) {
-                if (!card) return;
-                
-                card.addEventListener("mouseenter", function() {
-                    gsap.to(explore, {
-                        opacity: 1,
-                        scale: 1,
-                        duration: 0.4
-                    });
-                });
+      var explore = document.querySelector(".explore-now");
 
-                card.addEventListener("mouseleave", function() {
-                    gsap.to(explore, {
-                        opacity: 0,
-                        duration: 0.4
-                    });
-                });
+if (explore) {
+    // Initially hide the explore cursor
+    gsap.set(explore, {
+        opacity: 0,
+        scale: 0
+    });
 
-                card.addEventListener("mousemove", function(e) {
-                    gsap.to(explore, {
-                        x: e.clientX,
-                        y: e.clientY,
-                        duration: 0.2,
-                        ease: "power2.out"
-                    });
-                });
+    var cards = gsap.utils.toArray(
+        ".landing-cards, .service-sticky, .blog-three-posts-image, .portfolio-sticky-images"
+    );
+
+    cards.forEach(function (card) {
+
+        card.addEventListener("mouseenter", function () {
+            gsap.to(explore, {
+                opacity: 1,
+                scale: 1,
+                duration: 0.7,
+                ease: "power2.out"
             });
-        }
+        });
 
+        card.addEventListener("mouseleave", function () {
+            gsap.to(explore, {
+                opacity: 0,
+                scale: 0,
+                duration: 0.7,
+                ease: "power2.out"
+            });
+        });
+
+        card.addEventListener("mousemove", function (e) {
+            gsap.to(explore, {
+                x: e.clientX,
+                y: e.clientY,
+                duration: 0.2,
+                ease: "power2.out"
+            });
+        });
+
+    });
+}
      
         /* ===============================
            MARQUEE
