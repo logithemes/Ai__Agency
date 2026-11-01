@@ -2668,7 +2668,7 @@ a:hover {
     align-items: center;
 }
 
-
+.home-two-testimonial{position: relative;overflow: hidden;}
 .home-two-testimonial-backdrop {
     background-image: var(--tp-gradient-overlay);
     border-bottom: 1px solid var(--tp-border-color);
@@ -2678,6 +2678,7 @@ a:hover {
     height: 100%;
     position: absolute;
     top: 0;
+    z-index: -1;
 }
 
 .home-two-testimonial {
