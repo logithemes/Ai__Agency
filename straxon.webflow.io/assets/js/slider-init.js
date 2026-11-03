@@ -130,27 +130,42 @@
             });
         }
 
-        /**
-         * 5. Image Swiper (Home Three)
-         * Cards effect for image slides with content sync
-         * 
-         * @since 1.0.0
-         */
-        if ($('.home-three-slider-area').length) {
-            var imageSwiper = new Swiper('.home-three-slider-area', {
-                effect: 'cards',
+      
+
+        // Home Three testimonial carousel with responsive card counts and arrow controls.
+        if ($('.home-three-testimonial-swiper').length) {
+            var homeThreeTestimonialSwiper = new Swiper('.home-three-testimonial-swiper', {
+                loop: true,
+                speed: 700,
+                slidesPerView: 1.08,
+                spaceBetween: 16,
                 grabCursor: true,
-                cardsEffect: {
-                    slideShadows: false,
-                    perSlideOffset: 14
+                keyboard: {
+                    enabled: true,
                 },
-                on: {
-                    slideChange: function() {
-                        if (typeof contentSwiper !== 'undefined') {
-                            contentSwiper.slideTo(this.activeIndex);
-                        }
-                    }
-                }
+                navigation: {
+                    nextEl: '.home-three-testimonial-next',
+                    prevEl: '.home-three-testimonial-prev',
+                },
+                breakpoints: {
+                    576: {
+                        slidesPerView: 1,
+                        spaceBetween: 18,
+                    },
+                    768: {
+                        slidesPerView: 2.,
+                        spaceBetween: 20,
+                    },
+                    992: {
+                        slidesPerView: 2,
+                        spaceBetween: 22,
+                    },
+                    1200: {
+                        slidesPerView: 3,
+                        spaceBetween: 22,
+                    },
+                  
+                },
             });
         }
 
@@ -206,7 +221,7 @@
      if ($('.home-two-testimonial-slider').length) {
     var homeTwoTestimonialSlider = new Swiper('.home-two-testimonial-slider', {
         loop: true,
-        speed: 8000,
+        speed: 20000,
         slidesPerView: 1,
         slidesPerGroup: 1,
 

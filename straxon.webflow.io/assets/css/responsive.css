@@ -59,9 +59,6 @@
         display: inline;
     }
 
-    .home-three-testimonial-slide {
-        margin-left: 50px;
-    }
 
     .clients-two {
         padding-top: 155px;
@@ -175,17 +172,8 @@
       width: 100%;
       height: 160px;
     }
-    .home-three-slider-area {
-        max-width: 235px;
-        width: 100%;
-        height: auto;
-    }
 
-    .home-three-testimonial-text {
-        margin-left: 0;
-        padding-left: 22px;
-        max-width: 400px;
-    }
+    
 
 }
 
@@ -524,15 +512,11 @@
 
 
 
-    .tp-radius-20.tab-image-full-width {
+.tab-image-full-width {
         width: 100%;
         height: auto;
     }
 
-    .tp-radius-20.testimonial-images {
-        width: 250px;
-        height: auto;
-    }
 
     .double-marquee-wrapper {
         grid-column-gap: 20px;
@@ -1118,11 +1102,6 @@
         width: 8em;
     }
 
-    .home-three-slider-area {
-        width: 260px;
-        height: 340px;
-        margin: auto;
-    }
 
     .header-logo {
         padding-left: 10px;
@@ -1339,11 +1318,6 @@
         width: 100%;
     }
 
-    .home-three-testimonial-top {
-        text-align: center;
-        justify-content: flex-start;
-        align-items: center;
-    }
 
     .home-three-hero-heading {
         grid-column-gap: 10px;
@@ -1351,10 +1325,6 @@
     }
 
 
-    .home-three-testimonial-text {
-        margin-bottom: 0;
-        margin: 0 auto;
-    }
 
     .top-border {
         display: none;
@@ -1397,10 +1367,6 @@
         display: none;
     }
 
-    .home-testimonial-main {
-        justify-content: flex-start;
-        align-items: center;
-    }
 
     .about-two-hero-main {
         padding-top: 115px;
@@ -1879,9 +1845,6 @@
         padding-right: 15px;
     }
 
-    .tp-radius-20.testimonial-images {
-        width: 220px;
-    }
 
     .footer-one-main {
         grid-column-gap: 50px;
