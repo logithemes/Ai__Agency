@@ -419,7 +419,7 @@ a:hover {
 }
 
 .tp-input-icon {
-    color: #db4e93b0;
+    color: var(--tp-primary-color)
 }
 
 .tp-flex-vertical {
