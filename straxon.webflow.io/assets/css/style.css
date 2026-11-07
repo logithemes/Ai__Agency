@@ -687,7 +687,9 @@ a:hover {
 .header-logo {
     position: relative;
     display: inline-block;
+    max-width: 200px;
 }
+.header-logo img{width: 100%;}
 
 .main-menu {
     display: block;
@@ -2192,8 +2194,8 @@ a:hover {
 
 }
 
-.tp-hover-wrap:hover .circle-icon i {
-    color: var(--tp-pink);
+.tp-arrow-hover-wrap:hover .circle-icon i {
+    color: var(--tp-theme-primary);
     transition: all var(--transition-medium) ease-in-out;
 }
 
@@ -2458,7 +2460,7 @@ a:hover {
 
 .home-one-services-toggle:not(.collapsed) .home-one-services-close {
     display: inline-block;
-    color: var(--home-one-services-accent);
+    color: var(--tp-theme-primary);
 }
 
 .home-one-services-body {
@@ -6356,9 +6358,9 @@ label {
 /*---------------------------------
     landing hero css start 
 ---------------------------------*/
-/* .landing-hero {
+.landing-hero {
     background-image: var(--tp-section-gradient-bg)
-} */
+}
 
 .landing-hero-container {
     z-index: 3;
