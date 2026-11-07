@@ -215,36 +215,105 @@
 }
 
         /**
-         * 7. Home Two Testimonial Slider
-         * Shows one client quote and portrait at a time
+         * 7. Home Two Testimonial Loop
+         * Continuously scrolls the testimonials and supports pointer dragging.
          */
-     if ($('.home-two-testimonial-slider').length) {
-    var homeTwoTestimonialSlider = new Swiper('.home-two-testimonial-slider', {
-        loop: true,
-        speed: 20000,
-        slidesPerView: 1,
-        slidesPerGroup: 1,
+        document.querySelectorAll('.home-two-testimonial-slider').forEach(function(viewport) {
+            var track = viewport.querySelector('.home-two-testimonial-track');
+            if (!track || !track.children.length) return;
 
-        grabCursor: true,
-        allowTouchMove: true,
+            var originalSlides = Array.from(track.children);
+            originalSlides.forEach(function(slide) {
+                var clone = slide.cloneNode(true);
+                clone.setAttribute('aria-hidden', 'true');
+                clone.setAttribute('inert', '');
+                track.appendChild(clone);
+            });
 
-        // Require a full-slide drag
-        threshold: 10,
-        longSwipesRatio: 1,
-        longSwipesMs: 100,
+            var period = 0;
+            var position = 0;
+            var speed = 0;
+            var dragging = false;
+            var dragStartX = 0;
+            var dragStartPosition = 0;
+            var lastPointerX = 0;
+            var lastPointerTime = 0;
+            var dragVelocity = 0;
+            var inertiaTween;
 
-        autoplay: {
-            delay: 0,
-            disableOnInteraction: false,
-        },
+            function measure() {
+                period = originalSlides.reduce(function(width, slide) {
+                    return width + slide.getBoundingClientRect().width;
+                }, 0);
+                if (!period) return;
 
-       
+                speed = originalSlides[0].getBoundingClientRect().width / 10;
+                position = gsap.utils.wrap(-period, 0, position);
+                gsap.set(track, { x: position });
+            }
 
-        keyboard: {
-            enabled: true,
-        },
-    });
-}
+            function tick(time, deltaTime) {
+                if (dragging || inertiaTween || !period) return;
+                position = gsap.utils.wrap(-period, 0, position - speed * deltaTime / 1000);
+                gsap.set(track, { x: position });
+            }
+
+            function onPointerDown(event) {
+                if (event.button !== undefined && event.button !== 0) return;
+                dragging = true;
+                viewport.classList.add('is-dragging');
+                if (inertiaTween) {
+                    inertiaTween.kill();
+                    inertiaTween = null;
+                }
+                dragStartX = event.clientX;
+                dragStartPosition = position;
+                lastPointerX = event.clientX;
+                lastPointerTime = performance.now();
+                dragVelocity = 0;
+                if (viewport.setPointerCapture) viewport.setPointerCapture(event.pointerId);
+                event.preventDefault();
+            }
+
+            function onPointerMove(event) {
+                if (!dragging) return;
+                var now = performance.now();
+                var elapsed = now - lastPointerTime;
+                if (elapsed > 0) dragVelocity = (event.clientX - lastPointerX) / elapsed * 1000;
+                lastPointerX = event.clientX;
+                lastPointerTime = now;
+                position = gsap.utils.wrap(-period, 0, dragStartPosition + event.clientX - dragStartX);
+                gsap.set(track, { x: position });
+            }
+
+            function onPointerUp() {
+                if (!dragging) return;
+                dragging = false;
+                viewport.classList.remove('is-dragging');
+                if (Math.abs(dragVelocity) > 40) {
+                    inertiaTween = gsap.to({ x: position }, {
+                        x: position + dragVelocity * 0.18,
+                        duration: 0.35,
+                        ease: 'power2.out',
+                        onUpdate: function() {
+                            position = gsap.utils.wrap(-period, 0, this.targets()[0].x);
+                            gsap.set(track, { x: position });
+                        },
+                        onComplete: function() {
+                            inertiaTween = null;
+                        }
+                    });
+                }
+            }
+
+            measure();
+            viewport.addEventListener('pointerdown', onPointerDown);
+            viewport.addEventListener('pointermove', onPointerMove);
+            viewport.addEventListener('pointerup', onPointerUp);
+            viewport.addEventListener('pointercancel', onPointerUp);
+            window.addEventListener('resize', measure);
+            gsap.ticker.add(tick);
+        });
 
         /**
          * 8. Inner Pages Slider

@@ -2901,15 +2901,29 @@ a:hover {
 
 .home-two-testimonial-slider {
     position: relative;
+    width: 100%;
     overflow: hidden;
     border-radius: 30px;
-    gap: 30px;
+    cursor: grab;
+    touch-action: pan-y;
+    user-select: none;
 }
 
-.home-two-testimonial-slider .swiper-wrapper {
-    transition-timing-function: linear !important;
+.home-two-testimonial-slider.is-dragging {
+    cursor: grabbing;
 }
-.home-two-slider-wrapper{padding: 20px;}
+
+.home-two-testimonial-track {
+    display: flex;
+    width: 100%;
+    will-change: transform;
+}
+
+.home-two-slider-wrapper {
+    box-sizing: border-box;
+    flex: 0 0 100%;
+    padding: 20px;
+}
 .home-two-testimonial-slide {
     min-height: 470px;
     padding: 20px;
@@ -7034,4 +7048,3 @@ label {
         padding: 22px 14px;
     }
 }
-
