@@ -2130,7 +2130,7 @@
     }
 
 
-    .landing-cards {
+    .landing-cards-wrapper {
         grid-column-gap: 22px;
         grid-row-gap: 22px;
         padding: 20px;

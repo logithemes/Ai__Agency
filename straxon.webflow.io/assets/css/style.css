@@ -6511,12 +6511,6 @@ label {
 
 }
 
-
-.pages-landing-cards {
-    outline-offset: 0px;
-    outline: 3px #aeb2d7;
-}
-
 .inner-pages-slider {
     overflow: hidden;
     padding: 18px 0 24px;
@@ -6589,7 +6583,7 @@ label {
     inset: auto 200px 80px auto;
 }
 
-.landing-cards {
+.landing-cards-wrapper {
     background-color: #3e4055;
     border-radius: 20px;
     flex-flow: column;
@@ -6655,11 +6649,11 @@ label {
 }
 
 .landing-cards-image-wrap {
-    cursor: none;
     border-radius: 20px;
     height: 100%;
     position: relative;
 }
+.landing-explore{cursor: none;}
 .landing-card-img{height: 100%;}
 
 .landing-image-overlay {
@@ -7020,9 +7014,7 @@ label {
 
 .landing-feature-card h3 {
 
-    font-family: var(--tp-font-body);
-    font-size: 1rem;
-    font-weight: 500;
+
     line-height: 1.45;
     margin: 0;
 }

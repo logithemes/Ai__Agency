@@ -25,7 +25,7 @@ if (explore) {
     });
 
     var cards = gsap.utils.toArray(
-        ".landing-cards, .service-sticky, .blog-three-posts-image, .portfolio-sticky-images"
+        ".landing-explore, .service-sticky, .blog-three-posts-image, .portfolio-sticky-images"
     );
 
     cards.forEach(function (card) {
