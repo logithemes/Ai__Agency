@@ -1,0 +1,563 @@
+STYNERO - HTML TEMPLATE
+Image Credits and Licenses
+====================================
+
+Image: service-digital-4.webp
+   Source: Pexels
+   Photographer: Leeloo The First
+
+   Original Image URL: https://www.pexels.com/photo/a-laptop-with-an-open-screen-7610516/
+
+   Direct Image URL:https://images.pexels.com/photos/7610516/pexels-photo-7610516.jpeg
+   License: Pexels License
+   License URL:https://www.pexels.com/license/
+
+====================================
+
+====================================
+
+   Image: service-digital-1.webp
+   Source: Pexels
+   Photographer: Ron Lach
+   Original Image URL: https://www.pexels.com/photo/people-looking-at-the-screen-8102700/
+   Direct Image URL:https://images.pexels.com/photos/8102700/pexels-photo-8102700.jpeg
+   License: Pexels License
+   License URL:https://www.pexels.com/license/
+
+====================================
+
+====================================
+
+   Image: service-digital-2.webp
+   Source: Pexels
+   Photographer: Tima Miroshnichenko
+   Original Image URL: https://www.pexels.com/photo/people-in-the-office-room-having-a-discussion-6914468/
+   Direct Image URL:https://images.pexels.com/photos/6914468/pexels-photo-6914468.jpeg
+   License: Pexels License
+   License URL:https://www.pexels.com/license/
+
+====================================
+====================================
+
+====================================
+
+   Image: service-digital-4.webp
+   Source: Pexels
+   Photographer: Rodion Kutsaiev
+   Original Image URL: https://www.pexels.com/photo/white-paper-rolls-on-white-table-7897470/
+   Direct Image URL:https://images.pexels.com/photos/7897470/pexels-photo-7897470.jpeg
+   License: Pexels License
+   License URL:https://www.pexels.com/license/
+
+====================================
+
+   Image: portfolios-1.webp
+   Source: Pexels
+   Photographer: Pavel Danilyuk
+   Original Image URL: https://www.pexels.com/photo/scientists-testing-a-device-8439001/
+   Direct Image URL:https://images.pexels.com/photos/8439001/pexels-photo-8439001.jpeg
+   License: Pexels License
+   License URL:https://www.pexels.com/license/
+
+====================================
+
+   Image: portfolios-2.webp
+   Source: Pexels
+   Photographer:  Mikhail Nilov
+   Original Image URL:https://www.pexels.com/photo/people-using-computers-at-work-7988079/
+   Direct Image URL:https://images.pexels.com/photos/7988079/pexels-photo-7988079.jpeg
+   License: Pexels License
+   License URL:https://www.pexels.com/license/
+
+====================================
+
+   Image: portfolios-3.webp
+   Source: Pexels
+   Photographer:  KATRIN BOLOVTSOVA
+   Original Image URL:https://www.pexels.com/photo/a-smartphone-with-blank-screen-beside-a-pair-of-ball-pens-6373128/
+   Direct Image URL: https://images.pexels.com/photos/6373128/pexels-photo-6373128.jpeg
+   License: Pexels License
+   License URL:https://www.pexels.com/license/
+
+====================================
+
+   Image: portfolios-4.webp
+   Source: Pexels
+   Photographer:  Pavel Danilyuk 
+
+   Original Image URL:https://www.pexels.com/photo/a-woman-working-at-the-computer-7675023/
+
+   Direct Image URL: https://images.pexels.com/photos/7675023/pexels-photo-7675023.jpeg
+   License: Pexels License
+   License URL:https://www.pexels.com/license/
+
+====================================
+   Image: award-1.jpg
+   Source: Pexels
+   Photographer:   Eva Bronzini 
+
+   Original Image URL:https://www.pexels.com/photo/blank-tags-in-close-up-photography-8058803/
+
+   Direct Image URL: https://images.pexels.com/photos/8058803/pexels-photo-8058803.jpeg
+   License: Pexels License
+   License URL:https://www.pexels.com/license/
+
+====================================
+   Image: award-2.jpg
+   Source: Pexels
+   Photographer:   Miguel Á. Padriñán 
+
+   Original Image URL:https://www.pexels.com/photo/brown-heart-cutout-decor-2120614/
+
+   Direct Image URL: https://images.pexels.com/photos/2120614/pexels-photo-2120614.jpeg
+   License: Pexels License
+   License URL:https://www.pexels.com/license/
+
+====================================
+   Image: award-3.jpg
+   Source: Pexels
+   Photographer:   Polina Zimmerman 
+
+   Original Image URL:https://www.pexels.com/photo/macbook-air-on-brown-wooden-table-3782023/
+
+   Direct Image URL:https://images.pexels.com/photos/3782023/pexels-photo-3782023.jpeg
+   License: Pexels License
+   License URL:https://www.pexels.com/license/
+
+====================================
+   Image: award-4.jpg
+   Source: Pexels
+   Photographer:   Polina Zimmerman 
+
+   Original Image URL:https://www.pexels.com/photo/web-text-1591060/
+
+   Direct Image URL:https://images.pexels.com/photos/1591060/pexels-photo-1591060.jpeg
+   License: Pexels License
+   License URL:https://www.pexels.com/license/
+
+====================================
+   Image: award-5.jpg
+   Source: Pexels
+   Photographer:  Karolina Grabowska www.kaboompics.com
+
+   Original Image URL:https://www.pexels.com/photo/black-pencils-and-sign-word-6445/
+
+   Direct Image URL:https://images.pexels.com/photos/6445/sign-pencil-black-pencils.jpg
+   License: Pexels License
+   License URL:https://www.pexels.com/license/
+
+====================================
+   Image: award-6.jpg
+   Source: Pexels
+   Photographer: fauxels 
+
+   Original Image URL:https://www.pexels.com/photo/photo-of-woman-using-computer-3184589/
+
+   Direct Image URL:https://images.pexels.com/photos/3184589/pexels-photo-3184589.jpeg
+   License: Pexels License
+   License URL:https://www.pexels.com/license/
+
+====================================
+   Image: award-7.jpg
+   Source: Pexels
+   Photographer: Andrzej Gdula 
+
+   Original Image URL:https://www.pexels.com/photo/a-simple-tag-on-textile-11134390/
+
+   Direct Image URL:https://images.pexels.com/photos/11134390/pexels-photo-11134390.jpeg
+   License: Pexels License
+   License URL:https://www.pexels.com/license/
+
+====================================
+   Image: award-8.jpg
+   Source: Pexels
+   Photographer:  Pixabay 
+
+   Original Image URL:https://www.pexels.com/photo/silver-colored-analog-watch-278299/
+
+   Direct Image URL:https://images.pexels.com/photos/278299/pexels-photo-278299.jpeg
+   License: Pexels License
+   License URL:https://www.pexels.com/license/
+
+====================================
+   Image: award-9.jpg
+   Source: Pexels
+   Photographer:   KATRIN BOLOVTSOVA 
+
+   Original Image URL:https://www.pexels.com/photo/a-glass-container-beside-a-stem-eucalyptus-6311830/
+
+   Direct Image URL:https://images.pexels.com/photos/6311830/pexels-photo-6311830.jpeg
+   License: Pexels License
+   License URL:https://www.pexels.com/license/
+
+====================================
+   Image: award-10.jpg
+   Source: Pexels
+   Photographer:    Vie Studio 
+
+   Original Image URL:https://www.pexels.com/photo/a-person-holding-a-ceramic-mug-8148584/
+
+   Direct Image URL:https://images.pexels.com/photos/8148584/pexels-photo-8148584.jpeg
+   License: Pexels License
+   License URL:https://www.pexels.com/license/
+
+
+====================================
+Testimonials images start
+====================================
+   Image: author-1.webp
+   Source: Pexels
+   Photographer:     Vincent Santamaria 
+
+   Original Image URL:https://www.pexels.com/photo/portrait-of-a-business-professional-in-suit-37148308/
+
+   Direct Image URL:https://images.pexels.com/photos/37148308/pexels-photo-37148308.jpeg
+   License: Pexels License
+   License URL:https://www.pexels.com/license/
+
+====================================
+   Image: author-2.webp
+   Source: Pexels
+   Photographer:   LinkedIn Sales Navigator 
+
+   Original Image URL:https://www.pexels.com/photo/man-wearing-white-dress-shirt-and-black-blazer-2182970/
+
+   Direct Image URL:https://images.pexels.com/photos/2182970/pexels-photo-2182970.jpeg
+   License: Pexels License
+   License URL:https://www.pexels.com/license/
+====================================
+   Image: author-3.webp
+   Source: Pexels
+   Photographer:  Los Muertos Crew 
+
+   Original Image URL:https://www.pexels.com/photo/portrait-of-businesswoman-10041258/
+
+   Direct Image URL:https://images.pexels.com/photos/10041258/pexels-photo-10041258.jpeg
+   License: Pexels License
+   License URL:https://www.pexels.com/license/
+
+====================================
+   Image: author-4.webp
+   Source: Pexels
+   Photographer:   Norton Alpheu 
+
+   Original Image URL:https://www.pexels.com/photo/handsome-man-in-elegant-jacket-17218597/
+
+   Direct Image URL:https://images.pexels.com/photos/17218597/pexels-photo-17218597.png
+   License: Pexels License
+   License URL:https://www.pexels.com/license/
+
+====================================
+   Image: author-5.webp
+   Source: Pexels
+   Photographer:  Max Weiß Erfahrungen
+
+   Original Image URL:https://www.pexels.com/photo/portrait-of-man-in-black-suit-20097456/
+
+   Direct Image URL:https://images.pexels.com/photos/20097456/pexels-photo-20097456.png
+   License: Pexels License
+   License URL:https://www.pexels.com/license/
+
+====================================
+   Image: author-6.webp
+   Source: Pexels
+   Photographer:  Vanessa Garcia
+
+   Original Image URL:https://www.pexels.com/photo/photo-of-man-wearing-blue-blazer-6326369/
+
+   Direct Image URL:https://images.pexels.com/photos/6326369/pexels-photo-6326369.jpeg
+   License: Pexels License
+   License URL:https://www.pexels.com/license/
+
+
+====================================
+   Image: why-choose-us-1.webp
+   Source: Pexels
+   Photographer:   Pavel Danilyuk 
+
+   Original Image URL:https://www.pexels.com/photo/man-in-gray-sweater-sitting-beside-two-women-7675014/
+
+   Direct Image URL:https://images.pexels.com/photos/7675014/pexels-photo-7675014.jpeg
+   License: Pexels License
+   License URL:https://www.pexels.com/license/
+
+
+
+====================================
+HOEM TWO IMAGES START
+====================================
+  Image:about-us-heading.webp
+   Source: Pexels
+   Photographer:     cottonbro studio
+
+   Original Image URL:https://www.pexels.com/photo/low-angle-photo-of-woman-with-dark-eyeshadow-5119214/
+
+   Direct Image URL: https://images.pexels.com/photos/5119214/pexels-photo-5119214.jpeg
+   License: Pexels License
+   License URL:https://www.pexels.com/license/
+
+
+====================================
+  Image: hero-2.webp
+   Source: Pexels
+   Photographer:     cottonbro studio
+
+   Original Image URL:https://www.pexels.com/photo/photo-of-people-sitting-beside-table-3182755/
+
+   Direct Image URL:https://images.pexels.com/photos/3182755/pexels-photo-3182755.jpeg
+   License: Pexels License
+   License URL:https://www.pexels.com/license/
+
+
+====================================
+  Image: home-two-about-1.webp
+   Source: Pexels
+   Photographer: fauxels
+
+   Original Image URL:https://www.pexels.com/photo/people-inside-room-3184657/
+
+   Direct Image URL:https://images.pexels.com/photos/3184657/pexels-photo-3184657.jpeg
+   License: Pexels License
+   License URL:https://www.pexels.com/license/
+
+
+====================================
+  Image: home-two-about-2.webp
+   Source: Pexels
+   Photographer:  Ketut Subiyanto
+
+   Original Image URL:https://www.pexels.com/photo/group-of-people-sitting-on-the-table-in-front-of-their-laptops-4623170/
+
+   Direct Image URL:https://images.pexels.com/photos/4623170/pexels-photo-4623170.jpeg
+   License: Pexels License
+   License URL:https://www.pexels.com/license/
+
+====================================
+  Image: home-two-about-3.webp
+   Source: Pexels
+   Photographer:  Ivan S
+
+   Original Image URL:https://www.pexels.com/photo/colleagues-having-a-discussion-8117462/
+
+   Direct Image URL:https://images.pexels.com/photos/8117462/pexels-photo-8117462.jpeg
+   License: Pexels License
+   License URL:https://www.pexels.com/license/
+
+
+====================================
+  Image: home-two-about-4.webp
+   Source: Pexels
+   Photographer: Kindel Media
+
+   Original Image URL:https://www.pexels.com/photo/people-working-together-at-the-table-7651811/
+
+   Direct Image URL:https://images.pexels.com/photos/7651811/pexels-photo-7651811.jpeg
+   License: Pexels License
+   License URL:https://www.pexels.com/license/
+
+=================================
+service img
+=================================
+Image : service-05.webp
+  Source: Pexels
+Photographer: Monstera Production
+Original Image URL: https://www.pexels.com/photo/group-of-people-having-a-meeting-9431454/
+Direct Image URL: https://images.pexels.com/photos/9431454/pexels-photo-9431454.jpeg
+License: Pexels License
+  License URL:https://www.pexels.com/license/
+License URL: https://www.pexels.com/license/
+
+
+=========================================
+ Image: service-06.webp
+   Source: Pexels
+   Photographer:  Anna Shvets
+
+   Original Image URL:https://www.pexels.com/photo/group-of-glad-multiracial-businesspeople-working-with-laptop-at-table-5324969/
+
+   Direct Image URL:https://images.pexels.com/photos/5324969/pexels-photo-5324969.jpeg
+   License: Pexels License
+   License URL:https://www.pexels.com/license/
+
+=========================================
+ Image: service-07.webp
+   Source: Pexels
+   Photographer: Mikael Blomkvist 
+   Original Image URL:https://www.pexels.com/photo/a-group-of-people-having-a-meeting-in-the-office-6476267/
+
+   Direct Image URL:https://images.pexels.com/photos/6476267/pexels-photo-6476267.jpeg
+   License: Pexels License
+   License URL:https://www.pexels.com/license/
+
+
+=========================================
+ Image: service-08.webp
+   Source: Pexels
+   Photographer:  Tiger Lily 
+   Original Image URL:http://pexels.com/photo/a-group-of-people-having-a-meeting-in-the-office-7108722/
+
+   Direct Image URL:https://images.pexels.com/photos/7108722/pexels-photo-7108722.jpeg
+   License: Pexels License
+   License URL:https://www.pexels.com/license/
+
+=========================================
+ Image: service-01.webp
+   Source: Pexels
+   Photographer:  Vitaly Gariev
+   Original Image URL:https://www.pexels.com/photo/photographers-reviewing-camera-settings-in-studio-39190720/
+
+   Direct Image URL:https://images.pexels.com/photos/39190720/pexels-photo-39190720.jpeg
+   License: Pexels License
+   License URL:https://www.pexels.com/license/
+
+=========================================
+ Image: service-02.webp
+   Source: Pexels
+   Photographer: Ketut Subiyanto
+   Original Image URL:https://www.pexels.com/photo/people-having-a-conversation-at-work-4623344/
+
+   Direct Image URL:https://images.pexels.com/photos/4623344/pexels-photo-4623344.jpeg
+   License: Pexels License
+   License URL:https://www.pexels.com/license/
+
+
+=========================================
+ Image: service-03.webp
+   Source:  fauxels
+   Photographer:  Ketut Subiyanto
+   Original Image URL:https://www.pexels.com/photo/people-inside-room-3184657/
+
+   Direct Image URL:https://images.pexels.com/photos/3184657/pexels-photo-3184657.jpeg
+   License: Pexels License
+   License URL:https://www.pexels.com/license/
+
+=========================================
+ Image: service-04.webp
+   Source:  fauxels
+   Photographer:  Vitaly Gariev
+   Original Image URL:https://www.pexels.com/photo/colleagues-engaging-in-creative-office-discussion-39205058/
+
+   Direct Image URL:https://images.pexels.com/photos/39205058/pexels-photo-39205058.jpeg
+   License: Pexels License
+   License URL:https://www.pexels.com/license/
+
+
+=========================================
+working process start
+=========================================
+ Image: process-1.webp
+   Source: Pexels
+   Photographer:   Ivan S
+   Original Image URL:https://www.pexels.com/photo/a-colleagues-working-together-8117427/
+
+   Direct Image URL:https://images.pexels.com/photos/8117427/pexels-photo-8117427.jpeg
+   License: Pexels License
+   License URL:https://www.pexels.com/license/
+
+=========================================
+ Image: process-2.webp
+   Source: Pexels
+   Photographer:   MART PRODUCTION
+   Original Image URL:https://www.pexels.com/photo/woman-in-gray-blazer-writing-on-a-notebook-7550590/
+
+   Direct Image URL:https://images.pexels.com/photos/7550590/pexels-photo-7550590.jpeg
+   License: Pexels License
+   License URL:https://www.pexels.com/license/
+
+
+=========================================
+ Image: process-3.webp
+   Source: Pexels
+   Photographer:   fauxels
+   Original Image URL:https://www.pexels.com/photo/people-inside-a-room-3184359/
+
+   Direct Image URL:https://images.pexels.com/photos/3184359/pexels-photo-3184359.jpeg
+   License: Pexels License
+   License URL:https://www.pexels.com/license/
+
+
+=========================================
+ Image: process-4.webp
+   Source: Pexels
+   Photographer:   Tima Miroshnichenko
+   Original Image URL:https://www.pexels.com/photo/woman-in-white-button-up-shirt-using-silver-macbook-6914007/
+
+   Direct Image URL:https://images.pexels.com/photos/6914007/pexels-photo-6914007.jpeg
+   License: Pexels License
+   License URL:https://www.pexels.com/license/
+
+
+
+==========================
+abstract-image
+============================
+ Image: abstract-1.webp
+   Source: Pexels
+   Photographer:   Krista Glīzdeniece
+   Original Image URL:https://www.pexels.com/photo/artistic-motion-blur-portrait-of-a-woman-31603973/
+
+   Direct Image URL:https://images.pexels.com/photos/31603973/pexels-photo-31603973.jpeg
+   License: Pexels License
+   License URL:https://www.pexels.com/license/
+
+============================
+ Image: abstract-2.webp
+   Source: Pexels
+   Photographer:  Jan Kopřiva 
+   Original Image URL:https://www.pexels.com/photo/a-mannequin-head-lit-by-neon-lights-7027830/
+
+   Direct Image URL:https://images.pexels.com/photos/7027830/pexels-photo-7027830.jpeg
+   License: Pexels License
+   License URL:https://www.pexels.com/license/
+
+
+
+============================
+ Image: abstract-3.webp
+   Source: Pexels
+   Photographer:   cottonbro studio
+   Original Image URL:https://www.pexels.com/photo/prosthetic-arm-on-blue-background-6153738/
+
+   Direct Image URL:https://images.pexels.com/photos/6153738/pexels-photo-6153738.jpeg
+   License: Pexels License
+   License URL:https://www.pexels.com/license/
+
+
+============================
+ Image: abstract-4.webp
+   Source: Pexels
+   Photographer:  Artsy Frame Photography 
+   Original Image URL:https://www.pexels.com/photo/woman-face-with-eyes-closed-18681944/
+
+   Direct Image URL:https://images.pexels.com/photos/18681944/pexels-photo-18681944.jpeg
+   License: Pexels License
+   License URL:https://www.pexels.com/license/
+
+
+============================
+ Image: virtual-reality.webp
+   Source: Pexels
+   Photographer:  olia danilevich 
+   Original Image URL:https://www.pexels.com/photo/a-man-in-black-shirt-standing-near-gray-wall-while-wearing-vr-headset-5309570/
+
+   Direct Image URL:https://images.pexels.com/photos/5309570/pexels-photo-5309570.jpeg
+   License: Pexels License
+   License URL:https://www.pexels.com/license/
+
+============================
+ Image: web-development.webp
+   Source: Pexels
+   Photographer:   Mikhail Nilov 
+   Original Image URL:https://www.pexels.com/photo/men-working-on-a-computer-7988742/
+   Direct Image URL:https://images.pexels.com/photos/7988742/pexels-photo-7988742.jpeg
+   License: Pexels License
+   License URL:https://www.pexels.com/license/
+
+============================
+ Image:  digital-experience.webp
+   Source: Pexels
+   Photographer:  fauxels
+   Original Image URL:https://www.pexels.com/photo/photo-of-woman-using-computer-3184589/
+   Direct Image URL:https://images.pexels.com/photos/3184589/pexels-photo-3184589.jpeg
+   License: Pexels License
+   License URL:https://www.pexels.com/license/
