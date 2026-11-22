@@ -873,4 +873,57 @@ License: Pexels License
 License URL:https://www.pexels.com/license/
 
 
+============================
+Image:  blog-1.webp
+Source: Pexels
+Photographer:   cottonbro studio
+Original Image URL:https://www.pexels.com/photo/a-woman-in-black-trench-coat-6535361/
+Direct Image URL:https://images.pexels.com/photos/6535361/pexels-photo-6535361.jpeg
+License: Pexels License
+License URL:https://www.pexels.com/license/
 
+============================
+Image:  blog-2.webp
+Source: Pexels
+Photographer:   Antoni Shkraba
+Original Image URL:https://www.pexels.com/photo/a-man-and-woman-working-in-the-office-5466280/
+Direct Image URL:https://images.pexels.com/photos/5466280/pexels-photo-5466280.jpeg
+License: Pexels License
+License URL:https://www.pexels.com/license/
+
+============================
+Image:  blog-3.webp
+Source: Pexels
+Photographer:   Antoni Shkraba
+Original Image URL:https://www.pexels.com/photo/pensive-professional-man-sitting-beside-a-table-5466282/
+Direct Image URL:https://images.pexels.com/photos/5466282/pexels-photo-5466282.jpeg
+License: Pexels License
+License URL:https://www.pexels.com/license/
+
+============================
+Image:  blog-4.webp
+Source: Pexels
+Photographer:   Anna Shvets
+Original Image URL:https://www.pexels.com/photo/serious-man-working-on-laptop-5324919/
+Direct Image URL:https://images.pexels.com/photos/5324919/pexels-photo-5324919.jpeg
+License: Pexels License
+License URL:https://www.pexels.com/license/
+
+============================
+Image:  blog-5.webp
+Source: Pexels
+Photographer:  Matheus Bertelli
+Original Image URL:https://www.pexels.com/photo/young-speaker-engaging-in-a-seminar-discussion-29284296/
+Direct Image URL:https://images.pexels.com/photos/29284296/pexels-photo-29284296.jpeg
+License: Pexels License
+License URL:https://www.pexels.com/license/
+
+
+============================
+Image:  blog-6.webp
+Source: Pexels
+Photographer:  Mo3ath photos 
+Original Image URL:https://www.pexels.com/photo/tall-buildings-in-a-city-12896265/
+Direct Image URL:https://images.pexels.com/photos/12896265/pexels-photo-12896265.jpeg
+License: Pexels License
+License URL:https://www.pexels.com/license/
