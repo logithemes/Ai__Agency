@@ -552,7 +552,7 @@ abstract-image
 
 
 ============================
- Image: virtual-reality.webp
+ Image: service-2.1.webp
    Source: Pexels
    Photographer:  olia danilevich 
    Original Image URL:https://www.pexels.com/photo/a-man-in-black-shirt-standing-near-gray-wall-while-wearing-vr-headset-5309570/
@@ -562,7 +562,7 @@ abstract-image
    License URL:https://www.pexels.com/license/
 
 ============================
- Image: web-development.webp
+ Image: service-3.1.webp
    Source: Pexels
    Photographer:   Mikhail Nilov 
    Original Image URL:https://www.pexels.com/photo/men-working-on-a-computer-7988742/
@@ -571,7 +571,7 @@ abstract-image
    License URL:https://www.pexels.com/license/
 
 ============================
- Image:  digital-experience.webp
+ Image:  service-1.1.webp
    Source: Pexels
    Photographer:  fauxels
    Original Image URL:https://www.pexels.com/photo/photo-of-woman-using-computer-3184589/
@@ -767,3 +767,110 @@ Original Image URL:https://www.pexels.com/photo/fashion-woman-street-office-6535
 Direct Image URL:https://images.pexels.com/photos/6535354/pexels-photo-6535354.jpeg
 License: Pexels License
 License URL:https://www.pexels.com/license/
+
+
+
+TAB IMG
+============================
+Image: service-tab-1.webp
+Source: Pexels
+Photographer:  Monstera Production
+Original Image URL:https://www.pexels.com/photo/people-looking-at-papers-9430878/
+
+Direct Image URL:https://images.pexels.com/photos/9430878/pexels-photo-9430878.jpeg
+License: Pexels License
+License URL:https://www.pexels.com/license/
+
+============================
+Image: service-tab-2.webp
+Source: Pexels
+Photographer:   Mikhail Nilov
+Original Image URL:https://www.pexels.com/photo/woman-in-a-white-shirt-holding-the-microphone-of-her-headset-7681558/
+
+Direct Image URL:https://images.pexels.com/photos/7681558/pexels-photo-7681558.jpeg
+License: Pexels License
+License URL:https://www.pexels.com/license/
+
+
+============================
+Image: service-tab-3.webp
+Source: Pexels
+Photographer:   Ivan S 
+Original Image URL:https://www.pexels.com/photo/colleagues-discussing-documents-8117472/
+Direct Image URL:https://images.pexels.com/photos/8117472/pexels-photo-8117472.jpeg
+License: Pexels License
+License URL:https://www.pexels.com/license/
+
+
+============================
+Image: service-hero-1.webp
+Source: Pexels
+Photographer: Ketut Subiyanto
+Original Image URL:https://www.pexels.com/photo/people-in-office-looking-at-computer-screen-4623525/
+Direct Image URL:https://images.pexels.com/photos/4623525/pexels-photo-4623525.jpeg
+License: Pexels License
+License URL:https://www.pexels.com/license/
+
+
+============================
+Image: service-hero-2.webp
+Source: Pexels
+Photographer: olia danilevich
+Original Image URL:https://www.pexels.com/photo/beautiful-women-smiling-while-at-work-8145264/
+Direct Image URL:https://images.pexels.com/photos/8145264/pexels-photo-8145264.jpeg
+License: Pexels License
+License URL:https://www.pexels.com/license/
+
+============================
+Image:  user-1.webp
+Source: Pexels
+Photographer: Korede Adenola
+Original Image URL:https://www.pexels.com/photo/portrait-of-man-15946547/
+Direct Image URL:https://images.pexels.com/photos/15946547/pexels-photo-15946547.jpeg
+License: Pexels License
+License URL:https://www.pexels.com/license/
+
+
+============================
+Image:  user-2.webp
+Source: Pexels
+Photographer: cottonbro studio 
+Original Image URL:https://www.pexels.com/photo/a-man-with-curly-hair-10617582/
+Direct Image URL:https://images.pexels.com/photos/10617582/pexels-photo-10617582.jpeg
+License: Pexels License
+License URL:https://www.pexels.com/license/
+
+
+============================
+Image:  user-3.webp
+Source: Pexels
+Photographer:  kaboompics
+Original Image URL:https://www.pexels.com/photo/studio-portrait-of-a-teenage-boy-6345396/
+Direct Image URL:https://images.pexels.com/photos/6345396/pexels-photo-6345396.jpeg
+License: Pexels License
+License URL:https://www.pexels.com/license/
+
+
+
+
+============================
+Image:  service-three-hero-bg.webp
+Source: Pexels
+Photographer:   Tiger Lily
+Original Image URL:https://www.pexels.com/photo/office-team-posing-at-the-camera-7109061/
+Direct Image URL:https://images.pexels.com/photos/7109061/pexels-photo-7109061.jpeg
+License: Pexels License
+License URL:https://www.pexels.com/license/
+
+
+============================
+Image:  service-three-hero-1.webp
+Source: Pexels
+Photographer:  cottonbro studio
+Original Image URL:https://www.pexels.com/photo/woman-in-gray-button-up-shirt-5119191/
+Direct Image URL:https://images.pexels.com/photos/5119191/pexels-photo-5119191.jpeg
+License: Pexels License
+License URL:https://www.pexels.com/license/
+
+
+
