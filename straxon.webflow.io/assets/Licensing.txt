@@ -91,6 +91,23 @@ Image: service-digital-4.webp
    License: Pexels License
    License URL:https://www.pexels.com/license/
 
+   
+   Image: portfolios-5.webp
+   Source: Pexels
+   Photographer: kaboompics
+   Original Image URL: https://www.pexels.com/photo/red-container-gift-boxes-on-white-surface-4397842/
+   Direct Image URL:https://images.pexels.com/photos/4397842/pexels-photo-4397842.jpeg
+   License: Pexels License
+   License URL:https://www.pexels.com/license/
+
+      Image: portfolios-6.webp
+   Source: Pexels
+   Photographer:  cottonbro studio 
+   Original Image URL:https://www.pexels.com/photo/a-woman-in-black-dress-holding-an-organizer-6538590/
+   Direct Image URL:https://images.pexels.com/photos/6538590/pexels-photo-6538590.jpeg
+   License: Pexels License
+   License URL:https://www.pexels.com/license/
+
 ====================================
    Image: award-1.jpg
    Source: Pexels
@@ -310,7 +327,7 @@ HOEM TWO IMAGES START
 
 
 ====================================
-  Image: home-two-about-1.webp
+  Image: about-1.1.webp
    Source: Pexels
    Photographer: fauxels
 
@@ -322,7 +339,7 @@ HOEM TWO IMAGES START
 
 
 ====================================
-  Image: home-two-about-2.webp
+  Image: about-2.1.webp
    Source: Pexels
    Photographer:  Ketut Subiyanto
 
@@ -333,7 +350,7 @@ HOEM TWO IMAGES START
    License URL:https://www.pexels.com/license/
 
 ====================================
-  Image: home-two-about-3.webp
+  Image: about-3.1.webp
    Source: Pexels
    Photographer:  Ivan S
 
@@ -345,7 +362,7 @@ HOEM TWO IMAGES START
 
 
 ====================================
-  Image: home-two-about-4.webp
+  Image: about-4.1.webp
    Source: Pexels
    Photographer: Kindel Media
 
@@ -561,3 +578,192 @@ abstract-image
    Direct Image URL:https://images.pexels.com/photos/3184589/pexels-photo-3184589.jpeg
    License: Pexels License
    License URL:https://www.pexels.com/license/
+
+
+============================
+Image:  faq-support.webp
+   Source: Pexels
+   Photographer:  Yan Krukau
+   Original Image URL:https://www.pexels.com/photo/man-and-woman-sitting-on-the-table-working-8866751/
+   Direct Image URL:https://images.pexels.com/photos/8866751/pexels-photo-8866751.jpeg
+   License: Pexels License
+   License URL:https://www.pexels.com/license/
+
+
+   
+============================
+ABOUT one photographers
+============================
+Image:  about-one-hero.webp
+   Source: Pexels
+   Photographer:  fauxels
+   Original Image URL:https://www.pexels.com/photo/people-sitting-indoors-3182778/
+   Direct Image URL:https://images.pexels.com/photos/3182778/pexels-photo-3182778.jpeg
+   License: Pexels License
+   License URL:https://www.pexels.com/license/
+
+
+============================
+TEAM MATES IMAGES
+============================
+Image:  team-1.webp
+   Source: Pexels
+   Photographer:   ilayda 0700 
+   Original Image URL:https://www.pexels.com/photo/portrait-of-smiling-woman-in-black-turtleneck-36593089/
+   Direct Image URL:https://images.pexels.com/photos/36593089/pexels-photo-36593089.jpeg
+   License: Pexels License
+   License URL:https://www.pexels.com/license/
+
+
+============================
+Image:  team-2.webp
+   Source: Pexels
+   Photographer:  DETTY IMAGES
+   Original Image URL:https://www.pexels.com/photo/thoughtful-man-in-black-turtleneck-on-brown-background-30254254/
+   Direct Image URL:https://images.pexels.com/photos/30254254/pexels-photo-30254254.jpeg
+   License: Pexels License
+   License URL:https://www.pexels.com/license/
+
+
+============================
+Image:  team-3.webp
+   Source: Pexels
+   Photographer:   K H
+   Original Image URL:https://www.pexels.com/photo/portrait-of-a-man-in-minimalist-style-37712385/
+   Direct Image URL:https://images.pexels.com/photos/37712385/pexels-photo-37712385.jpeg
+   License: Pexels License
+   License URL:https://www.pexels.com/license/
+
+
+============================
+Image:  team-4.webp
+   Source: Pexels
+   Photographer:    Augusto Carneiro Junior 
+   Original Image URL:https://www.pexels.com/photo/confident-businessman-in-grey-suit-portrait-28446973/
+   Direct Image URL:https://images.pexels.com/photos/28446973/pexels-photo-28446973.jpeg
+   License: Pexels License
+   License URL:https://www.pexels.com/license/
+
+   ============================
+Image:  team-5.webp
+   Source: Pexels
+   Photographer:   Orione Conceição
+   Original Image URL: https://www.pexels.com/photo/stylish-model-in-jacket-and-wristwatch-on-gray-background-8481718/ 
+
+   Direct Image URL:https://images.pexels.com/photos/8481718/pexels-photo-8481718.jpeg
+   License: Pexels License
+   License URL:https://www.pexels.com/license/
+
+      ============================
+Image:  team-6.webp
+   Source: Pexels
+   Photographer:    Max Weiß Erfahrungen
+   Original Image URL:https://www.pexels.com/photo/man-in-a-white-t-shirt-standing-with-arms-crossed-20097455/
+
+   Direct Image URL:https://images.pexels.com/photos/20097455/pexels-photo-20097455.png
+   License: Pexels License
+   License URL:https://www.pexels.com/license/
+
+
+       ============================
+Image:  about-one-hero.webp.webp
+   Source: Pexels
+   Photographer:    fauxels
+   Original Image URL:https://www.pexels.com/photo/photo-of-people-talking-to-each-other-3182739/
+
+   Direct Image URL:https://images.pexels.com/photos/3182739/pexels-photo-3182739.jpeg
+   License: Pexels License
+   License URL:https://www.pexels.com/license/
+
+
+============================
+Image:  about-two-overlay-3.webp
+   Source: Pexels
+   Photographer:     Atlantic Ambience
+   Original Image URL:https://www.pexels.com/photo/woman-with-bright-lips-interacting-with-vr-headset-6853468/
+
+   Direct Image URL:https://images.pexels.com/photos/6853468/pexels-photo-6853468.jpeg
+   License: Pexels License
+   License URL:https://www.pexels.com/license/
+
+============================
+Image:  about-two-overlay-2.webp
+   Source: Pexels
+   Photographer:  Yaroslav Chaadaev 
+   Original Image URL:https://www.pexels.com/photo/close-up-photo-of-a-woman-s-face-9109101/
+
+   Direct Image URL:https://images.pexels.com/photos/9109101/pexels-photo-9109101.jpeg
+   License: Pexels License
+   License URL:https://www.pexels.com/license/
+
+   ============================
+Image:  about-two-overlay-1.webp
+   Source: Pexels
+   Photographer:  Alan Quirván  
+   Original Image URL:https://www.pexels.com/photo/photo-of-black-headset-in-a-dark-room-14541034/
+
+   Direct Image URL:https://images.pexels.com/photos/14541034/pexels-photo-14541034.jpeg
+   License: Pexels License
+   License URL:https://www.pexels.com/license/
+
+    ============================
+Image:  about-two-overlay-5.webp
+   Source: Pexels
+   Photographer: cottonbro studio 
+   Original Image URL:https://www.pexels.com/photo/women-wearing-eyeglasses-6532340/
+
+   Direct Image URL:https://images.pexels.com/photos/6532340/pexels-photo-6532340.jpeg
+   License: Pexels License
+   License URL:https://www.pexels.com/license/
+
+       ============================
+Image:  about-two-overlay-4.webp
+   Source: Pexels
+   Photographer: cottonbro studio
+   Original Image URL:https://www.pexels.com/photo/woman-in-black-blazer-7870890/
+
+   Direct Image URL:https://images.pexels.com/photos/7870890/pexels-photo-7870890.jpeg
+   License: Pexels License
+   License URL:https://www.pexels.com/license/
+
+============================
+Image:  about-two-office.webp
+Source: Pexels
+Photographer: Mikael Blomkvist
+Original Image URL:https://www.pexels.com/photo/a-group-of-people-having-a-meeting-in-the-office-6476267/
+
+Direct Image URL:https://images.pexels.com/photos/6476267/pexels-photo-6476267.jpeg
+License: Pexels License
+License URL:https://www.pexels.com/license/
+
+============================
+Image: about-three-hero-2.webp
+Source: Pexels
+Photographer: MART PRODUCTION
+Original Image URL:https://www.pexels.com/photo/people-having-a-meeting-in-front-of-the-laptop-7550396/
+
+Direct Image URL:https://images.pexels.com/photos/7550396/pexels-photo-7550396.jpeg
+License: Pexels License
+License URL:https://www.pexels.com/license/
+
+
+
+============================
+Image: about-three-hero-2.webp
+Source: Pexels
+Photographer:  Diva Plavalaguna
+Original Image URL:https://www.pexels.com/photo/a-group-of-people-having-a-business-meeting-6146820/
+
+Direct Image URL:https://images.pexels.com/photos/6146820/pexels-photo-6146820.jpeg
+License: Pexels License
+License URL:https://www.pexels.com/license/
+
+============================
+Image: about-three-service.webp
+Source: Pexels
+Photographer: cottonbro studio
+Original Image URL:https://www.pexels.com/photo/fashion-woman-street-office-6535354/
+
+Direct Image URL:https://images.pexels.com/photos/6535354/pexels-photo-6535354.jpeg
+License: Pexels License
+License URL:https://www.pexels.com/license/

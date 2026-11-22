@@ -82,6 +82,7 @@ Root Variables
     --tp-common-white: #ffffff;
     --tp-bg-icon : #28282b;
     --tp-icon-color: #ffffffa1;
+    --tp-dot-shadow : 0 4px 24px #f44506b3, inset 0 3px 10px #ffc7b3bf;
     /* Bg-gradient */
     --tp-section-gradient-bg:
         radial-gradient(circle at 32%, rgba(180, 96, 241, 0.29), transparent 16%),
@@ -4245,7 +4246,7 @@ a:hover {
     border-bottom: 1px solid var(--tp-border-color);
     position: relative;
 }
-
+.about-one-why-choose-us{background-color: var(--tp-black);}
 .contact-text-marquee-wrapper {
     display: flex;
     justify-content: flex-start;
@@ -5109,13 +5110,14 @@ what we do css start
 
 
 .mission-check-icon {
-    border: 1px solid var(--tp-border-color);
+    border: 1.5px solid var(--tp-border-color);
     justify-content: center;
     align-items: center;
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     margin-bottom: 5px;
     display: flex;
+  
 }
 
 .about-one-mission-img-wrapper {
