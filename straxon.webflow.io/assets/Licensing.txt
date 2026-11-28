@@ -1,7 +1,25 @@
 STYNERO - HTML TEMPLATE
 Image Credits and Licenses
-====================================
 
+====================================
+Image: hero-1.1.webp
+   Source: Pexels
+   Photographer: Sound On
+   Original Image URL: https://www.pexels.com/photo/woman-enjoying-her-virtual-reality-goggles-3761260/
+   Direct Image URL:https://images.pexels.com/photos/3761260/pexels-photo-3761260.jpeg
+   License: Pexels License
+   License URL:https://www.pexels.com/license/
+
+====================================
+Image: story-big-image.webp
+   Source: Pexels
+   Photographer:  Mikael Blomkvist
+   Original Image URL: https://www.pexels.com/photo/a-group-of-people-discussing-beside-a-desktop-with-graph-on-screen-6476259/
+   Direct Image URL:https://images.pexels.com/photos/6476259/pexels-photo-6476259.jpeg
+   License: Pexels License
+   License URL:https://www.pexels.com/license/
+
+====================================
 Image: service-digital-4.webp
    Source: Pexels
    Photographer: Leeloo The First
@@ -111,22 +129,22 @@ Image: service-digital-4.webp
 ====================================
    Image: award-1.jpg
    Source: Pexels
-   Photographer:   Eva Bronzini 
+   Photographer:   Hanna Pad 
 
-   Original Image URL:https://www.pexels.com/photo/blank-tags-in-close-up-photography-8058803/
+   Original Image URL:https://www.pexels.com/photo/brown-ceramic-vase-and-blank-paper-on-a-white-table-8532943/
 
-   Direct Image URL: https://images.pexels.com/photos/8058803/pexels-photo-8058803.jpeg
+   Direct Image URL: https://images.pexels.com/photos/8532943/pexels-photo-8532943.jpeg
    License: Pexels License
    License URL:https://www.pexels.com/license/
 
 ====================================
    Image: award-2.jpg
    Source: Pexels
-   Photographer:   Miguel Á. Padriñán 
+   Photographer:   MART PRODUCTION
 
-   Original Image URL:https://www.pexels.com/photo/brown-heart-cutout-decor-2120614/
+   Original Image URL:https://www.pexels.com/photo/person-holding-white-iphone-5-c-9558788/
 
-   Direct Image URL: https://images.pexels.com/photos/2120614/pexels-photo-2120614.jpeg
+   Direct Image URL: https://images.pexels.com/photos/9558788/pexels-photo-9558788.jpeg
    License: Pexels License
    License URL:https://www.pexels.com/license/
 
@@ -166,11 +184,11 @@ Image: service-digital-4.webp
 ====================================
    Image: award-6.jpg
    Source: Pexels
-   Photographer: fauxels 
+   Photographer: Vitaly Gariev
 
-   Original Image URL:https://www.pexels.com/photo/photo-of-woman-using-computer-3184589/
+   Original Image URL:https://www.pexels.com/photo/photographers-reviewing-portrait-in-studio-39190729/
 
-   Direct Image URL:https://images.pexels.com/photos/3184589/pexels-photo-3184589.jpeg
+   Direct Image URL:https://images.pexels.com/photos/39190729/pexels-photo-39190729.jpeg
    License: Pexels License
    License URL:https://www.pexels.com/license/
 
@@ -218,6 +236,7 @@ Image: service-digital-4.webp
    License: Pexels License
    License URL:https://www.pexels.com/license/
 
+ 
 
 ====================================
 Testimonials images start

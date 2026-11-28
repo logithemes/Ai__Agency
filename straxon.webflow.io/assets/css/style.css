@@ -1277,12 +1277,13 @@ a:hover {
 }
 
 /* XXX */
-.home-one-hero {
+.home-one-hero{
     background-image: radial-gradient(circle at 65% 30%,
             #b460f14d,
             #b460f100 28%);
-
+            position: relative;
 }
+
 
 /* Story image wrapper CSS start */
 /* Story image wrapper CSS start */
